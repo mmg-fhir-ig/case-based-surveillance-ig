@@ -14,6 +14,20 @@
     "name": "CBSBirthSexExtension"
   },
   {
+    "id": "cbs-condition",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/cbs-condition",
+    "version": "0.1.0",
+    "name": "cbs-condition"
+  },
+  {
+    "id": "cbs-exposure-observation",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/cbs-exposure-observation",
+    "version": "0.1.0",
+    "name": "cbs-exposure-observation"
+  },
+  {
     "id": "cbs-patient",
     "type": "StructureDefinition",
     "url": "http://example.org/StructureDefinition/cbs-patient",

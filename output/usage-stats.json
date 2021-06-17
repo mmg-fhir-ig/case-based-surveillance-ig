@@ -75,6 +75,18 @@
     }
   ],
   "profiles": {
+    "Condition": [
+      {
+        "url": "http://example.org/StructureDefinition/cbs-condition",
+        "title": "Case-Based Surveillance Condition Profile"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://example.org/StructureDefinition/cbs-exposure-observation",
+        "title": "Case-Based Surveillance Exposure Observation Profile"
+      }
+    ],
     "Patient": [
       {
         "url": "http://example.org/StructureDefinition/cbs-patient",
@@ -106,6 +118,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
