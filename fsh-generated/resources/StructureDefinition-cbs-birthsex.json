@@ -87,7 +87,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1038",
+          "valueSet": "http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1038",
           "description": "Code for sex assigned at birth"
         }
       }

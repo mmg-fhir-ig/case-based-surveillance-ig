@@ -21,6 +21,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-condition"
+        },
+        "name": "Case-Based Surveillance Condition Profile",
+        "description": "Profile definition for the case-based surveillance condition resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-exposure-observation"
+        },
+        "name": "Case-Based Surveillance Exposure Observation Profile",
+        "description": "Profile definition for the case-based surveillance exposure observation resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-birthsex"
         },
         "name": "Case Based Surveillance Birth Sex Extension",
