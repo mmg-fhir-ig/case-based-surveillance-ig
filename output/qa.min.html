@@ -1,0 +1,233 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 25, errors = 4, warn = 9, info = 0 -->
+<head>
+  <title>CBSIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CBSIG</h1>
+ <p>Generated Thu Jun 17 13:18:06 EDT 2021, FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = <a href="http://example.org">http://example.org</a> (<a href="http://example.org/history.html">history</a>)). See <a href="/users/shared/edu.gatech.chai.mmgfhirig/cbsig/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.73, which is out of date. The current version is v1.1.74 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gtri.fhir.cbs, Canonical = http://example.org</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> gtri.fhir.cbs</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org (Problem #1 with package-list.json at http://example.org: http://example.org/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 25, errors = 4, warn = 9, info = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>25</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_edu.gatech.chai.mmgfhirig_CBSIG_fsh-generated_resources_structuredefinition-cbs-birthsex"><b>/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-birthsex</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_edu.gatech.chai.mmgfhirig_CBSIG_fsh-generated_resources_structuredefinition-cbs-patient"><b>/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_edu.gatech.chai.mmgfhirig_CBSIG_fsh-generated_resources_structuredefinition-cbs-race"><b>/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-race</b></a></td><td><b>4</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex-definitions.html#b288037e-9665-43ee-af82-a25a1efb61c3">StructureDefinition-cbs-birthsex-definitions.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex-mappings.html#3b2d1118-5d79-4f36-8369-1492ada3bf3d">StructureDefinition-cbs-birthsex-mappings.html#/html/body/div/div/div/p/a at Line 240, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex.html#ab60afe5-bee7-4a39-b8a7-905e5ad51db0">StructureDefinition-cbs-birthsex.html#/html/body/div/div/div/p/a at Line 496, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex.profile.history.html#e8477992-fd4c-474c-98f9-c7469df56dcc">StructureDefinition-cbs-birthsex.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex.profile.json.html#91122f58-5137-4c37-9f76-997af5584e49">StructureDefinition-cbs-birthsex.profile.json.html#/html/body/div/div/div/p/a at Line 587, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex.profile.ttl.html#b9555a51-8f23-4ef9-a32e-7e66bcaa9434">StructureDefinition-cbs-birthsex.profile.ttl.html#/html/body/div/div/div/p/a at Line 551, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-birthsex.profile.xml.html#6cd44e7e-4e77-4a64-9c33-0874280f9f65">StructureDefinition-cbs-birthsex.profile.xml.html#/html/body/div/div/div/p/a at Line 539, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient-definitions.html#fa19c6eb-0a8b-47e0-94d4-644874b6ea5d">StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 832, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient-examples.html#ddccf8a1-1205-4d45-9505-5b0108605b66">StructureDefinition-cbs-patient-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient-mappings.html#6763552d-3c74-4884-a641-0122f7fd01c8">StructureDefinition-cbs-patient-mappings.html#/html/body/div/div/div/p/a at Line 358, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient.html#06ea9229-814a-48f5-a064-f53a0abe07a4">StructureDefinition-cbs-patient.html#/html/body/div/div/div/p/a at Line 859, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient.profile.history.html#403d4463-b48f-4838-9c12-04e327664f3b">StructureDefinition-cbs-patient.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient.profile.json.html#9a180e72-b29b-461c-ba7d-91995de1039d">StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 3049, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient.profile.ttl.html#2da6152c-5bb9-44f1-a7bd-760e593db974">StructureDefinition-cbs-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2673, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-patient.profile.xml.html#708b8876-e7be-42fc-971d-f9fe02430cd6">StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2776, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race-definitions.html#ca2af072-235e-49b2-8228-55c119603756">StructureDefinition-cbs-race-definitions.html#/html/body/div/div/div/p/a at Line 425, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race-mappings.html#b46aa89b-742d-4ef0-b7c2-213d2f69c3cd">StructureDefinition-cbs-race-mappings.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race.html#ffdaa046-c27c-4653-88b4-675ebe5578a6">StructureDefinition-cbs-race.html#/html/body/div/div/div/p/a at Line 611, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race.profile.history.html#1bbc586b-b772-45a2-b154-4079d556bf76">StructureDefinition-cbs-race.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race.profile.json.html#46d0950b-302e-41a5-bdc3-6c19d3e01592">StructureDefinition-cbs-race.profile.json.html#/html/body/div/div/div/p/a at Line 1540, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race.profile.ttl.html#d7d387e6-1696-4ea1-aef0-d340f9cd111b">StructureDefinition-cbs-race.profile.ttl.html#/html/body/div/div/div/p/a at Line 1322, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-cbs-race.profile.xml.html#5d6e9635-ab17-48f3-beee-1cc2123ee0d6">StructureDefinition-cbs-race.profile.xml.html#/html/body/div/div/div/p/a at Line 1400, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#2cf3599d-ec34-4609-badd-1af094946946">artifacts.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#b5bcd22e-1727-4544-bc45-e9581fb4f8f3">index.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#ea4df867-6c03-463b-a7f9-2bccda51a954">toc.html#/html/body/div/div/div/p/a at Line 137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_edu.gatech.chai.mmgfhirig_CBSIG_fsh-generated_resources_structuredefinition-cbs-birthsex"> </a>
+<h2><a href="StructureDefinition-cbs-birthsex.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-birthsex.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/cbs-birthsex: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/cbs-birthsex: StructureDefinition.differential.element[4].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1038 on element Extension.valueCodeableConcept could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/cbs-birthsex: StructureDefinition.snapshot.element[5].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1038 on element Extension.value[x] could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-birthsex')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_edu.gatech.chai.mmgfhirig_CBSIG_fsh-generated_resources_structuredefinition-cbs-patient"> </a>
+<h2><a href="StructureDefinition-cbs-patient.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/cbs-patient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-patient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_edu.gatech.chai.mmgfhirig_CBSIG_fsh-generated_resources_structuredefinition-cbs-race"> </a>
+<h2><a href="StructureDefinition-cbs-race.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.snapshot.element[8].binding.valueSet</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.snapshot.element[14].binding.valueSet</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/detailed-race' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.differential.element[6].binding.valueSet</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.differential.element[11].binding.valueSet</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/detailed-race' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.differential.element[6].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://hl7.org/fhir/us/core/ValueSet/omb-race-category on element Extension.extension.valueCoding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.differential.element[11].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://hl7.org/fhir/us/core/ValueSet/detailed-race on element Extension.extension.valueCoding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.snapshot.element[8].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://hl7.org/fhir/us/core/ValueSet/omb-race-category on element Extension.extension.value[x] could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/cbs-race: StructureDefinition.snapshot.element[14].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://hl7.org/fhir/us/core/ValueSet/detailed-race on element Extension.extension.value[x] could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-race')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-cbs-race.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-cbs-race.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/detailed-race' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-cbs-race.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-cbs-race.html">/Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/detailed-race' does not resolve</b></td>
+   </tr>
+</table>
+</body>
+</html>

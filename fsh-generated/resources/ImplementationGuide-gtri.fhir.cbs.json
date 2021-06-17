@@ -1,0 +1,62 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "gtri.fhir.cbs",
+  "url": "http://example.org/ImplementationGuide/gtri.fhir.cbs",
+  "version": "0.1.0",
+  "name": "CBSIG",
+  "status": "draft",
+  "packageId": "gtri.fhir.cbs",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-patient"
+        },
+        "name": "Case Based Surveillance Patient Profile",
+        "description": "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-birthsex"
+        },
+        "name": "Case Based Surveillance Birth Sex Extension",
+        "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-race"
+        },
+        "name": "Case Based Surveillance Race Extension",
+        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gtri.fhir.cbs",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/gtri.fhir.cbs",
+    "version": "0.1.0",
+    "name": "CBSIG"
+  },
+  {
+    "id": "cbs-birthsex",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/cbs-birthsex",
+    "version": "0.1.0",
+    "name": "CBSBirthSexExtension"
+  },
+  {
+    "id": "cbs-patient",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/cbs-patient",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillancePatient"
+  },
+  {
+    "id": "cbs-race",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/cbs-race",
+    "version": "0.1.0",
+    "name": "CBSRaceExtension"
+  }
+]
