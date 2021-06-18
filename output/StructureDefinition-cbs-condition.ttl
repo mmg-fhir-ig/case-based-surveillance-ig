@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "cbs-condition"];
   fhir:StructureDefinition.title [ fhir:value "Case-Based Surveillance Condition Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-17T15:28:45-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-17T17:34:44-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Profile definition for the case-based surveillance condition resource."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [

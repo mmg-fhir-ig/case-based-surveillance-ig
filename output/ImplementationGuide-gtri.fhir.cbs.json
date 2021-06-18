@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-  "date": "2021-06-17T15:28:45-04:00",
+  "date": "2021-06-17T17:34:44-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -277,7 +277,7 @@
           "reference": "StructureDefinition/cbs-patient"
         },
         "name": "Case Based Surveillance Patient Profile",
-        "description": "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.",
+        "description": "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required.",
         "exampleBoolean": false
       },
       {
@@ -334,6 +334,34 @@
         },
         "name": "Case Based Surveillance Race Extension",
         "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CBSAddressUseVS"
+        },
+        "name": "Additional codes for Address.use.",
+        "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cbs-temp-code-system"
+        },
+        "name": "Case Based Surveillance temporary/placeholder code system.",
+        "description": "Code system defined as placeholders for items that are not defined in existing systems.",
         "exampleBoolean": false
       }
     ],

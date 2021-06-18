@@ -13,10 +13,24 @@
   ],
   "url": "http://example.org/StructureDefinition/cbs-condition",
   "version": "0.1.0",
-  "name": "cbs-condition",
+  "name": "CaseBasedSurveillanceCondition",
   "title": "Case-Based Surveillance Condition Profile",
   "status": "active",
+  "experimental": true,
+  "date": "2021-01-01",
+  "publisher": "Georgia Tech Research Institute",
   "description": "Profile definition for the case-based surveillance condition resource.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -22,7 +22,7 @@
   <name value="cbs-condition"/>
   <title value="Case-Based Surveillance Condition Profile"/>
   <status value="active"/>
-  <date value="2021-06-17T15:28:45-04:00"/>
+  <date value="2021-06-17T17:34:44-04:00"/>
   <description value="Profile definition for the case-based surveillance condition resource."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

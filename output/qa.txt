@@ -1,68 +1,84 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 6, warn = 33, info = 0
-IG Publisher Version: 1.1.74
-Generated Thu Jun 17 15:29:03 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://example.org)
+err = 10, warn = 34, info = 0
+IG Publisher Version: 1.1.73 Out of date - current version is 1.1.74
+Generated Thu Jun 17 17:35:11 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://example.org)
 
- Build Errors : 41 / 0 / 0
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 3 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 6 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 2 / 18 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 4 / 5 / 1
+ Build Errors : 53 / 0 / 0
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 3 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 6 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 2 / 18 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient : 4 / 1 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-race : 4 / 5 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex-definitions.html#/html/body/div/div/div/p/a at Line 284, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex-mappings.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex.html#/html/body/div/div/div/p/a at Line 496, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex.profile.json.html#/html/body/div/div/div/p/a at Line 587, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex.profile.ttl.html#/html/body/div/div/div/p/a at Line 551, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex.profile.xml.html#/html/body/div/div/div/p/a at Line 539, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition-definitions.html#/html/body/div/div/div/p/a at Line 616, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition-mappings.html#/html/body/div/div/div/p/a at Line 358, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition.html#/html/body/div/div/div/p/a at Line 725, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition.profile.json.html#/html/body/div/div/div/p/a at Line 2356, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition.profile.ttl.html#/html/body/div/div/div/p/a at Line 2104, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-condition.profile.xml.html#/html/body/div/div/div/p/a at Line 2156, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation-definitions.html#/html/body/div/div/div/p/a at Line 1245, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation-mappings.html#/html/body/div/div/div/p/a at Line 495, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/span/tr/td/span/tr/td/span/div/div/div/p/a at Line 1214, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation.profile.json.html#/html/body/div/div/div/p/a at Line 5030, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 4397, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-exposure-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 4608, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 832, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient-mappings.html#/html/body/div/div/div/p/a at Line 358, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient.html#/html/body/div/div/div/p/a at Line 859, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 3049, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2673, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2776, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race-definitions.html#/html/body/div/div/div/p/a at Line 425, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race-mappings.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/p/a at Line 611, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.profile.json.html#/html/body/div/div/div/p/a at Line 1540, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.profile.ttl.html#/html/body/div/div/div/p/a at Line 1322, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.profile.xml.html#/html/body/div/div/div/p/a at Line 1400, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/artifacts.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.json.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.ttl.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.xml.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex-definitions.html#/html/body/div/div/div/p/a at Line 284, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex-mappings.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex.html#/html/body/div/div/div/p/a at Line 496, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex.profile.json.html#/html/body/div/div/div/p/a at Line 587, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex.profile.ttl.html#/html/body/div/div/div/p/a at Line 551, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-birthsex.profile.xml.html#/html/body/div/div/div/p/a at Line 539, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition-definitions.html#/html/body/div/div/div/p/a at Line 616, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition-mappings.html#/html/body/div/div/div/p/a at Line 358, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition.html#/html/body/div/div/div/p/a at Line 725, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition.profile.json.html#/html/body/div/div/div/p/a at Line 2356, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition.profile.ttl.html#/html/body/div/div/div/p/a at Line 2104, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition.profile.xml.html#/html/body/div/div/div/p/a at Line 2156, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation-definitions.html#/html/body/div/div/div/p/a at Line 1245, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation-mappings.html#/html/body/div/div/div/p/a at Line 495, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/span/tr/td/span/tr/td/span/div/div/div/p/a at Line 1214, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.json.html#/html/body/div/div/div/p/a at Line 5030, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 4397, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 4608, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 1116, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-mappings.html#/html/body/div/div/div/p/a at Line 408, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.html#/html/body/div/div/div/p/a at Line 1026, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 4485, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 3854, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 4008, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race-definitions.html#/html/body/div/div/div/p/a at Line 425, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race-mappings.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/p/a at Line 611, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race.profile.json.html#/html/body/div/div/div/p/a at Line 1540, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race.profile.ttl.html#/html/body/div/div/div/p/a at Line 1322, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-race.profile.xml.html#/html/body/div/div/div/p/a at Line 1400, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 179, column 334: The link 'CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis' for "At-Diagnosis" cannot be resolved (valid targets: [segment-header, publish-box, cbs-temp-code-system-Usual-Residence, bottom, segment-post-footer, cbs-temp-code-system-Address-at-Diagnosis, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, codesystem-case-based-surveillance-temporaryplaceholder-code-system, segment-breadcrumb])
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 185, column 719: The link 'CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis' for "At-Diagnosis" cannot be resolved (valid targets: [segment-header, publish-box, cbs-temp-code-system-Usual-Residence, bottom, segment-post-footer, cbs-temp-code-system-Address-at-Diagnosis, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, codesystem-case-based-surveillance-temporaryplaceholder-code-system, segment-breadcrumb])
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.json.html#/html/body/div/div/div/p/a at Line 220, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.ttl.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/ValueSet-CBSAddressUseVS.xml.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/artifacts.html#/html/body/div/div/div/p/a at Line 272, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
 INFORMATION: ImplementationGuide/gtri.fhir.cbs: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
+INFORMATION: CodeSystem/cbs-temp-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 INFORMATION: StructureDefinition/cbs-birthsex: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/cbs-birthsex: StructureDefinition.differential.element[4].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1038 on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/cbs-birthsex: StructureDefinition.snapshot.element[5].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1038 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-birthsex'): The Implementation Guide contains no examples for this extension
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-condition.json ==
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-condition.json ==
 INFORMATION: StructureDefinition/cbs-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/cbs-condition: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: StructureDefinition/cbs-condition: StructureDefinition.differential.element[1].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1015 on element Condition.code could not be resolved
@@ -70,7 +86,7 @@ WARNING: StructureDefinition/cbs-condition: StructureDefinition.differential.ele
 WARNING: StructureDefinition/cbs-condition: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1015 on element Condition.code could not be resolved
 WARNING: StructureDefinition/cbs-condition: StructureDefinition.snapshot.element[15].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7195 on element Condition.bodySite could not be resolved
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-condition'): The Implementation Guide contains no examples for this profile
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
 INFORMATION: StructureDefinition/cbs-exposure-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/cbs-exposure-observation: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
@@ -92,10 +108,14 @@ WARNING: StructureDefinition/cbs-exposure-observation: StructureDefinition.snaps
 WARNING: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[74].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.973 on element Observation.component.value[x] could not be resolved
 WARNING: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[83].binding: The valueSet reference http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.829 on element Observation.component.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-exposure-observation'): The Implementation Guide contains no examples for this profile
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
+ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://example.org/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
+ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://example.org/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 INFORMATION: StructureDefinition/cbs-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://example.org/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
+ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://example.org/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-patient'): The Implementation Guide contains no examples for this profile
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json ==
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json ==
 INFORMATION: StructureDefinition/cbs-race: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/cbs-race: StructureDefinition.snapshot.element[8].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category' does not resolve
 ERROR: StructureDefinition/cbs-race: StructureDefinition.snapshot.element[14].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/detailed-race' does not resolve
@@ -106,3 +126,6 @@ WARNING: StructureDefinition/cbs-race: StructureDefinition.differential.element[
 WARNING: StructureDefinition/cbs-race: StructureDefinition.snapshot.element[8].binding: The valueSet reference http://hl7.org/fhir/us/core/ValueSet/omb-race-category on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/cbs-race: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://hl7.org/fhir/us/core/ValueSet/detailed-race on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/cbs-race'): The Implementation Guide contains no examples for this extension
+== /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ValueSet-CBSAddressUseVS.json ==
+INFORMATION: ValueSet/CBSAddressUseVS: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/CBSAddressUseVS: ValueSet.compose[0].include[0].concept[0]: The code At-Diagnosis is not valid in the system http://example.org/CodeSystem/cbs-temp-code-system

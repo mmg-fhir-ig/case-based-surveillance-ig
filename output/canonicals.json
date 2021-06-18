@@ -1,5 +1,12 @@
 [
   {
+    "id": "cbs-temp-code-system",
+    "type": "CodeSystem",
+    "url": "http://example.org/CodeSystem/cbs-temp-code-system",
+    "version": "0.1.0",
+    "name": "CBSTemporary"
+  },
+  {
     "id": "gtri.fhir.cbs",
     "type": "ImplementationGuide",
     "url": "http://example.org/ImplementationGuide/gtri.fhir.cbs",
@@ -40,5 +47,12 @@
     "url": "http://example.org/StructureDefinition/cbs-race",
     "version": "0.1.0",
     "name": "CBSRaceExtension"
+  },
+  {
+    "id": "CBSAddressUseVS",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/CBSAddressUseVS",
+    "version": "0.1.0",
+    "name": "CBSAddressUseVS"
   }
 ]

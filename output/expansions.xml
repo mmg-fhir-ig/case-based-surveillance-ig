@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a7e20daf-8446-42c3-a72d-960ad1dfb5d3"/>
+  <id value="4593a8fd-3e6b-42c1-8ace-e984394ff69c"/>
   <meta>
-    <lastUpdated value="2021-06-17T15:28:45.548-04:00"/>
+    <lastUpdated value="2021-06-17T17:34:44.029-04:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/CBSAddressUseVS"/>
+    <resource>
+      <ValueSet>
+        <id value="CBSAddressUseVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cbs-temp-code-system.html">
+                <code>http://example.org/CodeSystem/cbs-temp-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-cbs-temp-code-system-At-Diagnosis"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis">At-Diagnosis</a>
+                </td>
+                <td>Address at Diagnosis of Condition of Interest</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-cbs-temp-code-system-Usual-Residence"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence">Usual-Residence</a>
+                </td>
+                <td>Address of Usual Residence</td>
+                <td>Subject&#39;s location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), &#39;Country of Usual Residence&#39;. The meaning of &#39;usual residence&#39; is defined as per surveillance programs.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/CBSAddressUseVS"/>
+        <version value="0.1.0"/>
+        <name value="CBSAddressUseVS"/>
+        <title value="Additional codes for Address.use."/>
+        <status value="active"/>
+        <date value="2021-06-17T17:34:44-04:00"/>
+        <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
+        <expansion>
+          <identifier value="urn:uuid:0b96b6e2-fc41-4bf8-a05e-59ced6d2a6a6"/>
+          <timestamp value="2021-06-17T17:34:55-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/CodeSystem/cbs-temp-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/cbs-temp-code-system"/>
+            <code value="At-Diagnosis"/>
+            <display value="Address at Diagnosis of Condition of Interest"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/cbs-temp-code-system"/>
+            <code value="Usual-Residence"/>
+            <display value="Address of Usual Residence"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>
