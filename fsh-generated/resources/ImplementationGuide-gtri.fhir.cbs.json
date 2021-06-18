@@ -13,14 +13,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-patient"
-        },
-        "name": "Case Based Surveillance Patient Profile",
-        "description": "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-condition"
         },
         "name": "Case-Based Surveillance Condition Profile",
@@ -33,6 +25,14 @@
         },
         "name": "Case-Based Surveillance Exposure Observation Profile",
         "description": "Profile definition for the case-based surveillance exposure observation resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-patient"
+        },
+        "name": "Case Based Surveillance Patient Profile",
+        "description": "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.",
         "exampleBoolean": false
       },
       {
