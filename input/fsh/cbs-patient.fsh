@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillancePatient
 Parent: Patient
 Id: cbs-patient
 Title: "Case Based Surveillance Patient Profile"
-Description: "Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information."
+Description: "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
@@ -27,7 +27,19 @@ Description: "Defines constraints and extensions on the patient resource for the
 * gender from AdministrativeGender (required)
 * birthDate 0..1 MS
 * birthDate only date
-// * address 0..* MS
+* address 0..* MS
+// Add MS for needed elements.
+// Add census tract extension option.
+* address ^slicing.discriminator.type = #value
+* address ^slicing.discriminator.path = "use"
+* address ^slicing.rules = #open
+* address contains
+    Usual-Residence 0..1 MS and
+    Address-at-Diagnosis 0..1 MS
+* address[Usual-Residence].use = #Usual-Residence
+* address[Usual-Residence].use from CBSAddressUseVS
+* address[Address-at-Diagnosis].use = #Address-at-Diagnosis
+* address[Address-at-Diagnosis].use from CBSAddressUseVS
 // * address.line 0..* MS
 // * address.city 0..1 MS
 // * address.state 0..1 MS
@@ -35,3 +47,4 @@ Description: "Defines constraints and extensions on the patient resource for the
 // * address.postalCode ^short = "US Zip Codes"
 // * address.postalCode ^alias = "Zip Code"
 // * address.period 0..1 MS
+

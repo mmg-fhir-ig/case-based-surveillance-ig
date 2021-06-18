@@ -1,8 +1,13 @@
-Profile: cbs-condition
+Profile: CaseBasedSurveillanceCondition
 Parent: Condition
 Id: cbs-condition
 Title: "Case-Based Surveillance Condition Profile"
 Description: "Profile definition for the case-based surveillance condition resource."
+* ^version = "0.1.0"
+* ^experimental = true
+* ^date = "2021-01-01"
+* ^publisher = "Georgia Tech Research Institute"
+* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * identifier 0..*
 * clinicalStatus 0..1
 * verificationStatus 0..1

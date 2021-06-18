@@ -120,6 +120,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#2">Structures: Extension Definitions</a>
       </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
    </ul>
 </div>
 <div>
@@ -135,14 +141,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-cbs-patient.html" title="StructureDefinition/cbs-patient">Case Based Surveillance Patient Profile</a>
-               </td>
-               <td>
-<p>Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-cbs-condition.html" title="StructureDefinition/cbs-condition">Case-Based Surveillance Condition Profile</a>
                </td>
                <td>
@@ -155,6 +153,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Profile definition for the case-based surveillance exposure observation resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-patient.html" title="StructureDefinition/cbs-patient">Case Based Surveillance Patient Profile</a>
+               </td>
+               <td>
+<p>Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required.</p>
 </td>
             </tr>
          </tbody>
@@ -188,6 +194,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CBSAddressUseVS.html" title="ValueSet/CBSAddressUseVS">Additional codes for Address.use.</a>
+               </td>
+               <td>
+<p>Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cbs-temp-code-system.html" title="CodeSystem/cbs-temp-code-system">Case Based Surveillance temporary/placeholder code system.</a>
+               </td>
+               <td>
+<p>Code system defined as placeholders for items that are not defined in existing systems.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
 </div>
 
 </div>
@@ -211,8 +257,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="67b6be39-accd-44ef-ac6e-42401f8fa6eb">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 17, 2021 15:28-0400">2021-06-17</span>
+        <p><a name="966be5ba-b5cf-491a-ad57-cd972e95095c">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 18, 2021 12:03-0400">2021-06-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

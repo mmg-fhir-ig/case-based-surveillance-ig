@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="CBSIG"/>
   <status value="draft"/>
-  <date value="2021-06-17T15:28:45-04:00"/>
+  <date value="2021-06-18T12:03:40-04:00"/>
   <packageId value="gtri.fhir.cbs"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -171,17 +171,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-patient"/>
-      </reference>
-      <name value="Case Based Surveillance Patient Profile"/>
-      <description value="Defines constraints and extensions on the patient resource for the minimal set of data to query and retrieve patient demographic information."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/cbs-condition"/>
       </reference>
       <name value="Case-Based Surveillance Condition Profile"/>
@@ -197,6 +186,17 @@
       </reference>
       <name value="Case-Based Surveillance Exposure Observation Profile"/>
       <description value="Profile definition for the case-based surveillance exposure observation resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-patient"/>
+      </reference>
+      <name value="Case Based Surveillance Patient Profile"/>
+      <description value="Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -219,6 +219,28 @@
       </reference>
       <name value="Case Based Surveillance Race Extension"/>
       <description value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CBSAddressUseVS"/>
+      </reference>
+      <name value="Additional codes for Address.use."/>
+      <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cbs-temp-code-system"/>
+      </reference>
+      <name value="Case Based Surveillance temporary/placeholder code system."/>
+      <description value="Code system defined as placeholders for items that are not defined in existing systems."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

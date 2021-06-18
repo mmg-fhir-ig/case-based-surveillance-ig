@@ -7,7 +7,6 @@ Description: "Concepts classifying the person into a named category of humans sh
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 
-
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^purpose = "Complies with 2015 Edition Common Clinical Data Set for patient race."
 * ^context.type = #element
