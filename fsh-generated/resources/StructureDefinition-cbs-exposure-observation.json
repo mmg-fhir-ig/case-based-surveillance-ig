@@ -147,36 +147,148 @@
         }
       },
       {
-        "id": "Observation.component:imported-country",
+        "id": "Observation.component:Country-of-Exposure",
         "path": "Observation.component",
-        "sliceName": "imported-country",
+        "sliceName": "Country-of-Exposure",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:imported-state",
+        "id": "Observation.component:Country-of-Exposure.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77984-3",
+              "system": "http://loinc.org/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Country-of-Exposure.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8628EEFE-2F6A-4BC1-BBEB-609153F92CF7",
+          "description": "PHIN VADS Country Codes"
+        }
+      },
+      {
+        "id": "Observation.component:State-or-Province-of-Exposure",
         "path": "Observation.component",
-        "sliceName": "imported-state",
+        "sliceName": "State-or-Province-of-Exposure",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
+<<<<<<< HEAD
         "id": "Observation.component:imported-city",
+=======
+        "id": "Observation.component:State-or-Province-of-Exposure.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77985-0",
+              "system": "http://loinc.org/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:State-or-Province-of-Exposure.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.830"
+        }
+      },
+      {
+        "id": "Observation.component:City-of-Exposure",
+>>>>>>> 882c05c777ba9958bfb95b9ca4a5d13297c99cb1
         "path": "Observation.component",
-        "sliceName": "imported-city",
+        "sliceName": "City-of-Exposure",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
+<<<<<<< HEAD
         "id": "Observation.component:imported-county",
+=======
+        "id": "Observation.component:City-of-Exposure.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77986-8",
+              "system": "http://loinc.org/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:City-of-Exposure.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.973"
+        }
+      },
+      {
+        "id": "Observation.component:County-of-Exposure",
+>>>>>>> 882c05c777ba9958bfb95b9ca4a5d13297c99cb1
         "path": "Observation.component",
-        "sliceName": "imported-county",
+        "sliceName": "County-of-Exposure",
         "min": 0,
         "max": "1",
         "mustSupport": true
+<<<<<<< HEAD
+=======
+      },
+      {
+        "id": "Observation.component:County-of-Exposure.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77987-6",
+              "system": "http://loinc.org/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:County-of-Exposure.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.829"
+        }
+>>>>>>> 882c05c777ba9958bfb95b9ca4a5d13297c99cb1
       }
     ]
   }
