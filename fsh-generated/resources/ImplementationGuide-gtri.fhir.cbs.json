@@ -1,0 +1,94 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "gtri.fhir.cbs",
+  "url": "http://example.org/ImplementationGuide/gtri.fhir.cbs",
+  "version": "0.1.0",
+  "name": "CBSIG",
+  "status": "draft",
+  "packageId": "gtri.fhir.cbs",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-condition"
+        },
+        "name": "Case-Based Surveillance Condition Profile",
+        "description": "Profile definition for the case-based surveillance condition resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-exposure-observation"
+        },
+        "name": "Case-Based Surveillance Exposure Observation Profile",
+        "description": "Profile definition for the case-based surveillance exposure observation resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-patient"
+        },
+        "name": "Case Based Surveillance Patient Profile",
+        "description": "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-birthsex"
+        },
+        "name": "Case Based Surveillance Birth Sex Extension",
+        "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-race"
+        },
+        "name": "Case Based Surveillance Race Extension",
+        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSAddressUseVS"
+        },
+        "name": "Additional codes for Address.use.",
+        "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cbs-temp-code-system"
+        },
+        "name": "Case Based Surveillance temporary/placeholder code system.",
+        "description": "Code system defined as placeholders for items that are not defined in existing systems.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

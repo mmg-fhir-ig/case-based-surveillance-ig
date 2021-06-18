@@ -189,9 +189,6 @@
         "mustSupport": true
       },
       {
-<<<<<<< HEAD
-        "id": "Observation.component:imported-city",
-=======
         "id": "Observation.component:State-or-Province-of-Exposure.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
@@ -218,7 +215,6 @@
       },
       {
         "id": "Observation.component:City-of-Exposure",
->>>>>>> 882c05c777ba9958bfb95b9ca4a5d13297c99cb1
         "path": "Observation.component",
         "sliceName": "City-of-Exposure",
         "min": 0,
@@ -226,9 +222,6 @@
         "mustSupport": true
       },
       {
-<<<<<<< HEAD
-        "id": "Observation.component:imported-county",
-=======
         "id": "Observation.component:City-of-Exposure.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
@@ -255,14 +248,11 @@
       },
       {
         "id": "Observation.component:County-of-Exposure",
->>>>>>> 882c05c777ba9958bfb95b9ca4a5d13297c99cb1
         "path": "Observation.component",
         "sliceName": "County-of-Exposure",
         "min": 0,
         "max": "1",
         "mustSupport": true
-<<<<<<< HEAD
-=======
       },
       {
         "id": "Observation.component:County-of-Exposure.code",
@@ -288,7 +278,6 @@
           "strength": "required",
           "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.829"
         }
->>>>>>> 882c05c777ba9958bfb95b9ca4a5d13297c99cb1
       }
     ]
   }
