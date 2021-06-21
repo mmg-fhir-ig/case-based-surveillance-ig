@@ -1,13 +1,17 @@
 Profile: CaseBasedSurveillanceCondition
 Parent: Condition
 Id: cbs-condition
-Title: "Case-Based Surveillance Condition of Interest Profile"
-Description: "Profile definition for the case-based surveillance condition of interest resource."
+Title: "Case Based Surveillance Condition of Interest Profile"
+Description: "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
+* extension contains
+    cbs-died-of-condition named death 0..1 MS and
+    cbs-diagnosis-date named diagnosis-date 0..1 MS and
+    cbs-case-class-status named case-class-status 0..1 MS
 * identifier 0..*
 * clinicalStatus 0..1
 * verificationStatus 0..1
@@ -18,13 +22,13 @@ Description: "Profile definition for the case-based surveillance condition of in
 * code from $notifiable-event-code-list
 * bodySite 0..* MS
 * bodySite only CodeableConcept
-* bodySite from $clinician-observed-lesions
+* bodySite from $cdc-body-site (extensible)
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
 * encounter 0..1
 * onsetDateTime 0..1 MS
 * abatementDateTime 0..1 MS
-* recordedDate 0..1
+* recordedDate 0..1 MS 
 * recorder 0..1
 * asserter 0..1
 * stage 0..*

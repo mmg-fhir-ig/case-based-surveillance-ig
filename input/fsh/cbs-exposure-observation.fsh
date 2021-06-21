@@ -1,8 +1,8 @@
 Profile: CaseBasedSurveillanceExposureObservation
 Parent: Observation
 Id: cbs-exposure-observation
-Title: "Case-Based Surveillance Exposure Observation Profile"
-Description: "Profile definition for the case-based surveillance exposure observation resource."
+Title: "Case Based Surveillance Exposure Observation Profile"
+Description: "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

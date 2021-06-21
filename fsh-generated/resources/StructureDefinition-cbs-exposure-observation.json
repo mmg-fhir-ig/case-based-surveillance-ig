@@ -14,7 +14,7 @@
   "url": "http://example.org/StructureDefinition/cbs-exposure-observation",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceExposureObservation",
-  "title": "Case-Based Surveillance Exposure Observation Profile",
+  "title": "Case Based Surveillance Exposure Observation Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",

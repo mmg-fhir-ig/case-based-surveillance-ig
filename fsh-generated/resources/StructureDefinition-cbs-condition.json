@@ -14,7 +14,7 @@
   "url": "http://example.org/StructureDefinition/cbs-condition",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceCondition",
-  "title": "Case-Based Surveillance Condition of Interest Profile",
+  "title": "Case Based Surveillance Condition of Interest Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
@@ -72,6 +72,68 @@
   "differential": {
     "element": [
       {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.extension:death",
+        "path": "Condition.extension",
+        "sliceName": "death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/cbs-died-of-condition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:diagnosis-date",
+        "path": "Condition.extension",
+        "sliceName": "diagnosis-date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/cbs-diagnosis-date"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:case-class-status",
+        "path": "Condition.extension",
+        "sliceName": "case-class-status",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/cbs-case-class-status"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Condition.code",
         "path": "Condition.code",
         "mustSupport": true,
@@ -85,8 +147,8 @@
         "path": "Condition.bodySite",
         "mustSupport": true,
         "binding": {
-          "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7195"
+          "strength": "extensible",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967"
         }
       },
       {
@@ -124,6 +186,11 @@
             "code": "dateTime"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
         "mustSupport": true
       },
       {
