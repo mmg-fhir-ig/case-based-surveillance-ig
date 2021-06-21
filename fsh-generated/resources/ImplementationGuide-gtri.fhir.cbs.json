@@ -9,14 +9,22 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "packageId": "us.cdc.phinvads",
+      "uri": "http://fhir.org/packages/us.cdc.phinvads",
+      "version": "0.7.0",
+      "id": "us_cdc_phinvads"
+    }
+  ],
   "definition": {
     "resource": [
       {
         "reference": {
           "reference": "StructureDefinition/cbs-condition"
         },
-        "name": "Case-Based Surveillance Condition Profile",
-        "description": "Profile definition for the case-based surveillance condition resource.",
+        "name": "Case-Based Surveillance Condition of Interest Profile",
+        "description": "Profile definition for the case-based surveillance condition of interest resource.",
         "exampleBoolean": false
       },
       {

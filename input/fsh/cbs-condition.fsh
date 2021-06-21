@@ -1,8 +1,8 @@
 Profile: CaseBasedSurveillanceCondition
 Parent: Condition
 Id: cbs-condition
-Title: "Case-Based Surveillance Condition Profile"
-Description: "Profile definition for the case-based surveillance condition resource."
+Title: "Case-Based Surveillance Condition of Interest Profile"
+Description: "Profile definition for the case-based surveillance condition of interest resource."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
@@ -28,5 +28,6 @@ Description: "Profile definition for the case-based surveillance condition resou
 * recorder 0..1
 * asserter 0..1
 * stage 0..*
-* evidence 0..*
+* evidence 0..* MS
+* evidence ^short = "Signs and Symptoms of the Condition of Interest"
 * note 0..*

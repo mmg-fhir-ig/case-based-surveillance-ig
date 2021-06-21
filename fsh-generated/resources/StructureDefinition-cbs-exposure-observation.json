@@ -176,7 +176,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8628EEFE-2F6A-4BC1-BBEB-609153F92CF7",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828",
           "description": "PHIN VADS Country Codes"
         }
       },

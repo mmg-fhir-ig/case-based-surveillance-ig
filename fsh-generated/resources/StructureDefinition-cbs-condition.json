@@ -14,12 +14,12 @@
   "url": "http://example.org/StructureDefinition/cbs-condition",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceCondition",
-  "title": "Case-Based Surveillance Condition Profile",
+  "title": "Case-Based Surveillance Condition of Interest Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Profile definition for the case-based surveillance condition resource.",
+  "description": "Profile definition for the case-based surveillance condition of interest resource.",
   "jurisdiction": [
     {
       "coding": [
@@ -124,6 +124,12 @@
             "code": "dateTime"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.evidence",
+        "path": "Condition.evidence",
+        "short": "Signs and Symptoms of the Condition of Interest",
         "mustSupport": true
       }
     ]
