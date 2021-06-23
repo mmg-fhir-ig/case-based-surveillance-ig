@@ -10,6 +10,13 @@ version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
+dependencies: 
+  us.cdc.phinvads:
+    uri: http://fhir.org/packages/us.cdc.phinvads
+    version: 0.7.0
+  hl7.fhir.us.core:
+    version: current
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

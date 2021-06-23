@@ -9,21 +9,43 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "packageId": "us.cdc.phinvads",
+      "uri": "http://fhir.org/packages/us.cdc.phinvads",
+      "version": "0.7.0",
+      "id": "us_cdc_phinvads"
+    },
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    }
+  ],
   "definition": {
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-composition"
+        },
+        "name": "Case Based Surveillance Composition Profile",
+        "description": "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-condition"
         },
-        "name": "Case-Based Surveillance Condition Profile",
-        "description": "Profile definition for the case-based surveillance condition resource.",
+        "name": "Case Based Surveillance Condition of Interest Profile",
+        "description": "Profile definition for the case-based surveillance condition of interest resource.",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/cbs-exposure-observation"
         },
-        "name": "Case-Based Surveillance Exposure Observation Profile",
+        "name": "Case Based Surveillance Exposure Observation Profile",
         "description": "Profile definition for the case-based surveillance exposure observation resource.",
         "exampleBoolean": false
       },
@@ -41,6 +63,30 @@
         },
         "name": "Case Based Surveillance Birth Sex Extension",
         "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-case-class-status"
+        },
+        "name": "Case Based Surveillance Case Class Status",
+        "description": "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-diagnosis-date"
+        },
+        "name": "Case Based Surveillance Diagnosis Date Extension",
+        "description": "A dateTime indicating when the condition of interest was diagnosed.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-died-of-condition"
+        },
+        "name": "Case Based Surveillance Death Due to Condition Extension",
+        "description": "A code classifying whether the subject died due to the reported condition of interest.",
         "exampleBoolean": false
       },
       {
