@@ -5,6 +5,9 @@ Alias: $cbs-race = http://example.org
 //Alias: $cbs-ethnicity = http://example.org
 Alias: $cbs-birthsex = http://example.org
 
+// Extensions
+Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.html
+
 // Author/MetaData
 //Alias: $publisher = "Georgia Tech Research Institute"
 
