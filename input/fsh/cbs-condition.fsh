@@ -11,13 +11,13 @@ Description: "Defines constraints and extensions to the condition resource in or
 * extension contains
     cbs-died-of-condition named death 0..1 MS and
     cbs-diagnosis-date named diagnosis-date 0..1 MS and
-    cbs-case-class-status named case-class-status 0..1 MS
+    cbs-case-class-status named case-class-status 1..1 MS
 * identifier 0..*
 * clinicalStatus 0..1
 * verificationStatus 0..1
 * category 0..*
 * severity 0..1
-* code 0..1 MS
+* code 1..1 MS
 * code only CodeableConcept
 * code from $notifiable-event-code-list
 * bodySite 0..* MS
