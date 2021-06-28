@@ -4,7 +4,7 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://example.org/StructureDefinition/cbs-birthsex",
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex",
       "title": "Case Based Surveillance Birth Sex Extension",
       "types": [
         "CodeableConcept",
@@ -12,7 +12,89 @@
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/cbs-race",
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status",
+      "title": "Case Based Surveillance Case Class Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date",
+      "title": "Case Based Surveillance Diagnosis Date Extension",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition",
+      "title": "Case Based Surveillance Death Due to Condition Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity",
+      "title": "Case Based Surveillance Ethnicity Extension",
+      "types": [
+        "Coding",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race",
       "title": "Case Based Surveillance Race Extension",
       "types": [
         "Coding",
@@ -75,30 +157,48 @@
     }
   ],
   "profiles": {
+    "Composition": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-composition",
+        "title": "Case Based Surveillance Composition Profile"
+      }
+    ],
     "Condition": [
       {
-        "url": "http://example.org/StructureDefinition/cbs-condition",
-        "title": "Case-Based Surveillance Condition Profile"
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-condition",
+        "title": "Case Based Surveillance Condition of Interest Profile"
       }
     ],
     "Observation": [
       {
-        "url": "http://example.org/StructureDefinition/cbs-exposure-observation",
-        "title": "Case-Based Surveillance Exposure Observation Profile"
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation",
+        "title": "Case Based Surveillance Exposure Observation Profile"
       }
     ],
     "Patient": [
       {
-        "url": "http://example.org/StructureDefinition/cbs-patient",
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient",
         "title": "Case Based Surveillance Patient Profile"
       }
     ]
   },
   "usage": {
-    "http://example.org/StructureDefinition/cbs-birthsex": [
+    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex": [
       "Patient"
     ],
-    "http://example.org/StructureDefinition/cbs-race": [
+    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status": [
+      "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date": [
+      "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition": [
+      "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity": [
+      "Patient"
+    ],
+    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -115,6 +215,15 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

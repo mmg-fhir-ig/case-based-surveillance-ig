@@ -1,29 +1,29 @@
 {
   "resourceType" : "Bundle",
-  "id" : "baac53f1-7688-42d7-9d5a-782802e00184",
+  "id" : "31beb942-7274-4673-9192-4609dcbbf346",
   "meta" : {
-    "lastUpdated" : "2021-06-18T12:03:40.057-04:00"
+    "lastUpdated" : "2021-06-28T14:00:33.085-04:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://example.org/ValueSet/CBSAddressUseVS",
+    "fullUrl" : "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "CBSAddressUseVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://example.org/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-cbs-temp-code-system-At-Diagnosis\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis\">At-Diagnosis</a></td><td>Address at Diagnosis of Condition of Interest</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-cbs-temp-code-system-Usual-Residence\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence\">Usual-Residence</a></td><td>Address of Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-output-CodeSystem-cbs-temp-code-system-At-Diagnosis\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis\">At-Diagnosis</a></td><td>Address at Diagnosis of Condition of Interest</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-output-CodeSystem-cbs-temp-code-system-Usual-Residence\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence\">Usual-Residence</a></td><td>Address of Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr></table></div>"
       },
-      "url" : "http://example.org/ValueSet/CBSAddressUseVS",
+      "url" : "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS",
       "version" : "0.1.0",
       "name" : "CBSAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
-      "date" : "2021-06-18T12:03:40-04:00",
+      "date" : "2021-06-28T14:00:33-04:00",
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
-        "identifier" : "urn:uuid:9ec656c7-1b62-4d2a-bbb3-b4353ee045bb",
-        "timestamp" : "2021-06-18T12:03:51-04:00",
+        "identifier" : "urn:uuid:3b504ea2-f203-4ac5-8143-ab15716bff5c",
+        "timestamp" : "2021-06-28T14:01:10-04:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -31,15 +31,15 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://example.org/CodeSystem/cbs-temp-code-system|0.1.0"
+          "valueUri" : "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://example.org/CodeSystem/cbs-temp-code-system",
+          "system" : "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
           "code" : "At-Diagnosis",
           "display" : "Address at Diagnosis of Condition of Interest"
         },
         {
-          "system" : "http://example.org/CodeSystem/cbs-temp-code-system",
+          "system" : "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
           "code" : "Usual-Residence",
           "display" : "Address of Usual Residence"
         }]

@@ -12,8 +12,9 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * . ^mustSupport = false
 * extension contains
     cbs-race named race 0..1 MS and
-    //$cbs-ethnicity named ethnicity 0..1 MS and
-    cbs-birthsex named birthsex 0..1 MS
+    cbs-ethnicity named ethnicity 0..1 MS and
+    cbs-birthsex named birthsex 0..1 MS and
+    $HL7-genderIdentity named genderidentity 0..1 MS
 * identifier 1..* MS
 * identifier only Identifier
 * identifier.system 1..1 MS
@@ -36,10 +37,14 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * address contains
     Usual-Residence 0..1 MS and
     Address-at-Diagnosis 0..1 MS
+* address.line.extension contains
+    $HL7-censusTract named censusTract 0..1 MS
 * address[Usual-Residence].use = #Usual-Residence
 * address[Usual-Residence].use from CBSAddressUseVS
 * address[Address-at-Diagnosis].use = #Address-at-Diagnosis
 * address[Address-at-Diagnosis].use from CBSAddressUseVS
+//* address.line.extension contains
+    
 // * address.line 0..* MS
 // * address.city 0..1 MS
 // * address.state 0..1 MS

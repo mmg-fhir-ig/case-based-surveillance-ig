@@ -3,17 +3,43 @@
   "id": "gtri.fhir.cbs",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/gtri.fhir.cbs</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs</pre></div>"
   },
-  "url": "http://example.org/ImplementationGuide/gtri.fhir.cbs",
+  "url": "http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs",
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-  "date": "2021-06-18T12:03:40-04:00",
+  "date": "2021-06-28T14:00:33-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "us_cdc_phinvads",
+      "uri": "http://fhir.org/packages/us.cdc.phinvads",
+      "packageId": "us.cdc.phinvads",
+      "version": "0.7.0"
+    },
+    {
+      "id": "hl7_fhir_us_core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "current"
+    },
+    {
+      "id": "hl7_fhir_us_ecr",
+      "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
+      "packageId": "hl7.fhir.us.ecr",
+      "version": "current"
+    },
+    {
+      "id": "hl7_fhir_us_odh",
+      "uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+      "packageId": "hl7.fhir.us.odh",
+      "version": "current"
+    }
   ],
   "definition": {
     "extension": [
@@ -129,7 +155,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://example.org/history.html"
+            "valueString": "http://cbsig.chai.gatech.edu/output/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -274,10 +300,24 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-composition"
+        },
+        "name": "Case Based Surveillance Composition Profile",
+        "description": "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-condition"
         },
-        "name": "Case-Based Surveillance Condition Profile",
-        "description": "Profile definition for the case-based surveillance condition resource.",
+        "name": "Case Based Surveillance Condition of Interest Profile",
+        "description": "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
         "exampleBoolean": false
       },
       {
@@ -290,8 +330,8 @@
         "reference": {
           "reference": "StructureDefinition/cbs-exposure-observation"
         },
-        "name": "Case-Based Surveillance Exposure Observation Profile",
-        "description": "Profile definition for the case-based surveillance exposure observation resource.",
+        "name": "Case Based Surveillance Exposure Observation Profile",
+        "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
         "exampleBoolean": false
       },
       {
@@ -320,6 +360,62 @@
         },
         "name": "Case Based Surveillance Birth Sex Extension",
         "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-case-class-status"
+        },
+        "name": "Case Based Surveillance Case Class Status",
+        "description": "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-diagnosis-date"
+        },
+        "name": "Case Based Surveillance Diagnosis Date Extension",
+        "description": "A dateTime indicating when the condition of interest was diagnosed.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-died-of-condition"
+        },
+        "name": "Case Based Surveillance Death Due to Condition Extension",
+        "description": "A code classifying whether the subject died due to the reported condition of interest.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-ethnicity"
+        },
+        "name": "Case Based Surveillance Ethnicity Extension",
+        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging.",
         "exampleBoolean": false
       },
       {

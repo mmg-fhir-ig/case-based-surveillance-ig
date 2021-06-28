@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://example.org/StructureDefinition/cbs-patient",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient",
   "version": "0.1.0",
   "name": "CaseBasedSurveillancePatient",
   "title": "Case Based Surveillance Patient Profile",
@@ -96,7 +96,23 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/cbs-race"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:ethnicity",
+        "path": "Patient.extension",
+        "sliceName": "ethnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity"
             ]
           }
         ],
@@ -112,7 +128,23 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/cbs-birthsex"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:genderidentity",
+        "path": "Patient.extension",
+        "sliceName": "genderidentity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity"
             ]
           }
         ],
@@ -171,6 +203,36 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address.line.extension",
+        "path": "Patient.address.line.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.address.line.extension:censusTract",
+        "path": "Patient.address.line.extension",
+        "sliceName": "censusTract",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.address:Usual-Residence",
         "path": "Patient.address",
         "sliceName": "Usual-Residence",
@@ -185,7 +247,7 @@
         "patternCode": "Usual-Residence",
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/ValueSet/CBSAddressUseVS"
+          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
         }
       },
       {
@@ -203,7 +265,7 @@
         "patternCode": "Address-at-Diagnosis",
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/ValueSet/CBSAddressUseVS"
+          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
         }
       }
     ]

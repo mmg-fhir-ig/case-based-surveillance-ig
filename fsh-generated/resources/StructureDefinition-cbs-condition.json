@@ -11,15 +11,15 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://example.org/StructureDefinition/cbs-condition",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-condition",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceCondition",
-  "title": "Case-Based Surveillance Condition of Interest Profile",
+  "title": "Case Based Surveillance Condition of Interest Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Profile definition for the case-based surveillance condition of interest resource.",
+  "description": "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
   "jurisdiction": [
     {
       "coding": [
@@ -72,8 +72,72 @@
   "differential": {
     "element": [
       {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Condition.extension:death",
+        "path": "Condition.extension",
+        "sliceName": "death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:diagnosis-date",
+        "path": "Condition.extension",
+        "sliceName": "diagnosis-date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:case-class-status",
+        "path": "Condition.extension",
+        "sliceName": "case-class-status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Condition.code",
         "path": "Condition.code",
+        "min": 1,
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -85,8 +149,8 @@
         "path": "Condition.bodySite",
         "mustSupport": true,
         "binding": {
-          "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7195"
+          "strength": "extensible",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967"
         }
       },
       {
@@ -96,7 +160,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
             ]
           }
         ],
@@ -124,6 +188,11 @@
             "code": "dateTime"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
         "mustSupport": true
       },
       {

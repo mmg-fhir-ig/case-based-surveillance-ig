@@ -7,7 +7,7 @@
   "title": "Case Based Surveillance temporary/placeholder code system.",
   "description": "Code system defined as placeholders for items that are not defined in existing systems.",
   "version": "0.1.0",
-  "url": "http://example.org/CodeSystem/cbs-temp-code-system",
+  "url": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
   "concept": [
     {
       "code": "Usual-Residence",
@@ -18,7 +18,12 @@
       "code": "Address-at-Diagnosis",
       "display": "Address at time of Diagnosis",
       "definition": "Subject's address at the time of the diagnosis for the condition of interest."
+    },
+    {
+      "code": "Location-of-Exposure",
+      "display": "Location of Exposure",
+      "definition": "Location of exposure. (City, County, State/Province, Country)"
     }
   ],
-  "count": 2
+  "count": 3
 }

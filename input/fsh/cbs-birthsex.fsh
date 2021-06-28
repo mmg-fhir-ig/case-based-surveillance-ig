@@ -18,3 +18,4 @@ Description: "A code classifying the person's sex assigned at birth."
 * valueCodeableConcept only CodeableConcept
 * valueCodeableConcept from $PHVS-Sex-MFU (required)
 * valueCodeableConcept ^binding.description = "Code for sex assigned at birth"
+* url 1..1

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="baac53f1-7688-42d7-9d5a-782802e00184"/>
+  <id value="31beb942-7274-4673-9192-4609dcbbf346"/>
   <meta>
-    <lastUpdated value="2021-06-18T12:03:40.057-04:00"/>
+    <lastUpdated value="2021-06-28T14:00:33.085-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/CBSAddressUseVS"/>
+    <fullUrl value="http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"/>
     <resource>
       <ValueSet>
         <id value="CBSAddressUseVS"/>
@@ -20,7 +20,7 @@
             </p>
             <p>All codes from system 
               <a href="CodeSystem-cbs-temp-code-system.html">
-                <code>http://example.org/CodeSystem/cbs-temp-code-system</code>
+                <code>http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system</code>
               </a>
             </p>
             <table class="codes">
@@ -37,7 +37,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---example.org-CodeSystem-cbs-temp-code-system-At-Diagnosis"> </a>
+                  <a name="http---cbsig.chai.gatech.edu-output-CodeSystem-cbs-temp-code-system-At-Diagnosis"> </a>
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis">At-Diagnosis</a>
                 </td>
                 <td>Address at Diagnosis of Condition of Interest</td>
@@ -45,7 +45,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---example.org-CodeSystem-cbs-temp-code-system-Usual-Residence"> </a>
+                  <a name="http---cbsig.chai.gatech.edu-output-CodeSystem-cbs-temp-code-system-Usual-Residence"> </a>
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence">Usual-Residence</a>
                 </td>
                 <td>Address of Usual Residence</td>
@@ -54,16 +54,16 @@
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/CBSAddressUseVS"/>
+        <url value="http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"/>
         <version value="0.1.0"/>
         <name value="CBSAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-06-18T12:03:40-04:00"/>
+        <date value="2021-06-28T14:00:33-04:00"/>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:9ec656c7-1b62-4d2a-bbb3-b4353ee045bb"/>
-          <timestamp value="2021-06-18T12:03:51-04:00"/>
+          <identifier value="urn:uuid:3b504ea2-f203-4ac5-8143-ab15716bff5c"/>
+          <timestamp value="2021-06-28T14:01:10-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -71,15 +71,15 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://example.org/CodeSystem/cbs-temp-code-system|0.1.0"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/cbs-temp-code-system"/>
+            <system value="http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system"/>
             <code value="At-Diagnosis"/>
             <display value="Address at Diagnosis of Condition of Interest"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/cbs-temp-code-system"/>
+            <system value="http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system"/>
             <code value="Usual-Residence"/>
             <display value="Address of Usual Residence"/>
           </contains>

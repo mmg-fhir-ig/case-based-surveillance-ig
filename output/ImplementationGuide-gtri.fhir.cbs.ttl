@@ -5,23 +5,60 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/ImplementationGuide/gtri.fhir.cbs> a fhir:ImplementationGuide;
+<http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "gtri.fhir.cbs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/gtri.fhir.cbs</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://example.org/ImplementationGuide/gtri.fhir.cbs"];
+  fhir:ImplementationGuide.url [ fhir:value "http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-18T12:03:40-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-28T14:00:33-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "gtri.fhir.cbs"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "us_cdc_phinvads" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://fhir.org/packages/us.cdc.phinvads";
+       fhir:link <http://fhir.org/packages/us.cdc.phinvads>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "us.cdc.phinvads" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.7.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core";
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_ecr" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr";
+       fhir:link <http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.ecr" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_odh" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh";
+       fhir:link <http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.odh" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -129,7 +166,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://example.org/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://cbsig.chai.gatech.edu/output/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -261,11 +298,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/cbs-condition>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-condition" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-composition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-composition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case-Based Surveillance Condition Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile definition for the case-based surveillance condition resource." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Composition Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -275,11 +312,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/cbs-exposure-observation>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-exposure-observation" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-condition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case-Based Surveillance Exposure Observation Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile definition for the case-based surveillance exposure observation resource." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Condition of Interest Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -289,25 +326,25 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/cbs-patient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-patient" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-exposure-observation" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Patient Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Exposure Observation Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/cbs-birthsex>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-birthsex" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-patient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Birth Sex Extension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code classifying the person's sex assigned at birth." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -317,35 +354,105 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/cbs-race>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-race" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-birthsex" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Race Extension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Birth Sex Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code classifying the person's sex assigned at birth." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/ValueSet/CBSAddressUseVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/CBSAddressUseVS" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-case-class-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Additional codes for Address.use." ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Case Class Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-diagnosis-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Diagnosis Date Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A dateTime indicating when the condition of interest was diagnosed." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-died-of-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Death Due to Condition Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code classifying whether the subject died due to the reported condition of interest." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-ethnicity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Ethnicity Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-race" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Race Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CBSAddressUseVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Additional codes for Address.use." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/CodeSystem/cbs-temp-code-system>;
+         fhir:link <http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system>;
          fhir:Reference.reference [ fhir:value "CodeSystem/cbs-temp-code-system" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance temporary/placeholder code system." ];
@@ -428,7 +535,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/ImplementationGuide/gtri.fhir.cbs.ttl> a owl:Ontology;
+<http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

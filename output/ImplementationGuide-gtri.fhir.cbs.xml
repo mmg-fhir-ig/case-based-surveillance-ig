@@ -3,16 +3,36 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="gtri.fhir.cbs"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/gtri.fhir.cbs</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs</pre></div>
   </text>
-  <url value="http://example.org/ImplementationGuide/gtri.fhir.cbs"/>
+  <url value="http://cbsig.chai.gatech.edu/output/ImplementationGuide/gtri.fhir.cbs"/>
   <version value="0.1.0"/>
   <name value="CBSIG"/>
   <status value="draft"/>
-  <date value="2021-06-18T12:03:40-04:00"/>
+  <date value="2021-06-28T14:00:33-04:00"/>
   <packageId value="gtri.fhir.cbs"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="us_cdc_phinvads">
+    <uri value="http://fhir.org/packages/us.cdc.phinvads"/>
+    <packageId value="us.cdc.phinvads"/>
+    <version value="0.7.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_ecr">
+    <uri value="http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr"/>
+    <packageId value="hl7.fhir.us.ecr"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_odh">
+    <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
+    <packageId value="hl7.fhir.us.odh"/>
+    <version value="current"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -83,7 +103,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://example.org/history.html"/>
+        <valueString value="http://cbsig.chai.gatech.edu/output/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -171,10 +191,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-composition"/>
+      </reference>
+      <name value="Case Based Surveillance Composition Profile"/>
+      <description value="Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-condition"/>
       </reference>
-      <name value="Case-Based Surveillance Condition Profile"/>
-      <description value="Profile definition for the case-based surveillance condition resource."/>
+      <name value="Case Based Surveillance Condition of Interest Profile"/>
+      <description value="Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -184,8 +215,8 @@
       <reference>
         <reference value="StructureDefinition/cbs-exposure-observation"/>
       </reference>
-      <name value="Case-Based Surveillance Exposure Observation Profile"/>
-      <description value="Profile definition for the case-based surveillance exposure observation resource."/>
+      <name value="Case Based Surveillance Exposure Observation Profile"/>
+      <description value="Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -208,6 +239,50 @@
       </reference>
       <name value="Case Based Surveillance Birth Sex Extension"/>
       <description value="A code classifying the person&#39;s sex assigned at birth."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-case-class-status"/>
+      </reference>
+      <name value="Case Based Surveillance Case Class Status"/>
+      <description value="A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-diagnosis-date"/>
+      </reference>
+      <name value="Case Based Surveillance Diagnosis Date Extension"/>
+      <description value="A dateTime indicating when the condition of interest was diagnosed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-died-of-condition"/>
+      </reference>
+      <name value="Case Based Surveillance Death Due to Condition Extension"/>
+      <description value="A code classifying whether the subject died due to the reported condition of interest."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-ethnicity"/>
+      </reference>
+      <name value="Case Based Surveillance Ethnicity Extension"/>
+      <description value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
