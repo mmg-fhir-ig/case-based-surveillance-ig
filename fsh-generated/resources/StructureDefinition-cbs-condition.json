@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://example.org/StructureDefinition/cbs-condition",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-condition",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceCondition",
   "title": "Case Based Surveillance Condition of Interest Profile",
@@ -19,7 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Profile definition for the case-based surveillance condition of interest resource.",
+  "description": "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
   "jurisdiction": [
     {
       "coding": [
@@ -95,7 +95,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/cbs-died-of-condition"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition"
             ]
           }
         ],
@@ -111,7 +111,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/cbs-diagnosis-date"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date"
             ]
           }
         ],
@@ -127,7 +127,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/cbs-case-class-status"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status"
             ]
           }
         ],
@@ -158,7 +158,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
             ]
           }
         ],

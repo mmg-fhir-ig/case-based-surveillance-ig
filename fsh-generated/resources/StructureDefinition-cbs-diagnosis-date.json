@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cbs-diagnosis-date",
-  "url": "http://example.org/StructureDefinition/cbs-diagnosis-date",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date",
   "version": "0.1.0",
   "name": "CBSDiagnosisDateExtension",
   "title": "Case Based Surveillance Diagnosis Date Extension",
@@ -58,7 +58,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://example.org/StructureDefinition/cbs-diagnosis-date"
+        "fixedUri": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date"
       },
       {
         "id": "Extension.valueDateTime",

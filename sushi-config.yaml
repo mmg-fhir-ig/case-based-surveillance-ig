@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: gtri.fhir.cbs
-canonical: http://example.org
+canonical: http://cbsig.chai.gatech.edu/output
 name: CBSIG
 status: draft
 version: 0.1.0

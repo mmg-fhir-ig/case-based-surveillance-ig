@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cbs-race",
-  "url": "http://example.org/StructureDefinition/cbs-race",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race",
   "version": "0.1.0",
   "name": "CBSRaceExtension",
   "title": "Case Based Surveillance Race Extension",
@@ -205,7 +205,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://example.org/StructureDefinition/cbs-race"
+        "fixedUri": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
       },
       {
         "id": "Extension.value[x]",

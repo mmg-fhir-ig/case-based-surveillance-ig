@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://example.org/StructureDefinition/cbs-exposure-observation",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceExposureObservation",
   "title": "Case Based Surveillance Exposure Observation Profile",
@@ -19,7 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Profile definition for the case-based surveillance exposure observation resource.",
+  "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
   "jurisdiction": [
     {
       "coding": [
@@ -99,7 +99,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
             ]
           }
         ],
@@ -114,7 +114,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/cbs-condition"
+              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-condition"
             ]
           }
         ],

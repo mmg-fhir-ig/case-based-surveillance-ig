@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cbs-case-class-status",
-  "url": "http://example.org/StructureDefinition/cbs-case-class-status",
+  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status",
   "version": "0.1.0",
   "name": "CBSCaseClassStatusExtension",
   "title": "Case Based Surveillance Case Class Status",
@@ -58,7 +58,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://example.org/StructureDefinition/cbs-case-class-status"
+        "fixedUri": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status"
       },
       {
         "id": "Extension.valueCodeableConcept",
