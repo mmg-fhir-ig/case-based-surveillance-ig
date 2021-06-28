@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: gtri.fhir.cbs
-canonical: http://example.org
+canonical: http://cbsig.chai.gatech.edu/output
 name: CBSIG
 status: draft
 version: 0.1.0
@@ -15,6 +15,10 @@ dependencies:
     uri: http://fhir.org/packages/us.cdc.phinvads
     version: 0.7.0
   hl7.fhir.us.core:
+    version: current
+  hl7.fhir.us.ecr:
+    version: current
+  hl7.fhir.us.odh:
     version: current
 
 
