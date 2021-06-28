@@ -21,6 +21,18 @@
       "version": "current",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
+    },
+    {
+      "packageId": "hl7.fhir.us.ecr",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
+      "id": "hl7_fhir_us_ecr"
+    },
+    {
+      "packageId": "hl7.fhir.us.odh",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+      "id": "hl7_fhir_us_odh"
     }
   ],
   "definition": {

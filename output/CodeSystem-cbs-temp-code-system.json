@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cbs-temp-code-system",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Usual-Residence<a name=\"cbs-temp-code-system-Usual-Residence\"> </a></td><td>Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr><tr><td style=\"white-space:nowrap\">Address-at-Diagnosis<a name=\"cbs-temp-code-system-Address-at-Diagnosis\"> </a></td><td>Address at time of Diagnosis</td><td>Subject's address at the time of the diagnosis for the condition of interest.</td></tr><tr><td style=\"white-space:nowrap\">Location-of-Exposure<a name=\"cbs-temp-code-system-Location-of-Exposure\"> </a></td><td>Location of Exposure</td><td>Location of exposure. (City, County, State/Province, Country)</td></tr></table></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
+  "version": "0.1.0",
+  "name": "CBSTemporary",
+  "title": "Case Based Surveillance temporary/placeholder code system.",
+  "status": "active",
+  "date": "2021-06-28T14:00:33-04:00",
+  "description": "Code system defined as placeholders for items that are not defined in existing systems.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "Usual-Residence",
+      "display": "Usual Residence",
+      "definition": "Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs."
+    },
+    {
+      "code": "Address-at-Diagnosis",
+      "display": "Address at time of Diagnosis",
+      "definition": "Subject's address at the time of the diagnosis for the condition of interest."
+    },
+    {
+      "code": "Location-of-Exposure",
+      "display": "Location of Exposure",
+      "definition": "Location of exposure. (City, County, State/Province, Country)"
+    }
+  ]
+}
