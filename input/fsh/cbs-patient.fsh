@@ -8,13 +8,16 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* . ^definition = "The Case Based Surveillance Patient Profile is loosely based upon US Core Patient Profile, which is in turn based on the core FHIR Patient Resource. It is designed to meet the needs of US public health case based surveillance while maintaining as much alignment with US Core profiles as possible."
+* . ^definition = "The Case Based Surveillance Patient Profile is loosely based upon the US Core Patient Profile, which is in turn based on the core FHIR Patient Resource. It is designed to meet the needs of US public health case based surveillance while maintaining as much alignment with US Core profiles as possible."
 * . ^mustSupport = false
 * extension contains
     cbs-race named race 0..1 MS and
     cbs-ethnicity named ethnicity 0..1 MS and
     cbs-birthsex named birthsex 0..1 MS and
-    $HL7-genderIdentity named genderidentity 0..1 MS
+    $HL7-genderIdentity named genderidentity 0..1 MS and
+    $HL7-birthPlace named birthPlace 0..1 MS
+* extension[genderIdentity].value[x] only CodeableConcept
+* extension[genderIdentity].value[x] from $PHVS-GenderIdentity-STD (extensible)
 * identifier 1..* MS
 * identifier only Identifier
 * identifier.system 1..1 MS
@@ -28,9 +31,10 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * gender from AdministrativeGender (required)
 * birthDate 0..1 MS
 * birthDate only date
+* deceased[x] 0..1 MS
+
+// Address
 * address 0..* MS
-// Add MS for needed elements.
-// Add census tract extension option.
 * address ^slicing.discriminator.type = #value
 * address ^slicing.discriminator.path = "use"
 * address ^slicing.rules = #open
@@ -43,13 +47,13 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * address[Usual-Residence].use from CBSAddressUseVS
 * address[Address-at-Diagnosis].use = #Address-at-Diagnosis
 * address[Address-at-Diagnosis].use from CBSAddressUseVS
-//* address.line.extension contains
-    
-// * address.line 0..* MS
-// * address.city 0..1 MS
-// * address.state 0..1 MS
-// * address.postalCode 0..1 MS
-// * address.postalCode ^short = "US Zip Codes"
-// * address.postalCode ^alias = "Zip Code"
-// * address.period 0..1 MS
+* address.use 0..1 MS
+* address.line 0..* MS
+* address.country 0..1 MS
+* address.city 0..1 MS
+* address.state 0..1 MS
+* address.postalCode 0..1 MS
+* address.postalCode ^short = "US Zip Codes"
+* address.postalCode ^alias = "Zip Code"
+* address.period 0..1 MS
 
