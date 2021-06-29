@@ -69,7 +69,7 @@
       {
         "id": "Patient",
         "path": "Patient",
-        "definition": "The Case Based Surveillance Patient Profile is loosely based upon US Core Patient Profile, which is in turn based on the core FHIR Patient Resource. It is designed to meet the needs of US public health case based surveillance while maintaining as much alignment with US Core profiles as possible.",
+        "definition": "The Case Based Surveillance Patient Profile is loosely based upon the US Core Patient Profile, which is in turn based on the core FHIR Patient Resource. It is designed to meet the needs of US public health case based surveillance while maintaining as much alignment with US Core profiles as possible.",
         "mustSupport": false
       },
       {
@@ -151,6 +151,30 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.extension:genderidentity.value[x]",
+        "path": "Patient.extension.value[x]",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610"
+        }
+      },
+      {
+        "id": "Patient.extension:birthPlace",
+        "path": "Patient.extension",
+        "sliceName": "birthPlace",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "min": 1,
@@ -189,6 +213,11 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "mustSupport": true
+      },
+      {
         "id": "Patient.address",
         "path": "Patient.address",
         "slicing": {
@@ -200,6 +229,16 @@
           ],
           "rules": "open"
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.use",
+        "path": "Patient.address.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
         "mustSupport": true
       },
       {
@@ -233,6 +272,35 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address.city",
+        "path": "Patient.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.state",
+        "path": "Patient.address.state",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "US Zip Codes",
+        "alias": [
+          "Zip Code"
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.country",
+        "path": "Patient.address.country",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.period",
+        "path": "Patient.address.period",
+        "mustSupport": true
+      },
+      {
         "id": "Patient.address:Usual-Residence",
         "path": "Patient.address",
         "sliceName": "Usual-Residence",
@@ -245,10 +313,41 @@
         "path": "Patient.address.use",
         "min": 1,
         "patternCode": "Usual-Residence",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
         }
+      },
+      {
+        "id": "Patient.address:Usual-Residence.line",
+        "path": "Patient.address.line",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Usual-Residence.city",
+        "path": "Patient.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Usual-Residence.state",
+        "path": "Patient.address.state",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Usual-Residence.postalCode",
+        "path": "Patient.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Usual-Residence.country",
+        "path": "Patient.address.country",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Usual-Residence.period",
+        "path": "Patient.address.period",
+        "mustSupport": true
       },
       {
         "id": "Patient.address:Address-at-Diagnosis",
@@ -263,10 +362,41 @@
         "path": "Patient.address.use",
         "min": 1,
         "patternCode": "Address-at-Diagnosis",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
         }
+      },
+      {
+        "id": "Patient.address:Address-at-Diagnosis.line",
+        "path": "Patient.address.line",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Address-at-Diagnosis.city",
+        "path": "Patient.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Address-at-Diagnosis.state",
+        "path": "Patient.address.state",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Address-at-Diagnosis.postalCode",
+        "path": "Patient.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Address-at-Diagnosis.country",
+        "path": "Patient.address.country",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Address-at-Diagnosis.period",
+        "path": "Patient.address.period",
+        "mustSupport": true
       }
     ]
   }
