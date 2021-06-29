@@ -21,7 +21,6 @@
       ]
     }
   ],
-  "purpose": "Complies with 2015 Edition Common Clinical Data Set for patient race.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,7 +45,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "US Core Race Extension",
+        "short": "CBS Race Extension",
         "definition": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n   - American Indian or Alaska Native\n   - Asian\n   - Black or African American\n   - Native Hawaiian or Other Pacific Islander\n   - White.",
         "max": "1"
       },
@@ -59,7 +58,7 @@
         "id": "Extension.extension:ombCategory",
         "path": "Extension.extension",
         "sliceName": "ombCategory",
-        "short": "American Indian or Alaska Native|Asian|Black or African American|Native Hawaiian or Other Pacific Islander|White",
+        "short": "American Indian or Alaska Native|Asian|Black or African American|Native Hawaiian or Other Pacific Islander|White as well as null flavors",
         "definition": "The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).",
         "min": 0,
         "max": "5",
@@ -102,7 +101,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/core/ValueSet/omb-race-category",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205",
           "description": "The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."
         }
       },
@@ -155,6 +154,51 @@
           "valueSet": "http://hl7.org/fhir/us/core/ValueSet/detailed-race",
           "description": "The [900+ CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes."
         }
+      },
+      {
+        "id": "Extension.extension:otherRace",
+        "path": "Extension.extension",
+        "sliceName": "otherRace",
+        "short": "Other Race",
+        "definition": "Other race text provided for continuity with Generic v2.0 Message Mapping Guides.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:otherRace.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:otherRace.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "otherRace"
+      },
+      {
+        "id": "Extension.extension:otherRace.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:otherRace.valueString",
+        "path": "Extension.extension.valueString",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       },
       {
         "id": "Extension.extension:text",

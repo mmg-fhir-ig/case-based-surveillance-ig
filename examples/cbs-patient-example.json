@@ -1,0 +1,68 @@
+{
+    "resourceType": "Patient",
+    "id": "example",
+    "meta": {
+        "profile": [
+            "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race",
+            "extension": [
+                {
+                    "url": "ombCategory",
+                    "valueCoding": {
+                       "system": "urn:oid:2.16.840.1.113883.6.238",
+                       "code": "2106-3",
+                       "display": "White"
+                    }
+                 },
+                 {
+                    "url": "detailed",
+                    "valueCoding": {
+                       "system": "urn:oid:2.16.840.1.113883.6.238",
+                       "code": "1010-8",
+                       "display": "Apache"
+                    }
+                 },
+                 {
+                     "url": "otherRace",
+                     "valueString": "Apache"
+                 }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+           "type": {
+              "coding": [
+                 {
+                    "system": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
+                    "code": "Local-Record-ID",
+                    "display": "Local Record ID"
+                 }
+              ],
+              "text": "Local Record ID"
+           },
+           "system": "urn:temp:national-reporting-jurisdiction:48",
+           "value": "GenV2_TC01_Record"
+        },
+        {
+            "type": {
+               "coding": [
+                  {
+                     "system": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
+                     "code": "Local-Subject-ID",
+                     "display": "Local Subject ID"
+                  }
+               ],
+               "text": "Local Subject ID"
+            },
+            "system": "urn:temp:national-reporting-jurisdiction:48",
+            "value": "GenV2_TC01_Subject"
+         }
+     ],
+     "gender": "female",
+     "birthDate": "1964-05-02"
+}
