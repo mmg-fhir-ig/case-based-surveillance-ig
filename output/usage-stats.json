@@ -103,6 +103,8 @@
         "Coding",
         "string",
         "string",
+        "string",
+        "string",
         "base64Binary",
         "boolean",
         "canonical",
