@@ -1,9 +1,9 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 17, warn = 31, info = 0
+err = 17, warn = 25, info = 0
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
-Generated Wed Jun 30 13:02:34 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
+Generated Wed Jun 30 13:11:55 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
 
  Build Errors : 121 / 4 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
@@ -15,12 +15,12 @@ Generated Wed Jun 30 13:02:34 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 1 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-died-of-condition : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 3 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 8 / 3 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-observation-lab : 2 / 5 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient : 4 / 3 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient : 4 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-race : 0 / 3 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-race : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 1 / 1
 </table>
@@ -180,8 +180,6 @@ INFORMATION: StructureDefinition/cbs-died-of-condition: StructureDefinition: Val
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-ethnicity.json ==
 INFORMATION: StructureDefinition/cbs-ethnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/cbs-ethnicity: StructureDefinition.differential.element[5].binding: The valueSet reference https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3015 on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition/cbs-ethnicity: StructureDefinition.snapshot.element[7].binding: The valueSet reference https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3015 on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
 INFORMATION: StructureDefinition/cbs-exposure-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -211,16 +209,12 @@ ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.u
 INFORMATION: StructureDefinition/cbs-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
-WARNING: StructureDefinition/cbs-patient: StructureDefinition.differential.element[6].binding: The valueSet reference https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610 on element Patient.extension.value[x] could not be resolved
-WARNING: StructureDefinition/cbs-patient: StructureDefinition.snapshot.element[15].binding: The valueSet reference https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610 on element Patient.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-performing-lab.json ==
 INFORMATION: StructureDefinition/cbs-performing-lab: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-performing-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-race.json ==
 INFORMATION: StructureDefinition/cbs-race: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/cbs-race: StructureDefinition.differential.element[5].binding: The valueSet reference https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205 on element Extension.extension.valueCoding could not be resolved
-WARNING: StructureDefinition/cbs-race: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205 on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-specimen.json ==
 INFORMATION: StructureDefinition/cbs-specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
