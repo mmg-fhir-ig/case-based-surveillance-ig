@@ -2,6 +2,7 @@
 =========================================
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 err = 19, warn = 25, info = 0
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
 Generated Wed Jun 30 15:23:37 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
@@ -29,6 +30,12 @@ err = 16, warn = 24, info = 1
 IG Publisher Version: 1.1.76
 Generated Wed Jun 30 15:24:13 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
 
+=======
+err = 16, warn = 24, info = 1
+IG Publisher Version: 1.1.76
+Generated Wed Jun 30 15:24:13 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
+
+>>>>>>> Stashed changes
  Build Errors : 126 / 5 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
@@ -48,6 +55,9 @@ Generated Wed Jun 30 15:24:13 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 1 / 1
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </table>
 == n/a ==
@@ -55,6 +65,7 @@ WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Impleme
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cbs-observation-lab.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cbs-performing-lab.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cbs-specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/CodeSystem-cbs-temp-code-system.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
@@ -184,6 +195,8 @@ INFORMATION: CodeSystem/cbs-temp-code-system: CodeSystem: Validate resource agai
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 INFORMATION: StructureDefinition/cbs-birthsex: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 =======
+=======
+>>>>>>> Stashed changes
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /Users/Shared/case-based-surveillance-ig/output/CodeSystem-cbs-temp-code-system.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/case-based-surveillance-ig/output/CodeSystem-cbs-temp-code-system.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
@@ -319,6 +332,7 @@ ERROR: Patient/example: Patient.extension[0]: Extension.extension:text: minimum 
 ERROR: Patient/example: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 ERROR: Patient/example: Patient.extension[0].extension[3][url='otherexample']: Sub-extension url 'otherexample' is not defined by the Extension http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
@@ -330,6 +344,14 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/St
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
 INFORMATION: StructureDefinition/cbs-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 =======
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-notification-panel'): The Implementation Guide contains no examples for this profile
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
+>>>>>>> Stashed changes
+=======
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex'): The Implementation Guide contains no examples for this extension
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-notification-panel'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
@@ -347,8 +369,12 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/St
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-ethnicity.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity'): The Implementation Guide contains no examples for this extension
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
 INFORMATION: StructureDefinition/cbs-exposure-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+=======
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
+>>>>>>> Stashed changes
 =======
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
 >>>>>>> Stashed changes
@@ -364,8 +390,12 @@ ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.differe
 ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation'): The Implementation Guide contains no examples for this profile
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json ==
 INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+=======
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json ==
+>>>>>>> Stashed changes
 =======
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json ==
 >>>>>>> Stashed changes
@@ -376,6 +406,7 @@ WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.differenti
 ERROR: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-observation-lab'): The Implementation Guide contains no examples for this profile
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
 ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
@@ -399,6 +430,8 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/St
 INFORMATION: ValueSet/CBSAddressUseVS: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/CBSAddressUseVS: ValueSet.compose[0].include[1].concept[0]: The code At-Diagnosis is not valid in the system http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system
 =======
+=======
+>>>>>>> Stashed changes
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-performing-lab.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-performing-lab'): The Implementation Guide contains no examples for this profile

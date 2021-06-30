@@ -41,6 +41,7 @@
          "valueAddress": {
             "country": "USA"
          }
+<<<<<<< Updated upstream
       }
    ],
    "identifier": [
@@ -87,4 +88,12 @@
          "country": "USA"
       }
    ]
+=======
+     ],
+     "gender": "female",
+     "birthDate": "1964-05-02",
+     "address": {
+        "use": "Usual-Residence"
+     }
+>>>>>>> Stashed changes
 }

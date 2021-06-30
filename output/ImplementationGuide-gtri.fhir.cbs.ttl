@@ -17,7 +17,11 @@
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:12-04:00"^^xsd:dateTime];
+=======
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
+>>>>>>> Stashed changes
 =======
   fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
 >>>>>>> Stashed changes
