@@ -155,7 +155,7 @@
         "path": "Patient.extension.value[x]",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610"
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610"
         }
       },
       {
