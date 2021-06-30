@@ -13,11 +13,13 @@ Description: "Defines constraints and extensions to the observation resource in 
 * status = #final
 * code 1..1 MS
 * code only CodeableConcept
-* code = $loinc#77982-7 "Case disease imported code" //note for to-do: need to replace later with what CDC decides
+* code = cbs-temp-code-system#Location-of-Exposure "Temporary code for Location of Exposure" //note for to-do: need to replace later with what CDC decides
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
+* subject ^short = "The reference to the subject (the patient)"
 * focus 1..1 MS
 * focus only Reference(cbs-condition)
+* focus ^short = "The reference to the condition of interest"
 * valueCodeableConcept 0..1 MS
 
 * component ^slicing.discriminator.type = #pattern
@@ -32,17 +34,16 @@ Description: "Defines constraints and extensions to the observation resource in 
 
 * component[Country-of-Exposure].code = $loinc#77984-3
 * component[Country-of-Exposure].value[x] only CodeableConcept
-* component[Country-of-Exposure].value[x] from $cdc-country (required)
-* component[Country-of-Exposure].value[x] ^binding.description = "PHIN VADS Country Codes"
+* component[Country-of-Exposure].value[x] from $PHVS-Country-ISO-3166 (required)
 
 * component[State-or-Province-of-Exposure].code = $loinc#77985-0
 * component[State-or-Province-of-Exposure].value[x] only CodeableConcept
-* component[State-or-Province-of-Exposure].value[x] from $cdc-state
+* component[State-or-Province-of-Exposure].value[x] from $PHVS-State-FIPS-5 (extensible)
 
 * component[City-of-Exposure].code = $loinc#77986-8
 * component[City-of-Exposure].value[x] only CodeableConcept
-* component[City-of-Exposure].value[x] from $cdc-city
+* component[City-of-Exposure].value[x] from $PHVS-City-USGS-GNIS (extensible)
 
 * component[County-of-Exposure].code = $loinc#77987-6
 * component[County-of-Exposure].value[x] only CodeableConcept
-* component[County-of-Exposure].value[x] from $cdc-county
+* component[County-of-Exposure].value[x] from $PHVS-County-FIPS-6 (extensible)

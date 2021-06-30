@@ -43,7 +43,12 @@
       "code": "Legacy-Case-Identifier",
       "display": "Legacy Case Identifier",
       "definition": "CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)."
+    },
+    {
+      "code": "LAB",
+      "display": "Laboratory",
+      "definition": "Laboratory coding for organization type"
     }
   ],
-  "count": 7
+  "count": 8
 }

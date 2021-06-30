@@ -159,6 +159,16 @@
     }
   ],
   "profiles": {
+    "Observation": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation",
+        "title": "Case Based Surveillance Exposure Observation Profile"
+      },
+      {
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-observation-lab",
+        "title": "Case Based Surveillance Observation Lab"
+      }
+    ],
     "Composition": [
       {
         "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-composition",
@@ -171,16 +181,22 @@
         "title": "Case Based Surveillance Condition of Interest Profile"
       }
     ],
-    "Observation": [
-      {
-        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation",
-        "title": "Case Based Surveillance Exposure Observation Profile"
-      }
-    ],
     "Patient": [
       {
         "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient",
         "title": "Case Based Surveillance Patient Profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-performing-lab",
+        "title": "Case Based Surveillance Performing Laboratory Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-specimen",
+        "title": "Case Based Surveillance Specimen Profile"
       }
     ]
   },
@@ -218,6 +234,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract": [
       "Patient.address.line"
     ],
@@ -247,6 +266,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

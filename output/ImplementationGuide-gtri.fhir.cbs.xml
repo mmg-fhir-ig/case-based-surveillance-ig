@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="CBSIG"/>
   <status value="draft"/>
-  <date value="2021-06-29T17:58:24-04:00"/>
+  <date value="2021-06-30T13:00:28-04:00"/>
   <packageId value="gtri.fhir.cbs"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -224,10 +224,51 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-observation-lab"/>
+      </reference>
+      <name value="Case Based Surveillance Observation Lab"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-patient"/>
       </reference>
       <name value="Case Based Surveillance Patient Profile"/>
       <description value="Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-performing-lab"/>
+      </reference>
+      <name value="Case Based Surveillance Performing Laboratory Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-specimen"/>
+      </reference>
+      <name value="Case Based Surveillance Specimen Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-case-notification-panel"/>
+      </reference>
+      <name value="Case Based Surveillance Case Notification Panel Profile"/>
+      <description value="Defines items for the Case Notification Panel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

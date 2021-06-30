@@ -16,7 +16,7 @@ Description: "Concepts classifying the person into a named category of humans sh
     ombCategory 0..5 MS and
     detailed 0..* and
     otherRace 0..* and
-    text 1..1 MS
+    text 0..1 MS
 * extension[ombCategory] only Extension
 * extension[ombCategory] ^short = "American Indian or Alaska Native|Asian|Black or African American|Native Hawaiian or Other Pacific Islander|White as well as null flavors"
 * extension[ombCategory] ^definition = "The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."
@@ -24,7 +24,7 @@ Description: "Concepts classifying the person into a named category of humans sh
 * extension[ombCategory].url only uri
 * extension[ombCategory].valueCoding 1..1
 * extension[ombCategory].valueCoding only Coding
-* extension[ombCategory].valueCoding from $PHVS-RaceCategory-CDC-NullFlavor (required)
+* extension[ombCategory].valueCoding from $PHVS-RaceCategory-CDC-NullFlavor (extensible)
 * extension[ombCategory].valueCoding ^binding.description = "The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."
 * extension[detailed] only Extension
 * extension[detailed] ^short = "Extended race codes"
