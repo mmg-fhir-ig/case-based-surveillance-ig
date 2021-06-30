@@ -1,0 +1,72 @@
+{
+  "resourceType": "Patient",
+  "id": "example",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        },
+        {
+          "url": "detailed",
+          "valueCoding": {
+            "code": "1010-8",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Apache"
+          }
+        },
+        {
+          "url": "otherRace",
+          "valueString": "Apache"
+        },
+        {
+          "url": "otherexample",
+          "valueString": "Apache"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Record-ID",
+            "system": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "GenV2_TC01_Record"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Subject-ID",
+            "system": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "GenV2_TC01_Subject"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1964-05-02"
+}

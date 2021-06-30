@@ -1,8 +1,32 @@
 {
   "resourceType" : "Bundle",
+<<<<<<< HEAD
   "id" : "9a990665-9e51-4cdf-8b0c-fb60988f5d20",
   "meta" : {
     "lastUpdated" : "2021-06-30T15:51:15.030-04:00"
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  "id" : "a4286582-378c-4040-a023-7245a5471df6",
+  "meta" : {
+    "lastUpdated" : "2021-06-30T15:22:12.914-04:00"
+=======
+  "id" : "d5becdc3-f400-4d58-9827-a8a662812846",
+  "meta" : {
+    "lastUpdated" : "2021-06-30T15:22:52.883-04:00"
+>>>>>>> Stashed changes
+=======
+  "id" : "d5becdc3-f400-4d58-9827-a8a662812846",
+  "meta" : {
+    "lastUpdated" : "2021-06-30T15:22:52.883-04:00"
+>>>>>>> Stashed changes
+=======
+  "id" : "d5becdc3-f400-4d58-9827-a8a662812846",
+  "meta" : {
+    "lastUpdated" : "2021-06-30T15:22:52.883-04:00"
+>>>>>>> Stashed changes
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
   },
   "type" : "collection",
   "entry" : [{
@@ -19,12 +43,34 @@
       "name" : "CBSAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
+<<<<<<< HEAD
       "date" : "2021-06-30T15:51:15-04:00",
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      "date" : "2021-06-30T15:22:12-04:00",
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
         "identifier" : "urn:uuid:f0d55dd6-7a7e-4b35-9c75-321fca49cc76",
         "timestamp" : "2021-06-30T15:51:56-04:00",
         "total" : 7,
+=======
+=======
+>>>>>>> Stashed changes
+      "date" : "2021-06-30T15:22:52-04:00",
+      "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+      "expansion" : {
+=======
+      "date" : "2021-06-30T15:22:52-04:00",
+      "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+      "expansion" : {
+>>>>>>> Stashed changes
+        "identifier" : "urn:uuid:6a9e9d36-91e9-40cd-9f1e-8349ce14e810",
+        "timestamp" : "2021-06-30T15:23:37-04:00",
+        "total" : 2,
+>>>>>>> Stashed changes
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false

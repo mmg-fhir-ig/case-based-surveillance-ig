@@ -17,7 +17,23 @@
   fhir:ValueSet.name [ fhir:value "CBSAddressUseVS"];
   fhir:ValueSet.title [ fhir:value "Additional codes for Address.use."];
   fhir:ValueSet.status [ fhir:value "active"];
+<<<<<<< HEAD
   fhir:ValueSet.date [ fhir:value "2021-06-30T15:51:15-04:00"^^xsd:dateTime];
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:12-04:00"^^xsd:dateTime];
+=======
+  fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
+>>>>>>> Stashed changes
+=======
+  fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
+>>>>>>> Stashed changes
+=======
+  fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
+>>>>>>> Stashed changes
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
   fhir:ValueSet.description [ fhir:value "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

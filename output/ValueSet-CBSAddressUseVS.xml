@@ -10,7 +10,23 @@
   <name value="CBSAddressUseVS"/>
   <title value="Additional codes for Address.use."/>
   <status value="active"/>
+<<<<<<< HEAD
   <date value="2021-06-30T15:51:15-04:00"/>
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  <date value="2021-06-30T15:22:12-04:00"/>
+=======
+  <date value="2021-06-30T15:22:52-04:00"/>
+>>>>>>> Stashed changes
+=======
+  <date value="2021-06-30T15:22:52-04:00"/>
+>>>>>>> Stashed changes
+=======
+  <date value="2021-06-30T15:22:52-04:00"/>
+>>>>>>> Stashed changes
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
   <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
   <compose>
     <include>

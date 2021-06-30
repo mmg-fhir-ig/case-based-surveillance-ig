@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
+<<<<<<< HEAD
   <id value="9a990665-9e51-4cdf-8b0c-fb60988f5d20"/>
   <meta>
     <lastUpdated value="2021-06-30T15:51:15.030-04:00"/>
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  <id value="a4286582-378c-4040-a023-7245a5471df6"/>
+  <meta>
+    <lastUpdated value="2021-06-30T15:22:12.914-04:00"/>
+=======
+  <id value="d5becdc3-f400-4d58-9827-a8a662812846"/>
+  <meta>
+    <lastUpdated value="2021-06-30T15:22:52.883-04:00"/>
+>>>>>>> Stashed changes
+=======
+  <id value="d5becdc3-f400-4d58-9827-a8a662812846"/>
+  <meta>
+    <lastUpdated value="2021-06-30T15:22:52.883-04:00"/>
+>>>>>>> Stashed changes
+=======
+  <id value="d5becdc3-f400-4d58-9827-a8a662812846"/>
+  <meta>
+    <lastUpdated value="2021-06-30T15:22:52.883-04:00"/>
+>>>>>>> Stashed changes
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
   </meta>
   <type value="collection"/>
   <entry>
@@ -112,12 +136,31 @@
         <name value="CBSAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
+<<<<<<< HEAD
         <date value="2021-06-30T15:51:15-04:00"/>
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        <date value="2021-06-30T15:22:12-04:00"/>
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
           <identifier value="urn:uuid:f0d55dd6-7a7e-4b35-9c75-321fca49cc76"/>
           <timestamp value="2021-06-30T15:51:56-04:00"/>
           <total value="7"/>
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+        <date value="2021-06-30T15:22:52-04:00"/>
+        <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
+        <expansion>
+          <identifier value="urn:uuid:6a9e9d36-91e9-40cd-9f1e-8349ce14e810"/>
+          <timestamp value="2021-06-30T15:23:37-04:00"/>
+          <total value="2"/>
+>>>>>>> Stashed changes
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

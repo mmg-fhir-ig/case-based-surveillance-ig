@@ -14,7 +14,7 @@ Description: "Defines constraints and extensions to the patient resource in orde
     cbs-race named race 0..1 MS and
     cbs-ethnicity named ethnicity 0..1 MS and
     cbs-birthsex named birthsex 0..1 MS and
-    $HL7-genderIdentity named genderidentity 0..1 MS and
+    $HL7-genderIdentity named genderIdentity 0..1 MS and
     $HL7-birthPlace named birthPlace 0..1 MS
 * extension[genderIdentity].value[x] only CodeableConcept
 * extension[genderIdentity].value[x] from $PHVS-GenderIdentity-STD (extensible)
@@ -35,6 +35,7 @@ Description: "Defines constraints and extensions to the patient resource in orde
 
 // Address
 * address 0..* MS
+<<<<<<< HEAD
 * address ^slicing.discriminator.type = #value
 * address ^slicing.discriminator.path = "use"
 * address ^slicing.rules = #open
@@ -45,6 +46,8 @@ Description: "Defines constraints and extensions to the patient resource in orde
     $HL7-censusTract named censusTract 0..1 MS
 * address[Usual-Residence].use = cbs-temp-code-system#Usual-Residence
 * address[Address-at-Diagnosis].use = cbs-temp-code-system#Address-at-Diagnosis
+=======
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
 * address.use 0..1 MS
 * address.use only code
 * address.use from CBSAddressUseVS (required)
@@ -56,4 +59,3 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * address.postalCode ^short = "US Zip Codes"
 * address.postalCode ^alias = "Zip Code"
 * address.period 0..1 MS
-
