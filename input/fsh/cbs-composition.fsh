@@ -10,7 +10,7 @@ Description: "Defines constraints and extensions to the composition resource in 
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * identifier 0..1 MS
 * status 1..1 MS
-* status = $composition-status#final
+* status = $FHIR-Composition-Status#final
 * type 1..1 MS
 * type = $loinc#55751-2
 * relatesTo 0..* MS

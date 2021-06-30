@@ -63,10 +63,39 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-observation-lab"
+        },
+        "name": "Case Based Surveillance Observation Lab",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-patient"
         },
         "name": "Case Based Surveillance Patient Profile",
         "description": "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-performing-lab"
+        },
+        "name": "Case Based Surveillance Performing Laboratory Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-specimen"
+        },
+        "name": "Case Based Surveillance Specimen Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-case-notification-panel"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Profile",
+        "description": "Defines items for the Case Notification Panel.",
         "exampleBoolean": false
       },
       {

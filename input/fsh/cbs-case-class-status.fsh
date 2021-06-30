@@ -14,5 +14,5 @@ Description: "A code denoting the status of the case/event as suspect, probable,
 * . ^isModifier = false
 * valueCodeableConcept 0..1
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $case-classification-status
+* valueCodeableConcept from $PHVS-CaseClassStatus-NND (required)
 * valueCodeableConcept ^binding.description = "A code indicating the case class status."
