@@ -10,6 +10,9 @@
   "compose": {
     "include": [
       {
+        "system": "http://hl7.org/fhir/address-use"
+      },
+      {
         "system": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
         "concept": [
           {

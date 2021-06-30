@@ -35,6 +35,12 @@
                "valueString": "Mixed"
             }
          ]
+      },
+      {
+         "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+         "valueAddress": {
+            "country": "USA"
+         }
       }
    ],
    "identifier": [
@@ -68,5 +74,17 @@
       }
    ],
    "gender": "female",
-   "birthDate": "1964-05-02"
+   "birthDate": "1964-05-02",
+   "address": [
+      {
+         "use": "Usual-Residence",
+         "country": "USA"
+      },
+      {
+         "use": "home",
+         "district": "Harris",
+         "state": "Texas",
+         "postalCode": "77018"
+      }
+   ]
 }
