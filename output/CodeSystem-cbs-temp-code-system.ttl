@@ -19,7 +19,11 @@
   fhir:CodeSystem.status [ fhir:value "active"];
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   fhir:CodeSystem.date [ fhir:value "2021-06-30T15:22:12-04:00"^^xsd:dateTime];
+=======
+  fhir:CodeSystem.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
+>>>>>>> Stashed changes
 =======
   fhir:CodeSystem.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
 >>>>>>> Stashed changes

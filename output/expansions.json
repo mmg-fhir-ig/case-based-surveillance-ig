@@ -2,9 +2,15 @@
   "resourceType" : "Bundle",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "id" : "a4286582-378c-4040-a023-7245a5471df6",
   "meta" : {
     "lastUpdated" : "2021-06-30T15:22:12.914-04:00"
+=======
+  "id" : "d5becdc3-f400-4d58-9827-a8a662812846",
+  "meta" : {
+    "lastUpdated" : "2021-06-30T15:22:52.883-04:00"
+>>>>>>> Stashed changes
 =======
   "id" : "d5becdc3-f400-4d58-9827-a8a662812846",
   "meta" : {
@@ -33,6 +39,7 @@
       "status" : "active",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "date" : "2021-06-30T15:22:12-04:00",
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
@@ -45,6 +52,11 @@
       "date" : "2021-06-30T15:22:52-04:00",
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
+=======
+      "date" : "2021-06-30T15:22:52-04:00",
+      "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+      "expansion" : {
+>>>>>>> Stashed changes
         "identifier" : "urn:uuid:6a9e9d36-91e9-40cd-9f1e-8349ce14e810",
         "timestamp" : "2021-06-30T15:23:37-04:00",
         "total" : 2,

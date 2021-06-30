@@ -19,7 +19,11 @@
   fhir:ValueSet.status [ fhir:value "active"];
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:12-04:00"^^xsd:dateTime];
+=======
+  fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
+>>>>>>> Stashed changes
 =======
   fhir:ValueSet.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
 >>>>>>> Stashed changes
