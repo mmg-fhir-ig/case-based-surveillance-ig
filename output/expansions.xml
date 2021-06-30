@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a37bc492-ff5a-48f3-8d27-e500565f4e28"/>
+  <id value="a4286582-378c-4040-a023-7245a5471df6"/>
   <meta>
-    <lastUpdated value="2021-06-30T14:22:12.084-04:00"/>
+    <lastUpdated value="2021-06-30T15:22:12.914-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -112,11 +112,11 @@
         <name value="CBSAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-06-30T14:22:12-04:00"/>
+        <date value="2021-06-30T15:22:12-04:00"/>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:c6fff9b7-23b0-499d-9cd5-a84e44534942"/>
-          <timestamp value="2021-06-30T14:22:54-04:00"/>
+          <identifier value="urn:uuid:12beb3b1-7e05-405a-86d9-1e39bb3ef59a"/>
+          <timestamp value="2021-06-30T15:22:53-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1,6 +1,6 @@
 {
    "resourceType": "Patient",
-   "id": "example",
+   "id": "GenV2_TC",
    "meta": {
       "profile": [
          "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
@@ -77,14 +77,14 @@
    "birthDate": "1964-05-02",
    "address": [
       {
-         "use": "Usual-Residence",
-         "country": "USA"
-      },
-      {
          "use": "home",
          "district": "Harris",
          "state": "Texas",
          "postalCode": "77018"
+      },
+      {
+         "use": "Usual-Residence",
+         "country": "USA"
       }
    ]
 }
