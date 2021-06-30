@@ -28,6 +28,13 @@
     "name": "CBSCaseClassStatusExtension"
   },
   {
+    "id": "cbs-case-notification-panel",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-notification-panel",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillaneCaseNotificationPanel"
+  },
+  {
     "id": "cbs-composition",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-composition",
@@ -70,6 +77,13 @@
     "name": "CaseBasedSurveillanceExposureObservation"
   },
   {
+    "id": "cbs-observation-lab",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-observation-lab",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceObservationLab"
+  },
+  {
     "id": "cbs-patient",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient",
@@ -77,11 +91,25 @@
     "name": "CaseBasedSurveillancePatient"
   },
   {
+    "id": "cbs-performing-lab",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-performing-lab",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillancePerformingLaboratory"
+  },
+  {
     "id": "cbs-race",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race",
     "version": "0.1.0",
     "name": "CBSRaceExtension"
+  },
+  {
+    "id": "cbs-specimen",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-specimen",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceSpecimen"
   },
   {
     "id": "CBSAddressUseVS",
