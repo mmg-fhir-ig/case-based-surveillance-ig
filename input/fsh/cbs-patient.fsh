@@ -48,6 +48,7 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * address[Address-at-Diagnosis].use = #Address-at-Diagnosis
 * address[Address-at-Diagnosis].use from CBSAddressUseVS
 * address.use 0..1 MS
+* address.use from CBSAddressUseVS (required)
 * address.line 0..* MS
 * address.country 0..1 MS
 * address.city 0..1 MS
