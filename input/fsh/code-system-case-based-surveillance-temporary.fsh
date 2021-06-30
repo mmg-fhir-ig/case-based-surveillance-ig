@@ -9,8 +9,6 @@ Description:  "Code system defined as placeholders for items that are not define
     "Subject's address at the time of the diagnosis for the condition of interest."
 * #Location-of-Exposure "Location of Exposure"
     "Location of exposure. (City, County, State/Province, Country)"
-
-
 * #Local-Subject-ID "Local Subject ID"
     "The local ID of the subject/entity"
 * #Local-Record-ID "Local Record ID"
@@ -19,3 +17,5 @@ Description:  "Code system defined as placeholders for items that are not define
     "States use this identifier to link NEDSS investigations back to their own state investigations."
 * #Legacy-Case-Identifier "Legacy Case Identifier"
     "CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)."
+* #LAB "Laboratory"
+    "Laboratory coding for organization type"

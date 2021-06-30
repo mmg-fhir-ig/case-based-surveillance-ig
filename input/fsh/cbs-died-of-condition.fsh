@@ -14,5 +14,5 @@ Description: "A code classifying whether the subject died due to the reported co
 * . ^isModifier = false
 * valueCodeableConcept 1..1
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $YNU (required)
+* valueCodeableConcept from $PHVS-YesNoUnknown-CDC (required)
 * valueCodeableConcept ^binding.description = "Code for YNU Value Set"

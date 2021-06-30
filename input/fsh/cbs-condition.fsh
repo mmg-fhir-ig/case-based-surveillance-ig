@@ -19,10 +19,10 @@ Description: "Defines constraints and extensions to the condition resource in or
 * severity 0..1
 * code 1..1 MS
 * code only CodeableConcept
-* code from $notifiable-event-code-list
+* code from $PHVS-NotifiableEvent-Disease
 * bodySite 0..* MS
 * bodySite only CodeableConcept
-* bodySite from $cdc-body-site (extensible)
+* bodySite from $PHVS-BodySite-CDC (extensible)
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
 * encounter 0..1
