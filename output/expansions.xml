@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
+<<<<<<< Updated upstream
   <id value="a4286582-378c-4040-a023-7245a5471df6"/>
   <meta>
     <lastUpdated value="2021-06-30T15:22:12.914-04:00"/>
+=======
+  <id value="d5becdc3-f400-4d58-9827-a8a662812846"/>
+  <meta>
+    <lastUpdated value="2021-06-30T15:22:52.883-04:00"/>
+>>>>>>> Stashed changes
   </meta>
   <type value="collection"/>
   <entry>
@@ -112,12 +118,21 @@
         <name value="CBSAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
+<<<<<<< Updated upstream
         <date value="2021-06-30T15:22:12-04:00"/>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
           <identifier value="urn:uuid:12beb3b1-7e05-405a-86d9-1e39bb3ef59a"/>
           <timestamp value="2021-06-30T15:22:53-04:00"/>
           <total value="7"/>
+=======
+        <date value="2021-06-30T15:22:52-04:00"/>
+        <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
+        <expansion>
+          <identifier value="urn:uuid:6a9e9d36-91e9-40cd-9f1e-8349ce14e810"/>
+          <timestamp value="2021-06-30T15:23:37-04:00"/>
+          <total value="2"/>
+>>>>>>> Stashed changes
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

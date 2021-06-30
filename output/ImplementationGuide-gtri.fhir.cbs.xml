@@ -9,7 +9,11 @@
   <version value="0.1.0"/>
   <name value="CBSIG"/>
   <status value="draft"/>
+<<<<<<< Updated upstream
   <date value="2021-06-30T15:22:12-04:00"/>
+=======
+  <date value="2021-06-30T15:22:52-04:00"/>
+>>>>>>> Stashed changes
   <packageId value="gtri.fhir.cbs"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -358,6 +362,16 @@
       <name value="Case Based Surveillance temporary/placeholder code system."/>
       <description value="Code system defined as placeholders for items that are not defined in existing systems."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example"/>
+      </reference>
+      <name value="example"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

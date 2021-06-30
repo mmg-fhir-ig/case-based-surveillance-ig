@@ -135,9 +135,9 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:genderidentity",
+        "id": "Patient.extension:genderIdentity",
         "path": "Patient.extension",
-        "sliceName": "genderidentity",
+        "sliceName": "genderIdentity",
         "min": 0,
         "max": "1",
         "type": [
@@ -151,7 +151,7 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:genderidentity.value[x]",
+        "id": "Patient.extension:genderIdentity.value[x]",
         "path": "Patient.extension.value[x]",
         "binding": {
           "strength": "extensible",
@@ -220,15 +220,6 @@
       {
         "id": "Patient.address",
         "path": "Patient.address",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "use"
-            }
-          ],
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {
@@ -243,36 +234,6 @@
       {
         "id": "Patient.address.line",
         "path": "Patient.address.line",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address.line.extension",
-        "path": "Patient.address.line.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient.address.line.extension:censusTract",
-        "path": "Patient.address.line.extension",
-        "sliceName": "censusTract",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -301,104 +262,6 @@
       },
       {
         "id": "Patient.address.period",
-        "path": "Patient.address.period",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence",
-        "path": "Patient.address",
-        "sliceName": "Usual-Residence",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence.use",
-        "path": "Patient.address.use",
-        "min": 1,
-        "patternCode": "Usual-Residence",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
-        }
-      },
-      {
-        "id": "Patient.address:Usual-Residence.line",
-        "path": "Patient.address.line",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence.city",
-        "path": "Patient.address.city",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence.state",
-        "path": "Patient.address.state",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence.postalCode",
-        "path": "Patient.address.postalCode",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence.country",
-        "path": "Patient.address.country",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Usual-Residence.period",
-        "path": "Patient.address.period",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis",
-        "path": "Patient.address",
-        "sliceName": "Address-at-Diagnosis",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.use",
-        "path": "Patient.address.use",
-        "min": 1,
-        "patternCode": "Address-at-Diagnosis",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
-        }
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.line",
-        "path": "Patient.address.line",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.city",
-        "path": "Patient.address.city",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.state",
-        "path": "Patient.address.state",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.postalCode",
-        "path": "Patient.address.postalCode",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.country",
-        "path": "Patient.address.country",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Address-at-Diagnosis.period",
         "path": "Patient.address.period",
         "mustSupport": true
       }

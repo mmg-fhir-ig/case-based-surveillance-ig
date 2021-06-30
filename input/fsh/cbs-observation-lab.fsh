@@ -39,7 +39,7 @@ Description: ""
 
 * component[Syphilis-Test].code = #STD123
 * component[Syphilis-Test].value[x] only CodeableConcept
-* component[Syphilis-Test].value[x] from $PHVS-NonTreponemalTestResult-STD
+* component[Syphilis-Test].value[x] from $PHVS-NonTreponemalTestResult-STD (required)
 
 * component[Gene-Identifier].code = $loinc#48018-6
 * component[Gene-Identifier].value[x] only CodeableConcept

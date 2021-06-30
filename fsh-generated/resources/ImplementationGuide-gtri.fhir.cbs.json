@@ -161,6 +161,13 @@
         "name": "Case Based Surveillance temporary/placeholder code system.",
         "description": "Code system defined as placeholders for items that are not defined in existing systems.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/example"
+        },
+        "name": "example",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
       }
     ],
     "page": {

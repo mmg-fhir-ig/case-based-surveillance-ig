@@ -3,10 +3,17 @@
   "name": "CBSIG",
   "package-id": "gtri.fhir.cbs",
   "ig-ver": "0.1.0",
+<<<<<<< Updated upstream
   "date": "Wed, 30 Jun, 2021 15:22:12 -0400",
   "errs": 19,
   "warnings": 25,
   "hints": 0,
+=======
+  "date": "Wed, 30 Jun, 2021 15:22:52 -0400",
+  "errs": 16,
+  "warnings": 24,
+  "hints": 1,
+>>>>>>> Stashed changes
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }
