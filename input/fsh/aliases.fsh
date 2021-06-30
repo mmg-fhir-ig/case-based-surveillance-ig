@@ -41,6 +41,7 @@ Alias: $PHVS-GenderIdentity-STD	= http://phinvads.cdc.gov/fhir/ValueSet/2.16.840
 Alias: $PHVS-RaceCategory-CDC-NullFlavor = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205
 Alias: $PHVS-Sex-MFU = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1038
 
+
 // FHIR Terminology
 Alias: $observation-status = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $composition-status = http://hl7.org/fhir/composition-status
