@@ -1,12 +1,16 @@
 ﻿CBSIG : Validation Results
 =========================================
 
+<<<<<<< HEAD
+err = 15, warn = 25, info = 0
+=======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 err = 19, warn = 25, info = 0
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
-Generated Wed Jun 30 15:23:37 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
+Generated Wed Jun 30 15:52:36 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
 
  Build Errors : 121 / 4 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
@@ -21,7 +25,7 @@ Generated Wed Jun 30 15:23:37 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 8 / 3 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-observation-lab : 2 / 5 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient : 6 / 1 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-race : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 1 / 1
@@ -158,14 +162,14 @@ ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.json.html#/html/body/div/div/div/p/a at Line 5153, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.ttl.html#/html/body/div/div/div/p/a at Line 4473, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.xml.html#/html/body/div/div/div/p/a at Line 4698, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 1351, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 1355, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-mappings.html#/html/body/div/div/div/p/a at Line 439, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.html#/html/body/div/div/div/p/a at Line 1215, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 5800, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 5806, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 4968, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 5154, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 5152, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-performing-lab-definitions.html#/html/body/div/div/div/p/a at Line 633, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-performing-lab-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-performing-lab-mappings.html#/html/body/div/div/div/p/a at Line 319, column 28: The link '' for "" cannot be resolved
@@ -441,11 +445,7 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/St
 <<<<<<< Updated upstream
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
 ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
-ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
-ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 INFORMATION: StructureDefinition/cbs-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
-ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-performing-lab.json ==

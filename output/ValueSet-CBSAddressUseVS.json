@@ -10,6 +10,9 @@
   "name": "CBSAddressUseVS",
   "title": "Additional codes for Address.use.",
   "status": "active",
+<<<<<<< HEAD
+  "date": "2021-06-30T15:51:15-04:00",
+=======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -23,6 +26,7 @@
 =======
   "date": "2021-06-30T15:22:52-04:00",
 >>>>>>> Stashed changes
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
   "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
   "compose": {
     "include": [

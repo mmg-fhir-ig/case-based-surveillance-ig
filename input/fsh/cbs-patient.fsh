@@ -35,6 +35,19 @@ Description: "Defines constraints and extensions to the patient resource in orde
 
 // Address
 * address 0..* MS
+<<<<<<< HEAD
+* address ^slicing.discriminator.type = #value
+* address ^slicing.discriminator.path = "use"
+* address ^slicing.rules = #open
+* address contains
+    Usual-Residence 0..1 MS and
+    Address-at-Diagnosis 0..1 MS
+* address.line.extension contains
+    $HL7-censusTract named censusTract 0..1 MS
+* address[Usual-Residence].use = cbs-temp-code-system#Usual-Residence
+* address[Address-at-Diagnosis].use = cbs-temp-code-system#Address-at-Diagnosis
+=======
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
 * address.use 0..1 MS
 * address.use only code
 * address.use from CBSAddressUseVS (required)

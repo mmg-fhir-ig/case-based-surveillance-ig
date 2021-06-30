@@ -1,6 +1,9 @@
 {
   "version": "0.1.0",
   "fhirVersion": "[4.0.1]",
+<<<<<<< HEAD
+  "date": "20210630155035",
+=======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -14,5 +17,6 @@
 =======
   "date": "20210630152210",
 >>>>>>> Stashed changes
+>>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
   "name": "gtri.fhir.cbs"
 }
