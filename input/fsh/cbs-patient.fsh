@@ -43,10 +43,8 @@ Description: "Defines constraints and extensions to the patient resource in orde
     Address-at-Diagnosis 0..1 MS
 * address.line.extension contains
     $HL7-censusTract named censusTract 0..1 MS
-* address[Usual-Residence].use = #Usual-Residence
-* address[Usual-Residence].use from CBSAddressUseVS
-* address[Address-at-Diagnosis].use = #Address-at-Diagnosis
-* address[Address-at-Diagnosis].use from CBSAddressUseVS
+* address[Usual-Residence].use = cbs-temp-code-system#Usual-Residence
+* address[Address-at-Diagnosis].use = cbs-temp-code-system#Address-at-Diagnosis
 * address.use 0..1 MS
 * address.use only code
 * address.use from CBSAddressUseVS (required)

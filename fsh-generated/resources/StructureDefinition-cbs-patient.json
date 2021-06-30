@@ -317,11 +317,7 @@
         "path": "Patient.address.use",
         "min": 1,
         "patternCode": "Usual-Residence",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
-        }
+        "mustSupport": true
       },
       {
         "id": "Patient.address:Usual-Residence.line",
@@ -366,11 +362,7 @@
         "path": "Patient.address.use",
         "min": 1,
         "patternCode": "Address-at-Diagnosis",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
-        }
+        "mustSupport": true
       },
       {
         "id": "Patient.address:Address-at-Diagnosis.line",
