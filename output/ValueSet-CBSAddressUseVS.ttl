@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CBSAddressUseVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-address-use.html\"><code>http://hl7.org/fhir/address-use</code></a></li><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-At-Diagnosis\">At-Diagnosis</a></td><td>Address at Diagnosis of Condition of Interest</td><td/></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence\">Usual-Residence</a></td><td>Address of Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "CBSAddressUseVS"];
+  fhir:ValueSet.title [ fhir:value "Additional codes for Address.use."];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-07-01T15:38:08-04:00"^^xsd:dateTime];
+  fhir:ValueSet.description [ fhir:value "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/address-use" ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "At-Diagnosis" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Address at Diagnosis of Condition of Interest" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Usual-Residence" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Address of Usual Residence" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
