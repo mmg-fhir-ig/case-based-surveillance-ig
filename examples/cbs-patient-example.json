@@ -78,7 +78,7 @@
                {
                   "system": "http://loinc.org",
                   "code": "77997-5",
-                  "display": "Legacy Case Identifier"
+                  "display": "Legacy case identifier [CDC.PHIN]"
                }
             ],
             "text": "Legacy Case Identifier"
