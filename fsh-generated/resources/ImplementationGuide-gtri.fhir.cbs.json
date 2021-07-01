@@ -166,7 +166,11 @@
         "reference": {
           "reference": "Patient/GenV2-TC"
         },
+<<<<<<< HEAD
         "name": "GenV2_TC",
+=======
+        "name": "GenV2-TC",
+>>>>>>> 51c58073860f15de31ec7af49f3176df2e1d3832
         "exampleCanonical": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
       }
     ],
