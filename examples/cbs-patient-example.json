@@ -109,6 +109,10 @@
          "district": "Harris",
          "state": "Texas",
          "postalCode": "77018"
+      },
+      {
+         "use": "Usual-Residence",
+         "country": "USA"
       }
      ],
    "deceasedDateTime": "2014-03-02"
