@@ -71,6 +71,34 @@
          },
          "system": "urn:temp:national-reporting-jurisdiction:48",
          "value": "GenV2_TC01_Subject"
+      },
+      {
+         "type": {
+            "coding": [
+               {
+                  "system": "http://loinc.org",
+                  "code": "77997-5",
+                  "display": "Legacy Case Identifier"
+               }
+            ],
+            "text": "Legacy Case Identifier"
+         },
+         "system": "urn:temp:national-reporting-jurisdiction:48",
+         "value": "48432148S012014"     
+      },
+      {
+         "type": {
+            "coding": [
+               {
+                  "system": "http://loinc.org",
+                  "code": "77993-4",
+                  "display": "State notifiable condition case identifier"
+               }
+            ],
+            "text": "State Case Identifier"
+         },
+         "system": "urn:temp:national-reporting-jurisdiction:48",
+         "value": "TX4321"     
       }
    ],
    "gender": "female",
@@ -83,5 +111,5 @@
          "postalCode": "77018"
       }
      ],
-   "deaceasedDateTime": "2014-03-02"
+   "deceasedDateTime": "2014-03-02"
 }
