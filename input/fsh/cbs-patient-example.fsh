@@ -1,8 +1,5 @@
-Alias: $cbs-patient = http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient
-Alias: $cbs-temp-code-system = http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system
-
-Instance: GenV2_TC
-InstanceOf: $cbs-patient
+Instance: GenV2-TC
+InstanceOf: cbs-patient
 Usage: #example
 * extension[0].url = "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
 * extension[=].extension[0].url = "ombCategory"
@@ -15,11 +12,11 @@ Usage: #example
 * extension[=].extension[=].valueString = "Mixed"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[=].valueAddress.country = "USA"
-* identifier[0].type = $cbs-temp-code-system#Local-Record-ID "Local Record ID"
+* identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"
 * identifier[=].type.text = "Local Record ID"
 * identifier[=].system = "urn:temp:national-reporting-jurisdiction:48"
 * identifier[=].value = "GenV2_TC01_Record"
-* identifier[+].type = $cbs-temp-code-system#Local-Subject-ID "Local Subject ID"
+* identifier[+].type = cbs-temp-code-system#Local-Subject-ID "Local Subject ID"
 * identifier[=].type.text = "Local Subject ID"
 * identifier[=].system = "urn:temp:national-reporting-jurisdiction:48"
 * identifier[=].value = "GenV2_TC01_Subject"
