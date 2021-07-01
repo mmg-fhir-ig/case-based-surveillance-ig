@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T18:38:01-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-07-01T10:46:52-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "gtri.fhir.cbs"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -522,7 +522,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/output/Patient/GenV2-TC>;
          fhir:Reference.reference [ fhir:value "Patient/GenV2-TC" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GenV2_TC" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GenV2-TC" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient";
          fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient>

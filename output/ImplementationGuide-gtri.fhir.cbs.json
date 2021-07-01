@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-  "date": "2021-06-30T18:38:01-04:00",
+  "date": "2021-07-01T10:46:52-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -523,7 +523,7 @@
         "reference": {
           "reference": "Patient/GenV2-TC"
         },
-        "name": "GenV2_TC",
+        "name": "GenV2-TC",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
       }
     ],
