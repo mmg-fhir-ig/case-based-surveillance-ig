@@ -1,9 +1,9 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 16, warn = 24, info = 0
+err = 4, warn = 24, info = 0
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
-Generated Thu Jul 01 10:48:11 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
+Generated Thu Jul 01 14:15:39 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu/output)
 
  Build Errors : 126 / 5 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
@@ -12,13 +12,13 @@ Generated Thu Jul 01 10:48:11 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-composition : 2 / 1 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 1 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-died-of-condition : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 8 / 3 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-observation-lab : 2 / 5 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 0 / 3 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-observation-lab : 0 / 5 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 0 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
@@ -66,10 +66,10 @@ ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition-definitions.html#/html/body/div/div/div/p/a at Line 797, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition-mappings.html#/html/body/div/div/div/p/a at Line 371, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 823, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.html#/html/body/div/div/div/p/a at Line 823, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.profile.json.html#/html/body/div/div/div/p/a at Line 3028, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.profile.ttl.html#/html/body/div/div/div/p/a at Line 2688, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.profile.ttl.html#/html/body/div/div/div/p/a at Line 2691, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-composition.profile.xml.html#/html/body/div/div/div/p/a at Line 2752, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition-definitions.html#/html/body/div/div/div/p/a at Line 643, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-condition-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
@@ -103,18 +103,18 @@ ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation-definitions.html#/html/body/div/div/div/p/a at Line 1245, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation-mappings.html#/html/body/div/div/div/p/a at Line 495, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/span/tr/td/span/div/div/div/p/a at Line 1223, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.html#/html/body/div/div/div/p/a at Line 1223, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.json.html#/html/body/div/div/div/p/a at Line 5055, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 4419, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 4428, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-exposure-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 4639, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab-definitions.html#/html/body/div/div/div/p/a at Line 1251, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab-mappings.html#/html/body/div/div/div/p/a at Line 494, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/span/div/div/div/p/a at Line 1231, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/div/div/p/a at Line 1231, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.json.html#/html/body/div/div/div/p/a at Line 5153, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.ttl.html#/html/body/div/div/div/p/a at Line 4473, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.ttl.html#/html/body/div/div/div/p/a at Line 4476, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.xml.html#/html/body/div/div/div/p/a at Line 4698, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 1036, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
@@ -175,8 +175,6 @@ INFORMATION: StructureDefinition/cbs-case-notification-panel: StructureDefinitio
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-notification-panel'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
 INFORMATION: StructureDefinition/cbs-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/cbs-composition: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-composition: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-composition'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-condition.json ==
 INFORMATION: StructureDefinition/cbs-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -194,23 +192,13 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/St
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
 INFORMATION: StructureDefinition/cbs-exposure-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Display Name for http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system#Location-of-Exposure should be one of 'Location of Exposure' instead of 'Temporary code for Location of Exposure' for 'http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system#Location-of-Exposure'
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[64].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[73].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.snapshot.element[82].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition/cbs-exposure-observation: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Display Name for http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system#Location-of-Exposure should be one of 'Location of Exposure' instead of 'Temporary code for Location of Exposure' for 'http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system#Location-of-Exposure'
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
-ERROR: StructureDefinition/cbs-exposure-observation: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-exposure-observation'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json ==
 INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.snapshot.element[65].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: StructureDefinition/cbs-observation-lab: StructureDefinition.snapshot.element[74].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.snapshot.element[83].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0]: Invalid System URI: http://loinc.org/
 WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-observation-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-patient.json ==

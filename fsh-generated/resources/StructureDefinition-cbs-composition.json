@@ -84,7 +84,7 @@
           "coding": [
             {
               "code": "55751-2",
-              "system": "http://loinc.org/"
+              "system": "http://loinc.org"
             }
           ]
         },

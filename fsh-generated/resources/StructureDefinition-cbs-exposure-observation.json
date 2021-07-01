@@ -163,7 +163,7 @@
           "coding": [
             {
               "code": "77984-3",
-              "system": "http://loinc.org/"
+              "system": "http://loinc.org"
             }
           ]
         }
@@ -196,7 +196,7 @@
           "coding": [
             {
               "code": "77985-0",
-              "system": "http://loinc.org/"
+              "system": "http://loinc.org"
             }
           ]
         }
@@ -229,7 +229,7 @@
           "coding": [
             {
               "code": "77986-8",
-              "system": "http://loinc.org/"
+              "system": "http://loinc.org"
             }
           ]
         }
@@ -262,7 +262,7 @@
           "coding": [
             {
               "code": "77987-6",
-              "system": "http://loinc.org/"
+              "system": "http://loinc.org"
             }
           ]
         }

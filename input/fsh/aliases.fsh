@@ -7,7 +7,7 @@ Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.h
 //Alias: $publisher = "Georgia Tech Research Institute"
 
 // Code Systems
-Alias: $loinc = http://loinc.org/
+Alias: $loinc = http://loinc.org
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
