@@ -164,9 +164,9 @@
       },
       {
         "reference": {
-          "reference": "Patient/example"
+          "reference": "Patient/GenV2-TC"
         },
-        "name": "example",
+        "name": "GenV2_TC",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
       }
     ],

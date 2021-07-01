@@ -16,23 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-<<<<<<< HEAD
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:51:15-04:00"^^xsd:dateTime];
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:12-04:00"^^xsd:dateTime];
-=======
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
->>>>>>> Stashed changes
-=======
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
->>>>>>> Stashed changes
-=======
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T15:22:52-04:00"^^xsd:dateTime];
->>>>>>> Stashed changes
->>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-30T18:38:01-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "gtri.fhir.cbs"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -535,10 +519,10 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://cbsig.chai.gatech.edu/output/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+         fhir:link <http://cbsig.chai.gatech.edu/output/Patient/GenV2-TC>;
+         fhir:Reference.reference [ fhir:value "Patient/GenV2-TC" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GenV2_TC" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient";
          fhir:link <http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient>

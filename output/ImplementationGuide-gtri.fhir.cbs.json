@@ -9,23 +9,7 @@
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-<<<<<<< HEAD
-  "date": "2021-06-30T15:51:15-04:00",
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "date": "2021-06-30T15:22:12-04:00",
-=======
-  "date": "2021-06-30T15:22:52-04:00",
->>>>>>> Stashed changes
-=======
-  "date": "2021-06-30T15:22:52-04:00",
->>>>>>> Stashed changes
-=======
-  "date": "2021-06-30T15:22:52-04:00",
->>>>>>> Stashed changes
->>>>>>> ee6ad7f10cdaa8e1a68086b663f9f338277e5655
+  "date": "2021-06-30T18:38:01-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -537,9 +521,9 @@
           }
         ],
         "reference": {
-          "reference": "Patient/example"
+          "reference": "Patient/GenV2-TC"
         },
-        "name": "example",
+        "name": "GenV2_TC",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
       }
     ],
