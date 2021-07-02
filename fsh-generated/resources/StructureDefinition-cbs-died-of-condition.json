@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cbs-died-of-condition",
-  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
   "version": "0.1.0",
   "name": "CBSDiedOfConditionExtension",
   "title": "Case Based Surveillance Death Due to Condition Extension",
@@ -58,7 +58,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition"
+        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition"
       },
       {
         "id": "Extension.value[x]",

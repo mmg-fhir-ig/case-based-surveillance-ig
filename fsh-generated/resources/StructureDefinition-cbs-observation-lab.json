@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-observation-lab",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceObservationLab",
   "title": "Case Based Surveillance Observation Lab",
@@ -102,7 +102,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
             ]
           }
         ],
@@ -128,7 +128,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-performing-lab"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab"
             ]
           }
         ],
@@ -208,7 +208,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-specimen"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
             ]
           }
         ],

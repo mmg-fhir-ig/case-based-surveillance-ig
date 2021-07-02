@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cbs-ethnicity",
-  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
   "version": "0.1.0",
   "name": "CBSEthnicityExtension",
   "title": "Case Based Surveillance Ethnicity Extension",
@@ -122,7 +122,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity"
+        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
       },
       {
         "id": "Extension.value[x]",

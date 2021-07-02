@@ -11,7 +11,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-performing-lab",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab",
   "version": "0.1.0",
   "name": "CaseBasedSurveillancePerformingLaboratory",
   "title": "Case Based Surveillance Performing Laboratory Profile",
@@ -55,7 +55,7 @@
           "coding": [
             {
               "code": "LAB",
-              "system": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system"
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
             }
           ]
         },

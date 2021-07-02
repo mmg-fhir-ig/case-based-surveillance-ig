@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-condition",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceCondition",
   "title": "Case Based Surveillance Condition of Interest Profile",
@@ -96,7 +96,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-died-of-condition"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition"
             ]
           }
         ],
@@ -112,7 +112,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-diagnosis-date"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date"
             ]
           }
         ],
@@ -128,7 +128,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-case-class-status"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status"
             ]
           }
         ],
@@ -160,7 +160,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
             ]
           }
         ],

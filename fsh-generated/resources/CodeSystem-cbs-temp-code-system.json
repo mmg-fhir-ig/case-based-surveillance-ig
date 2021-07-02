@@ -7,7 +7,7 @@
   "title": "Case Based Surveillance temporary/placeholder code system.",
   "description": "Code system defined as placeholders for items that are not defined in existing systems.",
   "version": "0.1.0",
-  "url": "http://cbsig.chai.gatech.edu/output/CodeSystem/cbs-temp-code-system",
+  "url": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
   "concept": [
     {
       "code": "Usual-Residence",

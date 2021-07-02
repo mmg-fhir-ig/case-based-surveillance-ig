@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-patient",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient",
   "version": "0.1.0",
   "name": "CaseBasedSurveillancePatient",
   "title": "Case Based Surveillance Patient Profile",
@@ -96,7 +96,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
             ]
           }
         ],
@@ -112,7 +112,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-ethnicity"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
             ]
           }
         ],
@@ -128,7 +128,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-birthsex"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex"
             ]
           }
         ],
@@ -228,7 +228,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://cbsig.chai.gatech.edu/output/ValueSet/CBSAddressUseVS"
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS"
         }
       },
       {
