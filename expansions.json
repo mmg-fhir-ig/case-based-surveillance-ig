@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a02176e7-3c47-4c10-8d3c-a7a1504f9fff",
+  "id" : "9c69d855-e8e6-4638-8186-e283496ee606",
   "meta" : {
-    "lastUpdated" : "2021-07-02T09:58:27.672-04:00"
+    "lastUpdated" : "2021-07-02T10:31:23.788-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,11 +19,11 @@
       "name" : "CBSAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
-      "date" : "2021-07-02T09:58:27-04:00",
+      "date" : "2021-07-02T10:31:23-04:00",
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
-        "identifier" : "urn:uuid:7613256f-d07a-4bab-a9e9-f48be32d2c64",
-        "timestamp" : "2021-07-02T09:59:07-04:00",
+        "identifier" : "urn:uuid:b66501cf-2f9b-4ea2-83d4-509bc383c4ac",
+        "timestamp" : "2021-07-02T10:32:04-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",

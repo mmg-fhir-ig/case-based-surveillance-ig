@@ -3,7 +3,7 @@
 
 err = 3, warn = 25, info = 0
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
-Generated Fri Jul 02 09:59:34 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Fri Jul 02 10:32:33 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 121 / 4 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
@@ -109,14 +109,14 @@ ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.json.html#/html/body/div/div/div/p/a at Line 5153, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.ttl.html#/html/body/div/div/div/p/a at Line 4476, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-observation-lab.profile.xml.html#/html/body/div/div/div/p/a at Line 4698, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 1026, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-definitions.html#/html/body/div/div/div/p/a at Line 1355, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-mappings.html#/html/body/div/div/div/p/a at Line 388, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.html#/html/body/div/div/div/p/a at Line 1015, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient-mappings.html#/html/body/div/div/div/p/a at Line 439, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.html#/html/body/div/div/div/p/a at Line 1215, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 4102, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 3565, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 3685, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.json.html#/html/body/div/div/div/p/a at Line 5806, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 4968, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 5149, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-performing-lab-definitions.html#/html/body/div/div/div/p/a at Line 633, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-performing-lab-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/output/StructureDefinition-cbs-performing-lab-mappings.html#/html/body/div/div/div/p/a at Line 319, column 28: The link '' for "" cannot be resolved
@@ -192,7 +192,7 @@ WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.differenti
 WARNING: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
-ERROR: Case Based Surveillance Patient Profile.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
+ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 INFORMATION: StructureDefinition/cbs-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient'): The Implementation Guide contains no examples for this profile
