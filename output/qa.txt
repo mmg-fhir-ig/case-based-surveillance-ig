@@ -3,7 +3,7 @@
 
 err = 3, warn = 25, info = 0
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
-Generated Fri Jul 02 10:32:33 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Fri Jul 02 11:27:11 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 121 / 4 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/CBSIG/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1

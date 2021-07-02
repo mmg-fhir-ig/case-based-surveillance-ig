@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "CBSTemporary"];
   fhir:CodeSystem.title [ fhir:value "Case Based Surveillance temporary/placeholder code system."];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-07-02T10:31:23-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-07-02T11:25:53-04:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Code system defined as placeholders for items that are not defined in existing systems."];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
