@@ -1,3 +1,0 @@
-# CBSIG
-
-This is a proof of concept/demonstration FHIR IG based around representation of data included as part of public health case surveillance Message Mapping Guides.
