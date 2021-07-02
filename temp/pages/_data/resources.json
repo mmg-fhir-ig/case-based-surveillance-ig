@@ -1,0 +1,252 @@
+{
+  "ImplementationGuide/gtri.fhir.cbs": {
+    "history": false,
+    "index": 0,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json",
+    "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
+    "name": "CBSIG",
+    "version": "0.1.0",
+    "date": "2021-07-02T12:48:04-04:00",
+    "status": {
+      "class": "colsd",
+      "status": "Draft"
+    }
+  },
+  "StructureDefinition/cbs-composition": {
+    "history": false,
+    "index": 1,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
+    "name": "CaseBasedSurveillanceComposition",
+    "title": "Case Based Surveillance Composition Profile",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-condition": {
+    "history": false,
+    "index": 2,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
+    "name": "CaseBasedSurveillanceCondition",
+    "title": "Case Based Surveillance Condition of Interest Profile",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-exposure-observation": {
+    "history": false,
+    "index": 3,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation",
+    "name": "CaseBasedSurveillanceExposureObservation",
+    "title": "Case Based Surveillance Exposure Observation Profile",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-observation-lab": {
+    "history": false,
+    "index": 4,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-observation-lab.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab",
+    "name": "CaseBasedSurveillanceObservationLab",
+    "title": "Case Based Surveillance Observation Lab",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-patient": {
+    "history": false,
+    "index": 5,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient",
+    "name": "CaseBasedSurveillancePatient",
+    "title": "Case Based Surveillance Patient Profile",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-performing-lab": {
+    "history": false,
+    "index": 6,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab",
+    "name": "CaseBasedSurveillancePerformingLaboratory",
+    "title": "Case Based Surveillance Performing Laboratory Profile",
+    "version": "0.1.0",
+    "date": "2021-07-02T12:48:04-04:00",
+    "status": {
+      "class": "colstu",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-specimen": {
+    "history": false,
+    "index": 7,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
+    "name": "CaseBasedSurveillanceSpecimen",
+    "title": "Case Based Surveillance Specimen Profile",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-case-notification-panel": {
+    "history": false,
+    "index": 8,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
+    "name": "CaseBasedSurveillaneCaseNotificationPanel",
+    "title": "Case Based Surveillance Case Notification Panel Profile",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-birthsex": {
+    "history": false,
+    "index": 9,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+    "name": "CBSBirthSexExtension",
+    "title": "Case Based Surveillance Birth Sex Extension",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-case-class-status": {
+    "history": false,
+    "index": 10,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+    "name": "CBSCaseClassStatusExtension",
+    "title": "Case Based Surveillance Case Class Status",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-diagnosis-date": {
+    "history": false,
+    "index": 11,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
+    "name": "CBSDiagnosisDateExtension",
+    "title": "Case Based Surveillance Diagnosis Date Extension",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-died-of-condition": {
+    "history": false,
+    "index": 12,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-died-of-condition.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
+    "name": "CBSDiedOfConditionExtension",
+    "title": "Case Based Surveillance Death Due to Condition Extension",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-ethnicity": {
+    "history": false,
+    "index": 13,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-ethnicity.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
+    "name": "CBSEthnicityExtension",
+    "title": "Case Based Surveillance Ethnicity Extension",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/cbs-race": {
+    "history": false,
+    "index": 14,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race.json",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
+    "name": "CBSRaceExtension",
+    "title": "Case Based Surveillance Race Extension",
+    "version": "0.1.0",
+    "date": "2021-01-01",
+    "status": {
+      "class": "colstu",
+      "owner": "Georgia Tech Research Institute",
+      "status": "Active"
+    }
+  },
+  "ValueSet/CBSAddressUseVS": {
+    "history": false,
+    "index": 15,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS.json",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS",
+    "name": "CBSAddressUseVS",
+    "title": "Additional codes for Address.use.",
+    "version": "0.1.0",
+    "date": "2021-07-02T12:48:04-04:00",
+    "status": {
+      "class": "colstu",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/cbs-temp-code-system": {
+    "history": false,
+    "index": 16,
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system.json",
+    "url": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+    "name": "CBSTemporary",
+    "title": "Case Based Surveillance temporary/placeholder code system.",
+    "version": "0.1.0",
+    "date": "2021-07-02T12:48:04-04:00",
+    "status": {
+      "class": "colstu",
+      "status": "Active"
+    }
+  }
+}
