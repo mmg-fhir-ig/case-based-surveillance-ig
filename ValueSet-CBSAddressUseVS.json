@@ -10,7 +10,7 @@
   "name": "CBSAddressUseVS",
   "title": "Additional codes for Address.use.",
   "status": "active",
-  "date": "2021-07-02T11:25:53-04:00",
+  "date": "2021-07-02T11:52:10-04:00",
   "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
   "compose": {
     "include": [
