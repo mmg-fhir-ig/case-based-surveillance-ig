@@ -3,3 +3,5 @@ Thumbs.db
 publisher.jar
 /temp
 /template
+/output
+/input-cache
