@@ -242,7 +242,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "STD123"
+              "code": "STD123",
+              "system": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.5.232"
             }
           ]
         }
@@ -307,7 +308,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "LAB278"
+              "code": "LAB278",
+              "system": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.5.232"
             }
           ]
         }
