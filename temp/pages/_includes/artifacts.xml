@@ -32,6 +32,14 @@
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-epi-questionnaire-panel.html"
+                     title="StructureDefinition/cbs-epi-questionnaire-panel">Case Based Surveillance Epi Questionnaire Panel</a>
+               </td>
+               <td>{% capture desc %}{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-cbs-composition.html"
                      title="StructureDefinition/cbs-composition">Case Based Surveillance Composition Profile</a>
                </td>
@@ -169,6 +177,14 @@
                   <a href="ValueSet-CBSAddressUseVS.html" title="ValueSet/CBSAddressUseVS">Additional codes for Address.use.</a>
                </td>
                <td>{% capture desc %}Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CBSSTDSexualHistoryDrugUseVS.html"
+                     title="ValueSet/CBSSTDSexualHistoryDrugUseVS">STD Sexual History and Drug Use Questionnaire Panel</a>
+               </td>
+               <td>{% capture desc %}This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>

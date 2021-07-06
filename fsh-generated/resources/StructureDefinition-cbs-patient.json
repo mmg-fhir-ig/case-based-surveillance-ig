@@ -227,6 +227,7 @@
               "path": "use"
             }
           ],
+          "ordered": false,
           "rules": "open"
         },
         "mustSupport": true

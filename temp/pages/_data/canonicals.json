@@ -63,6 +63,13 @@
     "name": "CBSDiedOfConditionExtension"
   },
   {
+    "id": "cbs-epi-questionnaire-panel",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel",
+    "version": "0.1.0",
+    "name": "CBSEpiQuestionnairePanel"
+  },
+  {
     "id": "cbs-ethnicity",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
@@ -117,5 +124,12 @@
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS",
     "version": "0.1.0",
     "name": "CBSAddressUseVS"
+  },
+  {
+    "id": "CBSSTDSexualHistoryDrugUseVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseVS",
+    "version": "0.1.0",
+    "name": "CBSSTDSexualHistoryDrugUseVS"
   }
 ]

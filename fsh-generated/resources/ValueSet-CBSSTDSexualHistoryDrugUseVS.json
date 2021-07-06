@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSSTDSexualHistoryDrugUseVS",
+  "id": "CBSSTDSexualHistoryDrugUseVS",
+  "title": "STD Sexual History and Drug Use Questionnaire Panel",
+  "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232",
+        "concept": [
+          {
+            "code": "STD107"
+          },
+          {
+            "code": "STD108"
+          },
+          {
+            "code": "STD109"
+          },
+          {
+            "code": "STD110"
+          },
+          {
+            "code": "STD111"
+          },
+          {
+            "code": "STD112"
+          },
+          {
+            "code": "STD113"
+          },
+          {
+            "code": "STD114"
+          }
+        ]
+      }
+    ]
+  }
+}

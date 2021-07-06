@@ -161,6 +161,10 @@
   "profiles": {
     "Observation": [
       {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel",
+        "title": "Case Based Surveillance Epi Questionnaire Panel"
+      },
+      {
         "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation",
         "title": "Case Based Surveillance Exposure Observation Profile"
       },

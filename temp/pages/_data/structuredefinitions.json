@@ -1,6 +1,22 @@
 {
-  "cbs-composition": {
+  "cbs-epi-questionnaire-panel": {
     "index": 0,
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel",
+    "name": "CBSEpiQuestionnairePanel",
+    "path": "StructureDefinition-cbs-epi-questionnaire-panel.html",
+    "kind": "resource",
+    "type": "Observation",
+    "base": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename": "Observation",
+    "basepath": "http://hl7.org/fhir/R4/observation.html",
+    "status": "active",
+    "date": "Fri Jan 01 00:00:00 EST 2021",
+    "abstract": false,
+    "derivation": "constraint",
+    "publisher": "Georgia Tech Research Institute"
+  },
+  "cbs-composition": {
+    "index": 1,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
     "name": "CaseBasedSurveillanceComposition",
     "path": "StructureDefinition-cbs-composition.html",
@@ -17,7 +33,7 @@
     "description": "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs."
   },
   "cbs-condition": {
-    "index": 1,
+    "index": 2,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
     "name": "CaseBasedSurveillanceCondition",
     "path": "StructureDefinition-cbs-condition.html",
@@ -34,7 +50,7 @@
     "description": "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
   },
   "cbs-exposure-observation": {
-    "index": 2,
+    "index": 3,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation",
     "name": "CaseBasedSurveillanceExposureObservation",
     "path": "StructureDefinition-cbs-exposure-observation.html",
@@ -51,7 +67,7 @@
     "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
   },
   "cbs-observation-lab": {
-    "index": 3,
+    "index": 4,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab",
     "name": "CaseBasedSurveillanceObservationLab",
     "path": "StructureDefinition-cbs-observation-lab.html",
@@ -67,7 +83,7 @@
     "publisher": "Georgia Tech Research Institute"
   },
   "cbs-patient": {
-    "index": 4,
+    "index": 5,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient",
     "name": "CaseBasedSurveillancePatient",
     "path": "StructureDefinition-cbs-patient.html",
@@ -84,7 +100,7 @@
     "description": "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required."
   },
   "cbs-performing-lab": {
-    "index": 5,
+    "index": 6,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab",
     "name": "CaseBasedSurveillancePerformingLaboratory",
     "path": "StructureDefinition-cbs-performing-lab.html",
@@ -94,12 +110,12 @@
     "basename": "Organization",
     "basepath": "http://hl7.org/fhir/R4/organization.html",
     "status": "active",
-    "date": "Fri Jul 02 12:48:04 EDT 2021",
+    "date": "Tue Jul 06 18:48:07 EDT 2021",
     "abstract": false,
     "derivation": "constraint"
   },
   "cbs-specimen": {
-    "index": 6,
+    "index": 7,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
     "name": "CaseBasedSurveillanceSpecimen",
     "path": "StructureDefinition-cbs-specimen.html",
@@ -115,7 +131,7 @@
     "publisher": "Georgia Tech Research Institute"
   },
   "cbs-case-notification-panel": {
-    "index": 7,
+    "index": 8,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
     "name": "CaseBasedSurveillaneCaseNotificationPanel",
     "path": "StructureDefinition-cbs-case-notification-panel.html",
@@ -132,7 +148,7 @@
     "description": "Defines items for the Case Notification Panel."
   },
   "cbs-birthsex": {
-    "index": 8,
+    "index": 9,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
     "name": "CBSBirthSexExtension",
     "path": "StructureDefinition-cbs-birthsex.html",
@@ -154,7 +170,7 @@
     ]
   },
   "cbs-case-class-status": {
-    "index": 9,
+    "index": 10,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
     "name": "CBSCaseClassStatusExtension",
     "path": "StructureDefinition-cbs-case-class-status.html",
@@ -176,7 +192,7 @@
     ]
   },
   "cbs-diagnosis-date": {
-    "index": 10,
+    "index": 11,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
     "name": "CBSDiagnosisDateExtension",
     "path": "StructureDefinition-cbs-diagnosis-date.html",
@@ -198,7 +214,7 @@
     ]
   },
   "cbs-died-of-condition": {
-    "index": 11,
+    "index": 12,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
     "name": "CBSDiedOfConditionExtension",
     "path": "StructureDefinition-cbs-died-of-condition.html",
@@ -220,7 +236,7 @@
     ]
   },
   "cbs-ethnicity": {
-    "index": 12,
+    "index": 13,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
     "name": "CBSEthnicityExtension",
     "path": "StructureDefinition-cbs-ethnicity.html",
@@ -242,7 +258,7 @@
     ]
   },
   "cbs-race": {
-    "index": 13,
+    "index": 14,
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
     "name": "CBSRaceExtension",
     "path": "StructureDefinition-cbs-race.html",

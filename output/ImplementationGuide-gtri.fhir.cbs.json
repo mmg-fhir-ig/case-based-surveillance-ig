@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-  "date": "2021-07-02T12:48:04-04:00",
+  "date": "2021-07-06T18:48:07-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -300,6 +300,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-epi-questionnaire-panel"
+        },
+        "name": "Case Based Surveillance Epi Questionnaire Panel",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-composition"
         },
         "name": "Case Based Surveillance Composition Profile",
@@ -497,6 +510,20 @@
         },
         "name": "Additional codes for Address.use.",
         "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CBSSTDSexualHistoryDrugUseVS"
+        },
+        "name": "STD Sexual History and Drug Use Questionnaire Panel",
+        "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
         "exampleBoolean": false
       },
       {

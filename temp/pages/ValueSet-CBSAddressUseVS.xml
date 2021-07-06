@@ -10,7 +10,7 @@
   <name value="CBSAddressUseVS"/>
   <title value="Additional codes for Address.use."/>
   <status value="active"/>
-  <date value="2021-07-02T12:48:04-04:00"/>
+  <date value="2021-07-06T18:48:07-04:00"/>
   <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
   <compose>
     <include>

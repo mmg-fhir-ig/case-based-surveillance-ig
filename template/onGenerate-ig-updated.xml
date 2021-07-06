@@ -13,7 +13,7 @@
    <version value="0.1.0"/>
    <name value="CBSIG"/>
    <status value="draft"/>
-   <date value="2021-07-02T12:48:04-04:00"/>
+   <date value="2021-07-06T18:48:07-04:00"/>
    <packageId value="gtri.fhir.cbs"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
@@ -72,6 +72,20 @@
 
 
 
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cbs-epi-questionnaire-panel.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cbs-epi-questionnaire-panel"/>
+         </reference>
+         <name value="Case Based Surveillance Epi Questionnaire Panel"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
@@ -296,6 +310,21 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-CBSSTDSexualHistoryDrugUseVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/CBSSTDSexualHistoryDrugUseVS"/>
+         </reference>
+         <name value="STD Sexual History and Drug Use Questionnaire Panel"/>
+         <description value="This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -322,6 +351,11 @@
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-cbs-epi-questionnaire-panel.html"/>
+               <title value="Case Based Surveillance Epi Questionnaire Panel"/>
+               <generation value="generated"/>
+            </page>
             <page>
                <nameUrl value="StructureDefinition-cbs-composition.html"/>
                <title value="Case Based Surveillance Composition Profile"/>
@@ -395,6 +429,11 @@
             <page>
                <nameUrl value="ValueSet-CBSAddressUseVS.html"/>
                <title value="Additional codes for Address.use."/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-CBSSTDSexualHistoryDrugUseVS.html"/>
+               <title value="STD Sexual History and Drug Use Questionnaire Panel"/>
                <generation value="generated"/>
             </page>
             <page>
