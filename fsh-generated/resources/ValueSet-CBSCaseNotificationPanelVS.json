@@ -1,0 +1,91 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSCaseNotificationPanelVS",
+  "id": "CBSCaseNotificationPanelVS",
+  "title": "CBS Case Notification Panel Value Set",
+  "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "77993-4"
+          },
+          {
+            "code": "77997-5"
+          },
+          {
+            "code": "77989-2"
+          },
+          {
+            "code": "77965-2"
+          },
+          {
+            "code": "77980-1"
+          },
+          {
+            "code": "77981-9"
+          },
+          {
+            "code": "77969-4"
+          },
+          {
+            "code": "52831-5"
+          },
+          {
+            "code": "77988-4"
+          },
+          {
+            "code": "74549-7"
+          },
+          {
+            "code": "74548-9"
+          },
+          {
+            "code": "74547-1"
+          },
+          {
+            "code": "77979-3"
+          },
+          {
+            "code": "77970-2"
+          },
+          {
+            "code": "77972-8"
+          },
+          {
+            "code": "77973-6"
+          },
+          {
+            "code": "77991-8"
+          },
+          {
+            "code": "77992-6"
+          },
+          {
+            "code": "77994-2"
+          },
+          {
+            "code": "77995-9"
+          },
+          {
+            "code": "77966-0"
+          },
+          {
+            "code": "77967-8"
+          },
+          {
+            "code": "77968-6"
+          },
+          {
+            "code": "77999-1"
+          }
+        ]
+      }
+    ]
+  }
+}

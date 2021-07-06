@@ -156,6 +156,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/CBSCaseNotificationPanelVS"
+        },
+        "name": "CBS Case Notification Panel Value Set",
+        "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/cbs-temp-code-system"
         },
         "name": "Case Based Surveillance temporary/placeholder code system.",

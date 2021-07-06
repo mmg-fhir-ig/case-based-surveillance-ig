@@ -12,13 +12,12 @@ Description: "Defines items for the Case Notification Panel."
 * status MS
 * category 1..1 MS
 * category only CodeableConcept
-* category = $loinc#78000-7
+* category = $loinc#78000-7 "Case notification panel [CDC.PHIN]"
 * code 1..1 MS
 * code only CodeableConcept
 * code from CBSCaseNotificationPanelVS
 * code ^binding.description = "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
-* value[x] only Quantity or CodeableConcept or string or boolean or integer or time or dateTime or Period
+* value[x] only CodeableConcept or string or integer or date or dateTime
 * value[x] MS
-* value
