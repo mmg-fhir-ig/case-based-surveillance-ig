@@ -1365,6 +1365,7 @@
           <type value="value"/>
           <path value="use"/>
         </discriminator>
+        <ordered value="false"/>
         <rules value="open"/>
       </slicing>
       <short value="An address for the individual"/>
@@ -4439,6 +4440,7 @@
           <type value="value"/>
           <path value="use"/>
         </discriminator>
+        <ordered value="false"/>
         <rules value="open"/>
       </slicing>
       <mustSupport value="true"/>

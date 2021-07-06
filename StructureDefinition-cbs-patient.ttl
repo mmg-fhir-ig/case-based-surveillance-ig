@@ -1700,6 +1700,7 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "use" ]
          ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "An address for the individual" ];
@@ -5584,6 +5585,7 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "use" ]
          ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]

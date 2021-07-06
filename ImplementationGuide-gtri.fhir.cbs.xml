@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="CBSIG"/>
   <status value="draft"/>
-  <date value="2021-07-02T12:48:04-04:00"/>
+  <date value="2021-07-06T18:48:07-04:00"/>
   <packageId value="gtri.fhir.cbs"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -191,6 +191,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-epi-questionnaire-panel"/>
+      </reference>
+      <name value="Case Based Surveillance Epi Questionnaire Panel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-composition"/>
       </reference>
       <name value="Case Based Surveillance Composition Profile"/>
@@ -346,6 +356,17 @@
       </reference>
       <name value="Additional codes for Address.use."/>
       <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CBSSTDSexualHistoryDrugUseVS"/>
+      </reference>
+      <name value="STD Sexual History and Drug Use Questionnaire Panel"/>
+      <description value="This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
