@@ -1,3 +1,9 @@
+### Introduction
+
 The Case Based Surveillance Case Notification Panel contains observations reported to the Centers for Disease Control and Prevention and Prevention (CDC) Public Health Information Network (PHIN) for nationally notifiable disease reporting. The panel is based on, but not limited in use to, the Generic Individual Case Notification Message Mapping Guide for v2 HL7 messaging. The guide is used by state/local and CDC programs and other public health related organizations who transmit their data elements to the CDC. The Generic v2 Guide is used in conjunction with disease-specific Message Mapping Guides in order to construct a complete case notification message for nationally notifiable diseases and conditions with disease-specific data elements. 
 
 Not all observations contained in the full Case Notification Panel (see [Case notification panel on LOINC](https://loinc.org/78000-7/)) are going to be present in this guide. This panel contains the observations that are not found in the other profiles, such as the [CBS Condition of Interest](http://cbsig.chai.gatech.edu/StructureDefinition-cbs-condition.html) or the [CBS Exposure Observation](http://cbsig.chai.gatech.edu/StructureDefinition-cbs-exposure-observation.html).
+
+### Panel Structure
+
+(Self referential profile at the moment, can expand in the future to have profile for each member but currently do not have development resources)

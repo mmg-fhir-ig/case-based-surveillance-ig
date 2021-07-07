@@ -19,3 +19,5 @@ Description:  "Code system defined as placeholders for items that are not define
     "CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)."
 * #LAB "Laboratory"
     "Laboratory coding for organization type"
+* #MMWR "MMWR Week/Year"
+    "Grouped MMWR Week and Year into a single code"

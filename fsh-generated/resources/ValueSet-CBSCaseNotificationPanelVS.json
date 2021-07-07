@@ -13,12 +13,6 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "77993-4"
-          },
-          {
-            "code": "77997-5"
-          },
-          {
             "code": "77989-2"
           },
           {
@@ -86,6 +80,20 @@
           },
           {
             "code": "77998-3"
+          },
+          {
+            "code": "77996-7"
+          },
+          {
+            "code": "77977-7"
+          }
+        ]
+      },
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "MMWR"
           }
         ]
       }
