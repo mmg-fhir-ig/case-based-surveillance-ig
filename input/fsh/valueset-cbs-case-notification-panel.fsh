@@ -26,3 +26,7 @@ Description: "Codes found in the case notification panel that are otherwise not 
 * include $loinc#77968-6
 * include $loinc#77999-1
 * include $loinc#77998-3
+* include $loinc#77996-7
+* include $loinc#11368-8
+* include $loinc#77976-9
+* include $loinc#77977-7
