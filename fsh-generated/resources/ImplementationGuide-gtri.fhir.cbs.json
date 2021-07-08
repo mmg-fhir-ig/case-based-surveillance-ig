@@ -39,6 +39,13 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-cnp-member"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Member",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-composition"
         },
         "name": "Case Based Surveillance Composition Profile",

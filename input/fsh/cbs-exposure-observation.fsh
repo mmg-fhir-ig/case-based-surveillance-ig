@@ -1,5 +1,5 @@
 Profile: CaseBasedSurveillanceExposureObservation
-Parent: Observation
+Parent: cbs-case-notification-panel
 Id: cbs-exposure-observation
 Title: "Case Based Surveillance Exposure Observation Profile"
 Description: "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
@@ -11,7 +11,7 @@ Description: "Defines constraints and extensions to the observation resource in 
 * status 1..1 MS
 * status = #final
 * code 1..1 MS
-* code = cbs-temp-code-system#Location-of-Exposure "Temporary code for Location of Exposure" //note for to-do: need to replace later with what CDC decides
+* code = cbs-temp-code-system#Location-of-Exposure
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
 * subject ^short = "The reference to the subject (the patient)"

@@ -46,6 +46,7 @@ Alias: $PHVS-GeneName-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.
 Alias: $PHVS-Organism-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850
 Alias: $PHVS-PHINQuestions-CDC = http://phinvads.cdc.gov/fhir/CodeSystem/2.16.840.1.114222.4.5.232
 Alias: $PHVS-DiseaseAcquiredJurisdiction-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3030
+Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268
 
 
 // FHIR Terminology
