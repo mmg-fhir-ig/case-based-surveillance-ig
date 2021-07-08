@@ -9,10 +9,8 @@ Description: "Defines constraints and extensions to the observation resource in 
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * status 1..1 MS
-* status only code
 * status = #final
 * code 1..1 MS
-* code only CodeableConcept
 * code = cbs-temp-code-system#Location-of-Exposure "Temporary code for Location of Exposure" //note for to-do: need to replace later with what CDC decides
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
@@ -21,6 +19,7 @@ Description: "Defines constraints and extensions to the observation resource in 
 * focus only Reference(cbs-condition)
 * focus ^short = "The reference to the condition of interest"
 * valueCodeableConcept 0..1 MS
+* valueCodeableConcept from $PHVS-DiseaseAcquiredJurisdiction-NND
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

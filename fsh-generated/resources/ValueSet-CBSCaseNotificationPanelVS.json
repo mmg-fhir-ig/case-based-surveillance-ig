@@ -13,6 +13,9 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "78000-7"
+          },
+          {
             "code": "77989-2"
           },
           {

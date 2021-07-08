@@ -15,6 +15,7 @@ Description: "Defines constraints and extensions to the condition resource in or
 * code 1..1 MS
 * code only CodeableConcept
 * code from $PHVS-NotifiableEvent-Disease (required)
+
 * bodySite 0..* MS
 * bodySite only CodeableConcept
 * bodySite from $PHVS-BodySite-CDC (extensible)

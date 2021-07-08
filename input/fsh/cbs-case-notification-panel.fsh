@@ -19,6 +19,7 @@ Description: "Defines items for the Case Notification Panel."
 * code ^binding.description = "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
+* hasMember MS
 * hasMember only Reference(cbs-case-notification-panel or cbs-exposure-observation)
 * value[x] only CodeableConcept or string or integer or dateTime
 * value[x] MS
