@@ -8,6 +8,7 @@ Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.h
 
 // Code Systems
 Alias: $loinc = http://loinc.org
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
