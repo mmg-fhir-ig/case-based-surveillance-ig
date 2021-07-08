@@ -1,4 +1,4 @@
-Instance: GenV2_TC
+Instance: GenV2-TC
 InstanceOf: cbs-patient
 Usage: #example
 * extension[0].url = "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
