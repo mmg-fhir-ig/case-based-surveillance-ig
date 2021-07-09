@@ -38,7 +38,7 @@
     "coding": [
       {
         "code": "10280",
-        "system": "http://phinvads.cdc.gov/fhir/CodeSystem/2.16.840.1.114222.4.5.277"
+        "system": "urn:oid:2.16.840.1.114222.4.5.277"
       }
     ]
   },
@@ -53,6 +53,7 @@
     }
   ],
   "subject": {
-    "reference": "Patient/GenV2-TC"
+    "reference": "Patient/GenV2-TC",
+    "display": "GenV2-TC Example Patient"
   }
 }
