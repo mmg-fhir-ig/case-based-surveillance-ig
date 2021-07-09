@@ -75,6 +75,89 @@
         "id": "Observation",
         "path": "Observation",
         "mustSupport": false
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "78000-7",
+              "system": "http://loinc.org",
+              "display": "Case notification panel [CDC.PHIN]"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
+          "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "mustSupport": true
       }
     ]
   }

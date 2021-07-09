@@ -12,26 +12,17 @@ Description: "Defines constraints and extensions to the condition resource in or
     cbs-died-of-condition named death 0..1 MS and
     cbs-diagnosis-date named diagnosis-date 0..1 MS and
     cbs-case-class-status named case-class-status 1..1 MS
-* identifier 0..*
-* clinicalStatus 0..1
-* verificationStatus 0..1
-* category 0..*
-* severity 0..1
 * code 1..1 MS
 * code only CodeableConcept
-* code from $PHVS-NotifiableEvent-Disease
+* code from $PHVS-NotifiableEvent-Disease (required)
+
 * bodySite 0..* MS
 * bodySite only CodeableConcept
 * bodySite from $PHVS-BodySite-CDC (extensible)
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
-* encounter 0..1
 * onsetDateTime 0..1 MS
 * abatementDateTime 0..1 MS
 * recordedDate 0..1 MS 
-* recorder 0..1
-* asserter 0..1
-* stage 0..*
 * evidence 0..* MS
 * evidence ^short = "Signs and Symptoms of the Condition of Interest"
-* note 0..*

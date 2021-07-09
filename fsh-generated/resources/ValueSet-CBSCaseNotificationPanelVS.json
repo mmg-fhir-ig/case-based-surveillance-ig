@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSCaseNotificationPanelVS",
+  "id": "CBSCaseNotificationPanelVS",
+  "title": "CBS Case Notification Panel Value Set",
+  "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "78000-7"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268"
+        ]
+      }
+    ]
+  }
+}

@@ -48,7 +48,12 @@
       "code": "LAB",
       "display": "Laboratory",
       "definition": "Laboratory coding for organization type"
+    },
+    {
+      "code": "MMWR",
+      "display": "MMWR Week/Year",
+      "definition": "Grouped MMWR Week and Year into a single code"
     }
   ],
-  "count": 8
+  "count": 9
 }
