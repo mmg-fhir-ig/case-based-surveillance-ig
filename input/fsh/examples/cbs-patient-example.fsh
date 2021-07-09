@@ -1,7 +1,7 @@
 Instance: GenV2-TC
 InstanceOf: cbs-patient
 Usage: #example
-* extension[0].url = "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
+* extension[0].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
 * extension[=].extension[0].url = "ombCategory"
 * extension[=].extension[=].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
 * extension[=].extension[+].url = "detailed"
