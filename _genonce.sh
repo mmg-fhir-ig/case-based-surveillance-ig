@@ -17,6 +17,9 @@ echo "$txoption"
 publisher=$input_cache_path/$publisher_jar
 if test -f "$publisher"; then
 	java -jar $publisher -ig . $txoption $*
+	mv fsh-generated/includes/menu.xml input/includes/menu.xml
+	mv fsh-generated/resources input/resources
+	rm -R fsh-generated
 
 else
 	publisher=../$publisher_jar
