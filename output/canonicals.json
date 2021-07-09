@@ -126,10 +126,10 @@
     "name": "CBSAddressUseVS"
   },
   {
-    "id": "CBSSTDSexualHistoryDrugUseVS",
+    "id": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",
     "type": "ValueSet",
-    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseVS",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
     "version": "0.1.0",
-    "name": "CBSSTDSexualHistoryDrugUseVS"
+    "name": "CBSSTDSexualHistoryDrugUseQuestionnaireVS"
   }
 ]

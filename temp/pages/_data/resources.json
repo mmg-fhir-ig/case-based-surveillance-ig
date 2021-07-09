@@ -6,7 +6,7 @@
     "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
     "name": "CBSIG",
     "version": "0.1.0",
-    "date": "2021-07-06T18:48:07-04:00",
+    "date": "2021-07-09T10:40:48-04:00",
     "status": {
       "class": "colsd",
       "status": "Draft"
@@ -110,7 +110,7 @@
     "name": "CaseBasedSurveillancePerformingLaboratory",
     "title": "Case Based Surveillance Performing Laboratory Profile",
     "version": "0.1.0",
-    "date": "2021-07-06T18:48:07-04:00",
+    "date": "2021-07-09T10:40:48-04:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -152,7 +152,7 @@
     "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex.json",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
     "name": "CBSBirthSexExtension",
-    "title": "Case Based Surveillance Birth Sex Extension",
+    "title": "Case Based Surveillance Sex Assigned at Birth Extension",
     "version": "0.1.0",
     "date": "2021-01-01",
     "status": {
@@ -244,21 +244,21 @@
     "name": "CBSAddressUseVS",
     "title": "Additional codes for Address.use.",
     "version": "0.1.0",
-    "date": "2021-07-06T18:48:07-04:00",
+    "date": "2021-07-09T10:40:48-04:00",
     "status": {
       "class": "colstu",
       "status": "Active"
     }
   },
-  "ValueSet/CBSSTDSexualHistoryDrugUseVS": {
+  "ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS": {
     "history": false,
     "index": 17,
-    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseVS.json",
-    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseVS",
-    "name": "CBSSTDSexualHistoryDrugUseVS",
+    "source": "/Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
+    "name": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",
     "title": "STD Sexual History and Drug Use Questionnaire Panel",
     "version": "0.1.0",
-    "date": "2021-07-06T18:48:07-04:00",
+    "date": "2021-07-09T10:40:48-04:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -272,7 +272,7 @@
     "name": "CBSTemporary",
     "title": "Case Based Surveillance temporary/placeholder code system.",
     "version": "0.1.0",
-    "date": "2021-07-06T18:48:07-04:00",
+    "date": "2021-07-09T10:40:48-04:00",
     "status": {
       "class": "colstu",
       "status": "Active"

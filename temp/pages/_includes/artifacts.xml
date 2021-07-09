@@ -116,7 +116,7 @@
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-cbs-birthsex.html"
-                     title="StructureDefinition/cbs-birthsex">Case Based Surveillance Birth Sex Extension</a>
+                     title="StructureDefinition/cbs-birthsex">Case Based Surveillance Sex Assigned at Birth Extension</a>
                </td>
                <td>{% capture desc %}A code classifying the person's sex assigned at birth.{% endcapture %}
 {{ desc | markdownify}}</td>
@@ -181,8 +181,8 @@
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CBSSTDSexualHistoryDrugUseVS.html"
-                     title="ValueSet/CBSSTDSexualHistoryDrugUseVS">STD Sexual History and Drug Use Questionnaire Panel</a>
+                  <a href="ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html"
+                     title="ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS">STD Sexual History and Drug Use Questionnaire Panel</a>
                </td>
                <td>{% capture desc %}This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.{% endcapture %}
 {{ desc | markdownify}}</td>

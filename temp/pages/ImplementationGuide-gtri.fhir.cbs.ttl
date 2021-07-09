@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-07-06T18:48:07-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-07-09T10:40:48-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "gtri.fhir.cbs"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -423,7 +423,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/cbs-birthsex" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Birth Sex Extension" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case Based Surveillance Sex Assigned at Birth Extension" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code classifying the person's sex assigned at birth." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -518,8 +518,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/CBSSTDSexualHistoryDrugUseVS" ]
+         fhir:link <http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "STD Sexual History and Drug Use Questionnaire Panel" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG." ];

@@ -5,7 +5,7 @@
   "extensions": [
     {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
-      "title": "Case Based Surveillance Birth Sex Extension",
+      "title": "Case Based Surveillance Sex Assigned at Birth Extension",
       "types": [
         "CodeableConcept",
         "CodeableConcept"

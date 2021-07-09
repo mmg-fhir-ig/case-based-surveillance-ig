@@ -39,7 +39,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension","birthsex","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex]]} {[]}
-","Case Based Surveillance Birth Sex Extension","A code classifying the person's sex assigned at birth.","The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Case Based Surveillance Sex Assigned at Birth Extension","A code classifying the person's sex assigned at birth.","The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension","genderIdentity","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-genderIdentity]]} {[]}

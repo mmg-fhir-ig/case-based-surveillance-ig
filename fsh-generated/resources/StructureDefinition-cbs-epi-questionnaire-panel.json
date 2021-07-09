@@ -76,6 +76,11 @@
         "mustSupport": false
       },
       {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category",
         "path": "Observation.category",
         "slicing": {
@@ -122,6 +127,49 @@
         "min": 1,
         "fixedCode": "epi-questionnaire",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Coded Questionnaire Items from Surveillance Program Specified Valueset",
+        "definition": "Coded Questionnaire Items from Surveillance Program Specified Valueset",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
+          "description": "This identifies the coded questionnaire item."
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+            ]
+          }
+        ]
       }
     ]
   }

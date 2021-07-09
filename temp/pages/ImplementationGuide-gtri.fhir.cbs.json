@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-  "date": "2021-07-06T18:48:07-04:00",
+  "date": "2021-07-09T10:40:48-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -424,7 +424,7 @@
         "reference": {
           "reference": "StructureDefinition/cbs-birthsex"
         },
-        "name": "Case Based Surveillance Birth Sex Extension",
+        "name": "Case Based Surveillance Sex Assigned at Birth Extension",
         "description": "A code classifying the person's sex assigned at birth.",
         "exampleBoolean": false
       },
@@ -520,7 +520,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/CBSSTDSexualHistoryDrugUseVS"
+          "reference": "ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS"
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
         "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
