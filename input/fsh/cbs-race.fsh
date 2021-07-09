@@ -24,7 +24,7 @@ Description: "Concepts classifying the person into a named category of humans sh
 * extension[ombCategory].url only uri
 * extension[ombCategory].valueCoding 1..1
 * extension[ombCategory].valueCoding only Coding
-* extension[ombCategory].valueCoding from $PHVS-RaceCategory-CDC-NullFlavor (extensible)
+* extension[ombCategory].valueCoding from $PHVS-RaceCategory-CDC-NullFlavor (required)
 * extension[ombCategory].valueCoding ^binding.description = "The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."
 * extension[detailed] only Extension
 * extension[detailed] ^short = "Extended race codes"

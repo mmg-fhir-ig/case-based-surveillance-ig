@@ -37,6 +37,7 @@ Description: "Defines constraints and extensions to the patient resource in orde
 * address 0..* MS
 * address ^slicing.discriminator.type = #value
 * address ^slicing.discriminator.path = "use"
+* address ^slicing.ordered = false
 * address ^slicing.rules = #open
 * address contains
      Usual-Residence 0..1 MS and
