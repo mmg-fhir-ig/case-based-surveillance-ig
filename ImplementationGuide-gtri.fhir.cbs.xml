@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="CBSIG"/>
   <status value="draft"/>
-  <date value="2021-07-09T10:40:48-04:00"/>
+  <date value="2021-07-09T13:55:36-04:00"/>
   <packageId value="gtri.fhir.cbs"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -26,11 +26,6 @@
   <dependsOn id="hl7_fhir_us_ecr">
     <uri value="http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr"/>
     <packageId value="hl7.fhir.us.ecr"/>
-    <version value="current"/>
-  </dependsOn>
-  <dependsOn id="hl7_fhir_us_odh">
-    <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
-    <packageId value="hl7.fhir.us.odh"/>
     <version value="current"/>
   </dependsOn>
   <definition>
@@ -201,6 +196,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-cnp-member"/>
+      </reference>
+      <name value="Case Based Surveillance Case Notification Panel Member"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-composition"/>
       </reference>
       <name value="Case Based Surveillance Composition Profile"/>
@@ -363,6 +368,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/CBSCaseNotificationPanelVS"/>
+      </reference>
+      <name value="CBS Case Notification Panel Value Set"/>
+      <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS"/>
       </reference>
       <name value="STD Sexual History and Drug Use Questionnaire Panel"/>
@@ -379,6 +395,26 @@
       <name value="Case Based Surveillance temporary/placeholder code system."/>
       <description value="Code system defined as placeholders for items that are not defined in existing systems."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/GenV2-CoI"/>
+      </reference>
+      <name value="GenV2-CoI"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/GenV2-TC"/>
+      </reference>
+      <name value="GenV2-TC"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

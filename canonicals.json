@@ -35,6 +35,13 @@
     "name": "CaseBasedSurveillaneCaseNotificationPanel"
   },
   {
+    "id": "cbs-cnp-member",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceCaseNotificationPanelMember"
+  },
+  {
     "id": "cbs-composition",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
@@ -124,6 +131,13 @@
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS",
     "version": "0.1.0",
     "name": "CBSAddressUseVS"
+  },
+  {
+    "id": "CBSCaseNotificationPanelVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
+    "version": "0.1.0",
+    "name": "CBSCaseNotificationPanelVS"
   },
   {
     "id": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",

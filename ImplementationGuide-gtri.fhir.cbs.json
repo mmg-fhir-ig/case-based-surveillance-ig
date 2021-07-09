@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "CBSIG",
   "status": "draft",
-  "date": "2021-07-09T10:40:48-04:00",
+  "date": "2021-07-09T13:55:36-04:00",
   "packageId": "gtri.fhir.cbs",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -32,12 +32,6 @@
       "id": "hl7_fhir_us_ecr",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "packageId": "hl7.fhir.us.ecr",
-      "version": "current"
-    },
-    {
-      "id": "hl7_fhir_us_odh",
-      "uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
-      "packageId": "hl7.fhir.us.odh",
       "version": "current"
     }
   ],
@@ -313,6 +307,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-cnp-member"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Member",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-composition"
         },
         "name": "Case Based Surveillance Composition Profile",
@@ -520,6 +527,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/CBSCaseNotificationPanelVS"
+        },
+        "name": "CBS Case Notification Panel Value Set",
+        "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS"
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
@@ -539,6 +560,32 @@
         "name": "Case Based Surveillance temporary/placeholder code system.",
         "description": "Code system defined as placeholders for items that are not defined in existing systems.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/GenV2-CoI"
+        },
+        "name": "GenV2-CoI",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/GenV2-TC"
+        },
+        "name": "GenV2-TC",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
       }
     ],
     "page": {

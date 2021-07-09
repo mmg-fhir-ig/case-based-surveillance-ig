@@ -1,0 +1,123 @@
+{
+  "resourceType": "Patient",
+  "id": "GenV2-TC",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li></li></ul><p><b style=\"color: maroon\">Exception generating Narrative: Unknown AddressUse code 'Usual-Residence'</b></p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "detailed",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "1010-8",
+            "display": "Apache"
+          }
+        },
+        {
+          "url": "otherRace",
+          "valueString": "Apache"
+        },
+        {
+          "url": "text",
+          "valueString": "Mixed"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "USA"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Record-ID",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "GenV2_TC01_Record"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Subject-ID",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "GenV2_TC01_Subject"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77997-5",
+            "display": "Legacy case identifier [CDC.PHIN]"
+          }
+        ],
+        "text": "Legacy Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "48432148S012014"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77993-4",
+            "display": "State notifiable condition case identifier"
+          }
+        ],
+        "text": "State Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "TX4321"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1964-05-02",
+  "deceasedDateTime": "2014-03-02",
+  "address": [
+    {
+      "use": "home",
+      "district": "Harris",
+      "state": "Texas",
+      "postalCode": "77018"
+    },
+    {
+      "use": "Usual-Residence",
+      "country": "USA"
+    }
+  ]
+}
