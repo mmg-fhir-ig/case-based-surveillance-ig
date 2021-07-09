@@ -8,7 +8,7 @@
   },
   "extension": [
     {
-      "url": "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race",
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
       "extension": [
         {
           "url": "ombCategory",
