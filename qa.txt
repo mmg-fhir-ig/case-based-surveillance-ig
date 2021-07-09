@@ -1,15 +1,15 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 8, warn = 25, info = 7
+err = 7, warn = 29, info = 6
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.76
-Generated Fri Jul 09 13:57:01 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Fri Jul 09 14:33:39 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 159 / 8 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-CoI : 2 / 3 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC : 2 / 0 / 3
+ /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-CoI : 1 / 1 / 2
+ /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC : 2 / 0 / 2
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 1 / 1
@@ -24,11 +24,11 @@ Generated Fri Jul 09 13:57:01 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-observation-lab : 0 / 1 / 5
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 0 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 1 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 1 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 2 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 9 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -53,7 +53,7 @@ ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/Patient-GenV2-TC.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/Patient-GenV2-TC.json.html#/html/body/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/Patient-GenV2-TC.ttl.html#/html/body/div/div/div/p/a at Line 306, column 28: The link '' for "" cannot be resolved
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/Patient-GenV2-TC.xml.html#/html/body/div/div/div/p/a at Line 291, column 28: The link '' for "" cannot be resolved
+ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/Patient-GenV2-TC.xml.html#/html/body/div/div/div/p/a at Line 290, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex-definitions.html#/html/body/div/div/div/p/a at Line 284, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex-mappings.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/StructureDefinition-cbs-birthsex.html#/html/body/div/div/div/p/a at Line 496, column 28: The link '' for "" cannot be resolved
@@ -204,17 +204,13 @@ INFORMATION: ImplementationGuide/gtri.fhir.cbs: ImplementationGuide: Validate re
 INFORMATION: CodeSystem/cbs-temp-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-CoI.json ==
 INFORMATION: Condition/GenV2-CoI: Condition: Validate resource against profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-WARNING: Condition/GenV2-CoI: Condition.extension[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 because the value set or code system is not known to the validator]
-ERROR: Condition/GenV2-CoI: Condition.extension[0].value.ofType(CodeableConcept): This version of SNOMED is not loaded (from http://tx.fhir.org/r4)
+ERROR: Condition/GenV2-CoI: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
 WARNING: Condition/GenV2-CoI: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
 INFORMATION: Condition/GenV2-CoI: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
-WARNING: Condition/GenV2-CoI: Condition.bodySite[0]: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967 because the value set or code system is not known to the validator]
-ERROR: Condition/GenV2-CoI: Condition.bodySite[0]: This version of SNOMED is not loaded (from http://tx.fhir.org/r4)
 == /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC.json ==
 INFORMATION: Patient/GenV2-TC: Patient: Validate resource against profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
-INFORMATION: Patient/GenV2-TC: Patient.extension[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
 INFORMATION: Patient/GenV2-TC: Patient.address[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
-ERROR: Patient/GenV2-TC: Patient.extension[0]: The extension http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race is unknown, and not allowed here
+ERROR: Patient/GenV2-TC: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 ERROR: Patient/GenV2-TC: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 == /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 INFORMATION: StructureDefinition/cbs-birthsex: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -262,7 +258,6 @@ INFORMATION: StructureDefinition/cbs-performing-lab: StructureDefinition: Valida
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json ==
 INFORMATION: StructureDefinition/cbs-race: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen.json ==
 INFORMATION: StructureDefinition/cbs-specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen'): The Implementation Guide contains no examples for this profile
@@ -274,5 +269,12 @@ INFORMATION: ValueSet/CBSCaseNotificationPanelVS: ValueSet: Validate resource ag
 ERROR: ValueSet.where(id = 'CBSCaseNotificationPanelVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268"
 == /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json ==
 INFORMATION: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[0]: The code STD107 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[1]: The code STD108 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[2]: The code STD109 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[3]: The code STD110 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[4]: The code STD111 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[5]: The code STD112 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[6]: The code STD113 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[7]: The code STD114 is not valid in the system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232
 WARNING: ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS'): Error from server: Unable to provide support for code system https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232

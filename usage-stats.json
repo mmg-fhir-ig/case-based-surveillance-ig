@@ -223,9 +223,6 @@
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race": [
       "Patient"
     ],
-    "http://cbsig.chai.gatech.edu/output/StructureDefinition/cbs-race": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
