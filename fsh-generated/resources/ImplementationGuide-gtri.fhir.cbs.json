@@ -33,15 +33,16 @@
     "resource": [
       {
         "reference": {
-<<<<<<< HEAD
-          "reference": "StructureDefinition/cbs-cnp-member"
-        },
-        "name": "Case Based Surveillance Case Notification Panel Member",
-=======
           "reference": "StructureDefinition/cbs-epi-questionnaire-panel"
         },
         "name": "Case Based Surveillance Epi Questionnaire Panel",
->>>>>>> feature-epiquestionnaire
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-cnp-member"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Member",
         "exampleBoolean": false
       },
       {
@@ -163,17 +164,18 @@
       },
       {
         "reference": {
-<<<<<<< HEAD
           "reference": "ValueSet/CBSCaseNotificationPanelVS"
         },
         "name": "CBS Case Notification Panel Value Set",
         "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
-=======
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS"
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
         "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
->>>>>>> feature-epiquestionnaire
         "exampleBoolean": false
       },
       {
