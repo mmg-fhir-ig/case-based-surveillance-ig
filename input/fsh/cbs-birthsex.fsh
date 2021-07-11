@@ -1,12 +1,11 @@
 Extension: CBSBirthSexExtension
 Id: cbs-birthsex
-Title: "Case Based Surveillance Birth Sex Extension"
+Title: "Case Based Surveillance Sex Assigned at Birth Extension"
 Description: "A code classifying the person's sex assigned at birth."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
-
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^context.type = #element
 * ^context.expression = "Patient"

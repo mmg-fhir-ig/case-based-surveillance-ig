@@ -1,0 +1,59 @@
+{
+  "resourceType": "Condition",
+  "id": "GenV2-CoI",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "410605003",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Y",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
+      "valueDateTime": "2021-01-18"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "10280",
+        "system": "urn:oid:2.16.840.1.114222.4.5.277"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "244440008",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/GenV2-TC",
+    "display": "GenV2-TC Example Patient"
+  }
+}

@@ -67,15 +67,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "patternCode": "final",
-        "mustSupport": true
+        "patternCode": "final"
       },
       {
         "id": "Observation.code",
@@ -84,27 +83,15 @@
           "coding": [
             {
               "code": "Location-of-Exposure",
-              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
-              "display": "Temporary code for Location of Exposure"
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "The reference to the subject (the patient)",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
-            ]
-          }
-        ],
-        "mustSupport": true
+        "short": "The reference to the subject (the patient)"
       },
       {
         "id": "Observation.focus",
@@ -132,7 +119,11 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3030"
+        }
       },
       {
         "id": "Observation.component",
