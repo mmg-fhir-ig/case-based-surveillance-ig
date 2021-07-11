@@ -56,6 +56,36 @@
   "differential": {
     "element": [
       {
+        "id": "Specimen.extension",
+        "path": "Specimen.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.extension:specimen-role",
+        "path": "Specimen.extension",
+        "sliceName": "specimen-role",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Specimen.identifier",
         "path": "Specimen.identifier",
         "slicing": {
@@ -83,7 +113,7 @@
         "path": "Specimen.identifier.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
         }
       },
       {
@@ -116,7 +146,7 @@
         "path": "Specimen.identifier.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
         }
       },
       {
@@ -160,6 +190,11 @@
         "mustSupport": true
       },
       {
+        "id": "Specimen.receivedTime",
+        "path": "Specimen.receivedTime",
+        "mustSupport": true
+      },
+      {
         "id": "Specimen.collection.collected[x]",
         "path": "Specimen.collection.collected[x]",
         "mustSupport": true
@@ -177,6 +212,11 @@
           "strength": "extensible",
           "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967"
         }
+      },
+      {
+        "id": "Specimen.note",
+        "path": "Specimen.note",
+        "mustSupport": true
       }
     ]
   }

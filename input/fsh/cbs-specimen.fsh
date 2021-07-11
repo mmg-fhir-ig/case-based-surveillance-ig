@@ -8,13 +8,8 @@ Description: ""
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* type 0..1 MS
-* type from $PHVS-Specimen-CDC (extensible)
-* collection.collected[x] 0..1 MS
-* collection.collected[x] only dateTime or Period
-* collection.bodySite 0..1 MS 
-* collection.bodySite from $PHVS-BodySite-CDC (extensible)
-* collection.quantity 0..1 MS
+* subject 1..1 MS
+* subject only Reference(cbs-patient)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
@@ -23,13 +18,22 @@ Description: ""
 * identifier contains
     placerAssignedId 0..1 MS and
     fillerAssignedId 0..1 MS
-* identifier[placerAssignedId].type from $v2-0203 (required)
-* identifier[placerAssignedId].type.coding.code = $v2-0203#PLAC
+* identifier[placerAssignedId].type from $v2-0203-vs (required)
+* identifier[placerAssignedId].type.coding.code = $v2-0203-cs#PLAC
 * identifier[placerAssignedId].system 0..1 MS
 * identifier[placerAssignedId].value 1..1 MS
-* identifier[fillerAssignedId].type from $v2-0203 (required)
-* identifier[fillerAssignedId].type.coding.code = $v2-0203#FILL
+* identifier[fillerAssignedId].type from $v2-0203-vs (required)
+* identifier[fillerAssignedId].type.coding.code = $v2-0203-cs#FILL
 * identifier[fillerAssignedId].system 0..1 MS
 * identifier[fillerAssignedId].value 1..1 MS
-* subject 1..1 MS
-* subject only Reference(cbs-patient)
+* type 0..1 MS
+* type from $PHVS-Specimen-CDC (extensible)
+* collection.bodySite 0..1 MS 
+* collection.bodySite from $PHVS-BodySite-CDC (extensible)
+* collection.quantity 0..1 MS
+* collection.collected[x] 0..1 MS
+* collection.collected[x] only dateTime or Period
+* receivedTime 0..1 MS
+* note 0..* MS
+* extension contains
+    cbs-specimen-role named specimen-role 0..1 MS
