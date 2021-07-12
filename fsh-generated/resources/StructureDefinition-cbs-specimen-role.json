@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-birthsex",
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+  "id": "cbs-specimen-role",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role",
   "version": "0.1.0",
-  "name": "CBSBirthSexExtension",
-  "title": "Case Based Surveillance Sex Assigned at Birth Extension",
+  "name": "CBSSpecimenRoleExtension",
+  "title": "Case Based Surveillance Specimen Role Extension",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "A code classifying the person's sex assigned at birth.",
+  "description": "Indicates the role of the sample.",
   "jurisdiction": [
     {
       "coding": [
@@ -34,7 +34,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Patient"
+      "expression": "Specimen"
     }
   ],
   "type": "Extension",
@@ -45,9 +45,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Case Based Surveillance Sex Assigned at Birth Extension",
-        "definition": "A code classifying the person's sex assigned at birth.",
-        "comment": "The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.",
+        "short": "Case Based Surveillance Specimen Role Extension",
+        "definition": "Indicates the role of the sample.",
         "max": "1"
       },
       {
@@ -58,7 +57,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex"
+        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role"
       },
       {
         "id": "Extension.value[x]",
@@ -87,8 +86,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1038",
-          "description": "Code for sex assigned at birth"
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046",
+          "description": "Code for Specimen Role Value Set"
         }
       }
     ]

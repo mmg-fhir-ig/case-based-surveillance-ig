@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",
+  "id": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",
+  "title": "STD Sexual History and Drug Use Questionnaire Panel",
+  "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "std-program-questionnaire-panel"
+          }
+        ]
+      },
+      {
+        "system": "https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.232",
+        "concept": [
+          {
+            "code": "STD107",
+            "display": "Had Sex with a Male within the Past 12 Months"
+          },
+          {
+            "code": "STD108",
+            "display": "Had Sex with a Female within the Past 12 Months"
+          },
+          {
+            "code": "STD109",
+            "display": "Had Sex with an Anonymous Partner within the Past 12 Months"
+          },
+          {
+            "code": "STD110",
+            "display": "Had Sex with a Person Known to Him/Her to be an \"Intravenous Drug User (IDU)\" within the Past 12 Months"
+          },
+          {
+            "code": "STD111",
+            "display": "Had Sex while Intoxicated and/or High on Drugs within the Past 12 Months"
+          },
+          {
+            "code": "STD112",
+            "display": "Exchanged Drugs/Money for Sex within the Past 12 Months"
+          },
+          {
+            "code": "STD113",
+            "display": "Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months"
+          },
+          {
+            "code": "STD114",
+            "display": "Engaged in Injection Drug use Within Past 12 Months"
+          }
+        ]
+      }
+    ]
+  }
+}

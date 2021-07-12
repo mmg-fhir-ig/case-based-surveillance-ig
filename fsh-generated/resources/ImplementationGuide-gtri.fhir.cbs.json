@@ -33,6 +33,13 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-epi-questionnaire-panel"
+        },
+        "name": "Case Based Surveillance Epi Questionnaire Panel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-cnp-member"
         },
         "name": "Case Based Surveillance Case Notification Panel Member",
@@ -103,7 +110,7 @@
         "reference": {
           "reference": "StructureDefinition/cbs-birthsex"
         },
-        "name": "Case Based Surveillance Birth Sex Extension",
+        "name": "Case Based Surveillance Sex Assigned at Birth Extension",
         "description": "A code classifying the person's sex assigned at birth.",
         "exampleBoolean": false
       },
@@ -149,6 +156,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-specimen-role"
+        },
+        "name": "Case Based Surveillance Specimen Role Extension",
+        "description": "Indicates the role of the sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/CBSAddressUseVS"
         },
         "name": "Additional codes for Address.use.",
@@ -161,6 +176,14 @@
         },
         "name": "CBS Case Notification Panel Value Set",
         "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS"
+        },
+        "name": "STD Sexual History and Drug Use Questionnaire Panel",
+        "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
         "exampleBoolean": false
       },
       {
