@@ -221,6 +221,14 @@
             "display": "Imported State"
           }
         ]
+      },
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "MMWR"
+          }
+        ]
       }
     ]
   }
