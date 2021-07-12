@@ -21,7 +21,6 @@ Alias: $HL7-censusTract = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-
 Alias: $HL7-genderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 Alias: $HL7-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 
-
 // US Core ValueSets
 Alias: $birthsex-VS = http://hl7.org/fhir/us/core/ValueSet/birthsex
 Alias: $omb-race-category-VS = http://hl7.org/fhir/us/core/ValueSet/omb-race-category
@@ -49,9 +48,12 @@ Alias: $PHVS-Organism-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.
 Alias: $PHVS-PHINQuestions-CDC = http://phinvads.cdc.gov/fhir/CodeSystem/2.16.840.1.114222.4.5.232
 Alias: $PHVS-DiseaseAcquiredJurisdiction-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3030
 Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268
-
+Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 
 // FHIR Terminology
 Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
+Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
 
+// FHIR Value Set
+Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203

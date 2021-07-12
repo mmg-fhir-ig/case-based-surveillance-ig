@@ -156,6 +156,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-specimen-role"
+        },
+        "name": "Case Based Surveillance Specimen Role Extension",
+        "description": "Indicates the role of the sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/CBSAddressUseVS"
         },
         "name": "Additional codes for Address.use.",
