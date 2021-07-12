@@ -19,7 +19,7 @@ Description: "Defines items for the Case Notification Panel."
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
 * hasMember MS
-* hasMember only Reference(cbs-case-notification-panel or cbs-exposure-observation)
+* hasMember only Reference(cbs-case-notification-panel)
 * value[x] only CodeableConcept or string or integer or dateTime
 * value[x] MS
 * component MS
