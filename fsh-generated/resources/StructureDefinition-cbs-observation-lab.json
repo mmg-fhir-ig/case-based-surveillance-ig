@@ -243,7 +243,7 @@
           "coding": [
             {
               "code": "STD123",
-              "system": "http://phinvads.cdc.gov/fhir/CodeSystem/2.16.840.1.114222.4.5.232"
+              "system": "urn:oid:2.16.840.1.114222.4.5.232"
             }
           ]
         }
@@ -309,7 +309,7 @@
           "coding": [
             {
               "code": "LAB278",
-              "system": "http://phinvads.cdc.gov/fhir/CodeSystem/2.16.840.1.114222.4.5.232"
+              "system": "urn:oid:2.16.840.1.114222.4.5.232"
             }
           ]
         }
