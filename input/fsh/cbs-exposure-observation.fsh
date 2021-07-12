@@ -19,7 +19,6 @@ Description: "Defines constraints and extensions to the observation resource in 
 * focus only Reference(cbs-condition)
 * focus ^short = "The reference to the condition of interest"
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from $PHVS-DiseaseAcquiredJurisdiction-NND
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

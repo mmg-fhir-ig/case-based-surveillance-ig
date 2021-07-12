@@ -71,6 +71,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-mmwr"
+        },
+        "name": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-observation-lab"
         },
         "name": "Case Based Surveillance Observation Lab",

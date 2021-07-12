@@ -9,9 +9,7 @@ Description: "A dateTime indicating when the condition of interest was diagnosed
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^context.type = #element
 * ^context.expression = "Condition"
-* . 1..1
 * . ^definition = "A dateTime indicating when the condition of interest was diagnosed."
 * . ^isModifier = false
 * valueDateTime 0..1
 * valueDateTime only dateTime
-* valueDateTime ^binding.description = "Date when condition of interest was diagnosed."
