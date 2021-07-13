@@ -198,7 +198,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.830"
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158"
         }
       },
       {
@@ -226,13 +226,9 @@
         "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.973"
-        }
+        ]
       },
       {
         "id": "Observation.component:County-of-Exposure",
@@ -259,13 +255,9 @@
         "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.829"
-        }
+        ]
       }
     ]
   }

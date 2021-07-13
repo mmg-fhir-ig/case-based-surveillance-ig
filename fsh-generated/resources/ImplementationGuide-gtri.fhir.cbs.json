@@ -4,7 +4,9 @@
   "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
   "version": "0.1.0",
   "name": "CBSIG",
+  "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
+  "description": "An IG that is used to support case based surveillance messaging for the public health domain",
   "packageId": "gtri.fhir.cbs",
   "fhirVersion": [
     "4.0.1"
@@ -18,13 +20,13 @@
     },
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "current",
+      "version": "4.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },
     {
       "packageId": "hl7.fhir.us.ecr",
-      "version": "current",
+      "version": "1.0.0",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
     }
@@ -67,6 +69,13 @@
         },
         "name": "Case Based Surveillance Exposure Observation Profile",
         "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-hospitalization"
+        },
+        "name": "Case BasedS urveillance Hospitalization Encounter Profile",
         "exampleBoolean": false
       },
       {
@@ -203,16 +212,44 @@
       },
       {
         "reference": {
-          "reference": "Condition/GenV2-CoI"
+          "reference": "Observation/GenV2-TC-CNP"
         },
-        "name": "GenV2-CoI",
+        "name": "GenV2-TC-CNP",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "reference": {
+          "reference": "Condition/GenV2-TC-Condition"
+        },
+        "name": "GenV2-TC-Condition",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
       },
       {
         "reference": {
-          "reference": "Patient/GenV2-TC"
+          "reference": "Observation/GenV2-TC-Exposure"
         },
-        "name": "GenV2-TC",
+        "name": "GenV2-TC-Exposure",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/GenV2-TC-Hospitalization"
+        },
+        "name": "GenV2-TC-Hospitalization",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-MMWR"
+        },
+        "name": "GenV2-TC-MMWR",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "reference": {
+          "reference": "Patient/GenV2-TC-Patient"
+        },
+        "name": "GenV2-TC-Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
       }
     ],
@@ -224,6 +261,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
           "generation": "markdown"
         }
       ]

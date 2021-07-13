@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "GenV2-TC-CNP",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "78000-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/GenV2-TC-MMWR"
+    }
+  ]
+}

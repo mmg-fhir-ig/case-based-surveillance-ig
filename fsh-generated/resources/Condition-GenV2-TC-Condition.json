@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "GenV2-CoI",
+  "id": "GenV2-TC-Condition",
   "meta": {
     "profile": [
       "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
@@ -31,29 +31,22 @@
     },
     {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
-      "valueDateTime": "2021-01-18"
+      "valueDateTime": "2014-02-02"
     }
   ],
   "code": {
     "coding": [
       {
-        "code": "10280",
-        "system": "urn:oid:2.16.840.1.114222.4.5.277"
+        "code": "11550",
+        "system": "urn:oid:2.16.840.1.114222.4.5.277",
+        "display": "Hemolytic Uremic Syndrome"
       }
     ]
   },
-  "bodySite": [
-    {
-      "coding": [
-        {
-          "code": "244440008",
-          "system": "http://snomed.info/sct"
-        }
-      ]
-    }
-  ],
   "subject": {
-    "reference": "Patient/GenV2-TC",
+    "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
-  }
+  },
+  "onsetDateTime": "2014-02-24",
+  "abatementDateTime": "2014-03-02"
 }

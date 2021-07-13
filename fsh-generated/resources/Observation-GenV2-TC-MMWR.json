@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "GenV2-TC-MMWR",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "MMWR",
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77991-8",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueInteger": 9
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77992-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueInteger": 2014
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/GenV2-TC",
+    "display": "GenV2-TC Example Patient"
+  }
+}

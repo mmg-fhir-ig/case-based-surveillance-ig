@@ -191,11 +191,6 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.recordedDate",
-        "path": "Condition.recordedDate",
-        "mustSupport": true
-      },
-      {
         "id": "Condition.evidence",
         "path": "Condition.evidence",
         "short": "Signs and Symptoms of the Condition of Interest",

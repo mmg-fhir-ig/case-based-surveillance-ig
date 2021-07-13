@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "GenV2-TC",
+  "id": "GenV2-TC-Patient",
   "meta": {
     "profile": [
       "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
@@ -37,9 +37,47 @@
       ]
     },
     {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        },
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2186-5",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "F",
+            "system": "urn:oid:2.16.840.1.113883.12.1"
+          }
+        ]
+      }
+    },
+    {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
       "valueAddress": {
         "country": "USA"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "12271241000119109",
+            "system": "http://snomed.info/sct"
+          }
+        ]
       }
     }
   ],

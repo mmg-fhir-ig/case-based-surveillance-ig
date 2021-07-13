@@ -36,12 +36,10 @@ Description: "Defines constraints and extensions to the observation resource in 
 
 * component[State-or-Province-of-Exposure].code = $loinc#77985-0
 * component[State-or-Province-of-Exposure].value[x] only CodeableConcept
-* component[State-or-Province-of-Exposure].value[x] from $PHVS-State-FIPS-5 (extensible)
+* component[State-or-Province-of-Exposure].value[x] from $PHVS-StateProvinceOfExposure-CDC (extensible)
 
 * component[City-of-Exposure].code = $loinc#77986-8
-* component[City-of-Exposure].value[x] only CodeableConcept
-* component[City-of-Exposure].value[x] from $PHVS-City-USGS-GNIS (extensible)
+* component[City-of-Exposure].value[x] only string
 
 * component[County-of-Exposure].code = $loinc#77987-6
-* component[County-of-Exposure].value[x] only CodeableConcept
-* component[County-of-Exposure].value[x] from $PHVS-County-FIPS-6 (extensible)
+* component[County-of-Exposure].value[x] only string

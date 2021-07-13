@@ -5,6 +5,8 @@
 id: gtri.fhir.cbs
 canonical: http://cbsig.chai.gatech.edu
 name: CBSIG
+title: "Case Based Surveillance Implementation Guide"
+description: An IG that is used to support case based surveillance messaging for the public health domain
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
@@ -15,9 +17,9 @@ dependencies:
     uri: http://fhir.org/packages/us.cdc.phinvads
     version: 0.7.0
   hl7.fhir.us.core:
-    version: current
+    version: 4.0.0
   hl7.fhir.us.ecr:
-    version: current
+    version: 1.0.0
 
 
 
@@ -26,4 +28,9 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Artifacts: 
+    Profiles: artifacts.html#1
+    Extensions: artifacts.html#2
+    Value Sets: artifacts.html#3
+    Code Systems: artifacts.html#4
+  Examples: examples.html
