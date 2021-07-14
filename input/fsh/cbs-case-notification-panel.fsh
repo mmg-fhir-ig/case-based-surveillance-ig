@@ -9,7 +9,8 @@ Description: "Defines items for the Case Notification Panel."
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^mustSupport = false
-* status MS
+* status 1..1 MS
+* status = #final
 * category 1..1 MS
 * category only CodeableConcept
 * category = $loinc#78000-7 "Case notification panel [CDC.PHIN]"

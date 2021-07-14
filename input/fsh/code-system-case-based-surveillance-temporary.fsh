@@ -21,7 +21,8 @@ Description:  "Code system defined as placeholders for items that are not define
     "Laboratory coding for organization type"
 * #MMWR "MMWR Week/Year"
     "Grouped MMWR Week and Year into a single code"
-
+* #case-outbreak "Case Outbreak Name and Indicator"
+    "Grouped case outbreak name and indicator into a single code for the case notification panel"
 
 * #epi-questionnaire "Case Based Surveillance Epi Questionnaire Panel"
     "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."

@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "GenV2-TC-CNP",
+  "id": "GenV2-TC-CNP-Member1",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
     ]
   },
   "status": "final",
@@ -21,7 +21,7 @@
   "code": {
     "coding": [
       {
-        "code": "78000-7",
+        "code": "77965-2",
         "system": "http://loinc.org"
       }
     ]
@@ -30,9 +30,13 @@
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
   },
-  "hasMember": [
-    {
-      "reference": "Observation/GenV2-TC-MMWR"
-    }
-  ]
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "N",
+        "system": "urn:oid:2.16.840.1.113883.12.136",
+        "display": "No"
+      }
+    ]
+  }
 }

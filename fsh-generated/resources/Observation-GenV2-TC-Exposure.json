@@ -40,7 +40,7 @@
         "coding": [
           {
             "code": "USA",
-            "system": "urn:oid:1.0.3166.1",
+            "system": "urn:iso:std:iso:3166",
             "display": "United States of America"
           }
         ]

@@ -22,5 +22,6 @@ Description: "Defines constraints and extensions to the condition resource in or
 * subject only Reference(cbs-patient)
 * onsetDateTime 0..1 MS
 * abatementDateTime 0..1 MS
+* clinicalStatus 0..1 MS
 * evidence 0..* MS
 * evidence ^short = "Signs and Symptoms of the Condition of Interest"

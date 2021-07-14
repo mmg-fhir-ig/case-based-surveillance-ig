@@ -12,3 +12,4 @@ Usage: #example
 * subject.display = "GenV2-TC Example Patient"
 * onsetDateTime = 2014-02-24
 * abatementDateTime = 2014-03-02
+* clinicalStatus = $FHIR-Condition-Clinical-Status#inactive

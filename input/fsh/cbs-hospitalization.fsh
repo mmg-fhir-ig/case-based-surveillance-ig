@@ -1,7 +1,7 @@
 Profile: CaseBasedSurveillanceHospitalization
 Parent: Encounter
 Id: cbs-hospitalization
-Title: "Case BasedS urveillance Hospitalization Encounter Profile"
+Title: "Case Based Surveillance Hospitalization Encounter Profile"
 Description: ""
 * status 1..1 MS
 * status = $FHIR-Encounter-Status#unknown

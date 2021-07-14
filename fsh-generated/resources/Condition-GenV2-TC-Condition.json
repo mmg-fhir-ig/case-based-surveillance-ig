@@ -48,5 +48,13 @@
     "display": "GenV2-TC Example Patient"
   },
   "onsetDateTime": "2014-02-24",
-  "abatementDateTime": "2014-03-02"
+  "abatementDateTime": "2014-03-02",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "inactive",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  }
 }

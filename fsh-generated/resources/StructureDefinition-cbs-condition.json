@@ -135,6 +135,11 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.code",
         "path": "Condition.code",
         "min": 1,

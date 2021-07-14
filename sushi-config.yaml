@@ -29,8 +29,7 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: 
-    Profiles: artifacts.html#1
-    Extensions: artifacts.html#2
-    Value Sets: artifacts.html#3
-    Code Systems: artifacts.html#4
-  Examples: examples.html
+    Profiles and Extensions: profiles-and-extensions.html
+    Terminology: terminology.html
+  Examples: 
+    GenV2 Test Case 1: examples.html

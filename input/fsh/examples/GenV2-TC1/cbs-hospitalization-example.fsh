@@ -6,6 +6,8 @@ Usage: #example
 * period.start = 2014-02-26
 * period.end = 2014-03-02
 * length.value = 4
-* length.code = $ucum#d
+* length.unit = "days"
+* length.system = $ucum
+* length.code = #d
 * diagnosis.condition.reference = "Condition/GenV2-TC-Condition"
 * diagnosis.condition.display = "GenV2-TC Condition of Interest"

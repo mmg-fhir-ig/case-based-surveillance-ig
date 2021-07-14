@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "GenV2-TC-MMWR",
+  "id": "GenV2-TC-CNP-Member12",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
     ]
   },
   "status": "final",
@@ -21,37 +21,44 @@
   "code": {
     "coding": [
       {
-        "code": "MMWR",
+        "code": "case-outbreak",
         "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
       }
     ]
+  },
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
   },
   "component": [
     {
       "code": {
         "coding": [
           {
-            "code": "77991-8",
+            "code": "77980-1",
             "system": "http://loinc.org"
           }
         ]
       },
-      "valueInteger": 9
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Y",
+            "system": "urn:oid:2.16.840.1.113883.12.136"
+          }
+        ]
+      }
     },
     {
       "code": {
         "coding": [
           {
-            "code": "77992-6",
+            "code": "77981-9",
             "system": "http://loinc.org"
           }
         ]
       },
-      "valueInteger": 2014
+      "valueString": "HANSENOUTB1"
     }
-  ],
-  "subject": {
-    "reference": "Patient/GenV2-TC-Patient",
-    "display": "GenV2-TC Example Patient"
-  }
+  ]
 }

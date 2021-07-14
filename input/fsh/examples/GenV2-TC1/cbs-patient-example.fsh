@@ -3,9 +3,9 @@ InstanceOf: cbs-patient
 Usage: #example
 * extension[race].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
 * extension[race].extension[ombCategory].url = "ombCategory"
-* extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $v3-Race#2106-3 "White"
 * extension[race].extension[detailed].url = "detailed"
-* extension[race].extension[detailed].valueCoding = urn:oid:2.16.840.1.113883.6.238#1010-8 "Apache"
+* extension[race].extension[detailed].valueCoding = $v3-Race#1010-8 "Apache"
 * extension[race].extension[otherRace].url = "otherRace"
 * extension[race].extension[otherRace].valueString = "Apache"
 * extension[race].extension[text].url = "text"
@@ -13,12 +13,12 @@ Usage: #example
 
 * extension[ethnicity].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
 * extension[ethnicity].extension[ombCategory].url = "ombCategory"
-* extension[ethnicity].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5
+* extension[ethnicity].extension[ombCategory].valueCoding = $v3-Ethnicity#2186-5
 * extension[ethnicity].extension[text].url = "text"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
 * extension[birthsex].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex"
-* extension[birthsex].valueCodeableConcept = urn:oid:2.16.840.1.113883.12.1#F
+* extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F
 
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.country = "USA"

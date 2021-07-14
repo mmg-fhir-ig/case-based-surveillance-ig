@@ -75,7 +75,7 @@
         "reference": {
           "reference": "StructureDefinition/cbs-hospitalization"
         },
-        "name": "Case BasedS urveillance Hospitalization Encounter Profile",
+        "name": "Case Based Surveillance Hospitalization Encounter Profile",
         "exampleBoolean": false
       },
       {
@@ -219,6 +219,125 @@
       },
       {
         "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member1"
+        },
+        "name": "GenV2-TC-CNP-Member1",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member10"
+        },
+        "name": "GenV2-TC-CNP-Member10",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member11"
+        },
+        "name": "GenV2-TC-CNP-Member11",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member12"
+        },
+        "name": "GenV2-TC-CNP-Member12",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member13"
+        },
+        "name": "GenV2-TC-CNP-Member13",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member14"
+        },
+        "name": "GenV2-TC-CNP-Member14",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member15"
+        },
+        "name": "GenV2-TC-CNP-Member15",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member16"
+        },
+        "name": "GenV2-TC-CNP-Member16",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member17"
+        },
+        "name": "GenV2-TC-CNP-Member17",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member2"
+        },
+        "name": "GenV2-TC-CNP-Member2",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member3"
+        },
+        "name": "GenV2-TC-CNP-Member3",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member4"
+        },
+        "name": "GenV2-TC-CNP-Member4",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member5"
+        },
+        "name": "GenV2-TC-CNP-Member5",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member6"
+        },
+        "name": "GenV2-TC-CNP-Member6",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member7"
+        },
+        "name": "GenV2-TC-CNP-Member7",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member8"
+        },
+        "name": "GenV2-TC-CNP-Member8",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member9"
+        },
+        "name": "GenV2-TC-CNP-Member9",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
           "reference": "Condition/GenV2-TC-Condition"
         },
         "name": "GenV2-TC-Condition",
@@ -266,6 +385,16 @@
         {
           "nameUrl": "examples.html",
           "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         }
       ]

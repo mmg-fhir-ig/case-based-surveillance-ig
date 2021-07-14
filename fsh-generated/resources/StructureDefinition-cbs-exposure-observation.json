@@ -72,11 +72,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "patternCode": "final"
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "patternCodeableConcept": {

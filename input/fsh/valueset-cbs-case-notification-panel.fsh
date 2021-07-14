@@ -53,3 +53,4 @@ Description: "Codes found in the case notification panel that are otherwise not 
 * include urn:oid:2.16.840.1.114222.4.5.232#INV156 "Imported County"
 * include urn:oid:2.16.840.1.114222.4.5.232#INV154 "Imported State"
 * include cbs-temp-code-system#MMWR
+* include cbs-temp-code-system#Location-of-Exposure
