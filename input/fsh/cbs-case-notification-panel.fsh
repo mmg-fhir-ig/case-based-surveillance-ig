@@ -9,4 +9,17 @@ Description: "Defines items for the Case Notification Panel."
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^mustSupport = false
-
+* status MS
+* category 1..1 MS
+* category only CodeableConcept
+* category = $loinc#78000-7 "Case notification panel [CDC.PHIN]"
+* code 1..1 MS
+* code from CBSCaseNotificationPanelVS
+* code ^binding.description = "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."
+* subject 1..1 MS
+* subject only Reference(cbs-patient)
+* hasMember MS
+* hasMember only Reference(cbs-case-notification-panel)
+* value[x] only CodeableConcept or string or integer or dateTime
+* value[x] MS
+* component MS

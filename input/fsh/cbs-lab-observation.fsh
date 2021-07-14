@@ -37,7 +37,7 @@ Description: ""
     Gene-Identifier 0..1 MS and 
     Organism-Name 0..1 MS
 
-* component[Syphilis-Test].code = #STD123
+* component[Syphilis-Test].code = $PH-PHINQuestions-CDC#STD123
 * component[Syphilis-Test].value[x] only CodeableConcept
 * component[Syphilis-Test].value[x] from $PHVS-NonTreponemalTestResult-STD (required)
 
@@ -45,6 +45,6 @@ Description: ""
 * component[Gene-Identifier].value[x] only CodeableConcept
 * component[Gene-Identifier].value[x] from $PHVS-GeneName-CP-CRE
 
-* component[Organism-Name].code = #LAB278
+* component[Organism-Name].code = $PH-PHINQuestions-CDC#LAB278
 * component[Organism-Name].value[x] only CodeableConcept
 * component[Organism-Name].value[x] from $PHVS-Organism-CP-CRE

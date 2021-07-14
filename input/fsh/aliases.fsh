@@ -8,6 +8,8 @@ Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.h
 
 // Code Systems
 Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+Alias: $PH-PHINQuestions-CDC = urn:oid:2.16.840.1.114222.4.5.232
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
@@ -43,6 +45,8 @@ Alias: $PHVS-LabTestType-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.
 Alias: $PHVS-NonTreponemalTestResult-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279
 Alias: $PHVS-GeneName-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7825
 Alias: $PHVS-Organism-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850
+Alias: $PHVS-DiseaseAcquiredJurisdiction-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3030
+Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268
 Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 
 // FHIR Terminology

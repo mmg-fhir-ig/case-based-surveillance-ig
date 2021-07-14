@@ -19,3 +19,11 @@ Description:  "Code system defined as placeholders for items that are not define
     "CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)."
 * #LAB "Laboratory"
     "Laboratory coding for organization type"
+* #MMWR "MMWR Week/Year"
+    "Grouped MMWR Week and Year into a single code"
+
+
+* #epi-questionnaire "Case Based Surveillance Epi Questionnaire Panel"
+    "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."
+* #std-program-questionnaire-panel "STD Program Questionnaire Panel" // Demo Code
+* #undefined-epi-questionnaire-cannonical-name-code "Undefined Epi Questionnaire Cannonical Name code"

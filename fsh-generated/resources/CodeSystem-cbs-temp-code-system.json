@@ -48,7 +48,25 @@
       "code": "LAB",
       "display": "Laboratory",
       "definition": "Laboratory coding for organization type"
+    },
+    {
+      "code": "MMWR",
+      "display": "MMWR Week/Year",
+      "definition": "Grouped MMWR Week and Year into a single code"
+    },
+    {
+      "code": "epi-questionnaire",
+      "display": "Case Based Surveillance Epi Questionnaire Panel",
+      "definition": "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."
+    },
+    {
+      "code": "std-program-questionnaire-panel",
+      "display": "STD Program Questionnaire Panel"
+    },
+    {
+      "code": "undefined-epi-questionnaire-cannonical-name-code",
+      "display": "Undefined Epi Questionnaire Cannonical Name code"
     }
   ],
-  "count": 8
+  "count": 12
 }

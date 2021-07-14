@@ -46,9 +46,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Case Based Surveillance Diagnosis Date Extension",
-        "definition": "A dateTime indicating when the condition of interest was diagnosed.",
-        "min": 1,
-        "max": "1"
+        "definition": "A dateTime indicating when the condition of interest was diagnosed."
       },
       {
         "id": "Extension.extension",
@@ -69,10 +67,7 @@
           {
             "code": "dateTime"
           }
-        ],
-        "binding": {
-          "description": "Date when condition of interest was diagnosed."
-        }
+        ]
       }
     ]
   }

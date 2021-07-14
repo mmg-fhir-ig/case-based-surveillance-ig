@@ -4,7 +4,7 @@
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
   "version": "0.1.0",
   "name": "CBSBirthSexExtension",
-  "title": "Case Based Surveillance Birth Sex Extension",
+  "title": "Case Based Surveillance Sex Assigned at Birth Extension",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
@@ -45,7 +45,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Case Based Surveillance Birth Sex Extension",
+        "short": "Case Based Surveillance Sex Assigned at Birth Extension",
         "definition": "A code classifying the person's sex assigned at birth.",
         "comment": "The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.",
         "max": "1"
