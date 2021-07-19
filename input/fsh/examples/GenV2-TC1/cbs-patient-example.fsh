@@ -3,9 +3,9 @@ InstanceOf: cbs-patient
 Usage: #example
 * extension[race].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
 * extension[race].extension[ombCategory].url = "ombCategory"
-* extension[race].extension[ombCategory].valueCoding = $v3-Race#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2106-3 "White"
 * extension[race].extension[detailed].url = "detailed"
-* extension[race].extension[detailed].valueCoding = $v3-Race#1010-8 "Apache"
+* extension[race].extension[detailed].valueCoding = $PH_RaceAndEthnicity_CDC#1010-8 "Apache"
 * extension[race].extension[otherRace].url = "otherRace"
 * extension[race].extension[otherRace].valueString = "Apache"
 * extension[race].extension[text].url = "text"
@@ -13,7 +13,7 @@ Usage: #example
 
 * extension[ethnicity].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
 * extension[ethnicity].extension[ombCategory].url = "ombCategory"
-* extension[ethnicity].extension[ombCategory].valueCoding = $v3-Ethnicity#2186-5
+* extension[ethnicity].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2186-5
 * extension[ethnicity].extension[text].url = "text"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 

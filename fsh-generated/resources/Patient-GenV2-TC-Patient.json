@@ -14,7 +14,7 @@
           "url": "ombCategory",
           "valueCoding": {
             "code": "2106-3",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
             "display": "White"
           }
         },
@@ -22,7 +22,7 @@
           "url": "detailed",
           "valueCoding": {
             "code": "1010-8",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
             "display": "Apache"
           }
         },
@@ -47,7 +47,7 @@
           "url": "ombCategory",
           "valueCoding": {
             "code": "2186-5",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity"
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
           }
         }
       ]
