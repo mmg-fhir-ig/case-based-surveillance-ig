@@ -1,0 +1,77 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cbs-temp-code-system",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Usual-Residence<a name=\"cbs-temp-code-system-Usual-Residence\"> </a></td><td>Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr><tr><td style=\"white-space:nowrap\">Address-at-Diagnosis<a name=\"cbs-temp-code-system-Address-at-Diagnosis\"> </a></td><td>Address at time of Diagnosis</td><td>Subject's address at the time of the diagnosis for the condition of interest.</td></tr><tr><td style=\"white-space:nowrap\">Location-of-Exposure<a name=\"cbs-temp-code-system-Location-of-Exposure\"> </a></td><td>Location of Exposure</td><td>Location of exposure. (City, County, State/Province, Country)</td></tr><tr><td style=\"white-space:nowrap\">Local-Subject-ID<a name=\"cbs-temp-code-system-Local-Subject-ID\"> </a></td><td>Local Subject ID</td><td>The local ID of the subject/entity</td></tr><tr><td style=\"white-space:nowrap\">Local-Record-ID<a name=\"cbs-temp-code-system-Local-Record-ID\"> </a></td><td>Local Record ID</td><td>Sending system-assigned local ID of the case investigation with which the subject is associated.</td></tr><tr><td style=\"white-space:nowrap\">State-Case-Identifier<a name=\"cbs-temp-code-system-State-Case-Identifier\"> </a></td><td>State Case Identifier</td><td>States use this identifier to link NEDSS investigations back to their own state investigations.</td></tr><tr><td style=\"white-space:nowrap\">Legacy-Case-Identifier<a name=\"cbs-temp-code-system-Legacy-Case-Identifier\"> </a></td><td>Legacy Case Identifier</td><td>CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.).</td></tr><tr><td style=\"white-space:nowrap\">LAB<a name=\"cbs-temp-code-system-LAB\"> </a></td><td>Laboratory</td><td>Laboratory coding for organization type</td></tr><tr><td style=\"white-space:nowrap\">MMWR<a name=\"cbs-temp-code-system-MMWR\"> </a></td><td>MMWR Week/Year</td><td>Grouped MMWR Week and Year into a single code</td></tr><tr><td style=\"white-space:nowrap\">epi-questionnaire<a name=\"cbs-temp-code-system-epi-questionnaire\"> </a></td><td>Case Based Surveillance Epi Questionnaire Panel</td><td>Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs.</td></tr><tr><td style=\"white-space:nowrap\">std-program-questionnaire-panel<a name=\"cbs-temp-code-system-std-program-questionnaire-panel\"> </a></td><td>STD Program Questionnaire Panel</td><td/></tr><tr><td style=\"white-space:nowrap\">undefined-epi-questionnaire-cannonical-name-code<a name=\"cbs-temp-code-system-undefined-epi-questionnaire-cannonical-name-code\"> </a></td><td>Undefined Epi Questionnaire Cannonical Name code</td><td/></tr></table></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+  "version": "0.1.0",
+  "name": "CBSTemporary",
+  "title": "Case Based Surveillance temporary/placeholder code system.",
+  "status": "active",
+  "date": "2021-07-09T14:32:25-04:00",
+  "description": "Code system defined as placeholders for items that are not defined in existing systems.",
+  "content": "complete",
+  "count": 12,
+  "concept": [
+    {
+      "code": "Usual-Residence",
+      "display": "Usual Residence",
+      "definition": "Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs."
+    },
+    {
+      "code": "Address-at-Diagnosis",
+      "display": "Address at time of Diagnosis",
+      "definition": "Subject's address at the time of the diagnosis for the condition of interest."
+    },
+    {
+      "code": "Location-of-Exposure",
+      "display": "Location of Exposure",
+      "definition": "Location of exposure. (City, County, State/Province, Country)"
+    },
+    {
+      "code": "Local-Subject-ID",
+      "display": "Local Subject ID",
+      "definition": "The local ID of the subject/entity"
+    },
+    {
+      "code": "Local-Record-ID",
+      "display": "Local Record ID",
+      "definition": "Sending system-assigned local ID of the case investigation with which the subject is associated."
+    },
+    {
+      "code": "State-Case-Identifier",
+      "display": "State Case Identifier",
+      "definition": "States use this identifier to link NEDSS investigations back to their own state investigations."
+    },
+    {
+      "code": "Legacy-Case-Identifier",
+      "display": "Legacy Case Identifier",
+      "definition": "CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)."
+    },
+    {
+      "code": "LAB",
+      "display": "Laboratory",
+      "definition": "Laboratory coding for organization type"
+    },
+    {
+      "code": "MMWR",
+      "display": "MMWR Week/Year",
+      "definition": "Grouped MMWR Week and Year into a single code"
+    },
+    {
+      "code": "epi-questionnaire",
+      "display": "Case Based Surveillance Epi Questionnaire Panel",
+      "definition": "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."
+    },
+    {
+      "code": "std-program-questionnaire-panel",
+      "display": "STD Program Questionnaire Panel"
+    },
+    {
+      "code": "undefined-epi-questionnaire-cannonical-name-code",
+      "display": "Undefined Epi Questionnaire Cannonical Name code"
+    }
+  ]
+}

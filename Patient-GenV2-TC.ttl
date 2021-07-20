@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Patient/GenV2-TC> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GenV2-TC"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Apache</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Mixed</p></blockquote><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li></li></ul><p><b style=\"color: maroon\">Exception generating Narrative: Unknown AddressUse code 'Usual-Residence'</b></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "ombCategory" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.code [ fhir:value "2106-3" ];
+         fhir:Coding.display [ fhir:value "White" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "detailed" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.code [ fhir:value "1010-8" ];
+         fhir:Coding.display [ fhir:value "Apache" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "otherRace" ];
+       fhir:Extension.valueString [ fhir:value "Apache" ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "text" ];
+       fhir:Extension.valueString [ fhir:value "Mixed" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ];
+     fhir:Extension.valueAddress [
+       fhir:Address.country [ fhir:value "USA" ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+         fhir:Coding.code [ fhir:value "Local-Record-ID" ];
+         fhir:Coding.display [ fhir:value "Local Record ID" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Local Record ID" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "GenV2_TC01_Record" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+         fhir:Coding.code [ fhir:value "Local-Subject-ID" ];
+         fhir:Coding.display [ fhir:value "Local Subject ID" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Local Subject ID" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "GenV2_TC01_Subject" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77997-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77997-5" ];
+         fhir:Coding.display [ fhir:value "Legacy case identifier [CDC.PHIN]" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Legacy Case Identifier" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "48432148S012014" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77993-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77993-4" ];
+         fhir:Coding.display [ fhir:value "State notifiable condition case identifier" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "State Case Identifier" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "TX4321" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1964-05-02"^^xsd:date];
+  fhir:Patient.deceasedDateTime [ fhir:value "2014-03-02"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.district [ fhir:value "Harris" ];
+     fhir:Address.state [ fhir:value "Texas" ];
+     fhir:Address.postalCode [ fhir:value "77018" ]
+  ], [
+     fhir:index 1;
+     fhir:Address.use [ fhir:value "Usual-Residence" ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Patient/GenV2-TC.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
