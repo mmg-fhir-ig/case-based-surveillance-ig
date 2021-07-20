@@ -2,14 +2,15 @@ Profile: CaseBasedSurveillaneCaseNotificationPanel
 Parent: Observation
 Id: cbs-case-notification-panel
 Title: "Case Based Surveillance Case Notification Panel Profile"
-Description: "Defines items for the Case Notification Panel."
+Description: "Defines constraints on Observation to represent the case notification panel in public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * . ^mustSupport = false
-* status MS
+* status 1..1 MS
+* status = #final
 * category 1..1 MS
 * category only CodeableConcept
 * category = $loinc#78000-7 "Case notification panel [CDC.PHIN]"

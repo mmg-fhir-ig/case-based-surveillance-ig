@@ -16,7 +16,7 @@
         "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
         "concept": [
           {
-            "code": "At-Diagnosis",
+            "code": "Address-at-Diagnosis",
             "display": "Address at Diagnosis of Condition of Interest"
           },
           {

@@ -19,7 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+  "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
   "jurisdiction": [
     {
       "coding": [
@@ -67,15 +67,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
+  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "patternCode": "final"
-      },
       {
         "id": "Observation.code",
         "path": "Observation.code",
@@ -198,7 +193,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.830"
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158"
         }
       },
       {
@@ -226,13 +221,9 @@
         "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.973"
-        }
+        ]
       },
       {
         "id": "Observation.component:County-of-Exposure",
@@ -259,13 +250,9 @@
         "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.829"
-        }
+        ]
       }
     ]
   }

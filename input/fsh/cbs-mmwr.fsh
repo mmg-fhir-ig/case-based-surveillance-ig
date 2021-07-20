@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceMMWR
 Parent: cbs-case-notification-panel
 Id: cbs-mmwr
 Title: "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"
-Description: ""
+Description: "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

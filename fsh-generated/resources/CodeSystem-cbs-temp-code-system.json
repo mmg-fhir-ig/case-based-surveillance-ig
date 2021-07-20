@@ -55,6 +55,11 @@
       "definition": "Grouped MMWR Week and Year into a single code"
     },
     {
+      "code": "case-outbreak",
+      "display": "Case Outbreak Name and Indicator",
+      "definition": "Grouped case outbreak name and indicator into a single code for the case notification panel"
+    },
+    {
       "code": "epi-questionnaire",
       "display": "Case Based Surveillance Epi Questionnaire Panel",
       "definition": "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."
@@ -68,5 +73,5 @@
       "display": "Undefined Epi Questionnaire Cannonical Name code"
     }
   ],
-  "count": 12
+  "count": 13
 }

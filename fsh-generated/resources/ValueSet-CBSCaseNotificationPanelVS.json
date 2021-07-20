@@ -227,6 +227,12 @@
         "concept": [
           {
             "code": "MMWR"
+          },
+          {
+            "code": "Location-of-Exposure"
+          },
+          {
+            "code": "case-outbreak"
           }
         ]
       }

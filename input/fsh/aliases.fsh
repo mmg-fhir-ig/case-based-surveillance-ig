@@ -10,6 +10,13 @@ Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.h
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $PH-PHINQuestions-CDC = urn:oid:2.16.840.1.114222.4.5.232
+Alias: $PH-PHINVS-CDC = urn:oid:2.16.840.1.114222.4.5.274
+Alias: $PH-Country-ISO-3166-1 = urn:iso:std:iso:3166
+Alias: $PH-State-FIPS-5-2 = urn:oid:2.16.840.1.113883.6.92
+Alias: $PH-County-FIPS-6-4 = urn:oid:2.16.840.1.113883.6.93
+Alias: $PH-YesNo-HL7-2x = urn:oid:2.16.840.1.113883.12.136
+Alias: $PH_RaceAndEthnicity_CDC = urn:oid:2.16.840.1.113883.6.238
+Alias: $ucum = http://unitsofmeasure.org
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
@@ -30,7 +37,7 @@ Alias: $detailed-race-VS = http://hl7.org/fhir/us/core/ValueSet/detailed-race
 Alias: $PHVS-NotifiableEvent-Disease = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015
 Alias: $PHVS-ClinicianObservedLesions-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7195
 Alias: $PHVS-Country-ISO-3166 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828
-Alias: $PHVS-State-FIPS-5 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.830
+Alias: $PHVS-StateProvinceOfExposure-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158
 Alias: $PHVS-City-USGS-GNIS = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.973
 Alias: $PHVS-County-FIPS-6 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.829
 Alias: $PHVS-YesNoUnknown-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888
@@ -49,10 +56,16 @@ Alias: $PHVS-DiseaseAcquiredJurisdiction-NND = http://phinvads.cdc.gov/fhir/Valu
 Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268
 Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 
-// FHIR Terminology
+// FHIR Code Systems
 Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
+Alias: $FHIR-administrativeSex = http://terminology.hl7.org/CodeSystem/v2-0001
 Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0406-cs = http://terminology.hl7.org/CodeSystem/v2-0406
+Alias: $v2-0532-cs = http://terminology.hl7.org/CodeSystem/v2-0532
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $FHIR-Encounter-Status = http://hl7.org/fhir/encounter-status
+Alias: $FHIR-Condition-Clinical-Status = http://terminology.hl7.org/CodeSystem/condition-clinical
 
-// FHIR Value Set
+// FHIR Value Sets
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203

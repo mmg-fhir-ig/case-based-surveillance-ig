@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceSpecimen
 Parent: Specimen
 Id: cbs-specimen
 Title: "Case Based Surveillance Specimen Profile"
-Description: ""
+Description: "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

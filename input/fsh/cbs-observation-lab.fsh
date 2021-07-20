@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceObservationLab
 Parent: Observation
 Id: cbs-observation-lab
 Title: "Case Based Surveillance Observation Lab"
-Description: ""
+Description: "NOT FINAL GOING TO CHANGE"
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

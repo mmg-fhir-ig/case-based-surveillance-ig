@@ -1,8 +1,8 @@
 Profile: CaseBasedSurveillanceExposureObservation
-Parent: cbs-case-notification-panel
+Parent: cbs-cnp-member
 Id: cbs-exposure-observation
 Title: "Case Based Surveillance Exposure Observation Profile"
-Description: "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
+Description: "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
@@ -36,12 +36,10 @@ Description: "Defines constraints and extensions to the observation resource in 
 
 * component[State-or-Province-of-Exposure].code = $loinc#77985-0
 * component[State-or-Province-of-Exposure].value[x] only CodeableConcept
-* component[State-or-Province-of-Exposure].value[x] from $PHVS-State-FIPS-5 (extensible)
+* component[State-or-Province-of-Exposure].value[x] from $PHVS-StateProvinceOfExposure-CDC (extensible)
 
 * component[City-of-Exposure].code = $loinc#77986-8
-* component[City-of-Exposure].value[x] only CodeableConcept
-* component[City-of-Exposure].value[x] from $PHVS-City-USGS-GNIS (extensible)
+* component[City-of-Exposure].value[x] only string
 
 * component[County-of-Exposure].code = $loinc#77987-6
-* component[County-of-Exposure].value[x] only CodeableConcept
-* component[County-of-Exposure].value[x] from $PHVS-County-FIPS-6 (extensible)
+* component[County-of-Exposure].value[x] only string
