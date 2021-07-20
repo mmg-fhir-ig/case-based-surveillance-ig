@@ -1,17 +1,18 @@
 #!/bin/bash
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
-echo Checking internet connection...
-curl -sSf tx.fhir.org > /dev/null
+#echo Checking internet connection...
+#curl -sSf tx.fhir.org > /dev/null
 
-if [ $? -eq 0 ]; then
-	echo "Online"
-	txoption=""
-else
-	echo "Offline"
-	txoption="-tx n/a"
-fi
+#if [ $? -eq 0 ]; then
+#	echo "Online"
+#	txoption=""
+#else
+#	echo "Offline"
+#	txoption="-tx https://r4.ontoserver.csiro.au/fhir/"
+#fi
 
+txoption="-tx https://r4.ontoserver.csiro.au/fhir/"
 echo "$txoption"
 
 publisher=$input_cache_path/$publisher_jar
