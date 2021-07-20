@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CBSAddressUseVS",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-address-use.html\"><code>http://hl7.org/fhir/address-use</code></a></li><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Address-at-Diagnosis\">Address-at-Diagnosis</a></td><td>Address at Diagnosis of Condition of Interest</td><td>Subject's address at the time of the diagnosis for the condition of interest.</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence\">Usual-Residence</a></td><td>Address of Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr></table></li></ul></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS",
+  "version": "0.1.0",
+  "name": "CBSAddressUseVS",
+  "title": "Additional codes for Address.use.",
+  "status": "active",
+  "date": "2021-07-20T12:55:03-04:00",
+  "publisher": "Georgia Tech Research Institute (GTRI)",
+  "contact": [
+    {
+      "name": "Georgia Tech Research Institute (GTRI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gtri.gatech.edu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/address-use"
+      },
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "Address-at-Diagnosis",
+            "display": "Address at Diagnosis of Condition of Interest"
+          },
+          {
+            "code": "Usual-Residence",
+            "display": "Address of Usual Residence"
+          }
+        ]
+      }
+    ]
+  }
+}

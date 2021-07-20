@@ -1,0 +1,68 @@
+{
+  "resourceType": "Observation",
+  "id": "GenV2-TC-CNP-Member12",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system case-outbreak}\">Case Outbreak Name and Indicator</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77980-1}\">Case is associated with a known outbreak</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.12.136 Y}\">Y</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77981-9}\">Case outbreak name</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "78000-7",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "code": "case-outbreak"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77980-1"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.12.136",
+            "code": "Y"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77981-9"
+          }
+        ]
+      },
+      "valueString": "HANSENOUTB1"
+    }
+  ]
+}

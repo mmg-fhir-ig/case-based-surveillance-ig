@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="GenV2-TC-CNP-Member9"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77972-8}">Earliest date reported to county</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: 2014-02-25</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77972-8"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GenV2-TC-Patient"/>
+    <display value="GenV2-TC Example Patient"/>
+  </subject>
+  <valueDateTime value="2014-02-25"/>
+</Observation>

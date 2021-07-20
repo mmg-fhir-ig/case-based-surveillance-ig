@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>hasMember</b>: <a href=\"Observation-GenV2-TC-MMWR.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system MMWR}\">MMWR Week/Year</span></a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-MMWR>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-MMWR" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

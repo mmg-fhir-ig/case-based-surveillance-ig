@@ -1,0 +1,266 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CBSCaseNotificationPanelVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/78000-7.html\">78000-7</a></td><td>Case notification panel [CDC.PHIN]</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/8656-1.html\">8656-1</a></td><td>Admission Date</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77998-3.html\">77998-3</a></td><td>Age at Case Investigation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77988-4.html\">77988-4</a></td><td>Binational Reporting Criteria</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77990-0.html\">77990-0</a></td><td>Case Class Status Code</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77982-7.html\">77982-7</a></td><td>Case Disease Imported Code</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77979-3.html\">77979-3</a></td><td>Case Investigation Start Date</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77980-1.html\">77980-1</a></td><td>Case Outbreak Indicator</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77981-9.html\">77981-9</a></td><td>Case Outbreak Name</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77986-8.html\">77986-8</a></td><td>City of Exposure</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77999-1.html\">77999-1</a></td><td>Comment</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/78746-5.html\">78746-5</a></td><td>Country of Birth</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77984-3.html\">77984-3</a></td><td>Country of Exposure</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77983-5.html\">77983-5</a></td><td>Country of Usual Residence</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77987-6.html\">77987-6</a></td><td>County of Exposure</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77994-2.html\">77994-2</a></td><td>Date CDC Was First Verbally Notified of This Case</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77970-2.html\">77970-2</a></td><td>Date First Reported to PHD</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11368-8.html\">11368-8</a></td><td>Date of Illness Onset</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77995-9.html\">77995-9</a></td><td>Date Reported</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77975-1.html\">77975-1</a></td><td>Diagnosis Date</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/8649-6.html\">8649-6</a></td><td>Discharge Date</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/78033-8.html\">78033-8</a></td><td>Duration of Hospital Stay in Days</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77972-8.html\">77972-8</a></td><td>Earliest Date Reported to County</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77973-6.html\">77973-6</a></td><td>Earliest Date Reported to State</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77974-4.html\">77974-4</a></td><td>Hospitalized</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77977-7.html\">77977-7</a></td><td>Illness Duration</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77976-9.html\">77976-9</a></td><td>Illness End Date</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77965-2.html\">77965-2</a></td><td>Immediate National Notifiable Condition</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77969-4.html\">77969-4</a></td><td>Jurisdiction Code</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77997-5.html\">77997-5</a></td><td>Legacy Case Identifier</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77991-8.html\">77991-8</a></td><td>MMWR Week</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77992-6.html\">77992-6</a></td><td>MMWR Year</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77968-6.html\">77968-6</a></td><td>National Reporting Jurisdiction</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/21842-0.html\">21842-0</a></td><td>Other Birth Place</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32624-9.html\">32624-9</a></td><td>Other Race Text</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/74547-1.html\">74547-1</a></td><td>Person Reporting to CDC - Email</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/74549-7.html\">74549-7</a></td><td>Person Reporting to CDC - Name</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/74548-9.html\">74548-9</a></td><td>Person Reporting to CDC - Phone Number</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77996-7.html\">77996-7</a></td><td>Pregnancy Status</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77967-8.html\">77967-8</a></td><td>Reporting County</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48766-0.html\">48766-0</a></td><td>Reporting Source Type Code</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/52831-5.html\">52831-5</a></td><td>Reporting Source ZIP Code</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77966-0.html\">77966-0</a></td><td>Reporting State</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77993-4.html\">77993-4</a></td><td>State Case Identifier</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77985-0.html\">77985-0</a></td><td>State or Province of Exposure</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77978-5.html\">77978-5</a></td><td>Subject Died</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/77989-2.html\">77989-2</a></td><td>Transmission Mode</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.114222.4.5.232</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>INV155</td><td>Imported City</td></tr><tr><td>INV153</td><td>Imported Country</td></tr><tr><td>INV156</td><td>Imported County</td></tr><tr><td>INV154</td><td>Imported State</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-MMWR\">MMWR</a></td><td>MMWR Week/Year</td><td>Grouped MMWR Week and Year into a single code</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Location-of-Exposure\">Location-of-Exposure</a></td><td>Location of Exposure</td><td>Location of exposure. (City, County, State/Province, Country)</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-case-outbreak\">case-outbreak</a></td><td>Case Outbreak Name and Indicator</td><td>Grouped case outbreak name and indicator into a single code for the case notification panel</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "CBSCaseNotificationPanelVS"];
+  fhir:ValueSet.title [ fhir:value "CBS Case Notification Panel Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-07-20T12:55:03-04:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Georgia Tech Research Institute (GTRI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://gtri.gatech.edu/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78000-7" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8656-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Admission Date" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77998-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Age at Case Investigation" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77988-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Binational Reporting Criteria" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77990-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Case Class Status Code" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77982-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Case Disease Imported Code" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77979-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Case Investigation Start Date" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77980-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Case Outbreak Indicator" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77981-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Case Outbreak Name" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77986-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "City of Exposure" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77999-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Comment" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78746-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Country of Birth" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77984-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Country of Exposure" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77983-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Country of Usual Residence" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77987-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "County of Exposure" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77994-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Date CDC Was First Verbally Notified of This Case" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77970-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Date First Reported to PHD" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11368-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Date of Illness Onset" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77995-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Date Reported" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77975-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diagnosis Date" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8649-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharge Date" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78033-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Duration of Hospital Stay in Days" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77972-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Earliest Date Reported to County" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77973-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Earliest Date Reported to State" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77974-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hospitalized" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77977-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Illness Duration" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77976-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Illness End Date" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77965-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immediate National Notifiable Condition" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77969-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jurisdiction Code" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77997-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Legacy Case Identifier" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77991-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MMWR Week" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77992-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MMWR Year" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77968-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "National Reporting Jurisdiction" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21842-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Birth Place" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32624-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Race Text" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74547-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Person Reporting to CDC - Email" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74549-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Person Reporting to CDC - Name" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74548-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Person Reporting to CDC - Phone Number" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77996-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnancy Status" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77967-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reporting County" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48766-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reporting Source Type Code" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52831-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reporting Source ZIP Code" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77966-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reporting State" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77993-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State Case Identifier" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77985-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State or Province of Exposure" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77978-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subject Died" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77989-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transmission Mode" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.232" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "INV155" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imported City" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "INV153" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imported Country" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "INV156" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imported County" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "INV154" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imported State" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MMWR" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Location-of-Exposure" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "case-outbreak" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

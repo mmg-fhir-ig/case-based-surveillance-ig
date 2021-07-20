@@ -1,0 +1,1103 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 28, warn = 20, info = 32 -->
+<head>
+  <title>CBSIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CBSIG</h1>
+ <p>Generated Tue Jul 20 12:57:02 EDT 2021, FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = <a href="http://cbsig.chai.gatech.edu">http://cbsig.chai.gatech.edu</a> (<a href="http://cbsig.chai.gatech.edu/history.html">history</a>)). See <a href="/users/shared/case-based-surveillance-ig/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gtri.fhir.cbs, Canonical = http://cbsig.chai.gatech.edu</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> gtri.fhir.cbs</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://cbsig.chai.gatech.edu</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> us.cdc.phinvads</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.7.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.cdc.phinvads</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.cdc.phinvads</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU4.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.bulkdata</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/bulkdata</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/bulkdata/STU1.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.3.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.ecr</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/ecr</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/ecr/STU1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU3</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoQ0AMAwEsez6+8/QBqe4IJJPMrlKUpt0Zz4AAGCHZwAAAPxyAWqFQIAoZQ9kAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.odh</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/odh</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/odh/STU1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU3</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://cbsig.chai.gatech.edu (Problem #1 with package-list.json at http://cbsig.chai.gatech.edu: http://cbsig.chai.gatech.edu/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 28, warn = 20, info = 32</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_ImplementationGuide-gtri.fhir.cbs"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_codesystem-cbs-temp-code-system"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-GenV2-TC-Condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_encounter-GenV2-TC-Hospitalization"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-GenV2-TC-Hospitalization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member1"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member10"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member11"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member11</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member12"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member12</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member13"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member13</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member14"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member14</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member15"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member15</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member16"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member16</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member17"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member17</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member2"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member2</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member3"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member3</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member4"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member5"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member5</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member6"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member6</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member7"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member7</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member8"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member8</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member9"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member9</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-Exposure"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-MMWR"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-MMWR</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_patient-GenV2-TC-Patient"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-birthsex"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-case-class-status"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-case-notification-panel"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-cnp-member"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-co-condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-co-condition</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-composition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-diagnosis-date"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-died-of-condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-died-of-condition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-epi-questionnaire-panel"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-epi-questionnaire-panel</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-ethnicity"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-ethnicity</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-exposure-observation"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-hospitalization"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-hospitalization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-mmwr"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-observation-lab"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-observation-lab</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>5</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-patient"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-performing-lab"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-race"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-specimen"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-specimen-role"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSAddressUseVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSCaseNotificationPanelVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS</b></a></td><td><b>1</b></td><td><b>8</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_ImplementationGuide-gtri.fhir.cbs"> </a>
+<h2><a href="ImplementationGuide-gtri.fhir.cbs.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_codesystem-cbs-temp-code-system"> </a>
+<h2><a href="CodeSystem-cbs-temp-code-system.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/CodeSystem-cbs-temp-code-system.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-GenV2-TC-Condition"> </a>
+<h2><a href="Condition-GenV2-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json</a></h2>
+ <ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-cbs-condition.html">Case Based Surveillance Condition of Interest Profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.extension[0].value.ofType(CodeableConcept) (l13/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.code (l38/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015), and a coding from this value set is required) (codes = urn:oid:2.16.840.1.114222.4.5.277#11550)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Condition.code.coding[0] (l39/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_encounter-GenV2-TC-Hospitalization"> </a>
+<h2><a href="Encounter-GenV2-TC-Hospitalization.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-GenV2-TC-Hospitalization.json</a></h2>
+ <ul style="font-size: 7px"><li>Encounter: Validated against <i>this.</i><a href="StructureDefinition-cbs-hospitalization.html">Case Based Surveillance Hospitalization Encounter Profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP"> </a>
+<h2><a href="Observation-GenV2-TC-CNP.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-case-notification-panel.html">Case Based Surveillance Case Notification Panel Profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@17e3d817
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@17e3d817
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member1"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member1.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member1.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@7cf6679f
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@7cf6679f
+</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.12.136' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member10"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member10.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member10.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@5feb63af
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@5feb63af
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member11"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member11.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member11.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@28229b68
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@28229b68
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member12"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member12.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member12.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.component[0].value.ofType(CodeableConcept).coding[0] (l45/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.12.136' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member13"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member13.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member13.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@1fd81048
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@1fd81048
+</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member14"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member14.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member14.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@35165d14
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@35165d14
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member15"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member15.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member15.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@4d809765
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@4d809765
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member16"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member16.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member16.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@3d4da817
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@3d4da817
+</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.12.136' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member17"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member17.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member17.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@50e69b0
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@50e69b0
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member2"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member2.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member2.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@68f220b
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@68f220b
+</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member3"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member3.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member3.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@2552e7a2
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@2552e7a2
+</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member4"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member4.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member4.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@5e5f2c34
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@5e5f2c34
+</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member5"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member5.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member5.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@53bd48cc
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@53bd48cc
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member6"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member6.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member6.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@520f96c7
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@520f96c7
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member7"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member7.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member7.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@64b07f55
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@64b07f55
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member8"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member8.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member8.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@1f9f550e
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@1f9f550e
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member9"> </a>
+<h2><a href="Observation-GenV2-TC-CNP-Member9.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l22/c16)</b></td><td><b>error</b></td><td title="Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@3fc6d5cb
+"><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@3fc6d5cb
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-Exposure"> </a>
+<h2><a href="Observation-GenV2-TC-Exposure.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-exposure-observation.html">Case Based Surveillance Exposure Observation Profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0].value.ofType(CodeableConcept) (l40/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#USA)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.component[0].value.ofType(CodeableConcept).coding[0] (l41/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.component[1].value.ofType(CodeableConcept).coding[0] (l60/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-MMWR"> </a>
+<h2><a href="Observation-GenV2-TC-MMWR.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-MMWR.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-cbs-mmwr.html">Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_patient-GenV2-TC-Patient"> </a>
+<h2><a href="Patient-GenV2-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.extension[0].extension[0].value.ofType(Coding) (l16/c30)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.extension[1].extension[1].value.ofType(Coding) (l49/c30)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2186-5) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3015, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3015)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].use (l86/c37)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[1].use (l92/c32)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-birthsex"> </a>
+<h2><a href="StructureDefinition-cbs-birthsex.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-case-class-status"> </a>
+<h2><a href="StructureDefinition-cbs-case-class-status.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-case-notification-panel"> </a>
+<h2><a href="StructureDefinition-cbs-case-notification-panel.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-cnp-member"> </a>
+<h2><a href="StructureDefinition-cbs-cnp-member.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cnp-member.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-co-condition"> </a>
+<h2><a href="StructureDefinition-cbs-co-condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-co-condition.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-composition"> </a>
+<h2><a href="StructureDefinition-cbs-composition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-condition"> </a>
+<h2><a href="StructureDefinition-cbs-condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-condition.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-diagnosis-date"> </a>
+<h2><a href="StructureDefinition-cbs-diagnosis-date.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-diagnosis-date.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-died-of-condition"> </a>
+<h2><a href="StructureDefinition-cbs-died-of-condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-died-of-condition.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-epi-questionnaire-panel"> </a>
+<h2><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-epi-questionnaire-panel.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-ethnicity"> </a>
+<h2><a href="StructureDefinition-cbs-ethnicity.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-ethnicity.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-exposure-observation"> </a>
+<h2><a href="StructureDefinition-cbs-exposure-observation.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-hospitalization"> </a>
+<h2><a href="StructureDefinition-cbs-hospitalization.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-hospitalization.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-mmwr"> </a>
+<h2><a href="StructureDefinition-cbs-mmwr.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-mmwr.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-observation-lab"> </a>
+<h2><a href="StructureDefinition-cbs-observation-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[65].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[83].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-patient"> </a>
+<h2><a href="StructureDefinition-cbs-patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Case Based Surveillance Patient Profile.address.address.Patient.address.use</b></td><td><b>error</b></td><td title=""><b>Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition</b></td><td><b>error</b></td><td title=""><b>Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-performing-lab"> </a>
+<h2><a href="StructureDefinition-cbs-performing-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-performing-lab.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-race"> </a>
+<h2><a href="StructureDefinition-cbs-race.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-specimen"> </a>
+<h2><a href="StructureDefinition-cbs-specimen.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-specimen-role"> </a>
+<h2><a href="StructureDefinition-cbs-specimen-role.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen-role.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSAddressUseVS"> </a>
+<h2><a href="ValueSet-CBSAddressUseVS.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSAddressUseVS.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSCaseNotificationPanelVS"> </a>
+<h2><a href="ValueSet-CBSCaseNotificationPanelVS.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code INV155 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code INV153 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code INV156 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code INV154 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.where(id = 'CBSCaseNotificationPanelVS')</b></td><td><b>error</b></td><td title=""><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@6a42bdef
+</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS"> </a>
+<h2><a href="ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code STD107 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code STD108 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code STD109 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code STD110 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[4]</b></td><td><b>warning</b></td><td title=""><b>The code STD111 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[5]</b></td><td><b>warning</b></td><td title=""><b>The code STD112 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[6]</b></td><td><b>warning</b></td><td title=""><b>The code STD113 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[7]</b></td><td><b>warning</b></td><td title=""><b>The code STD114 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS')</b></td><td><b>error</b></td><td title=""><b>Error from server: Error:org.hl7.fhir.r5.model.CodeableConcept@3ce840f7
+</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Terminology_TX_NoValid_12"> </a>
+<h2>Terminology_TX_NoValid_12</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-GenV2-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json</a></td><td><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-GenV2-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json</a></td><td><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2186-5) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3015, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3015)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-GenV2-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json</a></td><td><b>The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-GenV2-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json</a></td><td><b>The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_1_CC"> </a>
+<h2>Terminology_TX_NoValid_1_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-GenV2-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json</a></td><td><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-GenV2-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json</a></td><td><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015), and a coding from this value set is required) (codes = urn:oid:2.16.840.1.114222.4.5.277#11550)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-GenV2-TC-Exposure.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json</a></td><td><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#USA)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-GenV2-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member1.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member1.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.12.136' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member12.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member12.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.12.136' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member13.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member13.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member16.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member16.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.12.136' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member2.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member2.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member3.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member3.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-CNP-Member4.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member4.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-Exposure.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-GenV2-TC-Exposure.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-birthsex.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-case-class-status.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-case-notification-panel.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-cnp-member.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cnp-member.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-co-condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-co-condition.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-composition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-condition.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-diagnosis-date.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-diagnosis-date.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-died-of-condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-died-of-condition.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-epi-questionnaire-panel.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-ethnicity.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-ethnicity.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-exposure-observation.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-mmwr.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-mmwr.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-observation-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-observation-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-observation-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-observation-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-observation-lab.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-race.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-specimen.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-cbs-specimen-role.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen-role.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

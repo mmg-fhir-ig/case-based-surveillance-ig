@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "GenV2-TC-CNP-Member6",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77970-2}\">Date of initial report</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: 2014-02-25</p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "78000-7",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "77970-2"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
+  },
+  "valueDateTime": "2014-02-25"
+}
