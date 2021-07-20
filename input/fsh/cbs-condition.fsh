@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceCondition
 Parent: Condition
 Id: cbs-condition
 Title: "Case Based Surveillance Condition of Interest Profile"
-Description: "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
+Description: "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

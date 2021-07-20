@@ -1,6 +1,7 @@
 Instance: GenV2-TC-Patient
 InstanceOf: cbs-patient
 Usage: #example
+Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * extension[race].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
 * extension[race].extension[ombCategory].url = "ombCategory"
 * extension[race].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2106-3 "White"
@@ -48,10 +49,11 @@ Usage: #example
 
 * gender = #female
 * birthDate = "1964-05-02"
-* address[0].use = #home
-* address[0].district = "Harris"
-* address[0].state = "Texas"
-* address[0].postalCode = "77018"
-* address[1].use = #Usual-Residence
-* address[1].country = "USA"
+
+* address[Address-at-Diagnosis].district = "Harris"
+* address[Address-at-Diagnosis].state = "Texas"
+* address[Address-at-Diagnosis].postalCode = "77018"
+
+* address[Usual-Residence].country = "USA"
+
 * deceasedDateTime = "2014-03-02"

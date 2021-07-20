@@ -1,8 +1,8 @@
 Profile: CaseBasedSurveillanceExposureObservation
-Parent: cbs-case-notification-panel
+Parent: cbs-cnp-member
 Id: cbs-exposure-observation
 Title: "Case Based Surveillance Exposure Observation Profile"
-Description: "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."
+Description: "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

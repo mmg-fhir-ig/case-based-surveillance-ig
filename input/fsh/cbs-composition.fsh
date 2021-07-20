@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceComposition
 Parent: Composition
 Id: cbs-composition
 Title: "Case Based Surveillance Composition Profile"
-Description: "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs."
+Description: "Defines constraints to the Composition resource in order to meet the needs of public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

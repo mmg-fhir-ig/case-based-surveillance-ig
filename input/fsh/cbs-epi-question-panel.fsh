@@ -2,7 +2,7 @@ Profile: CBSEpiQuestionnairePanel
 Parent: Observation
 Id: cbs-epi-questionnaire-panel
 Title: "Case Based Surveillance Epi Questionnaire Panel"
-Description: ""
+Description: "Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

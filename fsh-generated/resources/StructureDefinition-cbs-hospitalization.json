@@ -16,6 +16,7 @@
   "name": "CaseBasedSurveillanceHospitalization",
   "title": "Case Based Surveillance Hospitalization Encounter Profile",
   "status": "active",
+  "description": "Defines constraints on Encounter to represent hospitalization due to a condition of interest in public health surveillance programs.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

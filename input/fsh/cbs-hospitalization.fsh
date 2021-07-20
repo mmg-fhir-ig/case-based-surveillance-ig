@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceHospitalization
 Parent: Encounter
 Id: cbs-hospitalization
 Title: "Case Based Surveillance Hospitalization Encounter Profile"
-Description: ""
+Description: "Defines constraints on Encounter to represent hospitalization due to a condition of interest in public health surveillance programs."
 * status 1..1 MS
 * status = $FHIR-Encounter-Status#unknown
 * class 1..1 MS

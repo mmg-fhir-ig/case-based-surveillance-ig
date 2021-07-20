@@ -73,7 +73,7 @@
 [MedicationAdministration]: {{site.data.fhir.path}}medicationadministration.html
 [Medications Module]: {{site.data.fhir.path}}medications-module.html
 [Multi-language support for Narratives]: {{site.data.fhir.path}}narrative.html#lang
-[Must Support]: conformance-expectations.html#must-support-elements
+[Must Support]: https://www.hl7.org/fhir/conformance-rules.html#mustSupport
 [NamingSystem]: {{site.data.fhir.path}}namingsystem.html
 [Narrative]: {{site.data.fhir.path}}security.html#narrative
 [Narrative documentation]: {{site.data.fhir.path}}narrative.html
@@ -103,14 +103,15 @@
 [Terminology]: terminology.html "Terminology Page"
 [Value sets]: terminology.html
 [base resource differential]: {{site.data.fhir.path}}diff.html
-[Must Support - Coded Elements]: conformance-expectations.html#must-support---coded-elements
-[Mandatory]: conformance-expectations.html#mandatory-elements
+[Must Support]: https://www.hl7.org/fhir/conformance-rules.html#mustSupport
+[Mandatory]: https://www.hl7.org/fhir/conformance-rules.html#cardinality
 [component]: http://hl7.org/fhir/R4/observation.html#gr-comp
 
 [CBS Case Notification Panel Value Set]: ValueSet-CBSCaseNotificationPanelVS.html
 [Case Based Surveillance Patient Profile]: StructureDefinition-cbs-patient.html
 [CBS Case Notification Panel Profile]: StructureDefinition-cbs-case-notification-panel.html
 [CBS Case Notification Panel Member Profile]:StructureDefinition-cbs-cnp-member.html
+[CBS Co-Condition]: StructureDefinition-cbs-co-condition.html
 [CBS Exposure Observation Profile]: StructureDefinition-cbs-exposure-observation.html
 [CBS MMWR Profile]: StructureDefinition-cbs-mmwr.html
 [CBS Composition Profile]: StructureDefinition-cbs-composition.html

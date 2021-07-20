@@ -19,7 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines items for the Case Notification Panel.",
+  "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [

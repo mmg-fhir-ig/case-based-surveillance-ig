@@ -1,5 +1,5 @@
 
-This page lists all the ValueSets and CodeSystems defined as part of the Case Based Surveillance implementation Guide. For more information on using codes in CBS, see the [FHIR Terminology] section in the FHIR specification and [Must Support - Coded Elements] in this guide.
+This page lists all the ValueSets and CodeSystems defined as part of the Case Based Surveillance implementation Guide. For more information on using codes in CBS, see the [FHIR Terminology] section in the FHIR specification and [Must Support] in this guide.
 
 ### Value Sets
 

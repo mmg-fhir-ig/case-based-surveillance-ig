@@ -12,6 +12,9 @@ version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
+publisher:
+  name: Georgia Tech Research Institute (GTRI)
+  url: http://gtri.gatech.edu/
 dependencies: 
   us.cdc.phinvads:
     uri: http://fhir.org/packages/us.cdc.phinvads

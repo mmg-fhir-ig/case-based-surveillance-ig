@@ -19,7 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+  "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
   "jurisdiction": [
     {
       "coding": [
@@ -67,7 +67,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
+  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
   "derivation": "constraint",
   "differential": {
     "element": [

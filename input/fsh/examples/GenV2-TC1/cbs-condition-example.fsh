@@ -1,6 +1,7 @@
 Instance: GenV2-TC-Condition
 InstanceOf: cbs-condition
 Usage: #example
+Description: "Condition of interest resource for the GenV2 Test Case 1 Patient"
 * extension[death].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition"
 * extension[death].valueCodeableConcept = $v2-0532-cs#Y
 * extension[diagnosis-date].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date"

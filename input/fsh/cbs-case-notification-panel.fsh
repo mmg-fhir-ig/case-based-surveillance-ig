@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillaneCaseNotificationPanel
 Parent: Observation
 Id: cbs-case-notification-panel
 Title: "Case Based Surveillance Case Notification Panel Profile"
-Description: "Defines items for the Case Notification Panel."
+Description: "Defines constraints on Observation to represent the case notification panel in public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
