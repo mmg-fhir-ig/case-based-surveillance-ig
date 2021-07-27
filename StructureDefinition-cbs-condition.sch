@@ -12,10 +12,10 @@
   <sch:pattern>
     <sch:title>f:Condition</sch:title>
     <sch:rule context="f:Condition">
-      <sch:assert test="count(f:extension[@url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition']) &lt;= 1">extension with URL = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date']) &lt;= 1">extension with URL = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status']) &gt;= 1">extension with URL = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status']) &lt;= 1">extension with URL = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration']) &lt;= 1">extension with URL = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

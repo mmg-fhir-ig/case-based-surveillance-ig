@@ -141,10 +141,73 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#how-to-read-this-guide" id="markdown-toc-how-to-read-this-guide">How to read this Guide</a></li>
+  <li><a href="#cbs-profiles" id="markdown-toc-cbs-profiles">CBS Profiles</a></li>
+</ul>
+
 </div>
-<p>This is a proof of concept/demonstration FHIR IG based around representation of data included as part of public health case surveillance Message Mapping Guides.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>The Case Based Surveillance (CBS) Implementation Guide is based on <a href="http://hl7.org/fhir/R4/index.html" title="FHIR Version R4 Specification Home Page">FHIR Version R4</a> and defines the minimum set of constraints on the FHIR resources to create the CBS Profiles. This is a proof of concept/demonstration FHIR IG based around representation of data included as part of public health case surveillance Message Mapping Guides (MMGs). Currently, there is one way to implement the CBS IG:</p>
+
+<ol>
+  <li>Profile Only Support: Systems may support <em>only</em> the CBS Profiles to represent public health information.</li>
+</ol>
+
+<h3 id="background">Background</h3>
+
+<p>Put in some background info maybe</p>
+
+<h3 id="how-to-read-this-guide">How to read this Guide</h3>
+
+<p>This Guide is divided into several pages which are listed at the top of each page in the menu bar.</p>
+
+<ul>
+  <li><a href="index.html" title="Home Page">Home</a>: The home page provides the introduction and background for CBS.</li>
+  <li><a href="artifacts.html">Artifacts</a>: These pages provides detailed descriptions and formal definitions for all the FHIR objects defined in this guide.
+    <ul>
+      <li><a href="profiles-and-extensions.html">Profiles and Extensions</a>: This page lists the set of Profile and Extension that are defined in this guide to exchange quality data. Each Profile page includes a narrative introduction and formal definition for the profile.</li>
+      <li><a href="terminology.html" title="Terminology Page">Terminology</a>: This page lists the value sets and code system defined for profiles.</li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a>: List of all the examples used in this guide.</li>
+</ul>
+
+<h3 id="cbs-profiles">CBS Profiles</h3>
+
+<p>The list of CBS Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that <strong>MUST</strong> be present. For each profile, requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a <a href="http://hl7.org/fhir/R4/formats.html#table">logical view</a> of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.</p>
+
+<ul>
+  <li><a href="StructureDefinition-cbs-case-notification-panel.html">CBS Case Notification Panel Profile</a>
+    <ul>
+      <li><a href="StructureDefinition-cbs-cnp-member.html">CBS Case Notification Panel Member Profile</a></li>
+      <li><a href="StructureDefinition-cbs-exposure-observation.html">CBS Exposure Observation Profile</a></li>
+      <li><a href="StructureDefinition-cbs-mmwr.html">CBS MMWR Profile</a></li>
+    </ul>
+  </li>
+  <li><a href="StructureDefinition-cbs-cause-of-death.html">CBS Cause of Death Profile</a></li>
+  <li><a href="StructureDefinition-cbs-composition.html">CBS Composition Profile</a></li>
+  <li><a href="StructureDefinition-cbs-condition.html">CBS Condition of Interest Profile</a></li>
+  <li><a href="StructureDefinition-cbs-co-condition.html">CBS Co-Condition Profile</a></li>
+  <li><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">CBS Epi-Questionnaire Panel Profile</a></li>
+  <li><a href="StructureDefinition-cbs-hospitalization.html">CBS Hospitalization Encounter Profile</a></li>
+  <li><a href="StructureDefinition-cbs-observation-lab.html">CBS Observation Lab Profile</a></li>
+  <li><a href="StructureDefinition-cbs-reporting-source-organization.html">CBS Reporting Source Organization Profile</a></li>
+  <li><a href="StructureDefinition-cbs-patient.html">CBS Patient Profile</a></li>
+  <li><a href="StructureDefinition-cbs-performing-lab.html">CBS Performing Laboratory Profile</a></li>
+  <li><a href="StructureDefinition-cbs-person-reporting-to-cdc.html">CBS Person Reporting to CDC Profile</a></li>
+  <li><a href="StructureDefinition-cbs-specimen.html">CBS Specimen Profile</a></li>
+</ul>
+
+<hr />
+
+<p>Primary Authors: Andrew Stevens, Elizabeth Shivers, Myung Choi</p>
+
 
 
 
@@ -170,7 +233,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 20, 2021 12:55-0400">2021-07-20</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 27, 2021 08:42-0400">2021-07-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

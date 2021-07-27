@@ -187,8 +187,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-cause-of-death.html"
+                     title="StructureDefinition/cbs-cause-of-death">Case Based Surveillance Cause of Death Profile</a>
+               </td>
+               <td>
+<p>Defines constraints on on the Observation resource for supporting public health reporting workflows involving the cause of death of the subject.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-cbs-co-condition.html"
-                     title="StructureDefinition/cbs-co-condition">Case Based Surveillance Co-Condition</a>
+                     title="StructureDefinition/cbs-co-condition">Case Based Surveillance Co-Condition Profile</a>
                </td>
                <td>
 <p>Defines constraints on on the Condition resource for any additional conditions beyond the condition of interest for surveillance. The requirements for these conditions are less strict structurally, and warrant a simpler profile.</p>
@@ -268,6 +277,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-person-reporting-to-cdc.html"
+                     title="StructureDefinition/cbs-person-reporting-to-cdc">Case Based Surveillance Person Reporting To CDC Profile</a>
+               </td>
+               <td>
+<p>Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-reporting-source-organization.html"
+                     title="StructureDefinition/cbs-reporting-source-organization">Case Based Surveillance Reporting Source Organization Profile</a>
+               </td>
+               <td>
+<p>Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-cbs-specimen.html"
                      title="StructureDefinition/cbs-specimen">Case Based Surveillance Specimen Profile</a>
                </td>
@@ -325,15 +352,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-cbs-died-of-condition.html"
-                     title="StructureDefinition/cbs-died-of-condition">Case Based Surveillance Death Due to Condition Extension</a>
-               </td>
-               <td>
-<p>A code classifying whether the subject died due to the reported condition of interest.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-cbs-ethnicity.html"
                      title="StructureDefinition/cbs-ethnicity">Case Based Surveillance Ethnicity Extension</a>
                </td>
@@ -357,6 +375,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Indicates the role of the sample.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-illness-duration.html"
+                     title="StructureDefinition/cbs-illness-duration">Case Based Surveillance Illness Duration</a>
+               </td>
+               <td>
+<p>Illness duration to obscure PHII in place of absokute dates.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cbs-related-case.html"
+                     title="StructureDefinition/cbs-related-case">Case Based Surveillance Related Case Extension</a>
+               </td>
+               <td>
+<p>A list of strings with relevant case numbers and a type element that specifies the nature of the relation.</p>
 </td>
             </tr>
          </tbody>
@@ -383,6 +419,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="ValueSet-CBSCaseNotificationPanelVS.html"
                      title="ValueSet/CBSCaseNotificationPanelVS">CBS Case Notification Panel Value Set</a>
+               </td>
+               <td>
+<p>Codes found in the case notification panel that are otherwise not captured in other CBS profiles.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CBSRelatedCaseTypeVS.html"
+                     title="ValueSet/CBSRelatedCaseTypeVS">CBS Relateed Case Type Value Set</a>
                </td>
                <td>
 <p>Codes found in the case notification panel that are otherwise not captured in other CBS profiles.</p>
@@ -430,6 +475,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-Co-Condition-Example.html"
+                     title="Condition/Co-Condition-Example">Co-Condition-Example</a>
+               </td>
+               <td>
+<p>An example resource that is conformant to the Case Based Surveillance Co-Condition profile.</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-GenV2-TC-CNP.html" title="Observation/GenV2-TC-CNP">GenV2-TC-CNP</a>
@@ -496,24 +550,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="Observation-GenV2-TC-CNP-Member15.html"
                      title="Observation/GenV2-TC-CNP-Member15">GenV2-TC-CNP-Member15</a>
-               </td>
-               <td>
-<p>Case notification panel member resource for the GenV2 Test Case 1 Patient</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-GenV2-TC-CNP-Member16.html"
-                     title="Observation/GenV2-TC-CNP-Member16">GenV2-TC-CNP-Member16</a>
-               </td>
-               <td>
-<p>Case notification panel member resource for the GenV2 Test Case 1 Patient</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-GenV2-TC-CNP-Member17.html"
-                     title="Observation/GenV2-TC-CNP-Member17">GenV2-TC-CNP-Member17</a>
                </td>
                <td>
 <p>Case notification panel member resource for the GenV2 Test Case 1 Patient</p>
@@ -593,6 +629,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-GenV2-TC-CauseOfDeath.html"
+                     title="Observation/GenV2-TC-CauseOfDeath">GenV2-TC-CauseOfDeath</a>
+               </td>
+               <td>
+<p>Cause of death resource for the GenV2 Test Case 1 Patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Condition-GenV2-TC-Condition.html"
                      title="Condition/GenV2-TC-Condition">GenV2-TC-Condition</a>
                </td>
@@ -634,6 +679,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>CBS Patient resource for the GenV2 Test Case 1 Patient</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-GenV2-TC-Person-Reporting.html"
+                     title="Practitioner/GenV2-TC-Person-Reporting">GenV2-TC-Person-Reporting</a>
+               </td>
+               <td>
+<p>Person reporting to CDC example resource for the GenV2 Test Case 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-GenV2-TC-Reporting-Source.html"
+                     title="Organization/GenV2-TC-Reporting-Source">GenV2-TC-Reporting-Source</a>
+               </td>
+               <td>
+<p>Reporting source example resource for the GenV2 Test Case 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-Specimen-Example.html" title="Specimen/Specimen-Example">Specimen-Example</a>
+               </td>
+               <td>
+<p>An example resource that is conformant to the Case Based Surveillance Specimen profile.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -661,7 +732,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 20, 2021 12:55-0400">2021-07-20</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 27, 2021 08:42-0400">2021-07-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3843eb1c-061e-47a7-8c99-d6c1e4d3a025"/>
+  <id value="83853320-94b5-45d9-b6d8-d52336971f10"/>
   <meta>
-    <lastUpdated value="2021-07-20T12:55:03.565-04:00"/>
+    <lastUpdated value="2021-07-27T08:42:43.012-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -112,7 +112,7 @@
         <name value="CBSAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-07-20T12:55:03-04:00"/>
+        <date value="2021-07-27T08:42:43-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -123,8 +123,8 @@
         </contact>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:0a40d184-34ad-438e-99ee-cfadc95cf584"/>
-          <timestamp value="2021-07-20T12:56:19-04:00"/>
+          <identifier value="urn:uuid:60563aeb-f609-445a-b2f3-6f5321dbd865"/>
+          <timestamp value="2021-07-27T08:43:54-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -172,6 +172,108 @@
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
             <code value="Usual-Residence"/>
             <display value="Address of Usual Residence"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="CBSRelatedCaseTypeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cbs-temp-code-system.html">
+                <code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-previously-reported"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-previously-reported">previously-reported</a>
+                </td>
+                <td>Previously Reported Case</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-connected-outbreak"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-connected-outbreak">connected-outbreak</a>
+                </td>
+                <td>Connected Outbreak Case</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-parent-congential-syphilis"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-parent-congential-syphilis">parent-congential-syphilis</a>
+                </td>
+                <td>Parent in Congenital Syphilis</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS"/>
+        <version value="0.1.0"/>
+        <name value="CBSRelatedCaseTypeVS"/>
+        <title value="CBS Relateed Case Type Value Set"/>
+        <status value="active"/>
+        <date value="2021-07-27T08:42:43-04:00"/>
+        <publisher value="Georgia Tech Research Institute (GTRI)"/>
+        <contact>
+          <name value="Georgia Tech Research Institute (GTRI)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://gtri.gatech.edu/"/>
+          </telecom>
+        </contact>
+        <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
+        <expansion>
+          <identifier value="urn:uuid:e061b232-19e6-4f88-8537-a6337b2637f6"/>
+          <timestamp value="2021-07-27T08:43:54-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="previously-reported"/>
+            <display value="Previously Reported Case"/>
+          </contains>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="connected-outbreak"/>
+            <display value="Connected Outbreak Case"/>
+          </contains>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="parent-congential-syphilis"/>
+            <display value="Parent in Congenital Syphilis"/>
           </contains>
         </expansion>
       </ValueSet>

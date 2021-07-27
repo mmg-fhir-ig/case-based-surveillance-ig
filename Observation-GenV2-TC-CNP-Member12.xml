@@ -6,7 +6,7 @@
     <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system case-outbreak}">Case Outbreak Name and Indicator</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77980-1}">Case is associated with a known outbreak</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.12.136 Y}">Y</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77981-9}">Case outbreak name</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77989-2}">Disease transmission mode</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 416086007}">Food-borne transmission (qualifier value)</span></p></div>
   </text>
   <status value="final"/>
   <category>
@@ -18,35 +18,18 @@
   </category>
   <code>
     <coding>
-      <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
-      <code value="case-outbreak"/>
+      <system value="http://loinc.org"/>
+      <code value="77989-2"/>
     </coding>
   </code>
   <subject>
     <reference value="Patient/GenV2-TC-Patient"/>
     <display value="GenV2-TC Example Patient"/>
   </subject>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="77980-1"/>
-      </coding>
-    </code>
-    <valueCodeableConcept>
-      <coding>
-        <system value="urn:oid:2.16.840.1.113883.12.136"/>
-        <code value="Y"/>
-      </coding>
-    </valueCodeableConcept>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="77981-9"/>
-      </coding>
-    </code>
-    <valueString value="HANSENOUTB1"/>
-  </component>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="416086007"/>
+    </coding>
+  </valueCodeableConcept>
 </Observation>

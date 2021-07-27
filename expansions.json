@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3843eb1c-061e-47a7-8c99-d6c1e4d3a025",
+  "id" : "83853320-94b5-45d9-b6d8-d52336971f10",
   "meta" : {
-    "lastUpdated" : "2021-07-20T12:55:03.565-04:00"
+    "lastUpdated" : "2021-07-27T08:42:43.012-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "CBSAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
-      "date" : "2021-07-20T12:55:03-04:00",
+      "date" : "2021-07-27T08:42:43-04:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
-        "identifier" : "urn:uuid:0a40d184-34ad-438e-99ee-cfadc95cf584",
-        "timestamp" : "2021-07-20T12:56:19-04:00",
+        "identifier" : "urn:uuid:60563aeb-f609-445a-b2f3-6f5321dbd865",
+        "timestamp" : "2021-07-27T08:43:54-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -79,6 +79,60 @@
           "system" : "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
           "code" : "Usual-Residence",
           "display" : "Address of Usual Residence"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CBSRelatedCaseTypeVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-previously-reported\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-previously-reported\">previously-reported</a></td><td>Previously Reported Case</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-connected-outbreak\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-connected-outbreak\">connected-outbreak</a></td><td>Connected Outbreak Case</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-parent-congential-syphilis\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-parent-congential-syphilis\">parent-congential-syphilis</a></td><td>Parent in Congenital Syphilis</td><td/></tr></table></div>"
+      },
+      "url" : "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
+      "version" : "0.1.0",
+      "name" : "CBSRelatedCaseTypeVS",
+      "title" : "CBS Relateed Case Type Value Set",
+      "status" : "active",
+      "date" : "2021-07-27T08:42:43-04:00",
+      "publisher" : "Georgia Tech Research Institute (GTRI)",
+      "contact" : [{
+        "name" : "Georgia Tech Research Institute (GTRI)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://gtri.gatech.edu/"
+        }]
+      }],
+      "description" : "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+      "expansion" : {
+        "identifier" : "urn:uuid:e061b232-19e6-4f88-8537-a6337b2637f6",
+        "timestamp" : "2021-07-27T08:43:54-04:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "code" : "previously-reported",
+          "display" : "Previously Reported Case"
+        },
+        {
+          "system" : "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "code" : "connected-outbreak",
+          "display" : "Connected Outbreak Case"
+        },
+        {
+          "system" : "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "code" : "parent-congential-syphilis",
+          "display" : "Parent in Congenital Syphilis"
         }]
       }
     }

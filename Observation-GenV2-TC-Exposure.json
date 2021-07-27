@@ -54,8 +54,7 @@
         "coding": [
           {
             "system": "urn:iso:std:iso:3166",
-            "code": "USA",
-            "display": "United States of America"
+            "code": "USA"
           }
         ]
       }

@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Condition/Co-Condition-Example> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Co-Condition-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 91558-7}\">Coinfection type</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"Condition-GenV2-TC-Condition.html\">GenV2-TC Condition of Interest. Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 11550}\">Hemolytic Uremic Syndrome</span>; onset: 2014-02-24; abatement: 2014-03-02</a></td></tr></table><p><b>note</b>: http://snomed.info/sct#5933001 C. difficile</p></div>"
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:91558-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "91558-7" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Condition.evidence [
+     fhir:index 0;
+     fhir:Condition.evidence.detail [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Condition/GenV2-TC-Condition>;
+       fhir:Reference.reference [ fhir:value "Condition/GenV2-TC-Condition" ];
+       fhir:Reference.display [ fhir:value "GenV2-TC Condition of Interest" ]
+     ]
+  ];
+  fhir:Condition.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "http://snomed.info/sct#5933001 C. difficile" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Condition/Co-Condition-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

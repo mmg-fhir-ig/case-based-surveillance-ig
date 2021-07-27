@@ -23,16 +23,16 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension","death","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition]]} {[]}
-","Case Based Surveillance Death Due to Condition Extension","A code classifying whether the subject died due to the condition of interest.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.extension","diagnosis-date","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date]]} {[]}
 ","Case Based Surveillance Diagnosis Date Extension","A dateTime indicating when the condition of interest was diagnosed.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.extension","case-class-status","","",1,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status]]} {[]}
 ","Case Based Surveillance Case Class Status","A code indicating the case class status.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.extension","illness-duration","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration]]} {[]}
+","Case Based Surveillance Illness Duration","Illness duration to obscure PHII in place of absokute dates.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.modifierExtension","","extensions

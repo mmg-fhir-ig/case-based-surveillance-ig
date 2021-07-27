@@ -35,6 +35,13 @@
     "name": "CaseBasedSurveillaneCaseNotificationPanel"
   },
   {
+    "id": "cbs-cause-of-death",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceCauseOfDeath"
+  },
+  {
     "id": "cbs-cnp-member",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
@@ -70,13 +77,6 @@
     "name": "CBSDiagnosisDateExtension"
   },
   {
-    "id": "cbs-died-of-condition",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
-    "version": "0.1.0",
-    "name": "CBSDiedOfConditionExtension"
-  },
-  {
     "id": "cbs-epi-questionnaire-panel",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel",
@@ -103,6 +103,13 @@
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization",
     "version": "0.1.0",
     "name": "CaseBasedSurveillanceHospitalization"
+  },
+  {
+    "id": "cbs-illness-duration",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceIllnessDuration"
   },
   {
     "id": "cbs-mmwr",
@@ -133,11 +140,32 @@
     "name": "CaseBasedSurveillancePerformingLaboratory"
   },
   {
+    "id": "cbs-person-reporting-to-cdc",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillancePersonReportingToCDC"
+  },
+  {
     "id": "cbs-race",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
     "version": "0.1.0",
     "name": "CBSRaceExtension"
+  },
+  {
+    "id": "cbs-related-case",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceRelatedCase"
+  },
+  {
+    "id": "cbs-reporting-source-organization",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceReportingSourceOrganization"
   },
   {
     "id": "cbs-specimen",
@@ -166,6 +194,13 @@
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
     "version": "0.1.0",
     "name": "CBSCaseNotificationPanelVS"
+  },
+  {
+    "id": "CBSRelatedCaseTypeVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
+    "version": "0.1.0",
+    "name": "CBSRelatedCaseTypeVS"
   },
   {
     "id": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",

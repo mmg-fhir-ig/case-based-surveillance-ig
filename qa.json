@@ -3,10 +3,10 @@
   "name": "CBSIG",
   "package-id": "gtri.fhir.cbs",
   "ig-ver": "0.1.0",
-  "date": "Tue, 20 Jul, 2021 12:55:03 -0400",
-  "errs": 28,
-  "warnings": 20,
-  "hints": 32,
+  "date": "Tue, 27 Jul, 2021 08:42:43 -0400",
+  "errs": 9,
+  "warnings": 22,
+  "hints": 13,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

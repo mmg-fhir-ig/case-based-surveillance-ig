@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-07-20T12:55:03-04:00"/>
+  <date value="2021-07-27T08:42:43-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -219,9 +219,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-cause-of-death"/>
+      </reference>
+      <name value="Case Based Surveillance Cause of Death Profile"/>
+      <description value="Defines constraints on on the Observation resource for supporting public health reporting workflows involving the cause of death of the subject."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-co-condition"/>
       </reference>
-      <name value="Case Based Surveillance Co-Condition"/>
+      <name value="Case Based Surveillance Co-Condition Profile"/>
       <description value="Defines constraints on on the Condition resource for any additional conditions beyond the condition of interest for surveillance. The requirements for these conditions are less strict structurally, and warrant a simpler profile."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -318,6 +329,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-person-reporting-to-cdc"/>
+      </reference>
+      <name value="Case Based Surveillance Person Reporting To CDC Profile"/>
+      <description value="Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-reporting-source-organization"/>
+      </reference>
+      <name value="Case Based Surveillance Reporting Source Organization Profile"/>
+      <description value="Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-specimen"/>
       </reference>
       <name value="Case Based Surveillance Specimen Profile"/>
@@ -373,17 +406,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-died-of-condition"/>
-      </reference>
-      <name value="Case Based Surveillance Death Due to Condition Extension"/>
-      <description value="A code classifying whether the subject died due to the reported condition of interest."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/cbs-ethnicity"/>
       </reference>
       <name value="Case Based Surveillance Ethnicity Extension"/>
@@ -414,6 +436,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-illness-duration"/>
+      </reference>
+      <name value="Case Based Surveillance Illness Duration"/>
+      <description value="Illness duration to obscure PHII in place of absokute dates."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-related-case"/>
+      </reference>
+      <name value="Case Based Surveillance Related Case Extension"/>
+      <description value="A list of strings with relevant case numbers and a type element that specifies the nature of the relation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -439,6 +483,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/CBSRelatedCaseTypeVS"/>
+      </reference>
+      <name value="CBS Relateed Case Type Value Set"/>
+      <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS"/>
       </reference>
       <name value="STD Sexual History and Drug Use Questionnaire Panel"/>
@@ -455,6 +510,17 @@
       <name value="Case Based Surveillance temporary/placeholder code system."/>
       <description value="Code system defined as placeholders for items that are not defined in existing systems."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Co-Condition-Example"/>
+      </reference>
+      <name value="Co-Condition-Example"/>
+      <description value="An example resource that is conformant to the Case Based Surveillance Co-Condition profile."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -549,28 +615,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/GenV2-TC-CNP-Member16"/>
-      </reference>
-      <name value="GenV2-TC-CNP-Member16"/>
-      <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/GenV2-TC-CNP-Member17"/>
-      </reference>
-      <name value="GenV2-TC-CNP-Member17"/>
-      <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/GenV2-TC-CNP-Member2"/>
       </reference>
       <name value="GenV2-TC-CNP-Member2"/>
@@ -656,6 +700,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/GenV2-TC-CauseOfDeath"/>
+      </reference>
+      <name value="GenV2-TC-CauseOfDeath"/>
+      <description value="Cause of death resource for the GenV2 Test Case 1 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -708,6 +763,39 @@
       <name value="GenV2-TC-Patient"/>
       <description value="CBS Patient resource for the GenV2 Test Case 1 Patient"/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/GenV2-TC-Person-Reporting"/>
+      </reference>
+      <name value="GenV2-TC-Person-Reporting"/>
+      <description value="Person reporting to CDC example resource for the GenV2 Test Case 1"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GenV2-TC-Reporting-Source"/>
+      </reference>
+      <name value="GenV2-TC-Reporting-Source"/>
+      <description value="Reporting source example resource for the GenV2 Test Case 1"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/Specimen-Example"/>
+      </reference>
+      <name value="Specimen-Example"/>
+      <description value="An example resource that is conformant to the Case Based Surveillance Specimen profile."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

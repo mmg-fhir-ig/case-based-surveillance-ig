@@ -28,14 +28,6 @@
       ]
     },
     {
-      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
-      "title": "Case Based Surveillance Death Due to Condition Extension",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
       "title": "Case Based Surveillance Ethnicity Extension",
       "types": [
@@ -91,6 +83,14 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
+      "title": "Case Based Surveillance Illness Duration",
+      "types": [
+        "Quantity",
+        "Quantity"
       ]
     },
     {
@@ -158,6 +158,16 @@
       ]
     },
     {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case",
+      "title": "Case Based Surveillance Related Case Extension",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "CodeableConcept",
+        "string"
+      ]
+    },
+    {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role",
       "title": "Case Based Surveillance Specimen Role Extension",
       "types": [
@@ -203,8 +213,14 @@
     ],
     "Organization": [
       {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab",
-        "title": "Case Based Surveillance Performing Laboratory Profile"
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization",
+        "title": "Case Based Surveillance Reporting Source Organization Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc",
+        "title": "Case Based Surveillance Person Reporting To CDC Profile"
       }
     ],
     "Specimen": [
@@ -224,14 +240,17 @@
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date": [
       "Condition"
     ],
-    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition": [
-      "Condition"
-    ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity": [
       "Patient"
     ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration": [
+      "Condition"
+    ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race": [
       "Patient"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case": [
+      "Composition"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role": [
       "Specimen"
