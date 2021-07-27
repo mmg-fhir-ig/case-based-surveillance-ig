@@ -8,6 +8,10 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
+
+* extension contains
+    cbs-related-case named related-case 0..* MS
+
 * identifier 0..1 MS
 * status 1..1 MS
 * status = $FHIR-Composition-Status#final

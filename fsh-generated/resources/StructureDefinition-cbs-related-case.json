@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-died-of-condition",
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition",
+  "id": "cbs-related-case",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case",
   "version": "0.1.0",
-  "name": "CBSDiedOfConditionExtension",
-  "title": "Case Based Surveillance Death Due to Condition Extension",
+  "name": "CaseBasedSurveillanceRelatedCase",
+  "title": "Case Based Surveillance Related Case Extension",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "A code classifying whether the subject died due to the reported condition of interest.",
+  "description": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation.",
   "jurisdiction": [
     {
       "coding": [
@@ -34,7 +34,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Condition"
+      "expression": "Composition"
     }
   ],
   "type": "Extension",
@@ -45,10 +45,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Case Based Surveillance Death Due to Condition Extension",
-        "definition": "A code classifying whether the subject died due to the condition of interest.",
-        "min": 1,
-        "max": "1"
+        "short": "Case Based Surveillance Related Case Extension",
+        "definition": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation"
       },
       {
         "id": "Extension.extension",
@@ -58,27 +56,23 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition"
+        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case"
       },
       {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
+        "id": "Extension.valueString",
+        "path": "Extension.valueString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       },
       {
         "id": "Extension.valueCodeableConcept",
         "path": "Extension.valueCodeableConcept",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -87,8 +81,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888",
-          "description": "Code for YNU Value Set"
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS"
         }
       }
     ]

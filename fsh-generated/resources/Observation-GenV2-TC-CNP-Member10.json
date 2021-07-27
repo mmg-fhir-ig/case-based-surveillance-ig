@@ -21,8 +21,8 @@
   "code": {
     "coding": [
       {
-        "code": "77973-6",
-        "system": "http://loinc.org"
+        "code": "case-outbreak",
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
       }
     ]
   },
@@ -30,5 +30,35 @@
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
   },
-  "valueDateTime": "2014-02-25"
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77980-1",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Y",
+            "system": "urn:oid:2.16.840.1.113883.12.136"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77981-9",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueString": "HANSENOUTB1"
+    }
+  ]
 }

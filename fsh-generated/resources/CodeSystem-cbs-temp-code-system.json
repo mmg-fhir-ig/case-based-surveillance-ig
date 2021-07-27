@@ -71,7 +71,19 @@
     {
       "code": "undefined-epi-questionnaire-cannonical-name-code",
       "display": "Undefined Epi Questionnaire Cannonical Name code"
+    },
+    {
+      "code": "previously-reported",
+      "display": "Previously Reported Case"
+    },
+    {
+      "code": "connected-outbreak",
+      "display": "Connected Outbreak Case"
+    },
+    {
+      "code": "parent-congential-syphilis",
+      "display": "Parent in Congenital Syphilis"
     }
   ],
-  "count": 13
+  "count": 16
 }

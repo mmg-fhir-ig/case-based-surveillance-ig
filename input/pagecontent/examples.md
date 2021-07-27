@@ -10,6 +10,8 @@ The following examples are provided as part of this implementation guide.
 
 **[Hospitalization Encounter](Encounter-GenV2-TC-Hospitalization.html)**
 
+**[Person Reporting to the CDC](Practitioner-GenV2-TC-Person-Reporting.html)**
+
 **[Case Notification Panel (CNP)](Observation-GenV2-TC-CNP.html)**
 
   * **[CNP Member: MMWR](Observation-GenV2-TC-MMWR.html)**
@@ -19,14 +21,17 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: National reporting jurisdiction](Observation-GenV2-TC-CNP-Member4.html)**
   * **[CNP Member: Jurisdiction code](Observation-GenV2-TC-CNP-Member5.html)**
   * **[CNP Member: Date of initial report](Observation-GenV2-TC-CNP-Member6.html)**
-  * **[CNP Member: Information source](Observation-GenV2-TC-CNP-Member7.html)**
-  * **[CNP Member: Reporting source zip code](Observation-GenV2-TC-CNP-Member8.html)**
-  * **[CNP Member: Earliest date reported to county](Observation-GenV2-TC-CNP-Member9.html)**
-  * **[CNP Member: Earliest date reported to state](Observation-GenV2-TC-CNP-Member10.html)**
-  * **[CNP Member: Case investigation start date](Observation-GenV2-TC-CNP-Member11.html)**
-  * **[CNP Member: Case outbreak name and indicator](Observation-GenV2-TC-CNP-Member12.html)**
-  * **[CNP Member: Binational reporting criteria [CDC.PHIN]](Observation-GenV2-TC-CNP-Member13.html)**
-  * **[CNP Member: Disease transmission mode](Observation-GenV2-TC-CNP-Member14.html)**
-  * **[CNP Member: Date of first report to public health department](Observation-GenV2-TC-CNP-Member15.html)**
-  * **[CNP Member: Pregnancy status at time of illness or condition](Observation-GenV2-TC-CNP-Member16.html)**
-  * **[CNP Member: Age at time of case investigation](Observation-GenV2-TC-CNP-Member17.html)**
+  * **[CNP Member: Earliest date reported to county](Observation-GenV2-TC-CNP-Member7.html)**
+  * **[CNP Member: Earliest date reported to state](Observation-GenV2-TC-CNP-Member8.html)**
+  * **[CNP Member: Case investigation start date](Observation-GenV2-TC-CNP-Member9.html)**
+  * **[CNP Member: Case outbreak name and indicator](Observation-GenV2-TC-CNP-Member10.html)**
+  * **[CNP Member: Binational reporting criteria [CDC.PHIN]](Observation-GenV2-TC-CNP-Member11.html)**
+  * **[CNP Member: Disease transmission mode](Observation-GenV2-TC-CNP-Member12.html)**
+  * **[CNP Member: Date of first report to public health department](Observation-GenV2-TC-CNP-Member13.html)**
+  * **[CNP Member: Pregnancy status at time of illness or condition](Observation-GenV2-TC-CNP-Member14.html)**
+  * **[CNP Member: Age at time of case investigation](Observation-GenV2-TC-CNP-Member15.html)**
+
+
+### Other Examples
+
+**[CBS Specimen Example](Specimen-Specimen-Example.html)**

@@ -21,7 +21,7 @@
   "code": {
     "coding": [
       {
-        "code": "77979-3",
+        "code": "77988-4",
         "system": "http://loinc.org"
       }
     ]
@@ -30,5 +30,13 @@
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
   },
-  "valueDateTime": "2014-02-25"
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "PHC1140",
+        "system": "urn:oid:2.16.840.1.114222.4.5.274",
+        "display": "Exposure to suspected product from Canada or Mexico"
+      }
+    ]
+  }
 }

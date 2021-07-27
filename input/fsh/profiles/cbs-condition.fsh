@@ -9,9 +9,9 @@ Description: "Defines constraints and extensions to the Condition resource in or
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * extension contains
-    cbs-died-of-condition named death 0..1 MS and
     cbs-diagnosis-date named diagnosis-date 0..1 MS and
-    cbs-case-class-status named case-class-status 1..1 MS
+    cbs-case-class-status named case-class-status 1..1 MS and 
+    cbs-illness-duration named illness-duration 0..1 MS
 * code 1..1 MS
 * code only CodeableConcept
 * code from $PHVS-NotifiableEvent-Disease (required)
