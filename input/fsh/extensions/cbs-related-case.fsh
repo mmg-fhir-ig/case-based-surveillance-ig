@@ -12,6 +12,12 @@ Description: "A list of strings with relevant case numbers and a type element th
 * . ^definition = "A list of strings with relevant case numbers and a type element that specifies the nature of the relation"
 * . ^isModifier = false
 
-* valueString 0..1
-* valueCodeableConcept 0..1
-* valueCodeableConcept from CBSRelatedCaseTypeVS
+* extension contains
+    case-number 0..1 MS and
+    case-type 0..1 MS
+
+* extension[case-number].value[x] 1..1 MS
+* extension[case-number].value[x] only string
+* extension[case-type].value[x] 1..1 MS
+* extension[case-type].value[x] only CodeableConcept
+* extension[case-type].value[x] from CBSRelatedCaseTypeVS

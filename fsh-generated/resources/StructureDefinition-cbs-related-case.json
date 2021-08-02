@@ -49,9 +49,66 @@
         "definition": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation"
       },
       {
-        "id": "Extension.extension",
+        "id": "Extension.extension:case-number",
         "path": "Extension.extension",
+        "sliceName": "case-number",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:case-number.extension",
+        "path": "Extension.extension.extension",
         "max": "0"
+      },
+      {
+        "id": "Extension.extension:case-number.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "case-number"
+      },
+      {
+        "id": "Extension.extension:case-number.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:case-type",
+        "path": "Extension.extension",
+        "sliceName": "case-type",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:case-type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:case-type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "case-type"
+      },
+      {
+        "id": "Extension.extension:case-type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS"
+        }
       },
       {
         "id": "Extension.url",
@@ -59,30 +116,9 @@
         "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case"
       },
       {
-        "id": "Extension.valueString",
-        "path": "Extension.valueString",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS"
-        }
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
       }
     ]
   }

@@ -6,15 +6,18 @@ The following examples are provided as part of this implementation guide.
 
 **[Condition of Interest](Condition-GenV2-TC-Condition.html)**
 
-**[Exposure Observation](Observation-GenV2-TC-Exposure.html)**
-
 **[Hospitalization Encounter](Encounter-GenV2-TC-Hospitalization.html)**
 
+**[Cause of Death](Observation-GenV2-TC-CauseOfDeath.html)**
+
 **[Person Reporting to the CDC](Practitioner-GenV2-TC-Person-Reporting.html)**
+
+**[Reporting Source](Organization-GenV2-TC-Reporting-Source.html)**
 
 **[Case Notification Panel (CNP)](Observation-GenV2-TC-CNP.html)**
 
   * **[CNP Member: MMWR](Observation-GenV2-TC-MMWR.html)**
+  * **[CNP Member: Exposure Observation](Observation-GenV2-TC-Exposure.html)**
   * **[CNP Member: Immediate national notifiable condition](Observation-GenV2-TC-CNP-Member1.html)**
   * **[CNP Member: Reporting state](Observation-GenV2-TC-CNP-Member2.html)**
   * **[CNP Member: Reporting county](Observation-GenV2-TC-CNP-Member3.html)**
@@ -35,3 +38,4 @@ The following examples are provided as part of this implementation guide.
 ### Other Examples
 
 **[CBS Specimen Example](Specimen-Specimen-Example.html)**
+**[CBS Co-Condition Example](Condition-Co-Condition-Example.html)**

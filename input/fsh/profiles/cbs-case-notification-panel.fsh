@@ -15,7 +15,7 @@ Description: "Defines constraints on Observation to represent the case notificat
 * category only CodeableConcept
 * category = $loinc#78000-7 "Case notification panel [CDC.PHIN]"
 * code 1..1 MS
-* code from CBSCaseNotificationPanelVS
+* code from CBSCaseNotificationPanelVS (required)
 * code ^binding.description = "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
