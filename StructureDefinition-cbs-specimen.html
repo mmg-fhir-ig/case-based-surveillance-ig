@@ -223,6 +223,38 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
+
+<p>The following data-elements must always be present (<a href="https://www.hl7.org/fhir/conformance-rules.html#cardinality">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="https://www.hl7.org/fhir/conformance-rules.html#mustSupport">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well.  The <a href="#profile">Formal Profile Definition</a> below provides the  formal summary, definitions, and terminology requirements.  The “Snapshot Table (Must Support)” tab below displays all the mandatory and must support data elements for this profile.</p>
+
+<p><strong>Each Specimen must have:</strong></p>
+
+<ol>
+  <li>a patient that conforms to the <a href="StructureDefinition-cbs-patient.html">CBS Patient Profile</a></li>
+</ol>
+
+<p><strong>Each Specimen must support:</strong></p>
+
+<ol>
+  <li>an extension that has a code for the specimen role</li>
+  <li>a placer assigned ID identifier</li>
+  <li>a filler assigned ID identifier</li>
+  <li>a type of specimen</li>
+  <li>a received time for when the specimen was received by the performing laboratory</li>
+  <li>a collected date time or period</li>
+  <li>a collected quantity</li>
+  <li>a collected body site</li>
+  <li>a note for any comments on the specimen</li>
+</ol>
+
+
+</div>
+
+
+
+
   <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
@@ -1124,7 +1156,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 27, 2021 08:42-0400">2021-07-27</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 4, 2021 12:04-0400">2021-08-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

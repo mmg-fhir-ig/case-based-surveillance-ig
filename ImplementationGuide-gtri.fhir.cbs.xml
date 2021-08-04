@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-07-27T08:42:43-04:00"/>
+  <date value="2021-08-04T12:04:06-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -485,7 +485,7 @@
       <reference>
         <reference value="ValueSet/CBSRelatedCaseTypeVS"/>
       </reference>
-      <name value="CBS Relateed Case Type Value Set"/>
+      <name value="CBS Related Case Type Value Set"/>
       <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
       <exampleBoolean value="false"/>
     </resource>

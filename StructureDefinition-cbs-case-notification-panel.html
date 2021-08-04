@@ -229,10 +229,6 @@
 
 <p>Not all observations contained in the full Case Notification Panel (see <a href="https://loinc.org/78000-7/">Case notification panel on LOINC</a>) are going to be present in this guide. This panel contains the observations that are not found in the other profiles, such as the <a href="http://cbsig.chai.gatech.edu/StructureDefinition-cbs-condition.html">CBS Condition of Interest</a> or the <a href="http://cbsig.chai.gatech.edu/StructureDefinition-cbs-exposure-observation.html">CBS Exposure Observation</a>.</p>
 
-<h3 id="panel-structure">Panel Structure</h3>
-
-<p>Currently, the CBS CNP is self-referential; this means that to accurately represent this panel, a resource should exist that defines the existence of the CNP and should contain References in the hasMember element to all CNP member resources that are created as a part of this panel. All member resources should conform to the same profile but shall not contain references to other CNP member resources. This panel structure closely aligns with that of the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html">FHIR Vital Signs Profile</a>. Future development could include defining profiles for each of the members of the CNP, similiar to the structure of the <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Panel</a>, because members of the CBS CNP are finite in number.</p>
-
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
 <p>The following data-elements must always be present (<a href="https://www.hl7.org/fhir/conformance-rules.html#cardinality">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="https://www.hl7.org/fhir/conformance-rules.html#mustSupport">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well.  The <a href="#profile">Formal Profile Definition</a> below provides the  formal summary, definitions, and terminology requirements.  The “Snapshot Table (Must Support)” tab below displays all the mandatory and must support data elements for this profile.</p>
@@ -243,7 +239,7 @@
   <li>a status</li>
   <li>a category code of 78000-7 “Case notification panel [CDC.PHIN]”</li>
   <li>a <a href="http://loinc.org">LOINC</a> code from the <a href="ValueSet-CBSCaseNotificationPanelVS.html">CBS Case Notification Panel Value Set</a> which tells you what is being measured</li>
-  <li>a patient that conforms to the <a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile</a></li>
+  <li>a patient that conforms to the [Case Based Surveillance Patient Profile]</li>
 </ol>
 
 <p><strong>Each Observation must support:</strong></p>
@@ -258,6 +254,12 @@
 <ul>
   <li>The observations <strong>MAY</strong> have <a href="http://hl7.org/fhir/R4/observation.html#gr-comp">component</a> observations. For example, the MMWR code <em>MMWR</em> - <em>MMWR Week/Year</em>, will have two components: <em>77992-6</em> - <em>MMWR Year</em> and <em>77991-8</em> - <em>MMWR Week</em>.</li>
 </ul>
+
+<h3 id="panel-structure">Panel Structure</h3>
+
+<p>Currently, the CBS CNP is self-referential; this means that to accurately represent this panel, a resource should exist that defines the existence of the CNP and should contain References in the hasMember element to all CNP member resources that are created as a part of this panel. All member resources should conform to the same profile but shall not contain references to other CNP member resources. This panel structure closely aligns with that of the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html">FHIR Vital Signs Profile</a>. Future development could include defining profiles for each of the members of the CNP, similiar to the structure of the <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Panel</a>, because members of the CBS CNP are finite in number. See below for an example structure of the CNP.</p>
+
+<p><img src="CNP-Diagram.png" style="width: 90%;" /></p>
 
 
 </div>
@@ -969,7 +971,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 27, 2021 08:42-0400">2021-07-27</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 4, 2021 12:04-0400">2021-08-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

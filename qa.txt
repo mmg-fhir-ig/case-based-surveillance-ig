@@ -1,9 +1,9 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 9, warn = 22, info = 13
+err = 8, warn = 23, info = 13
 IG Publisher Version: 1.1.77
-Generated Tue Jul 27 08:44:40 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Wed Aug 04 12:05:46 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 0 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
@@ -28,12 +28,12 @@ Generated Tue Jul 27 08:44:40 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member8 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member9 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CauseOfDeath : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure : 1 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure : 0 / 1 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-MMWR : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-GenV2-TC-Reporting-Source : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 4 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-Specimen-Example : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-Specimen-Example : 1 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
@@ -54,7 +54,7 @@ Generated Tue Jul 27 08:44:40 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-person-reporting-to-cdc : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 1 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reporting-source-organization : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 0 / 1
@@ -98,7 +98,6 @@ INFORMATION: Observation/GenV2-TC-CNP-Member4: Observation.value.ofType(Codeable
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CauseOfDeath.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json ==
-ERROR: Observation/GenV2-TC-Exposure: Observation.component[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#USA)
 WARNING: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]
 INFORMATION: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-MMWR.json ==
@@ -110,6 +109,8 @@ ERROR: Patient/GenV2-TC-Patient: Patient.address[0].use: The value provided ('Ad
 ERROR: Patient/GenV2-TC-Patient: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Practitioner-GenV2-TC-Person-Reporting.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Specimen-Specimen-Example.json ==
+WARNING: Specimen/Specimen-Example: Specimen.collection.bodySite: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967 because the value set or code system is not known to the validator]
+ERROR: Specimen/Specimen-Example: Specimen.collection.bodySite: This version of SNOMED is not loaded (from http://tx.fhir.org/r4)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
@@ -141,7 +142,6 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/Structure
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-person-reporting-to-cdc.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-related-case.json ==
-ERROR: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case'): The element Extension.valueString is out of order (and maybe others after it)
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-reporting-source-organization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen.json ==

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "83853320-94b5-45d9-b6d8-d52336971f10",
+  "id" : "8cc52ca0-f67b-46a0-a9ad-f5345f32b6af",
   "meta" : {
-    "lastUpdated" : "2021-07-27T08:42:43.012-04:00"
+    "lastUpdated" : "2021-08-04T12:04:06.433-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "CBSAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
-      "date" : "2021-07-27T08:42:43-04:00",
+      "date" : "2021-08-04T12:04:06-04:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
-        "identifier" : "urn:uuid:60563aeb-f609-445a-b2f3-6f5321dbd865",
-        "timestamp" : "2021-07-27T08:43:54-04:00",
+        "identifier" : "urn:uuid:195e24d4-a43b-4880-a846-8a8bfa54ffb0",
+        "timestamp" : "2021-08-04T12:05:00-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -95,9 +95,9 @@
       "url" : "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
       "version" : "0.1.0",
       "name" : "CBSRelatedCaseTypeVS",
-      "title" : "CBS Relateed Case Type Value Set",
+      "title" : "CBS Related Case Type Value Set",
       "status" : "active",
-      "date" : "2021-07-27T08:42:43-04:00",
+      "date" : "2021-08-04T12:04:06-04:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -108,8 +108,8 @@
       }],
       "description" : "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
       "expansion" : {
-        "identifier" : "urn:uuid:e061b232-19e6-4f88-8537-a6337b2637f6",
-        "timestamp" : "2021-07-27T08:43:54-04:00",
+        "identifier" : "urn:uuid:2c33cc70-d133-499c-a748-427281dfeff1",
+        "timestamp" : "2021-08-04T12:05:01-04:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
