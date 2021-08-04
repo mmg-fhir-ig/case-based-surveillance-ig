@@ -13,5 +13,6 @@ Description: "Defines constraints to the Organization resource in order to meet 
 * type 0..1 MS
 * type only CodeableConcept
 * type from $PHVS-ReportingSourceType-NND
+* name 1..1 MS
 * name  = "Reporting Source"
 * address.postalCode 0..1 MS

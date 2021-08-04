@@ -79,7 +79,9 @@
       {
         "id": "Organization.name",
         "path": "Organization.name",
-        "patternString": "Reporting Source"
+        "min": 1,
+        "patternString": "Reporting Source",
+        "mustSupport": true
       },
       {
         "id": "Organization.address.postalCode",

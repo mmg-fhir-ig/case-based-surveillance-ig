@@ -16,5 +16,5 @@ Description: "Defines constraints on on the Observation resource for supporting 
 * code = $loinc#79378-6
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
-* focus 0..*
+* focus 0..* MS
 * focus only Reference(cbs-condition or cbs-co-condition)

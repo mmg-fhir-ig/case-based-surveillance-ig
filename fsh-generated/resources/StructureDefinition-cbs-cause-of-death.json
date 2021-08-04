@@ -120,7 +120,8 @@
               "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

@@ -110,7 +110,7 @@
 [component]: http://hl7.org/fhir/R4/observation.html#gr-comp
 
 [CBS Case Notification Panel Value Set]: ValueSet-CBSCaseNotificationPanelVS.html
-[Case Based Surveillance Patient Profile]: StructureDefinition-cbs-patient.html
+
 [CBS Case Notification Panel Profile]: StructureDefinition-cbs-case-notification-panel.html
 [CBS Case Notification Panel Member Profile]:StructureDefinition-cbs-cnp-member.html
 [CBS Cause of Death Profile]: StructureDefinition-cbs-cause-of-death.html
@@ -141,5 +141,6 @@
 [Additional codes for Address.use]: ValueSet-CBSAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
 [CBS STD Epi Questionnaire Panel Codes]: ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html
+[CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html
 
 [CBS Temporary Code System]: CodeSystem-cbs-temp-code-system.html

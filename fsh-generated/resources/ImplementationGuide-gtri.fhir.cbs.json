@@ -257,7 +257,7 @@
         "reference": {
           "reference": "ValueSet/CBSRelatedCaseTypeVS"
         },
-        "name": "CBS Relateed Case Type Value Set",
+        "name": "CBS Related Case Type Value Set",
         "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
         "exampleBoolean": false
       },

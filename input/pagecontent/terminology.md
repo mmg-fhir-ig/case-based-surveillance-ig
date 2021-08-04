@@ -8,6 +8,7 @@ These value sets have been defined for this implementation guide.
 - [Additional codes for Address.use]
 - [CBS Case Notification Panel Codes]
 - [CBS STD Epi Questionnaire Panel Codes]
+- [CBS Related Case Type Value Set]
 
 
 ### Code Systems
