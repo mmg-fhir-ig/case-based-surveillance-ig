@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-observation-lab",
+  "id": "cbs-lab-observation",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,10 +11,10 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceObservationLab",
-  "title": "Case Based Surveillance Observation Lab",
+  "name": "CaseBasedSurveillanceLabObservation",
+  "title": "Case Based Surveillance Lab Observation",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
@@ -90,8 +90,8 @@
         "path": "Observation.code",
         "mustSupport": true,
         "binding": {
-          "strength": "example",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550"
+          "strength": "extensible",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS"
         }
       },
       {
@@ -176,7 +176,11 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS"
+        }
       },
       {
         "id": "Observation.valueString",
@@ -213,119 +217,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "code"
-            }
-          ],
-          "rules": "open",
-          "description": "Slice based on the component.code pattern"
-        }
-      },
-      {
-        "id": "Observation.component:Syphilis-Test",
-        "path": "Observation.component",
-        "sliceName": "Syphilis-Test",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:Syphilis-Test.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "STD123",
-              "system": "urn:oid:2.16.840.1.114222.4.5.232"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:Syphilis-Test.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279"
-        }
-      },
-      {
-        "id": "Observation.component:Gene-Identifier",
-        "path": "Observation.component",
-        "sliceName": "Gene-Identifier",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:Gene-Identifier.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "48018-6",
-              "system": "http://loinc.org"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:Gene-Identifier.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7825"
-        }
-      },
-      {
-        "id": "Observation.component:Organism-Name",
-        "path": "Observation.component",
-        "sliceName": "Organism-Name",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:Organism-Name.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "LAB278",
-              "system": "urn:oid:2.16.840.1.114222.4.5.232"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:Organism-Name.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850"
-        }
       }
     ]
   }
