@@ -54,9 +54,9 @@ Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1
 // FHIR Terminology
 Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
+Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
-Alias: $FHIR-DiagnosticReport-Category = http://hl7.org/fhir/ValueSet/diagnostic-service-sections
 Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes
