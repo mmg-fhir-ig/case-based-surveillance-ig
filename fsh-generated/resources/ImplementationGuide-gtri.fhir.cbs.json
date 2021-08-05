@@ -4,7 +4,21 @@
   "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
   "version": "0.1.0",
   "name": "CBSIG",
+  "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
+  "publisher": "Georgia Tech Research Institute (GTRI)",
+  "contact": [
+    {
+      "name": "Georgia Tech Research Institute (GTRI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gtri.gatech.edu/"
+        }
+      ]
+    }
+  ],
+  "description": "An IG that is used to support case based surveillance messaging for the public health domain",
   "packageId": "gtri.fhir.cbs",
   "fhirVersion": [
     "4.0.1"
@@ -18,13 +32,13 @@
     },
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "current",
+      "version": "4.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },
     {
       "packageId": "hl7.fhir.us.ecr",
-      "version": "current",
+      "version": "1.0.0",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
     }
@@ -36,6 +50,7 @@
           "reference": "StructureDefinition/cbs-epi-questionnaire-panel"
         },
         "name": "Case Based Surveillance Epi Questionnaire Panel",
+        "description": "Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions.",
         "exampleBoolean": false
       },
       {
@@ -43,6 +58,23 @@
           "reference": "StructureDefinition/cbs-cnp-member"
         },
         "name": "Case Based Surveillance Case Notification Panel Member",
+        "description": "Defines constraints on the CBS Case Notification Panel Profile for defining the member resources of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-cause-of-death"
+        },
+        "name": "Case Based Surveillance Cause of Death Profile",
+        "description": "Defines constraints on on the Observation resource for supporting public health reporting workflows involving the cause of death of the subject.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-co-condition"
+        },
+        "name": "Case Based Surveillance Co-Condition Profile",
+        "description": "Defines constraints on on the Condition resource for any additional conditions beyond the condition of interest for surveillance. The requirements for these conditions are less strict structurally, and warrant a simpler profile.",
         "exampleBoolean": false
       },
       {
@@ -50,7 +82,7 @@
           "reference": "StructureDefinition/cbs-composition"
         },
         "name": "Case Based Surveillance Composition Profile",
-        "description": "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs.",
+        "description": "Defines constraints to the Composition resource in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -58,7 +90,7 @@
           "reference": "StructureDefinition/cbs-condition"
         },
         "name": "Case Based Surveillance Condition of Interest Profile",
-        "description": "Defines constraints and extensions to the condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+        "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
         "exampleBoolean": false
       },
       {
@@ -66,7 +98,15 @@
           "reference": "StructureDefinition/cbs-exposure-observation"
         },
         "name": "Case Based Surveillance Exposure Observation Profile",
-        "description": "Defines constraints and extensions to the observation resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+        "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-hospitalization"
+        },
+        "name": "Case Based Surveillance Hospitalization Encounter Profile",
+        "description": "Defines constraints on Encounter to represent hospitalization due to a condition of interest in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -103,6 +143,23 @@
           "reference": "StructureDefinition/cbs-performing-lab"
         },
         "name": "Case Based Surveillance Performing Laboratory Profile",
+        "description": "NOT FINAL GOING TO CHANGE",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-person-reporting-to-cdc"
+        },
+        "name": "Case Based Surveillance Person Reporting To CDC Profile",
+        "description": "Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-reporting-source-organization"
+        },
+        "name": "Case Based Surveillance Reporting Source Organization Profile",
+        "description": "Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source.",
         "exampleBoolean": false
       },
       {
@@ -110,6 +167,7 @@
           "reference": "StructureDefinition/cbs-specimen"
         },
         "name": "Case Based Surveillance Specimen Profile",
+        "description": "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -117,7 +175,7 @@
           "reference": "StructureDefinition/cbs-case-notification-panel"
         },
         "name": "Case Based Surveillance Case Notification Panel Profile",
-        "description": "Defines items for the Case Notification Panel.",
+        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -146,14 +204,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-died-of-condition"
-        },
-        "name": "Case Based Surveillance Death Due to Condition Extension",
-        "description": "A code classifying whether the subject died due to the reported condition of interest.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-ethnicity"
         },
         "name": "Case Based Surveillance Ethnicity Extension",
@@ -174,6 +224,22 @@
         },
         "name": "Case Based Surveillance Specimen Role Extension",
         "description": "Indicates the role of the sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-illness-duration"
+        },
+        "name": "Case Based Surveillance Illness Duration",
+        "description": "Illness duration to obscure PHII in place of absokute dates.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-related-case"
+        },
+        "name": "Case Based Surveillance Related Case Extension",
+        "description": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation.",
         "exampleBoolean": false
       },
       {
@@ -234,17 +300,211 @@
       },
       {
         "reference": {
-          "reference": "Condition/GenV2-CoI"
+          "reference": "Condition/Co-Condition-Example"
         },
-        "name": "GenV2-CoI",
+        "name": "Co-Condition-Example",
+        "description": "An example resource that is conformant to the Case Based Surveillance Co-Condition profile.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP"
+        },
+        "name": "GenV2-TC-CNP",
+        "description": "Case notification panel resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member1"
+        },
+        "name": "GenV2-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member10"
+        },
+        "name": "GenV2-TC-CNP-Member10",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member11"
+        },
+        "name": "GenV2-TC-CNP-Member11",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member12"
+        },
+        "name": "GenV2-TC-CNP-Member12",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member13"
+        },
+        "name": "GenV2-TC-CNP-Member13",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member14"
+        },
+        "name": "GenV2-TC-CNP-Member14",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member15"
+        },
+        "name": "GenV2-TC-CNP-Member15",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member2"
+        },
+        "name": "GenV2-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member3"
+        },
+        "name": "GenV2-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member4"
+        },
+        "name": "GenV2-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member5"
+        },
+        "name": "GenV2-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member6"
+        },
+        "name": "GenV2-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member7"
+        },
+        "name": "GenV2-TC-CNP-Member7",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member8"
+        },
+        "name": "GenV2-TC-CNP-Member8",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CNP-Member9"
+        },
+        "name": "GenV2-TC-CNP-Member9",
+        "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-CauseOfDeath"
+        },
+        "name": "GenV2-TC-CauseOfDeath",
+        "description": "Cause of death resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death"
+      },
+      {
+        "reference": {
+          "reference": "Condition/GenV2-TC-Condition"
+        },
+        "name": "GenV2-TC-Condition",
+        "description": "Condition of interest resource for the GenV2 Test Case 1 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
       },
       {
         "reference": {
-          "reference": "Patient/GenV2-TC"
+          "reference": "Observation/GenV2-TC-Exposure"
         },
-        "name": "GenV2-TC",
+        "name": "GenV2-TC-Exposure",
+        "description": "Exposure observation resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/GenV2-TC-Hospitalization"
+        },
+        "name": "GenV2-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "Observation/GenV2-TC-MMWR"
+        },
+        "name": "GenV2-TC-MMWR",
+        "description": "MMWR resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "reference": {
+          "reference": "Patient/GenV2-TC-Patient"
+        },
+        "name": "GenV2-TC-Patient",
+        "description": "CBS Patient resource for the GenV2 Test Case 1 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/GenV2-TC-Person-Reporting"
+        },
+        "name": "GenV2-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the GenV2 Test Case 1",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "reference": {
+          "reference": "Organization/GenV2-TC-Reporting-Source"
+        },
+        "name": "GenV2-TC-Reporting-Source",
+        "description": "Reporting source example resource for the GenV2 Test Case 1",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/Specimen-Example"
+        },
+        "name": "Specimen-Example",
+        "description": "An example resource that is conformant to the Case Based Surveillance Specimen profile.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
       }
     ],
     "page": {
@@ -255,6 +515,21 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         }
       ]

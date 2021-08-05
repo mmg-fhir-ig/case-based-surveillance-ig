@@ -1,0 +1,157 @@
+{
+  "resourceType": "Patient",
+  "id": "GenV2-TC-Patient",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        },
+        {
+          "url": "detailed",
+          "valueCoding": {
+            "code": "1010-8",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Apache"
+          }
+        },
+        {
+          "url": "otherRace",
+          "valueString": "Apache"
+        },
+        {
+          "url": "text",
+          "valueString": "Mixed"
+        }
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        },
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2186-5",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "F",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "USA"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "12271241000119109",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      }
+    }
+  ],
+  "address": [
+    {
+      "use": "Address-at-Diagnosis",
+      "district": "Harris",
+      "state": "Texas",
+      "postalCode": "77018"
+    },
+    {
+      "use": "Usual-Residence",
+      "country": "USA"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Record-ID",
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "GenV2_TC01_Record"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Subject-ID",
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "GenV2_TC01_Subject"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "77997-5",
+            "system": "http://loinc.org",
+            "display": "Legacy case identifier [CDC.PHIN]"
+          }
+        ],
+        "text": "Legacy Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "48432148S012014"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "77993-4",
+            "system": "http://loinc.org",
+            "display": "State notifiable condition case identifier"
+          }
+        ],
+        "text": "State Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "TX4321"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1964-05-02",
+  "deceasedDateTime": "2014-03-02"
+}

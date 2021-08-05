@@ -55,6 +55,11 @@
       "definition": "Grouped MMWR Week and Year into a single code"
     },
     {
+      "code": "case-outbreak",
+      "display": "Case Outbreak Name and Indicator",
+      "definition": "Grouped case outbreak name and indicator into a single code for the case notification panel"
+    },
+    {
       "code": "epi-questionnaire",
       "display": "Case Based Surveillance Epi Questionnaire Panel",
       "definition": "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."
@@ -66,7 +71,19 @@
     {
       "code": "undefined-epi-questionnaire-cannonical-name-code",
       "display": "Undefined Epi Questionnaire Cannonical Name code"
+    },
+    {
+      "code": "previously-reported",
+      "display": "Previously Reported Case"
+    },
+    {
+      "code": "connected-outbreak",
+      "display": "Connected Outbreak Case"
+    },
+    {
+      "code": "parent-congential-syphilis",
+      "display": "Parent in Congenital Syphilis"
     }
   ],
-  "count": 12
+  "count": 16
 }

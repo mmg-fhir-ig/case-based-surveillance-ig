@@ -19,7 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints and extensions to the composition resource in order to meet the needs of public health surveillance programs.",
+  "description": "Defines constraints to the Composition resource in order to meet the needs of public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [
@@ -66,6 +66,36 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Composition.extension",
+        "path": "Composition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.extension:related-case",
+        "path": "Composition.extension",
+        "sliceName": "related-case",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
       {
         "id": "Composition.identifier",
         "path": "Composition.identifier",

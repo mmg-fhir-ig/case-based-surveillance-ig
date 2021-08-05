@@ -3,6 +3,7 @@
 [(how to search by reference)]: {{site.data.fhir.path}}search.html#reference
 [(how to search by token)]: {{site.data.fhir.path}}search.html#token
 [AllergyIntolerance]: {{site.data.fhir.path}}allergyintolerance.html
+[Artifacts]: artifacts.html
 [Audit Logging]: {{site.data.fhir.path}}security.html#audit
 [Audit Logging]: {{site.data.fhir.path}}security.html#audit%20logging
 [AuditEvent]: {{site.data.fhir.path}}auditevent.html
@@ -64,6 +65,7 @@
 [Immunization]:  {{site.data.fhir.path}}immunization.html
 [LOINC]: http://loinc.org
 [Location]:  {{site.data.fhir.path}}location.html
+[logical view]: {{site.data.fhir.path}}formats.html#table
 [MedicationRequestStatus]: {{site.data.fhir.path}}valueset-medicationrequest-status.html
 [MedicationRequest]: {{site.data.fhir.path}}medicationrequest.html
 [MedicationStatementStatus]: {{site.data.fhir.path}}valueset-medication-statement-status.html
@@ -73,7 +75,7 @@
 [MedicationAdministration]: {{site.data.fhir.path}}medicationadministration.html
 [Medications Module]: {{site.data.fhir.path}}medications-module.html
 [Multi-language support for Narratives]: {{site.data.fhir.path}}narrative.html#lang
-[Must Support]: conformance-expectations.html#must-support-elements
+[Must Support]: https://www.hl7.org/fhir/conformance-rules.html#mustSupport
 [NamingSystem]: {{site.data.fhir.path}}namingsystem.html
 [Narrative]: {{site.data.fhir.path}}security.html#narrative
 [Narrative documentation]: {{site.data.fhir.path}}narrative.html
@@ -103,9 +105,42 @@
 [Terminology]: terminology.html "Terminology Page"
 [Value sets]: terminology.html
 [base resource differential]: {{site.data.fhir.path}}diff.html
-[Must Support - Coded Elements]: conformance-expectations.html#must-support---coded-elements
-[Mandatory]: conformance-expectations.html#mandatory-elements
+[Must Support]: https://www.hl7.org/fhir/conformance-rules.html#mustSupport
+[Mandatory]: https://www.hl7.org/fhir/conformance-rules.html#cardinality
 [component]: http://hl7.org/fhir/R4/observation.html#gr-comp
 
 [CBS Case Notification Panel Value Set]: ValueSet-CBSCaseNotificationPanelVS.html
-[Case Based Surveillance Patient Profile]: StructureDefinition-cbs-patient.html
+
+[CBS Case Notification Panel Profile]: StructureDefinition-cbs-case-notification-panel.html
+[CBS Case Notification Panel Member Profile]:StructureDefinition-cbs-cnp-member.html
+[CBS Cause of Death Profile]: StructureDefinition-cbs-cause-of-death.html
+[CBS Co-Condition Profile]: StructureDefinition-cbs-co-condition.html
+[CBS Exposure Observation Profile]: StructureDefinition-cbs-exposure-observation.html
+[CBS MMWR Profile]: StructureDefinition-cbs-mmwr.html
+[CBS Composition Profile]: StructureDefinition-cbs-composition.html
+[CBS Condition of Interest Profile]: StructureDefinition-cbs-condition.html
+[CBS Epi-Questionnaire Panel Profile]: StructureDefinition-cbs-epi-questionnaire-panel.html
+[CBS Hospitalization Encounter Profile]: StructureDefinition-cbs-hospitalization.html
+[CBS Observation Lab Profile]: StructureDefinition-cbs-observation-lab.html
+[CBS Reporting Source Organization Profile]: StructureDefinition-cbs-reporting-source-organization.html
+[CBS Patient Profile]: StructureDefinition-cbs-patient.html
+[CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
+[CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html
+[CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
+
+[CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
+[CBS Case Class Status Extension]: StructureDefinition-cbs-case-class-status.html
+[CBS Diagnosis Date Extension]: StructureDefinition-cbs-diagnosis-date.html
+[CBS Died of Condition Extension]: StructureDefinition-cbs-died-of-condition.html
+[CBS Ethnicity Extension]: StructureDefinition-cbs-ethnicity.html
+[CBS Illness Duration Extension]: StructureDefinition-cbs-illness-duration.html
+[CBS Race Extension]: StructureDefinition-cbs-race.html
+[CBS Related Case Extension]: StructureDefinition-cbs-related-case.html
+[CBS Specimen Role Extension]: StructureDefinition-cbs-specimen-role.html
+
+[Additional codes for Address.use]: ValueSet-CBSAddressUseVS.html
+[CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
+[CBS STD Epi Questionnaire Panel Codes]: ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html
+[CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html
+
+[CBS Temporary Code System]: CodeSystem-cbs-temp-code-system.html

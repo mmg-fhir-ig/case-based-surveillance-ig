@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "GenV2-TC-CNP-Member10",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "case-outbreak",
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77980-1",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Y",
+            "system": "urn:oid:2.16.840.1.113883.12.136"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77981-9",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueString": "HANSENOUTB1"
+    }
+  ]
+}
