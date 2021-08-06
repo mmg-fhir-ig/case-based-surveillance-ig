@@ -128,6 +128,7 @@
           "reference": "StructureDefinition/cbs-mmwr"
         },
         "name": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -280,6 +281,14 @@
         },
         "name": "Combined ValueSet for Lab Observation Code.",
         "description": "Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSRelatedCaseTypeVS"
+        },
+        "name": "CBS Related Case Type Value Set",
+        "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
         "exampleBoolean": false
       },
       {
