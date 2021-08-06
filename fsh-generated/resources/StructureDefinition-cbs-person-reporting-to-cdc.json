@@ -1,0 +1,129 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cbs-person-reporting-to-cdc",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc",
+  "version": "0.1.0",
+  "name": "CaseBasedSurveillancePersonReportingToCDC",
+  "title": "Case Based Surveillance Person Reporting To CDC Profile",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-01-01",
+  "publisher": "Georgia Tech Research Institute",
+  "description": "Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner",
+        "path": "Practitioner",
+        "mustSupport": false
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.telecom:phone",
+        "path": "Practitioner.telecom",
+        "sliceName": "phone",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom:phone.system",
+        "path": "Practitioner.telecom.system",
+        "min": 1,
+        "patternCode": "phone"
+      },
+      {
+        "id": "Practitioner.telecom:phone.value",
+        "path": "Practitioner.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom:email",
+        "path": "Practitioner.telecom",
+        "sliceName": "email",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom:email.system",
+        "path": "Practitioner.telecom.system",
+        "min": 1,
+        "patternCode": "email"
+      },
+      {
+        "id": "Practitioner.telecom:email.value",
+        "path": "Practitioner.telecom.value",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -33,6 +33,54 @@
   "hasMember": [
     {
       "reference": "Observation/GenV2-TC-MMWR"
+    },
+    {
+      "reference": "Observation/GenV2-TC-Exposure"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member1"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member2"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member3"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member4"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member5"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member6"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member7"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member8"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member9"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member10"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member11"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member12"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member13"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member14"
+    },
+    {
+      "reference": "Observation/GenV2-TC-CNP-Member15"
     }
   ]
 }

@@ -28,3 +28,7 @@ Description:  "Code system defined as placeholders for items that are not define
     "Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."
 * #std-program-questionnaire-panel "STD Program Questionnaire Panel" // Demo Code
 * #undefined-epi-questionnaire-cannonical-name-code "Undefined Epi Questionnaire Cannonical Name code"
+
+* #previously-reported "Previously Reported Case"
+* #connected-outbreak "Connected Outbreak Case"
+* #parent-congential-syphilis "Parent in Congenital Syphilis"

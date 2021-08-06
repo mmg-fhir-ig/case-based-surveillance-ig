@@ -21,7 +21,7 @@
   "code": {
     "coding": [
       {
-        "code": "52831-5",
+        "code": "77973-6",
         "system": "http://loinc.org"
       }
     ]
@@ -30,5 +30,5 @@
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
   },
-  "valueString": "77018"
+  "valueDateTime": "2014-02-25"
 }

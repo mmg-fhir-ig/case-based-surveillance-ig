@@ -8,13 +8,17 @@ The following Profiles and have been defined for this implementation guide.
   - [CBS Case Notification Panel Member Profile]
   - [CBS Exposure Observation Profile]
   - [CBS MMWR Profile]
+- [CBS Cause of Death Profile]
 - [CBS Composition Profile]
 - [CBS Condition of Interest Profile]
+- [CBS Co-Condition Profile]
 - [CBS Epi-Questionnaire Panel Profile]
 - [CBS Hospitalization Encounter Profile]
 - [CBS Observation Lab Profile]
+- [CBS Reporting Source Organization Profile]
 - [CBS Patient Profile]
 - [CBS Performing Laboratory Profile]
+- [CBS Person Reporting to CDC Profile]
 - [CBS Specimen Profile]
 
 
@@ -28,9 +32,10 @@ The following [Extensions]({{site.data.fhir.path}}extensibility.html) have been 
 - [CBS Birthsex Extension]
 - [CBS Case Class Status Extension]
 - [CBS Diagnosis Date Extension]
-- [CBS Died of Condition Extension]
 - [CBS Ethnicity Extension]
+- [CBS Illness Duration Extension]
 - [CBS Race Extension]
+- [CBS Related Case Extension]
 - [CBS Specimen Role Extension]
 
 {% include link-list.md %}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "Organization",
+  "id": "GenV2-TC-Reporting-Source",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+    ]
+  },
+  "name": "Reporting Source",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "1",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0406"
+        }
+      ]
+    }
+  ],
+  "address": [
+    {
+      "postalCode": "77018"
+    }
+  ]
+}

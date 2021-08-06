@@ -67,6 +67,36 @@
   "differential": {
     "element": [
       {
+        "id": "Composition.extension",
+        "path": "Composition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.extension:related-case",
+        "path": "Composition.extension",
+        "sliceName": "related-case",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.identifier",
         "path": "Composition.identifier",
         "mustSupport": true

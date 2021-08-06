@@ -2,10 +2,6 @@ The Case Based Surveillance Case Notification Panel (CBS CNP) contains observati
 
 Not all observations contained in the full Case Notification Panel (see [Case notification panel on LOINC](https://loinc.org/78000-7/)) are going to be present in this guide. This panel contains the observations that are not found in the other profiles, such as the [CBS Condition of Interest](http://cbsig.chai.gatech.edu/StructureDefinition-cbs-condition.html) or the [CBS Exposure Observation](http://cbsig.chai.gatech.edu/StructureDefinition-cbs-exposure-observation.html).
 
-### Panel Structure
-
-Currently, the CBS CNP is self-referential; this means that to accurately represent this panel, a resource should exist that defines the existence of the CNP and should contain References in the hasMember element to all CNP member resources that are created as a part of this panel. All member resources should conform to the same profile but shall not contain references to other CNP member resources. This panel structure closely aligns with that of the [FHIR Vital Signs Profile](https://www.hl7.org/fhir/observation-vitalsigns.html). Future development could include defining profiles for each of the members of the CNP, similiar to the structure of the [US Core Vital Signs Panel](http://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html), because members of the CBS CNP are finite in number.
-
 ### Mandatory and Must Support Data Elements
 
 The following data-elements must always be present ([Mandatory] definition) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the  formal summary, definitions, and terminology requirements.  The "Snapshot Table (Must Support)" tab below displays all the mandatory and must support data elements for this profile.
@@ -25,5 +21,11 @@ The following data-elements must always be present ([Mandatory] definition) or m
 **Profile specific implementation guidance:**
 
 - The observations **MAY** have [component] observations. For example, the MMWR code *MMWR* - *MMWR Week/Year*, will have two components: *77992-6* - *MMWR Year* and *77991-8* - *MMWR Week*.
+
+### Panel Structure
+
+Currently, the CBS CNP is self-referential; this means that to accurately represent this panel, a resource should exist that defines the existence of the CNP and should contain References in the hasMember element to all CNP member resources that are created as a part of this panel. All member resources should conform to the same profile but shall not contain references to other CNP member resources. This panel structure closely aligns with that of the [FHIR Vital Signs Profile](https://www.hl7.org/fhir/observation-vitalsigns.html). Future development could include defining profiles for each of the members of the CNP, similiar to the structure of the [US Core Vital Signs Panel](http://hl7.org/fhir/us/core/StructureDefinition-us-core-vital-signs.html), because members of the CBS CNP are finite in number. See below for an example structure of the CNP.
+
+<img src="CNP-Diagram.png" style="width: 90%;"/>
 
 {% include link-list.md %}

@@ -21,7 +21,7 @@
   "code": {
     "coding": [
       {
-        "code": "77995-9",
+        "code": "77998-3",
         "system": "http://loinc.org"
       }
     ]
@@ -30,5 +30,5 @@
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
   },
-  "valueDateTime": "2014-02-25"
+  "valueInteger": 49
 }

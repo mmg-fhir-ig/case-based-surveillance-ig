@@ -87,22 +87,6 @@
         "min": 1
       },
       {
-        "id": "Condition.extension:death",
-        "path": "Condition.extension",
-        "sliceName": "death",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-died-of-condition"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Condition.extension:diagnosis-date",
         "path": "Condition.extension",
         "sliceName": "diagnosis-date",
@@ -129,6 +113,22 @@
             "code": "Extension",
             "profile": [
               "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:illness-duration",
+        "path": "Condition.extension",
+        "sliceName": "illness-duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration"
             ]
           }
         ],
