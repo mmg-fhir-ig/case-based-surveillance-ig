@@ -1,0 +1,36 @@
+{
+  "resourceType": "Condition",
+  "id": "HAICA-TC-Condition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "410605003",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "50263",
+        "system": "urn:oid:2.16.840.1.114222.4.5.277",
+        "display": "Candida auris, clinical"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient",
+    "display": "HAI-CA TC Example Patient"
+  },
+  "onsetDateTime": "2018-11-22"
+}

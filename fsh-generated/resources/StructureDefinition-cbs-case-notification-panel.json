@@ -127,6 +127,9 @@
         "path": "Observation.value[x]",
         "type": [
           {
+            "code": "Quantity"
+          },
+          {
             "code": "CodeableConcept"
           },
           {

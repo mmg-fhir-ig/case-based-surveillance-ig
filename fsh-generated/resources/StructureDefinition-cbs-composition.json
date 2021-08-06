@@ -121,13 +121,17 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.relatesTo",
-        "path": "Composition.relatesTo",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.section",
-        "path": "Composition.section",
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

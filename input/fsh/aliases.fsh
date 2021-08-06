@@ -32,6 +32,7 @@ Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $FHIR-Encounter-Status = http://hl7.org/fhir/encounter-status
 Alias: $FHIR-Condition-Clinical-Status = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $FHIR-Contact-Point-System = http://hl7.org/fhir/contact-point-system
+Alias: $FHIR-GenderIdentity = http://hl7.org/fhir/gender-identity
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race

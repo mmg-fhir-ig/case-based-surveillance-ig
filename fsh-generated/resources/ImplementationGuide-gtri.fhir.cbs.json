@@ -479,6 +479,102 @@
       },
       {
         "reference": {
+          "reference": "Observation/HAICA-TC-CNP"
+        },
+        "name": "HAICA-TC-CNP",
+        "description": "Case notification panel resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member1"
+        },
+        "name": "HAICA-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member2"
+        },
+        "name": "HAICA-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member3"
+        },
+        "name": "HAICA-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member4"
+        },
+        "name": "HAICA-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member5"
+        },
+        "name": "HAICA-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member6"
+        },
+        "name": "HAICA-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Condition/HAICA-TC-Condition"
+        },
+        "name": "HAICA-TC-Condition",
+        "description": "Condition of interest resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/HAICA-TC-Hospitalization"
+        },
+        "name": "HAICA-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-MMWR"
+        },
+        "name": "HAICA-TC-MMWR",
+        "description": "MMWR resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "reference": {
+          "reference": "Patient/HAICA-TC-Patient"
+        },
+        "name": "HAICA-TC-Patient",
+        "description": "CBS Patient resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/HAICA-TC-Person-Reporting"
+        },
+        "name": "HAICA-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the HAI-CA Test Case 2",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "reference": {
           "reference": "Specimen/Specimen-Example"
         },
         "name": "Specimen-Example",

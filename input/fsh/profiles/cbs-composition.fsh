@@ -17,5 +17,5 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * status = $FHIR-Composition-Status#final
 * type 1..1 MS
 * type = $loinc#55751-2
-* relatesTo 0..* MS
-* section 0..* MS
+* subject 1..1 MS
+* subject only Reference(cbs-patient)

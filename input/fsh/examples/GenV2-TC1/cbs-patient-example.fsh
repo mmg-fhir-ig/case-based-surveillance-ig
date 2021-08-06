@@ -14,7 +14,7 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 
 * extension[ethnicity].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
 * extension[ethnicity].extension[ombCategory].url = "ombCategory"
-* extension[ethnicity].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2186-5
+* extension[ethnicity].extension[ombCategory].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0005#2186-5
 * extension[ethnicity].extension[text].url = "text"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 

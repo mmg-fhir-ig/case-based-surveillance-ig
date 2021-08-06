@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "HAICA-TC-CNP-Member6",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "77998-3",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient",
+    "display": "HAICA-TC Example Patient"
+  },
+  "valueQuantity": {
+    "value": 78,
+    "unit": "year",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  }
+}
