@@ -33,7 +33,6 @@ The list of CBS Profiles is shown below.  Each profile defines the minimum manda
 - [CBS Cause of Death Profile]
 - [CBS Composition Profile]
 - [CBS Condition of Interest Profile]
-- [CBS Co-Condition Profile]
 - [CBS Epi-Questionnaire Panel Profile]
 - [CBS Hospitalization Encounter Profile]
 - [CBS Observation Lab Profile]

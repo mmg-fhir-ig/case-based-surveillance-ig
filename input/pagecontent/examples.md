@@ -34,8 +34,27 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-GenV2-TC-CNP-Member14.html)**
   * **[CNP Member: Age at time of case investigation](Observation-GenV2-TC-CNP-Member15.html)**
 
+### HAI-CA Test Case 2: Candida auris, Clinical
+
+**[Patient](Patient-HAICA-TC-Patient.html)**
+
+**[Condition of Interest](Condition-HAICA-TC-Condition.html)**
+
+**[Hospitalization Encounter](Encounter-HAICA-TC-Hospitalization.html)**
+
+**[Person Reporting to the CDC](Practitioner-HAICA-TC-Person-Reporting.html)**
+
+**[Case Notification Panel (CNP)](Observation-HAICA-TC-CNP.html)**
+
+  * **[CNP Member: MMWR](Observation-HAICA-TC-MMWR.html)**
+  * **[CNP Member: Reporting state](Observation-HAICA-TC-CNP-Member1.html)**
+  * **[CNP Member: Reporting county](Observation-HAICA-TC-CNP-Member2.html)**
+  * **[CNP Member: National reporting jurisdiction](Observation-HAICA-TC-CNP-Member3.html)**
+  * **[CNP Member: Disease transmission mode](Observation-HAICA-TC-CNP-Member4.html)**
+  * **[CNP Member: Pregnancy status at time of illness or condition](Observation-HAICA-TC-CNP-Member5.html)**
+  * **[CNP Member: Age at time of case investigation](Observation-HAICA-TC-CNP-Member6.html)**
+
 
 ### Other Examples
 
 **[CBS Specimen Example](Specimen-Specimen-Example.html)**
-**[CBS Co-Condition Example](Condition-Co-Condition-Example.html)**
