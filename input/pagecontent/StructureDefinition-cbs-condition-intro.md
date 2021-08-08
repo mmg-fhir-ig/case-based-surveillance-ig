@@ -1,4 +1,4 @@
-The Case Based Surveillance (CBS) Condition of Interest is the core condition by which filtering to programs should occur. To support workflows that are concerned with surveilling additional conditions that are not the condition of interest, the [CBS Co-Condition Profile] exists in this implementation guide. This means there SHALL only be one (1) Condition of Interest profile.
+The Case Based Surveillance (CBS) Condition of Interest is the core condition by which filtering to programs should occur. To support workflows that are concerned with surveilling additional conditions that are not the condition of interest, the base [Condition] resource should be used. This means there SHALL only be one (1) Condition of Interest profile.
 
 ### Mandatory and Must Support Data Elements
 

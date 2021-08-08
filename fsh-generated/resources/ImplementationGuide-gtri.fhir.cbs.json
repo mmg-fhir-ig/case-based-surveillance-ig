@@ -71,14 +71,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-co-condition"
-        },
-        "name": "Case Based Surveillance Co-Condition Profile",
-        "description": "Defines constraints on on the Condition resource for any additional conditions beyond the condition of interest for surveillance. The requirements for these conditions are less strict structurally, and warrant a simpler profile.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-composition"
         },
         "name": "Case Based Surveillance Composition Profile",
@@ -276,14 +268,6 @@
         "name": "Case Based Surveillance temporary/placeholder code system.",
         "description": "Code system defined as placeholders for items that are not defined in existing systems.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Condition/Co-Condition-Example"
-        },
-        "name": "Co-Condition-Example",
-        "description": "An example resource that is conformant to the Case Based Surveillance Co-Condition profile.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition"
       },
       {
         "reference": {
