@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "GenV2-TC-CauseOfDeath",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "79378-6",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
+  },
+  "focus": [
+    {
+      "reference": "Condition/GenV2-TC-Condition",
+      "display": "GenV2-TC Example Condition of Interest"
+    }
+  ]
+}

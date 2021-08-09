@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSLabDiagnosticReportVS",
+  "id": "CBSLabDiagnosticReportVS",
+  "title": "Combined ValueSet for Lab DiagnosticReport Code.",
+  "description": "Codes for Lab Test Type. The codes are from two PHINVADS valuesets to support labs test repeating group",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002"
+        ]
+      }
+    ]
+  }
+}

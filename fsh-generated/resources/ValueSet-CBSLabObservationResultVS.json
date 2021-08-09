@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSLabObservationResultVS",
+  "id": "CBSLabObservationResultVS",
+  "title": "Combined ValueSet for Lab Observation Result.",
+  "description": "Codes for Lab Observations Result Value. The codes are from two PHINVADS valuesets to support lab results in MMG and Lab Repeating Group",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7825"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850"
+        ]
+      }
+    ]
+  }
+}
