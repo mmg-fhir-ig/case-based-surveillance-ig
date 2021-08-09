@@ -121,7 +121,8 @@
 [CBS Condition of Interest Profile]: StructureDefinition-cbs-condition.html
 [CBS Epi-Questionnaire Panel Profile]: StructureDefinition-cbs-epi-questionnaire-panel.html
 [CBS Hospitalization Encounter Profile]: StructureDefinition-cbs-hospitalization.html
-[CBS Observation Lab Profile]: StructureDefinition-cbs-observation-lab.html
+[CBS Lab Test Report Profile]: StructureDefinition-cbs-lab-diagnosticreport.html
+[CBS Lab Observation Profile]: StructureDefinition-cbs-lab-observation.html
 [CBS Reporting Source Organization Profile]: StructureDefinition-cbs-reporting-source-organization.html
 [CBS Patient Profile]: StructureDefinition-cbs-patient.html
 [CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
