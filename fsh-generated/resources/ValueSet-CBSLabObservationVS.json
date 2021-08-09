@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSLabObservationVS",
+  "id": "CBSLabObservationVS",
+  "title": "Combined ValueSet for Lab Observation Code.",
+  "description": "Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/observation-codes"
+        ]
+      },
+      {
+        "valueSet": [
+          "urn:oid:2.16.840.1.114222.4.5.232"
+        ]
+      }
+    ]
+  }
+}

@@ -67,6 +67,8 @@ Alias: $PHVS-RaceCategory-CDC-NullFlavor = http://phinvads.cdc.gov/fhir/ValueSet
 Alias: $PHVS-Sex-MFU = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1038
 Alias: $PHVS-Specimen-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946
 Alias: $PHVS-LabTestType-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550
+Alias: $PHVS-LabTestType-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7898
+Alias: $PHVS_LabTestName_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002
 Alias: $PHVS-NonTreponemalTestResult-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279
 Alias: $PHVS-GeneName-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7825
 Alias: $PHVS-Organism-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850
@@ -75,4 +77,12 @@ Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16
 Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 Alias: $PHVS-ReportingSourceType-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3036
 
+// FHIR Terminology
+Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
+Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
 
+// FHIR Value Set
+Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
+Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes
