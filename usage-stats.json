@@ -227,12 +227,12 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr",
-        "title": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
+        "title": "Case Based Surveillance Lab Observation"
       },
       {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab",
-        "title": "Case Based Surveillance Observation Lab"
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr",
+        "title": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"
       }
     ],
     "Condition": [
@@ -251,6 +251,12 @@
       {
         "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization",
         "title": "Case Based Surveillance Hospitalization Encounter Profile"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport",
+        "title": "Case Based Surveillance Lab Test Report"
       }
     ],
     "Patient": [

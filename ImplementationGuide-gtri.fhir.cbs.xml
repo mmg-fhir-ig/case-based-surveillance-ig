@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-08-09T11:10:25-04:00"/>
+  <date value="2021-08-09T11:34:14-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -285,10 +285,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-mmwr"/>
+        <reference value="StructureDefinition/cbs-lab-diagnosticreport"/>
       </reference>
-      <name value="Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"/>
-      <description value="Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs."/>
+      <name value="Case Based Surveillance Lab Test Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -296,10 +295,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-observation-lab"/>
+        <reference value="StructureDefinition/cbs-lab-observation"/>
       </reference>
-      <name value="Case Based Surveillance Observation Lab"/>
-      <description value="NOT FINAL GOING TO CHANGE"/>
+      <name value="Case Based Surveillance Lab Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-mmwr"/>
+      </reference>
+      <name value="Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -476,6 +485,39 @@
       </reference>
       <name value="CBS Case Notification Panel Value Set"/>
       <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CBSLabDiagnosticReportVS"/>
+      </reference>
+      <name value="Combined ValueSet for Lab DiagnosticReport Code."/>
+      <description value="Codes for Lab Test Type. The codes are from two PHINVADS valuesets to support labs test repeating group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CBSLabObservationResultVS"/>
+      </reference>
+      <name value="Combined ValueSet for Lab Observation Result."/>
+      <description value="Codes for Lab Observations Result Value. The codes are from two PHINVADS valuesets to support lab results in MMG and Lab Repeating Group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CBSLabObservationVS"/>
+      </reference>
+      <name value="Combined ValueSet for Lab Observation Code."/>
+      <description value="Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

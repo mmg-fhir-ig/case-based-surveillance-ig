@@ -112,18 +112,25 @@
     "name": "CaseBasedSurveillanceIllnessDuration"
   },
   {
+    "id": "cbs-lab-diagnosticreport",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceLabDiagnosticReport"
+  },
+  {
+    "id": "cbs-lab-observation",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceLabObservation"
+  },
+  {
     "id": "cbs-mmwr",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr",
     "version": "0.1.0",
     "name": "CaseBasedSurveillanceMMWR"
-  },
-  {
-    "id": "cbs-observation-lab",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceObservationLab"
   },
   {
     "id": "cbs-patient",
@@ -194,6 +201,27 @@
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
     "version": "0.1.0",
     "name": "CBSCaseNotificationPanelVS"
+  },
+  {
+    "id": "CBSLabDiagnosticReportVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS",
+    "version": "0.1.0",
+    "name": "CBSLabDiagnosticReportVS"
+  },
+  {
+    "id": "CBSLabObservationResultVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS",
+    "version": "0.1.0",
+    "name": "CBSLabObservationResultVS"
+  },
+  {
+    "id": "CBSLabObservationVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS",
+    "version": "0.1.0",
+    "name": "CBSLabObservationVS"
   },
   {
     "id": "CBSRelatedCaseTypeVS",

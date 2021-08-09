@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="36101c51-3302-47b1-9df6-e2e16305e5db"/>
+  <id value="2993f16f-6af3-43a0-9764-15fd098c23dd"/>
   <meta>
-    <lastUpdated value="2021-08-09T11:10:25.775-04:00"/>
+    <lastUpdated value="2021-08-09T11:34:14.134-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -112,7 +112,7 @@
         <name value="CBSAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-08-09T11:10:25-04:00"/>
+        <date value="2021-08-09T11:34:14-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -123,8 +123,8 @@
         </contact>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:455b9de2-37ba-4b7d-8e94-c2c124662593"/>
-          <timestamp value="2021-08-09T11:11:19-04:00"/>
+          <identifier value="urn:uuid:ad1f74a6-7247-455b-9e53-a727cc68d160"/>
+          <timestamp value="2021-08-09T11:35:10-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -238,7 +238,7 @@
         <name value="CBSRelatedCaseTypeVS"/>
         <title value="CBS Related Case Type Value Set"/>
         <status value="active"/>
-        <date value="2021-08-09T11:10:25-04:00"/>
+        <date value="2021-08-09T11:34:14-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -249,8 +249,8 @@
         </contact>
         <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
         <expansion>
-          <identifier value="urn:uuid:2a2582be-f589-4679-9ecc-dd245e3ba078"/>
-          <timestamp value="2021-08-09T11:11:19-04:00"/>
+          <identifier value="urn:uuid:667a2fb6-4c0e-427f-b14d-47c4f87eb529"/>
+          <timestamp value="2021-08-09T11:35:18-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
