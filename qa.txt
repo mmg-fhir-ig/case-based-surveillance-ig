@@ -1,15 +1,15 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 8, warn = 23, info = 13
+err = 8, warn = 20, info = 38
 IG Publisher Version: 1.1.77
-Generated Wed Aug 04 12:05:46 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Mon Aug 09 11:12:11 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 0 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-Co-Condition-Example : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition : 1 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition : 2 / 0 / 3
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-GenV2-TC-Hospitalization : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1 : 0 / 0 / 2
@@ -28,36 +28,36 @@ Generated Wed Aug 04 12:05:46 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member8 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member9 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CauseOfDeath : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure : 0 / 0 / 3
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-MMWR : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-GenV2-TC-Reporting-Source : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 4 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-Specimen-Example : 1 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cause-of-death : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-co-condition : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-epi-questionnaire-panel : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-Specimen-Example : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cause-of-death : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-co-condition : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-epi-questionnaire-panel : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 0 / 0 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-hospitalization : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-illness-duration : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-observation-lab : 0 / 1 / 5
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-illness-duration : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-observation-lab : 0 / 1 / 6
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 0 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-person-reporting-to-cdc : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reporting-source-organization : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-person-reporting-to-cdc : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reporting-source-organization : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 0 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 0 / 5 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSRelatedCaseTypeVS : 0 / 0 / 1
@@ -70,7 +70,8 @@ WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Impleme
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-Co-Condition-Example.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json ==
 ERROR: Condition/GenV2-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/GenV2-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
+INFORMATION: Condition/GenV2-TC-Condition: Condition.extension[2].value.ofType(Quantity): Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
+ERROR: Condition/GenV2-TC-Condition: Condition.code: None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015), and a coding from this value set is required) (codes = urn:oid:2.16.840.1.114222.4.5.277#11550)
 INFORMATION: Condition/GenV2-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-GenV2-TC-Hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP.json ==
@@ -98,7 +99,7 @@ INFORMATION: Observation/GenV2-TC-CNP-Member4: Observation.value.ofType(Codeable
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CauseOfDeath.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json ==
-WARNING: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]
+INFORMATION: Observation/GenV2-TC-Exposure: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 INFORMATION: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-MMWR.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-GenV2-TC-Reporting-Source.json ==
@@ -109,26 +110,40 @@ ERROR: Patient/GenV2-TC-Patient: Patient.address[0].use: The value provided ('Ad
 ERROR: Patient/GenV2-TC-Patient: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Practitioner-GenV2-TC-Person-Reporting.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Specimen-Specimen-Example.json ==
-WARNING: Specimen/Specimen-Example: Specimen.collection.bodySite: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967 because the value set or code system is not known to the validator]
-ERROR: Specimen/Specimen-Example: Specimen.collection.bodySite: This version of SNOMED is not loaded (from http://tx.fhir.org/r4)
+INFORMATION: Specimen/Specimen-Example: Specimen.collection.quantity: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
+INFORMATION: StructureDefinition/cbs-birthsex: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
+INFORMATION: StructureDefinition/cbs-case-class-status: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
+INFORMATION: StructureDefinition/cbs-case-notification-panel: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cause-of-death.json ==
+INFORMATION: StructureDefinition/cbs-cause-of-death: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cnp-member.json ==
+INFORMATION: StructureDefinition/cbs-cnp-member: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-co-condition.json ==
+INFORMATION: StructureDefinition/cbs-co-condition: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
+INFORMATION: StructureDefinition/cbs-composition: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-condition.json ==
+INFORMATION: StructureDefinition/cbs-condition: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-diagnosis-date.json ==
+INFORMATION: StructureDefinition/cbs-diagnosis-date: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-epi-questionnaire-panel.json ==
+INFORMATION: StructureDefinition/cbs-epi-questionnaire-panel: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-ethnicity.json ==
+INFORMATION: StructureDefinition/cbs-ethnicity: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
+INFORMATION: StructureDefinition/cbs-exposure-observation: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-illness-duration.json ==
+INFORMATION: StructureDefinition/cbs-illness-duration: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-mmwr.json ==
+INFORMATION: StructureDefinition/cbs-mmwr: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-observation-lab.json ==
+INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition.snapshot.element[65].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition.snapshot.element[83].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
@@ -136,16 +151,23 @@ INFORMATION: StructureDefinition/cbs-observation-lab: StructureDefinition.differ
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-observation-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
 ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
+INFORMATION: StructureDefinition/cbs-patient: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-performing-lab.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-person-reporting-to-cdc.json ==
+INFORMATION: StructureDefinition/cbs-person-reporting-to-cdc: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json ==
+INFORMATION: StructureDefinition/cbs-race: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-related-case.json ==
+INFORMATION: StructureDefinition/cbs-related-case: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-reporting-source-organization.json ==
+INFORMATION: StructureDefinition/cbs-reporting-source-organization: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen.json ==
+INFORMATION: StructureDefinition/cbs-specimen: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen-role.json ==
+INFORMATION: StructureDefinition/cbs-specimen-role: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSAddressUseVS.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json ==
 WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[0]: The code INV155 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.title [ fhir:value "Case Based Surveillance Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-04T12:04:06-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-09T11:10:25-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
