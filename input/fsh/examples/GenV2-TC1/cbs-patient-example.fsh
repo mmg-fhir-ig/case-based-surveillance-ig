@@ -2,29 +2,18 @@ Instance: GenV2-TC-Patient
 InstanceOf: cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
-* extension[race].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
-* extension[race].extension[ombCategory].url = "ombCategory"
 * extension[race].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2106-3 "White"
-* extension[race].extension[detailed].url = "detailed"
 * extension[race].extension[detailed].valueCoding = $PH_RaceAndEthnicity_CDC#1010-8 "Apache"
-* extension[race].extension[otherRace].url = "otherRace"
 * extension[race].extension[otherRace].valueString = "Apache"
-* extension[race].extension[text].url = "text"
 * extension[race].extension[text].valueString = "Mixed"
 
-* extension[ethnicity].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
-* extension[ethnicity].extension[ombCategory].url = "ombCategory"
 * extension[ethnicity].extension[ombCategory].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0005#2186-5
-* extension[ethnicity].extension[text].url = "text"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
-* extension[birthsex].url = "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex"
 * extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F
 
-* extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.country = "USA"
 
-* extension[genderIdentity].url = "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity"
 * extension[genderIdentity].valueCodeableConcept = $sct#12271241000119109
 
 * identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"

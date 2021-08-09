@@ -23,6 +23,8 @@ dependencies:
     version: 4.0.0
   hl7.fhir.us.ecr:
     version: 1.0.0
+  hl7.fhir.us.odh:
+    version: 1.1.0
 
 
 

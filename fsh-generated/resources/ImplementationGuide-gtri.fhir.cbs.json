@@ -41,6 +41,12 @@
       "version": "1.0.0",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
+    },
+    {
+      "packageId": "hl7.fhir.us.odh",
+      "version": "1.1.0",
+      "uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+      "id": "hl7_fhir_us_odh"
     }
   ],
   "definition": {

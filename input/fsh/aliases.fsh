@@ -34,6 +34,10 @@ Alias: $FHIR-Condition-Clinical-Status = http://terminology.hl7.org/CodeSystem/c
 Alias: $FHIR-Contact-Point-System = http://hl7.org/fhir/contact-point-system
 Alias: $FHIR-GenderIdentity = http://hl7.org/fhir/gender-identity
 
+// External Profiles
+Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
+Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-observation
+
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: $us-core-ethnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
@@ -43,6 +47,8 @@ Alias: $us-core-birthsex = http://hl7.org/fhir/us/core/StructureDefinition/us-co
 Alias: $HL7-censusTract = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract
 Alias: $HL7-genderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 Alias: $HL7-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+
+
 
 // US Core ValueSets
 Alias: $birthsex-VS = http://hl7.org/fhir/us/core/ValueSet/birthsex
