@@ -41,7 +41,8 @@ jobs:
           args: ./_genonce.sh -no-sushi
           
       - name: Deploy
-        uses: mmg-fhir-ig/case-based-surveillance-ig@v1
+        uses: mmg-fhir-ig/case-based-surveillance-ig@v0.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
+          cname: cbsig.chai.gatech.edu
