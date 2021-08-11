@@ -41,7 +41,7 @@ Description: "Case notification panel member resource for the HAI-CA Test Case 2
 * code = $loinc#77996-7
 * subject.reference = "Patient/HAICA-TC-Patient"
 * subject.display = "HAICA-TC Example Patient"
-* valueCodeableConcept = $PH-YesNo-HL7-2x#N
+* valueCodeableConcept = $v2-0532-cs#N
 
 Instance: HAICA-TC-CNP-Member6
 InstanceOf: cbs-cnp-member

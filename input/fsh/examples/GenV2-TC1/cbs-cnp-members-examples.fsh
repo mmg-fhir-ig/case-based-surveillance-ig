@@ -125,7 +125,7 @@ Description: "Case notification panel member resource for the GenV2 Test Case 1 
 * code = $loinc#77996-7
 * subject.reference = "Patient/GenV2-TC-Patient"
 * subject.display = "GenV2-TC Example Patient"
-* valueCodeableConcept = $PH-YesNo-HL7-2x#N
+* valueCodeableConcept = $v2-0532-cs#N
 
 Instance: GenV2-TC-CNP-Member15
 InstanceOf: cbs-cnp-member
