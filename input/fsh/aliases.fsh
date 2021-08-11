@@ -14,7 +14,6 @@ Alias: $PH-PHINVS-CDC = urn:oid:2.16.840.1.114222.4.5.274
 Alias: $PH-Country-ISO-3166-1 = urn:iso:std:iso:3166
 Alias: $PH-State-FIPS-5-2 = urn:oid:2.16.840.1.113883.6.92
 Alias: $PH-County-FIPS-6-4 = urn:oid:2.16.840.1.113883.6.93
-Alias: $PH-YesNo-HL7-2x = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $PH_RaceAndEthnicity_CDC = urn:oid:2.16.840.1.113883.6.238
 
 // HL7 Code Systems
