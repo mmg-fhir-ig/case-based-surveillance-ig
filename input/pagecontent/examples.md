@@ -54,7 +54,4 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-HAICA-TC-CNP-Member5.html)**
   * **[CNP Member: Age at time of case investigation](Observation-HAICA-TC-CNP-Member6.html)**
 
-
-### Other Examples
-
-**[CBS Specimen Example](Specimen-Specimen-Example.html)**
+**[Specimen](Specimen-HAICA-TC-Specimen.html)**

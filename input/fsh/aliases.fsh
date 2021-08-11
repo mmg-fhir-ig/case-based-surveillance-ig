@@ -1,8 +1,5 @@
 // This file defines all aliases used in the project in a central location.
 
-// Extensions
-Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.html
-
 // Author/MetaData
 //Alias: $publisher = "Georgia Tech Research Institute"
 
@@ -24,6 +21,7 @@ Alias: $PH_RaceAndEthnicity_CDC = urn:oid:2.16.840.1.113883.6.238
 Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
 Alias: $FHIR-administrativeSex = http://terminology.hl7.org/CodeSystem/v2-0001
+Alias: $v2-0005-cs = http://terminology.hl7.org/CodeSystem/v2-0005
 Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0406-cs = http://terminology.hl7.org/CodeSystem/v2-0406
 Alias: $v2-0532-cs = http://terminology.hl7.org/CodeSystem/v2-0532
@@ -33,6 +31,7 @@ Alias: $FHIR-Encounter-Status = http://hl7.org/fhir/encounter-status
 Alias: $FHIR-Condition-Clinical-Status = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $FHIR-Contact-Point-System = http://hl7.org/fhir/contact-point-system
 Alias: $FHIR-GenderIdentity = http://hl7.org/fhir/gender-identity
+Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
 
 // External Profiles
 Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
@@ -47,16 +46,17 @@ Alias: $us-core-birthsex = http://hl7.org/fhir/us/core/StructureDefinition/us-co
 Alias: $HL7-censusTract = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract
 Alias: $HL7-genderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 Alias: $HL7-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.html
 
-
+// FHIR Value Set
+Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
+Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes
+Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
 
 // US Core ValueSets
 Alias: $birthsex-VS = http://hl7.org/fhir/us/core/ValueSet/birthsex
 Alias: $omb-race-category-VS = http://hl7.org/fhir/us/core/ValueSet/omb-race-category
 Alias: $detailed-race-VS = http://hl7.org/fhir/us/core/ValueSet/detailed-race
-
-// FHIR Value Sets
-Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
 
 // PHIN VADS Value Sets
 Alias: $PHVS-NotifiableEvent-Disease = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015
@@ -84,12 +84,3 @@ Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16
 Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 Alias: $PHVS-ReportingSourceType-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3036
 
-// FHIR Terminology
-Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
-Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
-Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
-
-// FHIR Value Set
-Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
-Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes

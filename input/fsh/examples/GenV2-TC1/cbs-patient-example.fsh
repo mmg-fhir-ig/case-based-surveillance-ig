@@ -7,14 +7,12 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * extension[race].extension[otherRace].valueString = "Apache"
 * extension[race].extension[text].valueString = "Mixed"
 
-* extension[ethnicity].extension[ombCategory].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0005#2186-5
+* extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2186-5
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
 * extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F
 
 * extension[birthPlace].valueAddress.country = "USA"
-
-* extension[genderIdentity].valueCodeableConcept = $sct#12271241000119109
 
 * identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"
 * identifier[0].type.text = "Local Record ID"

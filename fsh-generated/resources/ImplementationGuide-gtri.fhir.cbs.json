@@ -112,6 +112,7 @@
           "reference": "StructureDefinition/cbs-lab-diagnosticreport"
         },
         "name": "Case Based Surveillance Lab Test Report",
+        "description": "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -119,6 +120,7 @@
           "reference": "StructureDefinition/cbs-lab-observation"
         },
         "name": "Case Based Surveillance Lab Observation",
+        "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -571,6 +573,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/HAICA-TC-Lab-Observation"
+        },
+        "name": "HAICA-TC-Lab-Observation",
+        "description": "A lab observation example resource for the HAI-CA Test Case 2.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "reference": {
           "reference": "Observation/HAICA-TC-MMWR"
         },
         "name": "HAICA-TC-MMWR",
@@ -595,10 +605,10 @@
       },
       {
         "reference": {
-          "reference": "Specimen/Specimen-Example"
+          "reference": "Specimen/HAICA-TC-Specimen"
         },
-        "name": "Specimen-Example",
-        "description": "An example resource that is conformant to the Case Based Surveillance Specimen profile.",
+        "name": "HAICA-TC-Specimen",
+        "description": "A specimen example resource for the HAI-CA Test Case 2.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
       }
     ],

@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceLabObservation
 Parent: Observation
 Id: cbs-lab-observation
 Title: "Case Based Surveillance Lab Observation"
-Description: ""
+Description: "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
