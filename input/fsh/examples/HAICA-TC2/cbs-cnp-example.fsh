@@ -3,7 +3,7 @@ InstanceOf: cbs-case-notification-panel
 Usage: #example
 Description: "Case notification panel resource for the HAI-CA Test Case 2 Patient"
 * status = $FHIR-Observation-Category#final
-* code = $loinc#78000-7
+* code = $loinc#78000-7 "Case notification panel [CDC.PHIN]"
 * subject.reference = "Patient/HAICA-TC-Patient"
 * subject.display = "HAICA-TC Example Patient"
 * hasMember[0].reference = "Observation/HAICA-TC-MMWR"

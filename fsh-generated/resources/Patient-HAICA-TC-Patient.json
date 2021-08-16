@@ -37,13 +37,13 @@
         {
           "url": "ombCategory",
           "valueCoding": {
-            "code": "2186-5",
+            "code": "2135-2",
             "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
           }
         },
         {
           "url": "text",
-          "valueString": "Not Hispanic or Latino"
+          "valueString": "Hispanic or Latino"
         }
       ],
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
@@ -54,7 +54,8 @@
         "coding": [
           {
             "code": "F",
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001",
+            "display": "Female"
           }
         ]
       }

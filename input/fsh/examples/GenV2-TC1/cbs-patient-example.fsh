@@ -7,10 +7,10 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * extension[race].extension[otherRace].valueString = "Apache"
 * extension[race].extension[text].valueString = "Mixed"
 
-* extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2186-5
+* extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
-* extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F
+* extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F "Female"
 
 * extension[birthPlace].valueAddress.country = "USA"
 

@@ -22,7 +22,8 @@
     "coding": [
       {
         "code": "77998-3",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "Age at time of case investigation"
       }
     ]
   },

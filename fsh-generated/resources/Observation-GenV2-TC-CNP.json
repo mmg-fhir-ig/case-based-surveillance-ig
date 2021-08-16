@@ -22,7 +22,8 @@
     "coding": [
       {
         "code": "78000-7",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "Case notification panel [CDC.PHIN]"
       }
     ]
   },

@@ -55,3 +55,5 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Age at time of case investigation](Observation-HAICA-TC-CNP-Member6.html)**
 
 **[Specimen](Specimen-HAICA-TC-Specimen.html)**
+
+**[Lab Observation](Observation-HAICA-TC-Lab-Observation.html)**

@@ -34,14 +34,16 @@
     "coding": [
       {
         "code": "10828004",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "display": "Positive"
       }
     ]
   },
   "method": {
     "coding": [
       {
-        "code": "D1D2"
+        "code": "D1D2",
+        "display": "D1/D2"
       }
     ]
   }

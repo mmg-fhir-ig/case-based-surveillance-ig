@@ -22,7 +22,8 @@
     "coding": [
       {
         "code": "77968-6",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "National reporting jurisdiction"
       }
     ]
   },

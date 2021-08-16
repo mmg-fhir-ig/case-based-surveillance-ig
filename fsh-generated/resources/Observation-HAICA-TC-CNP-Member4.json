@@ -22,7 +22,8 @@
     "coding": [
       {
         "code": "77989-2",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "Disease transmission mode"
       }
     ]
   },
@@ -34,7 +35,8 @@
     "coding": [
       {
         "code": "418375005",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "display": "Indeterminate disease transmission mode"
       }
     ]
   }
