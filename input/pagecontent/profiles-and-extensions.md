@@ -11,7 +11,6 @@ The following Profiles and have been defined for this implementation guide.
 - [CBS Cause of Death Profile]
 - [CBS Composition Profile]
 - [CBS Condition of Interest Profile]
-- [CBS Co-Condition Profile]
 - [CBS Epi-Questionnaire Panel Profile]
 - [CBS Hospitalization Encounter Profile]
 - [CBS Lab Test Report Profile]

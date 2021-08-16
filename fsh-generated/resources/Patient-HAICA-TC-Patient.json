@@ -1,0 +1,125 @@
+{
+  "resourceType": "Patient",
+  "id": "HAICA-TC-Patient",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        },
+        {
+          "url": "detailed",
+          "valueCoding": {
+            "code": "2135-2",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Mixed"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2135-2",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "F",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001",
+            "display": "Female"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "USA"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "female",
+            "system": "http://hl7.org/fhir/gender-identity"
+          }
+        ]
+      }
+    }
+  ],
+  "address": [
+    {
+      "use": "Address-at-Diagnosis",
+      "district": "Cobb",
+      "state": "Georgia",
+      "postalCode": "30126"
+    },
+    {
+      "use": "Usual-Residence",
+      "country": "USA"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Record-ID",
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "C_auris_02"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Subject-ID",
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "C_auris_PAT_02"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1940-01-01"
+}

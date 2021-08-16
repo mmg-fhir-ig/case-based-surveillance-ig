@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "HAICA-TC-CNP",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "78000-7",
+        "system": "http://loinc.org",
+        "display": "Case notification panel [CDC.PHIN]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient",
+    "display": "HAICA-TC Example Patient"
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/HAICA-TC-MMWR"
+    },
+    {
+      "reference": "Observation/HAICA-TC-CNP-Member1"
+    },
+    {
+      "reference": "Observation/HAICA-TC-CNP-Member2"
+    },
+    {
+      "reference": "Observation/HAICA-TC-CNP-Member3"
+    },
+    {
+      "reference": "Observation/HAICA-TC-CNP-Member4"
+    },
+    {
+      "reference": "Observation/HAICA-TC-CNP-Member5"
+    },
+    {
+      "reference": "Observation/HAICA-TC-CNP-Member6"
+    }
+  ]
+}

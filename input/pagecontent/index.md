@@ -6,11 +6,6 @@ The Case Based Surveillance (CBS) Implementation Guide is based on [FHIR Version
 
 1. Profile Only Support: Systems may support *only* the CBS Profiles to represent public health information.
 
-### Background
-
-Put in some background info maybe
-
-
 ### How to read this Guide
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
@@ -33,7 +28,6 @@ The list of CBS Profiles is shown below.  Each profile defines the minimum manda
 - [CBS Cause of Death Profile]
 - [CBS Composition Profile]
 - [CBS Condition of Interest Profile]
-- [CBS Co-Condition Profile]
 - [CBS Epi-Questionnaire Panel Profile]
 - [CBS Hospitalization Encounter Profile]
 - [CBS Lab Test Report Profile]
