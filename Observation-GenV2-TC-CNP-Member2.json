@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77966-0"
+        "code": "77966-0",
+        "display": "Reporting state"
       }
     ]
   },

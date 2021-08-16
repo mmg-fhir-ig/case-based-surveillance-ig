@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77969-4"
+        "code": "77969-4",
+        "display": "Jurisdiction code"
       }
     ]
   },

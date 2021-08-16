@@ -36,7 +36,8 @@
        fhir:index 0;
        a loinc:77966-0;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "77966-0" ]
+       fhir:Coding.code [ fhir:value "77966-0" ];
+       fhir:Coding.display [ fhir:value "Reporting state" ]
      ]
   ];
   fhir:Observation.subject [

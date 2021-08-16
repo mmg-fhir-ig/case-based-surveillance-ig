@@ -1355,15 +1355,18 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
        ], [
          fhir:index 1;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ], [
          fhir:index 2;
-         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ], [
          fhir:index 3;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+       ], [
+         fhir:index 4;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ];
        fhir:ElementDefinition.condition [

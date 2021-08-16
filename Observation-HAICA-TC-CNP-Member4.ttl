@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/HAICA-TC-CNP-Member4> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member4"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77989-2}\">Disease transmission mode</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 418375005}\">Indeterminate disease transmission mode</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77989-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77989-2" ];
+       fhir:Coding.display [ fhir:value "Disease transmission mode" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/HAICA-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/HAICA-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "HAICA-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:418375005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "418375005" ];
+       fhir:Coding.display [ fhir:value "Indeterminate disease transmission mode" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/HAICA-TC-CNP-Member4.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

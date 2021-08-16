@@ -36,7 +36,8 @@
        fhir:index 0;
        a loinc:77970-2;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "77970-2" ]
+       fhir:Coding.code [ fhir:value "77970-2" ];
+       fhir:Coding.display [ fhir:value "Date of initial report" ]
      ]
   ];
   fhir:Observation.subject [

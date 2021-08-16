@@ -34,6 +34,7 @@
       ]
     }
   ],
+  "description": "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [

@@ -1238,6 +1238,9 @@
         },
         "type": [
           {
+            "code": "Quantity"
+          },
+          {
             "code": "CodeableConcept"
           },
           {

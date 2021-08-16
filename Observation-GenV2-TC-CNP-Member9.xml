@@ -20,6 +20,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="77979-3"/>
+      <display value="Case investigation start date"/>
     </coding>
   </code>
   <subject>

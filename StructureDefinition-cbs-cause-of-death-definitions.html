@@ -96,7 +96,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="examples.html">GenV2 Test Case 1</a>
+        <a href="examples.html#genv2-test-case-1-hemolytic-uremic-syndrome-hus">GenV2 Test Case 1</a>
+      </li>
+      <li>
+        <a href="examples.html#hai-ca-test-case-2-candida-auris-clinical">HAICA Test Case 2</a>
       </li>
     </ul>
   </li>
@@ -388,9 +391,8 @@ Codes identifying names of simple observations.</p>
   <tr><td>Definition</td><td><p>The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-cbs-condition.html" title="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition">CaseBasedSurveillanceCondition</a> | <a href="StructureDefinition-cbs-co-condition.html" title="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition">CaseBasedSurveillanceCoCondition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-cbs-condition.html" title="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition">CaseBasedSurveillanceCondition</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Must Support Types</a></td><td>No must-support rules about the choice of types/profiles</td></tr>
   <tr><td>Comments</td><td><p>Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., &quot;Blood Glucose&quot;) and does not need to be represented separately using this element.  Use <code>specimen</code> if a reference to a specimen is required.  If a code is required instead of a resource use either  <code>bodysite</code> for bodysites or the standard extension <a href="http://hl7.org/fhir/R4/extension-observation-focuscode.html">focusCode</a>.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -813,7 +815,7 @@ Codes identifying interpretations of observations.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 9, 2021 11:34-0400">2021-08-09</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 11:16-0400">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

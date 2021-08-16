@@ -1023,6 +1023,9 @@
         <max value="1"/>
       </base>
       <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
         <code value="CodeableConcept"/>
       </type>
       <type>

@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77970-2"
+        "code": "77970-2",
+        "display": "Date of initial report"
       }
     ]
   },

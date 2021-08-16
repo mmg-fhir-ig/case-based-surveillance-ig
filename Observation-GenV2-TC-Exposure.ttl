@@ -63,7 +63,8 @@
        fhir:CodeableConcept.coding [
          fhir:index 0;
          fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-         fhir:Coding.code [ fhir:value "USA" ]
+         fhir:Coding.code [ fhir:value "USA" ];
+         fhir:Coding.display [ fhir:value "United States of America" ]
        ]
      ]
   ], [

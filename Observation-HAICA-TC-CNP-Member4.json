@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "HAICA-TC-CNP-Member4",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77989-2}\">Disease transmission mode</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 418375005}\">Indeterminate disease transmission mode</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "78000-7",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "77989-2",
+        "display": "Disease transmission mode"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient",
+    "display": "HAICA-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "418375005",
+        "display": "Indeterminate disease transmission mode"
+      }
+    ]
+  }
+}

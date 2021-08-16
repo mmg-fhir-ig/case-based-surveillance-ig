@@ -20,6 +20,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="77988-4"/>
+      <display value="Binational reporting criteria [CDC.PHIN]"/>
     </coding>
   </code>
   <subject>

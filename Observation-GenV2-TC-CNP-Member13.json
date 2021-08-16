@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77995-9"
+        "code": "77995-9",
+        "display": "Date of first report to public health department"
       }
     ]
   },

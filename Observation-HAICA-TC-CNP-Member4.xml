@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HAICA-TC-CNP-Member4"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77989-2}">Disease transmission mode</span></p><p><b>subject</b>: <a href="Patient-HAICA-TC-Patient.html">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 418375005}">Indeterminate disease transmission mode</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77989-2"/>
+      <display value="Disease transmission mode"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HAICA-TC-Patient"/>
+    <display value="HAICA-TC Example Patient"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="418375005"/>
+      <display value="Indeterminate disease transmission mode"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

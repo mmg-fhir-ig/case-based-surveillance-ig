@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2993f16f-6af3-43a0-9764-15fd098c23dd",
+  "id" : "65c8a756-e624-4fe4-b421-4147e5026541",
   "meta" : {
-    "lastUpdated" : "2021-08-09T11:34:14.134-04:00"
+    "lastUpdated" : "2021-08-16T11:16:12.517-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "CBSAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
-      "date" : "2021-08-09T11:34:14-04:00",
+      "date" : "2021-08-16T11:16:12-04:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
-        "identifier" : "urn:uuid:ad1f74a6-7247-455b-9e53-a727cc68d160",
-        "timestamp" : "2021-08-09T11:35:10-04:00",
+        "identifier" : "urn:uuid:d8308e44-e394-4d26-94fc-e61637da52f6",
+        "timestamp" : "2021-08-16T11:19:32-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -97,7 +97,7 @@
       "name" : "CBSRelatedCaseTypeVS",
       "title" : "CBS Related Case Type Value Set",
       "status" : "active",
-      "date" : "2021-08-09T11:34:14-04:00",
+      "date" : "2021-08-16T11:16:12-04:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -108,8 +108,8 @@
       }],
       "description" : "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
       "expansion" : {
-        "identifier" : "urn:uuid:667a2fb6-4c0e-427f-b14d-47c4f87eb529",
-        "timestamp" : "2021-08-09T11:35:18-04:00",
+        "identifier" : "urn:uuid:cc3c733c-888e-45f6-9266-1fd0deb159f8",
+        "timestamp" : "2021-08-16T11:19:38-04:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

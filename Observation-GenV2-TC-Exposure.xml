@@ -41,6 +41,7 @@
       <coding>
         <system value="urn:iso:std:iso:3166"/>
         <code value="USA"/>
+        <display value="United States of America"/>
       </coding>
     </valueCodeableConcept>
   </component>

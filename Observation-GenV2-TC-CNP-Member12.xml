@@ -6,7 +6,7 @@
     <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77989-2}">Disease transmission mode</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 416086007}">Food-borne transmission (qualifier value)</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77989-2}">Disease transmission mode</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 416086007}">Food-borne transmission</span></p></div>
   </text>
   <status value="final"/>
   <category>
@@ -20,6 +20,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="77989-2"/>
+      <display value="Disease transmission mode"/>
     </coding>
   </code>
   <subject>
@@ -30,6 +31,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="416086007"/>
+      <display value="Food-borne transmission"/>
     </coding>
   </valueCodeableConcept>
 </Observation>

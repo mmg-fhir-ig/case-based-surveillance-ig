@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77967-8"
+        "code": "77967-8",
+        "display": "Reporting county"
       }
     ]
   },

@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77973-6"
+        "code": "77973-6",
+        "display": "Earliest date reported to state"
       }
     ]
   },

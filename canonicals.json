@@ -49,13 +49,6 @@
     "name": "CaseBasedSurveillanceCaseNotificationPanelMember"
   },
   {
-    "id": "cbs-co-condition",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceCoCondition"
-  },
-  {
     "id": "cbs-composition",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",

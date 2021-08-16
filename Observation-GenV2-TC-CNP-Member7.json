@@ -26,7 +26,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "77972-8"
+        "code": "77972-8",
+        "display": "Earliest date reported to county"
       }
     ]
   },

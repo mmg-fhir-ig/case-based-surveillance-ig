@@ -12,6 +12,7 @@
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v2-0406"/>
       <code value="1"/>
+      <display value="Hospital"/>
     </coding>
   </type>
   <name value="Reporting Source"/>

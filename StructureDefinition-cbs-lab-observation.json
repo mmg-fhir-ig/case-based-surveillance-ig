@@ -34,6 +34,7 @@
       ]
     }
   ],
+  "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [

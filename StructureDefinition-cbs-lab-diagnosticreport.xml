@@ -37,6 +37,7 @@
       <value value="http://gtri.gatech.edu/"/>
     </telecom>
   </contact>
+  <description value="Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

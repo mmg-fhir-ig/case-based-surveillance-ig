@@ -43,6 +43,7 @@
       <value value="http://gtri.gatech.edu/"/>
     </telecom>
   </contact>
+  <description value="Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

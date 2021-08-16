@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Case Based Surveillance Case Class Status</b>: <span title=\"Codes: {http://snomed.info/sct 410605003}\">Confirmed present (qualifier value)</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-02-02</p><p><b>Case Based Surveillance Illness Duration</b>: 6 d</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 11550}\">Hemolytic Uremic Syndrome</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Case Based Surveillance Case Class Status</b>: <span title=\"Codes: {http://snomed.info/sct 410605003}\">Confirmed present</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-02-02</p><p><b>Case Based Surveillance Illness Duration</b>: 6 d</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 11550}\">Hemolytic Uremic Syndrome</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -28,7 +28,8 @@
          fhir:index 0;
          a sct:410605003;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "410605003" ]
+         fhir:Coding.code [ fhir:value "410605003" ];
+         fhir:Coding.display [ fhir:value "Confirmed present" ]
        ]
      ]
   ], [

@@ -20,6 +20,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="77973-6"/>
+      <display value="Earliest date reported to state"/>
     </coding>
   </code>
   <subject>

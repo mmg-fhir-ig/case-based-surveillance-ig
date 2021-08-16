@@ -235,16 +235,16 @@
         "title": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"
       }
     ],
-    "Condition": [
-      {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
-        "title": "Case Based Surveillance Condition of Interest Profile"
-      }
-    ],
     "Composition": [
       {
         "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
         "title": "Case Based Surveillance Composition Profile"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
+        "title": "Case Based Surveillance Condition of Interest Profile"
       }
     ],
     "Encounter": [

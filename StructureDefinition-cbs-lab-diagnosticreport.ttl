@@ -38,6 +38,7 @@
        fhir:ContactPoint.value [ fhir:value "http://gtri.gatech.edu/" ]
      ]
   ];
+  fhir:StructureDefinition.description [ fhir:value "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

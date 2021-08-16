@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HAICA-TC-CNP-Member5"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77996-7}">Pregnancy status at time of illness or condition</span></p><p><b>subject</b>: <a href="Patient-HAICA-TC-Patient.html">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}">No</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77996-7"/>
+      <display value="Pregnancy status at time of illness or condition"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HAICA-TC-Patient"/>
+    <display value="HAICA-TC Example Patient"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <code value="N"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>
