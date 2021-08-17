@@ -16,17 +16,9 @@
     ]
   },
   "title": "Case Based Surveillance Composition",
-  "subject": {
-    "reference": "GenV2-TC-Patient"
-  },
-  "date": "2014-03-02",
-  "author": [
-    {
-      "reference": "Organization/GenV2-TC-Reporting-Source"
-    }
-  ],
   "section": [
     {
+      "title": "Condition of Interest",
       "entry": [
         {
           "reference": "Condition/GenV2-TC-Condition"
@@ -34,13 +26,7 @@
       ]
     },
     {
-      "entry": [
-        {
-          "reference": "Encounter/GenV2-TC-Hospitalization"
-        }
-      ]
-    },
-    {
+      "title": "Case Notification Panel",
       "entry": [
         {
           "reference": "Observation/GenV2-TC-CNP"
@@ -103,6 +89,23 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Encounters",
+      "entry": [
+        {
+          "reference": "Encounter/GenV2-TC-Hospitalization"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient"
+  },
+  "date": "2014-03-02",
+  "author": [
+    {
+      "reference": "Organization/GenV2-TC-Reporting-Source"
     }
   ]
 }

@@ -119,6 +119,7 @@
 [CBS MMWR Profile]: StructureDefinition-cbs-mmwr.html
 [CBS Composition Profile]: StructureDefinition-cbs-composition.html
 [CBS Condition of Interest Profile]: StructureDefinition-cbs-condition.html
+[CBS Document Bundle Profile]: StructureDefinition-cbs-document-bundle.html
 [CBS Epi-Questionnaire Panel Profile]: StructureDefinition-cbs-epi-questionnaire-panel.html
 [CBS Hospitalization Encounter Profile]: StructureDefinition-cbs-hospitalization.html
 [CBS Lab Test Report Profile]: StructureDefinition-cbs-lab-diagnosticreport.html

@@ -16,17 +16,9 @@
     ]
   },
   "title": "Case Based Surveillance Composition",
-  "subject": {
-    "reference": "HAICA-TC-Patient"
-  },
-  "date": "2018-11-26",
-  "author": [
-    {
-      "reference": "Organization/HAICA-TC-Reporting-Source"
-    }
-  ],
   "section": [
     {
+      "title": "Condition of Interest",
       "entry": [
         {
           "reference": "Condition/HAICA-TC-Condition"
@@ -34,13 +26,7 @@
       ]
     },
     {
-      "entry": [
-        {
-          "reference": "Encounter/HAICA-TC-Hospitalization"
-        }
-      ]
-    },
-    {
+      "title": "Case Notification Panel",
       "entry": [
         {
           "reference": "Observation/HAICA-TC-CNP"
@@ -75,6 +61,15 @@
       ]
     },
     {
+      "title": "Encounters",
+      "entry": [
+        {
+          "reference": "Encounter/HAICA-TC-Hospitalization"
+        }
+      ]
+    },
+    {
+      "title": "Laboratory Related Resources",
       "entry": [
         {
           "reference": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
@@ -86,6 +81,15 @@
           "reference": "Specimen/HAICA-TC-Specimen"
         }
       ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient"
+  },
+  "date": "2018-11-26",
+  "author": [
+    {
+      "reference": "Organization/HAICA-TC-Reporting-Source"
     }
   ]
 }
