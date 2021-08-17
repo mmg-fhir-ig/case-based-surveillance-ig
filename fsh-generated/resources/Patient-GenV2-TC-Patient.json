@@ -144,5 +144,14 @@
   ],
   "gender": "female",
   "birthDate": "1964-05-02",
-  "deceasedDateTime": "2014-03-02"
+  "deceasedDateTime": "2014-03-02",
+  "name": [
+    {
+      "text": "Zzzzz, Aaaaa",
+      "family": "Zzzzz",
+      "given": [
+        "Aaaaa"
+      ]
+    }
+  ]
 }

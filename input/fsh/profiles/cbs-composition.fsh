@@ -21,7 +21,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * subject only Reference(cbs-patient)
 * date 1..1 MS
 * author 1..* MS 
-* author only Reference(cbs-reporting-source-organization) // Need to change, only here for buidling purposes 
+* author only Reference(Organization) // Need to change, only here for buidling purposes 
 * title 1..1 MS
 * title = "Case Based Surveillance Composition"
 
@@ -42,10 +42,33 @@ Description: "Defines constraints to the Composition resource in order to meet t
     relatedPerson 0..1 MS and
     vitalRecordsReporting 0..1 MS
 
-* section[conditionOfInterest].entry only Reference(cbs-condition)
-* section[encounters].entry only Reference(cbs-hospitalization)
-* section[caseNotification].entry only Reference(cbs-case-notification-panel)
-* section[caseNotification].section.entry only Reference(cbs-cnp-member)
-* section[epi].entry only Reference(cbs-epi-questionnaire-panel)
-* section[occupationalData].entry only Reference($odh-PastOrPresentJob)
-* section[travelHistory].entry only Reference($ecr-travel-history)
+* section[conditionOfInterest]
+  * title = "Condition of Interest"
+  * entry only Reference(cbs-condition)
+* section[encounters]
+  * title = "Encounters"
+  * entry only Reference(cbs-hospitalization)
+* section[caseNotification]
+  * title = "Case Notification Panel"
+  * entry only Reference(cbs-case-notification-panel)
+* section[caseNotification].section
+  * title = "Case Notification Panel Members"
+  * entry only Reference(cbs-cnp-member)
+* section[epi]
+  * title = "Epi-Questionnaire Panel"
+  * entry only Reference(cbs-epi-questionnaire-panel)
+* section[occupationalData]
+  * title = "Occupational Data"
+  * entry only Reference($odh-PastOrPresentJob)
+* section[travelHistory]
+  * title = "Travel History"
+  * entry only Reference($ecr-travel-history)
+* section[lab]
+  * title = "Laboratory Related Resources"
+  * entry only Reference(cbs-lab-diagnosticreport or cbs-lab-observation or cbs-performing-lab or cbs-specimen)
+* section[medicationAdministered]
+  * title = "Medication Administered"
+* section[relatedPerson]
+  * title = "Related Persons"
+* section[vitalRecordsReporting]
+  * title = "Vital Records Reporting"

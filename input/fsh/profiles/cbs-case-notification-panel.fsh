@@ -1,4 +1,4 @@
-Profile: CaseBasedSurveillaneCaseNotificationPanel
+Profile: CaseBasedSurveillanceCaseNotificationPanel
 Parent: Observation
 Id: cbs-case-notification-panel
 Title: "Case Based Surveillance Case Notification Panel Profile"

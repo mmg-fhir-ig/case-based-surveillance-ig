@@ -26,6 +26,7 @@ Alias: $v2-0406-cs = http://terminology.hl7.org/CodeSystem/v2-0406
 Alias: $v2-0532-cs = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $v2-0369-cs = http://terminology.hl7.org/CodeSystem/v2-0369
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $FHIR-Encounter-Status = http://hl7.org/fhir/encounter-status
 Alias: $FHIR-Condition-Clinical-Status = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $FHIR-Contact-Point-System = http://hl7.org/fhir/contact-point-system

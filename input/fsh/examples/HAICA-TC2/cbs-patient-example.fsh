@@ -34,3 +34,8 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 * address[Address-at-Diagnosis].postalCode = "30126"
 
 * address[Usual-Residence].country = "USA"
+
+* name
+  * text = "Yyyyy, Bbbbb"
+  * family = "Yyyyy"
+  * given = "Bbbbb"

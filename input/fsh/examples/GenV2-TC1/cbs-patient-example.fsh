@@ -44,3 +44,8 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * address[Usual-Residence].country = "USA"
 
 * deceasedDateTime = "2014-03-02"
+
+* name
+  * text = "Zzzzz, Aaaaa"
+  * family = "Zzzzz"
+  * given = "Aaaaa"

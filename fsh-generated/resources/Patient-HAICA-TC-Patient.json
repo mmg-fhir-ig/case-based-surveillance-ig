@@ -121,5 +121,14 @@
     }
   ],
   "gender": "female",
-  "birthDate": "1940-01-01"
+  "birthDate": "1940-01-01",
+  "name": [
+    {
+      "text": "Yyyyy, Bbbbb",
+      "family": "Yyyyy",
+      "given": [
+        "Bbbbb"
+      ]
+    }
+  ]
 }

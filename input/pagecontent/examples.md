@@ -34,6 +34,8 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-GenV2-TC-CNP-Member14.html)**
   * **[CNP Member: Age at time of case investigation](Observation-GenV2-TC-CNP-Member15.html)**
 
+**[Composition](Composition-GenV2-TC-Composition.html)**
+
 ### HAI-CA Test Case 2: Candida auris, Clinical
 
 **[Patient](Patient-HAICA-TC-Patient.html)**
@@ -54,6 +56,17 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-HAICA-TC-CNP-Member5.html)**
   * **[CNP Member: Age at time of case investigation](Observation-HAICA-TC-CNP-Member6.html)**
 
+**[Composition](Composition-HAICA-TC-Composition.html)**
+
 **[Specimen](Specimen-HAICA-TC-Specimen.html)**
 
+**[Lab Test Report](DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html)**
+
 **[Lab Observation](Observation-HAICA-TC-Lab-Observation.html)**
+
+
+### Download
+
+Download all of the examples in this IG in JSON format below:
+
+[examples.json](examples.json.zip)
