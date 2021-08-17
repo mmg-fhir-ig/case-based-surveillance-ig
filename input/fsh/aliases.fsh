@@ -86,3 +86,4 @@ Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
 Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes
+Alias: $Bundle-Type = http://hl7.org/fhir/ValueSet/bundle-type
