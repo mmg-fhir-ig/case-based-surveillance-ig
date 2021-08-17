@@ -22,7 +22,8 @@
     "coding": [
       {
         "code": "77988-4",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "Binational reporting criteria [CDC.PHIN]"
       }
     ]
   },

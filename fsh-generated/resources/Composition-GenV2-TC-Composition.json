@@ -1,0 +1,111 @@
+{
+  "resourceType": "Composition",
+  "id": "GenV2-TC-Composition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "55751-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "title": "Case Based Surveillance Composition",
+  "section": [
+    {
+      "title": "Condition of Interest",
+      "entry": [
+        {
+          "reference": "Condition/GenV2-TC-Condition"
+        }
+      ]
+    },
+    {
+      "title": "Case Notification Panel",
+      "entry": [
+        {
+          "reference": "Observation/GenV2-TC-CNP"
+        }
+      ],
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "Observation/GenV2-TC-MMWR"
+            },
+            {
+              "reference": "Observation/GenV2-TC-Exposure"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member1"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member2"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member3"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member4"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member5"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member6"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member7"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member8"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member9"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member10"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member11"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member12"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member13"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member14"
+            },
+            {
+              "reference": "Observation/GenV2-TC-CNP-Member15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Encounters",
+      "entry": [
+        {
+          "reference": "Encounter/GenV2-TC-Hospitalization"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient"
+  },
+  "date": "2014-03-02",
+  "author": [
+    {
+      "reference": "Organization/GenV2-TC-Reporting-Source"
+    }
+  ]
+}

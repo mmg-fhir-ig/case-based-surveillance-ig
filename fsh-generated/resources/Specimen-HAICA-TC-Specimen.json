@@ -1,0 +1,51 @@
+{
+  "resourceType": "Specimen",
+  "id": "HAICA-TC-Specimen",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient",
+    "display": "HAICA-TC Example Patient"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "PLT687",
+            "system": "urn:oid:2.16.840.1.114222.4.5.232",
+            "display": "State Lab Specimen ID"
+          }
+        ]
+      },
+      "value": "IDR908765140"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "LAB202",
+            "system": "urn:oid:2.16.840.1.114222.4.5.232",
+            "display": "Performing Laboratory Specimen ID"
+          }
+        ]
+      },
+      "value": "198374-9"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "119297000",
+        "system": "http://snomed.info/sct",
+        "display": "Blood specimen"
+      }
+    ]
+  },
+  "collection": {
+    "collectedDateTime": "2018-11-24"
+  }
+}

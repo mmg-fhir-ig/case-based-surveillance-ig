@@ -19,6 +19,7 @@
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
+  "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [
@@ -70,6 +71,12 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "patternCode": "final",
+        "mustSupport": true
+      },
       {
         "id": "Observation.category",
         "path": "Observation.category",

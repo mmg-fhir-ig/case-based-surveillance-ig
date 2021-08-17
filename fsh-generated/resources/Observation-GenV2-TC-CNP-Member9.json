@@ -22,7 +22,8 @@
     "coding": [
       {
         "code": "77979-3",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "Case investigation start date"
       }
     ]
   },

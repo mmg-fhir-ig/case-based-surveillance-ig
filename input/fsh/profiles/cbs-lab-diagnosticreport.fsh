@@ -2,7 +2,7 @@ Profile: CaseBasedSurveillanceLabDiagnosticReport
 Parent: DiagnosticReport
 Id: cbs-lab-diagnosticreport
 Title: "Case Based Surveillance Lab Test Report"
-Description: ""
+Description: "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

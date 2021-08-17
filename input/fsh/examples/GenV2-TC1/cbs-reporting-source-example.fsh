@@ -4,5 +4,5 @@ Usage: #example
 Description: "Reporting source example resource for the GenV2 Test Case 1"
 
 * name = "Reporting Source"
-* type = $v2-0406-cs#1
+* type = $v2-0406-cs#1 "Hospital"
 * address.postalCode = "77018"

@@ -1,0 +1,95 @@
+{
+  "resourceType": "Composition",
+  "id": "HAICA-TC-Composition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "55751-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "title": "Case Based Surveillance Composition",
+  "section": [
+    {
+      "title": "Condition of Interest",
+      "entry": [
+        {
+          "reference": "Condition/HAICA-TC-Condition"
+        }
+      ]
+    },
+    {
+      "title": "Case Notification Panel",
+      "entry": [
+        {
+          "reference": "Observation/HAICA-TC-CNP"
+        }
+      ],
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "Observation/HAICA-TC-MMWR"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member1"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member2"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member3"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member4"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member5"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Encounters",
+      "entry": [
+        {
+          "reference": "Encounter/HAICA-TC-Hospitalization"
+        }
+      ]
+    },
+    {
+      "title": "Laboratory Related Resources",
+      "entry": [
+        {
+          "reference": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
+        },
+        {
+          "reference": "Observation/HAICA-TC-Lab-Observation"
+        },
+        {
+          "reference": "Specimen/HAICA-TC-Specimen"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient"
+  },
+  "date": "2018-11-26",
+  "author": [
+    {
+      "reference": "Organization/HAICA-TC-Reporting-Source"
+    }
+  ]
+}

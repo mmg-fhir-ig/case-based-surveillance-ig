@@ -2,12 +2,14 @@ Profile: CaseBasedSurveillanceLabObservation
 Parent: Observation
 Id: cbs-lab-observation
 Title: "Case Based Surveillance Lab Observation"
-Description: ""
+Description: "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
+* status 1..1 MS
+* status = #final
 * category 1..1 MS
 * category = $FHIR-Observation-Category#laboratory
 * code 1..1 MS

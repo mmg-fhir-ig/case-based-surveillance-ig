@@ -41,6 +41,12 @@
       "version": "1.0.0",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
+    },
+    {
+      "packageId": "hl7.fhir.us.odh",
+      "version": "1.1.0",
+      "uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+      "id": "hl7_fhir_us_odh"
     }
   ],
   "definition": {
@@ -51,6 +57,14 @@
         },
         "name": "Case Based Surveillance Epi Questionnaire Panel",
         "description": "Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-case-notification-panel"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Profile",
+        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -67,14 +81,6 @@
         },
         "name": "Case Based Surveillance Cause of Death Profile",
         "description": "Defines constraints on on the Observation resource for supporting public health reporting workflows involving the cause of death of the subject.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-co-condition"
-        },
-        "name": "Case Based Surveillance Co-Condition Profile",
-        "description": "Defines constraints on on the Condition resource for any additional conditions beyond the condition of interest for surveillance. The requirements for these conditions are less strict structurally, and warrant a simpler profile.",
         "exampleBoolean": false
       },
       {
@@ -114,6 +120,7 @@
           "reference": "StructureDefinition/cbs-lab-diagnosticreport"
         },
         "name": "Case Based Surveillance Lab Test Report",
+        "description": "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -121,6 +128,7 @@
           "reference": "StructureDefinition/cbs-lab-observation"
         },
         "name": "Case Based Surveillance Lab Observation",
+        "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -169,14 +177,6 @@
         },
         "name": "Case Based Surveillance Specimen Profile",
         "description": "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-case-notification-panel"
-        },
-        "name": "Case Based Surveillance Case Notification Panel Profile",
-        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -306,14 +306,6 @@
         "name": "Case Based Surveillance temporary/placeholder code system.",
         "description": "Code system defined as placeholders for items that are not defined in existing systems.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Condition/Co-Condition-Example"
-        },
-        "name": "Co-Condition-Example",
-        "description": "An example resource that is conformant to the Case Based Surveillance Co-Condition profile.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-co-condition"
       },
       {
         "reference": {
@@ -453,6 +445,14 @@
       },
       {
         "reference": {
+          "reference": "Composition/GenV2-TC-Composition"
+        },
+        "name": "GenV2-TC-Composition",
+        "description": "Composition resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "reference": {
           "reference": "Condition/GenV2-TC-Condition"
         },
         "name": "GenV2-TC-Condition",
@@ -509,10 +509,138 @@
       },
       {
         "reference": {
-          "reference": "Specimen/Specimen-Example"
+          "reference": "Observation/HAICA-TC-CNP"
         },
-        "name": "Specimen-Example",
-        "description": "An example resource that is conformant to the Case Based Surveillance Specimen profile.",
+        "name": "HAICA-TC-CNP",
+        "description": "Case notification panel resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member1"
+        },
+        "name": "HAICA-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member2"
+        },
+        "name": "HAICA-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member3"
+        },
+        "name": "HAICA-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member4"
+        },
+        "name": "HAICA-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member5"
+        },
+        "name": "HAICA-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-CNP-Member6"
+        },
+        "name": "HAICA-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Composition/HAICA-TC-Composition"
+        },
+        "name": "HAICA-TC-Composition",
+        "description": "Composition resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/HAICA-TC-Condition"
+        },
+        "name": "HAICA-TC-Condition",
+        "description": "Condition of interest resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/HAICA-TC-Hospitalization"
+        },
+        "name": "HAICA-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
+        },
+        "name": "HAICA-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the HAI-CA Test Case 2.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-Lab-Observation"
+        },
+        "name": "HAICA-TC-Lab-Observation",
+        "description": "A lab observation example resource for the HAI-CA Test Case 2.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HAICA-TC-MMWR"
+        },
+        "name": "HAICA-TC-MMWR",
+        "description": "MMWR resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "reference": {
+          "reference": "Patient/HAICA-TC-Patient"
+        },
+        "name": "HAICA-TC-Patient",
+        "description": "CBS Patient resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/HAICA-TC-Person-Reporting"
+        },
+        "name": "HAICA-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the HAI-CA Test Case 2",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "reference": {
+          "reference": "Organization/HAICA-TC-Reporting-Source"
+        },
+        "name": "HAICA-TC-Reporting-Source",
+        "description": "Reporting source example resource for the HAICA Test Case 2",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/HAICA-TC-Specimen"
+        },
+        "name": "HAICA-TC-Specimen",
+        "description": "A specimen example resource for the HAI-CA Test Case 2.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
       }
     ],

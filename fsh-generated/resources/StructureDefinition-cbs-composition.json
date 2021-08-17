@@ -121,14 +121,310 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.relatesTo",
-        "path": "Composition.relatesTo",
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.date",
+        "path": "Composition.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "patternString": "Case Based Surveillance Composition",
         "mustSupport": true
       },
       {
         "id": "Composition.section",
         "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "title"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the section.title pattern"
+        },
+        "min": 2
+      },
+      {
+        "id": "Composition.section:conditionOfInterest",
+        "path": "Composition.section",
+        "sliceName": "conditionOfInterest",
+        "min": 1,
+        "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Composition.section:conditionOfInterest.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Condition of Interest"
+      },
+      {
+        "id": "Composition.section:conditionOfInterest.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:encounters",
+        "path": "Composition.section",
+        "sliceName": "encounters",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:encounters.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Encounters"
+      },
+      {
+        "id": "Composition.section:encounters.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:caseNotification",
+        "path": "Composition.section",
+        "sliceName": "caseNotification",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:caseNotification.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Case Notification Panel"
+      },
+      {
+        "id": "Composition.section:caseNotification.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:caseNotification.section",
+        "path": "Composition.section.section",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:caseNotification.section.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Case Notification Panel Members"
+      },
+      {
+        "id": "Composition.section:caseNotification.section.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:epi",
+        "path": "Composition.section",
+        "sliceName": "epi",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:epi.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Epi-Questionnaire Panel"
+      },
+      {
+        "id": "Composition.section:epi.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:occupationalData",
+        "path": "Composition.section",
+        "sliceName": "occupationalData",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:occupationalData.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Occupational Data"
+      },
+      {
+        "id": "Composition.section:occupationalData.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:travelHistory",
+        "path": "Composition.section",
+        "sliceName": "travelHistory",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:travelHistory.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Travel History"
+      },
+      {
+        "id": "Composition.section:travelHistory.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:lab",
+        "path": "Composition.section",
+        "sliceName": "lab",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:lab.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Laboratory Related Resources"
+      },
+      {
+        "id": "Composition.section:lab.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:medicationAdministered",
+        "path": "Composition.section",
+        "sliceName": "medicationAdministered",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medicationAdministered.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Medication Administered"
+      },
+      {
+        "id": "Composition.section:relatedPerson",
+        "path": "Composition.section",
+        "sliceName": "relatedPerson",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relatedPerson.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Related Persons"
+      },
+      {
+        "id": "Composition.section:vitalRecordsReporting",
+        "path": "Composition.section",
+        "sliceName": "vitalRecordsReporting",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalRecordsReporting.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Vital Records Reporting"
       }
     ]
   }
