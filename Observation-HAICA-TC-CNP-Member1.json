@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77966-0}\">Reporting state</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 13}\">Georgia</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77966-0}\">Reporting state</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; Yyyyy, Bbbbb; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 13}\">Georgia</span></p></div>"
   },
   "status": "final",
   "category": [

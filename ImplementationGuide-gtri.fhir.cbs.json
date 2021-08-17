@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2021-08-16T11:16:12-04:00",
+  "date": "2021-08-17T12:11:09-04:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -328,6 +328,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-case-notification-panel"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Profile",
+        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-cnp-member"
         },
         "name": "Case Based Surveillance Case Notification Panel Member",
@@ -514,20 +528,6 @@
         },
         "name": "Case Based Surveillance Specimen Profile",
         "description": "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/cbs-case-notification-panel"
-        },
-        "name": "Case Based Surveillance Case Notification Panel Profile",
-        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -996,6 +996,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/GenV2-TC-Composition"
+        },
+        "name": "GenV2-TC-Composition",
+        "description": "Composition resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
@@ -1192,6 +1206,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/HAICA-TC-Composition"
+        },
+        "name": "HAICA-TC-Composition",
+        "description": "Composition resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
@@ -1215,6 +1243,20 @@
         "name": "HAICA-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
+        },
+        "name": "HAICA-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the HAI-CA Test Case 2.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
       },
       {
         "extension": [
@@ -1271,6 +1313,20 @@
         "name": "HAICA-TC-Person-Reporting",
         "description": "Person reporting to CDC example resource for the HAI-CA Test Case 2",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/HAICA-TC-Reporting-Source"
+        },
+        "name": "HAICA-TC-Reporting-Source",
+        "description": "Reporting source example resource for the HAICA Test Case 2",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
       },
       {
         "extension": [

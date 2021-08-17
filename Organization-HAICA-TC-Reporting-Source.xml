@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="HAICA-TC-Reporting-Source"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">Unknown</span></p><p><b>name</b>: Reporting Source</p></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <code value="UNK"/>
+      <display value="Unknown"/>
+    </coding>
+  </type>
+  <name value="Reporting Source"/>
+</Organization>

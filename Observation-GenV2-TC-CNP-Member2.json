@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77966-0}\">Reporting state</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 48}\">Texas</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77966-0}\">Reporting state</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">GenV2-TC Example Patient. Generated Summary: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321; Zzzzz, Aaaaa; gender: female; birthDate: 1964-05-02; deceased: 2014-03-02</a></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 48}\">Texas</span></p></div>"
   },
   "status": "final",
   "category": [

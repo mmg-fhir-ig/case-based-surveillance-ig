@@ -32,7 +32,7 @@
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
     "version": "0.1.0",
-    "name": "CaseBasedSurveillaneCaseNotificationPanel"
+    "name": "CaseBasedSurveillanceCaseNotificationPanel"
   },
   {
     "id": "cbs-cause-of-death",

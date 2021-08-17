@@ -1,0 +1,99 @@
+{
+  "resourceType": "Composition",
+  "id": "HAICA-TC-Composition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55751-2}\">Public health Case report</span></p><p><b>date</b>: 2018-11-26</p><p><b>author</b>: <a href=\"Organization-HAICA-TC-Reporting-Source.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">Unknown</span>; name: Reporting Source</a></p><p><b>title</b>: Case Based Surveillance Composition</p></div>"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "55751-2"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient"
+  },
+  "date": "2018-11-26",
+  "author": [
+    {
+      "reference": "Organization/HAICA-TC-Reporting-Source"
+    }
+  ],
+  "title": "Case Based Surveillance Composition",
+  "section": [
+    {
+      "title": "Condition of Interest",
+      "entry": [
+        {
+          "reference": "Condition/HAICA-TC-Condition"
+        }
+      ]
+    },
+    {
+      "title": "Case Notification Panel",
+      "entry": [
+        {
+          "reference": "Observation/HAICA-TC-CNP"
+        }
+      ],
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "Observation/HAICA-TC-MMWR"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member1"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member2"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member3"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member4"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member5"
+            },
+            {
+              "reference": "Observation/HAICA-TC-CNP-Member6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Encounters",
+      "entry": [
+        {
+          "reference": "Encounter/HAICA-TC-Hospitalization"
+        }
+      ]
+    },
+    {
+      "title": "Laboratory Related Resources",
+      "entry": [
+        {
+          "reference": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
+        },
+        {
+          "reference": "Observation/HAICA-TC-Lab-Observation"
+        },
+        {
+          "reference": "Specimen/HAICA-TC-Specimen"
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: State Lab Specimen ID: IDR908765140, Performing Laboratory Specimen ID: 198374-9</p><p><b>type</b>: <span title="Codes: {http://snomed.info/sct 119297000}">Blood specimen</span></p><p><b>subject</b>: <a href="Patient-HAICA-TC-Patient.html">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2018-11-24</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: State Lab Specimen ID: IDR908765140, Performing Laboratory Specimen ID: 198374-9</p><p><b>type</b>: <span title="Codes: {http://snomed.info/sct 119297000}">Blood specimen</span></p><p><b>subject</b>: <a href="Patient-HAICA-TC-Patient.html">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; Yyyyy, Bbbbb; gender: female; birthDate: 1940-01-01</a></p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2018-11-24</td></tr></table></div>
   </text>
   <identifier>
     <type>

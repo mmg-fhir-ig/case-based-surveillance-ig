@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 LAB723}\">DNA Sequencing</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></p><p><b>method</b>: <span title=\"Codes: \">D1/D2</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 LAB723}\">DNA Sequencing</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; Yyyyy, Bbbbb; gender: female; birthDate: 1940-01-01</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></p><p><b>method</b>: <span title=\"Codes: \">D1/D2</span></p></div>"
   },
   "status": "final",
   "category": [

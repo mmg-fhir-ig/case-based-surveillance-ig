@@ -1,15 +1,18 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 13, warn = 33, info = 15
+err = 14, warn = 32, info = 15
 IG Publisher Version: 1.1.77
-Generated Mon Aug 16 11:20:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Tue Aug 17 12:13:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 0 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-GenV2-TC-Composition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-HAICA-TC-Composition : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition : 1 / 1 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-HAICA-TC-Condition : 1 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-HAICA-TC-Lab-DiagnosticReport : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-GenV2-TC-Hospitalization : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-HAICA-TC-Hospitalization : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP : 0 / 0 / 1
@@ -41,17 +44,18 @@ Generated Mon Aug 16 11:20:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-Lab-Observation : 0 / 2 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-MMWR : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-GenV2-TC-Reporting-Source : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-HAICA-TC-Reporting-Source : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 3 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient : 4 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-HAICA-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 0 / 0 / 5
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 1 / 1 / 5
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cause-of-death : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-epi-questionnaire-panel : 0 / 1 / 1
@@ -59,7 +63,7 @@ Generated Mon Aug 16 11:20:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-hospitalization : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-illness-duration : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-diagnosticreport : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-diagnosticreport : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-observation : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 0 / 1
@@ -82,6 +86,8 @@ Generated Mon Aug 16 11:20:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Composition-GenV2-TC-Composition.json ==
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Composition-HAICA-TC-Composition.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json ==
 ERROR: Condition/GenV2-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
 WARNING: Condition/GenV2-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
@@ -90,6 +96,7 @@ INFORMATION: Condition/GenV2-TC-Condition: Condition.code.coding[0]: Code System
 ERROR: Condition/HAICA-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
 WARNING: Condition/HAICA-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
 INFORMATION: Condition/HAICA-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-GenV2-TC-Hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-HAICA-TC-Hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP.json ==
@@ -137,6 +144,7 @@ INFORMATION: Observation/HAICA-TC-Lab-Observation: Observation.code.coding[0]: C
 WARNING: Observation/HAICA-TC-Lab-Observation: Observation.method.coding[0]: A code with no system has no defined meaning. A system should be provided
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-MMWR.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-GenV2-TC-Reporting-Source.json ==
+== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-HAICA-TC-Reporting-Source.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json ==
 ERROR: Patient/GenV2-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 WARNING: Patient/GenV2-TC-Patient: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'
@@ -155,13 +163,14 @@ INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0]: This element do
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
+WARNING: Specimen/HAICA-TC-Specimen: Specimen.type: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946 because the value set or code system is not known to the validator]
+ERROR: Specimen/HAICA-TC-Specimen: Specimen.type: This version of SNOMED is not loaded (from http://tx.fhir.org/r4)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cause-of-death.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cnp-member.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
-WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-condition.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-diagnosis-date.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-epi-questionnaire-panel.json ==
@@ -171,7 +180,6 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/Structure
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-illness-duration.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-lab-diagnosticreport.json ==
-WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-lab-observation.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-mmwr.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json ==

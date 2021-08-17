@@ -24,7 +24,7 @@
   ];
   fhir:StructureDefinition.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
-  fhir:StructureDefinition.name [ fhir:value "CaseBasedSurveillaneCaseNotificationPanel"];
+  fhir:StructureDefinition.name [ fhir:value "CaseBasedSurveillanceCaseNotificationPanel"];
   fhir:StructureDefinition.title [ fhir:value "Case Based Surveillance Case Notification Panel Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];

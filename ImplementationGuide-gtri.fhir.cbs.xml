@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-08-16T11:16:12-04:00"/>
+  <date value="2021-08-17T12:11:09-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -213,6 +213,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-case-notification-panel"/>
+      </reference>
+      <name value="Case Based Surveillance Case Notification Panel Profile"/>
+      <description value="Defines constraints on Observation to represent the case notification panel in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-cnp-member"/>
       </reference>
       <name value="Case Based Surveillance Case Notification Panel Member"/>
@@ -360,17 +371,6 @@
       </reference>
       <name value="Case Based Surveillance Specimen Profile"/>
       <description value="Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-case-notification-panel"/>
-      </reference>
-      <name value="Case Based Surveillance Case Notification Panel Profile"/>
-      <description value="Defines constraints on Observation to represent the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -738,6 +738,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/GenV2-TC-Composition"/>
+      </reference>
+      <name value="GenV2-TC-Composition"/>
+      <description value="Composition resource for the GenV2 Test Case 1 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -892,6 +903,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/HAICA-TC-Composition"/>
+      </reference>
+      <name value="HAICA-TC-Composition"/>
+      <description value="Composition resource for the HAI-CA Test Case 2 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -911,6 +933,17 @@
       <name value="HAICA-TC-Hospitalization"/>
       <description value="CBS Hospitalization resource for the HAI-CA Test Case 2 Patient"/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"/>
+      </reference>
+      <name value="HAICA-TC-Lab-DiagnosticReport"/>
+      <description value="A lab diagnostic report example resource for the HAI-CA Test Case 2."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -955,6 +988,17 @@
       <name value="HAICA-TC-Person-Reporting"/>
       <description value="Person reporting to CDC example resource for the HAI-CA Test Case 2"/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HAICA-TC-Reporting-Source"/>
+      </reference>
+      <name value="HAICA-TC-Reporting-Source"/>
+      <description value="Reporting source example resource for the HAICA Test Case 2"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

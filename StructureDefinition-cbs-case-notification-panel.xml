@@ -30,7 +30,7 @@
   </extension>
   <url value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"/>
   <version value="0.1.0"/>
-  <name value="CaseBasedSurveillaneCaseNotificationPanel"/>
+  <name value="CaseBasedSurveillanceCaseNotificationPanel"/>
   <title value="Case Based Surveillance Case Notification Panel Profile"/>
   <status value="active"/>
   <experimental value="true"/>

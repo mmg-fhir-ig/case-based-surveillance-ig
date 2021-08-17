@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="HAICA-TC-Composition"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55751-2}">Public health Case report</span></p><p><b>date</b>: 2018-11-26</p><p><b>author</b>: <a href="Organization-HAICA-TC-Reporting-Source.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">Unknown</span>; name: Reporting Source</a></p><p><b>title</b>: Case Based Surveillance Composition</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55751-2"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/HAICA-TC-Patient"/>
+  </subject>
+  <date value="2018-11-26"/>
+  <author>
+    <reference value="Organization/HAICA-TC-Reporting-Source"/>
+  </author>
+  <title value="Case Based Surveillance Composition"/>
+  <section>
+    <title value="Condition of Interest"/>
+    <entry>
+      <reference value="Condition/HAICA-TC-Condition"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Case Notification Panel"/>
+    <entry>
+      <reference value="Observation/HAICA-TC-CNP"/>
+    </entry>
+    <section>
+      <entry>
+        <reference value="Observation/HAICA-TC-MMWR"/>
+      </entry>
+      <entry>
+        <reference value="Observation/HAICA-TC-CNP-Member1"/>
+      </entry>
+      <entry>
+        <reference value="Observation/HAICA-TC-CNP-Member2"/>
+      </entry>
+      <entry>
+        <reference value="Observation/HAICA-TC-CNP-Member3"/>
+      </entry>
+      <entry>
+        <reference value="Observation/HAICA-TC-CNP-Member4"/>
+      </entry>
+      <entry>
+        <reference value="Observation/HAICA-TC-CNP-Member5"/>
+      </entry>
+      <entry>
+        <reference value="Observation/HAICA-TC-CNP-Member6"/>
+      </entry>
+    </section>
+  </section>
+  <section>
+    <title value="Encounters"/>
+    <entry>
+      <reference value="Encounter/HAICA-TC-Hospitalization"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Laboratory Related Resources"/>
+    <entry>
+      <reference value="DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"/>
+    </entry>
+    <entry>
+      <reference value="Observation/HAICA-TC-Lab-Observation"/>
+    </entry>
+    <entry>
+      <reference value="Specimen/HAICA-TC-Specimen"/>
+    </entry>
+  </section>
+</Composition>
