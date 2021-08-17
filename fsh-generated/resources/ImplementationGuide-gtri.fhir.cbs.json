@@ -101,6 +101,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-document-bundle"
+        },
+        "name": "Case Based Surveillance Document Profile",
+        "description": "Defines a document type bundle that contains all related profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-exposure-observation"
         },
         "name": "Case Based Surveillance Exposure Observation Profile",

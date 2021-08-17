@@ -32,6 +32,7 @@ Alias: $FHIR-Condition-Clinical-Status = http://terminology.hl7.org/CodeSystem/c
 Alias: $FHIR-Contact-Point-System = http://hl7.org/fhir/contact-point-system
 Alias: $FHIR-GenderIdentity = http://hl7.org/fhir/gender-identity
 Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $FHIR-Bundle-Type = http://hl7.org/fhir/bundle-type
 
 // External Profiles
 Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
@@ -51,7 +52,7 @@ Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.h
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
 Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes
-Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
+Alias: $FHIR-Document-Types = http://hl7.org/fhir/ValueSet/bundle-type
 
 // US Core ValueSets
 Alias: $birthsex-VS = http://hl7.org/fhir/us/core/ValueSet/birthsex
@@ -83,4 +84,3 @@ Alias: $PHVS-DiseaseAcquiredJurisdiction-NND = http://phinvads.cdc.gov/fhir/Valu
 Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268
 Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 Alias: $PHVS-ReportingSourceType-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3036
-
