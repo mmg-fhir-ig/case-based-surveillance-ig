@@ -2,6 +2,9 @@ The following examples are provided as part of this implementation guide.
 
 ### GenV2 Test Case 1: Hemolytic Uremic Syndrome (HUS)
 
+View the diagram of this example case here:
+[GenV2 Test Case 1 Diagram](genv2-test-case-diagram.png)
+
 **[Patient](Patient-GenV2-TC-Patient.html)**
 
 **[Condition of Interest](Condition-GenV2-TC-Condition.html)**
@@ -37,6 +40,9 @@ The following examples are provided as part of this implementation guide.
 **[Composition](Composition-GenV2-TC-Composition.html)**
 
 ### HAI-CA Test Case 2: Candida auris, Clinical
+
+View the diagram of this example case here:
+[HAI-CA Test Case 2 Diagram](haica-test-case-diagram.png)
 
 **[Patient](Patient-HAICA-TC-Patient.html)**
 
