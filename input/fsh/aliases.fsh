@@ -51,7 +51,6 @@ Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.h
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
 Alias: $FHIR-Observation-Codes = http://hl7.org/fhir/ValueSet/observation-codes
-Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
 Alias: $Bundle-Type = http://hl7.org/fhir/ValueSet/bundle-type
 
 // US Core ValueSets

@@ -485,14 +485,6 @@
       },
       {
         "reference": {
-          "reference": "Patient/GenV2-TC-Patient"
-        },
-        "name": "GenV2-TC-Patient",
-        "description": "CBS Patient resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
-      },
-      {
-        "reference": {
           "reference": "Practitioner/GenV2-TC-Person-Reporting"
         },
         "name": "GenV2-TC-Person-Reporting",
@@ -610,14 +602,6 @@
         "name": "HAICA-TC-MMWR",
         "description": "MMWR resource for the HAI-CA Test Case 2 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
-      },
-      {
-        "reference": {
-          "reference": "Patient/HAICA-TC-Patient"
-        },
-        "name": "HAICA-TC-Patient",
-        "description": "CBS Patient resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
       },
       {
         "reference": {
