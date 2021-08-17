@@ -1,9 +1,9 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 14, warn = 32, info = 15
+err = 13, warn = 21, info = 15
 IG Publisher Version: 1.1.77
-Generated Tue Aug 17 12:13:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Tue Aug 17 15:27:57 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 0 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
@@ -49,7 +49,7 @@ Generated Tue Aug 17 12:13:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient : 4 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-HAICA-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 1 / 1 / 5
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 0 / 0 / 5
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
@@ -75,12 +75,12 @@ Generated Tue Aug 17 12:13:22 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 0 / 5 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 0 / 2 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabDiagnosticReportVS : 1 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationResultVS : 1 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationVS : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSRelatedCaseTypeVS : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 9 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 2 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -163,8 +163,6 @@ INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0]: This element do
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-WARNING: Specimen/HAICA-TC-Specimen: Specimen.type: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946 because the value set or code system is not known to the validator]
-ERROR: Specimen/HAICA-TC-Specimen: Specimen.type: This version of SNOMED is not loaded (from http://tx.fhir.org/r4)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
@@ -197,10 +195,7 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/Structure
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSAddressUseVS.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json ==
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[0]: The code INV155 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[1]: The code INV153 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[2]: The code INV156 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[3]: The code INV154 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'CBSCaseNotificationPanelVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabDiagnosticReportVS.json ==
 ERROR: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550"
@@ -210,12 +205,5 @@ ERROR: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unab
 WARNING: ValueSet.where(id = 'CBSLabObservationVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSRelatedCaseTypeVS.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json ==
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[0]: The code STD107 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[1]: The code STD108 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[2]: The code STD109 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[3]: The code STD110 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[4]: The code STD111 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[5]: The code STD112 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[6]: The code STD113 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[7]: The code STD114 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS'): Error from server: Unable to provide support for code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system
