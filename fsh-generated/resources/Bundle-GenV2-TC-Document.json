@@ -917,7 +917,7 @@
             {
               "code": "77968-6",
               "system": "http://loinc.org",
-              "display": "Reporting state"
+              "display": "National reporting jurisdiction"
             }
           ]
         },
@@ -1153,7 +1153,7 @@
             {
               "code": "case-outbreak",
               "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
-              "display": "Case Outbreak"
+              "display": "Case Outbreak Name and Indicator"
             }
           ]
         },

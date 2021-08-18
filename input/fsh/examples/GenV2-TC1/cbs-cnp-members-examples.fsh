@@ -29,7 +29,7 @@ Instance: GenV2-TC-CNP-Member4
 InstanceOf: cbs-cnp-member
 Usage: #example
 Description: "Case notification panel member resource for the GenV2 Test Case 1 Patient"
-* code = $loinc#77968-6 "Reporting state"
+* code = $loinc#77968-6 "National reporting jurisdiction"
 * subject.reference = "Patient/GenV2-TC-Patient"
 * subject.display = "GenV2-TC Example Patient"
 * valueCodeableConcept = $PH-State-FIPS-5-2#48 "Texas"
@@ -83,7 +83,7 @@ Instance: GenV2-TC-CNP-Member10
 InstanceOf: cbs-cnp-member
 Usage: #example
 Description: "Case notification panel member resource for the GenV2 Test Case 1 Patient"
-* code = cbs-temp-code-system#case-outbreak "Case Outbreak"
+* code = cbs-temp-code-system#case-outbreak "Case Outbreak Name and Indicator"
 * subject.reference = "Patient/GenV2-TC-Patient"
 * subject.display = "GenV2-TC Example Patient"
 * component[0].code = $loinc#77980-1
