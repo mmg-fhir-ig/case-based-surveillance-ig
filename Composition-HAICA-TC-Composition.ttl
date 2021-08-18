@@ -98,6 +98,18 @@
      ]
   ], [
      fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "Reporting" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Practitioner/HAICA-TC-Person-Reporting>;
+       fhir:Reference.reference [ fhir:value "Practitioner/HAICA-TC-Person-Reporting" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://cbsig.chai.gatech.edu/Organization/HAICA-TC-Reporting-Source>;
+       fhir:Reference.reference [ fhir:value "Organization/HAICA-TC-Reporting-Source" ]
+     ]
+  ], [
+     fhir:index 4;
      fhir:Composition.section.title [ fhir:value "Laboratory Related Resources" ];
      fhir:Composition.section.entry [
        fhir:index 0;

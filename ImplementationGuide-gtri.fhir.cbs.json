@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2021-08-17T15:25:45-04:00",
+  "date": "2021-08-18T09:33:53-04:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -388,6 +388,20 @@
         },
         "name": "Case Based Surveillance Condition of Interest Profile",
         "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-document-bundle"
+        },
+        "name": "Case Based Surveillance Document Profile",
+        "description": "Defines a document type bundle that contains all related profiles.",
         "exampleBoolean": false
       },
       {
@@ -1024,6 +1038,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/GenV2-TC-Document"
+        },
+        "name": "GenV2-TC-Document",
+        "description": "Document bundle for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -1229,6 +1257,20 @@
         "name": "HAICA-TC-Condition",
         "description": "Condition of interest resource for the HAI-CA Test Case 2 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/HAICA-TC-Document"
+        },
+        "name": "HAICA-TC-Document",
+        "description": "Document bundle for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
       },
       {
         "extension": [

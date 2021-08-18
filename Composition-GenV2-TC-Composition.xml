@@ -94,4 +94,13 @@
       <reference value="Encounter/GenV2-TC-Hospitalization"/>
     </entry>
   </section>
+  <section>
+    <title value="Reporting"/>
+    <entry>
+      <reference value="Practitioner/GenV2-TC-Person-Reporting"/>
+    </entry>
+    <entry>
+      <reference value="Organization/GenV2-TC-Reporting-Source"/>
+    </entry>
+  </section>
 </Composition>

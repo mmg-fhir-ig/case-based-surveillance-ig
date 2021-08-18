@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CBSRelatedCaseTypeVS"];
   fhir:ValueSet.title [ fhir:value "CBS Related Case Type Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-08-17T15:25:45-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-08-18T09:33:53-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:ValueSet.contact [
      fhir:index 0;

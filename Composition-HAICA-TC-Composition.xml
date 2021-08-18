@@ -65,6 +65,15 @@
     </entry>
   </section>
   <section>
+    <title value="Reporting"/>
+    <entry>
+      <reference value="Practitioner/HAICA-TC-Person-Reporting"/>
+    </entry>
+    <entry>
+      <reference value="Organization/HAICA-TC-Reporting-Source"/>
+    </entry>
+  </section>
+  <section>
     <title value="Laboratory Related Resources"/>
     <entry>
       <reference value="DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"/>

@@ -70,6 +70,13 @@
     "name": "CBSDiagnosisDateExtension"
   },
   {
+    "id": "cbs-document-bundle",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceDocumentBundle"
+  },
+  {
     "id": "cbs-epi-questionnaire-panel",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel",

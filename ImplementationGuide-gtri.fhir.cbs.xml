@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-08-17T15:25:45-04:00"/>
+  <date value="2021-08-18T09:33:53-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -261,6 +261,17 @@
       </reference>
       <name value="Case Based Surveillance Condition of Interest Profile"/>
       <description value="Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-document-bundle"/>
+      </reference>
+      <name value="Case Based Surveillance Document Profile"/>
+      <description value="Defines a document type bundle that contains all related profiles."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -760,6 +771,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/GenV2-TC-Document"/>
+      </reference>
+      <name value="GenV2-TC-Document"/>
+      <description value="Document bundle for the GenV2 Test Case 1 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -922,6 +944,17 @@
       <name value="HAICA-TC-Condition"/>
       <description value="Condition of interest resource for the HAI-CA Test Case 2 Patient"/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/HAICA-TC-Document"/>
+      </reference>
+      <name value="HAICA-TC-Document"/>
+      <description value="Document bundle for the HAI-CA Test Case 2 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

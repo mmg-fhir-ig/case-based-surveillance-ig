@@ -110,6 +110,17 @@
           "reference": "Encounter/GenV2-TC-Hospitalization"
         }
       ]
+    },
+    {
+      "title": "Reporting",
+      "entry": [
+        {
+          "reference": "Practitioner/GenV2-TC-Person-Reporting"
+        },
+        {
+          "reference": "Organization/GenV2-TC-Reporting-Source"
+        }
+      ]
     }
   ]
 }

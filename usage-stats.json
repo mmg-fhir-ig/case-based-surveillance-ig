@@ -247,6 +247,12 @@
         "title": "Case Based Surveillance Condition of Interest Profile"
       }
     ],
+    "Bundle": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle",
+        "title": "Case Based Surveillance Document Profile"
+      }
+    ],
     "Encounter": [
       {
         "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization",
@@ -286,21 +292,27 @@
   },
   "usage": {
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status": [
+      "Bundle.entry.resource",
       "Condition"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date": [
+      "Bundle.entry.resource",
       "Condition"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration": [
+      "Bundle.entry.resource",
       "Condition"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case": [
@@ -331,9 +343,11 @@
       "Patient.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
