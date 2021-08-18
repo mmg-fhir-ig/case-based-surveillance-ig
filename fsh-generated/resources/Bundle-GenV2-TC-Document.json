@@ -225,13 +225,20 @@
         ],
         "address": [
           {
-            "use": "Address-at-Diagnosis",
             "district": "Harris",
             "state": "Texas",
-            "postalCode": "77018"
+            "postalCode": "77018",
+            "use": "home"
           },
           {
-            "use": "Usual-Residence",
+            "extension": [
+              {
+                "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+                "valueCoding": {
+                  "code": "Usual-Residence"
+                }
+              }
+            ],
             "country": "USA"
           }
         ],

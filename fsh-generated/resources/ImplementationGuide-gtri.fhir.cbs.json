@@ -197,6 +197,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-cdc-address-use"
+        },
+        "name": "Case Based Surveillance CDC Address Use Extension",
+        "description": "Indicates the use of the address as per information surveillance program ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-case-class-status"
         },
         "name": "Case Based Surveillance Case Class Status",
@@ -253,7 +261,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/CBSAddressUseVS"
+          "reference": "ValueSet/CBSCDCAddressUseVS"
         },
         "name": "Additional codes for Address.use.",
         "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
