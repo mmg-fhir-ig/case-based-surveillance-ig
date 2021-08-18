@@ -146,7 +146,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Composition-GenV2-TC-Composition.html"
+      "fullUrl": "Composition/GenV2-TC-Composition"
     },
     {
       "resource": {
@@ -306,7 +306,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Patient-GenV2-TC-Patient.html"
+      "fullUrl": "Patient/GenV2-TC-Patient"
     },
     {
       "resource": {
@@ -367,7 +367,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Condition-GenV2-TC-Condition.html"
+      "fullUrl": "Condition/GenV2-TC-Condition"
     },
     {
       "resource": {
@@ -406,7 +406,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Encounter-GenV2-TC-Hospitalization.html"
+      "fullUrl": "Encounter/GenV2-TC-Hospitalization"
     },
     {
       "resource": {
@@ -437,7 +437,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CauseOfDeath.html"
+      "fullUrl": "Observation/GenV2-TC-CauseOfDeath"
     },
     {
       "resource": {
@@ -468,7 +468,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Practitioner-GenV2-TC-Person-Reporting.html"
+      "fullUrl": "Practitioner/GenV2-TC-Person-Reporting"
     },
     {
       "resource": {
@@ -497,7 +497,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Organization-GenV2-TC-Reporting-Source.html"
+      "fullUrl": "Organization/GenV2-TC-Reporting-Source"
     },
     {
       "resource": {
@@ -587,7 +587,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP.html"
+      "fullUrl": "Observation/GenV2-TC-CNP"
     },
     {
       "resource": {
@@ -647,7 +647,7 @@
           "display": "GenV2-TC Example Patient"
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-MMWR.html"
+      "fullUrl": "Observation/GenV2-TC-MMWR"
     },
     {
       "resource": {
@@ -751,7 +751,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-Exposure.html"
+      "fullUrl": "Observation/GenV2-TC-Exposure"
     },
     {
       "resource": {
@@ -797,7 +797,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member1.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member1"
     },
     {
       "resource": {
@@ -843,7 +843,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member2.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member2"
     },
     {
       "resource": {
@@ -889,7 +889,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member3.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member3"
     },
     {
       "resource": {
@@ -935,7 +935,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member4.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member4"
     },
     {
       "resource": {
@@ -973,7 +973,7 @@
         },
         "valueString": "S01"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member5.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member5"
     },
     {
       "resource": {
@@ -1011,7 +1011,7 @@
         },
         "valueDateTime": "2014-02-25"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member6.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member6"
     },
     {
       "resource": {
@@ -1049,7 +1049,7 @@
         },
         "valueDateTime": "2014-02-25"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member7.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member7"
     },
     {
       "resource": {
@@ -1087,7 +1087,7 @@
         },
         "valueDateTime": "2014-02-25"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member8.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member8"
     },
     {
       "resource": {
@@ -1125,7 +1125,7 @@
         },
         "valueDateTime": "2014-02-25"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member9.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member9"
     },
     {
       "resource": {
@@ -1194,7 +1194,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member10.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member10"
     },
     {
       "resource": {
@@ -1240,7 +1240,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member11.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member11"
     },
     {
       "resource": {
@@ -1286,7 +1286,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member12.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member12"
     },
     {
       "resource": {
@@ -1324,7 +1324,7 @@
         },
         "valueDateTime": "2014-02-25"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member13.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member13"
     },
     {
       "resource": {
@@ -1370,7 +1370,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member14.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member14"
     },
     {
       "resource": {
@@ -1408,7 +1408,7 @@
         },
         "valueInteger": 49
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member15.html"
+      "fullUrl": "Observation/GenV2-TC-CNP-Member15"
     }
   ]
 }

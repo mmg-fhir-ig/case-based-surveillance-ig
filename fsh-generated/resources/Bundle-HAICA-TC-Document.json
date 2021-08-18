@@ -130,7 +130,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Composition-HAICA-TC-Composition.html"
+      "fullUrl": "Composition/HAICA-TC-Composition"
     },
     {
       "resource": {
@@ -267,7 +267,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Patient-HAICA-TC-Patient.html"
+      "fullUrl": "Patient/HAICA-TC-Patient"
     },
     {
       "resource": {
@@ -307,7 +307,7 @@
         },
         "onsetDateTime": "2018-11-22"
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Condition-HAICA-TC-Condition.html"
+      "fullUrl": "Condition/HAICA-TC-Condition"
     },
     {
       "resource": {
@@ -339,7 +339,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Encounter-HAICA-TC-Hospitalization.html"
+      "fullUrl": "Encounter/HAICA-TC-Hospitalization"
     },
     {
       "resource": {
@@ -366,7 +366,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Practitioner-HAICA-TC-Person-Reporting.html"
+      "fullUrl": "Practitioner/HAICA-TC-Person-Reporting"
     },
     {
       "resource": {
@@ -390,7 +390,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Organization-HAICA-TC-Reporting-Source.html"
+      "fullUrl": "Organization/HAICA-TC-Reporting-Source"
     },
     {
       "resource": {
@@ -450,7 +450,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP.html"
+      "fullUrl": "Observation/HAICA-TC-CNP"
     },
     {
       "resource": {
@@ -510,7 +510,7 @@
           "display": "HAI-CA TC Example Patient"
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-MMWR.html"
+      "fullUrl": "Observation/HAICA-TC-MMWR"
     },
     {
       "resource": {
@@ -556,7 +556,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member1.html"
+      "fullUrl": "Observation/HAICA-TC-CNP-Member1"
     },
     {
       "resource": {
@@ -602,7 +602,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member2.html"
+      "fullUrl": "Observation/HAICA-TC-CNP-Member2"
     },
     {
       "resource": {
@@ -648,7 +648,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member3.html"
+      "fullUrl": "Observation/HAICA-TC-CNP-Member3"
     },
     {
       "resource": {
@@ -694,7 +694,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member4.html"
+      "fullUrl": "Observation/HAICA-TC-CNP-Member4"
     },
     {
       "resource": {
@@ -739,7 +739,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member5.html"
+      "fullUrl": "Observation/HAICA-TC-CNP-Member5"
     },
     {
       "resource": {
@@ -782,7 +782,7 @@
           "code": "a"
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member6.html"
+      "fullUrl": "Observation/HAICA-TC-CNP-Member6"
     },
     {
       "resource": {
@@ -836,7 +836,7 @@
           "collectedDateTime": "2018-11-24"
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Specimen-HAICA-TC-Specimen.html"
+      "fullUrl": "Specimen/HAICA-TC-Specimen"
     },
     {
       "resource": {
@@ -880,7 +880,7 @@
           }
         ]
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html"
+      "fullUrl": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
     },
     {
       "resource": {
@@ -933,7 +933,7 @@
           ]
         }
       },
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-Lab-Observation.html"
+      "fullUrl": "Observation/HAICA-TC-Lab-Observation"
     }
   ]
 }
