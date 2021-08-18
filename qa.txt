@@ -1,13 +1,13 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 22, warn = 44, info = 30
-IG Publisher Version: 1.1.77
-Generated Wed Aug 18 09:38:20 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+err = 22, warn = 7, info = 4
+IG Publisher Version: 1.1.77 Out of date - current version is ?pub-ver-1?
+Generated Wed Aug 18 11:25:10 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
  Build Errors : 2 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 4 / 9 / 57
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 4 / 5 / 57
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document : 5 / 4 / 44
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-GenV2-TC-Composition : 0 / 0 / 1
@@ -19,7 +19,7 @@ Generated Wed Aug 18 09:38:20 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-HAICA-TC-Hospitalization : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1 : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10 : 0 / 2 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10 : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member11 : 0 / 0 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member12 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member13 : 0 / 0 / 1
@@ -27,7 +27,7 @@ Generated Wed Aug 18 09:38:20 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member15 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member2 : 0 / 0 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member3 : 0 / 0 / 2
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4 : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4 : 0 / 0 / 2
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member5 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member6 : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member7 : 0 / 0 / 1
@@ -92,76 +92,39 @@ ERROR: /Users/Shared/case-based-surveillance-ig/output/Bundle-HAICA-TC-Document.
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json ==
 ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'
 ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
 ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 ERROR: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[11].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[12].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).code.coding[0]: The display "Reporting state" is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4) for 'http://loinc.org#77968-6'
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).code: The display "Reporting state" is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4)
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).code.coding[0]: Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak' for 'http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak'
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).component[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).code: Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak'
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[20].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json ==
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[1].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)
-WARNING: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
-WARNING: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[8].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).method.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Composition-GenV2-TC-Composition.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Composition-HAICA-TC-Composition.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json ==
 ERROR: Condition/GenV2-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/GenV2-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
-INFORMATION: Condition/GenV2-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-HAICA-TC-Condition.json ==
 ERROR: Condition/HAICA-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/HAICA-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]
-INFORMATION: Condition/HAICA-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-GenV2-TC-Hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-HAICA-TC-Hospitalization.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member1.json ==
-WARNING: Observation/GenV2-TC-CNP-Member1: Observation.value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member10.json ==
-WARNING: Observation/GenV2-TC-CNP-Member10: Observation.code: Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak'
-WARNING: Observation/GenV2-TC-CNP-Member10: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member11.json ==
-INFORMATION: Observation/GenV2-TC-CNP-Member11: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member12.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member13.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member14.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member15.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member2.json ==
-INFORMATION: Observation/GenV2-TC-CNP-Member2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member3.json ==
-INFORMATION: Observation/GenV2-TC-CNP-Member3: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member4.json ==
-WARNING: Observation/GenV2-TC-CNP-Member4: Observation.code: The display "Reporting state" is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4)
-INFORMATION: Observation/GenV2-TC-CNP-Member4: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member5.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member6.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member7.json ==
@@ -169,35 +132,26 @@ INFORMATION: Observation/GenV2-TC-CNP-Member4: Observation.value.ofType(Codeable
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CauseOfDeath.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json ==
-WARNING: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]
-INFORMATION: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-MMWR.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member1.json ==
-INFORMATION: Observation/HAICA-TC-CNP-Member1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member2.json ==
-INFORMATION: Observation/HAICA-TC-CNP-Member2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member3.json ==
-INFORMATION: Observation/HAICA-TC-CNP-Member3: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member4.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member5.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member6.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-Lab-Observation.json ==
-WARNING: Observation/HAICA-TC-Lab-Observation: Observation.code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]
-INFORMATION: Observation/HAICA-TC-Lab-Observation: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 WARNING: Observation/HAICA-TC-Lab-Observation: Observation.method.coding[0]: A code with no system has no defined meaning. A system should be provided
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-MMWR.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-GenV2-TC-Reporting-Source.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-HAICA-TC-Reporting-Source.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json ==
 ERROR: Patient/GenV2-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
-WARNING: Patient/GenV2-TC-Patient: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'
 ERROR: Patient/GenV2-TC-Patient: Patient.address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
 ERROR: Patient/GenV2-TC-Patient: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-HAICA-TC-Patient.json ==
 ERROR: Patient/HAICA-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 ERROR: Patient/HAICA-TC-Patient: Patient.extension[0].extension[1].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)
-WARNING: Patient/HAICA-TC-Patient: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'
 ERROR: Patient/HAICA-TC-Patient: Patient.address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
 ERROR: Patient/HAICA-TC-Patient: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Practitioner-GenV2-TC-Person-Reporting.json ==
@@ -205,8 +159,6 @@ ERROR: Patient/HAICA-TC-Patient: Patient.address[1].use: The value provided ('Us
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Specimen-HAICA-TC-Specimen.json ==
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
-INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
@@ -240,25 +192,10 @@ WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/Structure
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role'): The Implementation Guide contains no examples for this extension
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSAddressUseVS.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json ==
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[0]: The code INV155 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[1]: The code INV153 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[2]: The code INV156 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[3]: The code INV154 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet.where(id = 'CBSCaseNotificationPanelVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabDiagnosticReportVS.json ==
 ERROR: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550"
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabObservationResultVS.json ==
 ERROR: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279"
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabObservationVS.json ==
-WARNING: ValueSet.where(id = 'CBSLabObservationVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSRelatedCaseTypeVS.json ==
 == /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json ==
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[0]: The code STD107 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[1]: The code STD108 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[2]: The code STD109 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[3]: The code STD110 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[4]: The code STD111 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[5]: The code STD112 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[6]: The code STD113 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[7]: The code STD114 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
-WARNING: ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS'): Error from server: Unable to provide support for code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system

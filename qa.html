@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 22, warn = 44, info = 30 -->
+<!-- broken links = 2, errors = 22, warn = 7, info = 4 -->
 <head>
   <title>CBSIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,13 +23,13 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for CBSIG</h1>
- <p>Generated Wed Aug 18 09:38:19 EDT 2021, FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = <a href="http://cbsig.chai.gatech.edu">http://cbsig.chai.gatech.edu</a> (<a href="http://cbsig.chai.gatech.edu/history.html">history</a>)). See <a href="/users/shared/case-based-surveillance-ig/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Aug 18 11:25:10 EDT 2021, FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = <a href="http://cbsig.chai.gatech.edu">http://cbsig.chai.gatech.edu</a> (<a href="http://cbsig.chai.gatech.edu/history.html">history</a>)). See <a href="/users/shared/case-based-surveillance-ig/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.77, which is out of date. The current version is v?pub-ver-1? <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gtri.fhir.cbs, Canonical = http://cbsig.chai.gatech.edu</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0 = ok. Step <code>draft</code> in sequence <code>STU 1</code>, to be published at http://cbsig.chai.gatech.edu (subdir = ??). <span stlye="color: marron; font-weight: bold">The version 0.1.0 has already been published</span></td></tr>
- <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">69 Suppressed Issues</a>
 </td></tr>
  <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> gtri.fhir.cbs</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://cbsig.chai.gatech.edu</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/Shared/case-based-surveillance-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> us.cdc.phinvads</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.7.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.cdc.phinvads</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.cdc.phinvads</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
@@ -48,7 +48,7 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Current Version Comparison failed: Cannot invoke "org.hl7.fhir.r5.context.IWorkerContext.getBinaries()" because "this.contextLeft" is null</td></tr>
- <tr><td>Summary:</td><td> broken links = 2, errors = 22, warn = 44, info = 30</td></tr>
+ <tr><td>Summary:</td><td> broken links = 2, errors = 22, warn = 7, info = 4</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -61,10 +61,10 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_ImplementationGuide-gtri.fhir.cbs"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_bundle-GenV2-TC-Document"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document</b></a></td><td><b>4</b></td><td><b>9</b></td><td><b>6</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_bundle-GenV2-TC-Document"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_bundle-HAICA-TC-Document"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document</b></a></td><td><b>5</b></td><td><b>4</b></td><td><b>9</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_bundle-HAICA-TC-Document"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_codesystem-cbs-temp-code-system"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -76,10 +76,10 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_composition-HAICA-TC-Composition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-HAICA-TC-Composition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-GenV2-TC-Condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-GenV2-TC-Condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-HAICA-TC-Condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-HAICA-TC-Condition</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-HAICA-TC-Condition"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-HAICA-TC-Condition</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_diagnosticreport-HAICA-TC-Lab-DiagnosticReport"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-HAICA-TC-Lab-DiagnosticReport</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -94,13 +94,13 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member1"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member1"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member10"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member10"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member11"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member11</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member11"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member11</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member12"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member12</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -115,13 +115,13 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member15"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member15</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member2"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member2"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member3"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member3"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member4"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member4"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CNP-Member5"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member5</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -142,7 +142,7 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-CauseOfDeath"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CauseOfDeath</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-Exposure"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-Exposure"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-GenV2-TC-MMWR"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-MMWR</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -151,13 +151,13 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member1"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member1"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member2"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member2"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member3"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member3"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member4"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member4</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -169,7 +169,7 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-CNP-Member6"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member6</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-Lab-Observation"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-Lab-Observation</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-Lab-Observation"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-Lab-Observation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_observation-HAICA-TC-MMWR"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-MMWR</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -181,10 +181,10 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_organization-HAICA-TC-Reporting-Source"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-HAICA-TC-Reporting-Source</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_patient-GenV2-TC-Patient"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_patient-GenV2-TC-Patient"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_patient-HAICA-TC-Patient"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_patient-HAICA-TC-Patient"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_practitioner-GenV2-TC-Person-Reporting"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -193,7 +193,7 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_practitioner-HAICA-TC-Person-Reporting"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-HAICA-TC-Person-Reporting</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_specimen-HAICA-TC-Specimen"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_specimen-HAICA-TC-Specimen"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_structuredefinition-cbs-birthsex"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -274,7 +274,7 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSAddressUseVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSCaseNotificationPanelVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSCaseNotificationPanelVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSLabDiagnosticReportVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabDiagnosticReportVS</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -283,13 +283,13 @@
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSLabObservationResultVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationResultVS</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSLabObservationVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationVS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSLabObservationVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSRelatedCaseTypeVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSRelatedCaseTypeVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS</b></a></td><td><b>0</b></td><td><b>9</b></td><td><b>0</b></td>
+     <td><a href="#_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS"><b>/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -300,10 +300,10 @@
      <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-GenV2-TC-Document.html#9127875f-b22c-498b-b90b-af315e7ff6c9">Bundle-GenV2-TC-Document.html#/html/body/div/div/div/div/div/div/p/a at Line 181, column 222</a></b></td><td><b>error</b></td><td><b>The link '#Organization_GenV2-TC-Reporting-Source' for &quot;See above (Organization/GenV2-TC-Reporting-Source)&quot; cannot be resolved (valid targets: [condition-of-interest, segment-header, publish-box, bottom, segment-post-footer, example-bundle-genv2-tc-document, ig-status, case-notification-panel, top, encounters, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, reporting])</b></td>
+     <td><b><a href="Bundle-GenV2-TC-Document.html#aab52614-20ef-4c66-a56e-ee18aaacac3f">Bundle-GenV2-TC-Document.html#/html/body/div/div/div/div/div/div/p/a at Line 181, column 222</a></b></td><td><b>error</b></td><td><b>The link '#Organization_GenV2-TC-Reporting-Source' for &quot;See above (Organization/GenV2-TC-Reporting-Source)&quot; cannot be resolved (valid targets: [condition-of-interest, segment-header, publish-box, bottom, segment-post-footer, example-bundle-genv2-tc-document, ig-status, case-notification-panel, top, encounters, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, reporting])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-HAICA-TC-Document.html#fe04b41e-6a21-4ced-afde-dcb853a53360">Bundle-HAICA-TC-Document.html#/html/body/div/div/div/div/div/div/p/a at Line 181, column 222</a></b></td><td><b>error</b></td><td><b>The link '#Organization_HAICA-TC-Reporting-Source' for &quot;See above (Organization/HAICA-TC-Reporting-Source)&quot; cannot be resolved (valid targets: [condition-of-interest, segment-header, publish-box, bottom, segment-post-footer, ig-status, case-notification-panel, top, encounters, laboratory-related-resources, root, stripe, segment-footer, segment-navbar, segment-content, example-bundle-haica-tc-document, segment-breadcrumb, reporting])</b></td>
+     <td><b><a href="Bundle-HAICA-TC-Document.html#a36abaf3-34a0-49ec-8842-13fdce1c2ea2">Bundle-HAICA-TC-Document.html#/html/body/div/div/div/div/div/div/p/a at Line 181, column 222</a></b></td><td><b>error</b></td><td><b>The link '#Organization_HAICA-TC-Reporting-Source' for &quot;See above (Organization/HAICA-TC-Reporting-Source)&quot; cannot be resolved (valid targets: [condition-of-interest, segment-header, publish-box, bottom, segment-post-footer, ig-status, case-notification-panel, top, encounters, laboratory-related-resources, root, stripe, segment-footer, segment-navbar, segment-content, example-bundle-haica-tc-document, segment-breadcrumb, reporting])</b></td>
    </tr>
 </table>
 <hr/>
@@ -326,9 +326,6 @@
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding) (l166/c36)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding) (l195/c36)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[1].resource.ofType(Patient).address[0].use (l228/c43)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)</b></td>
    </tr>
@@ -337,48 +334,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept) (l324/c26)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).code.coding[0] (l348/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).code (l347/c22)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept).coding[0] (l712/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept) (l711/c26)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l792/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[11].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l838/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[12].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l884/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[13].resource.ofType(Observation).code.coding[0] (l917/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;Reporting state&quot; is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4) for 'http://loinc.org#77968-6'</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[13].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l930/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[13].resource.ofType(Observation).code (l916/c22)</b></td><td><b>warning</b></td><td title="The display "Reporting state" is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4)"><b>The display &quot;Reporting state&quot; is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource.ofType(Observation).code.coding[0] (l1153/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak' for 'http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource.ofType(Observation).component[0].value.ofType(CodeableConcept).coding[0] (l1176/c18)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[19].resource.ofType(Observation).code (l1152/c22)</b></td><td><b>warning</b></td><td title="Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak'"><b>Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak'</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[20].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l1235/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -396,9 +351,6 @@
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[1].resource.ofType(Patient).extension[0].extension[1].value.ofType(Coding) (l158/c36)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding) (l175/c36)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[1].resource.ofType(Patient).address[0].use (l218/c43)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)</b></td>
    </tr>
@@ -409,40 +361,13 @@
      <td><b>Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept) (l285/c26)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).code.coding[0] (l297/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).code (l296/c22)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</b></td>
+     <td><b><a href="">Bundle.entry[14].resource.ofType(Specimen).identifier[0] (l801/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl12" class="flip" onclick="flip('l12')">Show Reasoning</span><div id="l12" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Bundle.entry[14].resource.ofType(Specimen).identifier[0]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Bundle.entry[14].resource.ofType(Specimen).identifier[0]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[8].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l551/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l597/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l643/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[14].resource.ofType(Specimen).identifier[0].type.coding[0] (l804/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[14].resource.ofType(Specimen).identifier[1].type.coding[0] (l816/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[14].resource.ofType(Specimen).identifier[0] (l801/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl35" class="flip" onclick="flip('l35')">Show Reasoning</span><div id="l35" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Bundle.entry[14].resource.ofType(Specimen).identifier[0]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Bundle.entry[14].resource.ofType(Specimen).identifier[0]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[14].resource.ofType(Specimen).identifier[1] (l813/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl36" class="flip" onclick="flip('l36')">Show Reasoning</span><div id="l36" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Bundle.entry[14].resource.ofType(Specimen).identifier[1]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Bundle.entry[14].resource.ofType(Specimen).identifier[1]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[16].resource.ofType(Observation).code.coding[0] (l907/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+     <td><b><a href="">Bundle.entry[14].resource.ofType(Specimen).identifier[1] (l813/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl13" class="flip" onclick="flip('l13')">Show Reasoning</span><div id="l13" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Bundle.entry[14].resource.ofType(Specimen).identifier[1]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Bundle.entry[14].resource.ofType(Specimen).identifier[1]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[16].resource.ofType(Observation).method.coding[0] (l929/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[16].resource.ofType(Observation).code (l906/c22)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]</b></td>
    </tr>
 </table>
 <hr/>
@@ -487,12 +412,6 @@
    <tr style="background-color: #ffcccc">
      <td><b>Condition.extension[0].value.ofType(CodeableConcept) (l13/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Condition.code (l36/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0] (l37/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="_Users_Shared_case-based-surveillance-ig_fsh-generated_resources_condition-HAICA-TC-Condition"> </a>
@@ -505,12 +424,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Condition.extension[0].value.ofType(CodeableConcept) (l13/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Condition.code (l24/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0] (l25/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -560,10 +473,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -573,13 +483,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.code (l22/c16)</b></td><td><b>warning</b></td><td title="Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak'"><b>Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.component[0].value.ofType(CodeableConcept).coding[0] (l46/c12)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -589,10 +493,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -642,10 +543,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -655,10 +553,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -668,13 +563,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.code (l22/c16)</b></td><td><b>warning</b></td><td title="The display "Reporting state" is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4)"><b>The display &quot;Reporting state&quot; is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4)</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -744,13 +633,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.component[1].value.ofType(CodeableConcept) (l59/c20)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.component[1].value.ofType(CodeableConcept).coding[0] (l60/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -780,10 +663,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -793,10 +673,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -806,10 +683,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l36/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -850,12 +724,6 @@
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.code (l21/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.code.coding[0] (l22/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation.method.coding[0] (l44/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
@@ -903,9 +771,6 @@
    <tr style="background-color: #ffcccc">
      <td><b>Patient.extension[0].extension[0].value.ofType(Coding) (l15/c30)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Patient.extension[1].extension[0].value.ofType(Coding) (l44/c30)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Patient.address[0].use (l77/c37)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)</b></td>
    </tr>
@@ -927,9 +792,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Patient.extension[0].extension[1].value.ofType(Coding) (l23/c30)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Patient.extension[1].extension[0].value.ofType(Coding) (l40/c30)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Patient.address[0].use (l83/c37)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)</b></td>
@@ -968,16 +830,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Specimen.identifier[0] (l14/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl71" class="flip" onclick="flip('l71')">Show Reasoning</span><div id="l71" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Specimen.identifier[0]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Specimen.identifier[0]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
+     <td><b><a href="">Specimen.identifier[0] (l14/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl25" class="flip" onclick="flip('l25')">Show Reasoning</span><div id="l25" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Specimen.identifier[0]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Specimen.identifier[0]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Specimen.identifier[1] (l26/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Specimen.identifier[1]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Specimen.identifier[1]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Specimen.identifier[0].type.coding[0] (l17/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Specimen.identifier[1].type.coding[0] (l29/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
+     <td><b><a href="">Specimen.identifier[1] (l26/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen</b> <span id="sl26" class="flip" onclick="flip('l26')">Show Reasoning</span><div id="l26" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen<ul><li>Specimen.identifier[1]: discriminator = true and type.coding.code.where(value = 'PLAC').exists()</li>, <li>Specimen.identifier[1]: discriminator = true and type.coding.code.where(value = 'FILL').exists()</li></ul></div></td>
    </tr>
 </table>
 <hr/>
@@ -1265,22 +1121,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code INV155 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code INV153 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code INV156 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code INV154 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'CBSCaseNotificationPanelVS')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -1316,10 +1157,7 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'CBSLabObservationVS')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -1339,38 +1177,82 @@
 
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code STD107 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code STD108 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code STD109 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code STD110 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[4]</b></td><td><b>warning</b></td><td title=""><b>The code STD111 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[5]</b></td><td><b>warning</b></td><td title=""><b>The code STD112 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[6]</b></td><td><b>warning</b></td><td title=""><b>The code STD113 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[1].concept[7]</b></td><td><b>warning</b></td><td title=""><b>The code STD114 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>These relate to PHIN VADS value sets and code systems</b></p><ul>
+ <li>ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</li>
+ <li>ERROR: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</li>
+ <li>ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</li>
+ <li>ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[1].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)</li>
+ <li>ERROR: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</li>
+ <li>ERROR: Condition/GenV2-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</li>
+ <li>ERROR: Condition/HAICA-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</li>
+ <li>ERROR: Patient/GenV2-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</li>
+ <li>ERROR: Patient/HAICA-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)</li>
+ <li>ERROR: Patient/HAICA-TC-Patient: Patient.extension[0].extension[1].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)</li>
+ <li>ERROR: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to find value set &quot;http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550&quot;</li>
+ <li>ERROR: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unable to find value set &quot;http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279&quot;</li>
+ <li>INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[11].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[12].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[20].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[8].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Condition/GenV2-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Condition/HAICA-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/GenV2-TC-CNP-Member11: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/GenV2-TC-CNP-Member2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/GenV2-TC-CNP-Member3: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/GenV2-TC-CNP-Member4: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/HAICA-TC-CNP-Member1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/HAICA-TC-CNP-Member2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/HAICA-TC-CNP-Member3: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Observation/HAICA-TC-Lab-Observation: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</li>
+ <li>INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</li>
+ <li>WARNING: Bundle/GenV2-TC-Document: Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'</li>
+ <li>WARNING: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).component[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'</li>
+ <li>WARNING: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'</li>
+ <li>WARNING: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'</li>
+ <li>WARNING: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Condition/GenV2-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Condition/HAICA-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Observation/GenV2-TC-CNP-Member10: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'</li>
+ <li>WARNING: Observation/GenV2-TC-CNP-Member1: Observation.value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'</li>
+ <li>WARNING: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Observation/HAICA-TC-Lab-Observation: Observation.code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or code system is not known to the validator]</li>
+ <li>WARNING: Patient/GenV2-TC-Patient: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'</li>
+ <li>WARNING: Patient/HAICA-TC-Patient: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'</li>
+ <li>WARNING: ValueSet.where(id = 'CBSCaseNotificationPanelVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet.where(id = 'CBSLabObservationVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS'): Error from server: Unable to provide support for code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</li>
+ <li>WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[0]: The code INV155 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[1]: The code INV153 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[2]: The code INV156 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1].concept[3]: The code INV154 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[0]: The code STD107 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[1]: The code STD108 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[2]: The code STD109 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[3]: The code STD110 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[4]: The code STD111 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[5]: The code STD112 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[6]: The code STD113 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+ <li>WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[7]: The code STD114 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232</li>
+</ul>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
@@ -1382,41 +1264,6 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Observation-HAICA-TC-Lab-Observation.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-Lab-Observation.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Terminology_PassThrough_TX_Message"> </a>
-<h2>Terminology_PassThrough_TX_Message</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>The display &quot;Reporting state&quot; is not a valid display for the code {http://loinc.org}77968-6 - should be one of [National reporting jurisdiction, ] (from http://tx.fhir.org/r4) for 'http://loinc.org#77968-6'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Display Name for http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak should be one of 'Case Outbreak Name and Indicator' instead of 'Case Outbreak' for 'http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system#case-outbreak'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Observation-GenV2-TC-CNP-Member1.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member1.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Observation-GenV2-TC-CNP-Member10.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member10.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#Y in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#Y'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Patient-GenV2-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Patient-HAICA-TC-Patient.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-HAICA-TC-Patient.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'</b></td>
    </tr>
 </table>
 <hr/>
@@ -1486,89 +1333,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Condition-HAICA-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-HAICA-TC-Condition.json</a></td><td><b>None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Terminology_TX_System_NotKnown"> </a>
-<h2>Terminology_TX_System_NotKnown</h2>
- <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-GenV2-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-HAICA-TC-Document.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Condition-GenV2-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Condition-HAICA-TC-Condition.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-HAICA-TC-Condition.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-GenV2-TC-CNP-Member11.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member11.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-GenV2-TC-CNP-Member2.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member2.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-GenV2-TC-CNP-Member3.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member3.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-GenV2-TC-CNP-Member4.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member4.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-GenV2-TC-Exposure.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-HAICA-TC-CNP-Member1.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member1.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-HAICA-TC-CNP-Member2.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member2.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-HAICA-TC-CNP-Member3.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member3.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-HAICA-TC-Lab-Observation.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-Lab-Observation.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Specimen-HAICA-TC-Specimen.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Specimen-HAICA-TC-Specimen.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Specimen-HAICA-TC-Specimen.html">/Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Specimen-HAICA-TC-Specimen.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 </body>
