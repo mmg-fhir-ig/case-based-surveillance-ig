@@ -469,6 +469,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/GenV2-TC-Document"
+        },
+        "name": "GenV2-TC-Document",
+        "description": "Document bundle for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
+      },
+      {
+        "reference": {
           "reference": "Observation/GenV2-TC-Exposure"
         },
         "name": "GenV2-TC-Exposure",
@@ -586,6 +594,14 @@
         "name": "HAICA-TC-Condition",
         "description": "Condition of interest resource for the HAI-CA Test Case 2 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/HAICA-TC-Document"
+        },
+        "name": "HAICA-TC-Document",
+        "description": "Document bundle for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
       },
       {
         "reference": {

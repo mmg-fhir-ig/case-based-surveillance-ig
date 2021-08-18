@@ -278,6 +278,33 @@
         ]
       },
       {
+        "id": "Composition.section:reporting",
+        "path": "Composition.section",
+        "sliceName": "reporting",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:reporting.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Reporting"
+      },
+      {
+        "id": "Composition.section:reporting.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section:epi",
         "path": "Composition.section",
         "sliceName": "epi",

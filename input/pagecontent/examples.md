@@ -39,6 +39,8 @@ View the diagram of this example case here:
 
 **[Composition](Composition-GenV2-TC-Composition.html)**
 
+**[Document Bundle](Bundle-GenV2-TC-Document.html)**
+
 ### HAI-CA Test Case 2: Candida auris, Clinical
 
 View the diagram of this example case here:
@@ -51,6 +53,8 @@ View the diagram of this example case here:
 **[Hospitalization Encounter](Encounter-HAICA-TC-Hospitalization.html)**
 
 **[Person Reporting to the CDC](Practitioner-HAICA-TC-Person-Reporting.html)**
+
+**[Reporting Source](Organization-HAICA-TC-Reporting-Source.html)**
 
 **[Case Notification Panel (CNP)](Observation-HAICA-TC-CNP.html)**
 
@@ -70,6 +74,7 @@ View the diagram of this example case here:
 
 **[Lab Observation](Observation-HAICA-TC-Lab-Observation.html)**
 
+**[Document Bundle](Bundle-HAICA-TC-Document.html)**
 
 ### Download
 

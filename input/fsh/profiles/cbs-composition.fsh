@@ -34,6 +34,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
     conditionOfInterest 1..1 MS and
     encounters 0..1 MS and
     caseNotification 1..1 MS and
+    reporting 0..1 MS and
     epi 0..1 MS and 
     occupationalData 0..1 MS and
     travelHistory 0..1 MS and
@@ -54,6 +55,9 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[caseNotification].section
   * title = "Case Notification Panel Members"
   * entry only Reference(cbs-cnp-member)
+* section[reporting]
+  * title = "Reporting"
+  * entry only Reference(cbs-person-reporting-to-cdc or cbs-reporting-source-organization)
 * section[epi]
   * title = "Epi-Questionnaire Panel"
   * entry only Reference(cbs-epi-questionnaire-panel)

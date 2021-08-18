@@ -15,6 +15,8 @@ Description: "Composition resource for the HAI-CA Test Case 2 Patient"
 * section[caseNotification].section.entry[+] = Reference(HAICA-TC-CNP-Member4)
 * section[caseNotification].section.entry[+] = Reference(HAICA-TC-CNP-Member5)
 * section[caseNotification].section.entry[+] = Reference(HAICA-TC-CNP-Member6)
+* section[reporting].entry[0] = Reference(HAICA-TC-Person-Reporting)
+* section[reporting].entry[1] = Reference(HAICA-TC-Reporting-Source)
 * section[lab].entry[0] = Reference(HAICA-TC-Lab-DiagnosticReport)
 * section[lab].entry[+] = Reference(HAICA-TC-Lab-Observation)
 * section[lab].entry[+] = Reference(HAICA-TC-Specimen)
