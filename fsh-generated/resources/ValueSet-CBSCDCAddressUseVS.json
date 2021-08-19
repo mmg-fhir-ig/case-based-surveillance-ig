@@ -1,17 +1,14 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "CBSAddressUseVS",
-  "id": "CBSAddressUseVS",
+  "name": "CBSCDCAddressUseVS",
+  "id": "CBSCDCAddressUseVS",
   "title": "Additional codes for Address.use.",
   "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
   "version": "0.1.0",
-  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/address-use"
-      },
       {
         "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
         "concept": [
