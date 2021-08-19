@@ -32,6 +32,7 @@ The following [Extensions]({{site.data.fhir.path}}extensibility.html) have been 
 
 - [CBS Birthsex Extension]
 - [CBS Case Class Status Extension]
+- [CBS CDC Address Use Extension]
 - [CBS Diagnosis Date Extension]
 - [CBS Ethnicity Extension]
 - [CBS Illness Duration Extension]

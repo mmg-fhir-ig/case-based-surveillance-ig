@@ -130,8 +130,10 @@
 [CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
 
+
 [CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
 [CBS Case Class Status Extension]: StructureDefinition-cbs-case-class-status.html
+[CBS CDC Address Use Extension]: StructureDefinition-cbs-cdc-address-use.html
 [CBS Diagnosis Date Extension]: StructureDefinition-cbs-diagnosis-date.html
 [CBS Died of Condition Extension]: StructureDefinition-cbs-died-of-condition.html
 [CBS Ethnicity Extension]: StructureDefinition-cbs-ethnicity.html
@@ -140,7 +142,7 @@
 [CBS Related Case Extension]: StructureDefinition-cbs-related-case.html
 [CBS Specimen Role Extension]: StructureDefinition-cbs-specimen-role.html
 
-[Additional codes for Address.use]: ValueSet-CBSAddressUseVS.html
+[Additional codes for Address.use]: ValueSet-CBSCDCAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
 [CBS STD Epi Questionnaire Panel Codes]: ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html
 [CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html

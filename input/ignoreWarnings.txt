@@ -70,3 +70,7 @@ WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0]
 WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[6]: The code STD113 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
 WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1].concept[7]: The code STD114 is not valid in the system urn:oid:2.16.840.1.114222.4.5.232
 WARNING: ValueSet.where(id = 'CBSSTDSexualHistoryDrugUseQuestionnaireVS'): Error from server: Unable to provide support for code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system
+WARNING: ValueSet/CBSCaseNotificationPanelVS: ValueSet.compose[0].include[1]: Unknown System specified, so Concepts and Filters can''t be checked
+ERROR: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550"
+ERROR: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279"
+WARNING: ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS: ValueSet.compose[0].include[1]: Unknown System specified, so Concepts and Filters can''t be checked
