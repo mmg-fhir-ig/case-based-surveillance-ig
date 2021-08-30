@@ -21,6 +21,7 @@ The following Profiles and have been defined for this implementation guide.
 - [CBS Performing Laboratory Profile]
 - [CBS Person Reporting to CDC Profile]
 - [CBS Specimen Profile]
+- [CBS Travel History Profile]
 
 
 <br />
@@ -36,6 +37,7 @@ The following [Extensions]({{site.data.fhir.path}}extensibility.html) have been 
 - [CBS Diagnosis Date Extension]
 - [CBS Ethnicity Extension]
 - [CBS Illness Duration Extension]
+- [CBS Program Specific Time Window Extension]
 - [CBS Race Extension]
 - [CBS Related Case Extension]
 - [CBS Specimen Role Extension]

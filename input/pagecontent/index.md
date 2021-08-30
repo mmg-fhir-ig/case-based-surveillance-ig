@@ -38,6 +38,7 @@ The list of CBS Profiles is shown below.  Each profile defines the minimum manda
 - [CBS Performing Laboratory Profile]
 - [CBS Person Reporting to CDC Profile]
 - [CBS Specimen Profile]
+- [CBS Travel History Profile]
 
 ----
 

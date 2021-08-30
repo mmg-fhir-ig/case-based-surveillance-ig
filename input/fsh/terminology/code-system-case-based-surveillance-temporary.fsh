@@ -32,3 +32,6 @@ Description:  "Code system defined as placeholders for items that are not define
 * #previously-reported "Previously Reported Case"
 * #connected-outbreak "Connected Outbreak Case"
 * #parent-congential-syphilis "Parent in Congenital Syphilis"
+
+* #conditionOnsetDateTime "Condition.onsetDateTime"
+* #conditionOnsetDatePeriodStart "Condition.onsetDatePeriod.start"

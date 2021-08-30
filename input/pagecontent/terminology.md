@@ -9,6 +9,7 @@ These value sets have been defined for this implementation guide.
 - [CBS Case Notification Panel Codes]
 - [CBS STD Epi Questionnaire Panel Codes]
 - [CBS Related Case Type Value Set]
+- [CBS Time Window Relative To Value Set]
 
 
 ### Code Systems
