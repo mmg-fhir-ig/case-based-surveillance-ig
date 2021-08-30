@@ -15,8 +15,7 @@ Description: "Time window of interest in relationship to a specified event as de
 * extension contains
     timeWindow 1..1 MS and
     relativeTo 1..1 MS and
-    relativeReference 0..1 MS
-
+     relativeReference 0..1 MS
 
 * url 1..1 MS
 
@@ -35,7 +34,7 @@ Description: "Time window of interest in relationship to a specified event as de
 * extension[relativeTo].value[x] only CodeableConcept
 * extension[relativeTo].value[x].coding MS
 * extension[relativeTo].value[x].coding from CBSTimeWindowRelativeToVS (extensible)
-* extension[relativeTo].value[x].coding ^example.label = "Coded reference to common elements for a which a Time Window is relative."
+* extension[relativeTo].value[x].coding ^binding.description = "Coded reference to common elements for a which a Time Window is relative."
 * extension[relativeTo].value[x].text MS
 * extension[relativeTo].value[x].text ^example.label = "Text description"
 * extension[relativeTo].value[x].text ^example.valueString = "Example: Time Window relative to Diagnosis Date"
@@ -46,4 +45,4 @@ Description: "Time window of interest in relationship to a specified event as de
 * extension[relativeReference].url 1..1
 * extension[relativeReference].url only uri
 * extension[relativeReference].value[x] MS
-* extension[relativeReference].value[x] only Reference
+* extension[relativeReference].value[x] only Reference(http://hl7.org/fhir/StructureDefinition/Resource)

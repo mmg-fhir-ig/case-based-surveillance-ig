@@ -114,15 +114,11 @@
       {
         "id": "Extension.extension:relativeTo.value[x].coding",
         "path": "Extension.extension.value[x].coding",
-        "example": [
-          {
-            "label": "Coded reference to common elements for a which a Time Window is relative."
-          }
-        ],
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS"
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS",
+          "description": "Coded reference to common elements for a which a Time Window is relative."
         }
       },
       {
@@ -161,7 +157,10 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
           }
         ],
         "mustSupport": true
