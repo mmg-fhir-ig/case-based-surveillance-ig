@@ -11,9 +11,6 @@ Description: "Defines constraints on the Observation resource to capture subject
 * extension contains cbs-program-specific-time-window named programSpecificTimeWindow 0..1
 * code = $sct#420008001
 * code MS
-* code ^example.label = "for Observation.code"
-* code ^example.valueCodeableConcept = $sct#420008001 "Travel"
-* code ^example.valueCodeableConcept.text = "Travel History"
 * code ^isModifier = false
 * effective[x] MS
 * effective[x] ^short = "Date or period of time spent in the location"

@@ -86,4 +86,4 @@ Alias: $PHVS-DiseaseAcquiredJurisdiction-NND = http://phinvads.cdc.gov/fhir/Valu
 Alias: $PHVS-DataElements-NND-GenV2 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7268
 Alias: $PHVS-SpecimenRole-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1046
 Alias: $PHVS-ReportingSourceType-NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3036
-Alias: $PHVS_GeographicLocationHistory_CDC = https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3201
+Alias: $PHVS_GeographicLocationHistory_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3201
