@@ -83,7 +83,15 @@
     {
       "code": "parent-congential-syphilis",
       "display": "Parent in Congenital Syphilis"
+    },
+    {
+      "code": "conditionOnsetDateTime",
+      "display": "Condition.onsetDateTime"
+    },
+    {
+      "code": "conditionOnsetDatePeriodStart",
+      "display": "Condition.onsetDatePeriod.start"
     }
   ],
-  "count": 16
+  "count": 18
 }

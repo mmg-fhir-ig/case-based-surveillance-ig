@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSTimeWindowRelativeToVS",
+  "id": "CBSTimeWindowRelativeToVS",
+  "title": "CBS Time Window Relative To Value Set",
+  "description": "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "conditionOnsetDatePeriodStart"
+          },
+          {
+            "code": "conditionOnsetDateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

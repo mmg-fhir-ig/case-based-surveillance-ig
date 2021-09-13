@@ -189,6 +189,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-travel-history"
+        },
+        "name": "Case Based Surveillance Travel History Profile",
+        "description": "Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-birthsex"
         },
         "name": "Case Based Surveillance Sex Assigned at Birth Extension",
@@ -253,6 +261,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-program-specific-time-window"
+        },
+        "name": "Case Based Surveillance Program Specific Time Window",
+        "description": "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-related-case"
         },
         "name": "Case Based Surveillance Related Case Extension",
@@ -313,6 +329,14 @@
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
         "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSTimeWindowRelativeToVS"
+        },
+        "name": "CBS Time Window Relative To Value Set",
+        "description": "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative.",
         "exampleBoolean": false
       },
       {
