@@ -111,21 +111,6 @@
             }
           ]
         },
-        "example": [
-          {
-            "label": "for Observation.code",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "420008001",
-                  "system": "http://snomed.info/sct",
-                  "display": "Travel"
-                }
-              ],
-              "text": "Travel History"
-            }
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -209,7 +194,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3201",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3201",
           "description": "Geographical location history"
         }
       },

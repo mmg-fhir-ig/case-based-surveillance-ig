@@ -1,0 +1,151 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cbs-social-determinants-of-health",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health",
+  "version": "0.1.0",
+  "name": "CaseBasedSurveillanceSocialDeterminantsOfHealth",
+  "title": "Case Based Surveillance Social Determinants of Health Profile",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-01-01",
+  "publisher": "Georgia Tech Research Institute",
+  "description": "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.extension:programSpecificTimeWindow",
+        "path": "Observation.extension",
+        "sliceName": "programSpecificTimeWindow",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
+          "description": "Category codes provided for SDOH domains which may be extended by surveillance programs as needed to capture additional data."
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
+          "description": "Core codes provided for capturing SDOH values which may be extended by surveillance programs as needed to capture additional data."
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "The reference to the subject (the patient)",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "mustSupport": true
+      }
+    ]
+  }
+}

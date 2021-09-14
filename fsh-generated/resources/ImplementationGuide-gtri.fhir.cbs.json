@@ -181,6 +181,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-social-determinants-of-health"
+        },
+        "name": "Case Based Surveillance Social Determinants of Health Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-specimen"
         },
         "name": "Case Based Surveillance Specimen Profile",
@@ -329,6 +337,22 @@
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
         "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"
+        },
+        "name": "CBS Case Social Determinants of Health Category Value Set",
+        "description": "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSSocialDeterminantsOfHealthVS"
+        },
+        "name": "CBS Case Social Determinants of Health Codes Value Set",
+        "description": "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
         "exampleBoolean": false
       },
       {
