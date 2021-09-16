@@ -128,6 +128,7 @@
 [CBS Patient Profile]: StructureDefinition-cbs-patient.html
 [CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
 [CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html
+[CBS Social Determinants of Health Profile]: StructureDefinition-cbs-social-determinants-of-health.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
 [CBS Travel History Profile]: StructureDefinition-cbs-travel-history.html
 
@@ -146,6 +147,8 @@
 
 [Additional codes for Address.use]: ValueSet-CBSCDCAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
+[CBS Social Determinants of Health Categories]: ValueSet-CBSSocialDeterminantsOfHealthCategoryVS.html
+[CBS Social Determinants of Health Codes]: ValueSet-CBSSocialDeterminantsOfHealthVS.html
 [CBS STD Epi Questionnaire Panel Codes]: ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html
 [CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html
 [CBS Time Window Relative To Value Set]: ValueSet-CBSTimeWindowRelativeToVS.html

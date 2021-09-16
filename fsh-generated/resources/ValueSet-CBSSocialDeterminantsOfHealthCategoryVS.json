@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSSocialDeterminantsOfHealthCategoryVS",
+  "id": "CBSSocialDeterminantsOfHealthCategoryVS",
+  "title": "CBS Case Social Determinants of Health Category Value Set",
+  "description": "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "sogi",
+            "display": "Sexual Orientation and Gender Identity"
+          },
+          {
+            "code": "housing-or-residence",
+            "display": "Housing Insecurity or Residence Characteristics"
+          },
+          {
+            "code": "education",
+            "display": "Education Level"
+          },
+          {
+            "code": "food-insecurity",
+            "display": "Food Insecurity"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -38,8 +38,10 @@ Description: "Defines constraints to the Composition resource in order to meet t
     epi 0..1 MS and 
     occupationalData 0..1 MS and
     travelHistory 0..1 MS and
+    sdoh 0..1 MS and
     lab 0..1 MS and
     medicationAdministered 0..1 MS and
+    vaccination 0..1 MS and
     relatedPerson 0..1 MS and
     vitalRecordsReporting 0..1 MS
 
@@ -66,12 +68,17 @@ Description: "Defines constraints to the Composition resource in order to meet t
   * entry only Reference($odh-PastOrPresentJob)
 * section[travelHistory]
   * title = "Travel History"
-  * entry only Reference($ecr-travel-history)
+  * entry only Reference(cbs-travel-history)
+* section[sdoh]
+  * title = "Social Determinants of Health"
+  * entry only Reference(cbs-social-determinants-of-health)
 * section[lab]
   * title = "Laboratory Related Resources"
   * entry only Reference(cbs-lab-diagnosticreport or cbs-lab-observation or cbs-performing-lab or cbs-specimen)
 * section[medicationAdministered]
   * title = "Medication Administered"
+* section[vaccination]
+  * title = "Vaccinations"
 * section[relatedPerson]
   * title = "Related Persons"
 * section[vitalRecordsReporting]

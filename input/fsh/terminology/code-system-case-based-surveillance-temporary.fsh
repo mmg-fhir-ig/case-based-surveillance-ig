@@ -35,3 +35,8 @@ Description:  "Code system defined as placeholders for items that are not define
 
 * #conditionOnsetDateTime "Condition.onsetDateTime"
 * #conditionOnsetDatePeriodStart "Condition.onsetDatePeriod.start"
+
+* #sogi "Sexual Orientation and Gender Identity"
+* #housing-or-residence "Housing Insecurity or Residence Characteristics"
+* #education "Education Level"
+* #food-insecurity "Food Insecurity"

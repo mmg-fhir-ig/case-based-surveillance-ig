@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CBSSocialDeterminantsOfHealthVS",
+  "id": "CBSSocialDeterminantsOfHealthVS",
+  "title": "CBS Case Social Determinants of Health Codes Value Set",
+  "description": "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+  "version": "0.1.0",
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "76690-7",
+            "display": "Sexual orientation"
+          },
+          {
+            "code": "76691-5",
+            "display": "Gender identity"
+          },
+          {
+            "code": "75274-1",
+            "display": "Characteristics of residence"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "45361006",
+            "display": "Incarceration"
+          }
+        ]
+      }
+    ]
+  }
+}

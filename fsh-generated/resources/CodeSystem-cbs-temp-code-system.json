@@ -91,7 +91,23 @@
     {
       "code": "conditionOnsetDatePeriodStart",
       "display": "Condition.onsetDatePeriod.start"
+    },
+    {
+      "code": "sogi",
+      "display": "Sexual Orientation and Gender Identity"
+    },
+    {
+      "code": "housing-or-residence",
+      "display": "Housing Insecurity or Residence Characteristics"
+    },
+    {
+      "code": "education",
+      "display": "Education Level"
+    },
+    {
+      "code": "food-insecurity",
+      "display": "Food Insecurity"
     }
   ],
-  "count": 18
+  "count": 22
 }
