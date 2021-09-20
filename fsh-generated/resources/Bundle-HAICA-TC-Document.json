@@ -87,7 +87,7 @@
             ]
           },
           {
-            "title": "Encounters",
+            "title": "History of Encounters (Hospitalizations)",
             "entry": [
               {
                 "reference": "Encounter/HAICA-TC-Hospitalization"
@@ -95,7 +95,7 @@
             ]
           },
           {
-            "title": "Reporting",
+            "title": "Reporting Entities",
             "entry": [
               {
                 "reference": "Practitioner/HAICA-TC-Person-Reporting"

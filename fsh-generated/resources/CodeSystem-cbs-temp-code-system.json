@@ -107,7 +107,59 @@
     {
       "code": "food-insecurity",
       "display": "Food Insecurity"
+    },
+    {
+      "code": "condition-of-interest",
+      "display": "Condition of Interest/Reportable Condition"
+    },
+    {
+      "code": "case-notification-panel",
+      "display": "Case Notification Panel"
+    },
+    {
+      "code": "reporting-entities",
+      "display": "Reporting Entities"
+    },
+    {
+      "code": "history-of-encounters",
+      "display": "History of Related Encounters (Hospitalizations)"
+    },
+    {
+      "code": "epi-questions",
+      "display": "Epi Questionnaires and Observations"
+    },
+    {
+      "code": "occupational-data",
+      "display": "Occupational Data"
+    },
+    {
+      "code": "travel-history",
+      "display": "Travel History"
+    },
+    {
+      "code": "social-determinants-of-health",
+      "display": "Social Determinants of Health"
+    },
+    {
+      "code": "lab-related",
+      "display": "Laboratory Related"
+    },
+    {
+      "code": "medication-administered",
+      "display": "Medication Administered"
+    },
+    {
+      "code": "vaccinations",
+      "display": "Vaccinations"
+    },
+    {
+      "code": "related-persons",
+      "display": "Related Persons"
+    },
+    {
+      "code": "vital-records",
+      "display": "Vital Records Reporting (Death, Birth, or Fetal Death)"
     }
   ],
-  "count": 22
+  "count": 35
 }

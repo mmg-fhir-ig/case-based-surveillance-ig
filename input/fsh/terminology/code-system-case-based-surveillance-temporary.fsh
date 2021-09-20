@@ -40,3 +40,19 @@ Description:  "Code system defined as placeholders for items that are not define
 * #housing-or-residence "Housing Insecurity or Residence Characteristics"
 * #education "Education Level"
 * #food-insecurity "Food Insecurity"
+
+// Composition Section Codes
+* #condition-of-interest "Condition of Interest/Reportable Condition"
+* #case-notification-panel "Case Notification Panel"
+* #reporting-entities "Reporting Entities"
+* #history-of-encounters "History of Related Encounters (Hospitalizations)"
+* #epi-questions "Epi Questionnaires and Observations"
+* #occupational-data "Occupational Data"
+* #travel-history "Travel History"
+* #social-determinants-of-health "Social Determinants of Health"
+* #lab-related "Laboratory Related"
+* #medication-administered "Medication Administered"
+* #vaccinations "Vaccinations"
+* #related-persons "Related Persons"
+* #vital-records "Vital Records Reporting (Death, Birth, or Fetal Death)"
+

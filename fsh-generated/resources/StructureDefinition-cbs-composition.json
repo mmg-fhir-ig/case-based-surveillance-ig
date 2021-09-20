@@ -188,6 +188,19 @@
         "patternString": "Condition of Interest"
       },
       {
+        "id": "Composition.section:conditionOfInterest.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "condition-of-interest",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Condition of Interest/Reportable Condition"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:conditionOfInterest.entry",
         "path": "Composition.section.entry",
         "type": [
@@ -211,7 +224,20 @@
         "id": "Composition.section:encounters.title",
         "path": "Composition.section.title",
         "min": 1,
-        "patternString": "Encounters"
+        "patternString": "History of Encounters (Hospitalizations)"
+      },
+      {
+        "id": "Composition.section:encounters.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "history-of-encounters",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "History of Encounters (Hospitalizations)"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:encounters.entry",
@@ -240,59 +266,60 @@
         "patternString": "Case Notification Panel"
       },
       {
+        "id": "Composition.section:caseNotification.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "case-notification-panel",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Case Notification Panel"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:caseNotification.entry",
         "path": "Composition.section.entry",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:caseNotification.section",
-        "path": "Composition.section.section",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:caseNotification.section.title",
-        "path": "Composition.section.section.title",
-        "patternString": "Case Notification Panel Members"
-      },
-      {
-        "id": "Composition.section:caseNotification.section.entry",
-        "path": "Composition.section.section.entry",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
               "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
             ]
           }
         ]
       },
       {
-        "id": "Composition.section:reporting",
+        "id": "Composition.section:reportingEntities",
         "path": "Composition.section",
-        "sliceName": "reporting",
+        "sliceName": "reportingEntities",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:reporting.title",
+        "id": "Composition.section:reportingEntities.title",
         "path": "Composition.section.title",
         "min": 1,
-        "patternString": "Reporting"
+        "patternString": "Reporting Entities"
       },
       {
-        "id": "Composition.section:reporting.entry",
+        "id": "Composition.section:reportingEntities.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "reporting-entities",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Reporting Entities"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:reportingEntities.entry",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -305,21 +332,34 @@
         ]
       },
       {
-        "id": "Composition.section:epi",
+        "id": "Composition.section:epiQuestions",
         "path": "Composition.section",
-        "sliceName": "epi",
+        "sliceName": "epiQuestions",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:epi.title",
+        "id": "Composition.section:epiQuestions.title",
         "path": "Composition.section.title",
         "min": 1,
-        "patternString": "Epi-Questionnaire Panel"
+        "patternString": "Epi Questionnaires and Observations"
       },
       {
-        "id": "Composition.section:epi.entry",
+        "id": "Composition.section:epiQuestions.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "epi-questions",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Epi Questionnaires and Observations"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:epiQuestions.entry",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -343,6 +383,19 @@
         "path": "Composition.section.title",
         "min": 1,
         "patternString": "Occupational Data"
+      },
+      {
+        "id": "Composition.section:occupationalData.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "occupational-data",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Occupational Data"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:occupationalData.entry",
@@ -371,6 +424,19 @@
         "patternString": "Travel History"
       },
       {
+        "id": "Composition.section:travelHistory.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "travel-history",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Travel History"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:travelHistory.entry",
         "path": "Composition.section.entry",
         "type": [
@@ -397,6 +463,19 @@
         "patternString": "Social Determinants of Health"
       },
       {
+        "id": "Composition.section:sdoh.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "social-determinants-of-health",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Social Determinants of Health"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:sdoh.entry",
         "path": "Composition.section.entry",
         "type": [
@@ -409,21 +488,34 @@
         ]
       },
       {
-        "id": "Composition.section:lab",
+        "id": "Composition.section:labRelated",
         "path": "Composition.section",
-        "sliceName": "lab",
+        "sliceName": "labRelated",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:lab.title",
+        "id": "Composition.section:labRelated.title",
         "path": "Composition.section.title",
         "min": 1,
         "patternString": "Laboratory Related Resources"
       },
       {
-        "id": "Composition.section:lab.entry",
+        "id": "Composition.section:labRelated.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "lab-related",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Laboratory Related"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:labRelated.entry",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -452,6 +544,19 @@
         "patternString": "Medication Administered"
       },
       {
+        "id": "Composition.section:medicationAdministered.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "medication-administered",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Medication Administered"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:vaccination",
         "path": "Composition.section",
         "sliceName": "vaccination",
@@ -464,6 +569,19 @@
         "path": "Composition.section.title",
         "min": 1,
         "patternString": "Vaccinations"
+      },
+      {
+        "id": "Composition.section:vaccination.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "vaccinations",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Vaccinations"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:relatedPerson",
@@ -480,6 +598,19 @@
         "patternString": "Related Persons"
       },
       {
+        "id": "Composition.section:relatedPerson.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "related-persons",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Related Persons"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:vitalRecordsReporting",
         "path": "Composition.section",
         "sliceName": "vitalRecordsReporting",
@@ -492,6 +623,19 @@
         "path": "Composition.section.title",
         "min": 1,
         "patternString": "Vital Records Reporting"
+      },
+      {
+        "id": "Composition.section:vitalRecordsReporting.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "vital-records",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Vital Records Reporting (Death, Birth, or Fetal Death)"
+            }
+          ]
+        }
       }
     ]
   }

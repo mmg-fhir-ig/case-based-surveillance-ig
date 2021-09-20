@@ -91,7 +91,7 @@
       ]
     },
     {
-      "title": "Encounters",
+      "title": "History of Encounters (Hospitalizations)",
       "entry": [
         {
           "reference": "Encounter/GenV2-TC-Hospitalization"
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "title": "Reporting",
+      "title": "Reporting Entities",
       "entry": [
         {
           "reference": "Practitioner/GenV2-TC-Person-Reporting"

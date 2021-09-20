@@ -1,0 +1,17 @@
+## Introduction
+This Composition profile represents a case report being sent to a public health case based surveillance program. It describes the contents to be included for the case report and establishes how to provide potential resources within each section in such a way that the inclusion of data is modular around varying needs based on the condition of interest.
+
+### Sections
+* Condition of Interest/Reportable Condition - This section contains the core condition related to the case. This condition will be considered the trigger for the surveillance program under which the case falls under their jurisdiction, based off of the condition code as specified in the [Nationally Notifiable Disease Surveillance System (NNDSS) & Other Conditions of Publich Health Importance](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1015) valueset.
+* Case Notification Panel - The Case Notification Panel profile and Case Notification Panel Member profiles capture major high level case data often required by all surveillance programs.
+* Reporting Entities - Resources covering any reporting entities at any point in the reporting workflow deemed relevant by jurisdictions or programs.
+* History of Encounters (Hospitalizations) - Encounter related resources primarily focused on hospitalization events. For programs which capture encounter information not strictly related to Hospitalizations this section should be used as well.
+* Epi Questionnaires and Observations - Any Questionnaires/QuestionnaireResponses or arbitrary epi data captured as Observations should be included here. For more information on what constitutes epi data as opposed to clinical or other data, please see the related profiles.
+* Occupational Data - The case subject's occupational data captured in accordance with the [Occupational Data for Health Implementation Guide](http://hl7.org/fhir/us/odh/). The [Past or Present Job Profile](http://hl7.org/fhir/us/odh/StructureDefinition-odh-PastOrPresentJob.html) is preferred.
+* Travel History - Case relevant Travel History.
+* Social Determinants of Health - Social Determinants of Health related data, including both impact and causal features as deemed relevant by surveillance programs.
+* Laboratory Related Resources - All lab related resources including specimens should be included here. This section is largely analogous to Electronic Lab Reporting information.
+* Medication Administered - Medication administered related to condition of interest treatment, not including vaccinations/immunizations.
+* Vaccinations/Immunizations - Condition relevant vaccinations.
+* Related Persons - Any and all information for which the subject is an additional person related to the case, regardless of biological relation to the case report subject, should be included here. (Example: Maternal information, including any all lab results or other observations, for a case report in which the subject is an infant, for diseases such as Congenital Syphilis.)
+* Vital Records Reporting (Death, Birth, or Fetal Death) - When relevant, vital records reporting work flow related resources may be included in this section for additional information or context. This should be limited to [Vital Records Mortality and Morbidity Reporting](http://hl7.org/fhir/us/vrdr/) and [Vital Records Birth and Fetal Death Reporting](https://build.fhir.org/ig/HL7/fhir-bfdr/index.html) profiles.
