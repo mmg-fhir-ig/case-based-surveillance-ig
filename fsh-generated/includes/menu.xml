@@ -39,4 +39,14 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mapping Guide
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mapping.html#genv2">GenV2</a>
+      </li>
+    </ul>
+  </li>
 </ul>

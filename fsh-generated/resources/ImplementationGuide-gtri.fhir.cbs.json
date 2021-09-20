@@ -740,6 +740,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "mapping.html",
+          "title": "Mapping",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "profiles-and-extensions.html",
           "title": "Profiles and Extensions",
           "generation": "markdown"
