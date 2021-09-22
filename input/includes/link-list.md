@@ -125,6 +125,7 @@
 [CBS Lab Test Report Profile]: StructureDefinition-cbs-lab-diagnosticreport.html
 [CBS Lab Observation Profile]: StructureDefinition-cbs-lab-observation.html
 [CBS Reporting Source Organization Profile]: StructureDefinition-cbs-reporting-source-organization.html
+[CBS Past or Present Job Profile]: StructureDefinition-cbs-past-or-present-job.html
 [CBS Patient Profile]: StructureDefinition-cbs-patient.html
 [CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
 [CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html

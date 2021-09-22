@@ -149,6 +149,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-past-or-present-job"
+        },
+        "name": "Case Based Surveillance Past or Present Job Profile",
+        "description": "Defines a version of the ODH Past or Present Job profile with subject reference to a CBS Patient profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-patient"
         },
         "name": "Case Based Surveillance Patient Profile",

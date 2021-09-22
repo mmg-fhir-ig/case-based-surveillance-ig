@@ -17,6 +17,7 @@ The following Profiles and have been defined for this implementation guide.
 - [CBS Lab Test Report Profile]
 - [CBS Lab Observation Profile]
 - [CBS Reporting Source Organization Profile]
+- [CBS Past or Present Job Profile]
 - [CBS Patient Profile]
 - [CBS Performing Laboratory Profile]
 - [CBS Person Reporting to CDC Profile]
