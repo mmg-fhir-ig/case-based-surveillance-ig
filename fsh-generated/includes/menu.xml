@@ -45,7 +45,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="mapping.html#genv2">GenV2</a>
+        <a href="mapping.html#general-guidance">General Guidance</a>
+      </li>
+      <li>
+        <a href="mapping.html#gen-v2">GenV2</a>
       </li>
     </ul>
   </li>

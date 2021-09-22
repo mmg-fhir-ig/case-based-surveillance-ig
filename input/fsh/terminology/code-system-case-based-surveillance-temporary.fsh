@@ -45,7 +45,7 @@ Description:  "Code system defined as placeholders for items that are not define
 * #condition-of-interest "Condition of Interest/Reportable Condition"
 * #case-notification-panel "Case Notification Panel"
 * #reporting-entities "Reporting Entities"
-* #history-of-encounters "History of Related Encounters (Hospitalizations)"
+* #history-of-encounters "History of Encounters (Hospitalizations)"
 * #epi-questions "Epi Questionnaires and Observations"
 * #occupational-data "Occupational Data"
 * #travel-history "Travel History"
@@ -55,4 +55,3 @@ Description:  "Code system defined as placeholders for items that are not define
 * #vaccinations "Vaccinations"
 * #related-persons "Related Persons"
 * #vital-records "Vital Records Reporting (Death, Birth, or Fetal Death)"
-

@@ -3,9 +3,6 @@
 This mapping is presented as demonstration of how to present data provided through CDC Message Mapping Guides as CBS IG FHIR Profiles and other FHIR Resources. In many cases there is a many to one mapping of MMG data element to CBS IG profiles and FHIR resources, broken down by element as appropriate.
 
 ## General Guidance
-### Message Profile Identifiers
-
-Message Profile Identifiers are not required in the CBS FHIR workflow and not included in this mapping.
 
 ### Data Elements and Data Element Identifiers
 MMG element uniqueness is primarily determined by the data element identifier, typically provided as standard coding or HL7 message segment identifier. In the majority of cases if a data element identifier is mapped to a profile in one MMG that mapping will also apply in all other MMGs, however judgment on context should be considered as this can not be completely accounted for and there are some minor differences between MMGs in the use of identifiers. For example, Candida Auris and TBLTBI MMGs both include the identifier "INV1109" for "Previously Counted Case" for which Candida Auris overrides the default purpose of the identifier and creates a divergent meaning.
