@@ -19,3 +19,8 @@ In MMGs, the inconsistency in phrasing is present and should be handled as follo
 ## Gen v2
 
 {% include mapping-table-genv2.md %}
+
+## Mumps Vaccination History Slice
+This table is provided as an example of mapping vaccination related fields using the Mumps Message Mapping Guide as a base case. Only the "Epidemiology Questions about Vaccine History" group, including the "Preferred Vaccination History" repeating sub-group, are included.
+
+{% include mapping-table-mumps.md %}

@@ -11,13 +11,12 @@ Description: "Defines constraints on the Immunization resource to capture subjec
 * identifier MS
 * vaccineCode MS
 * vaccineCode from $PHS_VaccineAdministered_MMR (example) 
+  * ^binding.description = "Vaccine Type and/or National Drug Code (NDC)"
 * patient only Reference(cbs-patient)
 * manufacturer MS // Use reference.display for string summary without a resource.
 * lotNumber MS
 * expirationDate MS
-* occurrence[x] MS
-* occurrenceDateTime MS
-* occurrenceString MS // Use occurrenceString to specify unknown date or general time period.
+* occurrence[x] MS // Use occurrenceString to specify unknown date or general time period.
 * protocolApplied MS
   * targetDisease MS
   * doseNumber[x] MS
@@ -25,3 +24,4 @@ Description: "Defines constraints on the Immunization resource to capture subjec
 * note MS
 * reportOrigin MS
 * reportOrigin from $PHVS_VaccineEventInformationSource_NND (required)
+  * ^binding.description = "Vaccine Event Information Source"
