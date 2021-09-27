@@ -28,3 +28,22 @@
 
 
 }
+
+.mapping-table {
+  border: 1px solid black;
+}
+
+.mapping-table td {
+  border: 1px solid black;
+}
+
+.mapping-table th {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #00254c;
+  color: white;
+}
+
+.mapping-table td:nth-child(1) {
+  background-color: #a0c5ec;
+}
