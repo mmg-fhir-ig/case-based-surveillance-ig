@@ -10,7 +10,7 @@ Description: "Defines constraints on the Immunization resource to capture subjec
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * identifier MS
 * vaccineCode MS
-* vaccineCode from $PHS_VaccineAdministered_MMR (example) 
+* vaccineCode from $PHVS_VaccineAdministered_MMR (example) 
   * ^binding.description = "Vaccine Type and/or National Drug Code (NDC)"
 * patient only Reference(cbs-patient)
 * manufacturer MS // Use reference.display for string summary without a resource.
