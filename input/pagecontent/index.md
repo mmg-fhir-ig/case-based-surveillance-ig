@@ -34,7 +34,6 @@ The list of CBS Profiles is shown below.  Each profile defines the minimum manda
 - [CBS Lab Test Report Profile]
 - [CBS Lab Observation Profile]
 - [CBS Reporting Source Organization Profile]
-- [CBS Past or Present Job Profile]
 - [CBS Patient Profile]
 - [CBS Performing Laboratory Profile]
 - [CBS Person Reporting to CDC Profile]
