@@ -149,14 +149,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-past-or-present-job"
-        },
-        "name": "Case Based Surveillance Past or Present Job Profile",
-        "description": "Defines a version of the ODH Past or Present Job profile with subject reference to a CBS Patient profile.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-patient"
         },
         "name": "Case Based Surveillance Patient Profile",
@@ -209,6 +201,30 @@
         },
         "name": "Case Based Surveillance Travel History Profile",
         "description": "Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-ACIP-Recommendation"
+        },
+        "name": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile",
+        "description": "Defines constraints on the Observation resource to capture whether subject was vaccinated per ACIP Recommendations in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-indication"
+        },
+        "name": "Case Based Surveillance Travel History Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-record"
+        },
+        "name": "Case Based Surveillance Vaccination Record Profile",
+        "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -281,6 +297,14 @@
         },
         "name": "Case Based Surveillance Program Specific Time Window",
         "description": "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations"
+        },
+        "name": "Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations",
+        "description": "Reason the subject was not vaccinated per ACIP recommendations.",
         "exampleBoolean": false
       },
       {

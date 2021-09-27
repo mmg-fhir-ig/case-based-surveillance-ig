@@ -132,6 +132,8 @@
 [CBS Social Determinants of Health Profile]: StructureDefinition-cbs-social-determinants-of-health.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
 [CBS Travel History Profile]: StructureDefinition-cbs-travel-history.html
+[CBS Vaccination Indication Profile]: StructureDefinition-cbs-vaccination-indication.html
+[CBS Vaccination Record Profile]: StructureDefinition-cbs-vaccination-record.html
 
 
 [CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
@@ -142,16 +144,17 @@
 [CBS Ethnicity Extension]: StructureDefinition-cbs-ethnicity.html
 [CBS Illness Duration Extension]: StructureDefinition-cbs-illness-duration.html
 [CBS Race Extension]: StructureDefinition-cbs-race.html
+[CBS Reason Not Vaccinated Per ACIP Recommendations Extension]: StructureDefinition-cbs-reason-not-vaccinated-per-ACIP-recommendations.html
 [CBS Program Specific Time Window Extension]: StructureDefinition-cbs-program-specific-time-window.html
 [CBS Related Case Extension]: StructureDefinition-cbs-related-case.html
 [CBS Specimen Role Extension]: StructureDefinition-cbs-specimen-role.html
 
 [Additional codes for Address.use]: ValueSet-CBSCDCAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
+[CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html
 [CBS Social Determinants of Health Categories]: ValueSet-CBSSocialDeterminantsOfHealthCategoryVS.html
 [CBS Social Determinants of Health Codes]: ValueSet-CBSSocialDeterminantsOfHealthVS.html
 [CBS STD Epi Questionnaire Panel Codes]: ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html
-[CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html
 [CBS Time Window Relative To Value Set]: ValueSet-CBSTimeWindowRelativeToVS.html
 
 [CBS Temporary Code System]: CodeSystem-cbs-temp-code-system.html
