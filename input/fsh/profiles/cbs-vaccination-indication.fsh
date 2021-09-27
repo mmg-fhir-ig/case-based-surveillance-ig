@@ -1,7 +1,7 @@
 Profile: CaseBasedSurveillanceVaccinationIndication
 Parent: Observation
 Id: cbs-vaccination-indication
-Title: "Case Based Surveillance Travel History Profile"
+Title: "Case Based Surveillance Vaccination Indication Profile"
 Description: "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
