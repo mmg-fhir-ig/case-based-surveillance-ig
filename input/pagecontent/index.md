@@ -40,6 +40,8 @@ The list of CBS Profiles is shown below.  Each profile defines the minimum manda
 - [CBS Social Determinants of Health Profile]
 - [CBS Specimen Profile]
 - [CBS Travel History Profile]
+- [CBS Vaccination Indication Profile]
+- [CBS Vaccination Record Profile]
 
 ----
 

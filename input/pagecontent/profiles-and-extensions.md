@@ -23,6 +23,8 @@ The following Profiles and have been defined for this implementation guide.
 - [CBS Social Determinants of Health Profile]
 - [CBS Specimen Profile]
 - [CBS Travel History Profile]
+- [CBS Vaccination Indication Profile]
+- [CBS Vaccination Record Profile]
 
 
 <br />
@@ -40,6 +42,7 @@ The following [Extensions]({{site.data.fhir.path}}extensibility.html) have been 
 - [CBS Illness Duration Extension]
 - [CBS Program Specific Time Window Extension]
 - [CBS Race Extension]
+- [CBS Reason Not Vaccinated Per ACIP Recommendations Extension]
 - [CBS Related Case Extension]
 - [CBS Specimen Role Extension]
 
