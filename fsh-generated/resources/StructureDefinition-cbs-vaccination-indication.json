@@ -14,7 +14,7 @@
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-indication",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceVaccinationIndication",
-  "title": "Case Based Surveillance Travel History Profile",
+  "title": "Case Based Surveillance Vaccination Indication Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",

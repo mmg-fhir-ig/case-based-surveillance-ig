@@ -215,7 +215,7 @@
         "reference": {
           "reference": "StructureDefinition/cbs-vaccination-indication"
         },
-        "name": "Case Based Surveillance Travel History Profile",
+        "name": "Case Based Surveillance Vaccination Indication Profile",
         "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
