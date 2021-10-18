@@ -482,7 +482,7 @@
       <path value="Condition.extension"/>
       <sliceName value="illness-duration"/>
       <short value="Case Based Surveillance Illness Duration"/>
-      <definition value="Illness duration to obscure PHII in place of absokute dates."/>
+      <definition value="Illness duration to obscure PHII in place of absolute dates."/>
       <min value="0"/>
       <max value="1"/>
       <base>

@@ -1,14 +1,14 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 22, warn = 7, info = 4
-IG Publisher Version: 1.1.77 Out of date - current version is ?pub-ver-1?
-Generated Wed Aug 18 11:25:10 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+err = 85, warn = 29, info = 147
+IG Publisher Version: 1.1.80 Out of date - current version is 1.1.82
+Generated Mon Oct 18 11:21:51 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
 
- Build Errors : 2 / 1 / 0
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 4 / 5 / 57
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document : 5 / 4 / 44
+ Build Errors : 1 / 1 / 0
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 47 / 6 / 142
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document : 33 / 5 / 98
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-GenV2-TC-Composition : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-HAICA-TC-Composition : 0 / 0 / 1
@@ -47,8 +47,8 @@ Generated Wed Aug 18 11:25:10 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-MMWR : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-GenV2-TC-Reporting-Source : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-HAICA-TC-Reporting-Source : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 3 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient : 4 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 1 / 2 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient : 2 / 2 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-HAICA-TC-Person-Reporting : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 0 / 0 / 5
@@ -56,6 +56,7 @@ Generated Wed Aug 18 11:25:10 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cause-of-death : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cdc-address-use : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 0 / 1
@@ -69,133 +70,381 @@ Generated Wed Aug 18 11:25:10 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-diagnosticreport : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-observation : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr : 0 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 2 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-person-reporting-to-cdc : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-program-specific-time-window : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reason-not-vaccinated-per-ACIP-recommendations : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reporting-source-organization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-social-determinants-of-health : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 1 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSAddressUseVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-travel-history : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-ACIP-Recommendation : 0 / 1 / 3
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-indication : 0 / 1 / 3
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-record : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCDCAddressUseVS : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 0 / 5 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabDiagnosticReportVS : 1 / 0 / 1
- /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationResultVS : 1 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabDiagnosticReportVS : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationResultVS : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationVS : 0 / 1 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSRelatedCaseTypeVS : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 9 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSocialDeterminantsOfHealthCategoryVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSocialDeterminantsOfHealthVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSTimeWindowRelativeToVS : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: /Users/Shared/case-based-surveillance-ig/output/Bundle-GenV2-TC-Document.html#/html/body/div/div/div/div/div/div/p/a at Line 181, column 222: The link '#Organization_GenV2-TC-Reporting-Source' for "See above (Organization/GenV2-TC-Reporting-Source)" cannot be resolved (valid targets: [condition-of-interest, segment-header, publish-box, bottom, segment-post-footer, example-bundle-genv2-tc-document, ig-status, case-notification-panel, top, encounters, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, reporting])
-ERROR: /Users/Shared/case-based-surveillance-ig/output/Bundle-HAICA-TC-Document.html#/html/body/div/div/div/div/div/div/p/a at Line 181, column 222: The link '#Organization_HAICA-TC-Reporting-Source' for "See above (Organization/HAICA-TC-Reporting-Source)" cannot be resolved (valid targets: [condition-of-interest, segment-header, publish-box, bottom, segment-post-footer, ig-status, case-notification-panel, top, encounters, laboratory-related-resources, root, stripe, segment-footer, segment-navbar, segment-content, example-bundle-haica-tc-document, segment-breadcrumb, reporting])
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-GenV2-TC-Document.json ==
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-composition.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 258, column 97: The link 'http://hl7.org/fhir/us/odh/' for "Occupational Data for Health Implementation Guide" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
+WARNING: ImplementationGuide/gtri.fhir.cbs: ImplementationGuide.definition.resource[23].description: value should not start or finish with whitespace
+== fsh-generated/resources/Bundle-GenV2-TC-Document.json ==
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Unable to find a match for profile Observation/GenV2-TC-CNP among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Details for Observation/GenV2-TC-CNP matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Details for Observation/GenV2-TC-CNP matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Unable to find a match for profile Encounter/GenV2-TC-Hospitalization among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Details for Encounter/GenV2-TC-Hospitalization matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
 ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
+WARNING: Bundle/GenV2-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[1].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Bundle-HAICA-TC-Document.json ==
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/GenV2-TC-Condition matching against Profile http://hl7.org/fhir/StructureDefinition/Condition
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).focus[0]: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).focus[0]: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[0]: Details for Observation/GenV2-TC-MMWR matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[1]: Details for Observation/GenV2-TC-Exposure matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[2]: Details for Observation/GenV2-TC-CNP-Member1 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[3]: Details for Observation/GenV2-TC-CNP-Member2 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[4]: Details for Observation/GenV2-TC-CNP-Member3 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[5]: Details for Observation/GenV2-TC-CNP-Member4 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[6]: Details for Observation/GenV2-TC-CNP-Member5 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[7]: Details for Observation/GenV2-TC-CNP-Member6 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[8]: Details for Observation/GenV2-TC-CNP-Member7 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[9]: Details for Observation/GenV2-TC-CNP-Member8 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[10]: Details for Observation/GenV2-TC-CNP-Member9 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[11]: Details for Observation/GenV2-TC-CNP-Member10 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[12]: Details for Observation/GenV2-TC-CNP-Member11 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[13]: Details for Observation/GenV2-TC-CNP-Member12 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[14]: Details for Observation/GenV2-TC-CNP-Member13 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[15]: Details for Observation/GenV2-TC-CNP-Member14 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[16]: Details for Observation/GenV2-TC-CNP-Member15 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[0]: Unable to find a match for profile Observation/GenV2-TC-MMWR among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[0]: Details for Observation/GenV2-TC-MMWR matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[1]: Unable to find a match for profile Observation/GenV2-TC-Exposure among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[1]: Details for Observation/GenV2-TC-Exposure matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[2]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member1 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[2]: Details for Observation/GenV2-TC-CNP-Member1 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[3]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member2 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[3]: Details for Observation/GenV2-TC-CNP-Member2 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[4]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member3 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[4]: Details for Observation/GenV2-TC-CNP-Member3 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[5]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member4 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[5]: Details for Observation/GenV2-TC-CNP-Member4 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[6]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member5 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[6]: Details for Observation/GenV2-TC-CNP-Member5 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[7]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member6 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[7]: Details for Observation/GenV2-TC-CNP-Member6 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[8]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member7 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[8]: Details for Observation/GenV2-TC-CNP-Member7 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[9]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member8 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[9]: Details for Observation/GenV2-TC-CNP-Member8 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[10]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member9 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[10]: Details for Observation/GenV2-TC-CNP-Member9 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[11]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member10 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[11]: Details for Observation/GenV2-TC-CNP-Member10 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[12]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member11 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[12]: Details for Observation/GenV2-TC-CNP-Member11 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[13]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member12 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[13]: Details for Observation/GenV2-TC-CNP-Member12 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[14]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member13 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[14]: Details for Observation/GenV2-TC-CNP-Member13 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[15]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member14 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[15]: Details for Observation/GenV2-TC-CNP-Member14 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[16]: Unable to find a match for profile Observation/GenV2-TC-CNP-Member15 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[16]: Details for Observation/GenV2-TC-CNP-Member15 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[8].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[8].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[8].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).focus[0]: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).focus[0]: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+WARNING: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated]
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[10].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[10].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[10].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[11].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[11].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[11].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[12].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[12].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[12].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[13].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[14].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[14].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[14].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[15].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[15].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[15].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[16].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[16].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[16].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[17].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[17].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[17].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[18].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[18].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[18].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[19].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[20].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[20].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[20].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[21].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[21].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[21].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[22].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[22].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[22].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[23].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[23].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[23].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[24].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/GenV2-TC-Document: Bundle.entry[24].resource.ofType(Observation).subject: Unable to find a match for profile Patient/GenV2-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[24].resource.ofType(Observation).subject: Details for Patient/GenV2-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+== fsh-generated/resources/Bundle-HAICA-TC-Document.json ==
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Unable to find a match for profile Condition/HAICA-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Details for Condition/HAICA-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Unable to find a match for profile Observation/HAICA-TC-CNP among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Details for Observation/HAICA-TC-CNP matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Details for Observation/HAICA-TC-CNP matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Unable to find a match for profile Encounter/HAICA-TC-Hospitalization among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Details for Encounter/HAICA-TC-Hospitalization matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[4].entry[0]: Unable to find a match for profile DiagnosticReport/HAICA-TC-Lab-DiagnosticReport among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[4].entry[0]: Details for DiagnosticReport/HAICA-TC-Lab-DiagnosticReport matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[4].entry[1]: Unable to find a match for profile Observation/HAICA-TC-Lab-Observation among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[4].entry[1]: Details for Observation/HAICA-TC-Lab-Observation matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[4].entry[2]: Unable to find a match for profile Specimen/HAICA-TC-Specimen among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab, http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[4].entry[2]: Details for Specimen/HAICA-TC-Specimen matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[1].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)
-ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
-ERROR: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
+WARNING: Bundle/HAICA-TC-Document: Bundle.entry[1].resource.ofType(Patient).address[1].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/HAICA-TC-Condition matching against Profile http://hl7.org/fhir/StructureDefinition/Condition
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Unable to find a match for profile Condition/HAICA-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/HAICA-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[0]: Details for Observation/HAICA-TC-MMWR matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[1]: Details for Observation/HAICA-TC-CNP-Member1 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[2]: Details for Observation/HAICA-TC-CNP-Member2 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[3]: Details for Observation/HAICA-TC-CNP-Member3 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[4]: Details for Observation/HAICA-TC-CNP-Member4 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[5]: Details for Observation/HAICA-TC-CNP-Member5 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[6]: Details for Observation/HAICA-TC-CNP-Member6 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[0]: Unable to find a match for profile Observation/HAICA-TC-MMWR among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[0]: Details for Observation/HAICA-TC-MMWR matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[1]: Unable to find a match for profile Observation/HAICA-TC-CNP-Member1 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[1]: Details for Observation/HAICA-TC-CNP-Member1 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[2]: Unable to find a match for profile Observation/HAICA-TC-CNP-Member2 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[2]: Details for Observation/HAICA-TC-CNP-Member2 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[3]: Unable to find a match for profile Observation/HAICA-TC-CNP-Member3 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[3]: Details for Observation/HAICA-TC-CNP-Member3 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[4]: Unable to find a match for profile Observation/HAICA-TC-CNP-Member4 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[4]: Details for Observation/HAICA-TC-CNP-Member4 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[5]: Unable to find a match for profile Observation/HAICA-TC-CNP-Member5 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[5]: Details for Observation/HAICA-TC-CNP-Member5 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[6]: Unable to find a match for profile Observation/HAICA-TC-CNP-Member6 among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[6].resource.ofType(Observation).hasMember[6]: Details for Observation/HAICA-TC-CNP-Member6 matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[7].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[7].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[7].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[8].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[8].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[8].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[9].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[9].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[9].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[10].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[10].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[10].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[11].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[11].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[11].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[12].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[12].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[12].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[13].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[13].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[13].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).specimen[0]: Details for Specimen/HAICA-TC-Specimen matching against Profile http://hl7.org/fhir/StructureDefinition/Specimen
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).result[0]: Details for Observation/HAICA-TC-Lab-Observation matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).specimen[0]: Unable to find a match for profile Specimen/HAICA-TC-Specimen among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).specimen[0]: Details for Specimen/HAICA-TC-Specimen matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).result[0]: Unable to find a match for profile Observation/HAICA-TC-Lab-Observation among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[15].resource.ofType(DiagnosticReport).result[0]: Details for Observation/HAICA-TC-Lab-Observation matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
 WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).method.coding[0]: A code with no system has no defined meaning. A system should be provided
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Composition-GenV2-TC-Composition.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Composition-HAICA-TC-Composition.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-GenV2-TC-Condition.json ==
+WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated]
+ERROR: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).subject: Unable to find a match for profile Patient/HAICA-TC-Patient among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).subject: Details for Patient/HAICA-TC-Patient matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient
+== fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
+== fsh-generated/resources/Composition-GenV2-TC-Composition.json ==
+== fsh-generated/resources/Composition-HAICA-TC-Composition.json ==
+== fsh-generated/resources/Condition-GenV2-TC-Condition.json ==
 ERROR: Condition/GenV2-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Condition-HAICA-TC-Condition.json ==
+WARNING: Condition/GenV2-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
+== fsh-generated/resources/Condition-HAICA-TC-Condition.json ==
 ERROR: Condition/HAICA-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-GenV2-TC-Hospitalization.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Encounter-HAICA-TC-Hospitalization.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member1.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member10.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member11.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member12.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member13.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member14.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member15.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member2.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member3.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member4.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member5.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member6.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member7.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member8.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-CauseOfDeath.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-Exposure.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-GenV2-TC-MMWR.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member1.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member2.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member3.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member4.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member5.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-CNP-Member6.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-Lab-Observation.json ==
+WARNING: Condition/HAICA-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
+== fsh-generated/resources/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.json ==
+== fsh-generated/resources/Encounter-GenV2-TC-Hospitalization.json ==
+== fsh-generated/resources/Encounter-HAICA-TC-Hospitalization.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member1.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member10.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member11.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member12.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member13.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member14.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member15.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member2.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member3.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member4.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member5.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member6.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member7.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member8.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json ==
+== fsh-generated/resources/Observation-GenV2-TC-CauseOfDeath.json ==
+== fsh-generated/resources/Observation-GenV2-TC-Exposure.json ==
+WARNING: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated]
+== fsh-generated/resources/Observation-GenV2-TC-MMWR.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP-Member1.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP-Member2.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP-Member3.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP-Member4.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP-Member5.json ==
+== fsh-generated/resources/Observation-HAICA-TC-CNP-Member6.json ==
+== fsh-generated/resources/Observation-HAICA-TC-Lab-Observation.json ==
+WARNING: Observation/HAICA-TC-Lab-Observation: Observation.code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated]
 WARNING: Observation/HAICA-TC-Lab-Observation: Observation.method.coding[0]: A code with no system has no defined meaning. A system should be provided
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Observation-HAICA-TC-MMWR.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-GenV2-TC-Reporting-Source.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Organization-HAICA-TC-Reporting-Source.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-GenV2-TC-Patient.json ==
+== fsh-generated/resources/Observation-HAICA-TC-MMWR.json ==
+== fsh-generated/resources/Organization-GenV2-TC-Reporting-Source.json ==
+== fsh-generated/resources/Organization-HAICA-TC-Reporting-Source.json ==
+== fsh-generated/resources/Patient-GenV2-TC-Patient.json ==
 ERROR: Patient/GenV2-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
-ERROR: Patient/GenV2-TC-Patient: Patient.address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
-ERROR: Patient/GenV2-TC-Patient: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Patient-HAICA-TC-Patient.json ==
+WARNING: Patient/GenV2-TC-Patient: Patient.address[1].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Patient-HAICA-TC-Patient.json ==
 ERROR: Patient/HAICA-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2106-3) is not in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205, and a code is required from this value set.  (error message = Not in value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205)
 ERROR: Patient/HAICA-TC-Patient: Patient.extension[0].extension[1].value.ofType(Coding): The Coding provided (urn:oid:2.16.840.1.113883.6.238#2135-2) is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/us/core/ValueSet/detailed-race)
-ERROR: Patient/HAICA-TC-Patient: Patient.address[0].use: The value provided ('Address-at-Diagnosis') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Address-at-Diagnosis in http://hl7.org/fhir/address-use)
-ERROR: Patient/HAICA-TC-Patient: Patient.address[1].use: The value provided ('Usual-Residence') is not in the value set http://hl7.org/fhir/ValueSet/address-use|4.0.1 (http://hl7.org/fhir/ValueSet/address-use), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/address-use#Usual-Residence in http://hl7.org/fhir/address-use)
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Practitioner-GenV2-TC-Person-Reporting.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Practitioner-HAICA-TC-Person-Reporting.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/Specimen-HAICA-TC-Specimen.json ==
+WARNING: Patient/HAICA-TC-Patient: Patient.address[1].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Practitioner-GenV2-TC-Person-Reporting.json ==
+== fsh-generated/resources/Practitioner-HAICA-TC-Person-Reporting.json ==
+== fsh-generated/resources/Specimen-HAICA-TC-Specimen.json ==
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cause-of-death.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-cnp-member.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-composition.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-condition.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-diagnosis-date.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-document-bundle.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-epi-questionnaire-panel.json ==
+== fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
+== fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
+== fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
+== fsh-generated/resources/StructureDefinition-cbs-cause-of-death.json ==
+== fsh-generated/resources/StructureDefinition-cbs-cdc-address-use.json ==
+== fsh-generated/resources/StructureDefinition-cbs-cnp-member.json ==
+== fsh-generated/resources/StructureDefinition-cbs-composition.json ==
+== fsh-generated/resources/StructureDefinition-cbs-condition.json ==
+== fsh-generated/resources/StructureDefinition-cbs-diagnosis-date.json ==
+== fsh-generated/resources/StructureDefinition-cbs-document-bundle.json ==
+== fsh-generated/resources/StructureDefinition-cbs-epi-questionnaire-panel.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel'): The Implementation Guide contains no examples for this profile
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-ethnicity.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-hospitalization.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-illness-duration.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-lab-diagnosticreport.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-lab-observation.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-mmwr.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-patient.json ==
-ERROR: Case Based Surveillance Patient Profile.address.address.Patient.address.use: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
-ERROR: StructureDefinition/cbs-patient: StructureDefinition: Binding http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS is not a subset of binding http://hl7.org/fhir/ValueSet/address-use|4.0.1
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-performing-lab.json ==
+== fsh-generated/resources/StructureDefinition-cbs-ethnicity.json ==
+== fsh-generated/resources/StructureDefinition-cbs-exposure-observation.json ==
+== fsh-generated/resources/StructureDefinition-cbs-hospitalization.json ==
+== fsh-generated/resources/StructureDefinition-cbs-illness-duration.json ==
+== fsh-generated/resources/StructureDefinition-cbs-lab-diagnosticreport.json ==
+== fsh-generated/resources/StructureDefinition-cbs-lab-observation.json ==
+== fsh-generated/resources/StructureDefinition-cbs-mmwr.json ==
+== fsh-generated/resources/StructureDefinition-cbs-patient.json ==
+== fsh-generated/resources/StructureDefinition-cbs-performing-lab.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab'): The Implementation Guide contains no examples for this profile
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-person-reporting-to-cdc.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-race.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-related-case.json ==
+== fsh-generated/resources/StructureDefinition-cbs-person-reporting-to-cdc.json ==
+== fsh-generated/resources/StructureDefinition-cbs-program-specific-time-window.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-cbs-race.json ==
+== fsh-generated/resources/StructureDefinition-cbs-reason-not-vaccinated-per-ACIP-recommendations.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-cbs-related-case.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case'): The Implementation Guide contains no examples for this extension
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-reporting-source-organization.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/StructureDefinition-cbs-specimen-role.json ==
+== fsh-generated/resources/StructureDefinition-cbs-reporting-source-organization.json ==
+== fsh-generated/resources/StructureDefinition-cbs-social-determinants-of-health.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-cbs-specimen.json ==
+== fsh-generated/resources/StructureDefinition-cbs-specimen-role.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role'): The Implementation Guide contains no examples for this extension
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSAddressUseVS.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabDiagnosticReportVS.json ==
-ERROR: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550"
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabObservationResultVS.json ==
-ERROR: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unable to find value set "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279"
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSLabObservationVS.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSRelatedCaseTypeVS.json ==
-== /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json ==
+== fsh-generated/resources/StructureDefinition-cbs-travel-history.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-travel-history'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-cbs-vaccination-ACIP-Recommendation.json ==
+INFORMATION: StructureDefinition/cbs-vaccination-ACIP-Recommendation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/cbs-vaccination-ACIP-Recommendation: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-cbs-vaccination-indication.json ==
+INFORMATION: StructureDefinition/cbs-vaccination-indication: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/cbs-vaccination-indication: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-indication'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-cbs-vaccination-record.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-CBSCDCAddressUseVS.json ==
+== fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json ==
+== fsh-generated/resources/ValueSet-CBSLabDiagnosticReportVS.json ==
+WARNING: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.274
+== fsh-generated/resources/ValueSet-CBSLabObservationResultVS.json ==
+WARNING: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.274
+== fsh-generated/resources/ValueSet-CBSLabObservationVS.json ==
+== fsh-generated/resources/ValueSet-CBSRelatedCaseTypeVS.json ==
+== fsh-generated/resources/ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.json ==
+== fsh-generated/resources/ValueSet-CBSSocialDeterminantsOfHealthCategoryVS.json ==
+== fsh-generated/resources/ValueSet-CBSSocialDeterminantsOfHealthVS.json ==
+== fsh-generated/resources/ValueSet-CBSTimeWindowRelativeToVS.json ==

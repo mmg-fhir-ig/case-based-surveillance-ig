@@ -34,75 +34,75 @@
   fhir:Bundle.timestamp [ fhir:value "2018-11-26T00:00:00Z"^^xsd:dateTime];
   fhir:Bundle.entry [
      fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Composition-HAICA-TC-Composition.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Composition-HAICA-TC-Composition.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Composition/HAICA-TC-Composition" ];
+     fhir:Bundle.entry.resource <Composition/HAICA-TC-Composition>
   ], [
      fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Patient-HAICA-TC-Patient.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Patient-HAICA-TC-Patient.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/HAICA-TC-Patient" ];
+     fhir:Bundle.entry.resource <Patient/HAICA-TC-Patient>
   ], [
      fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Condition-HAICA-TC-Condition.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Condition-HAICA-TC-Condition.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Condition/HAICA-TC-Condition" ];
+     fhir:Bundle.entry.resource <Condition/HAICA-TC-Condition>
   ], [
      fhir:index 3;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Encounter-HAICA-TC-Hospitalization.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Encounter-HAICA-TC-Hospitalization.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Encounter/HAICA-TC-Hospitalization" ];
+     fhir:Bundle.entry.resource <Encounter/HAICA-TC-Hospitalization>
   ], [
      fhir:index 4;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Practitioner-HAICA-TC-Person-Reporting.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Practitioner-HAICA-TC-Person-Reporting.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Practitioner/HAICA-TC-Person-Reporting" ];
+     fhir:Bundle.entry.resource <Practitioner/HAICA-TC-Person-Reporting>
   ], [
      fhir:index 5;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Organization-HAICA-TC-Reporting-Source.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Organization-HAICA-TC-Reporting-Source.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/HAICA-TC-Reporting-Source" ];
+     fhir:Bundle.entry.resource <Organization/HAICA-TC-Reporting-Source>
   ], [
      fhir:index 6;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP>
   ], [
      fhir:index 7;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-MMWR.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-MMWR.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-MMWR" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-MMWR>
   ], [
      fhir:index 8;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member1.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member1.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP-Member1" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP-Member1>
   ], [
      fhir:index 9;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member2.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member2.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP-Member2" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP-Member2>
   ], [
      fhir:index 10;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member3.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member3.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP-Member3" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP-Member3>
   ], [
      fhir:index 11;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member4.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member4.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP-Member4" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP-Member4>
   ], [
      fhir:index 12;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member5.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member5.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP-Member5" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP-Member5>
   ], [
      fhir:index 13;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member6.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member6.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-CNP-Member6" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-CNP-Member6>
   ], [
      fhir:index 14;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Specimen-HAICA-TC-Specimen.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Specimen-HAICA-TC-Specimen.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Specimen/HAICA-TC-Specimen" ];
+     fhir:Bundle.entry.resource <Specimen/HAICA-TC-Specimen>
   ], [
      fhir:index 15;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport" ];
+     fhir:Bundle.entry.resource <DiagnosticReport/HAICA-TC-Lab-DiagnosticReport>
   ], [
      fhir:index 16;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-Lab-Observation.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-HAICA-TC-Lab-Observation.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HAICA-TC-Lab-Observation" ];
+     fhir:Bundle.entry.resource <Observation/HAICA-TC-Lab-Observation>
   ] .
 
-<http://cbsig.chai.gatech.edu/Composition-HAICA-TC-Composition.html> a fhir:Composition;
+<Composition/HAICA-TC-Composition> a fhir:Composition;
   fhir:Resource.id [ fhir:value "HAICA-TC-Composition"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -185,7 +185,7 @@
      ]
   ], [
      fhir:index 2;
-     fhir:Composition.section.title [ fhir:value "Encounters" ];
+     fhir:Composition.section.title [ fhir:value "History of Encounters (Hospitalizations)" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://cbsig.chai.gatech.edu/Encounter/HAICA-TC-Hospitalization>;
@@ -193,7 +193,7 @@
      ]
   ], [
      fhir:index 3;
-     fhir:Composition.section.title [ fhir:value "Reporting" ];
+     fhir:Composition.section.title [ fhir:value "Reporting Entities" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://cbsig.chai.gatech.edu/Practitioner/HAICA-TC-Person-Reporting>;
@@ -221,7 +221,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Patient-HAICA-TC-Patient.html> a fhir:Patient;
+<Patient/HAICA-TC-Patient> a fhir:Patient;
   fhir:Resource.id [ fhir:value "HAICA-TC-Patient"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -232,7 +232,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2135-2}\">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}\">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title=\"Codes: {http://hl7.org/fhir/gender-identity female}\">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li></li></ul><p><b style=\"color: maroon\">Exception generating Narrative: Unknown AddressUse code 'Address-at-Diagnosis'</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2135-2}\">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}\">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title=\"Codes: {http://hl7.org/fhir/gender-identity female}\">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -341,17 +341,23 @@
   fhir:Patient.birthDate [ fhir:value "1940-01-01"^^xsd:date];
   fhir:Patient.address [
      fhir:index 0;
-     fhir:Address.use [ fhir:value "Address-at-Diagnosis" ];
+     fhir:Address.use [ fhir:value "home" ];
      fhir:Address.district [ fhir:value "Cobb" ];
      fhir:Address.state [ fhir:value "Georgia" ];
      fhir:Address.postalCode [ fhir:value "30126" ]
   ], [
      fhir:index 1;
-     fhir:Address.use [ fhir:value "Usual-Residence" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.code [ fhir:value "Usual-Residence" ]
+       ]
+     ];
      fhir:Address.country [ fhir:value "USA" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Condition-HAICA-TC-Condition.html> a fhir:Condition;
+<Condition/HAICA-TC-Condition> a fhir:Condition;
   fhir:Resource.id [ fhir:value "HAICA-TC-Condition"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -392,7 +398,7 @@
   ];
   fhir:Condition.onsetDateTime [ fhir:value "2018-11-22"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Encounter-HAICA-TC-Hospitalization.html> a fhir:Encounter;
+<Encounter/HAICA-TC-Hospitalization> a fhir:Encounter;
   fhir:Resource.id [ fhir:value "HAICA-TC-Hospitalization"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -427,7 +433,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Practitioner-HAICA-TC-Person-Reporting.html> a fhir:Practitioner;
+<Practitioner/HAICA-TC-Person-Reporting> a fhir:Practitioner;
   fhir:Resource.id [ fhir:value "HAICA-TC-Person-Reporting"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -455,7 +461,7 @@
      fhir:ContactPoint.value [ fhir:value "count_voncount@gadph.gov" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Organization-HAICA-TC-Reporting-Source.html> a fhir:Organization;
+<Organization/HAICA-TC-Reporting-Source> a fhir:Organization;
   fhir:Resource.id [ fhir:value "HAICA-TC-Reporting-Source"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -479,7 +485,7 @@
   ];
   fhir:Organization.name [ fhir:value "Reporting Source"] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -547,7 +553,7 @@
      fhir:Reference.reference [ fhir:value "Observation/HAICA-TC-CNP-Member6" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-MMWR.html> a fhir:Observation;
+<Observation/HAICA-TC-MMWR> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-MMWR"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -607,7 +613,7 @@
      fhir:Observation.component.valueInteger [ fhir:value "2018"^^xsd:integer ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member1.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP-Member1> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -654,7 +660,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member2.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP-Member2> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -701,7 +707,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member3.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP-Member3> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member3"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -748,7 +754,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member4.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP-Member4> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member4"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -796,7 +802,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member5.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP-Member5> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member5"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -842,7 +848,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member6.html> a fhir:Observation;
+<Observation/HAICA-TC-CNP-Member6> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-CNP-Member6"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -887,7 +893,7 @@
      fhir:Quantity.code [ fhir:value "a" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Specimen-HAICA-TC-Specimen.html> a fhir:Specimen;
+<Specimen/HAICA-TC-Specimen> a fhir:Specimen;
   fhir:Resource.id [ fhir:value "HAICA-TC-Specimen"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -941,7 +947,7 @@
      fhir:Specimen.collection.collectedDateTime [ fhir:value "2018-11-24"^^xsd:date ]
   ] .
 
-<http://cbsig.chai.gatech.edu/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html> a fhir:DiagnosticReport;
+<DiagnosticReport/HAICA-TC-Lab-DiagnosticReport> a fhir:DiagnosticReport;
   fhir:Resource.id [ fhir:value "HAICA-TC-Lab-DiagnosticReport"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -986,7 +992,7 @@
      fhir:Reference.reference [ fhir:value "Observation/HAICA-TC-Lab-Observation" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-HAICA-TC-Lab-Observation.html> a fhir:Observation;
+<Observation/HAICA-TC-Lab-Observation> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HAICA-TC-Lab-Observation"];
   fhir:Resource.meta [
      fhir:Meta.profile [

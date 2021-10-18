@@ -32,7 +32,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.extension","illness-duration","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration]]} {[]}
-","Case Based Surveillance Illness Duration","Illness duration to obscure PHII in place of absokute dates.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Case Based Surveillance Illness Duration","Illness duration to obscure PHII in place of absolute dates.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.modifierExtension","","extensions

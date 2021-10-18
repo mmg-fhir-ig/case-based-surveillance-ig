@@ -59,13 +59,13 @@
     </section>
   </section>
   <section>
-    <title value="Encounters"/>
+    <title value="History of Encounters (Hospitalizations)"/>
     <entry>
       <reference value="Encounter/HAICA-TC-Hospitalization"/>
     </entry>
   </section>
   <section>
-    <title value="Reporting"/>
+    <title value="Reporting Entities"/>
     <entry>
       <reference value="Practitioner/HAICA-TC-Person-Reporting"/>
     </entry>

@@ -20,7 +20,7 @@
   <type value="document"/>
   <timestamp value="2018-11-26T00:00:00Z"/>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Composition-HAICA-TC-Composition.html"/>
+    <fullUrl value="Composition/HAICA-TC-Composition"/>
     <resource>
       <Composition>
         <id value="HAICA-TC-Composition"/>
@@ -81,13 +81,13 @@
           </section>
         </section>
         <section>
-          <title value="Encounters"/>
+          <title value="History of Encounters (Hospitalizations)"/>
           <entry>
             <reference value="Encounter/HAICA-TC-Hospitalization"/>
           </entry>
         </section>
         <section>
-          <title value="Reporting"/>
+          <title value="Reporting Entities"/>
           <entry>
             <reference value="Practitioner/HAICA-TC-Person-Reporting"/>
           </entry>
@@ -111,7 +111,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Patient-HAICA-TC-Patient.html"/>
+    <fullUrl value="Patient/HAICA-TC-Patient"/>
     <resource>
       <Patient>
         <id value="HAICA-TC-Patient"/>
@@ -119,7 +119,7 @@
           <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title="{urn:oid:2.16.840.1.113883.6.238 2106-3}">White</span></p><p><b>value</b>: <span title="{urn:oid:2.16.840.1.113883.6.238 2135-2}">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title="Codes: {http://hl7.org/fhir/gender-identity female}">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li></li></ul><p><b style="color: maroon">Exception generating Narrative: Unknown AddressUse code 'Address-at-Diagnosis'</b></p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title="{urn:oid:2.16.840.1.113883.6.238 2106-3}">White</span></p><p><b>value</b>: <span title="{urn:oid:2.16.840.1.113883.6.238 2135-2}">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title="Codes: {http://hl7.org/fhir/gender-identity female}">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>
         </text>
         <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race">
           <extension url="ombCategory">
@@ -205,20 +205,24 @@
         <gender value="female"/>
         <birthDate value="1940-01-01"/>
         <address>
-          <use value="Address-at-Diagnosis"/>
+          <use value="home"/>
           <district value="Cobb"/>
           <state value="Georgia"/>
           <postalCode value="30126"/>
         </address>
         <address>
-          <use value="Usual-Residence"/>
+          <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use">
+            <valueCoding>
+              <code value="Usual-Residence"/>
+            </valueCoding>
+          </extension>
           <country value="USA"/>
         </address>
       </Patient>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Condition-HAICA-TC-Condition.html"/>
+    <fullUrl value="Condition/HAICA-TC-Condition"/>
     <resource>
       <Condition>
         <id value="HAICA-TC-Condition"/>
@@ -253,7 +257,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Encounter-HAICA-TC-Hospitalization.html"/>
+    <fullUrl value="Encounter/HAICA-TC-Hospitalization"/>
     <resource>
       <Encounter>
         <id value="HAICA-TC-Hospitalization"/>
@@ -285,7 +289,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Practitioner-HAICA-TC-Person-Reporting.html"/>
+    <fullUrl value="Practitioner/HAICA-TC-Person-Reporting"/>
     <resource>
       <Practitioner>
         <id value="HAICA-TC-Person-Reporting"/>
@@ -308,7 +312,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Organization-HAICA-TC-Reporting-Source.html"/>
+    <fullUrl value="Organization/HAICA-TC-Reporting-Source"/>
     <resource>
       <Organization>
         <id value="HAICA-TC-Reporting-Source"/>
@@ -330,7 +334,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP"/>
@@ -384,7 +388,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-MMWR.html"/>
+    <fullUrl value="Observation/HAICA-TC-MMWR"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-MMWR"/>
@@ -434,7 +438,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member1.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP-Member1"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP-Member1"/>
@@ -474,7 +478,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member2.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP-Member2"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP-Member2"/>
@@ -514,7 +518,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member3.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP-Member3"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP-Member3"/>
@@ -554,7 +558,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member4.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP-Member4"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP-Member4"/>
@@ -594,7 +598,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member5.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP-Member5"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP-Member5"/>
@@ -633,7 +637,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member6.html"/>
+    <fullUrl value="Observation/HAICA-TC-CNP-Member6"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-CNP-Member6"/>
@@ -672,7 +676,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Specimen-HAICA-TC-Specimen.html"/>
+    <fullUrl value="Specimen/HAICA-TC-Specimen"/>
     <resource>
       <Specimen>
         <id value="HAICA-TC-Specimen"/>
@@ -720,7 +724,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html"/>
+    <fullUrl value="DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"/>
     <resource>
       <DiagnosticReport>
         <id value="HAICA-TC-Lab-DiagnosticReport"/>
@@ -756,7 +760,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/Observation-HAICA-TC-Lab-Observation.html"/>
+    <fullUrl value="Observation/HAICA-TC-Lab-Observation"/>
     <resource>
       <Observation>
         <id value="HAICA-TC-Lab-Observation"/>

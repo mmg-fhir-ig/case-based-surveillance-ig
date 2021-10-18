@@ -89,13 +89,13 @@
     </section>
   </section>
   <section>
-    <title value="Encounters"/>
+    <title value="History of Encounters (Hospitalizations)"/>
     <entry>
       <reference value="Encounter/GenV2-TC-Hospitalization"/>
     </entry>
   </section>
   <section>
-    <title value="Reporting"/>
+    <title value="Reporting Entities"/>
     <entry>
       <reference value="Practitioner/GenV2-TC-Person-Reporting"/>
     </entry>

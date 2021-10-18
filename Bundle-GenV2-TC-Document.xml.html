@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.53"}
-    h3,h4,h5,h6{--heading-prefix:"5.53"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.64"}
+    h3,h4,h5,h6{--heading-prefix:"6.64"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -99,6 +99,22 @@
       </li>
       <li>
         <a href="examples.html#hai-ca-test-case-2-candida-auris-clinical">HAICA Test Case 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mapping Guide
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mapping.html#general-guidance">General Guidance</a>
+      </li>
+      <li>
+        <a href="mapping.html#gen-v2">GenV2</a>
+      </li>
+      <li>
+        <a href="mapping.html#mumps-vaccination-history">Vaccination History (Mumps)</a>
       </li>
     </ul>
   </li>
@@ -203,8 +219,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;document&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2014-03-02T00:00:00Z&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Composition-GenV2-TC-Composition.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Composition/GenV2-TC-Composition&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition">Composition</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Composition&quot;/&gt;
@@ -297,13 +312,13 @@
           &lt;/section&gt;
         &lt;/section&gt;
         &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounters&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;History of Encounters (Hospitalizations)&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/GenV2-TC-Hospitalization&quot;/&gt;
           &lt;/entry&gt;
         &lt;/section&gt;
         &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Reporting&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Reporting Entities&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/GenV2-TC-Person-Reporting&quot;/&gt;
           &lt;/entry&gt;
@@ -315,7 +330,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Patient-GenV2-TC-Patient.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Patient/GenV2-TC-Patient&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Patient&quot;/&gt;
@@ -325,7 +340,7 @@
         &lt;/meta&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Race Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;{urn:oid:2.16.840.1.113883.6.238 2106-3}&quot;&gt;White&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;{urn:oid:2.16.840.1.113883.6.238 1010-8}&quot;&gt;Apache&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Apache&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Mixed&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Ethnicity Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}&quot;&gt;Not Hispanic or Latino&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Not Hispanic or Latino&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Sex Assigned at Birth Extension&lt;/b&gt;: &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}&quot;&gt;Female&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Birth Place&lt;/b&gt;: USA &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Zzzzz, Aaaaa&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1964-05-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;deceased&lt;/b&gt;: 2014-03-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b style=&quot;color: maroon&quot;&gt;Exception generating Narrative: Unknown AddressUse code 'Address-at-Diagnosis'&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Race Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;{urn:oid:2.16.840.1.113883.6.238 2106-3}&quot;&gt;White&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;{urn:oid:2.16.840.1.113883.6.238 1010-8}&quot;&gt;Apache&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Apache&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Mixed&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Ethnicity Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}&quot;&gt;Not Hispanic or Latino&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Not Hispanic or Latino&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Sex Assigned at Birth Extension&lt;/b&gt;: &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}&quot;&gt;Female&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Birth Place&lt;/b&gt;: USA &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Zzzzz, Aaaaa&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1964-05-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;deceased&lt;/b&gt;: 2014-03-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Texas 77018 (HOME)&lt;/li&gt;&lt;li&gt;USA &lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
         &lt;/text&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race&quot;&gt;
@@ -438,21 +453,25 @@
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1964-05-02&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">deceasedDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2014-03-02&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Address-at-Diagnosis&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Harris&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Texas&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;77018&quot;/&gt;
         &lt;/address&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Usual-Residence&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use&quot;&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Usual-Residence&quot;/&gt;
+            &lt;/valueCoding&gt;
+          &lt;/extension&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;USA&quot;/&gt;
         &lt;/address&gt;
       &lt;/Patient&gt;
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Condition-GenV2-TC-Condition.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Condition/GenV2-TC-Condition&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition">Condition</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Condition&quot;/&gt;
@@ -510,8 +529,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Encounter-GenV2-TC-Hospitalization.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Encounter/GenV2-TC-Hospitalization&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Hospitalization&quot;/&gt;
@@ -552,8 +570,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CauseOfDeath.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CauseOfDeath&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CauseOfDeath&quot;/&gt;
@@ -584,8 +601,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Practitioner-GenV2-TC-Person-Reporting.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Practitioner/GenV2-TC-Person-Reporting&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">Practitioner</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Person-Reporting&quot;/&gt;
@@ -614,8 +630,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Organization-GenV2-TC-Reporting-Source.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Organization/GenV2-TC-Reporting-Source&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Reporting-Source&quot;/&gt;
@@ -642,7 +657,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP&quot;/&gt;
@@ -728,7 +743,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-MMWR.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-MMWR&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-MMWR&quot;/&gt;
@@ -781,8 +796,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-Exposure.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-Exposure&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-Exposure&quot;/&gt;
@@ -869,8 +883,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member1.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member1&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member1&quot;/&gt;
@@ -912,8 +925,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member2.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member2&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member2&quot;/&gt;
@@ -955,8 +967,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member3.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member3&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member3&quot;/&gt;
@@ -998,8 +1009,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member4.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member4&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member4&quot;/&gt;
@@ -1041,8 +1051,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member5.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member5&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member5&quot;/&gt;
@@ -1078,8 +1087,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member6.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member6&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member6&quot;/&gt;
@@ -1115,8 +1123,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member7.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member7&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member7&quot;/&gt;
@@ -1152,8 +1159,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member8.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member8&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member8&quot;/&gt;
@@ -1189,8 +1195,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member9.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member9&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member9&quot;/&gt;
@@ -1226,8 +1231,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member10.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member10&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member10&quot;/&gt;
@@ -1287,8 +1291,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member11.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member11&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member11&quot;/&gt;
@@ -1330,8 +1333,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member12.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member12&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member12&quot;/&gt;
@@ -1373,8 +1375,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member13.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member13&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member13&quot;/&gt;
@@ -1410,8 +1411,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member14.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member14&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member14&quot;/&gt;
@@ -1453,8 +1453,7 @@
     &lt;/resource&gt;
   &lt;/entry&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member15.html&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Observation/GenV2-TC-CNP-Member15&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;GenV2-TC-CNP-Member15&quot;/&gt;
@@ -1519,7 +1518,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 18, 2021 11:20-0400">2021-08-18</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 18, 2021 11:18-0400">2021-10-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

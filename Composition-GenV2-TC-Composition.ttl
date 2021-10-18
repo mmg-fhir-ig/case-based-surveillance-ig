@@ -130,7 +130,7 @@
      ]
   ], [
      fhir:index 2;
-     fhir:Composition.section.title [ fhir:value "Encounters" ];
+     fhir:Composition.section.title [ fhir:value "History of Encounters (Hospitalizations)" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://cbsig.chai.gatech.edu/Encounter/GenV2-TC-Hospitalization>;
@@ -138,7 +138,7 @@
      ]
   ], [
      fhir:index 3;
-     fhir:Composition.section.title [ fhir:value "Reporting" ];
+     fhir:Composition.section.title [ fhir:value "Reporting Entities" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://cbsig.chai.gatech.edu/Practitioner/GenV2-TC-Person-Reporting>;

@@ -20,6 +20,14 @@
       ]
     },
     {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+      "title": "Case Based Surveillance CDC Address Use Extension",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
       "title": "Case Based Surveillance Diagnosis Date Extension",
       "types": [
@@ -94,6 +102,69 @@
       ]
     },
     {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
+      "title": "Case Based Surveillance Program Specific Time Window",
+      "types": [
+        "Quantity",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
       "title": "Case Based Surveillance Race Extension",
       "types": [
@@ -155,6 +226,14 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations",
+      "title": "Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
       ]
     },
     {
@@ -227,12 +306,16 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
-        "title": "Case Based Surveillance Lab Observation"
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-travel-history",
+        "title": "Case Based Surveillance Travel History Profile"
       },
       {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr",
-        "title": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation",
+        "title": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile"
+      },
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-indication",
+        "title": "Case Based Surveillance Vaccination Indication Profile"
       }
     ],
     "Composition": [
@@ -288,6 +371,12 @@
         "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
         "title": "Case Based Surveillance Specimen Profile"
       }
+    ],
+    "Immunization": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record",
+        "title": "Case Based Surveillance Vaccination Record Profile"
+      }
     ]
   },
   "usage": {
@@ -298,6 +387,10 @@
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status": [
       "Bundle.entry.resource",
       "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use": [
+      "Bundle.entry.resource.address",
+      "Patient.address"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date": [
       "Bundle.entry.resource",
@@ -311,9 +404,15 @@
       "Bundle.entry.resource",
       "Condition"
     ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window": [
+      "Observation"
+    ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race": [
       "Bundle.entry.resource",
       "Patient"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations": [
+      "Observation"
     ],
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case": [
       "Composition"
@@ -379,6 +478,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension": [
+      "Observation.component"
     ]
   }
 }

@@ -24,7 +24,7 @@
   "timestamp": "2018-11-26T00:00:00Z",
   "entry": [
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Composition-HAICA-TC-Composition.html",
+      "fullUrl": "Composition/HAICA-TC-Composition",
       "resource": {
         "resourceType": "Composition",
         "id": "HAICA-TC-Composition",
@@ -101,7 +101,7 @@
             ]
           },
           {
-            "title": "Encounters",
+            "title": "History of Encounters (Hospitalizations)",
             "entry": [
               {
                 "reference": "Encounter/HAICA-TC-Hospitalization"
@@ -109,7 +109,7 @@
             ]
           },
           {
-            "title": "Reporting",
+            "title": "Reporting Entities",
             "entry": [
               {
                 "reference": "Practitioner/HAICA-TC-Person-Reporting"
@@ -137,7 +137,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Patient-HAICA-TC-Patient.html",
+      "fullUrl": "Patient/HAICA-TC-Patient",
       "resource": {
         "resourceType": "Patient",
         "id": "HAICA-TC-Patient",
@@ -148,7 +148,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2135-2}\">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}\">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title=\"Codes: {http://hl7.org/fhir/gender-identity female}\">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li></li></ul><p><b style=\"color: maroon\">Exception generating Narrative: Unknown AddressUse code 'Address-at-Diagnosis'</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2135-2}\">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}\">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title=\"Codes: {http://hl7.org/fhir/gender-identity female}\">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>"
         },
         "extension": [
           {
@@ -265,20 +265,27 @@
         "birthDate": "1940-01-01",
         "address": [
           {
-            "use": "Address-at-Diagnosis",
+            "use": "home",
             "district": "Cobb",
             "state": "Georgia",
             "postalCode": "30126"
           },
           {
-            "use": "Usual-Residence",
+            "extension": [
+              {
+                "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+                "valueCoding": {
+                  "code": "Usual-Residence"
+                }
+              }
+            ],
             "country": "USA"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Condition-HAICA-TC-Condition.html",
+      "fullUrl": "Condition/HAICA-TC-Condition",
       "resource": {
         "resourceType": "Condition",
         "id": "HAICA-TC-Condition",
@@ -322,7 +329,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Encounter-HAICA-TC-Hospitalization.html",
+      "fullUrl": "Encounter/HAICA-TC-Hospitalization",
       "resource": {
         "resourceType": "Encounter",
         "id": "HAICA-TC-Hospitalization",
@@ -358,7 +365,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Practitioner-HAICA-TC-Person-Reporting.html",
+      "fullUrl": "Practitioner/HAICA-TC-Person-Reporting",
       "resource": {
         "resourceType": "Practitioner",
         "id": "HAICA-TC-Person-Reporting",
@@ -389,7 +396,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Organization-HAICA-TC-Reporting-Source.html",
+      "fullUrl": "Organization/HAICA-TC-Reporting-Source",
       "resource": {
         "resourceType": "Organization",
         "id": "HAICA-TC-Reporting-Source",
@@ -417,7 +424,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP.html",
+      "fullUrl": "Observation/HAICA-TC-CNP",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP",
@@ -481,7 +488,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-MMWR.html",
+      "fullUrl": "Observation/HAICA-TC-MMWR",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-MMWR",
@@ -545,7 +552,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member1.html",
+      "fullUrl": "Observation/HAICA-TC-CNP-Member1",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP-Member1",
@@ -595,7 +602,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member2.html",
+      "fullUrl": "Observation/HAICA-TC-CNP-Member2",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP-Member2",
@@ -645,7 +652,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member3.html",
+      "fullUrl": "Observation/HAICA-TC-CNP-Member3",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP-Member3",
@@ -695,7 +702,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member4.html",
+      "fullUrl": "Observation/HAICA-TC-CNP-Member4",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP-Member4",
@@ -745,7 +752,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member5.html",
+      "fullUrl": "Observation/HAICA-TC-CNP-Member5",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP-Member5",
@@ -794,7 +801,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-CNP-Member6.html",
+      "fullUrl": "Observation/HAICA-TC-CNP-Member6",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-CNP-Member6",
@@ -841,7 +848,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Specimen-HAICA-TC-Specimen.html",
+      "fullUrl": "Specimen/HAICA-TC-Specimen",
       "resource": {
         "resourceType": "Specimen",
         "id": "HAICA-TC-Specimen",
@@ -899,7 +906,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html",
+      "fullUrl": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport",
       "resource": {
         "resourceType": "DiagnosticReport",
         "id": "HAICA-TC-Lab-DiagnosticReport",
@@ -947,7 +954,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-HAICA-TC-Lab-Observation.html",
+      "fullUrl": "Observation/HAICA-TC-Lab-Observation",
       "resource": {
         "resourceType": "Observation",
         "id": "HAICA-TC-Lab-Observation",

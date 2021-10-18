@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2021-08-18T11:20:42-04:00",
+  "date": "2021-10-18T11:18:26-04:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -538,10 +538,80 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-social-determinants-of-health"
+        },
+        "name": "Case Based Surveillance Social Determinants of Health Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-specimen"
         },
         "name": "Case Based Surveillance Specimen Profile",
         "description": "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-travel-history"
+        },
+        "name": "Case Based Surveillance Travel History Profile",
+        "description": "Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-ACIP-Recommendation"
+        },
+        "name": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile",
+        "description": "Defines constraints on the Observation resource to capture whether subject was vaccinated per ACIP Recommendations in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-indication"
+        },
+        "name": "Case Based Surveillance Vaccination Indication Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-record"
+        },
+        "name": "Case Based Surveillance Vaccination Record Profile",
+        "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -556,6 +626,20 @@
         },
         "name": "Case Based Surveillance Sex Assigned at Birth Extension",
         "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-cdc-address-use"
+        },
+        "name": "Case Based Surveillance CDC Address Use Extension",
+        "description": "Indicates the use of the address as per information surveillance program ",
         "exampleBoolean": false
       },
       {
@@ -650,6 +734,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-program-specific-time-window"
+        },
+        "name": "Case Based Surveillance Program Specific Time Window",
+        "description": "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations"
+        },
+        "name": "Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations",
+        "description": "Reason the subject was not vaccinated per ACIP recommendations.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-related-case"
         },
         "name": "Case Based Surveillance Related Case Extension",
@@ -664,7 +776,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/CBSAddressUseVS"
+          "reference": "ValueSet/CBSCDCAddressUseVS"
         },
         "name": "Additional codes for Address.use.",
         "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
@@ -752,6 +864,48 @@
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
         "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"
+        },
+        "name": "CBS Case Social Determinants of Health Category Value Set",
+        "description": "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CBSSocialDeterminantsOfHealthVS"
+        },
+        "name": "CBS Case Social Determinants of Health Codes Value Set",
+        "description": "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CBSTimeWindowRelativeToVS"
+        },
+        "name": "CBS Time Window Relative To Value Set",
+        "description": "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative.",
         "exampleBoolean": false
       },
       {
@@ -1398,6 +1552,11 @@
         {
           "nameUrl": "examples.html",
           "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "mapping.html",
+          "title": "Mapping",
           "generation": "markdown"
         },
         {

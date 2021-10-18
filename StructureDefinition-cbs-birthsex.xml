@@ -53,7 +53,7 @@
       <path value="Extension"/>
       <short value="Case Based Surveillance Sex Assigned at Birth Extension"/>
       <definition value="A code classifying the person&#39;s sex assigned at birth."/>
-      <comment value="The codes required are intended to present birth sex (i.e., the sex recorded on the patient&#x2019;s birth certificate) and not gender identity or reassigned sex."/>
+      <comment value="The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -251,7 +251,7 @@
       <path value="Extension"/>
       <short value="Case Based Surveillance Sex Assigned at Birth Extension"/>
       <definition value="A code classifying the person&#39;s sex assigned at birth."/>
-      <comment value="The codes required are intended to present birth sex (i.e., the sex recorded on the patient&#x2019;s birth certificate) and not gender identity or reassigned sex."/>
+      <comment value="The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex."/>
       <max value="1"/>
     </element>
     <element id="Extension.extension">

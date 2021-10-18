@@ -42,6 +42,13 @@
     "name": "CaseBasedSurveillanceCauseOfDeath"
   },
   {
+    "id": "cbs-cdc-address-use",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+    "version": "0.1.0",
+    "name": "CBSCDCAddressUse"
+  },
+  {
     "id": "cbs-cnp-member",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
@@ -154,11 +161,25 @@
     "name": "CaseBasedSurveillancePersonReportingToCDC"
   },
   {
+    "id": "cbs-program-specific-time-window",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceProgramSpecificTimeWindow"
+  },
+  {
     "id": "cbs-race",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
     "version": "0.1.0",
     "name": "CBSRaceExtension"
+  },
+  {
+    "id": "cbs-reason-not-vaccinated-per-ACIP-recommendations",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceReasonNotVaccinatedPerACIPRecommendations"
   },
   {
     "id": "cbs-related-case",
@@ -175,6 +196,13 @@
     "name": "CaseBasedSurveillanceReportingSourceOrganization"
   },
   {
+    "id": "cbs-social-determinants-of-health",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceSocialDeterminantsOfHealth"
+  },
+  {
     "id": "cbs-specimen",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
@@ -189,11 +217,39 @@
     "name": "CBSSpecimenRoleExtension"
   },
   {
-    "id": "CBSAddressUseVS",
-    "type": "ValueSet",
-    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS",
+    "id": "cbs-travel-history",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-travel-history",
     "version": "0.1.0",
-    "name": "CBSAddressUseVS"
+    "name": "CaseBasedSurveillanceTravelHistory"
+  },
+  {
+    "id": "cbs-vaccination-ACIP-Recommendation",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceVaccinationACIPRecommendation"
+  },
+  {
+    "id": "cbs-vaccination-indication",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-indication",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceVaccinationIndication"
+  },
+  {
+    "id": "cbs-vaccination-record",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceVaccinationRecord"
+  },
+  {
+    "id": "CBSCDCAddressUseVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS",
+    "version": "0.1.0",
+    "name": "CBSCDCAddressUseVS"
   },
   {
     "id": "CBSCaseNotificationPanelVS",
@@ -236,5 +292,26 @@
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
     "version": "0.1.0",
     "name": "CBSSTDSexualHistoryDrugUseQuestionnaireVS"
+  },
+  {
+    "id": "CBSSocialDeterminantsOfHealthCategoryVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
+    "version": "0.1.0",
+    "name": "CBSSocialDeterminantsOfHealthCategoryVS"
+  },
+  {
+    "id": "CBSSocialDeterminantsOfHealthVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
+    "version": "0.1.0",
+    "name": "CBSSocialDeterminantsOfHealthVS"
+  },
+  {
+    "id": "CBSTimeWindowRelativeToVS",
+    "type": "ValueSet",
+    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS",
+    "version": "0.1.0",
+    "name": "CBSTimeWindowRelativeToVS"
   }
 ]

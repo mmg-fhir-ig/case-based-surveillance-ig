@@ -34,107 +34,107 @@
   fhir:Bundle.timestamp [ fhir:value "2014-03-02T00:00:00Z"^^xsd:dateTime];
   fhir:Bundle.entry [
      fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Composition-GenV2-TC-Composition.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Composition-GenV2-TC-Composition.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Composition/GenV2-TC-Composition" ];
+     fhir:Bundle.entry.resource <Composition/GenV2-TC-Composition>
   ], [
      fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Patient-GenV2-TC-Patient.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Patient-GenV2-TC-Patient.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Bundle.entry.resource <Patient/GenV2-TC-Patient>
   ], [
      fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Condition-GenV2-TC-Condition.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Condition-GenV2-TC-Condition.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Condition/GenV2-TC-Condition" ];
+     fhir:Bundle.entry.resource <Condition/GenV2-TC-Condition>
   ], [
      fhir:index 3;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Encounter-GenV2-TC-Hospitalization.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Encounter-GenV2-TC-Hospitalization.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Encounter/GenV2-TC-Hospitalization" ];
+     fhir:Bundle.entry.resource <Encounter/GenV2-TC-Hospitalization>
   ], [
      fhir:index 4;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CauseOfDeath.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CauseOfDeath.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CauseOfDeath" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CauseOfDeath>
   ], [
      fhir:index 5;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Practitioner-GenV2-TC-Person-Reporting.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Practitioner-GenV2-TC-Person-Reporting.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Practitioner/GenV2-TC-Person-Reporting" ];
+     fhir:Bundle.entry.resource <Practitioner/GenV2-TC-Person-Reporting>
   ], [
      fhir:index 6;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Organization-GenV2-TC-Reporting-Source.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Organization-GenV2-TC-Reporting-Source.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/GenV2-TC-Reporting-Source" ];
+     fhir:Bundle.entry.resource <Organization/GenV2-TC-Reporting-Source>
   ], [
      fhir:index 7;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP>
   ], [
      fhir:index 8;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-MMWR.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-MMWR.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-MMWR" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-MMWR>
   ], [
      fhir:index 9;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-Exposure.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-Exposure.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-Exposure" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-Exposure>
   ], [
      fhir:index 10;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member1.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member1.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member1" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member1>
   ], [
      fhir:index 11;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member2.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member2.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member2" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member2>
   ], [
      fhir:index 12;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member3.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member3.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member3" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member3>
   ], [
      fhir:index 13;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member4.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member4.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member4" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member4>
   ], [
      fhir:index 14;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member5.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member5.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member5" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member5>
   ], [
      fhir:index 15;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member6.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member6.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member6" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member6>
   ], [
      fhir:index 16;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member7.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member7.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member7" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member7>
   ], [
      fhir:index 17;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member8.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member8.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member8" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member8>
   ], [
      fhir:index 18;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member9.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member9.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member9" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member9>
   ], [
      fhir:index 19;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member10.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member10.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member10" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member10>
   ], [
      fhir:index 20;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member11.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member11.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member11" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member11>
   ], [
      fhir:index 21;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member12.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member12.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member12" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member12>
   ], [
      fhir:index 22;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member13.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member13.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member13" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member13>
   ], [
      fhir:index 23;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member14.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member14.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member14" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member14>
   ], [
      fhir:index 24;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member15.html" ];
-     fhir:Bundle.entry.resource <http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member15.html>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member15" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member15>
   ] .
 
-<http://cbsig.chai.gatech.edu/Composition-GenV2-TC-Composition.html> a fhir:Composition;
+<Composition/GenV2-TC-Composition> a fhir:Composition;
   fhir:Resource.id [ fhir:value "GenV2-TC-Composition"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -257,7 +257,7 @@
      ]
   ], [
      fhir:index 2;
-     fhir:Composition.section.title [ fhir:value "Encounters" ];
+     fhir:Composition.section.title [ fhir:value "History of Encounters (Hospitalizations)" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://cbsig.chai.gatech.edu/Encounter/GenV2-TC-Hospitalization>;
@@ -265,7 +265,7 @@
      ]
   ], [
      fhir:index 3;
-     fhir:Composition.section.title [ fhir:value "Reporting" ];
+     fhir:Composition.section.title [ fhir:value "Reporting Entities" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://cbsig.chai.gatech.edu/Practitioner/GenV2-TC-Person-Reporting>;
@@ -277,7 +277,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Patient-GenV2-TC-Patient.html> a fhir:Patient;
+<Patient/GenV2-TC-Patient> a fhir:Patient;
   fhir:Resource.id [ fhir:value "GenV2-TC-Patient"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -288,7 +288,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}\">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li></li></ul><p><b style=\"color: maroon\">Exception generating Narrative: Unknown AddressUse code 'Address-at-Diagnosis'</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}\">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -421,17 +421,23 @@
   fhir:Patient.deceasedDateTime [ fhir:value "2014-03-02"^^xsd:date];
   fhir:Patient.address [
      fhir:index 0;
-     fhir:Address.use [ fhir:value "Address-at-Diagnosis" ];
+     fhir:Address.use [ fhir:value "home" ];
      fhir:Address.district [ fhir:value "Harris" ];
      fhir:Address.state [ fhir:value "Texas" ];
      fhir:Address.postalCode [ fhir:value "77018" ]
   ], [
      fhir:index 1;
-     fhir:Address.use [ fhir:value "Usual-Residence" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.code [ fhir:value "Usual-Residence" ]
+       ]
+     ];
      fhir:Address.country [ fhir:value "USA" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Condition-GenV2-TC-Condition.html> a fhir:Condition;
+<Condition/GenV2-TC-Condition> a fhir:Condition;
   fhir:Resource.id [ fhir:value "GenV2-TC-Condition"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -492,7 +498,7 @@
   fhir:Condition.onsetDateTime [ fhir:value "2014-02-24"^^xsd:date];
   fhir:Condition.abatementDateTime [ fhir:value "2014-03-02"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Encounter-GenV2-TC-Hospitalization.html> a fhir:Encounter;
+<Encounter/GenV2-TC-Hospitalization> a fhir:Encounter;
   fhir:Resource.id [ fhir:value "GenV2-TC-Hospitalization"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -534,7 +540,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CauseOfDeath.html> a fhir:Observation;
+<Observation/GenV2-TC-CauseOfDeath> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CauseOfDeath"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -568,7 +574,7 @@
      fhir:Reference.display [ fhir:value "GenV2-TC Example Condition of Interest" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Practitioner-GenV2-TC-Person-Reporting.html> a fhir:Practitioner;
+<Practitioner/GenV2-TC-Person-Reporting> a fhir:Practitioner;
   fhir:Resource.id [ fhir:value "GenV2-TC-Person-Reporting"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -600,7 +606,7 @@
      fhir:ContactPoint.value [ fhir:value "jsmith@txdoh.org" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Organization-GenV2-TC-Reporting-Source.html> a fhir:Organization;
+<Organization/GenV2-TC-Reporting-Source> a fhir:Organization;
   fhir:Resource.id [ fhir:value "GenV2-TC-Reporting-Source"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -628,7 +634,7 @@
      fhir:Address.postalCode [ fhir:value "77018" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -736,7 +742,7 @@
      fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member15" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-MMWR.html> a fhir:Observation;
+<Observation/GenV2-TC-MMWR> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-MMWR"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -796,7 +802,7 @@
      fhir:Observation.component.valueInteger [ fhir:value "2014"^^xsd:integer ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-Exposure.html> a fhir:Observation;
+<Observation/GenV2-TC-Exposure> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-Exposure"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -898,7 +904,7 @@
      fhir:Observation.component.valueString [ fhir:value "Harris" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member1.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member1> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -945,7 +951,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member2.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member2> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -992,7 +998,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member3.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member3> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member3"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1039,7 +1045,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member4.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member4> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member4"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1086,7 +1092,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member5.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member5> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member5"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1126,7 +1132,7 @@
   ];
   fhir:Observation.valueString [ fhir:value "S01"] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member6.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member6> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member6"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1166,7 +1172,7 @@
   ];
   fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member7.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member7> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member7"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1206,7 +1212,7 @@
   ];
   fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member8.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member8> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member8"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1246,7 +1252,7 @@
   ];
   fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member9.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member9> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member9"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1286,7 +1292,7 @@
   ];
   fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member10.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member10> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member10"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1354,7 +1360,7 @@
      fhir:Observation.component.valueString [ fhir:value "HANSENOUTB1" ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member11.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member11> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member11"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1401,7 +1407,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member12.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member12> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member12"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1449,7 +1455,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member13.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member13> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member13"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1489,7 +1495,7 @@
   ];
   fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member14.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member14> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member14"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -1536,7 +1542,7 @@
      ]
   ] .
 
-<http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member15.html> a fhir:Observation;
+<Observation/GenV2-TC-CNP-Member15> a fhir:Observation;
   fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member15"];
   fhir:Resource.meta [
      fhir:Meta.profile [

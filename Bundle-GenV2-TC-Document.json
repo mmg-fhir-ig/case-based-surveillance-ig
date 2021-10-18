@@ -24,7 +24,7 @@
   "timestamp": "2014-03-02T00:00:00Z",
   "entry": [
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Composition-GenV2-TC-Composition.html",
+      "fullUrl": "Composition/GenV2-TC-Composition",
       "resource": {
         "resourceType": "Composition",
         "id": "GenV2-TC-Composition",
@@ -131,7 +131,7 @@
             ]
           },
           {
-            "title": "Encounters",
+            "title": "History of Encounters (Hospitalizations)",
             "entry": [
               {
                 "reference": "Encounter/GenV2-TC-Hospitalization"
@@ -139,7 +139,7 @@
             ]
           },
           {
-            "title": "Reporting",
+            "title": "Reporting Entities",
             "entry": [
               {
                 "reference": "Practitioner/GenV2-TC-Person-Reporting"
@@ -153,7 +153,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Patient-GenV2-TC-Patient.html",
+      "fullUrl": "Patient/GenV2-TC-Patient",
       "resource": {
         "resourceType": "Patient",
         "id": "GenV2-TC-Patient",
@@ -164,7 +164,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}\">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li></li></ul><p><b style=\"color: maroon\">Exception generating Narrative: Unknown AddressUse code 'Address-at-Diagnosis'</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}\">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>"
         },
         "extension": [
           {
@@ -304,20 +304,27 @@
         "deceasedDateTime": "2014-03-02",
         "address": [
           {
-            "use": "Address-at-Diagnosis",
+            "use": "home",
             "district": "Harris",
             "state": "Texas",
             "postalCode": "77018"
           },
           {
-            "use": "Usual-Residence",
+            "extension": [
+              {
+                "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+                "valueCoding": {
+                  "code": "Usual-Residence"
+                }
+              }
+            ],
             "country": "USA"
           }
         ]
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Condition-GenV2-TC-Condition.html",
+      "fullUrl": "Condition/GenV2-TC-Condition",
       "resource": {
         "resourceType": "Condition",
         "id": "GenV2-TC-Condition",
@@ -382,7 +389,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Encounter-GenV2-TC-Hospitalization.html",
+      "fullUrl": "Encounter/GenV2-TC-Hospitalization",
       "resource": {
         "resourceType": "Encounter",
         "id": "GenV2-TC-Hospitalization",
@@ -425,7 +432,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CauseOfDeath.html",
+      "fullUrl": "Observation/GenV2-TC-CauseOfDeath",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CauseOfDeath",
@@ -460,7 +467,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Practitioner-GenV2-TC-Person-Reporting.html",
+      "fullUrl": "Practitioner/GenV2-TC-Person-Reporting",
       "resource": {
         "resourceType": "Practitioner",
         "id": "GenV2-TC-Person-Reporting",
@@ -495,7 +502,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Organization-GenV2-TC-Reporting-Source.html",
+      "fullUrl": "Organization/GenV2-TC-Reporting-Source",
       "resource": {
         "resourceType": "Organization",
         "id": "GenV2-TC-Reporting-Source",
@@ -528,7 +535,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP.html",
+      "fullUrl": "Observation/GenV2-TC-CNP",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP",
@@ -622,7 +629,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-MMWR.html",
+      "fullUrl": "Observation/GenV2-TC-MMWR",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-MMWR",
@@ -686,7 +693,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-Exposure.html",
+      "fullUrl": "Observation/GenV2-TC-Exposure",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-Exposure",
@@ -794,7 +801,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member1.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member1",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member1",
@@ -844,7 +851,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member2.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member2",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member2",
@@ -894,7 +901,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member3.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member3",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member3",
@@ -944,7 +951,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member4.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member4",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member4",
@@ -994,7 +1001,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member5.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member5",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member5",
@@ -1036,7 +1043,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member6.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member6",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member6",
@@ -1078,7 +1085,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member7.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member7",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member7",
@@ -1120,7 +1127,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member8.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member8",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member8",
@@ -1162,7 +1169,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member9.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member9",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member9",
@@ -1204,7 +1211,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member10.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member10",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member10",
@@ -1277,7 +1284,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member11.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member11",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member11",
@@ -1327,7 +1334,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member12.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member12",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member12",
@@ -1377,7 +1384,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member13.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member13",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member13",
@@ -1419,7 +1426,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member14.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member14",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member14",
@@ -1469,7 +1476,7 @@
       }
     },
     {
-      "fullUrl": "http://cbsig.chai.gatech.edu/Observation-GenV2-TC-CNP-Member15.html",
+      "fullUrl": "Observation/GenV2-TC-CNP-Member15",
       "resource": {
         "resourceType": "Observation",
         "id": "GenV2-TC-CNP-Member15",

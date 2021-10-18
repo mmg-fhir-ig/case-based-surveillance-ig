@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CBSSocialDeterminantsOfHealthVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76690-7.html\">76690-7</a></td><td>Sexual orientation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76691-5.html\">76691-5</a></td><td>Gender identity</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/75274-1.html\">75274-1</a></td><td>Characteristics of residence</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45361006\">45361006</a></td><td>Incarceration</td></tr></table></li></ul></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
+  "version": "0.1.0",
+  "name": "CBSSocialDeterminantsOfHealthVS",
+  "title": "CBS Case Social Determinants of Health Codes Value Set",
+  "status": "active",
+  "date": "2021-10-18T11:18:26-04:00",
+  "publisher": "Georgia Tech Research Institute (GTRI)",
+  "contact": [
+    {
+      "name": "Georgia Tech Research Institute (GTRI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gtri.gatech.edu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "76690-7",
+            "display": "Sexual orientation"
+          },
+          {
+            "code": "76691-5",
+            "display": "Gender identity"
+          },
+          {
+            "code": "75274-1",
+            "display": "Characteristics of residence"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "45361006",
+            "display": "Incarceration"
+          }
+        ]
+      }
+    ]
+  }
+}

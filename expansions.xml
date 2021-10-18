@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="757db578-6cca-4795-9578-6075f1b91425"/>
+  <id value="4cfaf4c1-0ffe-4b11-8e93-93ac53a91f40"/>
   <meta>
-    <lastUpdated value="2021-08-18T11:20:42.307-04:00"/>
+    <lastUpdated value="2021-10-18T11:18:26.778-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS"/>
+    <fullUrl value="http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS"/>
     <resource>
       <ValueSet>
-        <id value="CBSAddressUseVS"/>
+        <id value="CBSCDCAddressUseVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 7 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>
-                  <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/codesystem-address-use.html">AddressUse v4.0.1 (CodeSystem)</a>
-                </li>
-              </ul>
-            </div>
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-cbs-temp-code-system.html">
+                <code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code>
+              </a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -43,55 +37,9 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-address-use-home"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home">home</a>
-                </td>
-                <td>http://hl7.org/fhir/address-use</td>
-                <td>Home</td>
-                <td>A communication address at a home.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-address-use-work"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work">work</a>
-                </td>
-                <td>http://hl7.org/fhir/address-use</td>
-                <td>Work</td>
-                <td>An office address. First choice for business related contacts during business hours.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-address-use-temp"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp">temp</a>
-                </td>
-                <td>http://hl7.org/fhir/address-use</td>
-                <td>Temporary</td>
-                <td>A temporary address. The period can provide more detailed information.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-address-use-old"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old">old</a>
-                </td>
-                <td>http://hl7.org/fhir/address-use</td>
-                <td>Old / Incorrect</td>
-                <td>This address is no longer in use (or was never correct but retained for records).</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-address-use-billing"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-billing">billing</a>
-                </td>
-                <td>http://hl7.org/fhir/address-use</td>
-                <td>Billing</td>
-                <td>An address to be used to send bills, invoices, receipts etc.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-Address-at-Diagnosis"> </a>
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Address-at-Diagnosis">Address-at-Diagnosis</a>
                 </td>
-                <td>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</td>
                 <td>Address at Diagnosis of Condition of Interest</td>
                 <td>Subject&#39;s address at the time of the diagnosis for the condition of interest.</td>
               </tr>
@@ -100,19 +48,18 @@
                   <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-Usual-Residence"> </a>
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-Usual-Residence">Usual-Residence</a>
                 </td>
-                <td>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</td>
                 <td>Address of Usual Residence</td>
                 <td>Subject&#39;s location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), &#39;Country of Usual Residence&#39;. The meaning of &#39;usual residence&#39; is defined as per surveillance programs.</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSAddressUseVS"/>
+        <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS"/>
         <version value="0.1.0"/>
-        <name value="CBSAddressUseVS"/>
+        <name value="CBSCDCAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-08-18T11:20:42-04:00"/>
+        <date value="2021-10-18T11:18:26-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -123,46 +70,17 @@
         </contact>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:89ba3cea-f132-4446-a62d-e43cec4fd1e6"/>
-          <timestamp value="2021-08-18T11:24:10-04:00"/>
-          <total value="7"/>
+          <identifier value="urn:uuid:02b7daf1-7e53-4a05-8c66-f2577531ab6c"/>
+          <timestamp value="2021-10-18T11:20:15-04:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/address-use|4.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.1.0"/>
           </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/address-use"/>
-            <code value="home"/>
-            <display value="Home"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/address-use"/>
-            <code value="work"/>
-            <display value="Work"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/address-use"/>
-            <code value="temp"/>
-            <display value="Temporary"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/address-use"/>
-            <code value="old"/>
-            <display value="Old / Incorrect"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/address-use"/>
-            <code value="billing"/>
-            <display value="Billing"/>
-          </contains>
           <contains>
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
             <code value="Address-at-Diagnosis"/>
@@ -189,7 +107,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-cbs-temp-code-system.html">
                 <code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code>
               </a>
@@ -238,7 +156,7 @@
         <name value="CBSRelatedCaseTypeVS"/>
         <title value="CBS Related Case Type Value Set"/>
         <status value="active"/>
-        <date value="2021-08-18T11:20:42-04:00"/>
+        <date value="2021-10-18T11:18:26-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -249,8 +167,8 @@
         </contact>
         <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
         <expansion>
-          <identifier value="urn:uuid:85316b8f-2a21-419f-8e51-24227a941808"/>
-          <timestamp value="2021-08-18T11:24:23-04:00"/>
+          <identifier value="urn:uuid:58bc5ff5-1e63-4f92-aece-e01de3751740"/>
+          <timestamp value="2021-10-18T11:20:28-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -274,6 +192,343 @@
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
             <code value="parent-congential-syphilis"/>
             <display value="Parent in Congenital Syphilis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"/>
+    <resource>
+      <ValueSet>
+        <id value="CBSSocialDeterminantsOfHealthCategoryVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-cbs-temp-code-system.html">
+                <code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-sogi"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-sogi">sogi</a>
+                </td>
+                <td>Sexual Orientation and Gender Identity</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-housing-or-residence"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-housing-or-residence">housing-or-residence</a>
+                </td>
+                <td>Housing Insecurity or Residence Characteristics</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-education"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-education">education</a>
+                </td>
+                <td>Education Level</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-food-insecurity"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-food-insecurity">food-insecurity</a>
+                </td>
+                <td>Food Insecurity</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"/>
+        <version value="0.1.0"/>
+        <name value="CBSSocialDeterminantsOfHealthCategoryVS"/>
+        <title value="CBS Case Social Determinants of Health Category Value Set"/>
+        <status value="active"/>
+        <date value="2021-10-18T11:18:26-04:00"/>
+        <publisher value="Georgia Tech Research Institute (GTRI)"/>
+        <contact>
+          <name value="Georgia Tech Research Institute (GTRI)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://gtri.gatech.edu/"/>
+          </telecom>
+        </contact>
+        <description value="Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
+        <expansion>
+          <identifier value="urn:uuid:b7a46d21-61a1-406c-a221-4e9a87ae4c63"/>
+          <timestamp value="2021-10-18T11:20:29-04:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="sogi"/>
+            <display value="Sexual Orientation and Gender Identity"/>
+          </contains>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="housing-or-residence"/>
+            <display value="Housing Insecurity or Residence Characteristics"/>
+          </contains>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="education"/>
+            <display value="Education Level"/>
+          </contains>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="food-insecurity"/>
+            <display value="Food Insecurity"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS"/>
+    <resource>
+      <ValueSet>
+        <id value="CBSSocialDeterminantsOfHealthVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.71</li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-76690-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/76690-7.html">76690-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Sexual orientation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-76691-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/76691-5.html">76691-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Gender identity</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-75274-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/75274-1.html">75274-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Characteristics of residence</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-45361006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45361006">45361006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Imprisonment</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS"/>
+        <version value="0.1.0"/>
+        <name value="CBSSocialDeterminantsOfHealthVS"/>
+        <title value="CBS Case Social Determinants of Health Codes Value Set"/>
+        <status value="active"/>
+        <date value="2021-10-18T11:18:26-04:00"/>
+        <publisher value="Georgia Tech Research Institute (GTRI)"/>
+        <contact>
+          <name value="Georgia Tech Research Institute (GTRI)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://gtri.gatech.edu/"/>
+          </telecom>
+        </contact>
+        <description value="Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
+        <expansion>
+          <identifier value="urn:uuid:52cad6d2-01a4-434c-9e66-c91cdaaabd5f"/>
+          <timestamp value="2021-10-18T11:20:29-04:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://loinc.org|2.71"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="76690-7"/>
+            <display value="Sexual orientation"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="76691-5"/>
+            <display value="Gender identity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="75274-1"/>
+            <display value="Characteristics of residence"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="45361006"/>
+            <display value="Imprisonment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS"/>
+    <resource>
+      <ValueSet>
+        <id value="CBSTimeWindowRelativeToVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-cbs-temp-code-system.html">
+                <code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-conditionOnsetDatePeriodStart"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDatePeriodStart">conditionOnsetDatePeriodStart</a>
+                </td>
+                <td>Condition.onsetDatePeriod.start</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-conditionOnsetDateTime"> </a>
+                  <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDateTime">conditionOnsetDateTime</a>
+                </td>
+                <td>Condition.onsetDateTime</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS"/>
+        <version value="0.1.0"/>
+        <name value="CBSTimeWindowRelativeToVS"/>
+        <title value="CBS Time Window Relative To Value Set"/>
+        <status value="active"/>
+        <date value="2021-10-18T11:18:26-04:00"/>
+        <publisher value="Georgia Tech Research Institute (GTRI)"/>
+        <contact>
+          <name value="Georgia Tech Research Institute (GTRI)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://gtri.gatech.edu/"/>
+          </telecom>
+        </contact>
+        <description value="Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative."/>
+        <expansion>
+          <identifier value="urn:uuid:1febe54c-be53-410f-ab00-29c1b4aeaaea"/>
+          <timestamp value="2021-10-18T11:20:29-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="conditionOnsetDatePeriodStart"/>
+            <display value="Condition.onsetDatePeriod.start"/>
+          </contains>
+          <contains>
+            <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+            <code value="conditionOnsetDateTime"/>
+            <display value="Condition.onsetDateTime"/>
           </contains>
         </expansion>
       </ValueSet>

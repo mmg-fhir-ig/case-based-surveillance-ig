@@ -566,7 +566,7 @@
         "path": "Condition.extension",
         "sliceName": "illness-duration",
         "short": "Case Based Surveillance Illness Duration",
-        "definition": "Illness duration to obscure PHII in place of absokute dates.",
+        "definition": "Illness duration to obscure PHII in place of absolute dates.",
         "min": 0,
         "max": "1",
         "base": {
