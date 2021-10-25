@@ -21,7 +21,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * subject only Reference(cbs-patient)
 * date 1..1 MS
 * author 1..* MS 
-* author only Reference(cbs-reporting-source-organization) // Need to change, only here for buidling purposes 
+* author only Reference(Organization) // Need to change, only here for buidling purposes 
 * title 1..1 MS
 * title = "Case Based Surveillance Composition"
 
@@ -34,18 +34,62 @@ Description: "Defines constraints to the Composition resource in order to meet t
     conditionOfInterest 1..1 MS and
     encounters 0..1 MS and
     caseNotification 1..1 MS and
-    epi 0..1 MS and 
+    reportingEntities 0..1 MS and
+    epiQuestions 0..1 MS and 
     occupationalData 0..1 MS and
     travelHistory 0..1 MS and
-    lab 0..1 MS and
+    sdoh 0..1 MS and
+    labRelated 0..1 MS and
     medicationAdministered 0..1 MS and
+    vaccination 0..1 MS and
     relatedPerson 0..1 MS and
     vitalRecordsReporting 0..1 MS
 
-* section[conditionOfInterest].entry only Reference(cbs-condition)
-* section[encounters].entry only Reference(cbs-hospitalization)
-* section[caseNotification].entry only Reference(cbs-case-notification-panel)
-* section[caseNotification].section.entry only Reference(cbs-cnp-member)
-* section[epi].entry only Reference(cbs-epi-questionnaire-panel)
-* section[occupationalData].entry only Reference($odh-PastOrPresentJob)
-* section[travelHistory].entry only Reference($ecr-travel-history)
+* section[conditionOfInterest]
+  * title = "Condition of Interest"
+  * code = cbs-temp-code-system#condition-of-interest "Condition of Interest/Reportable Condition"
+  * entry only Reference(cbs-condition)
+* section[caseNotification]
+  * title = "Case Notification Panel"
+  * code = cbs-temp-code-system#case-notification-panel "Case Notification Panel"
+  * entry only Reference(cbs-case-notification-panel or cbs-cnp-member)
+* section[reportingEntities]
+  * title = "Reporting Entities"
+  * code = cbs-temp-code-system#reporting-entities "Reporting Entities"
+  * entry only Reference(cbs-person-reporting-to-cdc or cbs-reporting-source-organization)
+* section[encounters]
+  * title = "History of Encounters (Hospitalizations)"
+  * code = cbs-temp-code-system#history-of-encounters "History of Encounters (Hospitalizations)"
+  * entry only Reference(cbs-hospitalization)
+* section[epiQuestions]
+  * title = "Epi Questionnaires and Observations"
+  * code = cbs-temp-code-system#epi-questions "Epi Questionnaires and Observations"
+  * entry only Reference(cbs-epi-questionnaire-panel)
+* section[occupationalData]
+  * title = "Occupational Data"
+  * code = cbs-temp-code-system#occupational-data "Occupational Data"
+  * entry only Reference($odh-PastOrPresentJob)
+* section[travelHistory]
+  * title = "Travel History"
+  * code = cbs-temp-code-system#travel-history "Travel History"
+  * entry only Reference(cbs-travel-history)
+* section[sdoh]
+  * title = "Social Determinants of Health"
+  * code = cbs-temp-code-system#social-determinants-of-health "Social Determinants of Health"
+  * entry only Reference(cbs-social-determinants-of-health)
+* section[labRelated]
+  * title = "Laboratory Related Resources"
+  * code = cbs-temp-code-system#lab-related "Laboratory Related"
+  * entry only Reference(cbs-lab-diagnosticreport or cbs-lab-observation or cbs-performing-lab or cbs-specimen)
+* section[medicationAdministered]
+  * title = "Medication Administered"
+  * code = cbs-temp-code-system#medication-administered "Medication Administered"
+* section[vaccination]
+  * title = "Vaccinations"
+  * code = cbs-temp-code-system#vaccinations "Vaccinations"
+* section[relatedPerson]
+  * title = "Related Persons"
+  * code = cbs-temp-code-system#related-persons "Related Persons"
+* section[vitalRecordsReporting]
+  * title = "Vital Records Reporting"
+  * code = cbs-temp-code-system#vital-records "Vital Records Reporting (Death, Birth, or Fetal Death)"

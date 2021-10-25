@@ -46,7 +46,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Case Based Surveillance Illness Duration",
-        "definition": "Illness duration to obscure PHII in place of absokute dates."
+        "definition": "Illness duration to obscure PHII in place of absolute dates."
       },
       {
         "id": "Extension.extension",

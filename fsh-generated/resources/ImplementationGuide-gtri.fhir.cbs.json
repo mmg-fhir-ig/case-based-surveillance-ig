@@ -61,6 +61,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-case-notification-panel"
+        },
+        "name": "Case Based Surveillance Case Notification Panel Profile",
+        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-cnp-member"
         },
         "name": "Case Based Surveillance Case Notification Panel Member",
@@ -89,6 +97,14 @@
         },
         "name": "Case Based Surveillance Condition of Interest Profile",
         "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-document-bundle"
+        },
+        "name": "Case Based Surveillance Document Profile",
+        "description": "Defines a document type bundle that contains all related profiles.",
         "exampleBoolean": false
       },
       {
@@ -165,6 +181,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-social-determinants-of-health"
+        },
+        "name": "Case Based Surveillance Social Determinants of Health Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-specimen"
         },
         "name": "Case Based Surveillance Specimen Profile",
@@ -173,10 +197,34 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-case-notification-panel"
+          "reference": "StructureDefinition/cbs-travel-history"
         },
-        "name": "Case Based Surveillance Case Notification Panel Profile",
-        "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
+        "name": "Case Based Surveillance Travel History Profile",
+        "description": "Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-ACIP-Recommendation"
+        },
+        "name": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile",
+        "description": "Defines constraints on the Observation resource to capture whether subject was vaccinated per ACIP Recommendations in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-indication"
+        },
+        "name": "Case Based Surveillance Vaccination Indication Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-record"
+        },
+        "name": "Case Based Surveillance Vaccination Record Profile",
+        "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -185,6 +233,14 @@
         },
         "name": "Case Based Surveillance Sex Assigned at Birth Extension",
         "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-cdc-address-use"
+        },
+        "name": "Case Based Surveillance CDC Address Use Extension",
+        "description": "Indicates the use of the address as per information surveillance program ",
         "exampleBoolean": false
       },
       {
@@ -237,6 +293,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cbs-program-specific-time-window"
+        },
+        "name": "Case Based Surveillance Program Specific Time Window",
+        "description": "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations"
+        },
+        "name": "Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations",
+        "description": "Reason the subject was not vaccinated per ACIP recommendations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cbs-related-case"
         },
         "name": "Case Based Surveillance Related Case Extension",
@@ -245,7 +317,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/CBSAddressUseVS"
+          "reference": "ValueSet/CBSCDCAddressUseVS"
         },
         "name": "Additional codes for Address.use.",
         "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
@@ -297,6 +369,30 @@
         },
         "name": "STD Sexual History and Drug Use Questionnaire Panel",
         "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"
+        },
+        "name": "CBS Case Social Determinants of Health Category Value Set",
+        "description": "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSSocialDeterminantsOfHealthVS"
+        },
+        "name": "CBS Case Social Determinants of Health Codes Value Set",
+        "description": "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CBSTimeWindowRelativeToVS"
+        },
+        "name": "CBS Time Window Relative To Value Set",
+        "description": "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative.",
         "exampleBoolean": false
       },
       {
@@ -445,11 +541,27 @@
       },
       {
         "reference": {
+          "reference": "Composition/GenV2-TC-Composition"
+        },
+        "name": "GenV2-TC-Composition",
+        "description": "Composition resource for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "reference": {
           "reference": "Condition/GenV2-TC-Condition"
         },
         "name": "GenV2-TC-Condition",
         "description": "Condition of interest resource for the GenV2 Test Case 1 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/GenV2-TC-Document"
+        },
+        "name": "GenV2-TC-Document",
+        "description": "Document bundle for the GenV2 Test Case 1 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
       },
       {
         "reference": {
@@ -557,6 +669,14 @@
       },
       {
         "reference": {
+          "reference": "Composition/HAICA-TC-Composition"
+        },
+        "name": "HAICA-TC-Composition",
+        "description": "Composition resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "reference": {
           "reference": "Condition/HAICA-TC-Condition"
         },
         "name": "HAICA-TC-Condition",
@@ -565,11 +685,27 @@
       },
       {
         "reference": {
+          "reference": "Bundle/HAICA-TC-Document"
+        },
+        "name": "HAICA-TC-Document",
+        "description": "Document bundle for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
+      },
+      {
+        "reference": {
           "reference": "Encounter/HAICA-TC-Hospitalization"
         },
         "name": "HAICA-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/HAICA-TC-Lab-DiagnosticReport"
+        },
+        "name": "HAICA-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the HAI-CA Test Case 2.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
       },
       {
         "reference": {
@@ -605,6 +741,14 @@
       },
       {
         "reference": {
+          "reference": "Organization/HAICA-TC-Reporting-Source"
+        },
+        "name": "HAICA-TC-Reporting-Source",
+        "description": "Reporting source example resource for the HAICA Test Case 2",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "reference": {
           "reference": "Specimen/HAICA-TC-Specimen"
         },
         "name": "HAICA-TC-Specimen",
@@ -625,6 +769,11 @@
         {
           "nameUrl": "examples.html",
           "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "mapping.html",
+          "title": "Mapping",
           "generation": "markdown"
         },
         {

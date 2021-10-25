@@ -83,7 +83,83 @@
     {
       "code": "parent-congential-syphilis",
       "display": "Parent in Congenital Syphilis"
+    },
+    {
+      "code": "conditionOnsetDateTime",
+      "display": "Condition.onsetDateTime"
+    },
+    {
+      "code": "conditionOnsetDatePeriodStart",
+      "display": "Condition.onsetDatePeriod.start"
+    },
+    {
+      "code": "sogi",
+      "display": "Sexual Orientation and Gender Identity"
+    },
+    {
+      "code": "housing-or-residence",
+      "display": "Housing Insecurity or Residence Characteristics"
+    },
+    {
+      "code": "education",
+      "display": "Education Level"
+    },
+    {
+      "code": "food-insecurity",
+      "display": "Food Insecurity"
+    },
+    {
+      "code": "condition-of-interest",
+      "display": "Condition of Interest/Reportable Condition"
+    },
+    {
+      "code": "case-notification-panel",
+      "display": "Case Notification Panel"
+    },
+    {
+      "code": "reporting-entities",
+      "display": "Reporting Entities"
+    },
+    {
+      "code": "history-of-encounters",
+      "display": "History of Encounters (Hospitalizations)"
+    },
+    {
+      "code": "epi-questions",
+      "display": "Epi Questionnaires and Observations"
+    },
+    {
+      "code": "occupational-data",
+      "display": "Occupational Data"
+    },
+    {
+      "code": "travel-history",
+      "display": "Travel History"
+    },
+    {
+      "code": "social-determinants-of-health",
+      "display": "Social Determinants of Health"
+    },
+    {
+      "code": "lab-related",
+      "display": "Laboratory Related"
+    },
+    {
+      "code": "medication-administered",
+      "display": "Medication Administered"
+    },
+    {
+      "code": "vaccinations",
+      "display": "Vaccinations"
+    },
+    {
+      "code": "related-persons",
+      "display": "Related Persons"
+    },
+    {
+      "code": "vital-records",
+      "display": "Vital Records Reporting (Death, Birth, or Fetal Death)"
     }
   ],
-  "count": 16
+  "count": 35
 }

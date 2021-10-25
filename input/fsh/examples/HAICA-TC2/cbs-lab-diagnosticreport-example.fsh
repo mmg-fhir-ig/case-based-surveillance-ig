@@ -1,4 +1,3 @@
-// DO NOT USE FOR NOW, ISSUE IS BEING RESOLVED WITH PUBLISHER
 Instance: HAICA-TC-Lab-DiagnosticReport
 InstanceOf: cbs-lab-diagnosticreport
 Usage: #example

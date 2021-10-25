@@ -2,6 +2,9 @@ The following examples are provided as part of this implementation guide.
 
 ### GenV2 Test Case 1: Hemolytic Uremic Syndrome (HUS)
 
+View the diagram of this example case here:
+[GenV2 Test Case 1 Diagram](genv2-test-case-diagram.png)
+
 **[Patient](Patient-GenV2-TC-Patient.html)**
 
 **[Condition of Interest](Condition-GenV2-TC-Condition.html)**
@@ -34,7 +37,14 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-GenV2-TC-CNP-Member14.html)**
   * **[CNP Member: Age at time of case investigation](Observation-GenV2-TC-CNP-Member15.html)**
 
+**[Composition](Composition-GenV2-TC-Composition.html)**
+
+**[Document Bundle](Bundle-GenV2-TC-Document.html)**
+
 ### HAI-CA Test Case 2: Candida auris, Clinical
+
+View the diagram of this example case here:
+[HAI-CA Test Case 2 Diagram](haica-test-case-diagram.png)
 
 **[Patient](Patient-HAICA-TC-Patient.html)**
 
@@ -43,6 +53,8 @@ The following examples are provided as part of this implementation guide.
 **[Hospitalization Encounter](Encounter-HAICA-TC-Hospitalization.html)**
 
 **[Person Reporting to the CDC](Practitioner-HAICA-TC-Person-Reporting.html)**
+
+**[Reporting Source](Organization-HAICA-TC-Reporting-Source.html)**
 
 **[Case Notification Panel (CNP)](Observation-HAICA-TC-CNP.html)**
 
@@ -54,6 +66,18 @@ The following examples are provided as part of this implementation guide.
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-HAICA-TC-CNP-Member5.html)**
   * **[CNP Member: Age at time of case investigation](Observation-HAICA-TC-CNP-Member6.html)**
 
+**[Composition](Composition-HAICA-TC-Composition.html)**
+
 **[Specimen](Specimen-HAICA-TC-Specimen.html)**
 
+**[Lab Test Report](DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.html)**
+
 **[Lab Observation](Observation-HAICA-TC-Lab-Observation.html)**
+
+**[Document Bundle](Bundle-HAICA-TC-Document.html)**
+
+### Download
+
+Download all of the examples in this IG in JSON format below:
+
+[examples.json](examples.json.zip)

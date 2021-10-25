@@ -37,10 +37,17 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * gender = #female
 * birthDate = "1964-05-02"
 
-* address[Address-at-Diagnosis].district = "Harris"
-* address[Address-at-Diagnosis].state = "Texas"
-* address[Address-at-Diagnosis].postalCode = "77018"
+* address[0].district = "Harris"
+* address[0].state = "Texas"
+* address[0].postalCode = "77018"
+* address[0].use = #home
 
-* address[Usual-Residence].country = "USA"
+* address[1].country = "USA"
+* address[1].extension[cbs-cdc-address-use].valueCoding = #Usual-Residence
 
 * deceasedDateTime = "2014-03-02"
+
+* name
+  * text = "Zzzzz, Aaaaa"
+  * family = "Zzzzz"
+  * given = "Aaaaa"

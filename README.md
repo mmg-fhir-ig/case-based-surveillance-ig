@@ -2,7 +2,7 @@
 
 ## Setting up IG Dev environment ##
 1. Follow installation instructions to get the basic IG Publisher installed and running (https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)
-2. Install SUSHI (https://fshschool.org/docs/sushi/installation/)
+2. Install SUSHI (https://fshschool.org/docs/sushi/installation/) *This project requires SUSHI 2.0+*
 3. Install Visual Studio Code (https://code.visualstudio.com/)
 4. Install FSH Plug-In for Visual Studio Code (https://marketplace.visualstudio.com/search?term=fhir%20shorthand&target=VSCode&category=Programming%20Languages&sortBy=Relevance)
 

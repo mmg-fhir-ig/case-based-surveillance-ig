@@ -11,6 +11,7 @@ The following Profiles and have been defined for this implementation guide.
 - [CBS Cause of Death Profile]
 - [CBS Composition Profile]
 - [CBS Condition of Interest Profile]
+- [CBS Document Bundle Profile]
 - [CBS Epi-Questionnaire Panel Profile]
 - [CBS Hospitalization Encounter Profile]
 - [CBS Lab Test Report Profile]
@@ -19,7 +20,11 @@ The following Profiles and have been defined for this implementation guide.
 - [CBS Patient Profile]
 - [CBS Performing Laboratory Profile]
 - [CBS Person Reporting to CDC Profile]
+- [CBS Social Determinants of Health Profile]
 - [CBS Specimen Profile]
+- [CBS Travel History Profile]
+- [CBS Vaccination Indication Profile]
+- [CBS Vaccination Record Profile]
 
 
 <br />
@@ -31,10 +36,13 @@ The following [Extensions]({{site.data.fhir.path}}extensibility.html) have been 
 
 - [CBS Birthsex Extension]
 - [CBS Case Class Status Extension]
+- [CBS CDC Address Use Extension]
 - [CBS Diagnosis Date Extension]
 - [CBS Ethnicity Extension]
 - [CBS Illness Duration Extension]
+- [CBS Program Specific Time Window Extension]
 - [CBS Race Extension]
+- [CBS Reason Not Vaccinated Per ACIP Recommendations Extension]
 - [CBS Related Case Extension]
 - [CBS Specimen Role Extension]
 

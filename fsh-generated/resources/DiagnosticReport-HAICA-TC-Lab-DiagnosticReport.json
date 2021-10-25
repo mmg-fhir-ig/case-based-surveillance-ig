@@ -1,0 +1,41 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "HAICA-TC-Lab-DiagnosticReport",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "LAB",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "85069-3",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HAICA-TC-Patient"
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/HAICA-TC-Specimen"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/HAICA-TC-Lab-Observation"
+    }
+  ]
+}

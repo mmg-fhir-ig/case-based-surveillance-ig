@@ -32,3 +32,26 @@ Description:  "Code system defined as placeholders for items that are not define
 * #previously-reported "Previously Reported Case"
 * #connected-outbreak "Connected Outbreak Case"
 * #parent-congential-syphilis "Parent in Congenital Syphilis"
+
+* #conditionOnsetDateTime "Condition.onsetDateTime"
+* #conditionOnsetDatePeriodStart "Condition.onsetDatePeriod.start"
+
+* #sogi "Sexual Orientation and Gender Identity"
+* #housing-or-residence "Housing Insecurity or Residence Characteristics"
+* #education "Education Level"
+* #food-insecurity "Food Insecurity"
+
+// Composition Section Codes
+* #condition-of-interest "Condition of Interest/Reportable Condition"
+* #case-notification-panel "Case Notification Panel"
+* #reporting-entities "Reporting Entities"
+* #history-of-encounters "History of Encounters (Hospitalizations)"
+* #epi-questions "Epi Questionnaires and Observations"
+* #occupational-data "Occupational Data"
+* #travel-history "Travel History"
+* #social-determinants-of-health "Social Determinants of Health"
+* #lab-related "Laboratory Related"
+* #medication-administered "Medication Administered"
+* #vaccinations "Vaccinations"
+* #related-persons "Related Persons"
+* #vital-records "Vital Records Reporting (Death, Birth, or Fetal Death)"

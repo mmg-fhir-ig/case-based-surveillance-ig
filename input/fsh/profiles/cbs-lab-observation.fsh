@@ -8,6 +8,8 @@ Description: "Defines constraints on the Observation resource in order to meet t
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
+* status 1..1 MS
+* status = #final
 * category 1..1 MS
 * category = $FHIR-Observation-Category#laboratory
 * code 1..1 MS

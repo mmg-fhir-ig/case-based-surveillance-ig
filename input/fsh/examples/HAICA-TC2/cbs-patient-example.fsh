@@ -29,8 +29,15 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 * gender = #female
 * birthDate = "1940-01-01"
 
-* address[Address-at-Diagnosis].district = "Cobb"
-* address[Address-at-Diagnosis].state = "Georgia"
-* address[Address-at-Diagnosis].postalCode = "30126"
+* address[0].district = "Cobb"
+* address[0].state = "Georgia"
+* address[0].postalCode = "30126"
+* address[0].use = #home
 
-* address[Usual-Residence].country = "USA"
+* address[1].country = "USA"
+* address[1].extension[cbs-cdc-address-use].valueCoding = #Usual-Residence
+
+* name
+  * text = "Yyyyy, Bbbbb"
+  * family = "Yyyyy"
+  * given = "Bbbbb"

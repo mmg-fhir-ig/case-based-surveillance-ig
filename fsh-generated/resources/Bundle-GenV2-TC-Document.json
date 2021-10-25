@@ -1,0 +1,1421 @@
+{
+  "resourceType": "Bundle",
+  "id": "GenV2-TC-Document",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "type": {
+      "coding": [
+        {
+          "code": "Local-Record-ID",
+          "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "display": "Local Record ID"
+        }
+      ],
+      "text": "Local Record ID"
+    },
+    "system": "urn:temp:national-reporting-jurisdiction:48",
+    "value": "GenV2_TC01_Record"
+  },
+  "timestamp": "2014-03-02T00:00:00Z",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "GenV2-TC-Composition",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "55751-2",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "title": "Case Based Surveillance Composition",
+        "section": [
+          {
+            "title": "Condition of Interest",
+            "entry": [
+              {
+                "reference": "Condition/GenV2-TC-Condition"
+              }
+            ]
+          },
+          {
+            "title": "Case Notification Panel",
+            "entry": [
+              {
+                "reference": "Observation/GenV2-TC-CNP"
+              }
+            ],
+            "section": [
+              {
+                "entry": [
+                  {
+                    "reference": "Observation/GenV2-TC-MMWR"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-Exposure"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member1"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member2"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member3"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member4"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member5"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member6"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member7"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member8"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member9"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member10"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member11"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member12"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member13"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member14"
+                  },
+                  {
+                    "reference": "Observation/GenV2-TC-CNP-Member15"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "History of Encounters (Hospitalizations)",
+            "entry": [
+              {
+                "reference": "Encounter/GenV2-TC-Hospitalization"
+              }
+            ]
+          },
+          {
+            "title": "Reporting Entities",
+            "entry": [
+              {
+                "reference": "Practitioner/GenV2-TC-Person-Reporting"
+              },
+              {
+                "reference": "Organization/GenV2-TC-Reporting-Source"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient"
+        },
+        "date": "2014-03-02",
+        "author": [
+          {
+            "reference": "Organization/GenV2-TC-Reporting-Source"
+          }
+        ]
+      },
+      "fullUrl": "Composition/GenV2-TC-Composition"
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "GenV2-TC-Patient",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "White"
+                }
+              },
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "code": "1010-8",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Apache"
+                }
+              },
+              {
+                "url": "otherRace",
+                "valueString": "Apache"
+              },
+              {
+                "url": "text",
+                "valueString": "Mixed"
+              }
+            ],
+            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2186-5",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+                  "display": "Not Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Not Hispanic or Latino"
+              }
+            ],
+            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+          },
+          {
+            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "F",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0001",
+                  "display": "Female"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress": {
+              "country": "USA"
+            }
+          }
+        ],
+        "address": [
+          {
+            "district": "Harris",
+            "state": "Texas",
+            "postalCode": "77018",
+            "use": "home"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+                "valueCoding": {
+                  "code": "Usual-Residence"
+                }
+              }
+            ],
+            "country": "USA"
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "Local-Record-ID",
+                  "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+                  "display": "Local Record ID"
+                }
+              ],
+              "text": "Local Record ID"
+            },
+            "system": "urn:temp:national-reporting-jurisdiction:48",
+            "value": "GenV2_TC01_Record"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "Local-Subject-ID",
+                  "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+                  "display": "Local Subject ID"
+                }
+              ],
+              "text": "Local Subject ID"
+            },
+            "system": "urn:temp:national-reporting-jurisdiction:48",
+            "value": "GenV2_TC01_Subject"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "77997-5",
+                  "system": "http://loinc.org",
+                  "display": "Legacy case identifier [CDC.PHIN]"
+                }
+              ],
+              "text": "Legacy Case Identifier"
+            },
+            "system": "urn:temp:national-reporting-jurisdiction:48",
+            "value": "48432148S012014"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "77993-4",
+                  "system": "http://loinc.org",
+                  "display": "State notifiable condition case identifier"
+                }
+              ],
+              "text": "State Case Identifier"
+            },
+            "system": "urn:temp:national-reporting-jurisdiction:48",
+            "value": "TX4321"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1964-05-02",
+        "deceasedDateTime": "2014-03-02",
+        "name": [
+          {
+            "text": "Zzzzz, Aaaaa",
+            "family": "Zzzzz",
+            "given": [
+              "Aaaaa"
+            ]
+          }
+        ]
+      },
+      "fullUrl": "Patient/GenV2-TC-Patient"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "GenV2-TC-Condition",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "410605003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Confirmed present"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
+            "valueDateTime": "2014-02-02"
+          },
+          {
+            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
+            "valueQuantity": {
+              "value": 6,
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11550",
+              "system": "urn:oid:2.16.840.1.114222.4.5.277",
+              "display": "Hemolytic Uremic Syndrome"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "onsetDateTime": "2014-02-24",
+        "abatementDateTime": "2014-03-02",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "inactive",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Condition/GenV2-TC-Condition"
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "GenV2-TC-Hospitalization",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+          ]
+        },
+        "status": "unknown",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "period": {
+          "start": "2014-02-26",
+          "end": "2014-03-02"
+        },
+        "length": {
+          "value": 4,
+          "unit": "days",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        },
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/GenV2-TC-Condition",
+              "display": "GenV2-TC Condition of Interest"
+            }
+          }
+        ]
+      },
+      "fullUrl": "Encounter/GenV2-TC-Hospitalization"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CauseOfDeath",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "79378-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "focus": [
+          {
+            "reference": "Condition/GenV2-TC-Condition",
+            "display": "GenV2-TC Example Condition of Interest"
+          }
+        ]
+      },
+      "fullUrl": "Observation/GenV2-TC-CauseOfDeath"
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "GenV2-TC-Person-Reporting",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "444-321-1234"
+          },
+          {
+            "system": "email",
+            "value": "jsmith@txdoh.org"
+          }
+        ],
+        "name": [
+          {
+            "text": "Smith, John",
+            "family": "Smith",
+            "given": [
+              "John"
+            ]
+          }
+        ]
+      },
+      "fullUrl": "Practitioner/GenV2-TC-Person-Reporting"
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "GenV2-TC-Reporting-Source",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+          ]
+        },
+        "name": "Reporting Source",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "1",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0406",
+                "display": "Hospital"
+              }
+            ]
+          }
+        ],
+        "address": [
+          {
+            "postalCode": "77018"
+          }
+        ]
+      },
+      "fullUrl": "Organization/GenV2-TC-Reporting-Source"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "78000-7",
+              "system": "http://loinc.org",
+              "display": "Case notification panel [CDC.PHIN]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/GenV2-TC-MMWR"
+          },
+          {
+            "reference": "Observation/GenV2-TC-Exposure"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member1"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member2"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member3"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member4"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member5"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member6"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member7"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member8"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member9"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member10"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member11"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member12"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member13"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member14"
+          },
+          {
+            "reference": "Observation/GenV2-TC-CNP-Member15"
+          }
+        ]
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-MMWR",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "MMWR",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77991-8",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueInteger": 9
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77992-6",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueInteger": 2014
+          }
+        ],
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-MMWR"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-Exposure",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "Location-of-Exposure",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77984-3",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "USA",
+                  "system": "urn:iso:std:iso:3166",
+                  "display": "United States of America"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77985-0",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "48",
+                  "system": "urn:oid:2.16.840.1.113883.6.92",
+                  "display": "Texas"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77986-8",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueString": "Houston"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77987-6",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueString": "Harris"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "focus": [
+          {
+            "reference": "Condition/GenV2-TC-Condition",
+            "display": "GenV2-TC Example Condition of Interest"
+          }
+        ]
+      },
+      "fullUrl": "Observation/GenV2-TC-Exposure"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member1",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77965-2",
+              "system": "http://loinc.org",
+              "display": "Immediate national notifiable condition"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+              "display": "No"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member1"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member2",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77966-0",
+              "system": "http://loinc.org",
+              "display": "Reporting state"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "48",
+              "system": "urn:oid:2.16.840.1.113883.6.92",
+              "display": "Texas"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member2"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member3",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77967-8",
+              "system": "http://loinc.org",
+              "display": "Reporting county"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "48201",
+              "system": "urn:oid:2.16.840.1.113883.6.93",
+              "display": "Harris"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member3"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member4",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77968-6",
+              "system": "http://loinc.org",
+              "display": "National reporting jurisdiction"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "48",
+              "system": "urn:oid:2.16.840.1.113883.6.92",
+              "display": "Texas"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member4"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member5",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77969-4",
+              "system": "http://loinc.org",
+              "display": "Jurisdiction code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueString": "S01"
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member5"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member6",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77970-2",
+              "system": "http://loinc.org",
+              "display": "Date of initial report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueDateTime": "2014-02-25"
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member6"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member7",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77972-8",
+              "system": "http://loinc.org",
+              "display": "Earliest date reported to county"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueDateTime": "2014-02-25"
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member7"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member8",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77973-6",
+              "system": "http://loinc.org",
+              "display": "Earliest date reported to state"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueDateTime": "2014-02-25"
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member8"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member9",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77979-3",
+              "system": "http://loinc.org",
+              "display": "Case investigation start date"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueDateTime": "2014-02-25"
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member9"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member10",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "case-outbreak",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Case Outbreak Name and Indicator"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77980-1",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "Y",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+                  "display": "Yes"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "77981-9",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueString": "HANSENOUTB1"
+          }
+        ]
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member10"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member11",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77988-4",
+              "system": "http://loinc.org",
+              "display": "Binational reporting criteria [CDC.PHIN]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "PHC1140",
+              "system": "urn:oid:2.16.840.1.114222.4.5.274",
+              "display": "Exposure to suspected product from Canada or Mexico"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member11"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member12",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77989-2",
+              "system": "http://loinc.org",
+              "display": "Disease transmission mode"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "416086007",
+              "system": "http://snomed.info/sct",
+              "display": "Food-borne transmission"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member12"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member13",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77995-9",
+              "system": "http://loinc.org",
+              "display": "Date of first report to public health department"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueDateTime": "2014-02-25"
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member13"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member14",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77996-7",
+              "system": "http://loinc.org",
+              "display": "Pregnancy status at time of illness or condition"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+              "display": "No"
+            }
+          ]
+        }
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member14"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "GenV2-TC-CNP-Member15",
+        "meta": {
+          "profile": [
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "78000-7",
+                "system": "http://loinc.org",
+                "display": "Case notification panel [CDC.PHIN]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77998-3",
+              "system": "http://loinc.org",
+              "display": "Age at time of case investigation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/GenV2-TC-Patient",
+          "display": "GenV2-TC Example Patient"
+        },
+        "valueInteger": 49
+      },
+      "fullUrl": "Observation/GenV2-TC-CNP-Member15"
+    }
+  ]
+}
