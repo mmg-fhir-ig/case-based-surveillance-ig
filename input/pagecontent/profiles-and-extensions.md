@@ -1,31 +1,8 @@
-
 ### Profiles
 
 The following Profiles and have been defined for this implementation guide.
 
-
-- [CBS Case Notification Panel Profile]
-  - [CBS Case Notification Panel Member Profile]
-  - [CBS Exposure Observation Profile]
-  - [CBS MMWR Profile]
-- [CBS Cause of Death Profile]
-- [CBS Composition Profile]
-- [CBS Condition of Interest Profile]
-- [CBS Document Bundle Profile]
-- [CBS Epi-Questionnaire Panel Profile]
-- [CBS Hospitalization Encounter Profile]
-- [CBS Lab Test Report Profile]
-- [CBS Lab Observation Profile]
-- [CBS Reporting Source Organization Profile]
-- [CBS Patient Profile]
-- [CBS Performing Laboratory Profile]
-- [CBS Person Reporting to CDC Profile]
-- [CBS Social Determinants of Health Profile]
-- [CBS Specimen Profile]
-- [CBS Travel History Profile]
-- [CBS Vaccination Indication Profile]
-- [CBS Vaccination Record Profile]
-
+{% include profiles.md %}
 
 <br />
 

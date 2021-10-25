@@ -21,27 +21,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 The list of CBS Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile, requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.
 
-- [CBS Case Notification Panel Profile]
-  - [CBS Case Notification Panel Member Profile]
-  - [CBS Exposure Observation Profile]
-  - [CBS MMWR Profile]
-- [CBS Cause of Death Profile]
-- [CBS Composition Profile]
-- [CBS Condition of Interest Profile]
-- [CBS Document Bundle Profile]
-- [CBS Epi-Questionnaire Panel Profile]
-- [CBS Hospitalization Encounter Profile]
-- [CBS Lab Test Report Profile]
-- [CBS Lab Observation Profile]
-- [CBS Reporting Source Organization Profile]
-- [CBS Patient Profile]
-- [CBS Performing Laboratory Profile]
-- [CBS Person Reporting to CDC Profile]
-- [CBS Social Determinants of Health Profile]
-- [CBS Specimen Profile]
-- [CBS Travel History Profile]
-- [CBS Vaccination Indication Profile]
-- [CBS Vaccination Record Profile]
+{% include profiles.md %}
 
 ----
 

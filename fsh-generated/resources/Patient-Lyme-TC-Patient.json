@@ -1,0 +1,122 @@
+{
+  "resourceType": "Patient",
+  "id": "Lyme-TC-Patient",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2135-2",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+            "display": "Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "USA"
+      }
+    }
+  ],
+  "address": [
+    {
+      "district": "Davidson",
+      "state": "Tennessee",
+      "postalCode": "37209",
+      "use": "home"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+          "valueCoding": {
+            "code": "Usual-Residence"
+          }
+        }
+      ],
+      "country": "USA"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Record-ID",
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "TickborneLyme_TC01"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "Local-Subject-ID",
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "TickborneLyme_TC01"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "77997-5",
+            "system": "http://loinc.org",
+            "display": "Legacy case identifier [CDC.PHIN]"
+          }
+        ],
+        "text": "Legacy Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "34022747S012018"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "77993-4",
+            "system": "http://loinc.org",
+            "display": "State notifiable condition case identifier"
+          }
+        ],
+        "text": "State Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "340227"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1993-06-01",
+  "name": [
+    {
+      "text": "Xxxxx, Ccccc",
+      "family": "Xxxxx",
+      "given": [
+        "Ccccc"
+      ]
+    }
+  ]
+}

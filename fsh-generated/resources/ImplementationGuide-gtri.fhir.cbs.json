@@ -754,6 +754,230 @@
         "name": "HAICA-TC-Specimen",
         "description": "A specimen example resource for the HAI-CA Test Case 2.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP"
+        },
+        "name": "Lyme-TC-CNP",
+        "description": "Case notification panel resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member1"
+        },
+        "name": "Lyme-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member10"
+        },
+        "name": "Lyme-TC-CNP-Member10",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member11"
+        },
+        "name": "Lyme-TC-CNP-Member11",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member12"
+        },
+        "name": "Lyme-TC-CNP-Member12",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member13"
+        },
+        "name": "Lyme-TC-CNP-Member13",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member2"
+        },
+        "name": "Lyme-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member3"
+        },
+        "name": "Lyme-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member4"
+        },
+        "name": "Lyme-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member5"
+        },
+        "name": "Lyme-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member6"
+        },
+        "name": "Lyme-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member7"
+        },
+        "name": "Lyme-TC-CNP-Member7",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member8"
+        },
+        "name": "Lyme-TC-CNP-Member8",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member9"
+        },
+        "name": "Lyme-TC-CNP-Member9",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Composition/Lyme-TC-Composition"
+        },
+        "name": "Lyme-TC-Composition",
+        "description": "Composition resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/Lyme-TC-Condition"
+        },
+        "name": "Lyme-TC-Condition",
+        "description": "Condition of interest resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-Exposure"
+        },
+        "name": "Lyme-TC-Exposure",
+        "description": "Exposure observation resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/Lyme-TC-Hospitalization"
+        },
+        "name": "Lyme-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/Lyme-TC-Lab-DiagnosticReport"
+        },
+        "name": "Lyme-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-Lab-Observation-1"
+        },
+        "name": "Lyme-TC-Lab-Observation-1",
+        "description": "A first lab observation example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-Lab-Observation-2"
+        },
+        "name": "Lyme-TC-Lab-Observation-2",
+        "description": "A second lab observation example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-MMWR"
+        },
+        "name": "Lyme-TC-MMWR",
+        "description": "MMWR resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/Lyme-TC-Medication-Statement"
+        },
+        "name": "Lyme-TC-Medication-Statement",
+        "description": "Medication Statement example resource for the Lyme Test Case",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/Lyme-TC-ODH-Example"
+        },
+        "name": "Lyme-TC-ODH-Example",
+        "description": "An ODH Past or Present Job-conforming observation example resource for the Lyme Test Case.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/Lyme-TC-Patient"
+        },
+        "name": "Lyme-TC-Patient",
+        "description": "CBS Patient resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/Lyme-TC-Person-Reporting"
+        },
+        "name": "Lyme-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the Lyme Test Case",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "reference": {
+          "reference": "Organization/Lyme-TC-Reporting-Source"
+        },
+        "name": "Lyme-TC-Reporting-Source",
+        "description": "Reporting source example resource for the Lyme Test Case",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/Lyme-TC-Specimen"
+        },
+        "name": "Lyme-TC-Specimen",
+        "description": "A specimen example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
       }
     ],
     "page": {

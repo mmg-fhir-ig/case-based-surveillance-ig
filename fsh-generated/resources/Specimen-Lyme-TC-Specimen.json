@@ -1,0 +1,16 @@
+{
+  "resourceType": "Specimen",
+  "id": "Lyme-TC-Specimen",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "collection": {
+    "collectedDateTime": "2018-07-05"
+  }
+}

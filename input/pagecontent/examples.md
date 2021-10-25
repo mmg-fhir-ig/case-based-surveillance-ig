@@ -76,6 +76,50 @@ View the diagram of this example case here:
 
 **[Document Bundle](Bundle-HAICA-TC-Document.html)**
 
+
+### Lyme Test Case: Lyme disease
+
+**[Patient](Patient-Lyme-TC-Patient.html)**
+
+**[Condition of Interest](Condition-Lyme-TC-Condition.html)**
+
+**[Hospitalization Encounter](Encounter-Lyme-TC-Hospitalization.html)**
+
+**[Person Reporting to the CDC](Practitioner-Lyme-TC-Person-Reporting.html)**
+
+**[Reporting Source](Organization-Lyme-TC-Reporting-Source.html)**
+
+**[Case Notification Panel (CNP)](Observation-Lyme-TC-CNP.html)**
+
+  * **[CNP Member: MMWR](Observation-Lyme-TC-MMWR.html)**
+  * **[CNP Member: Exposure Observation](Observation-Lyme-TC-Exposure.html)**
+  * **[CNP Member: Immediate national notifiable condition](Observation-Lyme-TC-CNP-Member1.html)**
+  * **[CNP Member: Reporting state](Observation-Lyme-TC-CNP-Member2.html)**
+  * **[CNP Member: Reporting county](Observation-Lyme-TC-CNP-Member3.html)**
+  * **[CNP Member: National reporting jurisdiction](Observation-Lyme-TC-CNP-Member4.html)**
+  * **[CNP Member: Jurisdiction code](Observation-Lyme-TC-CNP-Member5.html)**
+  * **[CNP Member: Date of initial report](Observation-Lyme-TC-CNP-Member6.html)**
+  * **[CNP Member: Earliest date reported to county](Observation-Lyme-TC-CNP-Member7.html)**
+  * **[CNP Member: Earliest date reported to state](Observation-Lyme-TC-CNP-Member8.html)**
+  * **[CNP Member: Case investigation start date](Observation-Lyme-TC-CNP-Member9.html)**
+  * **[CNP Member: Case outbreak name and indicator](Observation-Lyme-TC-CNP-Member10.html)**
+  * **[CNP Member: Disease transmission mode](Observation-Lyme-TC-CNP-Member11.html)**
+  * **[CNP Member: Date of first report to public health department](Observation-Lyme-TC-CNP-Member12.html)**
+  * **[CNP Member: Age at time of case investigation](Observation-Lyme-TC-CNP-Member13.html)**
+
+**[Composition](Composition-Lyme-TC-Composition.html)**
+
+**[Specimen](Specimen-Lyme-TC-Specimen.html)**
+
+**[Lab Test Report](DiagnosticReport-Lyme-TC-Lab-DiagnosticReport.html)**
+
+**[Lab Observation 1](Observation-Lyme-TC-Lab-Observation-1.html)**
+
+**[Lab Observation 2](Observation-Lyme-TC-Lab-Observation-1.html)**
+
+**[Medication Statement](MedicationStatement-Lyme-TC-Medication-Statement.html)**
+
+**[ODH Present Job](Observation-Lyme-TC-ODH-Example.html)**
 ### Download
 
 Download all of the examples in this IG in JSON format below:
