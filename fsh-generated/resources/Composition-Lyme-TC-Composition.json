@@ -119,6 +119,14 @@
           "reference": "Specimen/Lyme-TC-Specimen"
         }
       ]
+    },
+    {
+      "title": "Medication Administered",
+      "entry": [
+        {
+          "reference": "MedicationStatement/Lyme-TC-Medication-Statement"
+        }
+      ]
     }
   ],
   "subject": {

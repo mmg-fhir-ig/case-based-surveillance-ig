@@ -119,7 +119,52 @@ View the diagram of this example case here:
 
 **[Medication Statement](MedicationStatement-Lyme-TC-Medication-Statement.html)**
 
-**[ODH Present Job](Observation-Lyme-TC-ODH-Example.html)**
+**ODH Present Job (In Progress)**
+
+### STD Test Case 5: Gonorrhea
+
+**[Patient](Patient-STD-TC-Patient.html)**
+
+**[Condition of Interest](Condition-STD-TC-Condition.html)**
+
+**[Hospitalization Encounter](Encounter-STD-TC-Hospitalization.html)**
+
+**[Person Reporting to the CDC](Practitioner-STD-TC-Person-Reporting.html)**
+
+**[Reporting Source](Organization-STD-TC-Reporting-Source.html)**
+
+**[Case Notification Panel (CNP)](Observation-STD-TC-CNP.html)**
+
+  * **[CNP Member: MMWR](Observation-STD-TC-MMWR.html)**
+  * **[CNP Member: Exposure Observation](Observation-STD-TC-Exposure.html)**
+  * **[CNP Member: Immediate national notifiable condition](Observation-STD-TC-CNP-Member1.html)**
+  * **[CNP Member: Reporting state](Observation-STD-TC-CNP-Member2.html)**
+  * **[CNP Member: Reporting county](Observation-STD-TC-CNP-Member3.html)**
+  * **[CNP Member: National reporting jurisdiction](Observation-STD-TC-CNP-Member4.html)**
+  * **[CNP Member: Jurisdiction code](Observation-STD-TC-CNP-Member5.html)**
+  * **[CNP Member: Date of initial report](Observation-STD-TC-CNP-Member6.html)**
+  * **[CNP Member: Earliest date reported to county](Observation-STD-TC-CNP-Member7.html)**
+  * **[CNP Member: Earliest date reported to state](Observation-STD-TC-CNP-Member8.html)**
+  * **[CNP Member: Case investigation start date](Observation-STD-TC-CNP-Member9.html)**
+  * **[CNP Member: Case outbreak name and indicator](Observation-STD-TC-CNP-Member10.html)**
+  * **[CNP Member: Binational reporting criteria [CDC.PHIN]](Observation-STD-TC-CNP-Member11.html)**
+  * **[CNP Member: Disease transmission mode](Observation-STD-TC-CNP-Member12.html)**
+  * **[CNP Member: Date of first report to public health department](Observation-STD-TC-CNP-Member13.html)**
+  * **[CNP Member: Pregnancy status at time of illness or condition](Observation-STD-TC-CNP-Member14.html)**
+  * **[CNP Member: Age at time of case investigation](Observation-STD-TC-CNP-Member15.html)**
+
+**[Composition](Composition-STD-TC-Composition.html)**
+
+**[Specimen](Specimen-STD-TC-Specimen.html)**
+
+**[Lab Test Report](DiagnosticReport-STD-TC-Lab-DiagnosticReport.html)**
+
+**[Lab Observation](Observation-STD-TC-Lab-Observation.html)**
+
+**[Medication Statement 1](MedicationStatement-STD-TC-Medication-Statement-1.html)**
+
+**[Medication Statement 2](MedicationStatement-STD-TC-Medication-Statement-2.html)**
+
 ### Download
 
 Download all of the examples in this IG in JSON format below:

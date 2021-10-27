@@ -1,0 +1,79 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-Exposure",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "Location-of-Exposure",
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77984-3",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "MEX",
+            "system": "urn:iso:std:iso:3166",
+            "display": "Mexico"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77985-0",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "MX-GRO",
+            "system": "urn:iso:std:iso:3166:-2",
+            "display": "Guerrero"
+          }
+        ]
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "focus": [
+    {
+      "reference": "Condition/STD-TC-Condition",
+      "display": "STD-TC Example Condition of Interest"
+    }
+  ]
+}

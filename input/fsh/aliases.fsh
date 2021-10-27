@@ -13,6 +13,7 @@ Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $PH-PHINQuestions-CDC = urn:oid:2.16.840.1.114222.4.5.232
 Alias: $PH-PHINVS-CDC = urn:oid:2.16.840.1.114222.4.5.274
 Alias: $PH-Country-ISO-3166-1 = urn:iso:std:iso:3166
+Alias: $PH-Country-Subdivision-ISO-3166-2 = urn:iso:std:iso:3166:-2
 Alias: $PH-State-FIPS-5-2 = urn:oid:2.16.840.1.113883.6.92
 Alias: $PH-County-FIPS-6-4 = urn:oid:2.16.840.1.113883.6.93
 Alias: $PH_RaceAndEthnicity_CDC = urn:oid:2.16.840.1.113883.6.238
@@ -38,6 +39,7 @@ Alias: $FHIR-GenderIdentity = http://hl7.org/fhir/gender-identity
 Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $FHIR-Bundle-Type = http://hl7.org/fhir/bundle-type
 Alias: $FHIR-Medication-Statement-Status = http://hl7.org/fhir/CodeSystem/medication-statement-status
+Alias: $FHIR-Address-Use = http://hl7.org/fhir/address-use
 
 
 // External Profiles

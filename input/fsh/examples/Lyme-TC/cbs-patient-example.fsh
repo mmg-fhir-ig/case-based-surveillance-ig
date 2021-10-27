@@ -37,7 +37,7 @@ Description: "CBS Patient resource for the Lyme Test Case Patient"
 * address[0].use = #home
 
 * address[1].country = "USA"
-* address[1].extension[cbs-cdc-address-use].valueCoding = #Usual-Residence
+* address[1].extension[cbs-cdc-address-use].valueCoding = cbs-temp-code-system#Usual-Residence
 
 * name
   * text = "Xxxxx, Ccccc"

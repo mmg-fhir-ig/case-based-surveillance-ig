@@ -1,0 +1,147 @@
+{
+  "resourceType": "Composition",
+  "id": "STD-TC-Composition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "55751-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "title": "Case Based Surveillance Composition",
+  "section": [
+    {
+      "title": "Condition of Interest",
+      "entry": [
+        {
+          "reference": "Condition/STD-TC-Condition"
+        }
+      ]
+    },
+    {
+      "title": "Case Notification Panel",
+      "entry": [
+        {
+          "reference": "Observation/STD-TC-CNP"
+        }
+      ],
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "Observation/STD-TC-MMWR"
+            },
+            {
+              "reference": "Observation/STD-TC-Exposure"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member1"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member2"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member3"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member4"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member5"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member6"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member7"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member8"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member9"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member10"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member11"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member12"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member13"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member14"
+            },
+            {
+              "reference": "Observation/STD-TC-CNP-Member15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "History of Encounters (Hospitalizations)",
+      "entry": [
+        {
+          "reference": "Encounter/STD-TC-Hospitalization"
+        }
+      ]
+    },
+    {
+      "title": "Reporting Entities",
+      "entry": [
+        {
+          "reference": "Practitioner/STD-TC-Person-Reporting"
+        },
+        {
+          "reference": "Organization/STD-TC-Reporting-Source"
+        }
+      ]
+    },
+    {
+      "title": "Laboratory Related Resources",
+      "entry": [
+        {
+          "reference": "DiagnosticReport/STD-TC-Lab-DiagnosticReport"
+        },
+        {
+          "reference": "Observation/STD-TC-Lab-Observation"
+        },
+        {
+          "reference": "Specimen/STD-TC-Specimen"
+        }
+      ]
+    },
+    {
+      "title": "Medication Administered",
+      "entry": [
+        {
+          "reference": "MedicationStatement/STD-TC-Medication-Statement-1"
+        },
+        {
+          "reference": "MedicationStatement/STD-TC-Medication-Statement-2"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/STD-TC-Patient"
+  },
+  "date": "2014-01-17",
+  "author": [
+    {
+      "reference": "Organization/STD-TC-Reporting-Source"
+    }
+  ]
+}

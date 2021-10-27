@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Lyme-TC-Lab-Observation-1",
+  "id": "STD-TC-Lab-Observation",
   "meta": {
     "profile": [
       "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
@@ -20,15 +20,15 @@
   "code": {
     "coding": [
       {
-        "code": "20449-5",
+        "code": "698-1",
         "system": "http://loinc.org",
-        "display": "Borrelia burgdorferi Ab [Presence] in Serum by Immunoassay"
+        "display": "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/Lyme-TC-Patient",
-    "display": "Lyme-TC Example Patient"
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
   },
   "valueCodeableConcept": {
     "coding": [
@@ -38,5 +38,6 @@
         "display": "Positive"
       }
     ]
-  }
+  },
+  "effectiveDateTime": "2014-02-26"
 }

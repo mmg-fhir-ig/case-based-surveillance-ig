@@ -1,0 +1,87 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-CNP",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "78000-7",
+        "system": "http://loinc.org",
+        "display": "Case notification panel [CDC.PHIN]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/STD-TC-MMWR"
+    },
+    {
+      "reference": "Observation/STD-TC-Exposure"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member1"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member2"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member3"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member4"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member5"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member6"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member7"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member8"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member9"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member10"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member11"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member12"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member13"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member14"
+    },
+    {
+      "reference": "Observation/STD-TC-CNP-Member15"
+    }
+  ]
+}

@@ -240,7 +240,7 @@
           "reference": "StructureDefinition/cbs-cdc-address-use"
         },
         "name": "Case Based Surveillance CDC Address Use Extension",
-        "description": "Indicates the use of the address as per information surveillance program ",
+        "description": "Indicates the use of the address as per information surveillance program.",
         "exampleBoolean": false
       },
       {
@@ -941,14 +941,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/Lyme-TC-ODH-Example"
-        },
-        "name": "Lyme-TC-ODH-Example",
-        "description": "An ODH Past or Present Job-conforming observation example resource for the Lyme Test Case.",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Patient/Lyme-TC-Patient"
         },
         "name": "Lyme-TC-Patient",
@@ -977,6 +969,238 @@
         },
         "name": "Lyme-TC-Specimen",
         "description": "A specimen example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP"
+        },
+        "name": "STD-TC-CNP",
+        "description": "Case notification panel resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member1"
+        },
+        "name": "STD-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member10"
+        },
+        "name": "STD-TC-CNP-Member10",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member11"
+        },
+        "name": "STD-TC-CNP-Member11",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member12"
+        },
+        "name": "STD-TC-CNP-Member12",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member13"
+        },
+        "name": "STD-TC-CNP-Member13",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member14"
+        },
+        "name": "STD-TC-CNP-Member14",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member15"
+        },
+        "name": "STD-TC-CNP-Member15",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member2"
+        },
+        "name": "STD-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member3"
+        },
+        "name": "STD-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member4"
+        },
+        "name": "STD-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member5"
+        },
+        "name": "STD-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member6"
+        },
+        "name": "STD-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member7"
+        },
+        "name": "STD-TC-CNP-Member7",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member8"
+        },
+        "name": "STD-TC-CNP-Member8",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member9"
+        },
+        "name": "STD-TC-CNP-Member9",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "reference": {
+          "reference": "Composition/STD-TC-Composition"
+        },
+        "name": "STD-TC-Composition",
+        "description": "Composition resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/STD-TC-Condition"
+        },
+        "name": "STD-TC-Condition",
+        "description": "Condition of interest resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-Exposure"
+        },
+        "name": "STD-TC-Exposure",
+        "description": "Exposure observation resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/STD-TC-Hospitalization"
+        },
+        "name": "STD-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/STD-TC-Lab-DiagnosticReport"
+        },
+        "name": "STD-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-Lab-Observation"
+        },
+        "name": "STD-TC-Lab-Observation",
+        "description": "A lab observation example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-MMWR"
+        },
+        "name": "STD-TC-MMWR",
+        "description": "MMWR resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/STD-TC-Medication-Statement-1"
+        },
+        "name": "STD-TC-Medication-Statement-1",
+        "description": "A first Medication Statement example resource for the STD Test Case 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/STD-TC-Medication-Statement-2"
+        },
+        "name": "STD-TC-Medication-Statement-2",
+        "description": "A second Medication Statement example resource for the STD Test Case 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/STD-TC-Patient"
+        },
+        "name": "STD-TC-Patient",
+        "description": "CBS Patient resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/STD-TC-Person-Reporting"
+        },
+        "name": "STD-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the STD Test Case 5",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "reference": {
+          "reference": "Organization/STD-TC-Reporting-Source"
+        },
+        "name": "STD-TC-Reporting-Source",
+        "description": "Reporting source example resource for the STD Test Case 5",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/STD-TC-Specimen"
+        },
+        "name": "STD-TC-Specimen",
+        "description": "A specimen example resource for the STD Test Case 5.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
       }
     ],

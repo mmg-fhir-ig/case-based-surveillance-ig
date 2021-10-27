@@ -3,8 +3,7 @@ InstanceOf: cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 
-* extension[race].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2106-3 "White"
-* extension[race].extension[detailed].valueCoding = $PH_RaceAndEthnicity_CDC#2135-2 "Hispanic or Latino"
+* extension[race].extension[ombCategory].valueCoding = $v2-0005-cs#2106-3 "White"
 * extension[race].extension[text].valueString = "Mixed"
 
 * extension[ethnicity].extension[ombCategory].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0005#2135-2
@@ -35,7 +34,7 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 * address[0].use = #home
 
 * address[1].country = "USA"
-* address[1].extension[cbs-cdc-address-use].valueCoding = #Usual-Residence
+* address[1].extension[cbs-cdc-address-use].valueCoding = cbs-temp-code-system#Usual-Residence
 
 * name
   * text = "Yyyyy, Bbbbb"

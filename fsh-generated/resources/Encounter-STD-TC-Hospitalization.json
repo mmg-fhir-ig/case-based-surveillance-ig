@@ -1,0 +1,36 @@
+{
+  "resourceType": "Encounter",
+  "id": "STD-TC-Hospitalization",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+    ]
+  },
+  "status": "unknown",
+  "class": {
+    "code": "IMP",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "period": {
+    "start": "2014-01-18",
+    "end": "2014-01-27"
+  },
+  "length": {
+    "value": 9,
+    "unit": "days",
+    "system": "http://unitsofmeasure.org",
+    "code": "d"
+  },
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "Condition/STD-TC-Condition",
+        "display": "STD-TC Condition of Interest"
+      }
+    }
+  ]
+}
