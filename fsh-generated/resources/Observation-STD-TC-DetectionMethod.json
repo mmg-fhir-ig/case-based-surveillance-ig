@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-DetectionMethod",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "INV159",
+        "system": "urn:oid:2.16.840.1.114222.4.5.232",
+        "display": "Detection Method"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "306098008",
+        "system": "http://snomed.info/sct",
+        "display": "Self-referral"
+      }
+    ]
+  }
+}

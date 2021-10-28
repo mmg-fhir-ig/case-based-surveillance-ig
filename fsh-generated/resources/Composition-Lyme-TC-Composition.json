@@ -127,6 +127,14 @@
           "reference": "MedicationStatement/Lyme-TC-Medication-Statement"
         }
       ]
+    },
+    {
+      "title": "Occupational Data",
+      "entry": [
+        {
+          "reference": "Observation/Lyme-TC-ODH-Example"
+        }
+      ]
     }
   ],
   "subject": {

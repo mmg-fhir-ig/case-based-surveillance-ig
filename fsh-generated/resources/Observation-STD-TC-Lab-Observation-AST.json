@@ -1,0 +1,62 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-Lab-Observation-AST",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "18866-4",
+        "system": "http://loinc.org",
+        "display": "Azithromycin [Susceptibility]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "specimen": {
+    "reference": "Specimen/STD-TC-Specimen-AST"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "104234003",
+        "system": "http://snomed.info/sct",
+        "display": "Gradient strip susceptibility test"
+      }
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "30714006",
+          "system": "http://snomed.info/sct",
+          "display": "Resistant"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "value": 64,
+    "unit": "mcg/mL",
+    "system": "http://unitsofmeasure.org",
+    "code": "ug/ML"
+  }
+}

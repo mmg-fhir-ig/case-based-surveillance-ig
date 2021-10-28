@@ -54,6 +54,18 @@
       "valueAddress": {
         "country": "GRC"
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "PHC1490",
+            "system": "urn:oid:2.16.840.1.114222.4.5.274",
+            "display": "Cisgender/Not transgender (finding)"
+          }
+        ]
+      }
     }
   ],
   "address": [

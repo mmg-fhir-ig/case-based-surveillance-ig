@@ -20,8 +20,8 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * subject 1..1 MS
 * subject only Reference(cbs-patient)
 * date 1..1 MS
-* author 1..* MS 
-* author only Reference(Organization) // Need to change, only here for buidling purposes 
+* author 1..* MS
+* author only Reference(Organization) // Need to change, only here for buidling purposes
 * title 1..1 MS
 * title = "Case Based Surveillance Composition"
 
@@ -35,7 +35,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
     encounters 0..1 MS and
     caseNotification 1..1 MS and
     reportingEntities 0..1 MS and
-    epiQuestions 0..1 MS and 
+    epiQuestions 0..1 MS and
     occupationalData 0..1 MS and
     travelHistory 0..1 MS and
     sdoh 0..1 MS and
@@ -52,7 +52,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[caseNotification]
   * title = "Case Notification Panel"
   * code = cbs-temp-code-system#case-notification-panel "Case Notification Panel"
-  * entry only Reference(cbs-case-notification-panel or cbs-cnp-member)
+  * entry only Reference(cbs-case-notification-panel)
 * section[reportingEntities]
   * title = "Reporting Entities"
   * code = cbs-temp-code-system#reporting-entities "Reporting Entities"

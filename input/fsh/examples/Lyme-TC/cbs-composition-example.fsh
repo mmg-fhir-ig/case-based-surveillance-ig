@@ -30,4 +30,4 @@ Description: "Composition resource for the Lyme Test Case Patient"
 * section[labRelated].entry[+] = Reference(Lyme-TC-Lab-Observation-2)
 * section[labRelated].entry[+] = Reference(Lyme-TC-Specimen)
 * section[medicationAdministered].entry[0] = Reference(Lyme-TC-Medication-Statement)
-//* section[occupationalData].entry[0] = Reference(Lyme-TC-ODH-Example)
+* section[occupationalData].entry[0] = Reference(Lyme-TC-ODH-Example)

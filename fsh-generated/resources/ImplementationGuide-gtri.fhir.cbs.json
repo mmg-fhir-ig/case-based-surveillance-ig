@@ -941,6 +941,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/Lyme-TC-ODH-Example"
+        },
+        "name": "Lyme-TC-ODH-Example",
+        "description": "An ODH Past or Present Job-conforming observation example resource for the Lyme Test Case.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/Lyme-TC-Patient"
         },
         "name": "Lyme-TC-Patient",
@@ -1101,6 +1109,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/STD-TC-CaseSampled"
+        },
+        "name": "STD-TC-CaseSampled",
+        "description": "An example Observation describing if the case was selected by reporting jurisdiction for enhanced investigation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/STD-TC-Complication"
+        },
+        "name": "STD-TC-Complication",
+        "description": "An example Condition descrribing if the subject experienced severe complications due to this illness.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Composition/STD-TC-Composition"
         },
         "name": "STD-TC-Composition",
@@ -1117,6 +1141,126 @@
       },
       {
         "reference": {
+          "reference": "Observation/STD-TC-DetectionMethod"
+        },
+        "name": "STD-TC-DetectionMethod",
+        "description": "An example Observation describing how the case patient first came to the attention of the health department for this condition.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ1"
+        },
+        "name": "STD-TC-EQ1",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ10"
+        },
+        "name": "STD-TC-EQ10",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ11"
+        },
+        "name": "STD-TC-EQ11",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ12"
+        },
+        "name": "STD-TC-EQ12",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ13"
+        },
+        "name": "STD-TC-EQ13",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ2"
+        },
+        "name": "STD-TC-EQ2",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ3"
+        },
+        "name": "STD-TC-EQ3",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ4"
+        },
+        "name": "STD-TC-EQ4",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ5"
+        },
+        "name": "STD-TC-EQ5",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ6"
+        },
+        "name": "STD-TC-EQ6",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ7"
+        },
+        "name": "STD-TC-EQ7",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ8"
+        },
+        "name": "STD-TC-EQ8",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EQ9"
+        },
+        "name": "STD-TC-EQ9",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-EpiQuestionnaire"
+        },
+        "name": "STD-TC-EpiQuestionnaire",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as the parent resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "reference": {
           "reference": "Observation/STD-TC-Exposure"
         },
         "name": "STD-TC-Exposure",
@@ -1125,11 +1269,35 @@
       },
       {
         "reference": {
+          "reference": "Observation/STD-TC-HIVStatus"
+        },
+        "name": "STD-TC-HIVStatus",
+        "description": "An example Observation describing the patient's HIV status",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-HIVStatusDocumented"
+        },
+        "name": "STD-TC-HIVStatusDocumented",
+        "description": "An example Observation describing if the HIV status of the case-patient was investigated through search of eHARS.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/STD-TC-Hospitalization"
         },
         "name": "STD-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the STD Test Case 5 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-InitialHealthExam"
+        },
+        "name": "STD-TC-InitialHealthExam",
+        "description": "An example Observation describing the date of the patient's intial health exam that was associated with the case report health event",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -1145,6 +1313,14 @@
         },
         "name": "STD-TC-Lab-Observation",
         "description": "A lab observation example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-Lab-Observation-AST"
+        },
+        "name": "STD-TC-Lab-Observation-AST",
+        "description": "An antimicrobial susceptibility test lab observation example resource for the STD Test Case 5.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
       },
       {
@@ -1197,11 +1373,35 @@
       },
       {
         "reference": {
+          "reference": "Observation/STD-TC-SexualOrientation"
+        },
+        "name": "STD-TC-SexualOrientation",
+        "description": "An example of the Social Determinants of Health profile describing a patient's sexual orientation",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health"
+      },
+      {
+        "reference": {
           "reference": "Specimen/STD-TC-Specimen"
         },
         "name": "STD-TC-Specimen",
         "description": "A specimen example resource for the STD Test Case 5.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/STD-TC-Specimen-AST"
+        },
+        "name": "STD-TC-Specimen-AST",
+        "description": "An antimicrobial suceptibility test specimen example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/STD-TC-TreatmentDate"
+        },
+        "name": "STD-TC-TreatmentDate",
+        "description": "An example Observation describing the day the patient's treatment was initiated for the condition",
+        "exampleBoolean": true
       }
     ],
     "page": {
