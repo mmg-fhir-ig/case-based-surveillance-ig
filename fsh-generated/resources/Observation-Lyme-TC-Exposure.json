@@ -1,0 +1,101 @@
+{
+  "resourceType": "Observation",
+  "id": "Lyme-TC-Exposure",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "Location-of-Exposure",
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77984-3",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "USA",
+            "system": "urn:iso:std:iso:3166",
+            "display": "United States of America"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77985-0",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "25",
+            "system": "urn:oid:2.16.840.1.113883.6.92",
+            "display": "Massachusetts"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77986-8",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueString": "Lynn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77987-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueString": "Essex"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "focus": [
+    {
+      "reference": "Condition/Lyme-TC-Condition",
+      "display": "Lyme-TC Example Condition of Interest"
+    }
+  ]
+}

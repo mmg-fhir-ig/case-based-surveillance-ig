@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-CNP-Member1",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "77965-2",
+        "system": "http://loinc.org",
+        "display": "Immediate national notifiable condition"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "N",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+        "display": "No"
+      }
+    ]
+  }
+}

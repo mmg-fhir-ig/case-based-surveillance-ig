@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "Lyme-TC-Medication-Statement",
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "3640",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "effectivePeriod": {
+    "start": "2018-07-05",
+    "end": "2018-07-15"
+  }
+}

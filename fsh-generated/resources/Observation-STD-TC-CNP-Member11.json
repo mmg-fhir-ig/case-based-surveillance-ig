@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-CNP-Member11",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "77988-4",
+        "system": "http://loinc.org",
+        "display": "Binational reporting criteria [CDC.PHIN]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "PHC1139",
+        "system": "urn:oid:2.16.840.1.114222.4.5.274",
+        "display": "Has case contacts in or from Mexico or Canada"
+      }
+    ]
+  }
+}

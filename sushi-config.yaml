@@ -15,7 +15,7 @@ releaseLabel: ci-build
 publisher:
   name: Georgia Tech Research Institute (GTRI)
   url: http://gtri.gatech.edu/
-dependencies: 
+dependencies:
   us.cdc.phinvads:
     uri: http://fhir.org/packages/us.cdc.phinvads
     version: 0.7.0
@@ -33,12 +33,14 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: 
+  Artifacts:
     Profiles and Extensions: profiles-and-extensions.html
     Terminology: terminology.html
-  Examples: 
+  Examples:
     GenV2 Test Case 1: examples.html#genv2-test-case-1-hemolytic-uremic-syndrome-hus
     HAICA Test Case 2: examples.html#hai-ca-test-case-2-candida-auris-clinical
+    Lyme Test Case: examples.html#lyme-test-case-lyme-disease
+    STD Test Case 5: examples.html#std-test-case-5-gonorrhea
   Mapping Guide:
     General Guidance: mapping.html#general-guidance
     GenV2: mapping.html#gen-v2

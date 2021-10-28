@@ -1,7 +1,7 @@
 Extension: CBSCDCAddressUse
 Id: cbs-cdc-address-use
 Title: "Case Based Surveillance CDC Address Use Extension"
-Description: "Indicates the use of the address as per information surveillance program "
+Description: "Indicates the use of the address as per information surveillance program."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"

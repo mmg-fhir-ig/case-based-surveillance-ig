@@ -1,0 +1,43 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "STD-TC-Medication-Statement-1",
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "2193",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "Ceftriaxone"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "effectivePeriod": {
+    "start": "2014-02-25",
+    "end": "2014-02-25"
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 250,
+            "unit": "mg"
+          }
+        }
+      ],
+      "route": {
+        "coding": [
+          {
+            "code": "255559005",
+            "system": "http://snomed.info/sct",
+            "display": "Intramuscular"
+          }
+        ]
+      }
+    }
+  ]
+}

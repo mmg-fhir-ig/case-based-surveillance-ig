@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-SexualOrientation",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "sogi",
+          "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "76690-7",
+        "system": "http://loinc.org",
+        "display": "Sexual orientation"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "20430005",
+        "system": "http://snomed.info/sct",
+        "display": "Heterosexual"
+      }
+    ]
+  }
+}

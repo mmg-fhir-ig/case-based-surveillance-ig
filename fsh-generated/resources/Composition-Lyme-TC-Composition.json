@@ -1,0 +1,149 @@
+{
+  "resourceType": "Composition",
+  "id": "Lyme-TC-Composition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "55751-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "title": "Case Based Surveillance Composition",
+  "section": [
+    {
+      "title": "Condition of Interest",
+      "entry": [
+        {
+          "reference": "Condition/Lyme-TC-Condition"
+        }
+      ]
+    },
+    {
+      "title": "Case Notification Panel",
+      "entry": [
+        {
+          "reference": "Observation/Lyme-TC-CNP"
+        }
+      ],
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "Observation/Lyme-TC-MMWR"
+            },
+            {
+              "reference": "Observation/Lyme-TC-Exposure"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member1"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member2"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member3"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member4"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member5"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member6"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member7"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member8"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member9"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member10"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member11"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member12"
+            },
+            {
+              "reference": "Observation/Lyme-TC-CNP-Member13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "History of Encounters (Hospitalizations)",
+      "entry": [
+        {
+          "reference": "Encounter/Lyme-TC-Hospitalization"
+        }
+      ]
+    },
+    {
+      "title": "Reporting Entities",
+      "entry": [
+        {
+          "reference": "Practitioner/Lyme-TC-Person-Reporting"
+        },
+        {
+          "reference": "Organization/Lyme-TC-Reporting-Source"
+        }
+      ]
+    },
+    {
+      "title": "Laboratory Related Resources",
+      "entry": [
+        {
+          "reference": "DiagnosticReport/Lyme-TC-Lab-DiagnosticReport"
+        },
+        {
+          "reference": "Observation/Lyme-TC-Lab-Observation-1"
+        },
+        {
+          "reference": "Observation/Lyme-TC-Lab-Observation-2"
+        },
+        {
+          "reference": "Specimen/Lyme-TC-Specimen"
+        }
+      ]
+    },
+    {
+      "title": "Medication Administered",
+      "entry": [
+        {
+          "reference": "MedicationStatement/Lyme-TC-Medication-Statement"
+        }
+      ]
+    },
+    {
+      "title": "Occupational Data",
+      "entry": [
+        {
+          "reference": "Observation/Lyme-TC-ODH-Example"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient"
+  },
+  "date": "2018-09-12",
+  "author": [
+    {
+      "reference": "Organization/Lyme-TC-Reporting-Source"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-InitialHealthExam",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "STD099",
+        "system": "urn:oid:2.16.840.1.114222.4.5.232",
+        "display": "Date of Initial Health Exam Associated with Case Report Health Event"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueDateTime": "2014-01-17"
+}

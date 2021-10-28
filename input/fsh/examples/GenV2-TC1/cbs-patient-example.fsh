@@ -2,7 +2,7 @@ Instance: GenV2-TC-Patient
 InstanceOf: cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
-* extension[race].extension[ombCategory].valueCoding = $PH_RaceAndEthnicity_CDC#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $v2-0005-cs#2106-3 "White"
 * extension[race].extension[detailed].valueCoding = $PH_RaceAndEthnicity_CDC#1010-8 "Apache"
 * extension[race].extension[otherRace].valueString = "Apache"
 * extension[race].extension[text].valueString = "Mixed"
@@ -43,7 +43,7 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * address[0].use = #home
 
 * address[1].country = "USA"
-* address[1].extension[cbs-cdc-address-use].valueCoding = #Usual-Residence
+* address[1].extension[cbs-cdc-address-use].valueCoding = cbs-temp-code-system#Usual-Residence
 
 * deceasedDateTime = "2014-03-02"
 

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "Lyme-TC-CNP-Member4",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "78000-7",
+          "system": "http://loinc.org",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "77968-6",
+        "system": "http://loinc.org",
+        "display": "National reporting jurisdiction"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "47",
+        "system": "urn:oid:2.16.840.1.113883.6.92",
+        "display": "Tennessee"
+      }
+    ]
+  }
+}

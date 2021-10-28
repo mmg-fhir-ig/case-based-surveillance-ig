@@ -1,0 +1,43 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "STD-TC-Medication-Statement-2",
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "18631",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "Azithromycin"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "effectivePeriod": {
+    "start": "2014-02-25",
+    "end": "2014-02-25"
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "mg"
+          }
+        }
+      ],
+      "route": {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route"
+          }
+        ]
+      }
+    }
+  ]
+}

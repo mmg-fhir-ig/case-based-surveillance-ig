@@ -7,14 +7,18 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
+Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 
 // PHIN VADS Code Systems
 Alias: $PH-PHINQuestions-CDC = urn:oid:2.16.840.1.114222.4.5.232
 Alias: $PH-PHINVS-CDC = urn:oid:2.16.840.1.114222.4.5.274
 Alias: $PH-Country-ISO-3166-1 = urn:iso:std:iso:3166
+Alias: $PH-Country-Subdivision-ISO-3166-2 = urn:iso:std:iso:3166:-2
 Alias: $PH-State-FIPS-5-2 = urn:oid:2.16.840.1.113883.6.92
 Alias: $PH-County-FIPS-6-4 = urn:oid:2.16.840.1.113883.6.93
 Alias: $PH_RaceAndEthnicity_CDC = urn:oid:2.16.840.1.113883.6.238
+Alias: $PH-Occupation-CDC-Census2010 = http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010
+Alias: $PH-Industry-CDC-Census2010 = http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010
 
 // HL7 Code Systems
 Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observation-category
@@ -34,6 +38,9 @@ Alias: $FHIR-Contact-Point-System = http://hl7.org/fhir/contact-point-system
 Alias: $FHIR-GenderIdentity = http://hl7.org/fhir/gender-identity
 Alias: $FHIR-DiagnosticReport-Category = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $FHIR-Bundle-Type = http://hl7.org/fhir/bundle-type
+Alias: $FHIR-Medication-Statement-Status = http://hl7.org/fhir/CodeSystem/medication-statement-status
+Alias: $FHIR-Address-Use = http://hl7.org/fhir/address-use
+
 
 // External Profiles
 Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob

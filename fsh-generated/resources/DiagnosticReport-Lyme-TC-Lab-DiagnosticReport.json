@@ -1,0 +1,44 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "Lyme-TC-Lab-DiagnosticReport",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "LAB",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "85069-3",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient"
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/Lyme-TC-Specimen"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/Lyme-TC-Lab-Observation-1"
+    },
+    {
+      "reference": "Observation/Lyme-TC-Lab-Observation-2"
+    }
+  ]
+}
