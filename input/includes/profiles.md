@@ -1,3 +1,5 @@
+
+#### Base CBS Profiles
 - [CBS Case Notification Panel Profile]
   - [CBS Case Notification Panel Member Profile]
   - [CBS Exposure Observation Profile]
@@ -19,3 +21,6 @@
 - [CBS Travel History Profile]
 - [CBS Vaccination Indication Profile]
 - [CBS Vaccination Record Profile]
+
+#### US CBS Profiles
+- [US CBS Patient Profile]

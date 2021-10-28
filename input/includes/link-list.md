@@ -136,6 +136,9 @@
 [CBS Vaccination Record Profile]: StructureDefinition-cbs-vaccination-record.html
 
 
+[US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
+
+
 [CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
 [CBS Case Class Status Extension]: StructureDefinition-cbs-case-class-status.html
 [CBS CDC Address Use Extension]: StructureDefinition-cbs-cdc-address-use.html
