@@ -19,7 +19,7 @@ Description: "Defines constraints on the Observation resource to capture subject
 * component.extension ^slicing.discriminator.type = #value
 * component.extension ^slicing.discriminator.path = "url"
 * component.extension ^slicing.rules = #open
-* component.extension contains $travel-history-address-extension named travelHistoryAddress 0..1
+* component.extension contains $ecr-us-ph-address-extension named travelHistoryAddress 0..1
 * component.extension[travelHistoryAddress] ^short = "Travel history address"
 * component.extension[travelHistoryAddress] ^definition = "Where the patient traveled to as an address e.g.country, city, street address if applicable. At the least, address must contain the country."
 * component.code = $v3-ParticipationType#LOC "Location"

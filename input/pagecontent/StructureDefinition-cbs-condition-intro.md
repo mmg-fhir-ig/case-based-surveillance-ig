@@ -21,4 +21,12 @@ The following data-elements must always be present ([Mandatory] definition) or m
 1. evidence to support signs and symptoms reporting
 
 
+### Representing Evidence
+
+The representation of signs, symptoms, or manifestations of a condition of interest can be handled using the Condition.evidence element in this profile using either an embedded representation through a codeable concept or with a reference to a separate resource. The following rules apply.
+1. Condition.evidence.code and Condition.evidence.reference may exist simultaneously.
+1. For each evidence, either the code or reference element shall exist.
+1. References shall not be to another Condition of Interest profile. There shall be **only one** instance of the Condition of Interest profile in a case report. There are no restrictions on other profiles should the evidence be able to meet the requirements for that profile other than that the profile shall be understood by the receiving system. (The base Condition resource is recommended for this reason.)
+1. Each evidence shall relate directly to a sign, symptom, or manifestation related to either the verification of the condition reported through this profile or to a particular request by a case based surveillance program.
+
 {% include link-list.md %}

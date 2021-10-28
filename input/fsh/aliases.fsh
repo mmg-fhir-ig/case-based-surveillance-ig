@@ -39,6 +39,9 @@ Alias: $FHIR-Bundle-Type = http://hl7.org/fhir/bundle-type
 Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
 Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-observation
 
+// ECR US PH Profiles
+Alias: $ecr-us-ph-patient = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient
+
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: $us-core-ethnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
@@ -50,6 +53,8 @@ Alias: $HL7-genderIdentity = http://hl7.org/fhir/StructureDefinition/patient-gen
 Alias: $HL7-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.html
 Alias: $travel-history-address-extension = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension
+Alias: $ecr-us-ph-address-extension = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension
+
 
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
@@ -90,3 +95,4 @@ Alias: $PHVS_GeographicLocationHistory_CDC = http://phinvads.cdc.gov/fhir/ValueS
 Alias: $PHVS_VaccineNotGivenReasons_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.931
 Alias: $PHVS_VaccineAdministered_MMR = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7331
 Alias: $PHVS_VaccineEventInformationSource_NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7450
+
