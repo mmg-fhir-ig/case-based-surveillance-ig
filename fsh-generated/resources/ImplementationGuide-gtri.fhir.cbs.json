@@ -38,7 +38,7 @@
     },
     {
       "packageId": "hl7.fhir.us.ecr",
-      "version": "1.0.0",
+      "version": "current",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
     },
@@ -225,6 +225,14 @@
         },
         "name": "Case Based Surveillance Vaccination Record Profile",
         "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-patient"
+        },
+        "name": "US Case Based Surveillance Patient Profile",
+        "description": "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
         "exampleBoolean": false
       },
       {
