@@ -32,7 +32,7 @@
     },
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "4.0.0",
+      "version": "current",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },

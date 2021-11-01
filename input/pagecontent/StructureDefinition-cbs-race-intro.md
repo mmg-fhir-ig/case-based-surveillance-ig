@@ -1,4 +1,4 @@
-### CBS Ethnicity Extension
+### CBS Race Extension
 
 This Complex Extension for race allows one race code of which:
 
