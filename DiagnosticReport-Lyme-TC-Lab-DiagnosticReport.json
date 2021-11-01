@@ -1,0 +1,48 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "Lyme-TC-Lab-DiagnosticReport",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 85069-3}\">Lab test method [Type]</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Xxxxx, Ccccc</b> ?? 1993-06-01 ( Local Record ID: TickborneLyme_TC01)</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-Lyme-TC-Lab-Observation-1.html\"><span title=\"Codes: {http://loinc.org 20449-5}\">Borrelia burgdorferi Ab [Presence] in Serum by Immunoassay</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></td></tr><tr><td><a href=\"Observation-Lyme-TC-Lab-Observation-2.html\"><span title=\"Codes: {http://loinc.org 6321-4}\">Borrelia burgdorferi IgM Ab [Presence] in Serum by Immunoblot</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></td></tr></table></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85069-3"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient"
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/Lyme-TC-Specimen"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/Lyme-TC-Lab-Observation-1"
+    },
+    {
+      "reference": "Observation/Lyme-TC-Lab-Observation-2"
+    }
+  ]
+}

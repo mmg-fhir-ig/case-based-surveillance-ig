@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/STD-TC-EpiQuestionnaire> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "STD-TC-EpiQuestionnaire"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span></p><p><b>code</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system std-program-questionnaire-panel}\">STD Program Questionnaire Panel</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-STD-TC-EQ1.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD107}\">Had Sex with a Male within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ2.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD108}\">Had Sex with a Female within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor NASK}\">not asked</span></a></li><li><a href=\"Observation-STD-TC-EQ3.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD109}\">Had Sex with an Anonymous Partner within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ4.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD110}\">Had Sex with a Person Known to Him/Her to be an \"Intravenous Drug User (IDU)\" within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor NASK}\">not asked</span></a></li><li><a href=\"Observation-STD-TC-EQ5.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD111}\">Had Sex while Intoxicated and/or High on Drugs within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li><li><a href=\"Observation-STD-TC-EQ6.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD112}\">Exchanged Drugs/Money for Sex within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ7.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD113}\">Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ8.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD114}\">Engaged in Injection Drug use Within Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li><li><a href=\"Observation-STD-TC-EQ9.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD117}\">Previous STD History</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li><li><a href=\"Observation-STD-TC-EQ10.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD118}\">Been Incarcerated within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor NASK}\">not asked</span></a></li><li><a href=\"Observation-STD-TC-EQ11.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD119}\">Have You Met Sex Partners through the Internet in the Last 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ12.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD120}\">Total Number of Sex Partners in the Last 12 months</span>; 2</a></li><li><a href=\"Observation-STD-TC-EQ13.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD999}\">Unknown Number of Sex Partners in Last 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+       fhir:Coding.code [ fhir:value "epi-questionnaire" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+       fhir:Coding.code [ fhir:value "std-program-questionnaire-panel" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/STD-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/STD-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "STD-TC Example Patient" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ1>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ1" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ2>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ2" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ3>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ3" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ4>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ4" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ5>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ5" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ6>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ6" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ7>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ7" ]
+  ], [
+     fhir:index 7;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ8>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ8" ]
+  ], [
+     fhir:index 8;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ9>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ9" ]
+  ], [
+     fhir:index 9;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ10>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ10" ]
+  ], [
+     fhir:index 10;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ11>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ11" ]
+  ], [
+     fhir:index 11;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ12>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ12" ]
+  ], [
+     fhir:index 12;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ13>;
+     fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ13" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/STD-TC-EpiQuestionnaire.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

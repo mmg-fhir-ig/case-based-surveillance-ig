@@ -1,0 +1,32 @@
+{
+  "resourceType": "Practitioner",
+  "id": "STD-TC-Person-Reporting",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Green, Marta</p><p><b>telecom</b>: ph: 877-721-7725, <a href=\"mailto:Green@you.org\">Green@you.org</a></p></div>"
+  },
+  "name": [
+    {
+      "text": "Green, Marta",
+      "family": "Green",
+      "given": [
+        "Marta"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "877-721-7725"
+    },
+    {
+      "system": "email",
+      "value": "Green@you.org"
+    }
+  ]
+}

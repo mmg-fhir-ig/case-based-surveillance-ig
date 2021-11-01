@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2021-10-18T11:18:26-04:00",
+  "date": "2021-11-01T11:33:34-04:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -40,13 +40,13 @@
       "id": "hl7_fhir_us_core",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
-      "version": "4.0.0"
+      "version": "current"
     },
     {
       "id": "hl7_fhir_us_ecr",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "packageId": "hl7.fhir.us.ecr",
-      "version": "1.0.0"
+      "version": "current"
     },
     {
       "id": "hl7_fhir_us_odh",
@@ -618,6 +618,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-patient"
+        },
+        "name": "US Case Based Surveillance Patient Profile",
+        "description": "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -639,7 +653,7 @@
           "reference": "StructureDefinition/cbs-cdc-address-use"
         },
         "name": "Case Based Surveillance CDC Address Use Extension",
-        "description": "Indicates the use of the address as per information surveillance program ",
+        "description": "Indicates the use of the address as per information surveillance program.",
         "exampleBoolean": false
       },
       {
@@ -1537,6 +1551,1140 @@
         "name": "HAICA-TC-Specimen",
         "description": "A specimen example resource for the HAI-CA Test Case 2.",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP"
+        },
+        "name": "Lyme-TC-CNP",
+        "description": "Case notification panel resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member1"
+        },
+        "name": "Lyme-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member10"
+        },
+        "name": "Lyme-TC-CNP-Member10",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member11"
+        },
+        "name": "Lyme-TC-CNP-Member11",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member12"
+        },
+        "name": "Lyme-TC-CNP-Member12",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member13"
+        },
+        "name": "Lyme-TC-CNP-Member13",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member2"
+        },
+        "name": "Lyme-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member3"
+        },
+        "name": "Lyme-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member4"
+        },
+        "name": "Lyme-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member5"
+        },
+        "name": "Lyme-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member6"
+        },
+        "name": "Lyme-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member7"
+        },
+        "name": "Lyme-TC-CNP-Member7",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member8"
+        },
+        "name": "Lyme-TC-CNP-Member8",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-CNP-Member9"
+        },
+        "name": "Lyme-TC-CNP-Member9",
+        "description": "Case notification panel member resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Lyme-TC-Composition"
+        },
+        "name": "Lyme-TC-Composition",
+        "description": "Composition resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/Lyme-TC-Condition"
+        },
+        "name": "Lyme-TC-Condition",
+        "description": "Condition of interest resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-Exposure"
+        },
+        "name": "Lyme-TC-Exposure",
+        "description": "Exposure observation resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/Lyme-TC-Hospitalization"
+        },
+        "name": "Lyme-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/Lyme-TC-Lab-DiagnosticReport"
+        },
+        "name": "Lyme-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-Lab-Observation-1"
+        },
+        "name": "Lyme-TC-Lab-Observation-1",
+        "description": "A first lab observation example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-Lab-Observation-2"
+        },
+        "name": "Lyme-TC-Lab-Observation-2",
+        "description": "A second lab observation example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-MMWR"
+        },
+        "name": "Lyme-TC-MMWR",
+        "description": "MMWR resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/Lyme-TC-Medication-Statement"
+        },
+        "name": "Lyme-TC-Medication-Statement",
+        "description": "Medication Statement example resource for the Lyme Test Case",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Lyme-TC-ODH-Example"
+        },
+        "name": "Lyme-TC-ODH-Example",
+        "description": "An ODH Past or Present Job-conforming observation example resource for the Lyme Test Case.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/Lyme-TC-Patient"
+        },
+        "name": "Lyme-TC-Patient",
+        "description": "CBS Patient resource for the Lyme Test Case Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Lyme-TC-Person-Reporting"
+        },
+        "name": "Lyme-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the Lyme Test Case",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Lyme-TC-Reporting-Source"
+        },
+        "name": "Lyme-TC-Reporting-Source",
+        "description": "Reporting source example resource for the Lyme Test Case",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/Lyme-TC-Specimen"
+        },
+        "name": "Lyme-TC-Specimen",
+        "description": "A specimen example resource for the Lyme Test Case.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP"
+        },
+        "name": "STD-TC-CNP",
+        "description": "Case notification panel resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member1"
+        },
+        "name": "STD-TC-CNP-Member1",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member10"
+        },
+        "name": "STD-TC-CNP-Member10",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member11"
+        },
+        "name": "STD-TC-CNP-Member11",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member12"
+        },
+        "name": "STD-TC-CNP-Member12",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member13"
+        },
+        "name": "STD-TC-CNP-Member13",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member14"
+        },
+        "name": "STD-TC-CNP-Member14",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member15"
+        },
+        "name": "STD-TC-CNP-Member15",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member2"
+        },
+        "name": "STD-TC-CNP-Member2",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member3"
+        },
+        "name": "STD-TC-CNP-Member3",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member4"
+        },
+        "name": "STD-TC-CNP-Member4",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member5"
+        },
+        "name": "STD-TC-CNP-Member5",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member6"
+        },
+        "name": "STD-TC-CNP-Member6",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member7"
+        },
+        "name": "STD-TC-CNP-Member7",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member8"
+        },
+        "name": "STD-TC-CNP-Member8",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CNP-Member9"
+        },
+        "name": "STD-TC-CNP-Member9",
+        "description": "Case notification panel member resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-CaseSampled"
+        },
+        "name": "STD-TC-CaseSampled",
+        "description": "An example Observation describing if the case was selected by reporting jurisdiction for enhanced investigation",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/STD-TC-Complication"
+        },
+        "name": "STD-TC-Complication",
+        "description": "An example Condition descrribing if the subject experienced severe complications due to this illness.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/STD-TC-Composition"
+        },
+        "name": "STD-TC-Composition",
+        "description": "Composition resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/STD-TC-Condition"
+        },
+        "name": "STD-TC-Condition",
+        "description": "Condition of interest resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-DetectionMethod"
+        },
+        "name": "STD-TC-DetectionMethod",
+        "description": "An example Observation describing how the case patient first came to the attention of the health department for this condition.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ1"
+        },
+        "name": "STD-TC-EQ1",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ10"
+        },
+        "name": "STD-TC-EQ10",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ11"
+        },
+        "name": "STD-TC-EQ11",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ12"
+        },
+        "name": "STD-TC-EQ12",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ13"
+        },
+        "name": "STD-TC-EQ13",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ2"
+        },
+        "name": "STD-TC-EQ2",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ3"
+        },
+        "name": "STD-TC-EQ3",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ4"
+        },
+        "name": "STD-TC-EQ4",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ5"
+        },
+        "name": "STD-TC-EQ5",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ6"
+        },
+        "name": "STD-TC-EQ6",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ7"
+        },
+        "name": "STD-TC-EQ7",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ8"
+        },
+        "name": "STD-TC-EQ8",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EQ9"
+        },
+        "name": "STD-TC-EQ9",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-EpiQuestionnaire"
+        },
+        "name": "STD-TC-EpiQuestionnaire",
+        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as the parent resource.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-Exposure"
+        },
+        "name": "STD-TC-Exposure",
+        "description": "Exposure observation resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-HIVStatus"
+        },
+        "name": "STD-TC-HIVStatus",
+        "description": "An example Observation describing the patient's HIV status",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-HIVStatusDocumented"
+        },
+        "name": "STD-TC-HIVStatusDocumented",
+        "description": "An example Observation describing if the HIV status of the case-patient was investigated through search of eHARS.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/STD-TC-Hospitalization"
+        },
+        "name": "STD-TC-Hospitalization",
+        "description": "CBS Hospitalization resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-InitialHealthExam"
+        },
+        "name": "STD-TC-InitialHealthExam",
+        "description": "An example Observation describing the date of the patient's intial health exam that was associated with the case report health event",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/STD-TC-Lab-DiagnosticReport"
+        },
+        "name": "STD-TC-Lab-DiagnosticReport",
+        "description": "A lab diagnostic report example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-Lab-Observation"
+        },
+        "name": "STD-TC-Lab-Observation",
+        "description": "A lab observation example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-Lab-Observation-AST"
+        },
+        "name": "STD-TC-Lab-Observation-AST",
+        "description": "An antimicrobial susceptibility test lab observation example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-MMWR"
+        },
+        "name": "STD-TC-MMWR",
+        "description": "MMWR resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/STD-TC-Medication-Statement-1"
+        },
+        "name": "STD-TC-Medication-Statement-1",
+        "description": "A first Medication Statement example resource for the STD Test Case 5",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/STD-TC-Medication-Statement-2"
+        },
+        "name": "STD-TC-Medication-Statement-2",
+        "description": "A second Medication Statement example resource for the STD Test Case 5",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/STD-TC-Patient"
+        },
+        "name": "STD-TC-Patient",
+        "description": "CBS Patient resource for the STD Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/STD-TC-Person-Reporting"
+        },
+        "name": "STD-TC-Person-Reporting",
+        "description": "Person reporting to CDC example resource for the STD Test Case 5",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/STD-TC-Reporting-Source"
+        },
+        "name": "STD-TC-Reporting-Source",
+        "description": "Reporting source example resource for the STD Test Case 5",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-SexualOrientation"
+        },
+        "name": "STD-TC-SexualOrientation",
+        "description": "An example of the Social Determinants of Health profile describing a patient's sexual orientation",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/STD-TC-Specimen"
+        },
+        "name": "STD-TC-Specimen",
+        "description": "A specimen example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/STD-TC-Specimen-AST"
+        },
+        "name": "STD-TC-Specimen-AST",
+        "description": "An antimicrobial suceptibility test specimen example resource for the STD Test Case 5.",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/STD-TC-TreatmentDate"
+        },
+        "name": "STD-TC-TreatmentDate",
+        "description": "An example Observation describing the day the patient's treatment was initiated for the condition",
+        "exampleBoolean": true
       }
     ],
     "page": {

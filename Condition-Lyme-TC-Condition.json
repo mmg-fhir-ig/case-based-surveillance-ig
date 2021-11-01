@@ -1,0 +1,90 @@
+{
+  "resourceType": "Condition",
+  "id": "Lyme-TC-Condition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Case Based Surveillance Case Class Status</b>: <span title=\"Codes: {http://snomed.info/sct 410605003}\">Confirmed present</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2018-07-05</p><p><b>Case Based Surveillance Illness Duration</b>: 15 d</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 11080}\">Lyme disease</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>onset</b>: 2018-06-25</p><p><b>abatement</b>: 2018-07-10</p><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 69588003}\">Erythema Migrans</span></p></blockquote><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 233917008}\">Atrioventricular block</span></p></blockquote></div>"
+  },
+  "extension": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "410605003",
+            "display": "Confirmed present"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
+      "valueDateTime": "2018-07-05"
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
+      "valueQuantity": {
+        "value": 15,
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+      }
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "inactive"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.5.277",
+        "code": "11080",
+        "display": "Lyme disease"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "onsetDateTime": "2018-06-25",
+  "abatementDateTime": "2018-07-10",
+  "evidence": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "69588003",
+              "display": "Erythema Migrans"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "233917008",
+              "display": "Atrioventricular block"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

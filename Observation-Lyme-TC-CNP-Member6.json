@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "Lyme-TC-CNP-Member6",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77970-2}\">Date of initial report</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>value</b>: 2018-09-12</p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "78000-7",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "77970-2",
+        "display": "Date of initial report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "valueDateTime": "2018-09-12"
+}

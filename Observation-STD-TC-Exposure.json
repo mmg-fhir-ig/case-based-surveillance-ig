@@ -1,0 +1,83 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-Exposure",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system Location-of-Exposure}\">Location of Exposure</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>focus</b>: <a href=\"Condition-STD-TC-Condition.html\">STD-TC Example Condition of Interest. Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 10280}\">Gonorrhea</span>; onset: 2014-01-15; abatement: 2014-01-27</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77984-3}\">Country of exposure to illness [Location]</span></p><p><b>value</b>: <span title=\"Codes: {urn:iso:std:iso:3166 MEX}\">Mexico</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77985-0}\">State or province of exposure to illness</span></p><p><b>value</b>: <span title=\"Codes: {urn:iso:std:iso:3166:-2 MX-GRO}\">Guerrero</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "78000-7",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "code": "Location-of-Exposure"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "focus": [
+    {
+      "reference": "Condition/STD-TC-Condition",
+      "display": "STD-TC Example Condition of Interest"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77984-3"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "MEX",
+            "display": "Mexico"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77985-0"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166:-2",
+            "code": "MX-GRO",
+            "display": "Guerrero"
+          }
+        ]
+      }
+    }
+  ]
+}

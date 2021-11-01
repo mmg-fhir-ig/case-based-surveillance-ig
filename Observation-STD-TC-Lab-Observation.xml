@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-Lab-Observation"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 698-1}">Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>effective</b>: 2014-02-26</p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 10828004}">Positive</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="698-1"/>
+      <display value="Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <effectiveDateTime value="2014-02-26"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="Positive"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

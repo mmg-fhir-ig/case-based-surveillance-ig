@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-CNP-Member10"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system case-outbreak}">Case Outbreak Name and Indicator</span></p><p><b>subject</b>: <a href="Patient-Lyme-TC-Patient.html">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://loinc.org 77980-1}">Case is associated with a known outbreak</span></td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0005 N}">No</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+      <code value="case-outbreak"/>
+      <display value="Case Outbreak Name and Indicator"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Lyme-TC-Patient"/>
+    <display value="Lyme-TC Example Patient"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77980-1"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+        <code value="N"/>
+        <display value="No"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

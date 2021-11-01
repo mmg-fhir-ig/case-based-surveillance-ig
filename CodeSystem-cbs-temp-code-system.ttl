@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "CBSTemporary"];
   fhir:CodeSystem.title [ fhir:value "Case Based Surveillance temporary/placeholder code system."];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-10-18T11:18:26-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-11-01T11:33:34-04:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:CodeSystem.contact [
      fhir:index 0;

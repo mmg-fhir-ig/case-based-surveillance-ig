@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-MMWR"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system MMWR}">MMWR Week/Year</span></p><p><b>subject</b>: <a href="Patient-Lyme-TC-Patient.html">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77991-8}">MMWR Week [CDC.PHIN]</span></p><p><b>value</b>: 37</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77992-6}">MMWR Year [CDC.PHIN]</span></p><p><b>value</b>: 2018</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+      <code value="MMWR"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Lyme-TC-Patient"/>
+    <display value="Lyme-TC Example Patient"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77991-8"/>
+      </coding>
+    </code>
+    <valueInteger value="37"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77992-6"/>
+      </coding>
+    </code>
+    <valueInteger value="2018"/>
+  </component>
+</Observation>

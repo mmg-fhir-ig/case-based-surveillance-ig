@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-CNP-Member5"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77969-4}">Jurisdiction code</span></p><p><b>subject</b>: <a href="Patient-Lyme-TC-Patient.html">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>value</b>: S01</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77969-4"/>
+      <display value="Jurisdiction code"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Lyme-TC-Patient"/>
+    <display value="Lyme-TC Example Patient"/>
+  </subject>
+  <valueString value="S01"/>
+</Observation>

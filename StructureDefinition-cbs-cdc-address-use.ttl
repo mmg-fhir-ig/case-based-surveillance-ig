@@ -29,7 +29,7 @@
        fhir:ContactPoint.value [ fhir:value "http://gtri.gatech.edu/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Indicates the use of the address as per information surveillance program "];
+  fhir:StructureDefinition.description [ fhir:value "Indicates the use of the address as per information surveillance program."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-SexualOrientation",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system sogi}\">Sexual Orientation and Gender Identity</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 76690-7}\">Sexual orientation</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 20430005}\">Heterosexual</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "code": "sogi"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "76690-7",
+        "display": "Sexual orientation"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "20430005",
+        "display": "Heterosexual"
+      }
+    ]
+  }
+}

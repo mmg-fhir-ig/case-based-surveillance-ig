@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/STD-TC-Lab-Observation-AST> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "STD-TC-Lab-Observation-AST"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 18866-4}\">Azithromycin [Susceptibility]</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: 64 mcg/mL</p><p><b>interpretation</b>: <span title=\"Codes: {http://snomed.info/sct 30714006}\">Resistant</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 104234003}\">Gradient strip susceptibility test</span></p><p><b>specimen</b>: <a href=\"Specimen-STD-TC-Specimen-AST.html\">Generated Summary: id: SLT-12466; <span title=\"Codes: {http://snomed.info/sct 119394009}\">Specimen from vagina</span></a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:18866-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "18866-4" ];
+       fhir:Coding.display [ fhir:value "Azithromycin [Susceptibility]" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/STD-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/STD-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "STD-TC Example Patient" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "64"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mcg/mL" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "ug/ML" ]
+  ];
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:30714006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "30714006" ];
+       fhir:Coding.display [ fhir:value "Resistant" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:104234003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "104234003" ];
+       fhir:Coding.display [ fhir:value "Gradient strip susceptibility test" ]
+     ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://cbsig.chai.gatech.edu/Specimen/STD-TC-Specimen-AST>;
+     fhir:Reference.reference [ fhir:value "Specimen/STD-TC-Specimen-AST" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/STD-TC-Lab-Observation-AST.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

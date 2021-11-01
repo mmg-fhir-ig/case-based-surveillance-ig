@@ -1,0 +1,77 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-EpiQuestionnaire",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span></p><p><b>code</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system std-program-questionnaire-panel}\">STD Program Questionnaire Panel</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-STD-TC-EQ1.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD107}\">Had Sex with a Male within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ2.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD108}\">Had Sex with a Female within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor NASK}\">not asked</span></a></li><li><a href=\"Observation-STD-TC-EQ3.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD109}\">Had Sex with an Anonymous Partner within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ4.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD110}\">Had Sex with a Person Known to Him/Her to be an \"Intravenous Drug User (IDU)\" within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor NASK}\">not asked</span></a></li><li><a href=\"Observation-STD-TC-EQ5.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD111}\">Had Sex while Intoxicated and/or High on Drugs within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li><li><a href=\"Observation-STD-TC-EQ6.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD112}\">Exchanged Drugs/Money for Sex within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ7.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD113}\">Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ8.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD114}\">Engaged in Injection Drug use Within Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li><li><a href=\"Observation-STD-TC-EQ9.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD117}\">Previous STD History</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li><li><a href=\"Observation-STD-TC-EQ10.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD118}\">Been Incarcerated within the Past 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor NASK}\">not asked</span></a></li><li><a href=\"Observation-STD-TC-EQ11.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD119}\">Have You Met Sex Partners through the Internet in the Last 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></a></li><li><a href=\"Observation-STD-TC-EQ12.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD120}\">Total Number of Sex Partners in the Last 12 months</span>; 2</a></li><li><a href=\"Observation-STD-TC-EQ13.html\">Generated Summary: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD999}\">Unknown Number of Sex Partners in Last 12 Months</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></a></li></ul></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "code": "epi-questionnaire"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "code": "std-program-questionnaire-panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/STD-TC-EQ1"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ2"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ3"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ4"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ5"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ6"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ7"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ8"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ9"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ10"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ11"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ12"
+    },
+    {
+      "reference": "Observation/STD-TC-EQ13"
+    }
+  ]
+}

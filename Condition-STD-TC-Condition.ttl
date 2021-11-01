@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Condition/STD-TC-Condition> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "STD-TC-Condition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Case Based Surveillance Case Class Status</b>: <span title=\"Codes: {http://snomed.info/sct 410605003}\">Confirmed present</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-01-17</p><p><b>Case Based Surveillance Illness Duration</b>: 12 d</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 10280}\">Gonorrhea</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>onset</b>: 2014-01-15</p><p><b>abatement</b>: 2014-01-27</p><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 69588003}\">Erythema Migrans</span></p></blockquote><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 233917008}\">Atrioventricular block</span></p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:410605003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "410605003" ];
+         fhir:Coding.display [ fhir:value "Confirmed present" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date" ];
+     fhir:Extension.valueDateTime [ fhir:value "2014-01-17"^^xsd:date ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration" ];
+     fhir:Extension.valueQuantity [
+       fhir:Quantity.value [ fhir:value "12"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "d" ]
+     ]
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "inactive" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.277" ];
+       fhir:Coding.code [ fhir:value "10280" ];
+       fhir:Coding.display [ fhir:value "Gonorrhea" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/STD-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/STD-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "STD-TC Example Patient" ]
+  ];
+  fhir:Condition.onsetDateTime [ fhir:value "2014-01-15"^^xsd:date];
+  fhir:Condition.abatementDateTime [ fhir:value "2014-01-27"^^xsd:date];
+  fhir:Condition.evidence [
+     fhir:index 0;
+     fhir:Condition.evidence.code [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:69588003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "69588003" ];
+         fhir:Coding.display [ fhir:value "Erythema Migrans" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Condition.evidence.code [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:233917008;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "233917008" ];
+         fhir:Coding.display [ fhir:value "Atrioventricular block" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Condition/STD-TC-Condition.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

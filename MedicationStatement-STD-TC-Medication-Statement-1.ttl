@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/MedicationStatement/STD-TC-Medication-Statement-1> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "STD-TC-Medication-Statement-1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 2193}\">Ceftriaxone</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>effective</b>: 2014-02-25 --&gt; 2014-02-25</p></div>"
+  ];
+  fhir:MedicationStatement.status [ fhir:value "completed"];
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "2193" ];
+       fhir:Coding.display [ fhir:value "Ceftriaxone" ]
+     ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/STD-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/STD-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "STD-TC Example Patient" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2014-02-25"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2014-02-25"^^xsd:date ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:255559005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "255559005" ];
+         fhir:Coding.display [ fhir:value "Intramuscular" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "250"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/MedicationStatement/STD-TC-Medication-Statement-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

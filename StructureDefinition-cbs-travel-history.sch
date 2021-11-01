@@ -260,7 +260,7 @@
   <sch:pattern>
     <sch:title>f:Observation/f:component</sch:title>
     <sch:rule context="f:Observation/f:component">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -232,7 +232,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2135-2}\">Hispanic or Latino</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}\">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title=\"Codes: {http://hl7.org/fhir/gender-identity female}\">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2106-3}\">White</span></p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2135-2}\">2135-2</span></p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: <span title=\"Codes: {http://hl7.org/fhir/gender-identity female}\">female</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -240,20 +240,12 @@
        fhir:index 0;
        fhir:Extension.url [ fhir:value "ombCategory" ];
        fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0005" ];
          fhir:Coding.code [ fhir:value "2106-3" ];
          fhir:Coding.display [ fhir:value "White" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "detailed" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
-         fhir:Coding.code [ fhir:value "2135-2" ];
-         fhir:Coding.display [ fhir:value "Hispanic or Latino" ]
-       ]
-     ], [
-       fhir:index 2;
        fhir:Extension.url [ fhir:value "text" ];
        fhir:Extension.valueString [ fhir:value "Mixed" ]
      ];
@@ -351,6 +343,7 @@
        fhir:index 0;
        fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use" ];
        fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
          fhir:Coding.code [ fhir:value "Usual-Residence" ]
        ]
      ];

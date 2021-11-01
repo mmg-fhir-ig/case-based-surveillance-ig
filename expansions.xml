@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4cfaf4c1-0ffe-4b11-8e93-93ac53a91f40"/>
+  <id value="17f1ab00-d046-4816-bbd3-d6a0386d5bc5"/>
   <meta>
-    <lastUpdated value="2021-10-18T11:18:26.778-04:00"/>
+    <lastUpdated value="2021-11-01T11:33:34.742-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -59,7 +59,7 @@
         <name value="CBSCDCAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-10-18T11:18:26-04:00"/>
+        <date value="2021-11-01T11:33:34-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -70,8 +70,8 @@
         </contact>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:02b7daf1-7e53-4a05-8c66-f2577531ab6c"/>
-          <timestamp value="2021-10-18T11:20:15-04:00"/>
+          <identifier value="urn:uuid:024b60ee-1f41-47d0-9d8b-96835809d18b"/>
+          <timestamp value="2021-11-01T11:35:00-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -156,7 +156,7 @@
         <name value="CBSRelatedCaseTypeVS"/>
         <title value="CBS Related Case Type Value Set"/>
         <status value="active"/>
-        <date value="2021-10-18T11:18:26-04:00"/>
+        <date value="2021-11-01T11:33:34-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -167,8 +167,8 @@
         </contact>
         <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
         <expansion>
-          <identifier value="urn:uuid:58bc5ff5-1e63-4f92-aece-e01de3751740"/>
-          <timestamp value="2021-10-18T11:20:28-04:00"/>
+          <identifier value="urn:uuid:14bdc6be-7447-468f-ab1d-bacf4f43a82b"/>
+          <timestamp value="2021-11-01T11:35:08-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -266,7 +266,7 @@
         <name value="CBSSocialDeterminantsOfHealthCategoryVS"/>
         <title value="CBS Case Social Determinants of Health Category Value Set"/>
         <status value="active"/>
-        <date value="2021-10-18T11:18:26-04:00"/>
+        <date value="2021-11-01T11:33:34-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -277,8 +277,8 @@
         </contact>
         <description value="Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
         <expansion>
-          <identifier value="urn:uuid:b7a46d21-61a1-406c-a221-4e9a87ae4c63"/>
-          <timestamp value="2021-10-18T11:20:29-04:00"/>
+          <identifier value="urn:uuid:0c7e3e53-7c3c-4f20-a3dd-665f574b301f"/>
+          <timestamp value="2021-11-01T11:35:08-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -387,7 +387,7 @@
         <name value="CBSSocialDeterminantsOfHealthVS"/>
         <title value="CBS Case Social Determinants of Health Codes Value Set"/>
         <status value="active"/>
-        <date value="2021-10-18T11:18:26-04:00"/>
+        <date value="2021-11-01T11:33:34-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -398,8 +398,8 @@
         </contact>
         <description value="Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
         <expansion>
-          <identifier value="urn:uuid:52cad6d2-01a4-434c-9e66-c91cdaaabd5f"/>
-          <timestamp value="2021-10-18T11:20:29-04:00"/>
+          <identifier value="urn:uuid:999182aa-129c-4ee2-9868-1ba03eb65e63"/>
+          <timestamp value="2021-11-01T11:35:08-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -498,7 +498,7 @@
         <name value="CBSTimeWindowRelativeToVS"/>
         <title value="CBS Time Window Relative To Value Set"/>
         <status value="active"/>
-        <date value="2021-10-18T11:18:26-04:00"/>
+        <date value="2021-11-01T11:33:34-04:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -509,8 +509,8 @@
         </contact>
         <description value="Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative."/>
         <expansion>
-          <identifier value="urn:uuid:1febe54c-be53-410f-ab00-29c1b4aeaaea"/>
-          <timestamp value="2021-10-18T11:20:29-04:00"/>
+          <identifier value="urn:uuid:15268981-0c1e-4a94-a1bc-f261d5521a1f"/>
+          <timestamp value="2021-11-01T11:35:08-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

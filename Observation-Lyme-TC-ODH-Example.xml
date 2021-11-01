@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-ODH-Example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 11341-5}">History of Occupation</span></p><p><b>subject</b>: <a href="Patient-Lyme-TC-Patient.html">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>effective</b>: ?? --&gt; (ongoing)</p><p><b>value</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010 6230}">Carpenters</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://loinc.org 86188-0}">History of Occupation industry</span></td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010 4090}">4090</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11341-5"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Lyme-TC-Patient"/>
+    <display value="Lyme-TC Example Patient"/>
+  </subject>
+  <effectivePeriod>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
+  </effectivePeriod>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010"/>
+      <code value="6230"/>
+      <display value="Carpenters"/>
+    </coding>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="86188-0"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010"/>
+        <code value="4090"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CBSCaseNotificationPanelVS"];
   fhir:ValueSet.title [ fhir:value "CBS Case Notification Panel Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-10-18T11:18:26-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-11-01T11:33:34-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:ValueSet.contact [
      fhir:index 0;

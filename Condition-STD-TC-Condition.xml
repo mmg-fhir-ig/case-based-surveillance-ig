@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-Condition"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Case Based Surveillance Case Class Status</b>: <span title="Codes: {http://snomed.info/sct 410605003}">Confirmed present</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-01-17</p><p><b>Case Based Surveillance Illness Duration</b>: 12 d</p><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}">Inactive</span></p><p><b>code</b>: <span title="Codes: {urn:oid:2.16.840.1.114222.4.5.277 10280}">Gonorrhea</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>onset</b>: 2014-01-15</p><p><b>abatement</b>: 2014-01-27</p><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 69588003}">Erythema Migrans</span></p></blockquote><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 233917008}">Atrioventricular block</span></p></blockquote></div>
+  </text>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="410605003"/>
+        <display value="Confirmed present"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date">
+    <valueDateTime value="2014-01-17"/>
+  </extension>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration">
+    <valueQuantity>
+      <value value="12"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="d"/>
+    </valueQuantity>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="inactive"/>
+    </coding>
+  </clinicalStatus>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.5.277"/>
+      <code value="10280"/>
+      <display value="Gonorrhea"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <onsetDateTime value="2014-01-15"/>
+  <abatementDateTime value="2014-01-27"/>
+  <evidence>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="69588003"/>
+        <display value="Erythema Migrans"/>
+      </coding>
+    </code>
+  </evidence>
+  <evidence>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="233917008"/>
+        <display value="Atrioventricular block"/>
+      </coding>
+    </code>
+  </evidence>
+</Condition>

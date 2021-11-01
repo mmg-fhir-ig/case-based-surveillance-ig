@@ -245,6 +245,13 @@
     "name": "CaseBasedSurveillanceVaccinationRecord"
   },
   {
+    "id": "us-cbs-patient",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient",
+    "version": "0.1.0",
+    "name": "USCaseBasedSurveillancePatient"
+  },
+  {
     "id": "CBSCDCAddressUseVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS",

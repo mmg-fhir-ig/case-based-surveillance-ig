@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Lyme-TC-CNP"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-Lyme-TC-MMWR.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system MMWR}\">MMWR Week/Year</span></a></li><li><a href=\"Observation-Lyme-TC-Exposure.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system Location-of-Exposure}\">Location of Exposure</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member1.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77965-2}\">Immediate national notifiable condition</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0005 N}\">No</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member2.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77966-0}\">Reporting state</span>; <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 47}\">Tennessee</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member3.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77967-8}\">Reporting county</span>; <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.93 47037}\">Davidson</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member4.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77968-6}\">National reporting jurisdiction</span>; <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 47}\">Tennessee</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member5.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77969-4}\">Jurisdiction code</span>; value: S01</a></li><li><a href=\"Observation-Lyme-TC-CNP-Member6.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77970-2}\">Date of initial report</span>; value: 2018-09-12</a></li><li><a href=\"Observation-Lyme-TC-CNP-Member7.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77972-8}\">Earliest date reported to county</span>; value: 2018-09-12</a></li><li><a href=\"Observation-Lyme-TC-CNP-Member8.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77973-6}\">Earliest date reported to state</span>; value: 2018-09-12</a></li><li><a href=\"Observation-Lyme-TC-CNP-Member9.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77979-3}\">Case investigation start date</span>; value: 2018-06-28</a></li><li><a href=\"Observation-Lyme-TC-CNP-Member10.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system case-outbreak}\">Case Outbreak Name and Indicator</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member11.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77989-2}\">Disease transmission mode</span>; <span title=\"Codes: {http://snomed.info/sct 418427004}\">Vector-borne transmission</span></a></li><li><a href=\"Observation-Lyme-TC-CNP-Member12.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77995-9}\">Date of first report to public health department</span>; value: 2018-09-12</a></li><li><a href=\"Observation-Lyme-TC-CNP-Member13.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span>; <span title=\"Codes: {http://loinc.org 77998-3}\">Age at time of case investigation</span>; 25</a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/Lyme-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/Lyme-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "Lyme-TC Example Patient" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-MMWR>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-MMWR" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-Exposure>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-Exposure" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member1>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member1" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member2>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member2" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member3>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member3" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member4>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member4" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member5>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member5" ]
+  ], [
+     fhir:index 7;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member6>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member6" ]
+  ], [
+     fhir:index 8;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member7>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member7" ]
+  ], [
+     fhir:index 9;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member8>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member8" ]
+  ], [
+     fhir:index 10;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member9>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member9" ]
+  ], [
+     fhir:index 11;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member10>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member10" ]
+  ], [
+     fhir:index 12;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member11>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member11" ]
+  ], [
+     fhir:index 13;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member12>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member12" ]
+  ], [
+     fhir:index 14;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP-Member13>;
+     fhir:Reference.reference [ fhir:value "Observation/Lyme-TC-CNP-Member13" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/Lyme-TC-CNP.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

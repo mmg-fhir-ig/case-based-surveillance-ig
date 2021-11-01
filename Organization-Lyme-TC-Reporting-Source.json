@@ -1,0 +1,30 @@
+{
+  "resourceType": "Organization",
+  "id": "Lyme-TC-Reporting-Source",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.274 PHC247}\">Laboratory</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 37243 </p></div>"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.114222.4.5.274",
+          "code": "PHC247",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "name": "Reporting Source",
+  "address": [
+    {
+      "postalCode": "37243"
+    }
+  ]
+}

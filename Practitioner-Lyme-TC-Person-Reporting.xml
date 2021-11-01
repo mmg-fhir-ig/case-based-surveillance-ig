@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-Person-Reporting"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Doe, John</p><p><b>telecom</b>: ph: 456-987-8888, <a href="mailto:john.doe@email.com">john.doe@email.com</a></p></div>
+  </text>
+  <name>
+    <text value="Doe, John"/>
+    <family value="Doe"/>
+    <given value="John"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="456-987-8888"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="john.doe@email.com"/>
+  </telecom>
+</Practitioner>

@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}\">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2106-3}\">White</span></p><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 1010-8}\">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}\">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
        fhir:index 0;
        fhir:Extension.url [ fhir:value "ombCategory" ];
        fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0005" ];
          fhir:Coding.code [ fhir:value "2106-3" ];
          fhir:Coding.display [ fhir:value "White" ]
        ]
@@ -161,6 +161,7 @@
        fhir:index 0;
        fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use" ];
        fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
          fhir:Coding.code [ fhir:value "Usual-Residence" ]
        ]
      ];

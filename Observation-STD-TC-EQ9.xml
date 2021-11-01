@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-EQ9"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}">Case Based Surveillance Epi Questionnaire Panel</span></p><p><b>code</b>: <span title="Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD117}">Previous STD History</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 N}">No</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+      <code value="epi-questionnaire"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.5.232"/>
+      <code value="STD117"/>
+      <display value="Previous STD History"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <code value="N"/>
+      <display value="No"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-Lab-Observation-AST"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 18866-4}">Azithromycin [Susceptibility]</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: 64 mcg/mL</p><p><b>interpretation</b>: <span title="Codes: {http://snomed.info/sct 30714006}">Resistant</span></p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 104234003}">Gradient strip susceptibility test</span></p><p><b>specimen</b>: <a href="Specimen-STD-TC-Specimen-AST.html">Generated Summary: id: SLT-12466; <span title="Codes: {http://snomed.info/sct 119394009}">Specimen from vagina</span></a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18866-4"/>
+      <display value="Azithromycin [Susceptibility]"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <valueQuantity>
+    <value value="64"/>
+    <unit value="mcg/mL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="ug/ML"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="30714006"/>
+      <display value="Resistant"/>
+    </coding>
+  </interpretation>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="104234003"/>
+      <display value="Gradient strip susceptibility test"/>
+    </coding>
+  </method>
+  <specimen>
+    <reference value="Specimen/STD-TC-Specimen-AST"/>
+  </specimen>
+</Observation>

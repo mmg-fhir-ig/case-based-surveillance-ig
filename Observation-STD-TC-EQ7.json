@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-EQ7",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system epi-questionnaire}\">Case Based Surveillance Epi Questionnaire Panel</span></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 STD113}\">Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0532 Y}\">Yes</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+          "code": "epi-questionnaire"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.5.232",
+        "code": "STD113",
+        "display": "Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+        "code": "Y",
+        "display": "Yes"
+      }
+    ]
+  }
+}

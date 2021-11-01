@@ -350,8 +350,8 @@
     ],
     "Patient": [
       {
-        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient",
-        "title": "Case Based Surveillance Patient Profile"
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient",
+        "title": "US Case Based Surveillance Patient Profile"
       }
     ],
     "Organization": [
@@ -420,6 +420,18 @@
     "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role": [
       "Specimen"
     ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Observation.effectivePeriod",
+      "Patient.address",
+      "Patient.birthDate",
+      "Patient.communication.language",
+      "Patient.contact.address",
+      "Patient.contact.name",
+      "Patient.contact.telecom",
+      "Patient.gender",
+      "Patient.identifier",
+      "Patient.name"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -479,8 +491,20 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension": [
       "Observation.component"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-tribal-affiliation-extension": [
+      "Patient"
     ]
   }
 }

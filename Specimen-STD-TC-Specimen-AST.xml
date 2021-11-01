@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-Specimen-AST"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: SLT-12466</p><p><b>type</b>: <span title="Codes: {http://snomed.info/sct 119394009}">Specimen from vagina</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td>2014-02-26</td><td><span title="Codes: {http://snomed.info/sct 76784001}">Vagina</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <value value="SLT-12466"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="119394009"/>
+      <display value="Specimen from vagina"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <collection>
+    <collectedDateTime value="2014-02-26"/>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="76784001"/>
+        <display value="Vagina"/>
+      </coding>
+    </bodySite>
+  </collection>
+</Specimen>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-Exposure"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 78000-7}">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title="Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system Location-of-Exposure}">Location of Exposure</span></p><p><b>subject</b>: <a href="Patient-Lyme-TC-Patient.html">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>focus</b>: <a href="Condition-Lyme-TC-Condition.html">Lyme-TC Example Condition of Interest. Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}">Inactive</span>; <span title="Codes: {urn:oid:2.16.840.1.114222.4.5.277 11080}">Lyme disease</span>; onset: 2018-06-25; abatement: 2018-07-10</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77984-3}">Country of exposure to illness [Location]</span></p><p><b>value</b>: <span title="Codes: {urn:iso:std:iso:3166 USA}">United States of America</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77985-0}">State or province of exposure to illness</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.6.92 25}">Massachusetts</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77986-8}">City of exposure to illness</span></p><p><b>value</b>: Lynn</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 77987-6}">County of exposure to illness [Location]</span></p><p><b>value</b>: Essex</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+      <code value="Location-of-Exposure"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Lyme-TC-Patient"/>
+    <display value="Lyme-TC Example Patient"/>
+  </subject>
+  <focus>
+    <reference value="Condition/Lyme-TC-Condition"/>
+    <display value="Lyme-TC Example Condition of Interest"/>
+  </focus>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77984-3"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="USA"/>
+        <display value="United States of America"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77985-0"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.6.92"/>
+        <code value="25"/>
+        <display value="Massachusetts"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77986-8"/>
+      </coding>
+    </code>
+    <valueString value="Lynn"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77987-6"/>
+      </coding>
+    </code>
+    <valueString value="Essex"/>
+  </component>
+</Observation>

@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/MedicationStatement/Lyme-TC-Medication-Statement> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Lyme-TC-Medication-Statement"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 3640}\">doxycycline</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>effective</b>: 2018-07-05 --&gt; 2018-07-15</p></div>"
+  ];
+  fhir:MedicationStatement.status [ fhir:value "completed"];
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "3640" ]
+     ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/Lyme-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/Lyme-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "Lyme-TC Example Patient" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2018-07-05"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2018-07-15"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/MedicationStatement/Lyme-TC-Medication-Statement.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

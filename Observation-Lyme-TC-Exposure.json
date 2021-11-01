@@ -1,0 +1,105 @@
+{
+  "resourceType": "Observation",
+  "id": "Lyme-TC-Exposure",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 78000-7}\">Case notification panel [CDC.PHIN]</span></p><p><b>code</b>: <span title=\"Codes: {http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system Location-of-Exposure}\">Location of Exposure</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Lyme-TC Example Patient. Generated Summary: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227; Xxxxx, Ccccc; gender: male; birthDate: 1993-06-01</a></p><p><b>focus</b>: <a href=\"Condition-Lyme-TC-Condition.html\">Lyme-TC Example Condition of Interest. Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span>; <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.277 11080}\">Lyme disease</span>; onset: 2018-06-25; abatement: 2018-07-10</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77984-3}\">Country of exposure to illness [Location]</span></p><p><b>value</b>: <span title=\"Codes: {urn:iso:std:iso:3166 USA}\">United States of America</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77985-0}\">State or province of exposure to illness</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.92 25}\">Massachusetts</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77986-8}\">City of exposure to illness</span></p><p><b>value</b>: Lynn</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 77987-6}\">County of exposure to illness [Location]</span></p><p><b>value</b>: Essex</p></blockquote></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "78000-7",
+          "display": "Case notification panel [CDC.PHIN]"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "code": "Location-of-Exposure"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Lyme-TC-Patient",
+    "display": "Lyme-TC Example Patient"
+  },
+  "focus": [
+    {
+      "reference": "Condition/Lyme-TC-Condition",
+      "display": "Lyme-TC Example Condition of Interest"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77984-3"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "USA",
+            "display": "United States of America"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77985-0"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.6.92",
+            "code": "25",
+            "display": "Massachusetts"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77986-8"
+          }
+        ]
+      },
+      "valueString": "Lynn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77987-6"
+          }
+        ]
+      },
+      "valueString": "Essex"
+    }
+  ]
+}

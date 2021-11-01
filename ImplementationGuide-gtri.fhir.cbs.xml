@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-10-18T11:18:26-04:00"/>
+  <date value="2021-11-01T11:33:34-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -32,12 +32,12 @@
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="4.0.0"/>
+    <version value="current"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_ecr">
     <uri value="http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr"/>
     <packageId value="hl7.fhir.us.ecr"/>
-    <version value="1.0.0"/>
+    <version value="current"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_odh">
     <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
@@ -441,6 +441,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-cbs-patient"/>
+      </reference>
+      <name value="US Case Based Surveillance Patient Profile"/>
+      <description value="Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -458,7 +469,7 @@
         <reference value="StructureDefinition/cbs-cdc-address-use"/>
       </reference>
       <name value="Case Based Surveillance CDC Address Use Extension"/>
-      <description value="Indicates the use of the address as per information surveillance program "/>
+      <description value="Indicates the use of the address as per information surveillance program."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1164,6 +1175,897 @@
       <name value="HAICA-TC-Specimen"/>
       <description value="A specimen example resource for the HAI-CA Test Case 2."/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP"/>
+      </reference>
+      <name value="Lyme-TC-CNP"/>
+      <description value="Case notification panel resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member1"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member1"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member10"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member10"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member11"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member11"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member12"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member12"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member13"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member13"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member2"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member2"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member3"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member3"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member4"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member4"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member5"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member5"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member6"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member6"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member7"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member7"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member8"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member8"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-CNP-Member9"/>
+      </reference>
+      <name value="Lyme-TC-CNP-Member9"/>
+      <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/Lyme-TC-Composition"/>
+      </reference>
+      <name value="Lyme-TC-Composition"/>
+      <description value="Composition resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Lyme-TC-Condition"/>
+      </reference>
+      <name value="Lyme-TC-Condition"/>
+      <description value="Condition of interest resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-Exposure"/>
+      </reference>
+      <name value="Lyme-TC-Exposure"/>
+      <description value="Exposure observation resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Lyme-TC-Hospitalization"/>
+      </reference>
+      <name value="Lyme-TC-Hospitalization"/>
+      <description value="CBS Hospitalization resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/Lyme-TC-Lab-DiagnosticReport"/>
+      </reference>
+      <name value="Lyme-TC-Lab-DiagnosticReport"/>
+      <description value="A lab diagnostic report example resource for the Lyme Test Case."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-Lab-Observation-1"/>
+      </reference>
+      <name value="Lyme-TC-Lab-Observation-1"/>
+      <description value="A first lab observation example resource for the Lyme Test Case."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-Lab-Observation-2"/>
+      </reference>
+      <name value="Lyme-TC-Lab-Observation-2"/>
+      <description value="A second lab observation example resource for the Lyme Test Case."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-MMWR"/>
+      </reference>
+      <name value="Lyme-TC-MMWR"/>
+      <description value="MMWR resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/Lyme-TC-Medication-Statement"/>
+      </reference>
+      <name value="Lyme-TC-Medication-Statement"/>
+      <description value="Medication Statement example resource for the Lyme Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Lyme-TC-ODH-Example"/>
+      </reference>
+      <name value="Lyme-TC-ODH-Example"/>
+      <description value="An ODH Past or Present Job-conforming observation example resource for the Lyme Test Case."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Lyme-TC-Patient"/>
+      </reference>
+      <name value="Lyme-TC-Patient"/>
+      <description value="CBS Patient resource for the Lyme Test Case Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Lyme-TC-Person-Reporting"/>
+      </reference>
+      <name value="Lyme-TC-Person-Reporting"/>
+      <description value="Person reporting to CDC example resource for the Lyme Test Case"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Lyme-TC-Reporting-Source"/>
+      </reference>
+      <name value="Lyme-TC-Reporting-Source"/>
+      <description value="Reporting source example resource for the Lyme Test Case"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/Lyme-TC-Specimen"/>
+      </reference>
+      <name value="Lyme-TC-Specimen"/>
+      <description value="A specimen example resource for the Lyme Test Case."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP"/>
+      </reference>
+      <name value="STD-TC-CNP"/>
+      <description value="Case notification panel resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member1"/>
+      </reference>
+      <name value="STD-TC-CNP-Member1"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member10"/>
+      </reference>
+      <name value="STD-TC-CNP-Member10"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member11"/>
+      </reference>
+      <name value="STD-TC-CNP-Member11"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member12"/>
+      </reference>
+      <name value="STD-TC-CNP-Member12"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member13"/>
+      </reference>
+      <name value="STD-TC-CNP-Member13"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member14"/>
+      </reference>
+      <name value="STD-TC-CNP-Member14"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member15"/>
+      </reference>
+      <name value="STD-TC-CNP-Member15"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member2"/>
+      </reference>
+      <name value="STD-TC-CNP-Member2"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member3"/>
+      </reference>
+      <name value="STD-TC-CNP-Member3"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member4"/>
+      </reference>
+      <name value="STD-TC-CNP-Member4"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member5"/>
+      </reference>
+      <name value="STD-TC-CNP-Member5"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member6"/>
+      </reference>
+      <name value="STD-TC-CNP-Member6"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member7"/>
+      </reference>
+      <name value="STD-TC-CNP-Member7"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member8"/>
+      </reference>
+      <name value="STD-TC-CNP-Member8"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CNP-Member9"/>
+      </reference>
+      <name value="STD-TC-CNP-Member9"/>
+      <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-CaseSampled"/>
+      </reference>
+      <name value="STD-TC-CaseSampled"/>
+      <description value="An example Observation describing if the case was selected by reporting jurisdiction for enhanced investigation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/STD-TC-Complication"/>
+      </reference>
+      <name value="STD-TC-Complication"/>
+      <description value="An example Condition descrribing if the subject experienced severe complications due to this illness."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/STD-TC-Composition"/>
+      </reference>
+      <name value="STD-TC-Composition"/>
+      <description value="Composition resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/STD-TC-Condition"/>
+      </reference>
+      <name value="STD-TC-Condition"/>
+      <description value="Condition of interest resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-DetectionMethod"/>
+      </reference>
+      <name value="STD-TC-DetectionMethod"/>
+      <description value="An example Observation describing how the case patient first came to the attention of the health department for this condition."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ1"/>
+      </reference>
+      <name value="STD-TC-EQ1"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ10"/>
+      </reference>
+      <name value="STD-TC-EQ10"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ11"/>
+      </reference>
+      <name value="STD-TC-EQ11"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ12"/>
+      </reference>
+      <name value="STD-TC-EQ12"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ13"/>
+      </reference>
+      <name value="STD-TC-EQ13"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ2"/>
+      </reference>
+      <name value="STD-TC-EQ2"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ3"/>
+      </reference>
+      <name value="STD-TC-EQ3"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ4"/>
+      </reference>
+      <name value="STD-TC-EQ4"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ5"/>
+      </reference>
+      <name value="STD-TC-EQ5"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ6"/>
+      </reference>
+      <name value="STD-TC-EQ6"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ7"/>
+      </reference>
+      <name value="STD-TC-EQ7"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ8"/>
+      </reference>
+      <name value="STD-TC-EQ8"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EQ9"/>
+      </reference>
+      <name value="STD-TC-EQ9"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-EpiQuestionnaire"/>
+      </reference>
+      <name value="STD-TC-EpiQuestionnaire"/>
+      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as the parent resource."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-Exposure"/>
+      </reference>
+      <name value="STD-TC-Exposure"/>
+      <description value="Exposure observation resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-HIVStatus"/>
+      </reference>
+      <name value="STD-TC-HIVStatus"/>
+      <description value="An example Observation describing the patient&#39;s HIV status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-HIVStatusDocumented"/>
+      </reference>
+      <name value="STD-TC-HIVStatusDocumented"/>
+      <description value="An example Observation describing if the HIV status of the case-patient was investigated through search of eHARS."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/STD-TC-Hospitalization"/>
+      </reference>
+      <name value="STD-TC-Hospitalization"/>
+      <description value="CBS Hospitalization resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-InitialHealthExam"/>
+      </reference>
+      <name value="STD-TC-InitialHealthExam"/>
+      <description value="An example Observation describing the date of the patient&#39;s intial health exam that was associated with the case report health event"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/STD-TC-Lab-DiagnosticReport"/>
+      </reference>
+      <name value="STD-TC-Lab-DiagnosticReport"/>
+      <description value="A lab diagnostic report example resource for the STD Test Case 5."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-Lab-Observation"/>
+      </reference>
+      <name value="STD-TC-Lab-Observation"/>
+      <description value="A lab observation example resource for the STD Test Case 5."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-Lab-Observation-AST"/>
+      </reference>
+      <name value="STD-TC-Lab-Observation-AST"/>
+      <description value="An antimicrobial susceptibility test lab observation example resource for the STD Test Case 5."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-MMWR"/>
+      </reference>
+      <name value="STD-TC-MMWR"/>
+      <description value="MMWR resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/STD-TC-Medication-Statement-1"/>
+      </reference>
+      <name value="STD-TC-Medication-Statement-1"/>
+      <description value="A first Medication Statement example resource for the STD Test Case 5"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/STD-TC-Medication-Statement-2"/>
+      </reference>
+      <name value="STD-TC-Medication-Statement-2"/>
+      <description value="A second Medication Statement example resource for the STD Test Case 5"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/STD-TC-Patient"/>
+      </reference>
+      <name value="STD-TC-Patient"/>
+      <description value="CBS Patient resource for the STD Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/STD-TC-Person-Reporting"/>
+      </reference>
+      <name value="STD-TC-Person-Reporting"/>
+      <description value="Person reporting to CDC example resource for the STD Test Case 5"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/STD-TC-Reporting-Source"/>
+      </reference>
+      <name value="STD-TC-Reporting-Source"/>
+      <description value="Reporting source example resource for the STD Test Case 5"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-SexualOrientation"/>
+      </reference>
+      <name value="STD-TC-SexualOrientation"/>
+      <description value="An example of the Social Determinants of Health profile describing a patient&#39;s sexual orientation"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/STD-TC-Specimen"/>
+      </reference>
+      <name value="STD-TC-Specimen"/>
+      <description value="A specimen example resource for the STD Test Case 5."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/STD-TC-Specimen-AST"/>
+      </reference>
+      <name value="STD-TC-Specimen-AST"/>
+      <description value="An antimicrobial suceptibility test specimen example resource for the STD Test Case 5."/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/STD-TC-TreatmentDate"/>
+      </reference>
+      <name value="STD-TC-TreatmentDate"/>
+      <description value="An example Observation describing the day the patient&#39;s treatment was initiated for the condition"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

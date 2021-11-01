@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-Composition"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55751-2}">Public health Case report</span></p><p><b>date</b>: 2014-01-17</p><p><b>author</b>: <a href="Organization-STD-TC-Reporting-Source.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0406 1}">Hospital</span>; name: Reporting Source</a></p><p><b>title</b>: Case Based Surveillance Composition</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55751-2"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+  </subject>
+  <date value="2014-01-17"/>
+  <author>
+    <reference value="Organization/STD-TC-Reporting-Source"/>
+  </author>
+  <title value="Case Based Surveillance Composition"/>
+  <section>
+    <title value="Condition of Interest"/>
+    <entry>
+      <reference value="Condition/STD-TC-Condition"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Case Notification Panel"/>
+    <entry>
+      <reference value="Observation/STD-TC-CNP"/>
+    </entry>
+    <section>
+      <entry>
+        <reference value="Observation/STD-TC-MMWR"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-Exposure"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member1"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member2"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member3"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member4"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member5"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member6"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member7"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member8"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member9"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member10"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member11"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member12"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member13"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member14"/>
+      </entry>
+      <entry>
+        <reference value="Observation/STD-TC-CNP-Member15"/>
+      </entry>
+    </section>
+  </section>
+  <section>
+    <title value="History of Encounters (Hospitalizations)"/>
+    <entry>
+      <reference value="Encounter/STD-TC-Hospitalization"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Reporting Entities"/>
+    <entry>
+      <reference value="Practitioner/STD-TC-Person-Reporting"/>
+    </entry>
+    <entry>
+      <reference value="Organization/STD-TC-Reporting-Source"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Laboratory Related Resources"/>
+    <entry>
+      <reference value="DiagnosticReport/STD-TC-Lab-DiagnosticReport"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-Lab-Observation"/>
+    </entry>
+    <entry>
+      <reference value="Specimen/STD-TC-Specimen"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Medication Administered"/>
+    <entry>
+      <reference value="MedicationStatement/STD-TC-Medication-Statement-1"/>
+    </entry>
+    <entry>
+      <reference value="MedicationStatement/STD-TC-Medication-Statement-2"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Epi Questionnaires and Observations"/>
+    <entry>
+      <reference value="Observation/STD-TC-EpiQuestionnaire"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ1"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ2"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ3"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ4"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ5"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ6"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ7"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ8"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ9"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ10"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ11"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ12"/>
+    </entry>
+    <entry>
+      <reference value="Observation/STD-TC-EQ13"/>
+    </entry>
+  </section>
+</Composition>
