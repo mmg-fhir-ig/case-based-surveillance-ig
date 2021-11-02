@@ -129,6 +129,7 @@
 [CBS Patient Profile]: StructureDefinition-cbs-patient.html
 [CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
 [CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html
+[CBS Questionnaire Profile]: StructureDefinition-cbs-questionnaire.html
 [CBS Social Determinants of Health Profile]: StructureDefinition-cbs-social-determinants-of-health.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
 [CBS Travel History Profile]: StructureDefinition-cbs-travel-history.html

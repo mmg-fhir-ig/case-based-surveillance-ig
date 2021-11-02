@@ -1,0 +1,135 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "FoodNet-Demo-Questionnaire",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire"
+    ]
+  },
+  "version": "0.1",
+  "status": "draft",
+  "publisher": "GTRI",
+  "description": "Demo questionnaire with a subset of foodnet questionnaire items.",
+  "item": [
+    {
+      "linkId": "FDD_Q_969",
+      "text": "Eat Beef, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_969",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_970",
+      "text": "Eat Ground Beef, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_970",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_971",
+      "text": "Eat Beef Made Outside Of Home, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_971",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_972",
+      "text": "Eat Uncooked Ground Beef, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_972",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_973",
+      "text": "Eat Fresh Berries, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_973",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_974",
+      "text": "Bird Contact, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_974",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_975",
+      "text": "Eat Cantaloupe, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_975",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_976",
+      "text": "Cat Contact, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_976",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_977",
+      "text": "Eat Chicken, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_977",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    },
+    {
+      "linkId": "FDD_Q_978",
+      "text": "Eat Fresh Chicken, Within 7 Days Before Illness",
+      "code": [
+        {
+          "code": "FDD_Q_978",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    }
+  ]
+}
