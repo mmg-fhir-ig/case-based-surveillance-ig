@@ -16,6 +16,7 @@
 - [CBS Patient Profile]
 - [CBS Performing Laboratory Profile]
 - [CBS Person Reporting to CDC Profile]
+- [CBS Questionnaire Profile]
 - [CBS Social Determinants of Health Profile]
 - [CBS Specimen Profile]
 - [CBS Travel History Profile]

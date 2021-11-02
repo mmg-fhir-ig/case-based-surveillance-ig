@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cbs-questionnaire",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire",
+  "version": "0.1.0",
+  "name": "CaseBasedSurveillanceQuestionnaire",
+  "title": "Case Based Surveillance Questionnaire Profile",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-01-01",
+  "publisher": "Georgia Tech Research Institute",
+  "description": "Defines constraints on the Questionnaire resource to set the minimum expected details to be provided as part of case based surveillance program's questionnaire/survey data.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.version",
+        "path": "Questionnaire.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.status",
+        "path": "Questionnaire.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.publisher",
+        "path": "Questionnaire.publisher",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.description",
+        "path": "Questionnaire.description",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item",
+        "path": "Questionnaire.item",
+        "mustSupport": true
+      }
+    ]
+  }
+}
