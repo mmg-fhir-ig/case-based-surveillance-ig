@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2021-11-01T11:33:34-04:00",
+  "date": "2021-11-03T10:06:32-04:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -524,6 +524,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/cbs-questionnaire"
+        },
+        "name": "Case Based Surveillance Questionnaire Profile",
+        "description": "Defines constraints on the Questionnaire resource to set the minimum expected details to be provided as part of case based surveillance program's questionnaire/survey data.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cbs-reporting-source-organization"
         },
         "name": "Case Based Surveillance Reporting Source Organization Profile",
@@ -934,6 +948,20 @@
         },
         "name": "Case Based Surveillance temporary/placeholder code system.",
         "description": "Code system defined as placeholders for items that are not defined in existing systems.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/FoodNet-Demo-Questionnaire"
+        },
+        "name": "FoodNet-Demo-Questionnaire",
+        "description": "Demo Questionnaire",
         "exampleBoolean": false
       },
       {
@@ -2710,6 +2738,11 @@
         {
           "nameUrl": "profiles-and-extensions.html",
           "title": "Profiles and Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "program-questionnaires.html",
+          "title": "Program Questionnaires",
           "generation": "markdown"
         },
         {

@@ -14,6 +14,12 @@
     "name": "CBSIG"
   },
   {
+    "id": "FoodNet-Demo-Questionnaire",
+    "type": "Questionnaire",
+    "url": "http://cbsig.chai.gatech.edu/Questionnaire/FoodNet-Demo-Questionnaire",
+    "version": "0.1.0"
+  },
+  {
     "id": "cbs-birthsex",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
@@ -166,6 +172,13 @@
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
     "version": "0.1.0",
     "name": "CaseBasedSurveillanceProgramSpecificTimeWindow"
+  },
+  {
+    "id": "cbs-questionnaire",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire",
+    "version": "0.1.0",
+    "name": "CaseBasedSurveillanceQuestionnaire"
   },
   {
     "id": "cbs-race",

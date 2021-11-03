@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-11-01T11:33:34-04:00"/>
+  <date value="2021-11-03T10:06:32-04:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -367,6 +367,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/cbs-questionnaire"/>
+      </reference>
+      <name value="Case Based Surveillance Questionnaire Profile"/>
+      <description value="Defines constraints on the Questionnaire resource to set the minimum expected details to be provided as part of case based surveillance program&#39;s questionnaire/survey data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cbs-reporting-source-organization"/>
       </reference>
       <name value="Case Based Surveillance Reporting Source Organization Profile"/>
@@ -690,6 +701,17 @@
       </reference>
       <name value="Case Based Surveillance temporary/placeholder code system."/>
       <description value="Code system defined as placeholders for items that are not defined in existing systems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/FoodNet-Demo-Questionnaire"/>
+      </reference>
+      <name value="FoodNet-Demo-Questionnaire"/>
+      <description value="Demo Questionnaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2089,6 +2111,11 @@
       <page>
         <nameUrl value="profiles-and-extensions.html"/>
         <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="program-questionnaires.html"/>
+        <title value="Program Questionnaires"/>
         <generation value="markdown"/>
       </page>
       <page>

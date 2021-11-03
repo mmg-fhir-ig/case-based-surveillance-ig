@@ -366,6 +366,12 @@
         "title": "Case Based Surveillance Person Reporting To CDC Profile"
       }
     ],
+    "Questionnaire": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire",
+        "title": "Case Based Surveillance Questionnaire Profile"
+      }
+    ],
     "Specimen": [
       {
         "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
