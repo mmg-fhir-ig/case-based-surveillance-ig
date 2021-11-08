@@ -48,6 +48,7 @@ Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/trav
 
 // ECR US PH Profiles
 Alias: $ecr-us-ph-patient = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient
+Alias: $ecr-us-ph-condition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race

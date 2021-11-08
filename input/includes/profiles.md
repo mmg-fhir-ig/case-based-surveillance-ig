@@ -24,4 +24,5 @@
 - [CBS Vaccination Record Profile]
 
 #### US CBS Profiles
+- [US CBS Condition of Interest Profile]
 - [US CBS Patient Profile]

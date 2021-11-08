@@ -237,6 +237,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/us-cbs-condition"
+        },
+        "name": "US Case Based Surveillance Condition of Interest Profile",
+        "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-cbs-patient"
         },
         "name": "US Case Based Surveillance Patient Profile",

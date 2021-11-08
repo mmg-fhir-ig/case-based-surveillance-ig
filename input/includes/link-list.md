@@ -138,6 +138,7 @@
 
 
 [US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
+[US CBS Condition of Interest Profile]: StructureDefinition-us-cbs-condition.html
 
 
 [CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
