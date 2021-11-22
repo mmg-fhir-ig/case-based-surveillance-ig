@@ -152,21 +152,7 @@ View the diagram of this example case here:
   * **[CNP Member: Date of first report to public health department](Observation-STD-TC-CNP-Member13.html)**
   * **[CNP Member: Pregnancy status at time of illness or condition](Observation-STD-TC-CNP-Member14.html)**
 
-**[Epi-Questionnaire](Observation-STD-TC-EpiQuestionnaire.html)**
-
-  * **[Epi-Questionnaire Question: STD107](Observation-STD-TC-EQ1.html)**
-  * **[Epi-Questionnaire Question: STD108](Observation-STD-TC-EQ2.html)**
-  * **[Epi-Questionnaire Question: STD109](Observation-STD-TC-EQ3.html)**
-  * **[Epi-Questionnaire Question: STD110](Observation-STD-TC-EQ4.html)**
-  * **[Epi-Questionnaire Question: STD111](Observation-STD-TC-EQ5.html)**
-  * **[Epi-Questionnaire Question: STD112](Observation-STD-TC-EQ6.html)**
-  * **[Epi-Questionnaire Question: STD113](Observation-STD-TC-EQ7.html)**
-  * **[Epi-Questionnaire Question: STD114](Observation-STD-TC-EQ8.html)**
-  * **[Epi-Questionnaire Question: STD117](Observation-STD-TC-EQ9.html)**
-  * **[Epi-Questionnaire Question: STD118](Observation-STD-TC-EQ10.html)**
-  * **[Epi-Questionnaire Question: STD119](Observation-STD-TC-EQ11.html)**
-  * **[Epi-Questionnaire Question: STD120](Observation-STD-TC-EQ12.html)**
-  * **[Epi-Questionnaire Question: STD999](Observation-STD-TC-EQ13.html)**
+**[STD Questionnaire Response](QuestionnaireResponse-STD-Demo-QuestionnaireResponse.html)**
 
 **[Composition](Composition-STD-TC-Composition.html)**
 

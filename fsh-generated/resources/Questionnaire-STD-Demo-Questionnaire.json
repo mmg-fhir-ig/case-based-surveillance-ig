@@ -1,0 +1,171 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "STD-Demo-Questionnaire",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire"
+    ]
+  },
+  "url": "http://cbsig.chai.gatech.edu/Questionnaire/STD-Demo-Questionnaire",
+  "version": "0.1",
+  "status": "draft",
+  "publisher": "GTRI",
+  "description": "Demo questionnaire with a subset of STD questionnaire items.",
+  "item": [
+    {
+      "linkId": "STD107",
+      "text": "Had Sex with a Male within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD107",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD108",
+      "text": "Had Sex with a Female within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD108",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD109",
+      "text": "Had Sex with an Anonymous Partner within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD109",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD110",
+      "text": "Had Sex with a Person Known to Him/Her to be an \"Intravenous Drug User (IDU)\" within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD110",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD111",
+      "text": "Had Sex while Intoxicated and/or High on Drugs within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD111",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD112",
+      "text": "Exchanged Drugs/Money for Sex within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD112",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD113",
+      "text": "Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months",
+      "code": [
+        {
+          "code": "STD113",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD114",
+      "text": "Engaged in Injection Drug use Within Past 12 Months",
+      "code": [
+        {
+          "code": "STD114",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD117",
+      "text": "Previous STD History",
+      "code": [
+        {
+          "code": "STD117",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD118",
+      "text": "Been Incarcerated within the Past 12 Months",
+      "code": [
+        {
+          "code": "STD118",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD119",
+      "text": "Have You Met Sex Partners through the Internet in the Last 12 Months",
+      "code": [
+        {
+          "code": "STD119",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193"
+    },
+    {
+      "linkId": "STD120",
+      "text": "Total Number of Sex Partners in the Last 12 months",
+      "code": [
+        {
+          "code": "STD120",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "integer"
+    },
+    {
+      "linkId": "STD999",
+      "text": "Unknown Number of Sex Partners in Last 12 Months",
+      "code": [
+        {
+          "code": "STD999",
+          "system": "urn:oid:2.16.840.1.114222.4.5.232"
+        }
+      ],
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    }
+  ]
+}
