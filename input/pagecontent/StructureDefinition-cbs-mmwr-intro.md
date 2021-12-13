@@ -7,7 +7,7 @@ The following data-elements must always be present ([Mandatory] definition) or m
 1. a status
 1. a category code of 78000-7 "Case notification panel [CDC.PHIN]"
 1. a code of MMWR from the CBS-Temp-Code-System
-1. a patient that conforms to the [Case Based Surveillance Patient Profile]
+1. a patient that conforms to the [CBS Patient Profile]
 
 **Each Observation must support:**
 
