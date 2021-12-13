@@ -13,8 +13,8 @@ Description: "A code classifying the person's sex assigned at birth."
 * . ^definition = "A code classifying the person's sex assigned at birth."
 * . ^comment = "The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex."
 * . ^isModifier = false
-* valueCodeableConcept 1..1
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $PHVS-Sex-MFU (required)
-* valueCodeableConcept ^binding.description = "Code for sex assigned at birth"
+* valueCode 1..1
+* valueCode only code
+* valueCode from $PHVS-Sex-MFU (required)
+* valueCode ^binding.description = "Code for sex assigned at birth"
 * url 1..1

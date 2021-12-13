@@ -25,4 +25,6 @@
 
 #### US CBS Profiles
 - [US CBS Condition of Interest Profile]
+- [US CBS Hospitalization Profile]
 - [US CBS Patient Profile]
+- [US CBS Travel History Profile]

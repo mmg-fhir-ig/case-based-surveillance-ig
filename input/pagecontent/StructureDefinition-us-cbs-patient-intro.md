@@ -1,3 +1,8 @@
+
+
+Please be aware that the US CBS profiles are based on the CI Build version of ECR and should be considered subject to change based on modifications to the parent profiles. This will also be subject to changes made to the US Core profiles currently ongoing for USCDI v2, which may create some temporary conflicts such as around extensions (e.g. a Gender Identity extension being added to US Core Patient profile). In case of conflict, US Core takes precdence.
+{:.us-core-v2-warning}
+
 ## Relationship to Other Implementation Guides and Standards
 ### Relationship to ECR US Public Health Patient
 
@@ -5,7 +10,7 @@ The US CBS Patient profile is based on the ECR (Electronic Case Reporting) IG US
 
 ### Relationship to CDC Case Base Surveillance Program Message Mapping Guides
 
-The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. Patient demographics are predominantly captured in the generic guide (Gen v2) included as part of every notifiable condition case report, though some individual programs request additional general demographic data. (For example, the TBLTBI guide requests sex assigned at birth and the STD guide requests gender identity.)
+The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. Patient demographics are predominantly captured in the generic guide (Gen v2) included as part of every notifiable condition case report, though some individual programs request additional general demographic data. (For example, the TBLTBI guide requests sex assigned at birth and the STD guide requests gender identity.)s
 
 ## Profile Guidance
 ### Mandatory and Must Support Data Elements

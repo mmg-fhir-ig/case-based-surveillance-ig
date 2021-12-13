@@ -9,3 +9,4 @@
 - [CBS Reason Not Vaccinated Per ACIP Recommendations Extension]
 - [CBS Related Case Extension]
 - [CBS Specimen Role Extension]
+- [US CBS Period and Mode of Travel]
