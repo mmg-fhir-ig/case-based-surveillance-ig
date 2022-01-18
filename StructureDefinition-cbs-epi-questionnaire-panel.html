@@ -234,7 +234,7 @@
  <tr><td>Version:</td><td>0.1.0</td></tr>
  <tr><td>Name:</td><td>CBSEpiQuestionnairePanel</td></tr>
  <tr><td>Title:</td><td>Case Based Surveillance Epi Questionnaire Panel</td></tr>
- <tr><td>Status:</td><td>Experimental as of 2021-01-01</td></tr>
+ <tr><td>Status:</td><td>Experimental as of 1/1/21</td></tr>
  <tr><td>Definition:</td><td><p>Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>Georgia Tech Research Institute (GTRI)</td></tr>
@@ -391,8 +391,8 @@ Summary
 <p>Mandatory: 6 elements<br/> Must-Support: 9 elements<br/> Fixed Value: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-cbs-patient.html">http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient</a></li>
-<li><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel</a></li>
+<li><a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile <span style="font-size: 8px">(http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient)</span></a></li>
+<li><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">Case Based Surveillance Epi Questionnaire Panel <span style="font-size: 8px">(http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel)</span></a></li>
 
 </ul>
 
@@ -698,8 +698,8 @@ Summary
 <p>Mandatory: 6 elements<br/> Must-Support: 9 elements<br/> Fixed Value: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-cbs-patient.html">http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient</a></li>
-<li><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel</a></li>
+<li><a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile <span style="font-size: 8px">(http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient)</span></a></li>
+<li><a href="StructureDefinition-cbs-epi-questionnaire-panel.html">Case Based Surveillance Epi Questionnaire Panel <span style="font-size: 8px">(http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel)</span></a></li>
 
 </ul>
 
@@ -997,78 +997,78 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <!--Constraints  heading in the fragment -->
     <h4>Constraints</h4>
 <table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>obs-6</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
-<tr><td>obs-7</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.basedOn</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.partOf</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.category:EQCat.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.category:EQCat.coding.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding.system</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding.version</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding.display</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.coding.userSelected</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.category:EQCat.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.subject</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.focus</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.encounter</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.effective[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.issued</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.performer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.value[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.dataAbsentReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.interpretation</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.note</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.bodySite</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.specimen</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.device</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>obs-3</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.referenceRange.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.referenceRange.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.low</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.high</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.type</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.appliesTo</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.age</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.referenceRange.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.hasMember</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.derivedFrom</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.component.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Observation.component.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.value[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.dataAbsentReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.interpretation</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Observation.component.referenceRange</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>Best Practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
+<tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.basedOn</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.partOf</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.category:EQCat.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.category:EQCat.coding.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding.system</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding.version</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding.display</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.coding.userSelected</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.category:EQCat.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.subject</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.focus</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.encounter</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.effective[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.issued</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.performer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.value[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.dataAbsentReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.interpretation</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.note</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.bodySite</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.specimen</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.device</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.referenceRange.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.referenceRange.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.low</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.high</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.type</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.appliesTo</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.age</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.referenceRange.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.hasMember</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.derivedFrom</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.component.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.component.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.code</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.value[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.dataAbsentReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.interpretation</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Observation.component.referenceRange</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 </table>
 
   
@@ -1124,7 +1124,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 3, 2021 10:06-0400">2021-11-03</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 18, 2022 12:41-0500">2022-01-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

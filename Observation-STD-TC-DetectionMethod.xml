@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="STD-TC-DetectionMethod"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {urn:oid:2.16.840.1.114222.4.5.232 INV159}">Detection Method</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 306098008}">Self-referral</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "STD-TC-DetectionMethod" </p></div><p><b>status</b>: final</p><p><b>code</b>: Detection Method <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#INV159)</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">Patient/STD-TC-Patient: STD-TC Example Patient</a> " WWWWW"</p><p><b>value</b>: Self-referral <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#306098008)</span></p></div>
   </text>
   <status value="final"/>
   <code>

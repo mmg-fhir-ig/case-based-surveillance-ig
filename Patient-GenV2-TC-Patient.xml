@@ -6,7 +6,7 @@
     <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0005 2106-3}">White</span></p><p><b>value</b>: <span title="{urn:oid:2.16.840.1.113883.6.238 1010-8}">Apache</span></p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0005 2186-5}">Not Hispanic or Latino</span></p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0001 F}">Female</span></p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: White (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2106-3 = '2106-3', stated as 'White')</p><p><b>value</b>: Apache (Details: urn:oid:2.16.840.1.113883.6.238 code 1010-8 = 'Apache', stated as 'Apache')</p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2186-5 = '2186-5', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>
   </text>
   <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race">
     <extension url="ombCategory">
@@ -43,13 +43,7 @@
     </extension>
   </extension>
   <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex">
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0001"/>
-        <code value="F"/>
-        <display value="Female"/>
-      </coding>
-    </valueCodeableConcept>
+    <valueCode value="F"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
     <valueAddress>

@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: State Lab Specimen ID: IDR908765140, Performing Laboratory Specimen ID: 198374-9</p><p><b>type</b>: <span title=\"Codes: {http://snomed.info/sct 119297000}\">Blood specimen</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">HAICA-TC Example Patient. Generated Summary: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02; Yyyyy, Bbbbb; gender: female; birthDate: 1940-01-01</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2018-11-24</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Specimen\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-specimen.html\">Case Based Surveillance Specimen Profile</a></p></div><p><b>identifier</b>: State Lab Specimen ID: IDR908765140, Performing Laboratory Specimen ID: 198374-9</p><p><b>type</b>: Blood specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#119297000)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAICA-TC Example Patient</a> \" YYYYY\"</p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2018-11-24</td></tr></table></div>"
   },
   "identifier": [
     {

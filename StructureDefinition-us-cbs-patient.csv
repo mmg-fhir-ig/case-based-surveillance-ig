@@ -73,11 +73,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","id",".id","FiveWs.identifier","PID-3"
 "Patient.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.identifier.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.identifier.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.identifier.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.identifier.extension","dataAbsentReason","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.identifier.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -88,12 +89,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.identifier.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.identifier.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.identifier.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.identifier.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -126,11 +123,12 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
 us-core-8:Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present. {(family.exists() or given.exists()) xor extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()}","name",".patient.name","PID-5, PID-9"
 "Patient.name.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.name.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.name.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.name.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.name.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -141,12 +139,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.name.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.name.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.name.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.name.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.name.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -184,6 +178,20 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.telecom.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
+"Patient.telecom.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.telecom.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.telecom.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Patient.telecom.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Patient.telecom.system","","","",1,1,"Y","","Y","code {[]} {[]}
 ","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system","",,,,"ContactPoint.system",0,1,"cpt-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -261,7 +269,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.gender.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+"Patient.gender.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
@@ -273,12 +281,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.gender.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.gender.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.gender.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.gender.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.gender.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
@@ -291,7 +295,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.birthDate.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+"Patient.birthDate.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
@@ -303,12 +307,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.birthDate.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.birthDate.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.birthDate.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.birthDate.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.birthDate.value","","","",0,1,"","","","date {[]} {[]}
 ","Primitive value for date","The actual value","","","","","","","","","",,,,,"",,,,"date.value",0,1,"",""
@@ -320,11 +320,12 @@ dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates 
 ","addr",".addr","PID-11"
 "Patient.address.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.address.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.address.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.address.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.address.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.address.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -335,12 +336,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.address.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.address.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.address.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.address.extension","cbs-cdc-address-use","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use]]} {[]}
 ","Case Based Surveillance CDC Address Use Extension","Indicates the use of the address.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -429,11 +426,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","name","n/a","NK1-2"
 "Patient.contact.name.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.contact.name.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.contact.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.contact.name.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.contact.name.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.contact.name.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -444,12 +442,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.name.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.contact.name.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.contact.name.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.name.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.contact.name.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -479,11 +473,12 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 ","telecom","n/a","NK1-5, NK1-6, NK1-40"
 "Patient.contact.telecom.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.contact.telecom.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.contact.telecom.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.contact.telecom.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.contact.telecom.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.contact.telecom.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -494,12 +489,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.telecom.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.contact.telecom.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.contact.telecom.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.telecom.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.contact.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
 ","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
@@ -522,11 +513,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","addr","n/a","NK1-4"
 "Patient.contact.address.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.contact.address.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.contact.address.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.contact.address.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.contact.address.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.contact.address.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -537,12 +529,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.address.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.contact.address.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.contact.address.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.address.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.contact.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -611,11 +599,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/languageCommunication/code",".languageCode","PID-15, LAN-2"
 "Patient.communication.language.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.communication.language.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"Patient.communication.language.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.communication.language.extension","extensionDataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.communication.language.extension","dataAbsentReason","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "Patient.communication.language.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -626,12 +615,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.communication.language.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Patient.communication.language.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"Patient.communication.language.extension.value[x]","valueCode","","",1,1,"Y","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.communication.language.extension.value[x]","","","",1,1,"Y","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","Used to specify why the normally expected content of the data element is missing.","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.communication.language.coding","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

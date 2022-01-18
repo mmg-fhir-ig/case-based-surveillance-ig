@@ -1,6 +1,6 @@
 {
   "ImplementationGuide/hl7.fhir.us.ecr": {
-    "errors": 2,
+    "errors": 0,
     "warnings": 0
   },
   "Observation/observation-characteristics-of-home-environment-eve-everywoman": {
@@ -36,6 +36,10 @@
     "warnings": 0
   },
   "ValueSet/valueset-ecr-messageheader-event": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/valueset-chlamydia-example": {
     "errors": 0,
     "warnings": 0
   },
@@ -89,7 +93,7 @@
   },
   "Bundle/bundle-eicr-document-zika": {
     "errors": 0,
-    "warnings": 3
+    "warnings": 2
   },
   "StructureDefinition/eicr-encounter": {
     "errors": 0,
@@ -172,7 +176,7 @@
     "warnings": 0
   },
   "Library/library-ersd-supplemental-library-example": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "ValueSet/valueset-pctc-example": {
@@ -180,10 +184,6 @@
     "warnings": 0
   },
   "ValueSet/valueset-dxtc-example": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "ValueSet/valueset-iztc-example": {
     "errors": 0,
     "warnings": 0
   },
@@ -199,6 +199,10 @@
     "errors": 0,
     "warnings": 0
   },
+  "ValueSet/valueset-sdtc-example": {
+    "errors": 0,
+    "warnings": 0
+  },
   "ValueSet/valueset-ostc-example": {
     "errors": 0,
     "warnings": 0
@@ -208,14 +212,6 @@
     "warnings": 0
   },
   "ValueSet/2.16.840.1.113762.1.4.1099.24": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Library/FHIRHelpers": {
-    "errors": 1,
-    "warnings": 0
-  },
-  "Library/FHIR-ModelInfo": {
     "errors": 0,
     "warnings": 0
   },
@@ -281,7 +277,7 @@
   },
   "Bundle/bundle-rr-document-one-cond-one-pha": {
     "errors": 0,
-    "warnings": 5
+    "warnings": 15
   },
   "StructureDefinition/rr-documentreference": {
     "errors": 0,
@@ -325,7 +321,7 @@
   },
   "StructureDefinition/rr-external-resource-extension": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/rr-priority-extension": {
     "errors": 0,
@@ -405,7 +401,7 @@
   },
   "Observation/observation-travel-history-eve-everywoman-201801": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "Practitioner/practitioner-us-core-henry-seven": {
     "errors": 0,
@@ -641,7 +637,7 @@
   },
   "Observation/observation-postpartum-status-eve-everywoman": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/us-ph-practitionerrole": {
     "errors": 0,
@@ -677,7 +673,7 @@
   },
   "Bundle/bundle-ecr-message-zika": {
     "errors": 0,
-    "warnings": 3
+    "warnings": 2
   },
   "StructureDefinition/us-ph-specification-library": {
     "errors": 0,
@@ -692,7 +688,7 @@
     "warnings": 0
   },
   "Library/library-us-ph-supplemental-library-example": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "StructureDefinition/us-ph-supplemental-valueset": {
@@ -777,13 +773,17 @@
   },
   "PlanDefinition/plandefinition-ersd-instance-example": {
     "errors": 0,
-    "warnings": 4
+    "warnings": 3
   },
   "Library/library-ersd-specification-library-example": {
     "errors": 0,
     "warnings": 0
   },
   "PlanDefinition/plandefinition-ersd-instance-simple-example": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/us-ph-fhirquerypattern-extension": {
     "errors": 0,
     "warnings": 0
   }

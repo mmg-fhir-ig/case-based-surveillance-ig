@@ -258,11 +258,39 @@
     "name": "CaseBasedSurveillanceVaccinationRecord"
   },
   {
+    "id": "us-cbs-condition",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition",
+    "version": "0.1.0",
+    "name": "USCaseBasedSurveillanceCondition"
+  },
+  {
+    "id": "us-cbs-hospitalization",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization",
+    "version": "0.1.0",
+    "name": "USCaseBasedSurveillanceHospitalization"
+  },
+  {
     "id": "us-cbs-patient",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient",
     "version": "0.1.0",
     "name": "USCaseBasedSurveillancePatient"
+  },
+  {
+    "id": "us-cbs-period-and-mode-of-travel",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel",
+    "version": "0.1.0",
+    "name": "USCBSPeriodAndodeOfTravelExtension"
+  },
+  {
+    "id": "us-cbs-travel-history",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history",
+    "version": "0.1.0",
+    "name": "USCaseBasedSurveillanceTravelHistory"
   },
   {
     "id": "CBSCDCAddressUseVS",

@@ -1010,8 +1010,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1043,12 +1048,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.identifier.extension:extensionDataAbsentReason",
+        "id": "Patient.identifier.extension:dataAbsentReason",
         "path": "Patient.identifier.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -1084,7 +1095,6 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "mustSupport": true,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -1095,7 +1105,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.extension:extensionDataAbsentReason.id",
+        "id": "Patient.identifier.extension:dataAbsentReason.id",
         "path": "Patient.identifier.extension.id",
         "representation": [
           "xmlAttr"
@@ -1130,7 +1140,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.identifier.extension:dataAbsentReason.extension",
         "path": "Patient.identifier.extension.extension",
         "slicing": {
           "discriminator": [
@@ -1178,7 +1188,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.identifier.extension:extensionDataAbsentReason.url",
+        "id": "Patient.identifier.extension:dataAbsentReason.url",
         "path": "Patient.identifier.extension.url",
         "representation": [
           "xmlAttr"
@@ -1215,18 +1225,8 @@
         ]
       },
       {
-        "id": "Patient.identifier.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.identifier.extension:dataAbsentReason.value[x]",
         "path": "Patient.identifier.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -1241,59 +1241,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.identifier.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.identifier.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -1800,8 +1748,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1833,12 +1786,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.name.extension:extensionDataAbsentReason",
+        "id": "Patient.name.extension:dataAbsentReason",
         "path": "Patient.name.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -1885,7 +1844,7 @@
         ]
       },
       {
-        "id": "Patient.name.extension:extensionDataAbsentReason.id",
+        "id": "Patient.name.extension:dataAbsentReason.id",
         "path": "Patient.name.extension.id",
         "representation": [
           "xmlAttr"
@@ -1920,7 +1879,7 @@
         ]
       },
       {
-        "id": "Patient.name.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.name.extension:dataAbsentReason.extension",
         "path": "Patient.name.extension.extension",
         "slicing": {
           "discriminator": [
@@ -1968,7 +1927,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.name.extension:extensionDataAbsentReason.url",
+        "id": "Patient.name.extension:dataAbsentReason.url",
         "path": "Patient.name.extension.url",
         "representation": [
           "xmlAttr"
@@ -2005,18 +1964,8 @@
         ]
       },
       {
-        "id": "Patient.name.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.name.extension:dataAbsentReason.value[x]",
         "path": "Patient.name.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -2031,59 +1980,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.name.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.name.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -2625,6 +2522,228 @@
           {
             "identity": "rim",
             "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom.extension:dataAbsentReason",
+        "path": "Patient.telecom.extension",
+        "sliceName": "dataAbsentReason",
+        "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
+        "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "ANY.nullFlavor"
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom.extension:dataAbsentReason.id",
+        "path": "Patient.telecom.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom.extension:dataAbsentReason.extension",
+        "path": "Patient.telecom.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "Patient.telecom.extension:dataAbsentReason.url",
+        "path": "Patient.telecom.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom.extension:dataAbsentReason.value[x]",
+        "path": "Patient.telecom.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "masked",
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DataAbsentReason"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "Used to specify why the normally expected content of the data element is missing.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -3763,6 +3882,7 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         },
         "short": "Extension",
@@ -3801,9 +3921,9 @@
         "isSummary": false
       },
       {
-        "id": "Patient.gender.extension:extensionDataAbsentReason",
+        "id": "Patient.gender.extension:dataAbsentReason",
         "path": "Patient.gender.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -3852,7 +3972,7 @@
         ]
       },
       {
-        "id": "Patient.gender.extension:extensionDataAbsentReason.id",
+        "id": "Patient.gender.extension:dataAbsentReason.id",
         "path": "Patient.gender.extension.id",
         "representation": [
           "xmlAttr"
@@ -3887,7 +4007,7 @@
         ]
       },
       {
-        "id": "Patient.gender.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.gender.extension:dataAbsentReason.extension",
         "path": "Patient.gender.extension.extension",
         "slicing": {
           "discriminator": [
@@ -3935,7 +4055,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.gender.extension:extensionDataAbsentReason.url",
+        "id": "Patient.gender.extension:dataAbsentReason.url",
         "path": "Patient.gender.extension.url",
         "representation": [
           "xmlAttr"
@@ -3972,18 +4092,8 @@
         ]
       },
       {
-        "id": "Patient.gender.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.gender.extension:dataAbsentReason.value[x]",
         "path": "Patient.gender.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -3998,59 +4108,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.gender.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.gender.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -4213,6 +4271,7 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         },
         "short": "Extension",
@@ -4251,9 +4310,9 @@
         "isSummary": false
       },
       {
-        "id": "Patient.birthDate.extension:extensionDataAbsentReason",
+        "id": "Patient.birthDate.extension:dataAbsentReason",
         "path": "Patient.birthDate.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -4302,7 +4361,7 @@
         ]
       },
       {
-        "id": "Patient.birthDate.extension:extensionDataAbsentReason.id",
+        "id": "Patient.birthDate.extension:dataAbsentReason.id",
         "path": "Patient.birthDate.extension.id",
         "representation": [
           "xmlAttr"
@@ -4337,7 +4396,7 @@
         ]
       },
       {
-        "id": "Patient.birthDate.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.birthDate.extension:dataAbsentReason.extension",
         "path": "Patient.birthDate.extension.extension",
         "slicing": {
           "discriminator": [
@@ -4385,7 +4444,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.birthDate.extension:extensionDataAbsentReason.url",
+        "id": "Patient.birthDate.extension:dataAbsentReason.url",
         "path": "Patient.birthDate.extension.url",
         "representation": [
           "xmlAttr"
@@ -4422,18 +4481,8 @@
         ]
       },
       {
-        "id": "Patient.birthDate.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.birthDate.extension:dataAbsentReason.value[x]",
         "path": "Patient.birthDate.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -4448,59 +4497,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.birthDate.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.birthDate.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -4719,8 +4716,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -4752,12 +4754,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.address.extension:extensionDataAbsentReason",
+        "id": "Patient.address.extension:dataAbsentReason",
         "path": "Patient.address.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -4804,7 +4812,7 @@
         ]
       },
       {
-        "id": "Patient.address.extension:extensionDataAbsentReason.id",
+        "id": "Patient.address.extension:dataAbsentReason.id",
         "path": "Patient.address.extension.id",
         "representation": [
           "xmlAttr"
@@ -4839,7 +4847,7 @@
         ]
       },
       {
-        "id": "Patient.address.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.address.extension:dataAbsentReason.extension",
         "path": "Patient.address.extension.extension",
         "slicing": {
           "discriminator": [
@@ -4887,7 +4895,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.address.extension:extensionDataAbsentReason.url",
+        "id": "Patient.address.extension:dataAbsentReason.url",
         "path": "Patient.address.extension.url",
         "representation": [
           "xmlAttr"
@@ -4924,18 +4932,8 @@
         ]
       },
       {
-        "id": "Patient.address.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.address.extension:dataAbsentReason.value[x]",
         "path": "Patient.address.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -4950,59 +4948,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.address.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -6328,8 +6274,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -6361,12 +6312,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.contact.name.extension:extensionDataAbsentReason",
+        "id": "Patient.contact.name.extension:dataAbsentReason",
         "path": "Patient.contact.name.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -6413,7 +6370,7 @@
         ]
       },
       {
-        "id": "Patient.contact.name.extension:extensionDataAbsentReason.id",
+        "id": "Patient.contact.name.extension:dataAbsentReason.id",
         "path": "Patient.contact.name.extension.id",
         "representation": [
           "xmlAttr"
@@ -6448,7 +6405,7 @@
         ]
       },
       {
-        "id": "Patient.contact.name.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.contact.name.extension:dataAbsentReason.extension",
         "path": "Patient.contact.name.extension.extension",
         "slicing": {
           "discriminator": [
@@ -6496,7 +6453,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.contact.name.extension:extensionDataAbsentReason.url",
+        "id": "Patient.contact.name.extension:dataAbsentReason.url",
         "path": "Patient.contact.name.extension.url",
         "representation": [
           "xmlAttr"
@@ -6533,18 +6490,8 @@
         ]
       },
       {
-        "id": "Patient.contact.name.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.contact.name.extension:dataAbsentReason.value[x]",
         "path": "Patient.contact.name.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -6559,59 +6506,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.contact.name.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.contact.name.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -7071,8 +6966,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -7104,12 +7004,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.contact.telecom.extension:extensionDataAbsentReason",
+        "id": "Patient.contact.telecom.extension:dataAbsentReason",
         "path": "Patient.contact.telecom.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -7156,7 +7062,7 @@
         ]
       },
       {
-        "id": "Patient.contact.telecom.extension:extensionDataAbsentReason.id",
+        "id": "Patient.contact.telecom.extension:dataAbsentReason.id",
         "path": "Patient.contact.telecom.extension.id",
         "representation": [
           "xmlAttr"
@@ -7191,7 +7097,7 @@
         ]
       },
       {
-        "id": "Patient.contact.telecom.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.contact.telecom.extension:dataAbsentReason.extension",
         "path": "Patient.contact.telecom.extension.extension",
         "slicing": {
           "discriminator": [
@@ -7239,7 +7145,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.contact.telecom.extension:extensionDataAbsentReason.url",
+        "id": "Patient.contact.telecom.extension:dataAbsentReason.url",
         "path": "Patient.contact.telecom.extension.url",
         "representation": [
           "xmlAttr"
@@ -7276,18 +7182,8 @@
         ]
       },
       {
-        "id": "Patient.contact.telecom.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.contact.telecom.extension:dataAbsentReason.value[x]",
         "path": "Patient.contact.telecom.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -7302,59 +7198,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.contact.telecom.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.contact.telecom.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -7731,8 +7575,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -7764,12 +7613,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.contact.address.extension:extensionDataAbsentReason",
+        "id": "Patient.contact.address.extension:dataAbsentReason",
         "path": "Patient.contact.address.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -7816,7 +7671,7 @@
         ]
       },
       {
-        "id": "Patient.contact.address.extension:extensionDataAbsentReason.id",
+        "id": "Patient.contact.address.extension:dataAbsentReason.id",
         "path": "Patient.contact.address.extension.id",
         "representation": [
           "xmlAttr"
@@ -7851,7 +7706,7 @@
         ]
       },
       {
-        "id": "Patient.contact.address.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.contact.address.extension:dataAbsentReason.extension",
         "path": "Patient.contact.address.extension.extension",
         "slicing": {
           "discriminator": [
@@ -7899,7 +7754,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.contact.address.extension:extensionDataAbsentReason.url",
+        "id": "Patient.contact.address.extension:dataAbsentReason.url",
         "path": "Patient.contact.address.extension.url",
         "representation": [
           "xmlAttr"
@@ -7936,18 +7791,8 @@
         ]
       },
       {
-        "id": "Patient.contact.address.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.contact.address.extension:dataAbsentReason.value[x]",
         "path": "Patient.contact.address.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -7962,59 +7807,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.contact.address.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.contact.address.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",
@@ -9039,8 +8832,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -9072,12 +8870,18 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
-        "id": "Patient.communication.language.extension:extensionDataAbsentReason",
+        "id": "Patient.communication.language.extension:dataAbsentReason",
         "path": "Patient.communication.language.extension",
-        "sliceName": "extensionDataAbsentReason",
+        "sliceName": "dataAbsentReason",
         "short": "unknown | asked | temp | notasked | masked | unsupported | astext | error",
         "definition": "Provides a reason why the expected value or elements in the element that is extended are missing.",
         "min": 0,
@@ -9124,7 +8928,7 @@
         ]
       },
       {
-        "id": "Patient.communication.language.extension:extensionDataAbsentReason.id",
+        "id": "Patient.communication.language.extension:dataAbsentReason.id",
         "path": "Patient.communication.language.extension.id",
         "representation": [
           "xmlAttr"
@@ -9159,7 +8963,7 @@
         ]
       },
       {
-        "id": "Patient.communication.language.extension:extensionDataAbsentReason.extension",
+        "id": "Patient.communication.language.extension:dataAbsentReason.extension",
         "path": "Patient.communication.language.extension.extension",
         "slicing": {
           "discriminator": [
@@ -9207,7 +9011,7 @@
         "isSummary": false
       },
       {
-        "id": "Patient.communication.language.extension:extensionDataAbsentReason.url",
+        "id": "Patient.communication.language.extension:dataAbsentReason.url",
         "path": "Patient.communication.language.extension.url",
         "representation": [
           "xmlAttr"
@@ -9244,18 +9048,8 @@
         ]
       },
       {
-        "id": "Patient.communication.language.extension:extensionDataAbsentReason.value[x]",
+        "id": "Patient.communication.language.extension:dataAbsentReason.value[x]",
         "path": "Patient.communication.language.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
         "min": 1,
@@ -9270,59 +9064,7 @@
             "code": "code"
           }
         ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DataAbsentReason"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "Used to specify why the normally expected content of the data element is missing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Patient.communication.language.extension:extensionDataAbsentReason.value[x]:valueCode",
-        "path": "Patient.communication.language.extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "patternCode": "masked",
+        "fixedCode": "masked",
         "constraint": [
           {
             "key": "ele-1",

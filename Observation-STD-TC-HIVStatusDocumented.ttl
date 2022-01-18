@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "STD-TC-HIVStatusDocumented"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 INV892}\">HIV Status Documented Through eHARS Record Search</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">Unknown</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"STD-TC-HIVStatusDocumented\" </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV Status Documented Through eHARS Record Search <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#INV892)</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">Patient/STD-TC-Patient: STD-TC Example Patient</a> \" WWWWW\"</p><p><b>value</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#UNK)</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [

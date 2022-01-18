@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2021-11-03T10:06:32-04:00",
+  "date": "2022-01-18T12:41:26-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -636,10 +636,52 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/us-cbs-condition"
+        },
+        "name": "US Case Based Surveillance Condition of Interest Profile",
+        "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-hospitalization"
+        },
+        "name": "US Case Based Surveillance Hospitalization Encounter Profile",
+        "description": "Defines constraints on the ECR US Public Health Encounter to represent hospitalization due to a condition of interest for public health case based surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/us-cbs-patient"
         },
         "name": "US Case Based Surveillance Patient Profile",
         "description": "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-travel-history"
+        },
+        "name": "US Case Based Surveillance Travel History Profile",
+        "description": "Defines constraints on the ECR US PH Travel History profile to capture additional data in order to meet the needs of public health case based surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -794,6 +836,20 @@
         },
         "name": "Case Based Surveillance Related Case Extension",
         "description": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-period-and-mode-of-travel"
+        },
+        "name": "US Case Based Surveillance Period and Mode of Travel Extension",
+        "description": "An extension capturing the circumstances of travel to a destination.",
         "exampleBoolean": false
       },
       {

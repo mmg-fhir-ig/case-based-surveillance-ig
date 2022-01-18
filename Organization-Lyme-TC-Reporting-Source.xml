@@ -6,7 +6,7 @@
     <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title="Codes: {urn:oid:2.16.840.1.114222.4.5.274 PHC247}">Laboratory</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 37243 </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-reporting-source-organization.html">Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>type</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#PHC247)</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 37243 </p></div>
   </text>
   <type>
     <coding>

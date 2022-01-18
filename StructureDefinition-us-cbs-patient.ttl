@@ -1090,8 +1090,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1127,12 +1135,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index 22;
-       fhir:Element.id [ fhir:value "Patient.identifier.extension:extensionDataAbsentReason" ];
+       fhir:Element.id [ fhir:value "Patient.identifier.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1174,7 +1187,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1184,7 +1196,7 @@
        ]
      ], [
        fhir:index 23;
-       fhir:Element.id [ fhir:value "Patient.identifier.extension:extensionDataAbsentReason.id" ];
+       fhir:Element.id [ fhir:value "Patient.identifier.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -1217,7 +1229,7 @@
        ]
      ], [
        fhir:index 24;
-       fhir:Element.id [ fhir:value "Patient.identifier.extension:extensionDataAbsentReason.extension" ];
+       fhir:Element.id [ fhir:value "Patient.identifier.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -1268,7 +1280,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 25;
-       fhir:Element.id [ fhir:value "Patient.identifier.extension:extensionDataAbsentReason.url" ];
+       fhir:Element.id [ fhir:value "Patient.identifier.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -1303,17 +1315,8 @@
        ]
      ], [
        fhir:index 26;
-       fhir:Element.id [ fhir:value "Patient.identifier.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:Element.id [ fhir:value "Patient.identifier.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -1327,61 +1330,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 27;
-       fhir:Element.id [ fhir:value "Patient.identifier.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -1420,7 +1369,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -1476,7 +1425,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -1535,7 +1484,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1591,7 +1540,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier.system" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique within the system." ];
@@ -1646,7 +1595,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier.value" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1690,7 +1639,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -1740,7 +1689,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.short [ fhir:value "Whether this patient's record is in active use" ];
@@ -1788,7 +1737,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the patient" ];
@@ -1850,7 +1799,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Patient.name.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.id" ];
        fhir:ElementDefinition.representation [
@@ -1883,7 +1832,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Patient.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1895,8 +1844,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1932,12 +1889,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
-       fhir:index 38;
-       fhir:Element.id [ fhir:value "Patient.name.extension:extensionDataAbsentReason" ];
+       fhir:index 37;
+       fhir:Element.id [ fhir:value "Patient.name.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1988,8 +1950,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 39;
-       fhir:Element.id [ fhir:value "Patient.name.extension:extensionDataAbsentReason.id" ];
+       fhir:index 38;
+       fhir:Element.id [ fhir:value "Patient.name.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -2021,8 +1983,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 40;
-       fhir:Element.id [ fhir:value "Patient.name.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 39;
+       fhir:Element.id [ fhir:value "Patient.name.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -2072,8 +2034,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 41;
-       fhir:Element.id [ fhir:value "Patient.name.extension:extensionDataAbsentReason.url" ];
+       fhir:index 40;
+       fhir:Element.id [ fhir:value "Patient.name.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -2107,18 +2069,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 42;
-       fhir:Element.id [ fhir:value "Patient.name.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:index 41;
+       fhir:Element.id [ fhir:value "Patient.name.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -2132,61 +2085,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 43;
-       fhir:Element.id [ fhir:value "Patient.name.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.name.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -2225,7 +2124,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Patient.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -2285,7 +2184,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Patient.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -2327,7 +2226,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Patient.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -2385,7 +2284,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name.family" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Patient.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -2447,7 +2346,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name.given" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Patient.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -2492,7 +2391,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Patient.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -2538,7 +2437,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Patient.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -2588,7 +2487,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.slicing [
@@ -2647,7 +2546,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Patient.telecom.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.id" ];
        fhir:ElementDefinition.representation [
@@ -2680,7 +2579,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Patient.telecom.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2744,7 +2643,235 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
+       fhir:index 52;
+       fhir:Element.id [ fhir:value "Patient.telecom.extension:dataAbsentReason" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
+       fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
+       fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.id [ fhir:value "Patient.telecom.extension:dataAbsentReason.id" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
        fhir:index 54;
+       fhir:Element.id [ fhir:value "Patient.telecom.extension:dataAbsentReason.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.id [ fhir:value "Patient.telecom.extension:dataAbsentReason.url" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension.url" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "identifies the meaning of the extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Source of the definition for the extension code - a logical name or a URL." ];
+       fhir:ElementDefinition.comment [ fhir:value "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Extension.url" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "uri" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.id [ fhir:value "Patient.telecom.extension:dataAbsentReason.value[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension.value[x]" ];
+       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Patient.telecom.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.system" ];
        fhir:ElementDefinition.short [ fhir:value "phone | fax | email | pager | url | sms | other" ];
@@ -2805,7 +2932,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Patient.telecom.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.value" ];
        fhir:ElementDefinition.short [ fhir:value "The actual contact point details" ];
@@ -2856,7 +2983,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Patient.telecom.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | mobile - purpose of this contact point" ];
@@ -2915,7 +3042,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Patient.telecom.rank" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.rank" ];
        fhir:ElementDefinition.short [ fhir:value "Specify preferred order of use (1 = highest)" ];
@@ -2956,7 +3083,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Patient.telecom.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when the contact point was/is in use" ];
@@ -3000,7 +3127,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Patient.telecom:phone" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.sliceName [ fhir:value "phone" ];
@@ -3052,7 +3179,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.id" ];
        fhir:ElementDefinition.representation [
@@ -3085,7 +3212,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3149,7 +3276,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.system" ];
        fhir:ElementDefinition.short [ fhir:value "phone | fax | email | pager | url | sms | other" ];
@@ -3211,7 +3338,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.value" ];
        fhir:ElementDefinition.short [ fhir:value "The actual contact point details" ];
@@ -3262,7 +3389,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | mobile - purpose of this contact point" ];
@@ -3321,7 +3448,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.rank" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.rank" ];
        fhir:ElementDefinition.short [ fhir:value "Specify preferred order of use (1 = highest)" ];
@@ -3362,7 +3489,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Patient.telecom:phone.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when the contact point was/is in use" ];
@@ -3406,7 +3533,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Patient.telecom:email" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.sliceName [ fhir:value "email" ];
@@ -3458,7 +3585,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Patient.telecom:email.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.id" ];
        fhir:ElementDefinition.representation [
@@ -3491,7 +3618,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Patient.telecom:email.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3555,7 +3682,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Patient.telecom:email.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.system" ];
        fhir:ElementDefinition.short [ fhir:value "phone | fax | email | pager | url | sms | other" ];
@@ -3617,7 +3744,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Patient.telecom:email.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.value" ];
        fhir:ElementDefinition.short [ fhir:value "The actual contact point details" ];
@@ -3668,7 +3795,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Patient.telecom:email.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | mobile - purpose of this contact point" ];
@@ -3727,7 +3854,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Patient.telecom:email.rank" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.rank" ];
        fhir:ElementDefinition.short [ fhir:value "Specify preferred order of use (1 = highest)" ];
@@ -3768,7 +3895,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Patient.telecom:email.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when the contact point was/is in use" ];
@@ -3812,7 +3939,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -3870,7 +3997,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.gender" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Patient.gender.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.id" ];
        fhir:ElementDefinition.representation [
@@ -3898,7 +4025,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Patient.gender.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3907,6 +4034,7 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
          ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Extension" ];
@@ -3948,10 +4076,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 78;
-       fhir:Element.id [ fhir:value "Patient.gender.extension:extensionDataAbsentReason" ];
+       fhir:index 81;
+       fhir:Element.id [ fhir:value "Patient.gender.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -4005,8 +4133,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 79;
-       fhir:Element.id [ fhir:value "Patient.gender.extension:extensionDataAbsentReason.id" ];
+       fhir:index 82;
+       fhir:Element.id [ fhir:value "Patient.gender.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -4038,8 +4166,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 80;
-       fhir:Element.id [ fhir:value "Patient.gender.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 83;
+       fhir:Element.id [ fhir:value "Patient.gender.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -4089,8 +4217,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81;
-       fhir:Element.id [ fhir:value "Patient.gender.extension:extensionDataAbsentReason.url" ];
+       fhir:index 84;
+       fhir:Element.id [ fhir:value "Patient.gender.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -4124,18 +4252,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 82;
-       fhir:Element.id [ fhir:value "Patient.gender.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:index 85;
+       fhir:Element.id [ fhir:value "Patient.gender.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -4149,61 +4268,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 83;
-       fhir:Element.id [ fhir:value "Patient.gender.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.gender.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -4242,7 +4307,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Patient.gender.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender.value" ];
        fhir:ElementDefinition.representation [
@@ -4274,7 +4339,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 85;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.short [ fhir:value "The date of birth for the individual" ];
@@ -4329,7 +4394,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.birthDate" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "Patient.birthDate.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.id" ];
        fhir:ElementDefinition.representation [
@@ -4357,7 +4422,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "Patient.birthDate.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4366,6 +4431,7 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
          ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Extension" ];
@@ -4407,10 +4473,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88;
-       fhir:Element.id [ fhir:value "Patient.birthDate.extension:extensionDataAbsentReason" ];
+       fhir:index 90;
+       fhir:Element.id [ fhir:value "Patient.birthDate.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -4464,8 +4530,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 89;
-       fhir:Element.id [ fhir:value "Patient.birthDate.extension:extensionDataAbsentReason.id" ];
+       fhir:index 91;
+       fhir:Element.id [ fhir:value "Patient.birthDate.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -4497,8 +4563,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 90;
-       fhir:Element.id [ fhir:value "Patient.birthDate.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 92;
+       fhir:Element.id [ fhir:value "Patient.birthDate.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -4548,8 +4614,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 91;
-       fhir:Element.id [ fhir:value "Patient.birthDate.extension:extensionDataAbsentReason.url" ];
+       fhir:index 93;
+       fhir:Element.id [ fhir:value "Patient.birthDate.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -4583,18 +4649,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 92;
-       fhir:Element.id [ fhir:value "Patient.birthDate.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:index 94;
+       fhir:Element.id [ fhir:value "Patient.birthDate.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -4608,61 +4665,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 93;
-       fhir:Element.id [ fhir:value "Patient.birthDate.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -4701,7 +4704,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "Patient.birthDate.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.value" ];
        fhir:ElementDefinition.representation [
@@ -4733,7 +4736,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Indicates if the individual is deceased or not" ];
@@ -4784,7 +4787,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.short [ fhir:value "An address for the individual" ];
@@ -4835,7 +4838,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.birthDate" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "Patient.address.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.id" ];
        fhir:ElementDefinition.representation [
@@ -4868,7 +4871,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "Patient.address.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4880,8 +4883,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -4917,12 +4928,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
-       fhir:index 99;
-       fhir:Element.id [ fhir:value "Patient.address.extension:extensionDataAbsentReason" ];
+       fhir:index 100;
+       fhir:Element.id [ fhir:value "Patient.address.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -4973,8 +4989,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 100;
-       fhir:Element.id [ fhir:value "Patient.address.extension:extensionDataAbsentReason.id" ];
+       fhir:index 101;
+       fhir:Element.id [ fhir:value "Patient.address.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -5006,8 +5022,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 101;
-       fhir:Element.id [ fhir:value "Patient.address.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 102;
+       fhir:Element.id [ fhir:value "Patient.address.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -5057,8 +5073,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 102;
-       fhir:Element.id [ fhir:value "Patient.address.extension:extensionDataAbsentReason.url" ];
+       fhir:index 103;
+       fhir:Element.id [ fhir:value "Patient.address.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -5092,72 +5108,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 103;
-       fhir:Element.id [ fhir:value "Patient.address.extension:extensionDataAbsentReason.value[x]" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
        fhir:index 104;
-       fhir:Element.id [ fhir:value "Patient.address.extension:extensionDataAbsentReason.value[x]:valueCode" ];
+       fhir:Element.id [ fhir:value "Patient.address.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -5171,7 +5124,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -6535,8 +6488,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -6572,12 +6533,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index 131;
-       fhir:Element.id [ fhir:value "Patient.contact.name.extension:extensionDataAbsentReason" ];
+       fhir:Element.id [ fhir:value "Patient.contact.name.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -6629,7 +6595,7 @@
        ]
      ], [
        fhir:index 132;
-       fhir:Element.id [ fhir:value "Patient.contact.name.extension:extensionDataAbsentReason.id" ];
+       fhir:Element.id [ fhir:value "Patient.contact.name.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -6662,7 +6628,7 @@
        ]
      ], [
        fhir:index 133;
-       fhir:Element.id [ fhir:value "Patient.contact.name.extension:extensionDataAbsentReason.extension" ];
+       fhir:Element.id [ fhir:value "Patient.contact.name.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -6713,7 +6679,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 134;
-       fhir:Element.id [ fhir:value "Patient.contact.name.extension:extensionDataAbsentReason.url" ];
+       fhir:Element.id [ fhir:value "Patient.contact.name.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -6748,17 +6714,8 @@
        ]
      ], [
        fhir:index 135;
-       fhir:Element.id [ fhir:value "Patient.contact.name.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:Element.id [ fhir:value "Patient.contact.name.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -6772,61 +6729,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 136;
-       fhir:Element.id [ fhir:value "Patient.contact.name.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -6865,7 +6768,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 137;
+       fhir:index 136;
        fhir:Element.id [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -6925,7 +6828,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 138;
+       fhir:index 137;
        fhir:Element.id [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -6967,7 +6870,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 139;
+       fhir:index 138;
        fhir:Element.id [ fhir:value "Patient.contact.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -7016,7 +6919,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./FamilyName" ]
        ]
      ], [
-       fhir:index 140;
+       fhir:index 139;
        fhir:Element.id [ fhir:value "Patient.contact.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -7069,7 +6972,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./GivenNames" ]
        ]
      ], [
-       fhir:index 141;
+       fhir:index 140;
        fhir:Element.id [ fhir:value "Patient.contact.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -7114,7 +7017,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 142;
+       fhir:index 141;
        fhir:Element.id [ fhir:value "Patient.contact.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -7155,7 +7058,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./part[partType = SFX]" ]
        ]
      ], [
-       fhir:index 143;
+       fhir:index 142;
        fhir:Element.id [ fhir:value "Patient.contact.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -7200,7 +7103,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 144;
+       fhir:index 143;
        fhir:Element.id [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -7247,7 +7150,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 145;
+       fhir:index 144;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.id" ];
        fhir:ElementDefinition.representation [
@@ -7280,7 +7183,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 146;
+       fhir:index 145;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension" ];
        fhir:ElementDefinition.slicing [
@@ -7292,8 +7195,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -7329,12 +7240,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
-       fhir:index 147;
-       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:extensionDataAbsentReason" ];
+       fhir:index 146;
+       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -7385,8 +7301,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 148;
-       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:extensionDataAbsentReason.id" ];
+       fhir:index 147;
+       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -7418,8 +7334,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 149;
-       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 148;
+       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -7469,8 +7385,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 150;
-       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:extensionDataAbsentReason.url" ];
+       fhir:index 149;
+       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -7504,18 +7420,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 151;
-       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:index 150;
+       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -7529,61 +7436,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 152;
-       fhir:Element.id [ fhir:value "Patient.contact.telecom.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -7622,7 +7475,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 153;
+       fhir:index 151;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.system" ];
        fhir:ElementDefinition.short [ fhir:value "phone | fax | email | pager | url | sms | other" ];
@@ -7683,7 +7536,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./ContactPointType" ]
        ]
      ], [
-       fhir:index 154;
+       fhir:index 152;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.value" ];
        fhir:ElementDefinition.short [ fhir:value "The actual contact point details" ];
@@ -7729,7 +7582,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 155;
+       fhir:index 153;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | mobile - purpose of this contact point" ];
@@ -7789,7 +7642,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./ContactPointPurpose" ]
        ]
      ], [
-       fhir:index 156;
+       fhir:index 154;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.rank" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.rank" ];
        fhir:ElementDefinition.short [ fhir:value "Specify preferred order of use (1 = highest)" ];
@@ -7830,7 +7683,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 157;
+       fhir:index 155;
        fhir:Element.id [ fhir:value "Patient.contact.telecom.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when the contact point was/is in use" ];
@@ -7874,7 +7727,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 158;
+       fhir:index 156;
        fhir:Element.id [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -7920,7 +7773,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 159;
+       fhir:index 157;
        fhir:Element.id [ fhir:value "Patient.contact.address.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.id" ];
        fhir:ElementDefinition.representation [
@@ -7953,7 +7806,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 160;
+       fhir:index 158;
        fhir:Element.id [ fhir:value "Patient.contact.address.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension" ];
        fhir:ElementDefinition.slicing [
@@ -7965,8 +7818,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -8002,12 +7863,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
-       fhir:index 161;
-       fhir:Element.id [ fhir:value "Patient.contact.address.extension:extensionDataAbsentReason" ];
+       fhir:index 159;
+       fhir:Element.id [ fhir:value "Patient.contact.address.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -8058,8 +7924,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 162;
-       fhir:Element.id [ fhir:value "Patient.contact.address.extension:extensionDataAbsentReason.id" ];
+       fhir:index 160;
+       fhir:Element.id [ fhir:value "Patient.contact.address.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -8091,8 +7957,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 163;
-       fhir:Element.id [ fhir:value "Patient.contact.address.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 161;
+       fhir:Element.id [ fhir:value "Patient.contact.address.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -8142,8 +8008,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 164;
-       fhir:Element.id [ fhir:value "Patient.contact.address.extension:extensionDataAbsentReason.url" ];
+       fhir:index 162;
+       fhir:Element.id [ fhir:value "Patient.contact.address.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -8177,18 +8043,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 165;
-       fhir:Element.id [ fhir:value "Patient.contact.address.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:index 163;
+       fhir:Element.id [ fhir:value "Patient.contact.address.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -8202,61 +8059,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 166;
-       fhir:Element.id [ fhir:value "Patient.contact.address.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -8295,7 +8098,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 167;
+       fhir:index 164;
        fhir:Element.id [ fhir:value "Patient.contact.address.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | billing - purpose of this address" ];
@@ -8360,7 +8163,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
        ]
      ], [
-       fhir:index 168;
+       fhir:index 165;
        fhir:Element.id [ fhir:value "Patient.contact.address.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.type" ];
        fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
@@ -8423,7 +8226,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
        ]
      ], [
-       fhir:index 169;
+       fhir:index 166;
        fhir:Element.id [ fhir:value "Patient.contact.address.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
@@ -8474,7 +8277,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
        ]
      ], [
-       fhir:index 170;
+       fhir:index 167;
        fhir:Element.id [ fhir:value "Patient.contact.address.line" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.line" ];
        fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
@@ -8528,7 +8331,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
        ]
      ], [
-       fhir:index 171;
+       fhir:index 168;
        fhir:Element.id [ fhir:value "Patient.contact.address.city" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.city" ];
        fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
@@ -8585,7 +8388,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
        ]
      ], [
-       fhir:index 172;
+       fhir:index 169;
        fhir:Element.id [ fhir:value "Patient.contact.address.district" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.district" ];
        fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
@@ -8635,7 +8438,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
        ]
      ], [
-       fhir:index 173;
+       fhir:index 170;
        fhir:Element.id [ fhir:value "Patient.contact.address.state" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.state" ];
        fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
@@ -8690,7 +8493,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
        ]
      ], [
-       fhir:index 174;
+       fhir:index 171;
        fhir:Element.id [ fhir:value "Patient.contact.address.postalCode" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.postalCode" ];
        fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
@@ -8747,7 +8550,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
        ]
      ], [
-       fhir:index 175;
+       fhir:index 172;
        fhir:Element.id [ fhir:value "Patient.contact.address.country" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
@@ -8796,7 +8599,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
        ]
      ], [
-       fhir:index 176;
+       fhir:index 173;
        fhir:Element.id [ fhir:value "Patient.contact.address.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
@@ -8849,7 +8652,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 177;
+       fhir:index 174;
        fhir:Element.id [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -8911,7 +8714,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 178;
+       fhir:index 175;
        fhir:Element.id [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -8965,7 +8768,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 179;
+       fhir:index 176;
        fhir:Element.id [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -9005,7 +8808,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 180;
+       fhir:index 177;
        fhir:Element.id [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.short [ fhir:value "A language which may be used to communicate with the patient about his or her health" ];
@@ -9052,7 +8855,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.communication" ]
        ]
      ], [
-       fhir:index 181;
+       fhir:index 178;
        fhir:Element.id [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.representation [
@@ -9085,7 +8888,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 182;
+       fhir:index 179;
        fhir:Element.id [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -9140,7 +8943,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 183;
+       fhir:index 180;
        fhir:Element.id [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -9200,7 +9003,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 184;
+       fhir:index 181;
        fhir:Element.id [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.short [ fhir:value "The language which can be used to communicate with the patient about his or her health" ];
@@ -9258,7 +9061,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.communication.language" ]
        ]
      ], [
-       fhir:index 185;
+       fhir:index 182;
        fhir:Element.id [ fhir:value "Patient.communication.language.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.id" ];
        fhir:ElementDefinition.representation [
@@ -9291,7 +9094,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 186;
+       fhir:index 183;
        fhir:Element.id [ fhir:value "Patient.communication.language.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension" ];
        fhir:ElementDefinition.slicing [
@@ -9303,8 +9106,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -9340,12 +9151,17 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
-       fhir:index 187;
-       fhir:Element.id [ fhir:value "Patient.communication.language.extension:extensionDataAbsentReason" ];
+       fhir:index 184;
+       fhir:Element.id [ fhir:value "Patient.communication.language.extension:dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "extensionDataAbsentReason" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "dataAbsentReason" ];
        fhir:ElementDefinition.short [ fhir:value "unknown | asked | temp | notasked | masked | unsupported | astext | error" ];
        fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value or elements in the element that is extended are missing." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -9396,8 +9212,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ANY.nullFlavor" ]
        ]
      ], [
-       fhir:index 188;
-       fhir:Element.id [ fhir:value "Patient.communication.language.extension:extensionDataAbsentReason.id" ];
+       fhir:index 185;
+       fhir:Element.id [ fhir:value "Patient.communication.language.extension:dataAbsentReason.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -9429,8 +9245,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 189;
-       fhir:Element.id [ fhir:value "Patient.communication.language.extension:extensionDataAbsentReason.extension" ];
+       fhir:index 186;
+       fhir:Element.id [ fhir:value "Patient.communication.language.extension:dataAbsentReason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -9480,8 +9296,8 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 190;
-       fhir:Element.id [ fhir:value "Patient.communication.language.extension:extensionDataAbsentReason.url" ];
+       fhir:index 187;
+       fhir:Element.id [ fhir:value "Patient.communication.language.extension:dataAbsentReason.url" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension.url" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -9515,18 +9331,9 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 191;
-       fhir:Element.id [ fhir:value "Patient.communication.language.extension:extensionDataAbsentReason.value[x]" ];
+       fhir:index 188;
+       fhir:Element.id [ fhir:value "Patient.communication.language.extension:dataAbsentReason.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -9540,61 +9347,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "DataAbsentReason" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
-           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Used to specify why the normally expected content of the data element is missing." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1";
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 192;
-       fhir:Element.id [ fhir:value "Patient.communication.language.extension:extensionDataAbsentReason.value[x]:valueCode" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCode" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.patternCode [ fhir:value "masked" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "masked" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -9633,7 +9386,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 193;
+       fhir:index 189;
        fhir:Element.id [ fhir:value "Patient.communication.language.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -9679,7 +9432,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 194;
+       fhir:index 190;
        fhir:Element.id [ fhir:value "Patient.communication.language.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -9730,7 +9483,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 195;
+       fhir:index 191;
        fhir:Element.id [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.short [ fhir:value "Language preference indicator" ];
@@ -9776,7 +9529,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".preferenceInd" ]
        ]
      ], [
-       fhir:index 196;
+       fhir:index 192;
        fhir:Element.id [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.short [ fhir:value "Patient's nominated primary care provider" ];
@@ -9838,7 +9591,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 197;
+       fhir:index 193;
        fhir:Element.id [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is the custodian of the patient record" ];
@@ -9885,7 +9638,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".providerOrganization" ]
        ]
      ], [
-       fhir:index 198;
+       fhir:index 194;
        fhir:Element.id [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.short [ fhir:value "Link to another patient resource that concerns the same actual person" ];
@@ -9928,7 +9681,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 199;
+       fhir:index 195;
        fhir:Element.id [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.representation [
@@ -9961,7 +9714,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 200;
+       fhir:index 196;
        fhir:Element.id [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -10016,7 +9769,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 201;
+       fhir:index 197;
        fhir:Element.id [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -10076,7 +9829,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 202;
+       fhir:index 198;
        fhir:Element.id [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.short [ fhir:value "The other patient or related person resource that the link refers to" ];
@@ -10135,7 +9888,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 203;
+       fhir:index 199;
        fhir:Element.id [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.short [ fhir:value "replaced-by | replaces | refer | seealso" ];

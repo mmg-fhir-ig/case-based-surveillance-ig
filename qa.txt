@@ -1,245 +1,213 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 20, warn = 41, info = 66
-IG Publisher Version: 1.1.80 Out of date - current version is 1.1.84
-Generated Wed Nov 03 10:09:52 EDT 2021. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
-
- Build Errors : 1 / 1 / 0
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 9 / 5 / 66
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document : 4 / 5 / 48
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/composition-GenV2-TC-Composition : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/composition-HAICA-TC-Composition : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/composition-Lyme-TC-Composition : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/composition-STD-TC-Composition : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition : 1 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-HAICA-TC-Condition : 1 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-Lyme-TC-Condition : 1 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-STD-TC-Complication : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/condition-STD-TC-Condition : 1 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-HAICA-TC-Lab-DiagnosticReport : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-Lyme-TC-Lab-DiagnosticReport : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-STD-TC-Lab-DiagnosticReport : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/encounter-GenV2-TC-Hospitalization : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/encounter-HAICA-TC-Hospitalization : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/encounter-Lyme-TC-Hospitalization : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/encounter-STD-TC-Hospitalization : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/medicationstatement-Lyme-TC-Medication-Statement : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/medicationstatement-STD-TC-Medication-Statement-1 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/medicationstatement-STD-TC-Medication-Statement-2 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1 : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10 : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member11 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member12 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member13 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member14 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member15 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member2 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member3 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member5 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member6 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member7 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member8 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member9 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CauseOfDeath : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure : 1 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-MMWR : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member1 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member2 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member3 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member4 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member5 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member6 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-Lab-Observation : 0 / 2 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-MMWR : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member1 : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member10 : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member11 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member12 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member13 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member2 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member3 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member4 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member5 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member6 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member7 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member8 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member9 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-Exposure : 1 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-Lab-Observation-1 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-Lab-Observation-2 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-MMWR : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-ODH-Example : 0 / 0 / 6
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member1 : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member10 : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member11 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member12 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member13 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member14 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member15 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member2 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member3 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member4 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member5 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member6 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member7 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member8 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member9 : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CaseSampled : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-DetectionMethod : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ1 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ10 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ11 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ12 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ13 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ2 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ3 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ4 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ5 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ6 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ7 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ8 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ9 : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EpiQuestionnaire : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-Exposure : 1 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-HIVStatus : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-HIVStatusDocumented : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-InitialHealthExam : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-Lab-Observation : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-Lab-Observation-AST : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-MMWR : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-SexualOrientation : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-TreatmentDate : 0 / 0 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/organization-GenV2-TC-Reporting-Source : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/organization-HAICA-TC-Reporting-Source : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/organization-Lyme-TC-Reporting-Source : 0 / 1 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/organization-STD-TC-Reporting-Source : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/patient-Lyme-TC-Patient : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/patient-STD-TC-Patient : 0 / 2 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/practitioner-HAICA-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/practitioner-Lyme-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/practitioner-STD-TC-Person-Reporting : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/questionnaire-FoodNet-Demo-Questionnaire : 0 / 1 / 12
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 0 / 1 / 5
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/specimen-Lyme-TC-Specimen : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/specimen-STD-TC-Specimen : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/specimen-STD-TC-Specimen-AST : 0 / 2 / 2
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cause-of-death : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cdc-address-use : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-document-bundle : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-epi-questionnaire-panel : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-hospitalization : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-illness-duration : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-diagnosticreport : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-observation : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-person-reporting-to-cdc : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-program-specific-time-window : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-questionnaire : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reason-not-vaccinated-per-ACIP-recommendations : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reporting-source-organization : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-social-determinants-of-health : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-travel-history : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-ACIP-Recommendation : 0 / 1 / 3
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-indication : 0 / 1 / 3
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-record : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-us-cbs-patient : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCDCAddressUseVS : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 0 / 5 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabDiagnosticReportVS : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationResultVS : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationVS : 0 / 1 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSRelatedCaseTypeVS : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 9 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSocialDeterminantsOfHealthCategoryVS : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSocialDeterminantsOfHealthVS : 0 / 0 / 1
- /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSTimeWindowRelativeToVS : 0 / 0 / 1
+err = 0, warn = 23, info = 12
+IG Publisher Version: 1.1.97
+Generated Tue Jan 18 12:45:09 EST 2022. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+ Build Errors : 5 / 1 / 0
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 0 / 6 / 57
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-HAICA-TC-Document : 0 / 5 / 44
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/codesystem-cbs-temp-code-system : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-GenV2-TC-Composition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-HAICA-TC-Composition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-Lyme-TC-Composition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/composition-STD-TC-Composition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-GenV2-TC-Condition : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-HAICA-TC-Condition : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-Lyme-TC-Condition : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-STD-TC-Complication : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/condition-STD-TC-Condition : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-HAICA-TC-Lab-DiagnosticReport : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-Lyme-TC-Lab-DiagnosticReport : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/diagnosticreport-STD-TC-Lab-DiagnosticReport : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-GenV2-TC-Hospitalization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-HAICA-TC-Hospitalization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-Lyme-TC-Hospitalization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/encounter-STD-TC-Hospitalization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/medicationstatement-Lyme-TC-Medication-Statement : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/medicationstatement-STD-TC-Medication-Statement-1 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/medicationstatement-STD-TC-Medication-Statement-2 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member1 : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member10 : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member11 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member12 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member13 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member14 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member15 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member2 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member3 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member4 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member5 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member6 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member7 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member8 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CNP-Member9 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-CauseOfDeath : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-Exposure : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-GenV2-TC-MMWR : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member1 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member2 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member3 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member4 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member5 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-CNP-Member6 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-Lab-Observation : 0 / 2 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-HAICA-TC-MMWR : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member1 : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member10 : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member11 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member12 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member13 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member2 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member3 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member4 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member5 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member6 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member7 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member8 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-CNP-Member9 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-Exposure : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-Lab-Observation-1 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-Lab-Observation-2 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-MMWR : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-Lyme-TC-ODH-Example : 0 / 0 / 5
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member1 : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member10 : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member11 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member12 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member13 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member14 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member15 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member2 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member3 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member4 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member5 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member6 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member7 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member8 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CNP-Member9 : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-CaseSampled : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-DetectionMethod : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ1 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ10 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ11 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ12 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ13 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ2 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ3 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ4 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ5 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ6 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ7 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ8 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EQ9 : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-EpiQuestionnaire : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-Exposure : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-HIVStatus : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-HIVStatusDocumented : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-InitialHealthExam : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-Lab-Observation : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-Lab-Observation-AST : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-MMWR : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-SexualOrientation : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/observation-STD-TC-TreatmentDate : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-GenV2-TC-Reporting-Source : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-HAICA-TC-Reporting-Source : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-Lyme-TC-Reporting-Source : 0 / 1 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/organization-STD-TC-Reporting-Source : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-GenV2-TC-Patient : 0 / 2 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-HAICA-TC-Patient : 0 / 2 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-Lyme-TC-Patient : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/patient-STD-TC-Patient : 0 / 3 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-GenV2-TC-Person-Reporting : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-HAICA-TC-Person-Reporting : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-Lyme-TC-Person-Reporting : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/practitioner-STD-TC-Person-Reporting : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/questionnaire-FoodNet-Demo-Questionnaire : 0 / 1 / 11
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-HAICA-TC-Specimen : 0 / 0 / 5
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-Lyme-TC-Specimen : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-STD-TC-Specimen : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/specimen-STD-TC-Specimen-AST : 0 / 0 / 2
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-birthsex : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-class-status : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-case-notification-panel : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cause-of-death : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cdc-address-use : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-cnp-member : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-composition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-condition : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-diagnosis-date : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-document-bundle : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-epi-questionnaire-panel : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-ethnicity : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-exposure-observation : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-hospitalization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-illness-duration : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-diagnosticreport : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-lab-observation : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-mmwr : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-patient : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-performing-lab : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-person-reporting-to-cdc : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-program-specific-time-window : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-questionnaire : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-race : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reason-not-vaccinated-per-ACIP-recommendations : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-related-case : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-reporting-source-organization : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-social-determinants-of-health : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-specimen-role : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-travel-history : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-ACIP-Recommendation : 0 / 1 / 3
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-indication : 0 / 1 / 3
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-cbs-vaccination-record : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-us-cbs-condition : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-us-cbs-hospitalization : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-us-cbs-patient : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-us-cbs-period-and-mode-of-travel : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/structuredefinition-us-cbs-travel-history : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCDCAddressUseVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSCaseNotificationPanelVS : 0 / 2 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabDiagnosticReportVS : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationResultVS : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSLabObservationVS : 0 / 1 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSRelatedCaseTypeVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSTDSexualHistoryDrugUseQuestionnaireVS : 0 / 2 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSocialDeterminantsOfHealthCategoryVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSSocialDeterminantsOfHealthVS : 0 / 0 / 1
+ /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/valueset-CBSTimeWindowRelativeToVS : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/case-based-surveillance-ig/output/StructureDefinition-cbs-composition.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 267, column 97: The link 'http://hl7.org/fhir/us/odh/' for "Occupational Data for Health Implementation Guide" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 352, column 115: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 346, column 1654: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 387, column 1903: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 503, column 1654: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 544, column 1903: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
 == fsh-generated/resources/Bundle-GenV2-TC-Document.json ==
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Unable to find a match for profile Observation/GenV2-TC-CNP among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Details for Observation/GenV2-TC-CNP matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Unable to find a match for profile Encounter/GenV2-TC-Hospitalization among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Details for Encounter/GenV2-TC-Hospitalization matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/GenV2-TC-Condition matching against Profile http://hl7.org/fhir/StructureDefinition/Condition
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).focus[0]: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[4].resource.ofType(Observation).focus[0]: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[1]: Details for Observation/GenV2-TC-Exposure matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[1]: Unable to find a match for profile Observation/GenV2-TC-Exposure among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[7].resource.ofType(Observation).hasMember[1]: Details for Observation/GenV2-TC-Exposure matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).focus[0]: Unable to find a match for profile Condition/GenV2-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).focus[0]: Details for Condition/GenV2-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-ERROR: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#USA)
-WARNING: Bundle/GenV2-TC-Document: Bundle.entry[9].resource.ofType(Observation).component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated]
 == fsh-generated/resources/Bundle-HAICA-TC-Document.json ==
-ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Unable to find a match for profile Condition/HAICA-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Details for Condition/HAICA-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-ERROR: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Unable to find a match for profile Encounter/HAICA-TC-Hospitalization among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Details for Encounter/HAICA-TC-Hospitalization matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization
-ERROR: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Bundle/HAICA-TC-Document: Bundle.entry[2].resource.ofType(Condition).code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/HAICA-TC-Condition matching against Profile http://hl7.org/fhir/StructureDefinition/Condition
-ERROR: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Unable to find a match for profile Condition/HAICA-TC-Condition among choices: http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
-INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[3].resource.ofType(Encounter).diagnosis[0].condition: Details for Condition/HAICA-TC-Condition matching against Profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
-WARNING: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).type: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946 because the value set or a code system it depends on is not known to the validator]
 WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).method.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated]
 == fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
+INFORMATION: CodeSystem/cbs-temp-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/Composition-GenV2-TC-Composition.json ==
 == fsh-generated/resources/Composition-HAICA-TC-Composition.json ==
 == fsh-generated/resources/Composition-Lyme-TC-Composition.json ==
 == fsh-generated/resources/Composition-STD-TC-Composition.json ==
 == fsh-generated/resources/Condition-GenV2-TC-Condition.json ==
-ERROR: Condition/GenV2-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/GenV2-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
 == fsh-generated/resources/Condition-HAICA-TC-Condition.json ==
-ERROR: Condition/HAICA-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/HAICA-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
 == fsh-generated/resources/Condition-Lyme-TC-Condition.json ==
-ERROR: Condition/Lyme-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/Lyme-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
-INFORMATION: Condition/Lyme-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-STD-TC-Complication.json ==
 == fsh-generated/resources/Condition-STD-TC-Condition.json ==
-ERROR: Condition/STD-TC-Condition: Condition.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.968), and a coding from this value set is required) (codes = http://snomed.info/sct#410605003)
-WARNING: Condition/STD-TC-Condition: Condition.code: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated]
-INFORMATION: Condition/STD-TC-Condition: Condition.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.277' is unknown so the code cannot be validated
 == fsh-generated/resources/DiagnosticReport-HAICA-TC-Lab-DiagnosticReport.json ==
 == fsh-generated/resources/DiagnosticReport-Lyme-TC-Lab-DiagnosticReport.json ==
 == fsh-generated/resources/DiagnosticReport-STD-TC-Lab-DiagnosticReport.json ==
@@ -268,8 +236,6 @@ INFORMATION: Condition/STD-TC-Condition: Condition.code.coding[0]: Code System U
 == fsh-generated/resources/Observation-GenV2-TC-CNP-Member9.json ==
 == fsh-generated/resources/Observation-GenV2-TC-CauseOfDeath.json ==
 == fsh-generated/resources/Observation-GenV2-TC-Exposure.json ==
-ERROR: Observation/GenV2-TC-Exposure: Observation.component[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#USA)
-WARNING: Observation/GenV2-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated]
 == fsh-generated/resources/Observation-GenV2-TC-MMWR.json ==
 == fsh-generated/resources/Observation-HAICA-TC-CNP.json ==
 == fsh-generated/resources/Observation-HAICA-TC-CNP-Member1.json ==
@@ -284,142 +250,87 @@ WARNING: Observation/HAICA-TC-Lab-Observation: Observation.method.coding[0]: A c
 == fsh-generated/resources/Observation-HAICA-TC-MMWR.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member1.json ==
-WARNING: Observation/Lyme-TC-CNP-Member1: Observation.value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member10.json ==
-WARNING: Observation/Lyme-TC-CNP-Member10: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member11.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member12.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member13.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member2.json ==
-INFORMATION: Observation/Lyme-TC-CNP-Member2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member3.json ==
-INFORMATION: Observation/Lyme-TC-CNP-Member3: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member4.json ==
-INFORMATION: Observation/Lyme-TC-CNP-Member4: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member5.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member6.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member7.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member8.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP-Member9.json ==
 == fsh-generated/resources/Observation-Lyme-TC-Exposure.json ==
-ERROR: Observation/Lyme-TC-Exposure: Observation.component[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#USA)
-WARNING: Observation/Lyme-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7158 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated]
-INFORMATION: Observation/Lyme-TC-Exposure: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-Lyme-TC-Lab-Observation-1.json ==
 == fsh-generated/resources/Observation-Lyme-TC-Lab-Observation-2.json ==
 == fsh-generated/resources/Observation-Lyme-TC-MMWR.json ==
 == fsh-generated/resources/Observation-Lyme-TC-ODH-Example.json ==
-INFORMATION: Observation/Lyme-TC-ODH-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' is unknown so the code cannot be validated
-INFORMATION: Observation/Lyme-TC-ODH-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' is unknown so the code cannot be validated
 INFORMATION: Observation/Lyme-TC-ODH-Example: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
 INFORMATION: Observation/Lyme-TC-ODH-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
 == fsh-generated/resources/Observation-STD-TC-CNP.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member1.json ==
-WARNING: Observation/STD-TC-CNP-Member1: Observation.value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'
 == fsh-generated/resources/Observation-STD-TC-CNP-Member10.json ==
-WARNING: Observation/STD-TC-CNP-Member10: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#N in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#N'
 == fsh-generated/resources/Observation-STD-TC-CNP-Member11.json ==
-INFORMATION: Observation/STD-TC-CNP-Member11: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-CNP-Member12.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member13.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member14.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member15.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member2.json ==
-INFORMATION: Observation/STD-TC-CNP-Member2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-CNP-Member3.json ==
-INFORMATION: Observation/STD-TC-CNP-Member3: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.93' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-CNP-Member4.json ==
-INFORMATION: Observation/STD-TC-CNP-Member4: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.6.92' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-CNP-Member5.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member6.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member7.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member8.json ==
 == fsh-generated/resources/Observation-STD-TC-CNP-Member9.json ==
 == fsh-generated/resources/Observation-STD-TC-CaseSampled.json ==
-INFORMATION: Observation/STD-TC-CaseSampled: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-DetectionMethod.json ==
-INFORMATION: Observation/STD-TC-DetectionMethod: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ1.json ==
-INFORMATION: Observation/STD-TC-EQ1: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ10.json ==
-INFORMATION: Observation/STD-TC-EQ10: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ11.json ==
-INFORMATION: Observation/STD-TC-EQ11: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ12.json ==
-INFORMATION: Observation/STD-TC-EQ12: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ13.json ==
-INFORMATION: Observation/STD-TC-EQ13: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ2.json ==
-INFORMATION: Observation/STD-TC-EQ2: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ3.json ==
-INFORMATION: Observation/STD-TC-EQ3: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ4.json ==
-INFORMATION: Observation/STD-TC-EQ4: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ5.json ==
-INFORMATION: Observation/STD-TC-EQ5: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ6.json ==
-INFORMATION: Observation/STD-TC-EQ6: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ7.json ==
-INFORMATION: Observation/STD-TC-EQ7: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ8.json ==
-INFORMATION: Observation/STD-TC-EQ8: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EQ9.json ==
-INFORMATION: Observation/STD-TC-EQ9: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-EpiQuestionnaire.json ==
 == fsh-generated/resources/Observation-STD-TC-Exposure.json ==
-ERROR: Observation/STD-TC-Exposure: Observation.component[0].value.ofType(CodeableConcept): None of the codings provided are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828 (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.828), and a coding from this value set is required) (codes = urn:iso:std:iso:3166#MEX)
 == fsh-generated/resources/Observation-STD-TC-HIVStatus.json ==
 == fsh-generated/resources/Observation-STD-TC-HIVStatusDocumented.json ==
-INFORMATION: Observation/STD-TC-HIVStatusDocumented: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-InitialHealthExam.json ==
-INFORMATION: Observation/STD-TC-InitialHealthExam: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-STD-TC-Lab-Observation.json ==
 == fsh-generated/resources/Observation-STD-TC-Lab-Observation-AST.json ==
 == fsh-generated/resources/Observation-STD-TC-MMWR.json ==
 == fsh-generated/resources/Observation-STD-TC-SexualOrientation.json ==
 == fsh-generated/resources/Observation-STD-TC-TreatmentDate.json ==
-INFORMATION: Observation/STD-TC-TreatmentDate: Observation.code.coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-GenV2-TC-Reporting-Source.json ==
 == fsh-generated/resources/Organization-HAICA-TC-Reporting-Source.json ==
 == fsh-generated/resources/Organization-Lyme-TC-Reporting-Source.json ==
-WARNING: Organization/Lyme-TC-Reporting-Source: Organization.type[0]: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3036 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
-INFORMATION: Organization/Lyme-TC-Reporting-Source: Organization.type[0].coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-STD-TC-Reporting-Source.json ==
 == fsh-generated/resources/Patient-GenV2-TC-Patient.json ==
 == fsh-generated/resources/Patient-HAICA-TC-Patient.json ==
 == fsh-generated/resources/Patient-Lyme-TC-Patient.json ==
-WARNING: Patient/Lyme-TC-Patient: Patient.extension[0].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2135-2 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2135-2'
 == fsh-generated/resources/Patient-STD-TC-Patient.json ==
-WARNING: Patient/STD-TC-Patient: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code http://terminology.hl7.org/CodeSystem/v2-0005#2186-5 in http://terminology.hl7.org/CodeSystem/v2-0005 - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://terminology.hl7.org/CodeSystem/v2-0005#2186-5'
-INFORMATION: Patient/STD-TC-Patient: Patient.extension[4].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
-WARNING: Patient/STD-TC-Patient: Patient.extension[4].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
 == fsh-generated/resources/Practitioner-GenV2-TC-Person-Reporting.json ==
 == fsh-generated/resources/Practitioner-HAICA-TC-Person-Reporting.json ==
 == fsh-generated/resources/Practitioner-Lyme-TC-Person-Reporting.json ==
 == fsh-generated/resources/Practitioner-STD-TC-Person-Reporting.json ==
 == fsh-generated/resources/Questionnaire-FoodNet-Demo-Questionnaire.json ==
 WARNING: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[0].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[1].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[2].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[3].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[4].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[5].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[6].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[7].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[8].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
-INFORMATION: Questionnaire/FoodNet-Demo-Questionnaire: Questionnaire.item[9].code[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated
 == fsh-generated/resources/Specimen-HAICA-TC-Specimen.json ==
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Specimen/HAICA-TC-Specimen: Specimen.identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
-WARNING: Specimen/HAICA-TC-Specimen: Specimen.type: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946 because the value set or a code system it depends on is not known to the validator]
 == fsh-generated/resources/Specimen-Lyme-TC-Specimen.json ==
 == fsh-generated/resources/Specimen-STD-TC-Specimen.json ==
-WARNING: Specimen/STD-TC-Specimen: Specimen.collection.bodySite: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967 because the value set or a code system it depends on is not known to the validator]
 == fsh-generated/resources/Specimen-STD-TC-Specimen-AST.json ==
 INFORMATION: Specimen/STD-TC-Specimen-AST: Specimen.identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
-WARNING: Specimen/STD-TC-Specimen-AST: Specimen.type: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946 because the value set or a code system it depends on is not known to the validator]
-WARNING: Specimen/STD-TC-Specimen-AST: Specimen.collection.bodySite: [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.967 because the value set or a code system it depends on is not known to the validator]
 == fsh-generated/resources/StructureDefinition-cbs-birthsex.json ==
 == fsh-generated/resources/StructureDefinition-cbs-case-class-status.json ==
 == fsh-generated/resources/StructureDefinition-cbs-case-notification-panel.json ==
@@ -467,12 +378,20 @@ INFORMATION: StructureDefinition/cbs-vaccination-indication: StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-indication'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cbs-vaccination-record.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-us-cbs-condition.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-us-cbs-hospitalization.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-us-cbs-patient.json ==
 WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-us-cbs-period-and-mode-of-travel.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-us-cbs-travel-history.json ==
+WARNING: StructureDefinition.where(url = 'http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-CBSCDCAddressUseVS.json ==
 == fsh-generated/resources/ValueSet-CBSCaseNotificationPanelVS.json ==
 == fsh-generated/resources/ValueSet-CBSLabDiagnosticReportVS.json ==
-WARNING: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.274
+WARNING: ValueSet.where(id = 'CBSLabDiagnosticReportVS'): Error from server: Unable to provide support for code system http://loinc.org
 == fsh-generated/resources/ValueSet-CBSLabObservationResultVS.json ==
 WARNING: ValueSet.where(id = 'CBSLabObservationResultVS'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.274
 == fsh-generated/resources/ValueSet-CBSLabObservationVS.json ==

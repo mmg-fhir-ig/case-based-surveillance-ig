@@ -3,7 +3,7 @@
   "id": "STD-TC-Medication-Statement-1",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 2193}\">Ceftriaxone</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>effective</b>: 2014-02-25 --&gt; 2014-02-25</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"STD-TC-Medication-Statement-1\" </p></div><p><b>status</b>: completed</p><p><b>medication</b>: Ceftriaxone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#2193)</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">Patient/STD-TC-Patient: STD-TC Example Patient</a> \" WWWWW\"</p><p><b>effective</b>: 2014-02-25 --&gt; 2014-02-25</p></div>"
   },
   "status": "completed",
   "medicationCodeableConcept": {

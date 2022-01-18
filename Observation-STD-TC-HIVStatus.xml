@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="STD-TC-HIVStatus"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 55277-8}">HIV status</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">STD-TC Example Patient. Generated Summary: Local Record ID: STD_TC05, Local Subject ID: STD_TC05; Wwwww, Ddddd; gender: female; birthDate: 1994-03-02</a></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 165816005}">HIV positive</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "STD-TC-HIVStatus" </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#55277-8)</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">Patient/STD-TC-Patient: STD-TC Example Patient</a> " WWWWW"</p><p><b>value</b>: HIV positive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#165816005)</span></p></div>
   </text>
   <status value="final"/>
   <code>

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.title [ fhir:value "Case Based Surveillance Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-03T10:06:32-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-18T12:41:26-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -632,6 +632,34 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/us-cbs-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "US Case Based Surveillance Condition of Interest Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/us-cbs-hospitalization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "US Case Based Surveillance Hospitalization Encounter Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints on the ECR US Public Health Encounter to represent hospitalization due to a condition of interest for public health case based surveillance programs." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/us-cbs-patient" ]
        ];
@@ -639,7 +667,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/us-cbs-travel-history" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "US Case Based Surveillance Travel History Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints on the ECR US PH Travel History profile to capture additional data in order to meet the needs of public health case based surveillance programs." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -653,7 +695,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code classifying the person's sex assigned at birth." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -667,7 +709,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the use of the address as per information surveillance program." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -681,7 +723,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -695,7 +737,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A dateTime indicating when the condition of interest was diagnosed." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -709,7 +751,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -723,7 +765,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -737,7 +779,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the role of the sample." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -751,7 +793,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Illness duration to obscure PHII in place of absokute dates." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -765,7 +807,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -779,7 +821,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reason the subject was not vaccinated per ACIP recommendations." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -793,7 +835,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of strings with relevant case numbers and a type element that specifies the nature of the relation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/us-cbs-period-and-mode-of-travel" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "US Case Based Surveillance Period and Mode of Travel Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An extension capturing the circumstances of travel to a destination." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -807,7 +863,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -821,7 +877,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes found in the case notification panel that are otherwise not captured in other CBS profiles." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -835,7 +891,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Lab Test Type. The codes are from two PHINVADS valuesets to support labs test repeating group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -849,7 +905,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Lab Observations Result Value. The codes are from two PHINVADS valuesets to support lab results in MMG and Lab Repeating Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -863,7 +919,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -877,7 +933,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes found in the case notification panel that are otherwise not captured in other CBS profiles." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -891,7 +947,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -905,7 +961,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -919,7 +975,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -933,7 +989,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -947,7 +1003,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code system defined as placeholders for items that are not defined in existing systems." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -961,7 +1017,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demo Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 47;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -978,7 +1034,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
        ]
      ], [
-       fhir:index 48;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -995,7 +1051,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 49;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1012,7 +1068,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1029,7 +1085,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 51;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1046,7 +1102,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 52;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1063,7 +1119,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 53;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1080,7 +1136,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 54;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1097,7 +1153,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1114,7 +1170,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 56;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1131,7 +1187,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 57;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1148,7 +1204,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 58;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1165,7 +1221,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1182,7 +1238,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1199,7 +1255,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 61;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1216,7 +1272,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 62;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1233,7 +1289,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1250,7 +1306,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1267,7 +1323,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1284,7 +1340,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
        ]
      ], [
-       fhir:index 66;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1301,7 +1357,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle>
        ]
      ], [
-       fhir:index 67;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1318,7 +1374,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1335,7 +1391,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1352,7 +1408,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1369,7 +1425,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1386,7 +1442,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc>
        ]
      ], [
-       fhir:index 72;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1403,7 +1459,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization>
        ]
      ], [
-       fhir:index 73;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1420,7 +1476,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
        ]
      ], [
-       fhir:index 74;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1437,7 +1493,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 75;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1454,7 +1510,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 76;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1471,7 +1527,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 77;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1488,7 +1544,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 78;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1505,7 +1561,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 79;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1522,7 +1578,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 80;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1539,7 +1595,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition>
        ]
      ], [
-       fhir:index 81;
+       fhir:index 85;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1556,7 +1612,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
        ]
      ], [
-       fhir:index 82;
+       fhir:index 86;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1573,7 +1629,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle>
        ]
      ], [
-       fhir:index 83;
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1590,7 +1646,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization>
        ]
      ], [
-       fhir:index 84;
+       fhir:index 88;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1607,7 +1663,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport>
        ]
      ], [
-       fhir:index 85;
+       fhir:index 89;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1624,7 +1680,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation>
        ]
      ], [
-       fhir:index 86;
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1641,7 +1697,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr>
        ]
      ], [
-       fhir:index 87;
+       fhir:index 91;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1658,7 +1714,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient>
        ]
      ], [
-       fhir:index 88;
+       fhir:index 92;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1675,7 +1731,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc>
        ]
      ], [
-       fhir:index 89;
+       fhir:index 93;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1692,7 +1748,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization>
        ]
      ], [
-       fhir:index 90;
+       fhir:index 94;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1709,7 +1765,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen>
        ]
      ], [
-       fhir:index 91;
+       fhir:index 95;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1726,7 +1782,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
        ]
      ], [
-       fhir:index 92;
+       fhir:index 96;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1743,7 +1799,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 93;
+       fhir:index 97;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1760,7 +1816,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 94;
+       fhir:index 98;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1777,7 +1833,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 95;
+       fhir:index 99;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1794,7 +1850,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 96;
+       fhir:index 100;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1811,7 +1867,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 97;
+       fhir:index 101;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1828,7 +1884,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 98;
+       fhir:index 102;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1845,7 +1901,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 99;
+       fhir:index 103;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1862,7 +1918,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 100;
+       fhir:index 104;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1879,7 +1935,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 101;
+       fhir:index 105;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1896,7 +1952,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 102;
+       fhir:index 106;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1913,7 +1969,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 103;
+       fhir:index 107;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1930,7 +1986,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 104;
+       fhir:index 108;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1947,7 +2003,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 105;
+       fhir:index 109;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1964,7 +2020,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition>
        ]
      ], [
-       fhir:index 106;
+       fhir:index 110;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1981,7 +2037,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
        ]
      ], [
-       fhir:index 107;
+       fhir:index 111;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1998,7 +2054,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation>
        ]
      ], [
-       fhir:index 108;
+       fhir:index 112;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2015,7 +2071,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization>
        ]
      ], [
-       fhir:index 109;
+       fhir:index 113;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2032,7 +2088,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport>
        ]
      ], [
-       fhir:index 110;
+       fhir:index 114;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2049,7 +2105,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation>
        ]
      ], [
-       fhir:index 111;
+       fhir:index 115;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2066,7 +2122,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation>
        ]
      ], [
-       fhir:index 112;
+       fhir:index 116;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2083,7 +2139,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr>
        ]
      ], [
-       fhir:index 113;
+       fhir:index 117;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2097,7 +2153,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Statement example resource for the Lyme Test Case" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 114;
+       fhir:index 118;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2111,7 +2167,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An ODH Past or Present Job-conforming observation example resource for the Lyme Test Case." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 115;
+       fhir:index 119;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2128,7 +2184,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient>
        ]
      ], [
-       fhir:index 116;
+       fhir:index 120;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2145,7 +2201,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc>
        ]
      ], [
-       fhir:index 117;
+       fhir:index 121;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2162,7 +2218,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization>
        ]
      ], [
-       fhir:index 118;
+       fhir:index 122;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2179,7 +2235,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen>
        ]
      ], [
-       fhir:index 119;
+       fhir:index 123;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2196,7 +2252,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
        ]
      ], [
-       fhir:index 120;
+       fhir:index 124;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2213,7 +2269,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 121;
+       fhir:index 125;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2230,7 +2286,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 122;
+       fhir:index 126;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2247,7 +2303,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 123;
+       fhir:index 127;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2264,7 +2320,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 124;
+       fhir:index 128;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2281,7 +2337,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 125;
+       fhir:index 129;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2298,7 +2354,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 126;
+       fhir:index 130;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2315,7 +2371,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 127;
+       fhir:index 131;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2332,7 +2388,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 128;
+       fhir:index 132;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2349,7 +2405,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 129;
+       fhir:index 133;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2366,7 +2422,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 130;
+       fhir:index 134;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2383,7 +2439,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 131;
+       fhir:index 135;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2400,7 +2456,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 132;
+       fhir:index 136;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2417,7 +2473,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 133;
+       fhir:index 137;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2434,7 +2490,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 134;
+       fhir:index 138;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2451,7 +2507,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
        ]
      ], [
-       fhir:index 135;
+       fhir:index 139;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2465,7 +2521,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation describing if the case was selected by reporting jurisdiction for enhanced investigation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 136;
+       fhir:index 140;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2479,7 +2535,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Condition descrribing if the subject experienced severe complications due to this illness." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 137;
+       fhir:index 141;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2496,7 +2552,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition>
        ]
      ], [
-       fhir:index 138;
+       fhir:index 142;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2513,7 +2569,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
        ]
      ], [
-       fhir:index 139;
+       fhir:index 143;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2527,7 +2583,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation describing how the case patient first came to the attention of the health department for this condition." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 140;
+       fhir:index 144;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2544,7 +2600,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 141;
+       fhir:index 145;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2561,7 +2617,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 142;
+       fhir:index 146;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2578,7 +2634,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 143;
+       fhir:index 147;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2595,7 +2651,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 144;
+       fhir:index 148;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2612,7 +2668,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 145;
+       fhir:index 149;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2629,7 +2685,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 146;
+       fhir:index 150;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2646,7 +2702,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 147;
+       fhir:index 151;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2663,7 +2719,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 148;
+       fhir:index 152;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2680,7 +2736,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 149;
+       fhir:index 153;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2697,7 +2753,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 150;
+       fhir:index 154;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2714,7 +2770,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 151;
+       fhir:index 155;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2731,7 +2787,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 152;
+       fhir:index 156;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2748,7 +2804,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 153;
+       fhir:index 157;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2765,7 +2821,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel>
        ]
      ], [
-       fhir:index 154;
+       fhir:index 158;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2782,7 +2838,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation>
        ]
      ], [
-       fhir:index 155;
+       fhir:index 159;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2796,7 +2852,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation describing the patient's HIV status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 156;
+       fhir:index 160;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2810,7 +2866,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation describing if the HIV status of the case-patient was investigated through search of eHARS." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 157;
+       fhir:index 161;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2827,7 +2883,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization>
        ]
      ], [
-       fhir:index 158;
+       fhir:index 162;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2841,7 +2897,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation describing the date of the patient's intial health exam that was associated with the case report health event" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 159;
+       fhir:index 163;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2858,7 +2914,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport>
        ]
      ], [
-       fhir:index 160;
+       fhir:index 164;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2875,7 +2931,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation>
        ]
      ], [
-       fhir:index 161;
+       fhir:index 165;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2892,7 +2948,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation>
        ]
      ], [
-       fhir:index 162;
+       fhir:index 166;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2909,7 +2965,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr>
        ]
      ], [
-       fhir:index 163;
+       fhir:index 167;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2923,7 +2979,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A first Medication Statement example resource for the STD Test Case 5" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 164;
+       fhir:index 168;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2937,7 +2993,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A second Medication Statement example resource for the STD Test Case 5" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 165;
+       fhir:index 169;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2954,7 +3010,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient>
        ]
      ], [
-       fhir:index 166;
+       fhir:index 170;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2971,7 +3027,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc>
        ]
      ], [
-       fhir:index 167;
+       fhir:index 171;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2988,7 +3044,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization>
        ]
      ], [
-       fhir:index 168;
+       fhir:index 172;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3005,7 +3061,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health>
        ]
      ], [
-       fhir:index 169;
+       fhir:index 173;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3022,7 +3078,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen>
        ]
      ], [
-       fhir:index 170;
+       fhir:index 174;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3039,7 +3095,7 @@
          fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen>
        ]
      ], [
-       fhir:index 171;
+       fhir:index 175;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

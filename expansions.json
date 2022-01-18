@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "7f2266c5-f21a-4d67-892a-1dafb2a6830b",
+  "id" : "730af505-0dff-4efe-b737-d9a004f4104d",
   "meta" : {
-    "lastUpdated" : "2021-11-03T10:06:32.582-04:00"
+    "lastUpdated" : "2022-01-18T12:41:26.030-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "CBSCDCAddressUseVS",
       "title" : "Additional codes for Address.use.",
       "status" : "active",
-      "date" : "2021-11-03T10:06:32-04:00",
+      "date" : "2022-01-18T12:41:26-05:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
       "expansion" : {
-        "identifier" : "urn:uuid:ba2f588d-9b77-4632-b5d8-c203971661f1",
-        "timestamp" : "2021-11-03T10:08:06-04:00",
+        "identifier" : "urn:uuid:75143a86-8a29-4d2b-9762-b09072dd4a15",
+        "timestamp" : "2022-01-18T12:43:24-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -61,14 +61,14 @@
       "id" : "CBSRelatedCaseTypeVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-previously-reported\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-previously-reported\">previously-reported</a></td><td>Previously Reported Case</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-connected-outbreak\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-connected-outbreak\">connected-outbreak</a></td><td>Connected Outbreak Case</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-parent-congential-syphilis\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-parent-congential-syphilis\">parent-congential-syphilis</a></td><td>Parent in Congenital Syphilis</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-previously-reported\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-previously-reported\">previously-reported</a></td><td>Previously Reported Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-connected-outbreak\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-connected-outbreak\">connected-outbreak</a></td><td>Connected Outbreak Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-parent-congential-syphilis\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-parent-congential-syphilis\">parent-congential-syphilis</a></td><td>Parent in Congenital Syphilis</td></tr></table></div>"
       },
       "url" : "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
       "version" : "0.1.0",
       "name" : "CBSRelatedCaseTypeVS",
       "title" : "CBS Related Case Type Value Set",
       "status" : "active",
-      "date" : "2021-11-03T10:06:32-04:00",
+      "date" : "2022-01-18T12:41:26-05:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -79,8 +79,8 @@
       }],
       "description" : "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
       "expansion" : {
-        "identifier" : "urn:uuid:5578707b-c2ab-4b22-b969-c15f6977b8ab",
-        "timestamp" : "2021-11-03T10:08:15-04:00",
+        "identifier" : "urn:uuid:dbbb3025-ac63-4d82-b493-ce885e2e354d",
+        "timestamp" : "2022-01-18T12:43:40-05:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -115,14 +115,14 @@
       "id" : "CBSSocialDeterminantsOfHealthCategoryVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-sogi\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-sogi\">sogi</a></td><td>Sexual Orientation and Gender Identity</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-housing-or-residence\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-housing-or-residence\">housing-or-residence</a></td><td>Housing Insecurity or Residence Characteristics</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-education\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-education\">education</a></td><td>Education Level</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-food-insecurity\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-food-insecurity\">food-insecurity</a></td><td>Food Insecurity</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-sogi\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-sogi\">sogi</a></td><td>Sexual Orientation and Gender Identity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-housing-or-residence\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-housing-or-residence\">housing-or-residence</a></td><td>Housing Insecurity or Residence Characteristics</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-education\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-education\">education</a></td><td>Education Level</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-food-insecurity\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-food-insecurity\">food-insecurity</a></td><td>Food Insecurity</td></tr></table></div>"
       },
       "url" : "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
       "version" : "0.1.0",
       "name" : "CBSSocialDeterminantsOfHealthCategoryVS",
       "title" : "CBS Case Social Determinants of Health Category Value Set",
       "status" : "active",
-      "date" : "2021-11-03T10:06:32-04:00",
+      "date" : "2022-01-18T12:41:26-05:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -133,8 +133,8 @@
       }],
       "description" : "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
       "expansion" : {
-        "identifier" : "urn:uuid:d5d06a67-69f5-42f5-84ee-b74c425db535",
-        "timestamp" : "2021-11-03T10:08:16-04:00",
+        "identifier" : "urn:uuid:39461711-69b7-493e-a600-a380ce07a11c",
+        "timestamp" : "2022-01-18T12:43:40-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -174,14 +174,14 @@
       "id" : "CBSSocialDeterminantsOfHealthVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.71</li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76690-7\"> </a><a href=\"http://details.loinc.org/LOINC/76690-7.html\">76690-7</a></td><td>http://loinc.org</td><td>Sexual orientation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76691-5\"> </a><a href=\"http://details.loinc.org/LOINC/76691-5.html\">76691-5</a></td><td>http://loinc.org</td><td>Gender identity</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-75274-1\"> </a><a href=\"http://details.loinc.org/LOINC/75274-1.html\">75274-1</a></td><td>http://loinc.org</td><td>Characteristics of residence</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45361006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45361006\">45361006</a></td><td>http://snomed.info/sct</td><td>Imprisonment</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.71</li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76690-7\"> </a><a href=\"http://details.loinc.org/LOINC/76690-7.html\">76690-7</a></td><td>http://loinc.org</td><td>Sexual orientation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76691-5\"> </a><a href=\"http://details.loinc.org/LOINC/76691-5.html\">76691-5</a></td><td>http://loinc.org</td><td>Gender identity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-75274-1\"> </a><a href=\"http://details.loinc.org/LOINC/75274-1.html\">75274-1</a></td><td>http://loinc.org</td><td>Characteristics of residence</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45361006\"> </a><a href=\"http://snomed.info/id/45361006\">45361006</a></td><td>http://snomed.info/sct</td><td>Incarceration</td></tr></table></div>"
       },
       "url" : "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
       "version" : "0.1.0",
       "name" : "CBSSocialDeterminantsOfHealthVS",
       "title" : "CBS Case Social Determinants of Health Codes Value Set",
       "status" : "active",
-      "date" : "2021-11-03T10:06:32-04:00",
+      "date" : "2022-01-18T12:41:26-05:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -192,8 +192,8 @@
       }],
       "description" : "Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
       "expansion" : {
-        "identifier" : "urn:uuid:90f23c0e-bef6-4d63-8293-88e4153c3366",
-        "timestamp" : "2021-11-03T10:08:16-04:00",
+        "identifier" : "urn:uuid:f2d7b803-7e13-45e9-8a9c-9368f3356435",
+        "timestamp" : "2022-01-18T12:43:40-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -205,7 +205,7 @@
         },
         {
           "name" : "version",
-          "valueString" : "http://loinc.org|2.71"
+          "valueUri" : "http://loinc.org|2.71"
         },
         {
           "name" : "excludeNested",
@@ -213,7 +213,7 @@
         },
         {
           "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -233,7 +233,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "45361006",
-          "display" : "Imprisonment"
+          "display" : "Incarceration"
         }]
       }
     }
@@ -245,14 +245,14 @@
       "id" : "CBSTimeWindowRelativeToVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-conditionOnsetDatePeriodStart\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDatePeriodStart\">conditionOnsetDatePeriodStart</a></td><td>Condition.onsetDatePeriod.start</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-conditionOnsetDateTime\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDateTime\">conditionOnsetDateTime</a></td><td>Condition.onsetDateTime</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system. v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-conditionOnsetDatePeriodStart\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDatePeriodStart\">conditionOnsetDatePeriodStart</a></td><td>Condition.onsetDatePeriod.start</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---cbsig.chai.gatech.edu-CodeSystem-cbs-temp-code-system-conditionOnsetDateTime\"> </a><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDateTime\">conditionOnsetDateTime</a></td><td>Condition.onsetDateTime</td></tr></table></div>"
       },
       "url" : "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS",
       "version" : "0.1.0",
       "name" : "CBSTimeWindowRelativeToVS",
       "title" : "CBS Time Window Relative To Value Set",
       "status" : "active",
-      "date" : "2021-11-03T10:06:32-04:00",
+      "date" : "2022-01-18T12:41:26-05:00",
       "publisher" : "Georgia Tech Research Institute (GTRI)",
       "contact" : [{
         "name" : "Georgia Tech Research Institute (GTRI)",
@@ -263,8 +263,8 @@
       }],
       "description" : "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative.",
       "expansion" : {
-        "identifier" : "urn:uuid:2cacb3de-74e5-4d94-ae16-f3ac6b0db1f3",
-        "timestamp" : "2021-11-03T10:08:16-04:00",
+        "identifier" : "urn:uuid:96c0af17-38ae-41dd-88f5-552929c95b59",
+        "timestamp" : "2022-01-18T12:43:40-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",

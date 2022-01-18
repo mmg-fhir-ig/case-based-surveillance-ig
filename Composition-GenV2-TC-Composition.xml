@@ -6,7 +6,7 @@
     <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55751-2}">Public health Case report</span></p><p><b>date</b>: 2014-03-02</p><p><b>author</b>: <a href="Organization-GenV2-TC-Reporting-Source.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0406 1}">Hospital</span>; name: Reporting Source</a></p><p><b>title</b>: Case Based Surveillance Composition</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-Composition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-composition.html">Case Based Surveillance Composition Profile</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Public health Case report <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#55751-2)</span></p><p><b>date</b>: 2014-03-02</p><p><b>author</b>: <a href="Organization-GenV2-TC-Reporting-Source.html">Organization/GenV2-TC-Reporting-Source</a> "Reporting Source"</p><p><b>title</b>: Case Based Surveillance Composition</p></div>
   </text>
   <status value="final"/>
   <type>
@@ -92,6 +92,12 @@
     <title value="History of Encounters (Hospitalizations)"/>
     <entry>
       <reference value="Encounter/GenV2-TC-Hospitalization"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Epi Observations"/>
+    <entry>
+      <reference value="Observation/GenV2-TC-CauseOfDeath"/>
     </entry>
   </section>
   <section>

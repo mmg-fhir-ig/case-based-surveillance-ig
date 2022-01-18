@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7f2266c5-f21a-4d67-892a-1dafb2a6830b"/>
+  <id value="730af505-0dff-4efe-b737-d9a004f4104d"/>
   <meta>
-    <lastUpdated value="2021-11-03T10:06:32.582-04:00"/>
+    <lastUpdated value="2022-01-18T12:41:26.030-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -59,7 +59,7 @@
         <name value="CBSCDCAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2021-11-03T10:06:32-04:00"/>
+        <date value="2022-01-18T12:41:26-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -70,8 +70,8 @@
         </contact>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:ba2f588d-9b77-4632-b5d8-c203971661f1"/>
-          <timestamp value="2021-11-03T10:08:06-04:00"/>
+          <identifier value="urn:uuid:75143a86-8a29-4d2b-9762-b09072dd4a15"/>
+          <timestamp value="2022-01-18T12:43:24-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -120,9 +120,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -130,7 +127,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-previously-reported">previously-reported</a>
                 </td>
                 <td>Previously Reported Case</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -138,7 +134,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-connected-outbreak">connected-outbreak</a>
                 </td>
                 <td>Connected Outbreak Case</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -146,7 +141,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-parent-congential-syphilis">parent-congential-syphilis</a>
                 </td>
                 <td>Parent in Congenital Syphilis</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -156,7 +150,7 @@
         <name value="CBSRelatedCaseTypeVS"/>
         <title value="CBS Related Case Type Value Set"/>
         <status value="active"/>
-        <date value="2021-11-03T10:06:32-04:00"/>
+        <date value="2022-01-18T12:41:26-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -167,8 +161,8 @@
         </contact>
         <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
         <expansion>
-          <identifier value="urn:uuid:5578707b-c2ab-4b22-b969-c15f6977b8ab"/>
-          <timestamp value="2021-11-03T10:08:15-04:00"/>
+          <identifier value="urn:uuid:dbbb3025-ac63-4d82-b493-ce885e2e354d"/>
+          <timestamp value="2022-01-18T12:43:40-05:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -222,9 +216,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -232,7 +223,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-sogi">sogi</a>
                 </td>
                 <td>Sexual Orientation and Gender Identity</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -240,7 +230,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-housing-or-residence">housing-or-residence</a>
                 </td>
                 <td>Housing Insecurity or Residence Characteristics</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -248,7 +237,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-education">education</a>
                 </td>
                 <td>Education Level</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -256,7 +244,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-food-insecurity">food-insecurity</a>
                 </td>
                 <td>Food Insecurity</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -266,7 +253,7 @@
         <name value="CBSSocialDeterminantsOfHealthCategoryVS"/>
         <title value="CBS Case Social Determinants of Health Category Value Set"/>
         <status value="active"/>
-        <date value="2021-11-03T10:06:32-04:00"/>
+        <date value="2022-01-18T12:41:26-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -277,8 +264,8 @@
         </contact>
         <description value="Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
         <expansion>
-          <identifier value="urn:uuid:d5d06a67-69f5-42f5-84ee-b74c425db535"/>
-          <timestamp value="2021-11-03T10:08:16-04:00"/>
+          <identifier value="urn:uuid:39461711-69b7-493e-a600-a380ce07a11c"/>
+          <timestamp value="2022-01-18T12:43:40-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -339,9 +326,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -350,7 +334,6 @@
                 </td>
                 <td>http://loinc.org</td>
                 <td>Sexual orientation</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -359,7 +342,6 @@
                 </td>
                 <td>http://loinc.org</td>
                 <td>Gender identity</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -368,16 +350,14 @@
                 </td>
                 <td>http://loinc.org</td>
                 <td>Characteristics of residence</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-45361006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45361006">45361006</a>
+                  <a href="http://snomed.info/id/45361006">45361006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Imprisonment</td>
-                <td/>
+                <td>Incarceration</td>
               </tr>
             </table>
           </div>
@@ -387,7 +367,7 @@
         <name value="CBSSocialDeterminantsOfHealthVS"/>
         <title value="CBS Case Social Determinants of Health Codes Value Set"/>
         <status value="active"/>
-        <date value="2021-11-03T10:06:32-04:00"/>
+        <date value="2022-01-18T12:41:26-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -398,8 +378,8 @@
         </contact>
         <description value="Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
         <expansion>
-          <identifier value="urn:uuid:90f23c0e-bef6-4d63-8293-88e4153c3366"/>
-          <timestamp value="2021-11-03T10:08:16-04:00"/>
+          <identifier value="urn:uuid:f2d7b803-7e13-45e9-8a9c-9368f3356435"/>
+          <timestamp value="2022-01-18T12:43:40-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -411,7 +391,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://loinc.org|2.71"/>
+            <valueUri value="http://loinc.org|2.71"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -419,7 +399,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -439,7 +419,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="45361006"/>
-            <display value="Imprisonment"/>
+            <display value="Incarceration"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -470,9 +450,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -480,7 +457,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDatePeriodStart">conditionOnsetDatePeriodStart</a>
                 </td>
                 <td>Condition.onsetDatePeriod.start</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -488,7 +464,6 @@
                   <a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDateTime">conditionOnsetDateTime</a>
                 </td>
                 <td>Condition.onsetDateTime</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -498,7 +473,7 @@
         <name value="CBSTimeWindowRelativeToVS"/>
         <title value="CBS Time Window Relative To Value Set"/>
         <status value="active"/>
-        <date value="2021-11-03T10:06:32-04:00"/>
+        <date value="2022-01-18T12:41:26-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -509,8 +484,8 @@
         </contact>
         <description value="Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative."/>
         <expansion>
-          <identifier value="urn:uuid:2cacb3de-74e5-4d94-ae16-f3ac6b0db1f3"/>
-          <timestamp value="2021-11-03T10:08:16-04:00"/>
+          <identifier value="urn:uuid:96c0af17-38ae-41dd-88f5-552929c95b59"/>
+          <timestamp value="2022-01-18T12:43:40-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

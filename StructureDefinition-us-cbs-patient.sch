@@ -133,7 +133,6 @@
     <sch:title>Patient.identifier.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:identifier/f:extension/f:value[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -211,7 +210,6 @@
     <sch:title>Patient.name.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:name/f:extension/f:value[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -257,6 +255,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Patient/f:telecom</sch:title>
+    <sch:rule context="f:Patient/f:telecom">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Patient.telecom</sch:title>
     <sch:rule context="f:Patient/f:telecom">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
@@ -273,6 +277,21 @@
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Patient.telecom.extension.extension</sch:title>
+    <sch:rule context="f:Patient/f:telecom/f:extension/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Patient.telecom.extension.value[x] 1</sch:title>
+    <sch:rule context="f:Patient/f:telecom/f:extension/f:value[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -347,7 +366,6 @@
     <sch:title>Patient.gender.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:gender/f:extension/f:value[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -381,7 +399,6 @@
   <sch:pattern>
     <sch:title>Patient.birthDate.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:birthDate/f:extension/f:value[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -425,7 +442,6 @@
   <sch:pattern>
     <sch:title>Patient.address.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:address/f:extension/f:value[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -583,7 +599,6 @@
     <sch:title>Patient.contact.name.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:contact/f:name/f:extension/f:value[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -660,7 +675,6 @@
     <sch:title>Patient.contact.telecom.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:contact/f:telecom/f:extension/f:value[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -724,7 +738,6 @@
   <sch:pattern>
     <sch:title>Patient.contact.address.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:contact/f:address/f:extension/f:value[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -857,7 +870,6 @@
   <sch:pattern>
     <sch:title>Patient.communication.language.extension.value[x] 1</sch:title>
     <sch:rule context="f:Patient/f:communication/f:language/f:extension/f:value[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
