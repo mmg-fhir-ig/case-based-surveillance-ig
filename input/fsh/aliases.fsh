@@ -47,8 +47,10 @@ Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/od
 Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-observation
 
 // ECR US PH Profiles
-Alias: $ecr-us-ph-patient = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient
 Alias: $ecr-us-ph-condition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition
+Alias: $ecr-us-ph-encounter = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter
+Alias: $ecr-us-ph-patient = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient
+Alias: $ecr-us-ph-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
@@ -62,7 +64,7 @@ Alias: $HL7-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPl
 Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.html
 Alias: $travel-history-address-extension = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension
 Alias: $ecr-us-ph-address-extension = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension
-
+Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
@@ -103,4 +105,5 @@ Alias: $PHVS_GeographicLocationHistory_CDC = http://phinvads.cdc.gov/fhir/ValueS
 Alias: $PHVS_VaccineNotGivenReasons_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.931
 Alias: $PHVS_VaccineAdministered_MMR = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7331
 Alias: $PHVS_VaccineEventInformationSource_NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7450
+Alias: $PHVS_TravelMode_CDC = http://phinvads.cdc.gov/fhir/ValueSet/20D44BBC-617F-DD11-B38D-00188B398520
 

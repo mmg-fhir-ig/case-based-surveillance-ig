@@ -135,11 +135,10 @@
 [CBS Travel History Profile]: StructureDefinition-cbs-travel-history.html
 [CBS Vaccination Indication Profile]: StructureDefinition-cbs-vaccination-indication.html
 [CBS Vaccination Record Profile]: StructureDefinition-cbs-vaccination-record.html
-
-
-[US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
 [US CBS Condition of Interest Profile]: StructureDefinition-us-cbs-condition.html
-
+[US CBS Hospitalization Profile]: StructureDefinition-us-cbs-hospitalization.html
+[US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
+[US CBS Travel History Profile]: StructureDefinition-us-cbs-travel-history.html
 
 [CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
 [CBS Case Class Status Extension]: StructureDefinition-cbs-case-class-status.html
@@ -153,6 +152,7 @@
 [CBS Program Specific Time Window Extension]: StructureDefinition-cbs-program-specific-time-window.html
 [CBS Related Case Extension]: StructureDefinition-cbs-related-case.html
 [CBS Specimen Role Extension]: StructureDefinition-cbs-specimen-role.html
+[US CBS Period and Mode of Travel]: StructureDefinition-us-cbs-period-and-mode-of-travel.html
 
 [Additional codes for Address.use]: ValueSet-CBSCDCAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
