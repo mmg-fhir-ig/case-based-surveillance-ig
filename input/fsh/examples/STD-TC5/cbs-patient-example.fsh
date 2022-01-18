@@ -8,7 +8,7 @@ Description: "CBS Patient resource for the STD Test Case 5 Patient"
 * extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
-* extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F "Female"
+* extension[birthsex].valueCode = #F "Female"
 
 * extension[birthPlace].valueAddress.country = "GRC"
 

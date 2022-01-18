@@ -125,7 +125,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/20D44BBC-617F-DD11-B38D-00188B398520",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3107",
           "description": "Code for mode of travel."
         }
       },

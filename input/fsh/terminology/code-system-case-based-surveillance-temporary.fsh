@@ -46,7 +46,7 @@ Description:  "Code system defined as placeholders for items that are not define
 * #case-notification-panel "Case Notification Panel"
 * #reporting-entities "Reporting Entities"
 * #history-of-encounters "History of Encounters (Hospitalizations)"
-* #epi-questions "Epi Questionnaires and Observations"
+* #epi-observations "Epi Observations"
 * #occupational-data "Occupational Data"
 * #travel-history "Travel History"
 * #social-determinants-of-health "Social Determinants of Health"

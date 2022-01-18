@@ -74,7 +74,7 @@ Alias: $FHIR-Document-Types = http://hl7.org/fhir/ValueSet/bundle-type
 // US Core ValueSets
 Alias: $birthsex-VS = http://hl7.org/fhir/us/core/ValueSet/birthsex
 Alias: $omb-race-category-VS = http://hl7.org/fhir/us/core/ValueSet/omb-race-category
-Alias: $detailed-race-VS = http://hl7.org/fhir/us/core/ValueSet/detailed-race
+Alias: $detailed-race-VS = http://hl7.org/fhir/us/core/ValueSet/detailed-race|3.1.1
 
 // PHIN VADS Value Sets
 Alias: $PHVS-NotifiableEvent-Disease = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015
