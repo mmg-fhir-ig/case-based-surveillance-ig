@@ -11,9 +11,6 @@ Description: "Defines further constraints and extensions to the ECR US Public He
 * . ^definition = "The US Case Based Surveillance Patient Profile is based on the ECR US Public Health Patient profile, which is in turn based on the US Core Patient profile. It is designed to provide additional constraints to meet the needs of US public health case based surveillance."
 * . ^mustSupport = false
 
-// TODO: Remove with the publication of US Core USCDIv2 profile.
-* extension[patient-genderIdentity].value[x] only CodeableConcept
-* extension[patient-genderIdentity].value[x] from $PHVS-GenderIdentity-STD (extensible)
 * deceased[x] 0..1 MS
 
 // Address

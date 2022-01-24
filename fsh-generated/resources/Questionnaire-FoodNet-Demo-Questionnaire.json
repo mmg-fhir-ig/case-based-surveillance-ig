@@ -6,7 +6,6 @@
       "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire"
     ]
   },
-  "url": "http://cbsig.chai.gatech.edu/Questionnaire/FoodNet-Demo-Questionnaire",
   "version": "0.1",
   "status": "draft",
   "publisher": "GTRI",
