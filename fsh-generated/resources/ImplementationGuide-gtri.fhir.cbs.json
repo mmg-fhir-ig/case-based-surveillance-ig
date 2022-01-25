@@ -1471,13 +1471,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "examples.html",
-          "title": "Examples",
+          "nameUrl": "general-guidance.html",
+          "title": "General Guidance",
           "generation": "markdown"
         },
         {
-          "nameUrl": "mapping.html",
-          "title": "Mapping",
+          "nameUrl": "conformance-expectations.html",
+          "title": "Conformance Expectations",
           "generation": "markdown"
         },
         {
@@ -1486,13 +1486,23 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "program-questionnaires.html",
-          "title": "Program Questionnaires",
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         },
         {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "mapping.html",
+          "title": "Message Mapping Guide to Case Based Surveillance IG Profile Mapping",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "program-questionnaires.html",
+          "title": "Program Questionnaires",
           "generation": "markdown"
         }
       ]
@@ -1500,7 +1510,7 @@
     "parameter": [
       {
         "code": "copyrightyear",
-        "value": "2021+"
+        "value": "2022+"
       },
       {
         "code": "releaselabel",
