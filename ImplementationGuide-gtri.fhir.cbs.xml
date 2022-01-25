@@ -11,7 +11,7 @@
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-01-18T12:41:26-05:00"/>
+  <date value="2022-01-25T10:18:17-05:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -50,7 +50,7 @@
         <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2021+"/>
+        <valueString value="2022+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -2143,13 +2143,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="examples.html"/>
-        <title value="Examples"/>
+        <nameUrl value="general-guidance.html"/>
+        <title value="General Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="mapping.html"/>
-        <title value="Mapping"/>
+        <nameUrl value="conformance-expectations.html"/>
+        <title value="Conformance Expectations"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -2158,13 +2158,23 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="program-questionnaires.html"/>
-        <title value="Program Questionnaires"/>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="terminology.html"/>
-        <title value="Terminology"/>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="mapping.html"/>
+        <title value="Message Mapping Guide to Case Based Surveillance IG Profile Mapping"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="program-questionnaires.html"/>
+        <title value="Program Questionnaires"/>
         <generation value="markdown"/>
       </page>
     </page>

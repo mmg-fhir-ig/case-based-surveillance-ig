@@ -10,7 +10,7 @@
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2022-01-18T12:41:26-05:00",
+  "date": "2022-01-25T10:18:17-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -65,7 +65,7 @@
           },
           {
             "url": "value",
-            "valueString": "2021+"
+            "valueString": "2022+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -2782,13 +2782,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "examples.html",
-          "title": "Examples",
+          "nameUrl": "general-guidance.html",
+          "title": "General Guidance",
           "generation": "markdown"
         },
         {
-          "nameUrl": "mapping.html",
-          "title": "Mapping",
+          "nameUrl": "conformance-expectations.html",
+          "title": "Conformance Expectations",
           "generation": "markdown"
         },
         {
@@ -2797,13 +2797,23 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "program-questionnaires.html",
-          "title": "Program Questionnaires",
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         },
         {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "mapping.html",
+          "title": "Message Mapping Guide to Case Based Surveillance IG Profile Mapping",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "program-questionnaires.html",
+          "title": "Program Questionnaires",
           "generation": "markdown"
         }
       ]

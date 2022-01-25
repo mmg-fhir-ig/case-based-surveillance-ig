@@ -1,9 +1,9 @@
 ﻿CBSIG : Validation Results
 =========================================
 
-err = 0, warn = 23, info = 12
+err = 0, warn = 21, info = 12
 IG Publisher Version: 1.1.97
-Generated Tue Jan 18 12:45:09 EST 2022. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
+Generated Tue Jan 25 10:23:07 EST 2022. FHIR version 4.0.1 for gtri.fhir.cbs#0.1.0 (canonical = http://cbsig.chai.gatech.edu)
  Build Errors : 5 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 0 / 6 / 57
@@ -185,18 +185,17 @@ Generated Tue Jan 18 12:45:09 EST 2022. FHIR version 4.0.1 for gtri.fhir.cbs#0.1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 352, column 115: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 346, column 1654: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 387, column 1903: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 503, column 1654: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
-ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 544, column 1903: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 365, column 115: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 359, column 1654: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 400, column 1903: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 516, column 1654: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
+ERROR: /Users/Shared/case-based-surveillance-ig/output/StructureDefinition-cbs-race.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 557, column 1903: The link 'http://hl7.org/fhir/us/core/STU3.1.1/3.1.1/ValueSet-detailed-race.html' for "DetailedRace (3.1.1)" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs.json ==
 == fsh-generated/resources/Bundle-GenV2-TC-Document.json ==
 == fsh-generated/resources/Bundle-HAICA-TC-Document.json ==
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[0]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 INFORMATION: Bundle/HAICA-TC-Document: Bundle.entry[14].resource.ofType(Specimen).identifier[1]: This element does not match any known slice defined in the profile http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen
 WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).method.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/HAICA-TC-Document: Bundle.entry[16].resource.ofType(Observation).code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated]
 == fsh-generated/resources/CodeSystem-cbs-temp-code-system.json ==
 INFORMATION: CodeSystem/cbs-temp-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/Composition-GenV2-TC-Composition.json ==
@@ -245,7 +244,6 @@ INFORMATION: CodeSystem/cbs-temp-code-system: CodeSystem: CodeSystems SHOULD hav
 == fsh-generated/resources/Observation-HAICA-TC-CNP-Member5.json ==
 == fsh-generated/resources/Observation-HAICA-TC-CNP-Member6.json ==
 == fsh-generated/resources/Observation-HAICA-TC-Lab-Observation.json ==
-WARNING: Observation/HAICA-TC-Lab-Observation: Observation.code: [Unable to determine whether the provided codes are in the value set http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.232' is unknown so the code cannot be validated]
 WARNING: Observation/HAICA-TC-Lab-Observation: Observation.method.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Observation-HAICA-TC-MMWR.json ==
 == fsh-generated/resources/Observation-Lyme-TC-CNP.json ==
