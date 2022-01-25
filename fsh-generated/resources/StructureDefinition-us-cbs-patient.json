@@ -62,6 +62,19 @@
         "definition": "The US Case Based Surveillance Patient Profile is based on the ECR US Public Health Patient profile, which is in turn based on the US Core Patient profile. It is designed to provide additional constraints to meet the needs of US public health case based surveillance."
       },
       {
+        "id": "Patient.extension:genderIdentity",
+        "path": "Patient.extension",
+        "sliceName": "genderIdentity"
+      },
+      {
+        "id": "Patient.extension:genderIdentity.value[x]",
+        "path": "Patient.extension.value[x]",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7610"
+        }
+      },
+      {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
         "mustSupport": true
