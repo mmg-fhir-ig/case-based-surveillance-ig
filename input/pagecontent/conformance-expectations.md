@@ -124,10 +124,10 @@ Complex element are composed of primitive and/or other complex elements.  In add
 
 For any complex element marked as must support, the server **SHALL** be capable of providing at least one of the sub-element values. If any sub-element is marked as must support it must meet the must support requirements as well and satisfy the must support requirement for the parent element.
 
-For example, the [CBS Person Reporting to CDC Profile] name element is labeled must support and has no must support sub-elements. When claiming conformance to this profile:
+For example, the [CBS Reporting Source Organization Profile] type element is labeled must support and has no must support sub-elements. When claiming conformance to this profile:
 
-- CBS Responders **SHALL** be capable of providing a value in `Practitioner.name` sub-element.
-- CBS Requestors **SHALL** be capable of processing the value in `Practitioner.name`.
+- CBS Responders **SHALL** be capable of providing a value in `Organization.type` sub-element.
+- CBS Requestors **SHALL** be capable of processing the value in `Organization.type`.
 
 
 On the other hand, if any sub-element is marked as must support and the parent element is not, there is *no expectation* that you must support the parent. However, if the parent element is represented in the structure you must support the sub-element(s) marked as must support. There are no examples of CBS profiles that have this structure defined.
@@ -153,7 +153,7 @@ For example, the [CBS Lab Observation Profile] effectiveDateTime is labeled *Mus
 * CBS Responders **SHALL** be capable of populating `Observation.effectiveDateTime`.
 * CBS Requestors **SHALL** be capable of processing `Observation.effectiveDateTime`.
 
-Systems **MAY** support populating and processing other choice elements (such as, Observation.effectivePeriod) but this is not a requirement of US Core.
+Systems **MAY** support populating and processing other choice elements (such as, Observation.effectivePeriod) but this is not a requirement of this IG.
 
 For the [CBS Lab Observation Profile] value element, multiple elements are labeled *Must Support*.
 
@@ -162,6 +162,6 @@ When claiming conformance to the [CBS Lab Observation Profile]:
 * CBS Responders **SHALL** be capable of populating `Observation.valueQuantity`, `Observation.valueCodeableConcept`, and `Observation.valueString`.
 * CBS Requestors **SHALL** be capable of processing `Observation.valueQuantity`, `Observation.valueCodeableConcept`, and `Observation.valueString`.
 
-Systems can support the other elements, but this is not a requirement of the CBS IG.
+Systems can support the other elements, but this is not a requirement of this IG.
 
 {% include link-list.md %}
