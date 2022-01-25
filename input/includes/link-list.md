@@ -163,3 +163,11 @@
 [CBS Time Window Relative To Value Set]: ValueSet-CBSTimeWindowRelativeToVS.html
 
 [CBS Temporary Code System]: CodeSystem-cbs-temp-code-system.html
+
+[General Guidance]: general-guidance.html
+[Conformance Expectations]: conformance-expectations.html
+[Missing Data]: general-guidance.html#missing-data
+[Suppressed Data]: general-guidance.html#suppressed-data
+[reference]: {{site.data.fhir.path}}references.html
+[differential view]: {{site.data.fhir.path}}profiling.html#snapshot
+[UCUM Codes value set]: {{site.data.fhir.path}}valueset-ucum-units.html
