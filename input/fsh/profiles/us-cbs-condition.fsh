@@ -10,7 +10,6 @@ Description: "Defines constraints and extensions to the Condition resource in or
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 // TODO: After USCDI v2 Update to US CORE, diagnosis date extension should be removed.
 * extension contains
-    cbs-diagnosis-date named diagnosis-date 0..1 MS and
     cbs-case-class-status named case-class-status 1..1 MS and 
     cbs-illness-duration named illness-duration 0..1 MS
 * code from $PHVS-NotifiableEvent-Disease (required)
