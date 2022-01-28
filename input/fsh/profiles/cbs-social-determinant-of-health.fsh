@@ -17,6 +17,6 @@ Description: "Defines constraints on the Observation resource to capture subject
 * code from CBSSocialDeterminantsOfHealthVS (extensible)
 * code ^binding.description = "Core codes provided for capturing SDOH values which may be extended by surveillance programs as needed to capture additional data."
 * subject 1..1 MS
-* subject only Reference(cbs-patient)
+* subject only Reference(us-cbs-patient)
 * subject ^short = "The reference to the subject (the patient)"
 * value[x] MS

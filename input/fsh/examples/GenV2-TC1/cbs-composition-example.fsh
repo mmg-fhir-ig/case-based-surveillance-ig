@@ -7,6 +7,7 @@ Description: "Composition resource for the GenV2 Test Case 1 Patient"
 * author = Reference(GenV2-TC-Reporting-Source)
 * section[conditionOfInterest].entry = Reference(GenV2-TC-Condition)
 * section[encounters].entry = Reference(GenV2-TC-Hospitalization)
+* section[epiObservations].entry[0] = Reference(GenV2-TC-CauseOfDeath)
 * section[caseNotification].entry = Reference(GenV2-TC-CNP)
 * section[caseNotification].section.entry[0] = Reference(GenV2-TC-MMWR)
 * section[caseNotification].section.entry[+] = Reference(GenV2-TC-Exposure)

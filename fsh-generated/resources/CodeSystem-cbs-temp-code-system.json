@@ -125,8 +125,8 @@
       "display": "History of Encounters (Hospitalizations)"
     },
     {
-      "code": "epi-questions",
-      "display": "Epi Questionnaires and Observations"
+      "code": "epi-observations",
+      "display": "Epi Observations"
     },
     {
       "code": "occupational-data",

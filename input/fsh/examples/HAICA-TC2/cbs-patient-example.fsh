@@ -1,5 +1,5 @@
 Instance: HAICA-TC-Patient
-InstanceOf: cbs-patient
+InstanceOf: us-cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 
@@ -9,7 +9,7 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 * extension[ethnicity].extension[ombCategory].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0005#2135-2
 * extension[ethnicity].extension[text].valueString = "Hispanic or Latino"
 
-* extension[birthsex].valueCodeableConcept = $FHIR-administrativeSex#F "Female"
+* extension[birthsex].valueCode = #F "Female"
 
 * extension[birthPlace].valueAddress.country = "USA"
 
@@ -40,3 +40,7 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
   * text = "Yyyyy, Bbbbb"
   * family = "Yyyyy"
   * given = "Bbbbb"
+
+* telecom
+  * system = #phone
+  * value = "111-111-1111" // TODO: REPLACE WITH DATA ABSENT REASON EXTENSION

@@ -10,7 +10,7 @@ description: An IG that is used to support case based surveillance messaging for
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
-copyrightYear: 2021+
+copyrightYear: 2022+
 releaseLabel: ci-build
 publisher:
   name: Georgia Tech Research Institute (GTRI)
@@ -20,11 +20,23 @@ dependencies:
     uri: http://fhir.org/packages/us.cdc.phinvads
     version: 0.7.0
   hl7.fhir.us.core:
-    version: current
+    version: 4.0.0
   hl7.fhir.us.ecr:
-    version: current
+    version: 2.0.0
   hl7.fhir.us.odh:
     version: 1.1.0
+pages:
+  index.md:
+    title: Home
+  general-guidance.md:
+  conformance-expectations.md:
+  profiles-and-extensions.md:
+  terminology.md:
+  examples.md:
+  mapping.md:
+    title: Message Mapping Guide to Case Based Surveillance IG Profile Mapping
+  program-questionnaires.md:
+
 
 
 
@@ -33,6 +45,9 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Guidance: #guidance.html
+    General Guidance: general-guidance.html
+    Conformance Expectations: conformance-expectations.html
   Artifacts:
     Profiles and Extensions: profiles-and-extensions.html
     Terminology: terminology.html

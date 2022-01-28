@@ -8,6 +8,7 @@ Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+Alias: $cpt4 = http://www.ama-assn.org/go/cpt
 
 // PHIN VADS Code Systems
 Alias: $PH-PHINQuestions-CDC = urn:oid:2.16.840.1.114222.4.5.232
@@ -47,7 +48,10 @@ Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/od
 Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-observation
 
 // ECR US PH Profiles
+Alias: $ecr-us-ph-condition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition
+Alias: $ecr-us-ph-encounter = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter
 Alias: $ecr-us-ph-patient = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient
+Alias: $ecr-us-ph-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history
 
 // US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
@@ -61,7 +65,7 @@ Alias: $HL7-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPl
 Alias: $census-tract = http://hl7.org/fhir/extension-iso21090-ADXP-censusTract.html
 Alias: $travel-history-address-extension = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-address-extension
 Alias: $ecr-us-ph-address-extension = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension
-
+Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 
 // FHIR Value Set
 Alias: $v2-0203-vs = http://terminology.hl7.org/ValueSet/v2-0203
@@ -71,7 +75,7 @@ Alias: $FHIR-Document-Types = http://hl7.org/fhir/ValueSet/bundle-type
 // US Core ValueSets
 Alias: $birthsex-VS = http://hl7.org/fhir/us/core/ValueSet/birthsex
 Alias: $omb-race-category-VS = http://hl7.org/fhir/us/core/ValueSet/omb-race-category
-Alias: $detailed-race-VS = http://hl7.org/fhir/us/core/ValueSet/detailed-race
+Alias: $detailed-race-VS = http://hl7.org/fhir/us/core/ValueSet/detailed-race|3.1.1
 
 // PHIN VADS Value Sets
 Alias: $PHVS-NotifiableEvent-Disease = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015
@@ -102,4 +106,6 @@ Alias: $PHVS_GeographicLocationHistory_CDC = http://phinvads.cdc.gov/fhir/ValueS
 Alias: $PHVS_VaccineNotGivenReasons_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.931
 Alias: $PHVS_VaccineAdministered_MMR = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7331
 Alias: $PHVS_VaccineEventInformationSource_NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7450
+Alias: $PHVS_TravelMode_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3107
 Alias: $PHVS-YNRD-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193
+

@@ -32,13 +32,13 @@
     },
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "current",
+      "version": "4.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },
     {
       "packageId": "hl7.fhir.us.ecr",
-      "version": "current",
+      "version": "2.0.0",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
     },
@@ -51,14 +51,6 @@
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-epi-questionnaire-panel"
-        },
-        "name": "Case Based Surveillance Epi Questionnaire Panel",
-        "description": "Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions.",
-        "exampleBoolean": false
-      },
       {
         "reference": {
           "reference": "StructureDefinition/cbs-case-notification-panel"
@@ -93,14 +85,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-condition"
-        },
-        "name": "Case Based Surveillance Condition of Interest Profile",
-        "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-document-bundle"
         },
         "name": "Case Based Surveillance Document Profile",
@@ -113,14 +97,6 @@
         },
         "name": "Case Based Surveillance Exposure Observation Profile",
         "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-hospitalization"
-        },
-        "name": "Case Based Surveillance Hospitalization Encounter Profile",
-        "description": "Defines constraints on Encounter to represent hospitalization due to a condition of interest in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -145,14 +121,6 @@
         },
         "name": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
         "description": "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-patient"
-        },
-        "name": "Case Based Surveillance Patient Profile",
-        "description": "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required.",
         "exampleBoolean": false
       },
       {
@@ -205,14 +173,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-travel-history"
-        },
-        "name": "Case Based Surveillance Travel History Profile",
-        "description": "Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-vaccination-ACIP-Recommendation"
         },
         "name": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile",
@@ -237,6 +197,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/us-cbs-condition"
+        },
+        "name": "US Case Based Surveillance Condition of Interest Profile",
+        "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-hospitalization"
+        },
+        "name": "US Case Based Surveillance Hospitalization Encounter Profile",
+        "description": "Defines constraints on the ECR US Public Health Encounter to represent hospitalization due to a condition of interest for public health case based surveillance programs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-cbs-patient"
         },
         "name": "US Case Based Surveillance Patient Profile",
@@ -245,10 +221,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-birthsex"
+          "reference": "StructureDefinition/us-cbs-travel-history"
         },
-        "name": "Case Based Surveillance Sex Assigned at Birth Extension",
-        "description": "A code classifying the person's sex assigned at birth.",
+        "name": "US Case Based Surveillance Travel History Profile",
+        "description": "Defines constraints on the ECR US PH Travel History profile to capture additional data in order to meet the needs of public health case based surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -265,30 +241,6 @@
         },
         "name": "Case Based Surveillance Case Class Status",
         "description": "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-diagnosis-date"
-        },
-        "name": "Case Based Surveillance Diagnosis Date Extension",
-        "description": "A dateTime indicating when the condition of interest was diagnosed.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-ethnicity"
-        },
-        "name": "Case Based Surveillance Ethnicity Extension",
-        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-race"
-        },
-        "name": "Case Based Surveillance Race Extension",
-        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.",
         "exampleBoolean": false
       },
       {
@@ -329,6 +281,14 @@
         },
         "name": "Case Based Surveillance Related Case Extension",
         "description": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-period-and-mode-of-travel"
+        },
+        "name": "US Case Based Surveillance Period and Mode of Travel Extension",
+        "description": "An extension capturing the circumstances of travel to a destination.",
         "exampleBoolean": false
       },
       {
@@ -577,7 +537,7 @@
         },
         "name": "GenV2-TC-Condition",
         "description": "Condition of interest resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -601,7 +561,7 @@
         },
         "name": "GenV2-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -617,7 +577,7 @@
         },
         "name": "GenV2-TC-Patient",
         "description": "CBS Patient resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -705,7 +665,7 @@
         },
         "name": "HAICA-TC-Condition",
         "description": "Condition of interest resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -721,7 +681,7 @@
         },
         "name": "HAICA-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -753,7 +713,7 @@
         },
         "name": "HAICA-TC-Patient",
         "description": "CBS Patient resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -905,7 +865,7 @@
         },
         "name": "Lyme-TC-Condition",
         "description": "Condition of interest resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -921,7 +881,7 @@
         },
         "name": "Lyme-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -977,7 +937,7 @@
         },
         "name": "Lyme-TC-Patient",
         "description": "CBS Patient resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -1177,7 +1137,7 @@
         },
         "name": "STD-TC-Condition",
         "description": "Condition of interest resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -1217,7 +1177,7 @@
         },
         "name": "STD-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -1281,7 +1241,7 @@
         },
         "name": "STD-TC-Patient",
         "description": "CBS Patient resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -1343,13 +1303,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "examples.html",
-          "title": "Examples",
+          "nameUrl": "general-guidance.html",
+          "title": "General Guidance",
           "generation": "markdown"
         },
         {
-          "nameUrl": "mapping.html",
-          "title": "Mapping",
+          "nameUrl": "conformance-expectations.html",
+          "title": "Conformance Expectations",
           "generation": "markdown"
         },
         {
@@ -1358,13 +1318,23 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "program-questionnaires.html",
-          "title": "Program Questionnaires",
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         },
         {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "mapping.html",
+          "title": "Message Mapping Guide to Case Based Surveillance IG Profile Mapping",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "program-questionnaires.html",
+          "title": "Program Questionnaires",
           "generation": "markdown"
         }
       ]
@@ -1372,7 +1342,7 @@
     "parameter": [
       {
         "code": "copyrightyear",
-        "value": "2021+"
+        "value": "2022+"
       },
       {
         "code": "releaselabel",

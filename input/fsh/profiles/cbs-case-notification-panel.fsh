@@ -18,7 +18,7 @@ Description: "Defines constraints on Observation to represent the case notificat
 * code from CBSCaseNotificationPanelVS (required)
 * code ^binding.description = "Codes found in the case notification panel that are otherwise not captured in other CBS profiles."
 * subject 1..1 MS
-* subject only Reference(cbs-patient)
+* subject only Reference(us-cbs-patient)
 * hasMember MS
 * hasMember only Reference(cbs-case-notification-panel)
 * value[x] only CodeableConcept or string or integer or dateTime or Quantity

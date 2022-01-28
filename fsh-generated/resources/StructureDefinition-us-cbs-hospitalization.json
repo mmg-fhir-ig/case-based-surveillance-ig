@@ -1,0 +1,155 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "us-cbs-hospitalization",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization",
+  "version": "0.1.0",
+  "name": "USCaseBasedSurveillanceHospitalization",
+  "title": "US Case Based Surveillance Hospitalization Encounter Profile",
+  "status": "active",
+  "description": "Defines constraints on the ECR US Public Health Encounter to represent hospitalization due to a condition of interest for public health case based surveillance programs.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "patternCoding": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        }
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "42628595",
+              "system": "http://www.ama-assn.org/go/cpt",
+              "display": "Inpatient Hospital"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant:sliceResponsibleProvider",
+        "path": "Encounter.participant",
+        "sliceName": "sliceResponsibleProvider"
+      },
+      {
+        "id": "Encounter.participant:sliceResponsibleProvider.extension",
+        "path": "Encounter.participant.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.participant:sliceResponsibleProvider.extension:extensionDataAbsentReason",
+        "path": "Encounter.participant.extension",
+        "sliceName": "extensionDataAbsentReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant:sliceResponsibleProvider.extension:extensionDataAbsentReason.value[x]",
+        "path": "Encounter.participant.extension.value[x]",
+        "patternCode": "masked"
+      },
+      {
+        "id": "Encounter.length",
+        "path": "Encounter.length",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.reasonReference",
+        "path": "Encounter.reasonReference",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.location.location.extension:dataAbsentReason",
+        "path": "Encounter.location.location.extension",
+        "sliceName": "dataAbsentReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.location.location.extension:dataAbsentReason.value[x]",
+        "path": "Encounter.location.location.extension.value[x]",
+        "fixedCode": "masked",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "us-cbs-period-and-mode-of-travel",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel",
+  "version": "0.1.0",
+  "name": "USCBSPeriodAndodeOfTravelExtension",
+  "title": "US Case Based Surveillance Period and Mode of Travel Extension",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-01-01",
+  "publisher": "Georgia Tech Research Institute",
+  "description": "An extension capturing the circumstances of travel to a destination.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "US Case Based Surveillance Period and Mode of Travel Extension",
+        "definition": "An extension capturing the circumstances of travel to a destination."
+      },
+      {
+        "id": "Extension.extension:dateOrPeriodOfTravel",
+        "path": "Extension.extension",
+        "sliceName": "dateOrPeriodOfTravel",
+        "short": "Date or period of travel to or from a location captured as a Travel History location",
+        "definition": "Date or period of travel to or from a location captured in a US CBS Travel History resource. This spans the actual time of travel beginning with departure from one location and ending with arrival at a secondary location. E.g. A plane ride from a home address to a vacation spot.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:dateOrPeriodOfTravel.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateOrPeriodOfTravel.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dateOrPeriodOfTravel"
+      },
+      {
+        "id": "Extension.extension:dateOrPeriodOfTravel.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modeOfTravel",
+        "path": "Extension.extension",
+        "sliceName": "modeOfTravel",
+        "short": "Mode of travel to or from a location captured as a Travel History location",
+        "definition": "Mode of travel to or from a location captured in a US CBS Travel History resource.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:modeOfTravel.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modeOfTravel.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "modeOfTravel"
+      },
+      {
+        "id": "Extension.extension:modeOfTravel.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modeOfTravel.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3107",
+          "description": "Code for mode of travel."
+        }
+      },
+      {
+        "id": "Extension.extension:relevantLocation",
+        "path": "Extension.extension",
+        "sliceName": "relevantLocation",
+        "short": "Relevant locations to the period of travel. E.g. Ports of call, overnight lodgings.",
+        "definition": "Relevant locations to the period of active travel to and from the location captured as a Travel History resource. This may include anything considered relevant to an investigation, such as ports of call, overnight lodgings, or individual restaurants or stores.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relevantLocation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relevantLocation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relevantLocation"
+      },
+      {
+        "id": "Extension.extension:relevantLocation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

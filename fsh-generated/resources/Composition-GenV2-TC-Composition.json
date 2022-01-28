@@ -99,6 +99,14 @@
       ]
     },
     {
+      "title": "Epi Observations",
+      "entry": [
+        {
+          "reference": "Observation/GenV2-TC-CauseOfDeath"
+        }
+      ]
+    },
+    {
       "title": "Reporting Entities",
       "entry": [
         {

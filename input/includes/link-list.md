@@ -118,40 +118,32 @@
 [CBS Exposure Observation Profile]: StructureDefinition-cbs-exposure-observation.html
 [CBS MMWR Profile]: StructureDefinition-cbs-mmwr.html
 [CBS Composition Profile]: StructureDefinition-cbs-composition.html
-[CBS Condition of Interest Profile]: StructureDefinition-cbs-condition.html
 [CBS Document Bundle Profile]: StructureDefinition-cbs-document-bundle.html
-[CBS Epi-Questionnaire Panel Profile]: StructureDefinition-cbs-epi-questionnaire-panel.html
-[CBS Hospitalization Encounter Profile]: StructureDefinition-cbs-hospitalization.html
 [CBS Lab Test Report Profile]: StructureDefinition-cbs-lab-diagnosticreport.html
 [CBS Lab Observation Profile]: StructureDefinition-cbs-lab-observation.html
 [CBS Reporting Source Organization Profile]: StructureDefinition-cbs-reporting-source-organization.html
 [CBS Past or Present Job Profile]: StructureDefinition-cbs-past-or-present-job.html
-[CBS Patient Profile]: StructureDefinition-cbs-patient.html
 [CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
 [CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html
 [CBS Questionnaire Profile]: StructureDefinition-cbs-questionnaire.html
 [CBS Social Determinants of Health Profile]: StructureDefinition-cbs-social-determinants-of-health.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
-[CBS Travel History Profile]: StructureDefinition-cbs-travel-history.html
 [CBS Vaccination Indication Profile]: StructureDefinition-cbs-vaccination-indication.html
 [CBS Vaccination Record Profile]: StructureDefinition-cbs-vaccination-record.html
-
-
+[US CBS Condition of Interest Profile]: StructureDefinition-us-cbs-condition.html
+[US CBS Hospitalization Profile]: StructureDefinition-us-cbs-hospitalization.html
 [US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
+[US CBS Travel History Profile]: StructureDefinition-us-cbs-travel-history.html
 
-
-[CBS Birthsex Extension]: StructureDefinition-cbs-birthsex.html
 [CBS Case Class Status Extension]: StructureDefinition-cbs-case-class-status.html
 [CBS CDC Address Use Extension]: StructureDefinition-cbs-cdc-address-use.html
-[CBS Diagnosis Date Extension]: StructureDefinition-cbs-diagnosis-date.html
 [CBS Died of Condition Extension]: StructureDefinition-cbs-died-of-condition.html
-[CBS Ethnicity Extension]: StructureDefinition-cbs-ethnicity.html
 [CBS Illness Duration Extension]: StructureDefinition-cbs-illness-duration.html
-[CBS Race Extension]: StructureDefinition-cbs-race.html
 [CBS Reason Not Vaccinated Per ACIP Recommendations Extension]: StructureDefinition-cbs-reason-not-vaccinated-per-ACIP-recommendations.html
 [CBS Program Specific Time Window Extension]: StructureDefinition-cbs-program-specific-time-window.html
 [CBS Related Case Extension]: StructureDefinition-cbs-related-case.html
 [CBS Specimen Role Extension]: StructureDefinition-cbs-specimen-role.html
+[US CBS Period and Mode of Travel]: StructureDefinition-us-cbs-period-and-mode-of-travel.html
 
 [Additional codes for Address.use]: ValueSet-CBSCDCAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
@@ -162,3 +154,11 @@
 [CBS Time Window Relative To Value Set]: ValueSet-CBSTimeWindowRelativeToVS.html
 
 [CBS Temporary Code System]: CodeSystem-cbs-temp-code-system.html
+
+[General Guidance]: general-guidance.html
+[Conformance Expectations]: conformance-expectations.html
+[Missing Data]: general-guidance.html#missing-data
+[Suppressed Data]: general-guidance.html#suppressed-data
+[reference]: {{site.data.fhir.path}}references.html
+[differential view]: {{site.data.fhir.path}}profiling.html#snapshot
+[UCUM Codes value set]: {{site.data.fhir.path}}valueset-ucum-units.html

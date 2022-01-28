@@ -1,25 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-social-determinants-of-health",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health",
+  "id": "us-cbs-travel-history",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceSocialDeterminantsOfHealth",
-  "title": "Case Based Surveillance Social Determinants of Health Profile",
+  "name": "USCaseBasedSurveillanceTravelHistory",
+  "title": "US Case Based Surveillance Travel History Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs.",
+  "description": "Defines constraints on the ECR US PH Travel History profile to capture additional data in order to meet the needs of public health case based surveillance programs.",
   "jurisdiction": [
     {
       "coding": [
@@ -67,7 +57,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -86,6 +76,21 @@
         }
       },
       {
+        "id": "Observation.extension:periodAndModeOfTravel",
+        "path": "Observation.extension",
+        "sliceName": "periodAndModeOfTravel",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.extension:programSpecificTimeWindow",
         "path": "Observation.extension",
         "sliceName": "programSpecificTimeWindow",
@@ -101,36 +106,8 @@
         ]
       },
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "min": 1,
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
-          "description": "Category codes provided for SDOH domains which may be extended by surveillance programs as needed to capture additional data."
-        }
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
-          "description": "Core codes provided for capturing SDOH values which may be extended by surveillance programs as needed to capture additional data."
-        }
-      },
-      {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "The reference to the subject (the patient)",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -138,13 +115,12 @@
               "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "mustSupport": true
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Date or period of time spent in the location, from date of arrival to date of departure from location"
       }
     ]
   }

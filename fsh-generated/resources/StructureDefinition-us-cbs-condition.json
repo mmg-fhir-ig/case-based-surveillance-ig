@@ -1,25 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-condition",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Summary"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
+  "id": "us-cbs-condition",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceCondition",
-  "title": "Case Based Surveillance Condition of Interest Profile",
+  "name": "USCaseBasedSurveillanceCondition",
+  "title": "US Case Based Surveillance Condition of Interest Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
+  "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles.",
   "jurisdiction": [
     {
       "coding": [
@@ -67,40 +57,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Condition",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "baseDefinition": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Condition.extension",
         "path": "Condition.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1
-      },
-      {
-        "id": "Condition.extension:diagnosis-date",
-        "path": "Condition.extension",
-        "sliceName": "diagnosis-date",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date"
-            ]
-          }
-        ],
-        "mustSupport": true
       },
       {
         "id": "Condition.extension:case-class-status",
@@ -135,15 +99,8 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.clinicalStatus",
-        "path": "Condition.clinicalStatus",
-        "mustSupport": true
-      },
-      {
         "id": "Condition.code",
         "path": "Condition.code",
-        "min": 1,
-        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1015"
@@ -165,11 +122,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Condition.onsetDateTime",

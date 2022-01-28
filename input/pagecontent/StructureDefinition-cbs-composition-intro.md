@@ -6,7 +6,7 @@ This Composition profile represents a case report being sent to a public health 
 * Case Notification Panel - The Case Notification Panel profile and Case Notification Panel Member profiles capture major high level case data often required by all surveillance programs.
 * Reporting Entities - Resources covering any reporting entities at any point in the reporting workflow deemed relevant by jurisdictions or programs.
 * History of Encounters (Hospitalizations) - Encounter related resources primarily focused on hospitalization events. For programs which capture encounter information not strictly related to Hospitalizations this section should be used as well.
-* Epi Questionnaires and Observations - Any Questionnaires/QuestionnaireResponses or arbitrary epi data captured as Observations should be included here. For more information on what constitutes epi data as opposed to clinical or other data, please see the related profiles.
+* Epi Observations - Any arbitrary epi data captured as Observations should be included here. For more information on what constitutes epi data as opposed to clinical or other data, please see the related profiles.
 * Occupational Data - The case subject's occupational data captured in accordance with the [Occupational Data for Health Implementation Guide](http://hl7.org/fhir/us/odh/). The [Past or Present Job Profile](http://hl7.org/fhir/us/odh/StructureDefinition-odh-PastOrPresentJob.html) is preferred.
 * Travel History - Case relevant Travel History.
 * Social Determinants of Health - Social Determinants of Health related data, including both impact and causal features as deemed relevant by surveillance programs.
