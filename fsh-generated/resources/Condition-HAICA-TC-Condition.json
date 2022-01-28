@@ -3,7 +3,7 @@
   "id": "HAICA-TC-Condition",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
     ]
   },
   "extension": [
@@ -33,5 +33,14 @@
     "reference": "Patient/HAICA-TC-Patient",
     "display": "HAI-CA TC Example Patient"
   },
-  "onsetDateTime": "2018-11-22"
+  "onsetDateTime": "2018-11-22",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "problem-list-item"
+        }
+      ]
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 Instance: Lyme-TC-Hospitalization
-InstanceOf: cbs-hospitalization
+InstanceOf: us-cbs-hospitalization
 Usage: #example
 Description: "CBS Hospitalization resource for the Lyme Test Case Patient"
 * subject.reference = "Patient/Lyme-TC-Patient"
@@ -10,5 +10,9 @@ Description: "CBS Hospitalization resource for the Lyme Test Case Patient"
 * length.unit = "days"
 * length.system = $ucum
 * length.code = #d
-* diagnosis.condition.reference = "Condition/Lyme-TC-Condition"
-* diagnosis.condition.display = "Lyme-TC Condition of Interest"
+
+* reasonReference.reference = "Condition/Lyme-TC-Condition"
+
+* status = #unknown
+
+* location[0].location.reference = "FIX LATER" // TODO: Fix example location error.

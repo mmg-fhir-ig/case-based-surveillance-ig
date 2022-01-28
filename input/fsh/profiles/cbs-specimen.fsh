@@ -9,7 +9,7 @@ Description: "Defines constraints on the Specimen resource in order to meet the 
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * subject 1..1 MS
-* subject only Reference(cbs-patient)
+* subject only Reference(us-cbs-patient)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open

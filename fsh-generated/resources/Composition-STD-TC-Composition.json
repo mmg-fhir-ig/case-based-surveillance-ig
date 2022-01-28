@@ -138,46 +138,46 @@
       "title": "Epi Observations",
       "entry": [
         {
-          "reference": "Observation/STD-TC-EpiQuestionnaire"
+          "reference": "STD-TC-EpiQuestionnaire"
         },
         {
-          "reference": "Observation/STD-TC-EQ1"
+          "reference": "STD-TC-EQ1"
         },
         {
-          "reference": "Observation/STD-TC-EQ2"
+          "reference": "STD-TC-EQ2"
         },
         {
-          "reference": "Observation/STD-TC-EQ3"
+          "reference": "STD-TC-EQ3"
         },
         {
-          "reference": "Observation/STD-TC-EQ4"
+          "reference": "STD-TC-EQ4"
         },
         {
-          "reference": "Observation/STD-TC-EQ5"
+          "reference": "STD-TC-EQ5"
         },
         {
-          "reference": "Observation/STD-TC-EQ6"
+          "reference": "STD-TC-EQ6"
         },
         {
-          "reference": "Observation/STD-TC-EQ7"
+          "reference": "STD-TC-EQ7"
         },
         {
-          "reference": "Observation/STD-TC-EQ8"
+          "reference": "STD-TC-EQ8"
         },
         {
-          "reference": "Observation/STD-TC-EQ9"
+          "reference": "STD-TC-EQ9"
         },
         {
-          "reference": "Observation/STD-TC-EQ10"
+          "reference": "STD-TC-EQ10"
         },
         {
-          "reference": "Observation/STD-TC-EQ11"
+          "reference": "STD-TC-EQ11"
         },
         {
-          "reference": "Observation/STD-TC-EQ12"
+          "reference": "STD-TC-EQ12"
         },
         {
-          "reference": "Observation/STD-TC-EQ13"
+          "reference": "STD-TC-EQ13"
         }
       ]
     }

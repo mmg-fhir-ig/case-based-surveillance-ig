@@ -18,7 +18,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * type 1..1 MS
 * type = $loinc#55751-2
 * subject 1..1 MS
-* subject only Reference(cbs-patient)
+* subject only Reference(us-cbs-patient)
 * date 1..1 MS
 * author 1..* MS
 * author only Reference(Organization) // Need to change, only here for buidling purposes
@@ -48,7 +48,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[conditionOfInterest]
   * title = "Condition of Interest"
   * code = cbs-temp-code-system#condition-of-interest "Condition of Interest/Reportable Condition"
-  * entry only Reference(cbs-condition)
+  * entry only Reference(us-cbs-condition)
 * section[caseNotification]
   * title = "Case Notification Panel"
   * code = cbs-temp-code-system#case-notification-panel "Case Notification Panel"
@@ -60,7 +60,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[encounters]
   * title = "History of Encounters (Hospitalizations)"
   * code = cbs-temp-code-system#history-of-encounters "History of Encounters (Hospitalizations)"
-  * entry only Reference(cbs-hospitalization)
+  * entry only Reference(us-cbs-hospitalization)
 * section[epiObservations]
   * title = "Epi Observations"
   * code = cbs-temp-code-system#epi-observations "Epi Observations"
@@ -71,7 +71,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[travelHistory]
   * title = "Travel History"
   * code = cbs-temp-code-system#travel-history "Travel History"
-  * entry only Reference(cbs-travel-history)
+  * entry only Reference(us-cbs-travel-history)
 * section[sdoh]
   * title = "Social Determinants of Health"
   * code = cbs-temp-code-system#social-determinants-of-health "Social Determinants of Health"

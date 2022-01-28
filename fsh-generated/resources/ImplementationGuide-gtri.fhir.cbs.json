@@ -32,13 +32,13 @@
     },
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "current",
+      "version": "4.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     },
     {
       "packageId": "hl7.fhir.us.ecr",
-      "version": "current",
+      "version": "2.0.0",
       "uri": "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr",
       "id": "hl7_fhir_us_ecr"
     },
@@ -51,14 +51,6 @@
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-epi-questionnaire-panel"
-        },
-        "name": "Case Based Surveillance Epi Questionnaire Panel",
-        "description": "Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions.",
-        "exampleBoolean": false
-      },
       {
         "reference": {
           "reference": "StructureDefinition/cbs-case-notification-panel"
@@ -93,14 +85,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-condition"
-        },
-        "name": "Case Based Surveillance Condition of Interest Profile",
-        "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-document-bundle"
         },
         "name": "Case Based Surveillance Document Profile",
@@ -113,14 +97,6 @@
         },
         "name": "Case Based Surveillance Exposure Observation Profile",
         "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-hospitalization"
-        },
-        "name": "Case Based Surveillance Hospitalization Encounter Profile",
-        "description": "Defines constraints on Encounter to represent hospitalization due to a condition of interest in public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -145,14 +121,6 @@
         },
         "name": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
         "description": "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-patient"
-        },
-        "name": "Case Based Surveillance Patient Profile",
-        "description": "Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required.",
         "exampleBoolean": false
       },
       {
@@ -201,14 +169,6 @@
         },
         "name": "Case Based Surveillance Specimen Profile",
         "description": "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-travel-history"
-        },
-        "name": "Case Based Surveillance Travel History Profile",
-        "description": "Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
       },
       {
@@ -269,14 +229,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-birthsex"
-        },
-        "name": "Case Based Surveillance Sex Assigned at Birth Extension",
-        "description": "A code classifying the person's sex assigned at birth.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-cdc-address-use"
         },
         "name": "Case Based Surveillance CDC Address Use Extension",
@@ -289,30 +241,6 @@
         },
         "name": "Case Based Surveillance Case Class Status",
         "description": "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-diagnosis-date"
-        },
-        "name": "Case Based Surveillance Diagnosis Date Extension",
-        "description": "A dateTime indicating when the condition of interest was diagnosed.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-ethnicity"
-        },
-        "name": "Case Based Surveillance Ethnicity Extension",
-        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-race"
-        },
-        "name": "Case Based Surveillance Race Extension",
-        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.",
         "exampleBoolean": false
       },
       {
@@ -609,7 +537,7 @@
         },
         "name": "GenV2-TC-Condition",
         "description": "Condition of interest resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -633,7 +561,7 @@
         },
         "name": "GenV2-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -649,7 +577,7 @@
         },
         "name": "GenV2-TC-Patient",
         "description": "CBS Patient resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -737,7 +665,7 @@
         },
         "name": "HAICA-TC-Condition",
         "description": "Condition of interest resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -753,7 +681,7 @@
         },
         "name": "HAICA-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -785,7 +713,7 @@
         },
         "name": "HAICA-TC-Patient",
         "description": "CBS Patient resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -937,7 +865,7 @@
         },
         "name": "Lyme-TC-Condition",
         "description": "Condition of interest resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -953,7 +881,7 @@
         },
         "name": "Lyme-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -1009,7 +937,7 @@
         },
         "name": "Lyme-TC-Patient",
         "description": "CBS Patient resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {
@@ -1193,7 +1121,7 @@
         },
         "name": "STD-TC-Condition",
         "description": "Condition of interest resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
       },
       {
         "reference": {
@@ -1202,118 +1130,6 @@
         "name": "STD-TC-DetectionMethod",
         "description": "An example Observation describing how the case patient first came to the attention of the health department for this condition.",
         "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ1"
-        },
-        "name": "STD-TC-EQ1",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ10"
-        },
-        "name": "STD-TC-EQ10",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ11"
-        },
-        "name": "STD-TC-EQ11",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ12"
-        },
-        "name": "STD-TC-EQ12",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ13"
-        },
-        "name": "STD-TC-EQ13",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ2"
-        },
-        "name": "STD-TC-EQ2",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ3"
-        },
-        "name": "STD-TC-EQ3",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ4"
-        },
-        "name": "STD-TC-EQ4",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ5"
-        },
-        "name": "STD-TC-EQ5",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ6"
-        },
-        "name": "STD-TC-EQ6",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ7"
-        },
-        "name": "STD-TC-EQ7",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ8"
-        },
-        "name": "STD-TC-EQ8",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EQ9"
-        },
-        "name": "STD-TC-EQ9",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a \"question\" resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
-      },
-      {
-        "reference": {
-          "reference": "Observation/STD-TC-EpiQuestionnaire"
-        },
-        "name": "STD-TC-EpiQuestionnaire",
-        "description": "A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as the parent resource.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"
       },
       {
         "reference": {
@@ -1345,7 +1161,7 @@
         },
         "name": "STD-TC-Hospitalization",
         "description": "CBS Hospitalization resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
       },
       {
         "reference": {
@@ -1409,7 +1225,7 @@
         },
         "name": "STD-TC-Patient",
         "description": "CBS Patient resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       },
       {
         "reference": {

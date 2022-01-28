@@ -1,5 +1,5 @@
 Instance: Lyme-TC-Patient
-InstanceOf: cbs-patient
+InstanceOf: us-cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the Lyme Test Case Patient"
 
@@ -43,3 +43,7 @@ Description: "CBS Patient resource for the Lyme Test Case Patient"
   * text = "Xxxxx, Ccccc"
   * family = "Xxxxx"
   * given = "Ccccc"
+
+* telecom
+  * system = #phone
+  * value = "111-111-1111" // TODO: REPLACE WITH DATA ABSENT REASON EXTENSION

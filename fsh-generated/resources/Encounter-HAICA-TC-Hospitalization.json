@@ -3,14 +3,25 @@
   "id": "HAICA-TC-Hospitalization",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
     ]
   },
-  "status": "unknown",
   "class": {
     "code": "IMP",
-    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "inpatient encounter"
   },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "42628595",
+          "system": "http://www.ama-assn.org/go/cpt",
+          "display": "Inpatient Hospital"
+        }
+      ]
+    }
+  ],
   "subject": {
     "reference": "Patient/HAICA-TC-Patient",
     "display": "HAI-CA TC Example Patient"
@@ -18,11 +29,16 @@
   "period": {
     "start": "2018-11-24"
   },
-  "diagnosis": [
+  "reasonReference": [
     {
-      "condition": {
-        "reference": "Condition/HAICA-TC-Condition",
-        "display": "HAI-CA TC Condition of Interest"
+      "reference": "Condition/HAICA-TC-Condition"
+    }
+  ],
+  "status": "unknown",
+  "location": [
+    {
+      "location": {
+        "reference": "FIX LATER"
       }
     }
   ]

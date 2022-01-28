@@ -67,22 +67,6 @@
         "min": 1
       },
       {
-        "id": "Condition.extension:diagnosis-date",
-        "path": "Condition.extension",
-        "sliceName": "diagnosis-date",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Condition.extension:case-class-status",
         "path": "Condition.extension",
         "sliceName": "case-class-status",
