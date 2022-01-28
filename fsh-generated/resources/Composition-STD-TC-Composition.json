@@ -133,53 +133,6 @@
           "reference": "MedicationStatement/STD-TC-Medication-Statement-2"
         }
       ]
-    },
-    {
-      "title": "Epi Observations",
-      "entry": [
-        {
-          "reference": "STD-TC-EpiQuestionnaire"
-        },
-        {
-          "reference": "STD-TC-EQ1"
-        },
-        {
-          "reference": "STD-TC-EQ2"
-        },
-        {
-          "reference": "STD-TC-EQ3"
-        },
-        {
-          "reference": "STD-TC-EQ4"
-        },
-        {
-          "reference": "STD-TC-EQ5"
-        },
-        {
-          "reference": "STD-TC-EQ6"
-        },
-        {
-          "reference": "STD-TC-EQ7"
-        },
-        {
-          "reference": "STD-TC-EQ8"
-        },
-        {
-          "reference": "STD-TC-EQ9"
-        },
-        {
-          "reference": "STD-TC-EQ10"
-        },
-        {
-          "reference": "STD-TC-EQ11"
-        },
-        {
-          "reference": "STD-TC-EQ12"
-        },
-        {
-          "reference": "STD-TC-EQ13"
-        }
-      ]
     }
   ],
   "subject": {

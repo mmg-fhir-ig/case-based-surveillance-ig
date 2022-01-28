@@ -107,4 +107,5 @@ Alias: $PHVS_VaccineNotGivenReasons_CDC = http://phinvads.cdc.gov/fhir/ValueSet/
 Alias: $PHVS_VaccineAdministered_MMR = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7331
 Alias: $PHVS_VaccineEventInformationSource_NND = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7450
 Alias: $PHVS_TravelMode_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3107
+Alias: $PHVS-YNRD-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7193
 

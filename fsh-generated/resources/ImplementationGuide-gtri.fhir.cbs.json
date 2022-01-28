@@ -965,6 +965,22 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/STD-Demo-Questionnaire"
+        },
+        "name": "STD-Demo-Questionnaire",
+        "description": "Demo Questionnaire for STD Case Related Questions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/STD-Demo-QuestionnaireResponse"
+        },
+        "name": "STD-Demo-QuestionnaireResponse",
+        "description": "Demo QuestionnaireResponse for STD Case Related Questionnaire",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/STD-TC-CNP"
         },
         "name": "STD-TC-CNP",
