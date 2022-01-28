@@ -117,11 +117,12 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
         ],

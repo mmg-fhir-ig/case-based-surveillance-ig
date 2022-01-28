@@ -8,6 +8,7 @@ Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+Alias: $cpt4 = http://www.ama-assn.org/go/cpt
 
 // PHIN VADS Code Systems
 Alias: $PH-PHINQuestions-CDC = urn:oid:2.16.840.1.114222.4.5.232

@@ -1,5 +1,5 @@
 Instance: HAICA-TC-Patient
-InstanceOf: cbs-patient
+InstanceOf: us-cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 
@@ -40,3 +40,7 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
   * text = "Yyyyy, Bbbbb"
   * family = "Yyyyy"
   * given = "Bbbbb"
+
+* telecom
+  * system = #phone
+  * value = "111-111-1111" // TODO: REPLACE WITH DATA ABSENT REASON EXTENSION

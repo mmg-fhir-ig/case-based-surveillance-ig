@@ -128,7 +128,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
         ],
@@ -207,7 +207,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
             ]
           }
         ]
@@ -246,7 +246,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
             ]
           }
         ]
@@ -430,7 +430,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-travel-history"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history"
             ]
           }
         ]

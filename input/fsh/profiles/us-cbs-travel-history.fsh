@@ -12,3 +12,5 @@ Description: "Defines constraints on the ECR US PH Travel History profile to cap
 * extension contains
     us-cbs-period-and-mode-of-travel named periodAndModeOfTravel 0..* and
     cbs-program-specific-time-window named programSpecificTimeWindow 0..1
+* subject 1..1 MS
+* subject only Reference(us-cbs-patient)

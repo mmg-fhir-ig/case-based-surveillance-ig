@@ -1,8 +1,8 @@
 Instance: Lyme-TC-Condition
-InstanceOf: cbs-condition
+InstanceOf: us-cbs-condition
 Usage: #example
 Description: "Condition of interest resource for the Lyme Test Case Patient"
-* extension[diagnosis-date].valueDateTime = 2018-07-05
+// * extension[diagnosis-date].valueDateTime = 2018-07-05
 * extension[case-class-status].valueCodeableConcept = $sct#410605003 "Confirmed present"
 * extension[illness-duration].valueQuantity.value = 15
 * extension[illness-duration].valueQuantity.system = $ucum
@@ -16,3 +16,5 @@ Description: "Condition of interest resource for the Lyme Test Case Patient"
 
 * evidence[0].code = $sct#69588003 "Erythema Migrans"
 * evidence[+].code = $sct#233917008 "Atrioventricular block"
+
+* category = #problem-list-item

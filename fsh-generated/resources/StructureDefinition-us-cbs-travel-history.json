@@ -106,6 +106,18 @@
         ]
       },
       {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "short": "Date or period of time spent in the location, from date of arrival to date of departure from location"

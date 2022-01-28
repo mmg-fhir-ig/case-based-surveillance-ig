@@ -3,7 +3,7 @@
   "id": "HAICA-TC-Patient",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
     ]
   },
   "extension": [
@@ -22,7 +22,7 @@
           "valueString": "Mixed"
         }
       ],
-      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
     },
     {
       "extension": [
@@ -38,10 +38,10 @@
           "valueString": "Hispanic or Latino"
         }
       ],
-      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
     },
     {
-      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
       "valueCode": "F"
     },
     {
@@ -121,6 +121,12 @@
       "given": [
         "Bbbbb"
       ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "111-111-1111"
     }
   ]
 }

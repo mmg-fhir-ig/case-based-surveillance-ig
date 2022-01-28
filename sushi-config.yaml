@@ -20,9 +20,9 @@ dependencies:
     uri: http://fhir.org/packages/us.cdc.phinvads
     version: 0.7.0
   hl7.fhir.us.core:
-    version: current
+    version: 4.0.0
   hl7.fhir.us.ecr:
-    version: current
+    version: 2.0.0
   hl7.fhir.us.odh:
     version: 1.1.0
 pages:

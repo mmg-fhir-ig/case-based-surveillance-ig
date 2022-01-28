@@ -12,7 +12,8 @@ Description: "Defines constraints on the Immunization resource to capture subjec
 * vaccineCode MS
 * vaccineCode from $PHVS_VaccineAdministered_MMR (example) 
   * ^binding.description = "Vaccine Type and/or National Drug Code (NDC)"
-* patient only Reference(cbs-patient)
+* patient 1..1 MS
+* patient only Reference(us-cbs-patient)
 * manufacturer MS // Use reference.display for string summary without a resource.
 * lotNumber MS
 * expirationDate MS

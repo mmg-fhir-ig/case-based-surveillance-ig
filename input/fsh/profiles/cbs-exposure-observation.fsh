@@ -13,10 +13,10 @@ Description: "Defines constraints to the CBS Case Notification Panel Member prof
 * code 1..1 MS
 * code = cbs-temp-code-system#Location-of-Exposure
 * subject 1..1 MS
-* subject only Reference(cbs-patient)
+* subject only Reference(us-cbs-patient)
 * subject ^short = "The reference to the subject (the patient)"
 * focus 1..1 MS
-* focus only Reference(cbs-condition)
+* focus only Reference(us-cbs-condition)
 * focus ^short = "The reference to the condition of interest"
 * valueCodeableConcept 0..1 MS
 

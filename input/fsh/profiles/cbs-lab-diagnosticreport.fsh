@@ -14,7 +14,7 @@ Description: "Defines a DiagnosticReport resource profile in order to meet the n
 * code only CodeableConcept
 * code from CBSLabDiagnosticReportVS (extensible)
 * subject 1..1 MS
-* subject only Reference(cbs-patient) // Needs to add related person when we make that profile
+* subject only Reference(us-cbs-patient) // TODO: Needs to add related person when we make that profile (Congenital Syphilis)
 * effectiveDateTime 0..1 MS
 * performer 0..1 MS
 * performer only Reference(cbs-performing-lab)

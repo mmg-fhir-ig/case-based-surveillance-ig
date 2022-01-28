@@ -3,7 +3,7 @@
   "id": "Lyme-TC-Condition",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
     ]
   },
   "extension": [
@@ -18,10 +18,6 @@
           }
         ]
       }
-    },
-    {
-      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
-      "valueDateTime": "2018-07-05"
     },
     {
       "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
@@ -79,6 +75,15 @@
               "display": "Atrioventricular block"
             }
           ]
+        }
+      ]
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "problem-list-item"
         }
       ]
     }
