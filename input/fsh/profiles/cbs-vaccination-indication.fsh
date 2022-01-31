@@ -13,7 +13,7 @@ Description: "Defines constraints on the Observation resource to capture subject
 * subject 1..1 MS
 * subject only Reference(us-cbs-patient)
 * focus 0..* MS
-* focus only Reference(cbs-vaccination-record)
+* focus only Reference(us-cbs-immunization)
 * valueCodeableConcept MS
 * valueCodeableConcept from $PHVS-YesNoUnknown-CDC
 * note MS

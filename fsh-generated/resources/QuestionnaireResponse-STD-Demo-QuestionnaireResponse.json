@@ -1,7 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "STD-Demo-QuestionnaireResponse",
-  "questionnaire": "http://cbsig.chai.gatech.edu/Questionnaire/STD-Demo-Questionnaire",
   "status": "completed",
   "subject": {
     "reference": "Patient/STD-TC-Patient",

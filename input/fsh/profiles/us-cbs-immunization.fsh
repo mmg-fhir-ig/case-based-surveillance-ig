@@ -1,8 +1,8 @@
-Profile: CaseBasedSurveillanceVaccinationRecord
-Parent: Immunization
-Id: cbs-vaccination-record
-Title: "Case Based Surveillance Vaccination Record Profile"
-Description: "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs."
+Profile: USCaseBasedSurveillanceImmunization
+Parent: $us-core-immunization
+Id: us-cbs-immunization
+Title: "US Case Based Surveillance Immunization Profile"
+Description: "Defines further constraints on the US Core Immunization profile to capture subject vaccination records in order to meet the needs of public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
@@ -10,7 +10,7 @@ Description: "Defines constraints on the Immunization resource to capture subjec
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * identifier MS
 * vaccineCode MS
-* vaccineCode from $PHVS_VaccineAdministered_MMR (example) 
+* vaccineCode from $PHVS_VaccineAdministered_MMR (extensible) 
   * ^binding.description = "Vaccine Type and/or National Drug Code (NDC)"
 * patient 1..1 MS
 * patient only Reference(us-cbs-patient)

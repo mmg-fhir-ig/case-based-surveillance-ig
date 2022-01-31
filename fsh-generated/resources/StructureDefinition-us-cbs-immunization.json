@@ -1,25 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-vaccination-record",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Medications"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record",
+  "id": "us-cbs-immunization",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceVaccinationRecord",
-  "title": "Case Based Surveillance Vaccination Record Profile",
+  "name": "USCaseBasedSurveillanceImmunization",
+  "title": "US Case Based Surveillance Immunization Profile",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
+  "description": "Defines further constraints on the US Core Immunization profile to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [
@@ -62,7 +52,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Immunization",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Immunization",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -74,9 +64,8 @@
       {
         "id": "Immunization.vaccineCode",
         "path": "Immunization.vaccineCode",
-        "mustSupport": true,
         "binding": {
-          "strength": "example",
+          "strength": "extensible",
           "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7331",
           "description": "Vaccine Type and/or National Drug Code (NDC)"
         }
@@ -91,13 +80,7 @@
               "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Immunization.occurrence[x]",
-        "path": "Immunization.occurrence[x]",
-        "mustSupport": true
+        ]
       },
       {
         "id": "Immunization.reportOrigin",

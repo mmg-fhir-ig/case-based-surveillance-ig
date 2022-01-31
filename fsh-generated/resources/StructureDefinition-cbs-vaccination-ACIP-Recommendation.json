@@ -135,7 +135,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization"
             ]
           }
         ],
