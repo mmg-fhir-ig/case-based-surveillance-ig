@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CBSLabObservationVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">http://hl7.org/fhir/ValueSet/observation-codes</a></li><li>Include all codes defined in <code>urn:oid:2.16.840.1.114222.4.5.232</code></li></ul></div>
+  </text>
+  <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS"/>
+  <version value="0.1.0"/>
+  <name value="CBSLabObservationVS"/>
+  <title value="Combined ValueSet for Lab Observation Code."/>
+  <status value="active"/>
+  <date value="2022-01-25T10:18:17-05:00"/>
+  <publisher value="Georgia Tech Research Institute (GTRI)"/>
+  <contact>
+    <name value="Georgia Tech Research Institute (GTRI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://gtri.gatech.edu/"/>
+    </telecom>
+  </contact>
+  <description value="Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group"/>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.840.1.114222.4.5.232"/>
+    </include>
+  </compose>
+</ValueSet>

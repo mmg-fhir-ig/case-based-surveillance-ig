@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CBSLabDiagnosticReportVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7550\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550</a></li><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1002\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002</a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "CBSLabDiagnosticReportVS"];
+  fhir:ValueSet.title [ fhir:value "Combined ValueSet for Lab DiagnosticReport Code."];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-01-25T10:18:17-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Georgia Tech Research Institute (GTRI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://gtri.gatech.edu/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes for Lab Test Type. The codes are from two PHINVADS valuesets to support labs test repeating group"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550";
+         fhir:index 0;
+         fhir:link <http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550>
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002";
+         fhir:index 0;
+         fhir:link <http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002>
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

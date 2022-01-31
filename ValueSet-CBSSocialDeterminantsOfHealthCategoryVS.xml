@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CBSSocialDeterminantsOfHealthCategoryVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-cbs-temp-code-system.html"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-sogi">sogi</a></td><td>Sexual Orientation and Gender Identity</td></tr><tr><td><a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-housing-or-residence">housing-or-residence</a></td><td>Housing Insecurity or Residence Characteristics</td></tr><tr><td><a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-education">education</a></td><td>Education Level</td></tr><tr><td><a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-food-insecurity">food-insecurity</a></td><td>Food Insecurity</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"/>
+  <version value="0.1.0"/>
+  <name value="CBSSocialDeterminantsOfHealthCategoryVS"/>
+  <title value="CBS Case Social Determinants of Health Category Value Set"/>
+  <status value="active"/>
+  <date value="2022-01-25T10:18:17-05:00"/>
+  <publisher value="Georgia Tech Research Institute (GTRI)"/>
+  <contact>
+    <name value="Georgia Tech Research Institute (GTRI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://gtri.gatech.edu/"/>
+    </telecom>
+  </contact>
+  <description value="Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
+  <compose>
+    <include>
+      <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+      <concept>
+        <code value="sogi"/>
+        <display value="Sexual Orientation and Gender Identity"/>
+      </concept>
+      <concept>
+        <code value="housing-or-residence"/>
+        <display value="Housing Insecurity or Residence Characteristics"/>
+      </concept>
+      <concept>
+        <code value="education"/>
+        <display value="Education Level"/>
+      </concept>
+      <concept>
+        <code value="food-insecurity"/>
+        <display value="Food Insecurity"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

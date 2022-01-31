@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CauseOfDeath> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CauseOfDeath"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CauseOfDeath\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cause-of-death.html\">Case Based Surveillance Cause of Death Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cause of death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#79378-6)</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> \" ZZZZZ\"</p><p><b>focus</b>: <a href=\"Condition-GenV2-TC-Condition.html\">Condition/GenV2-TC-Condition: GenV2-TC Example Condition of Interest</a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:79378-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "79378-6" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Condition/GenV2-TC-Condition>;
+     fhir:Reference.reference [ fhir:value "Condition/GenV2-TC-Condition" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Condition of Interest" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CauseOfDeath.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

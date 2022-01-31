@@ -1,0 +1,138 @@
+{
+  "resourceType": "Patient",
+  "id": "STD-TC-Patient",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"STD-TC-Patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-patient.html\">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: Black or African American (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2054-5 = '2054-5', stated as 'Black or African American')</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2186-5 = '2186-5', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: F</p><p><b>Birth Place</b>: GRC </p><p><b>genderIdentity</b>: Cisgender/Not transgender (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1490)</span></p><p><b>identifier</b>: Local Record ID: STD_TC05, Local Subject ID: STD_TC05</p><p><b>name</b>: Wwwww, Ddddd</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1994-03-02</p><p><b>address</b>: </p><ul><li>null Virginia 23218 (HOME)</li><li>USA </li></ul></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+            "code": "2054-5",
+            "display": "Black or African American"
+          }
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "valueCode": "F"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "GRC"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.114222.4.5.274",
+            "code": "PHC1490",
+            "display": "Cisgender/Not transgender (finding)"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Record-ID",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:51",
+      "value": "STD_TC05"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Subject-ID",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:51",
+      "value": "STD_TC05"
+    }
+  ],
+  "name": [
+    {
+      "text": "Wwwww, Ddddd",
+      "family": "Wwwww",
+      "given": [
+        "Ddddd"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1994-03-02",
+  "address": [
+    {
+      "use": "home",
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+              "valueString": "030500"
+            }
+          ]
+        }
+      ],
+      "district": "Richmond",
+      "state": "Virginia",
+      "postalCode": "23218"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+          "valueCoding": {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Usual-Residence"
+          }
+        }
+      ],
+      "country": "USA"
+    }
+  ]
+}

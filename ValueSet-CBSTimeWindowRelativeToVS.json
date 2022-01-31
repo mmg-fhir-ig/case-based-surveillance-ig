@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CBSTimeWindowRelativeToVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDatePeriodStart\">conditionOnsetDatePeriodStart</a></td><td>Condition.onsetDatePeriod.start</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-conditionOnsetDateTime\">conditionOnsetDateTime</a></td><td>Condition.onsetDateTime</td></tr></table></li></ul></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS",
+  "version": "0.1.0",
+  "name": "CBSTimeWindowRelativeToVS",
+  "title": "CBS Time Window Relative To Value Set",
+  "status": "active",
+  "date": "2022-01-25T10:18:17-05:00",
+  "publisher": "Georgia Tech Research Institute (GTRI)",
+  "contact": [
+    {
+      "name": "Georgia Tech Research Institute (GTRI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gtri.gatech.edu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "conditionOnsetDatePeriodStart"
+          },
+          {
+            "code": "conditionOnsetDateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "resourceType": "Patient",
+  "id": "HAICA-TC-Patient",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-patient.html\">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: White (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2106-3 = '2106-3', stated as 'White')</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: 2135-2 (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2135-2 = '2135-2', stated as 'null')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: female <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-gender-identity.html\">Gender identity</a>#female)</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Mixed"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+            "code": "2135-2"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }
+      ],
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "valueCode": "F"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "USA"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/gender-identity",
+            "code": "female"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Record-ID",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "C_auris_02"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Subject-ID",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "C_auris_PAT_02"
+    }
+  ],
+  "name": [
+    {
+      "text": "Yyyyy, Bbbbb",
+      "family": "Yyyyy",
+      "given": [
+        "Bbbbb"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1940-01-01",
+  "address": [
+    {
+      "use": "home",
+      "district": "Cobb",
+      "state": "Georgia",
+      "postalCode": "30126"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+          "valueCoding": {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Usual-Residence"
+          }
+        }
+      ],
+      "country": "USA"
+    }
+  ]
+}

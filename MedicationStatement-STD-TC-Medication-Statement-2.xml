@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-Medication-Statement-2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "STD-TC-Medication-Statement-2" </p></div><p><b>status</b>: completed</p><p><b>medication</b>: Azithromycin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#18631)</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">Patient/STD-TC-Patient: STD-TC Example Patient</a> " WWWWW"</p><p><b>effective</b>: 2014-02-25 --&gt; 2014-02-25</p></div>
+  </text>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="18631"/>
+      <display value="Azithromycin"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2014-02-25"/>
+    <end value="2014-02-25"/>
+  </effectivePeriod>
+  <dosage>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="mg"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

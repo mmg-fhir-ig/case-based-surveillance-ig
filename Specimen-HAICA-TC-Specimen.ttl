@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Specimen/HAICA-TC-Specimen> a fhir:Specimen;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HAICA-TC-Specimen"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Specimen\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-specimen.html\">Case Based Surveillance Specimen Profile</a></p></div><p><b>identifier</b>: State Lab Specimen ID: IDR908765140, Performing Laboratory Specimen ID: 198374-9</p><p><b>type</b>: Blood specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#119297000)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAICA-TC Example Patient</a> \" YYYYY\"</p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2018-11-24</td></tr></table></div>"
+  ];
+  fhir:Specimen.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.232" ];
+         fhir:Coding.code [ fhir:value "PLT687" ];
+         fhir:Coding.display [ fhir:value "State Lab Specimen ID" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "IDR908765140" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.232" ];
+         fhir:Coding.code [ fhir:value "LAB202" ];
+         fhir:Coding.display [ fhir:value "Performing Laboratory Specimen ID" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "198374-9" ]
+  ];
+  fhir:Specimen.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:119297000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "119297000" ];
+       fhir:Coding.display [ fhir:value "Blood specimen" ]
+     ]
+  ];
+  fhir:Specimen.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/HAICA-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/HAICA-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "HAICA-TC Example Patient" ]
+  ];
+  fhir:Specimen.collection [
+     fhir:Specimen.collection.collectedDateTime [ fhir:value "2018-11-24"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Specimen/HAICA-TC-Specimen.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

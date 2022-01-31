@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-Composition"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Composition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-composition.html">Case Based Surveillance Composition Profile</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Public health Case report <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#55751-2)</span></p><p><b>date</b>: 2018-09-12</p><p><b>author</b>: <a href="Organization-Lyme-TC-Reporting-Source.html">Organization/Lyme-TC-Reporting-Source</a> "Reporting Source"</p><p><b>title</b>: Case Based Surveillance Composition</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55751-2"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Lyme-TC-Patient"/>
+  </subject>
+  <date value="2018-09-12"/>
+  <author>
+    <reference value="Organization/Lyme-TC-Reporting-Source"/>
+  </author>
+  <title value="Case Based Surveillance Composition"/>
+  <section>
+    <title value="Condition of Interest"/>
+    <entry>
+      <reference value="Condition/Lyme-TC-Condition"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Case Notification Panel"/>
+    <entry>
+      <reference value="Observation/Lyme-TC-CNP"/>
+    </entry>
+    <section>
+      <entry>
+        <reference value="Observation/Lyme-TC-MMWR"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-Exposure"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member1"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member2"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member3"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member4"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member5"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member6"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member7"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member8"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member9"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member10"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member11"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member12"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Lyme-TC-CNP-Member13"/>
+      </entry>
+    </section>
+  </section>
+  <section>
+    <title value="History of Encounters (Hospitalizations)"/>
+    <entry>
+      <reference value="Encounter/Lyme-TC-Hospitalization"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Reporting Entities"/>
+    <entry>
+      <reference value="Practitioner/Lyme-TC-Person-Reporting"/>
+    </entry>
+    <entry>
+      <reference value="Organization/Lyme-TC-Reporting-Source"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Laboratory Related Resources"/>
+    <entry>
+      <reference value="DiagnosticReport/Lyme-TC-Lab-DiagnosticReport"/>
+    </entry>
+    <entry>
+      <reference value="Observation/Lyme-TC-Lab-Observation-1"/>
+    </entry>
+    <entry>
+      <reference value="Observation/Lyme-TC-Lab-Observation-2"/>
+    </entry>
+    <entry>
+      <reference value="Specimen/Lyme-TC-Specimen"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Medication Administered"/>
+    <entry>
+      <reference value="MedicationStatement/Lyme-TC-Medication-Statement"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Occupational Data"/>
+    <entry>
+      <reference value="Observation/Lyme-TC-ODH-Example"/>
+    </entry>
+  </section>
+</Composition>

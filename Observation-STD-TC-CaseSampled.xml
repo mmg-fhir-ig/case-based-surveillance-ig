@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="STD-TC-CaseSampled"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "STD-TC-CaseSampled" </p></div><p><b>status</b>: final</p><p><b>code</b>: HIV Status Documented Through eHARS Record Search <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#INV892)</span></p><p><b>subject</b>: <a href="Patient-STD-TC-Patient.html">Patient/STD-TC-Patient: STD-TC Example Patient</a> " WWWWW"</p><p><b>value</b>: No <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>#N)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.5.232"/>
+      <code value="INV892"/>
+      <display value="HIV Status Documented Through eHARS Record Search"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <code value="N"/>
+      <display value="No"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

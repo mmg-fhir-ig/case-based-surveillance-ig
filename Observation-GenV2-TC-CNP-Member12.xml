@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="GenV2-TC-CNP-Member12"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-CNP-Member12" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Disease transmission mode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77989-2)</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> " ZZZZZ"</p><p><b>value</b>: Food-borne transmission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#416086007)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78000-7"/>
+      <display value="Case notification panel [CDC.PHIN]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77989-2"/>
+      <display value="Disease transmission mode"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GenV2-TC-Patient"/>
+    <display value="GenV2-TC Example Patient"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="416086007"/>
+      <display value="Food-borne transmission"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

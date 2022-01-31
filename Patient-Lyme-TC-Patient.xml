@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Lyme-TC-Patient"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: Hispanic or Latino (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2135-2 = '2135-2', stated as 'Hispanic or Latino')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227</p><p><b>name</b>: Xxxxx, Ccccc</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1993-06-01</p><p><b>address</b>: </p><ul><li>Tennessee 37209 (HOME)</li><li>USA </li></ul></div>
+  </text>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+        <code value="2135-2"/>
+        <display value="Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <country value="USA"/>
+    </valueAddress>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+        <code value="Local-Record-ID"/>
+        <display value="Local Record ID"/>
+      </coding>
+      <text value="Local Record ID"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="TickborneLyme_TC01"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+        <code value="Local-Subject-ID"/>
+        <display value="Local Subject ID"/>
+      </coding>
+      <text value="Local Subject ID"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="TickborneLyme_TC01"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77997-5"/>
+        <display value="Legacy case identifier [CDC.PHIN]"/>
+      </coding>
+      <text value="Legacy Case Identifier"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="34022747S012018"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77993-4"/>
+        <display value="State notifiable condition case identifier"/>
+      </coding>
+      <text value="State Case Identifier"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="340227"/>
+  </identifier>
+  <name>
+    <text value="Xxxxx, Ccccc"/>
+    <family value="Xxxxx"/>
+    <given value="Ccccc"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1993-06-01"/>
+  <address>
+    <use value="home"/>
+    <district value="Davidson"/>
+    <state value="Tennessee"/>
+    <postalCode value="37209"/>
+  </address>
+  <address>
+    <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use">
+      <valueCoding>
+        <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+        <code value="Usual-Residence"/>
+      </valueCoding>
+    </extension>
+    <country value="USA"/>
+  </address>
+</Patient>

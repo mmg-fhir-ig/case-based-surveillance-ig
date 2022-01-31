@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cbs-temp-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">Usual-Residence<a name="cbs-temp-code-system-Usual-Residence"> </a></td><td>Usual Residence</td><td>Subject's location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), 'Country of Usual Residence'. The meaning of 'usual residence' is defined as per surveillance programs.</td></tr><tr><td style="white-space:nowrap">Address-at-Diagnosis<a name="cbs-temp-code-system-Address-at-Diagnosis"> </a></td><td>Address at time of Diagnosis</td><td>Subject's address at the time of the diagnosis for the condition of interest.</td></tr><tr><td style="white-space:nowrap">Location-of-Exposure<a name="cbs-temp-code-system-Location-of-Exposure"> </a></td><td>Location of Exposure</td><td>Location of exposure. (City, County, State/Province, Country)</td></tr><tr><td style="white-space:nowrap">Local-Subject-ID<a name="cbs-temp-code-system-Local-Subject-ID"> </a></td><td>Local Subject ID</td><td>The local ID of the subject/entity</td></tr><tr><td style="white-space:nowrap">Local-Record-ID<a name="cbs-temp-code-system-Local-Record-ID"> </a></td><td>Local Record ID</td><td>Sending system-assigned local ID of the case investigation with which the subject is associated.</td></tr><tr><td style="white-space:nowrap">State-Case-Identifier<a name="cbs-temp-code-system-State-Case-Identifier"> </a></td><td>State Case Identifier</td><td>States use this identifier to link NEDSS investigations back to their own state investigations.</td></tr><tr><td style="white-space:nowrap">Legacy-Case-Identifier<a name="cbs-temp-code-system-Legacy-Case-Identifier"> </a></td><td>Legacy Case Identifier</td><td>CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.).</td></tr><tr><td style="white-space:nowrap">LAB<a name="cbs-temp-code-system-LAB"> </a></td><td>Laboratory</td><td>Laboratory coding for organization type</td></tr><tr><td style="white-space:nowrap">MMWR<a name="cbs-temp-code-system-MMWR"> </a></td><td>MMWR Week/Year</td><td>Grouped MMWR Week and Year into a single code</td></tr><tr><td style="white-space:nowrap">case-outbreak<a name="cbs-temp-code-system-case-outbreak"> </a></td><td>Case Outbreak Name and Indicator</td><td>Grouped case outbreak name and indicator into a single code for the case notification panel</td></tr><tr><td style="white-space:nowrap">epi-questionnaire<a name="cbs-temp-code-system-epi-questionnaire"> </a></td><td>Case Based Surveillance Epi Questionnaire Panel</td><td>Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs.</td></tr><tr><td style="white-space:nowrap">std-program-questionnaire-panel<a name="cbs-temp-code-system-std-program-questionnaire-panel"> </a></td><td>STD Program Questionnaire Panel</td><td/></tr><tr><td style="white-space:nowrap">undefined-epi-questionnaire-cannonical-name-code<a name="cbs-temp-code-system-undefined-epi-questionnaire-cannonical-name-code"> </a></td><td>Undefined Epi Questionnaire Cannonical Name code</td><td/></tr><tr><td style="white-space:nowrap">previously-reported<a name="cbs-temp-code-system-previously-reported"> </a></td><td>Previously Reported Case</td><td/></tr><tr><td style="white-space:nowrap">connected-outbreak<a name="cbs-temp-code-system-connected-outbreak"> </a></td><td>Connected Outbreak Case</td><td/></tr><tr><td style="white-space:nowrap">parent-congential-syphilis<a name="cbs-temp-code-system-parent-congential-syphilis"> </a></td><td>Parent in Congenital Syphilis</td><td/></tr><tr><td style="white-space:nowrap">conditionOnsetDateTime<a name="cbs-temp-code-system-conditionOnsetDateTime"> </a></td><td>Condition.onsetDateTime</td><td/></tr><tr><td style="white-space:nowrap">conditionOnsetDatePeriodStart<a name="cbs-temp-code-system-conditionOnsetDatePeriodStart"> </a></td><td>Condition.onsetDatePeriod.start</td><td/></tr><tr><td style="white-space:nowrap">sogi<a name="cbs-temp-code-system-sogi"> </a></td><td>Sexual Orientation and Gender Identity</td><td/></tr><tr><td style="white-space:nowrap">housing-or-residence<a name="cbs-temp-code-system-housing-or-residence"> </a></td><td>Housing Insecurity or Residence Characteristics</td><td/></tr><tr><td style="white-space:nowrap">education<a name="cbs-temp-code-system-education"> </a></td><td>Education Level</td><td/></tr><tr><td style="white-space:nowrap">food-insecurity<a name="cbs-temp-code-system-food-insecurity"> </a></td><td>Food Insecurity</td><td/></tr><tr><td style="white-space:nowrap">condition-of-interest<a name="cbs-temp-code-system-condition-of-interest"> </a></td><td>Condition of Interest/Reportable Condition</td><td/></tr><tr><td style="white-space:nowrap">case-notification-panel<a name="cbs-temp-code-system-case-notification-panel"> </a></td><td>Case Notification Panel</td><td/></tr><tr><td style="white-space:nowrap">reporting-entities<a name="cbs-temp-code-system-reporting-entities"> </a></td><td>Reporting Entities</td><td/></tr><tr><td style="white-space:nowrap">history-of-encounters<a name="cbs-temp-code-system-history-of-encounters"> </a></td><td>History of Encounters (Hospitalizations)</td><td/></tr><tr><td style="white-space:nowrap">epi-observations<a name="cbs-temp-code-system-epi-observations"> </a></td><td>Epi Observations</td><td/></tr><tr><td style="white-space:nowrap">occupational-data<a name="cbs-temp-code-system-occupational-data"> </a></td><td>Occupational Data</td><td/></tr><tr><td style="white-space:nowrap">travel-history<a name="cbs-temp-code-system-travel-history"> </a></td><td>Travel History</td><td/></tr><tr><td style="white-space:nowrap">social-determinants-of-health<a name="cbs-temp-code-system-social-determinants-of-health"> </a></td><td>Social Determinants of Health</td><td/></tr><tr><td style="white-space:nowrap">lab-related<a name="cbs-temp-code-system-lab-related"> </a></td><td>Laboratory Related</td><td/></tr><tr><td style="white-space:nowrap">medication-administered<a name="cbs-temp-code-system-medication-administered"> </a></td><td>Medication Administered</td><td/></tr><tr><td style="white-space:nowrap">vaccinations<a name="cbs-temp-code-system-vaccinations"> </a></td><td>Vaccinations</td><td/></tr><tr><td style="white-space:nowrap">related-persons<a name="cbs-temp-code-system-related-persons"> </a></td><td>Related Persons</td><td/></tr><tr><td style="white-space:nowrap">vital-records<a name="cbs-temp-code-system-vital-records"> </a></td><td>Vital Records Reporting (Death, Birth, or Fetal Death)</td><td/></tr></table></div>
+  </text>
+  <url value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+  <version value="0.1.0"/>
+  <name value="CBSTemporary"/>
+  <title value="Case Based Surveillance temporary/placeholder code system."/>
+  <status value="active"/>
+  <date value="2022-01-25T10:18:17-05:00"/>
+  <publisher value="Georgia Tech Research Institute (GTRI)"/>
+  <contact>
+    <name value="Georgia Tech Research Institute (GTRI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://gtri.gatech.edu/"/>
+    </telecom>
+  </contact>
+  <description value="Code system defined as placeholders for items that are not defined in existing systems."/>
+  <content value="complete"/>
+  <count value="35"/>
+  <concept>
+    <code value="Usual-Residence"/>
+    <display value="Usual Residence"/>
+    <definition value="Subject&#39;s location of usual residence. This is a broader location representation of the LOINC Code 77983-5 (https://loinc.org/77983-5/), &#39;Country of Usual Residence&#39;. The meaning of &#39;usual residence&#39; is defined as per surveillance programs."/>
+  </concept>
+  <concept>
+    <code value="Address-at-Diagnosis"/>
+    <display value="Address at time of Diagnosis"/>
+    <definition value="Subject&#39;s address at the time of the diagnosis for the condition of interest."/>
+  </concept>
+  <concept>
+    <code value="Location-of-Exposure"/>
+    <display value="Location of Exposure"/>
+    <definition value="Location of exposure. (City, County, State/Province, Country)"/>
+  </concept>
+  <concept>
+    <code value="Local-Subject-ID"/>
+    <display value="Local Subject ID"/>
+    <definition value="The local ID of the subject/entity"/>
+  </concept>
+  <concept>
+    <code value="Local-Record-ID"/>
+    <display value="Local Record ID"/>
+    <definition value="Sending system-assigned local ID of the case investigation with which the subject is associated."/>
+  </concept>
+  <concept>
+    <code value="State-Case-Identifier"/>
+    <display value="State Case Identifier"/>
+    <definition value="States use this identifier to link NEDSS investigations back to their own state investigations."/>
+  </concept>
+  <concept>
+    <code value="Legacy-Case-Identifier"/>
+    <display value="Legacy Case Identifier"/>
+    <definition value="CDC uses this identifier to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)."/>
+  </concept>
+  <concept>
+    <code value="LAB"/>
+    <display value="Laboratory"/>
+    <definition value="Laboratory coding for organization type"/>
+  </concept>
+  <concept>
+    <code value="MMWR"/>
+    <display value="MMWR Week/Year"/>
+    <definition value="Grouped MMWR Week and Year into a single code"/>
+  </concept>
+  <concept>
+    <code value="case-outbreak"/>
+    <display value="Case Outbreak Name and Indicator"/>
+    <definition value="Grouped case outbreak name and indicator into a single code for the case notification panel"/>
+  </concept>
+  <concept>
+    <code value="epi-questionnaire"/>
+    <display value="Case Based Surveillance Epi Questionnaire Panel"/>
+    <definition value="Case Based Surveillance Epi Questionnaire Panel defines an observation as part of a series of surveillance program defined questions collecting epidemiological data. This category is common to all potential surveillance programs."/>
+  </concept>
+  <concept>
+    <code value="std-program-questionnaire-panel"/>
+    <display value="STD Program Questionnaire Panel"/>
+  </concept>
+  <concept>
+    <code value="undefined-epi-questionnaire-cannonical-name-code"/>
+    <display value="Undefined Epi Questionnaire Cannonical Name code"/>
+  </concept>
+  <concept>
+    <code value="previously-reported"/>
+    <display value="Previously Reported Case"/>
+  </concept>
+  <concept>
+    <code value="connected-outbreak"/>
+    <display value="Connected Outbreak Case"/>
+  </concept>
+  <concept>
+    <code value="parent-congential-syphilis"/>
+    <display value="Parent in Congenital Syphilis"/>
+  </concept>
+  <concept>
+    <code value="conditionOnsetDateTime"/>
+    <display value="Condition.onsetDateTime"/>
+  </concept>
+  <concept>
+    <code value="conditionOnsetDatePeriodStart"/>
+    <display value="Condition.onsetDatePeriod.start"/>
+  </concept>
+  <concept>
+    <code value="sogi"/>
+    <display value="Sexual Orientation and Gender Identity"/>
+  </concept>
+  <concept>
+    <code value="housing-or-residence"/>
+    <display value="Housing Insecurity or Residence Characteristics"/>
+  </concept>
+  <concept>
+    <code value="education"/>
+    <display value="Education Level"/>
+  </concept>
+  <concept>
+    <code value="food-insecurity"/>
+    <display value="Food Insecurity"/>
+  </concept>
+  <concept>
+    <code value="condition-of-interest"/>
+    <display value="Condition of Interest/Reportable Condition"/>
+  </concept>
+  <concept>
+    <code value="case-notification-panel"/>
+    <display value="Case Notification Panel"/>
+  </concept>
+  <concept>
+    <code value="reporting-entities"/>
+    <display value="Reporting Entities"/>
+  </concept>
+  <concept>
+    <code value="history-of-encounters"/>
+    <display value="History of Encounters (Hospitalizations)"/>
+  </concept>
+  <concept>
+    <code value="epi-observations"/>
+    <display value="Epi Observations"/>
+  </concept>
+  <concept>
+    <code value="occupational-data"/>
+    <display value="Occupational Data"/>
+  </concept>
+  <concept>
+    <code value="travel-history"/>
+    <display value="Travel History"/>
+  </concept>
+  <concept>
+    <code value="social-determinants-of-health"/>
+    <display value="Social Determinants of Health"/>
+  </concept>
+  <concept>
+    <code value="lab-related"/>
+    <display value="Laboratory Related"/>
+  </concept>
+  <concept>
+    <code value="medication-administered"/>
+    <display value="Medication Administered"/>
+  </concept>
+  <concept>
+    <code value="vaccinations"/>
+    <display value="Vaccinations"/>
+  </concept>
+  <concept>
+    <code value="related-persons"/>
+    <display value="Related Persons"/>
+  </concept>
+  <concept>
+    <code value="vital-records"/>
+    <display value="Vital Records Reporting (Death, Birth, or Fetal Death)"/>
+  </concept>
+</CodeSystem>

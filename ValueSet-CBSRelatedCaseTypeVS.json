@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CBSRelatedCaseTypeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-previously-reported\">previously-reported</a></td><td>Previously Reported Case</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-connected-outbreak\">connected-outbreak</a></td><td>Connected Outbreak Case</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-parent-congential-syphilis\">parent-congential-syphilis</a></td><td>Parent in Congenital Syphilis</td></tr></table></li></ul></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
+  "version": "0.1.0",
+  "name": "CBSRelatedCaseTypeVS",
+  "title": "CBS Related Case Type Value Set",
+  "status": "active",
+  "date": "2022-01-25T10:18:17-05:00",
+  "publisher": "Georgia Tech Research Institute (GTRI)",
+  "contact": [
+    {
+      "name": "Georgia Tech Research Institute (GTRI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gtri.gatech.edu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "previously-reported"
+          },
+          {
+            "code": "connected-outbreak"
+          },
+          {
+            "code": "parent-congential-syphilis"
+          }
+        ]
+      }
+    ]
+  }
+}

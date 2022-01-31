@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="HAICA-TC-Lab-DiagnosticReport"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 85069-3}">Lab test method [Type]</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>Yyyyy, Bbbbb</b> ?? 1940-01-01 ( Local Record ID: C_auris_02)</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href="Observation-HAICA-TC-Lab-Observation.html"><span title="Codes: {urn:oid:2.16.840.1.114222.4.5.232 LAB723}">DNA Sequencing</span></a></td><td><span title="Codes: {http://snomed.info/sct 10828004}">Positive</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85069-3"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HAICA-TC-Patient"/>
+  </subject>
+  <specimen>
+    <reference value="Specimen/HAICA-TC-Specimen"/>
+  </specimen>
+  <result>
+    <reference value="Observation/HAICA-TC-Lab-Observation"/>
+  </result>
+</DiagnosticReport>

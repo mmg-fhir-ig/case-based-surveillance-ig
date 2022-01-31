@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CBSLabObservationResultVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7279\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279</a></li><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7825\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7825</a></li><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7850\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850</a></li></ul></div>"
+  },
+  "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS",
+  "version": "0.1.0",
+  "name": "CBSLabObservationResultVS",
+  "title": "Combined ValueSet for Lab Observation Result.",
+  "status": "active",
+  "date": "2022-01-25T10:18:17-05:00",
+  "publisher": "Georgia Tech Research Institute (GTRI)",
+  "contact": [
+    {
+      "name": "Georgia Tech Research Institute (GTRI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gtri.gatech.edu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for Lab Observations Result Value. The codes are from two PHINVADS valuesets to support lab results in MMG and Lab Repeating Group",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7279"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7825"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7850"
+        ]
+      }
+    ]
+  }
+}

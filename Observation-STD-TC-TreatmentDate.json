@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "STD-TC-TreatmentDate",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"STD-TC-TreatmentDate\" </p></div><p><b>status</b>: final</p><p><b>code</b>: Date treatment initiated for the condition that is the subject of this case report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#STD105)</span></p><p><b>subject</b>: <a href=\"Patient-STD-TC-Patient.html\">Patient/STD-TC-Patient: STD-TC Example Patient</a> \" WWWWW\"</p><p><b>value</b>: 2014-01-17</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.5.232",
+        "code": "STD105",
+        "display": "Date treatment initiated for the condition that is the subject of this case report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  },
+  "valueDateTime": "2014-01-17"
+}

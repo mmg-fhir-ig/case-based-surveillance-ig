@@ -1,0 +1,1593 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Bundle/GenV2-TC-Document> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Document"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle>
+     ]
+  ];
+  fhir:Bundle.identifier [
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+         fhir:Coding.code [ fhir:value "Local-Record-ID" ];
+         fhir:Coding.display [ fhir:value "Local Record ID" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Local Record ID" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "GenV2_TC01_Record" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2014-03-02T00:00:00Z"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Composition/GenV2-TC-Composition" ];
+     fhir:Bundle.entry.resource <Composition/GenV2-TC-Composition>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Bundle.entry.resource <Patient/GenV2-TC-Patient>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Condition/GenV2-TC-Condition" ];
+     fhir:Bundle.entry.resource <Condition/GenV2-TC-Condition>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Encounter/GenV2-TC-Hospitalization" ];
+     fhir:Bundle.entry.resource <Encounter/GenV2-TC-Hospitalization>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CauseOfDeath" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CauseOfDeath>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Practitioner/GenV2-TC-Person-Reporting" ];
+     fhir:Bundle.entry.resource <Practitioner/GenV2-TC-Person-Reporting>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/GenV2-TC-Reporting-Source" ];
+     fhir:Bundle.entry.resource <Organization/GenV2-TC-Reporting-Source>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP>
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-MMWR" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-MMWR>
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-Exposure" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-Exposure>
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member1" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member1>
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member2" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member2>
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member3" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member3>
+  ], [
+     fhir:index 13;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member4" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member4>
+  ], [
+     fhir:index 14;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member5" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member5>
+  ], [
+     fhir:index 15;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member6" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member6>
+  ], [
+     fhir:index 16;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member7" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member7>
+  ], [
+     fhir:index 17;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member8" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member8>
+  ], [
+     fhir:index 18;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member9" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member9>
+  ], [
+     fhir:index 19;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member10" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member10>
+  ], [
+     fhir:index 20;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member11" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member11>
+  ], [
+     fhir:index 21;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member12" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member12>
+  ], [
+     fhir:index 22;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member13" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member13>
+  ], [
+     fhir:index 23;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member14" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member14>
+  ], [
+     fhir:index 24;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/GenV2-TC-CNP-Member15" ];
+     fhir:Bundle.entry.resource <Observation/GenV2-TC-CNP-Member15>
+  ] .
+
+<Composition/GenV2-TC-Composition> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Composition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Composition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-composition.html\">Case Based Surveillance Composition Profile</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Public health Case report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#55751-2)</span></p><p><b>date</b>: 2014-03-02</p><p><b>author</b>: <a href=\"#Organization_GenV2-TC-Reporting-Source\">See above (Organization/GenV2-TC-Reporting-Source)</a></p><p><b>title</b>: Case Based Surveillance Composition</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:55751-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "55751-2" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ]
+  ];
+  fhir:Composition.date [ fhir:value "2014-03-02"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Organization/GenV2-TC-Reporting-Source>;
+     fhir:Reference.reference [ fhir:value "Organization/GenV2-TC-Reporting-Source" ]
+  ];
+  fhir:Composition.title [ fhir:value "Case Based Surveillance Composition"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Condition of Interest" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Condition/GenV2-TC-Condition>;
+       fhir:Reference.reference [ fhir:value "Condition/GenV2-TC-Condition" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Case Notification Panel" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP>;
+       fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP" ]
+     ];
+     fhir:Composition.section.section [
+       fhir:index 0;
+       fhir:Composition.section.entry [
+         fhir:index 0;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-MMWR>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-MMWR" ]
+       ], [
+         fhir:index 1;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-Exposure>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-Exposure" ]
+       ], [
+         fhir:index 2;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member1>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member1" ]
+       ], [
+         fhir:index 3;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member2>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member2" ]
+       ], [
+         fhir:index 4;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member3>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member3" ]
+       ], [
+         fhir:index 5;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member4>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member4" ]
+       ], [
+         fhir:index 6;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member5>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member5" ]
+       ], [
+         fhir:index 7;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member6>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member6" ]
+       ], [
+         fhir:index 8;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member7>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member7" ]
+       ], [
+         fhir:index 9;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member8>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member8" ]
+       ], [
+         fhir:index 10;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member9>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member9" ]
+       ], [
+         fhir:index 11;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member10>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member10" ]
+       ], [
+         fhir:index 12;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member11>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member11" ]
+       ], [
+         fhir:index 13;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member12>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member12" ]
+       ], [
+         fhir:index 14;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member13>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member13" ]
+       ], [
+         fhir:index 15;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member14>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member14" ]
+       ], [
+         fhir:index 16;
+         fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member15>;
+         fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member15" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "History of Encounters (Hospitalizations)" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Encounter/GenV2-TC-Hospitalization>;
+       fhir:Reference.reference [ fhir:value "Encounter/GenV2-TC-Hospitalization" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "Epi Observations" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CauseOfDeath>;
+       fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CauseOfDeath" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "Reporting Entities" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/Practitioner/GenV2-TC-Person-Reporting>;
+       fhir:Reference.reference [ fhir:value "Practitioner/GenV2-TC-Person-Reporting" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://cbsig.chai.gatech.edu/Organization/GenV2-TC-Reporting-Source>;
+       fhir:Reference.reference [ fhir:value "Organization/GenV2-TC-Reporting-Source" ]
+     ]
+  ] .
+
+<Patient/GenV2-TC-Patient> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Patient"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-patient.html\">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: White (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2106-3 = '2106-3', stated as 'White')</p><p><b>value</b>: Apache (Details: urn:oid:2.16.840.1.113883.6.238 code 1010-8 = 'Apache', stated as 'Apache')</p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2186-5 = '2186-5', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "ombCategory" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0005" ];
+         fhir:Coding.code [ fhir:value "2106-3" ];
+         fhir:Coding.display [ fhir:value "White" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "detailed" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.code [ fhir:value "1010-8" ];
+         fhir:Coding.display [ fhir:value "Apache" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "otherRace" ];
+       fhir:Extension.valueString [ fhir:value "Apache" ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "text" ];
+       fhir:Extension.valueString [ fhir:value "Mixed" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "ombCategory" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0005" ];
+         fhir:Coding.code [ fhir:value "2186-5" ];
+         fhir:Coding.display [ fhir:value "Not Hispanic or Latino" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "text" ];
+       fhir:Extension.valueString [ fhir:value "Not Hispanic or Latino" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex" ];
+     fhir:Extension.valueCode [ fhir:value "F" ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ];
+     fhir:Extension.valueAddress [
+       fhir:Address.country [ fhir:value "USA" ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+         fhir:Coding.code [ fhir:value "Local-Record-ID" ];
+         fhir:Coding.display [ fhir:value "Local Record ID" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Local Record ID" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "GenV2_TC01_Record" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+         fhir:Coding.code [ fhir:value "Local-Subject-ID" ];
+         fhir:Coding.display [ fhir:value "Local Subject ID" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Local Subject ID" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "GenV2_TC01_Subject" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77997-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77997-5" ];
+         fhir:Coding.display [ fhir:value "Legacy case identifier [CDC.PHIN]" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Legacy Case Identifier" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "48432148S012014" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77993-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77993-4" ];
+         fhir:Coding.display [ fhir:value "State notifiable condition case identifier" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "State Case Identifier" ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:temp:national-reporting-jurisdiction:48" ];
+     fhir:Identifier.value [ fhir:value "TX4321" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Zzzzz, Aaaaa" ];
+     fhir:HumanName.family [ fhir:value "Zzzzz" ];
+     fhir:HumanName.given [
+       fhir:value "Aaaaa";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1964-05-02"^^xsd:date];
+  fhir:Patient.deceasedDateTime [ fhir:value "2014-03-02"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.district [ fhir:value "Harris" ];
+     fhir:Address.state [ fhir:value "Texas" ];
+     fhir:Address.postalCode [ fhir:value "77018" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+         fhir:Coding.code [ fhir:value "Usual-Residence" ]
+       ]
+     ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ] .
+
+<Condition/GenV2-TC-Condition> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Condition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-condition.html\">Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-02-02</p><p><b>Case Based Surveillance Illness Duration</b>: 6 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></p><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>code</b>: Hemolytic Uremic Syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#11550)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:410605003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "410605003" ];
+         fhir:Coding.display [ fhir:value "Confirmed present" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date" ];
+     fhir:Extension.valueDateTime [ fhir:value "2014-02-02"^^xsd:date ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration" ];
+     fhir:Extension.valueQuantity [
+       fhir:Quantity.value [ fhir:value "6"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "d" ]
+     ]
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "inactive" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.277" ];
+       fhir:Coding.code [ fhir:value "11550" ];
+       fhir:Coding.display [ fhir:value "Hemolytic Uremic Syndrome" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Condition.onsetDateTime [ fhir:value "2014-02-24"^^xsd:date];
+  fhir:Condition.abatementDateTime [ fhir:value "2014-03-02"^^xsd:date] .
+
+<Encounter/GenV2-TC-Hospitalization> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Hospitalization"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Hospitalization\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-hospitalization.html\">Case Based Surveillance Hospitalization Encounter Profile</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>period</b>: 2014-02-26 --&gt; 2014-03-02</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href=\"#Condition_GenV2-TC-Condition\">See above (Condition/GenV2-TC-Condition: GenV2-TC Condition of Interest)</a></td></tr></table></div>"
+  ];
+  fhir:Encounter.status [ fhir:value "unknown"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "IMP" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2014-02-26"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2014-03-02"^^xsd:date ]
+  ];
+  fhir:Encounter.length [
+     fhir:Quantity.value [ fhir:value "4"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "days" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "d" ]
+  ];
+  fhir:Encounter.diagnosis [
+     fhir:index 0;
+     fhir:Encounter.diagnosis.condition [
+       fhir:link <http://cbsig.chai.gatech.edu/Condition/GenV2-TC-Condition>;
+       fhir:Reference.reference [ fhir:value "Condition/GenV2-TC-Condition" ];
+       fhir:Reference.display [ fhir:value "GenV2-TC Condition of Interest" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CauseOfDeath> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CauseOfDeath"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CauseOfDeath\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cause-of-death.html\">Case Based Surveillance Cause of Death Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cause of death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#79378-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>focus</b>: <a href=\"#Condition_GenV2-TC-Condition\">See above (Condition/GenV2-TC-Condition: GenV2-TC Example Condition of Interest)</a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:79378-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "79378-6" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Condition/GenV2-TC-Condition>;
+     fhir:Reference.reference [ fhir:value "Condition/GenV2-TC-Condition" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Condition of Interest" ]
+  ] .
+
+<Practitioner/GenV2-TC-Person-Reporting> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Person-Reporting"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Person-Reporting\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-person-reporting-to-cdc.html\">Case Based Surveillance Person Reporting To CDC Profile</a></p></div><p><b>name</b>: Smith, John</p><p><b>telecom</b>: ph: 444-321-1234, <a href=\"mailto:jsmith@txdoh.org\">jsmith@txdoh.org</a></p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Smith, John" ];
+     fhir:HumanName.family [ fhir:value "Smith" ];
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "444-321-1234" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "jsmith@txdoh.org" ]
+  ] .
+
+<Organization/GenV2-TC-Reporting-Source> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Reporting-Source"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Reporting-Source\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-reporting-source-organization.html\">Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0406.html\">organizationUnitType</a>#1)</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 77018 </p></div>"
+  ];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0406" ];
+       fhir:Coding.code [ fhir:value "1" ];
+       fhir:Coding.display [ fhir:value "Hospital" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "Reporting Source"];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.postalCode [ fhir:value "77018" ]
+  ] .
+
+<Observation/GenV2-TC-CNP> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-case-notification-panel.html\">Case Based Surveillance Case Notification Panel Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation_GenV2-TC-MMWR\">See above (Observation/GenV2-TC-MMWR)</a></li><li><a href=\"#Observation_GenV2-TC-Exposure\">See above (Observation/GenV2-TC-Exposure)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member1\">See above (Observation/GenV2-TC-CNP-Member1)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member2\">See above (Observation/GenV2-TC-CNP-Member2)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member3\">See above (Observation/GenV2-TC-CNP-Member3)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member4\">See above (Observation/GenV2-TC-CNP-Member4)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member5\">See above (Observation/GenV2-TC-CNP-Member5)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member6\">See above (Observation/GenV2-TC-CNP-Member6)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member7\">See above (Observation/GenV2-TC-CNP-Member7)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member8\">See above (Observation/GenV2-TC-CNP-Member8)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member9\">See above (Observation/GenV2-TC-CNP-Member9)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member10\">See above (Observation/GenV2-TC-CNP-Member10)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member11\">See above (Observation/GenV2-TC-CNP-Member11)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member12\">See above (Observation/GenV2-TC-CNP-Member12)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member13\">See above (Observation/GenV2-TC-CNP-Member13)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member14\">See above (Observation/GenV2-TC-CNP-Member14)</a></li><li><a href=\"#Observation_GenV2-TC-CNP-Member15\">See above (Observation/GenV2-TC-CNP-Member15)</a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-MMWR>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-MMWR" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-Exposure>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-Exposure" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member1>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member1" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member2>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member2" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member3>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member3" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member4>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member4" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member5>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member5" ]
+  ], [
+     fhir:index 7;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member6>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member6" ]
+  ], [
+     fhir:index 8;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member7>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member7" ]
+  ], [
+     fhir:index 9;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member8>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member8" ]
+  ], [
+     fhir:index 10;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member9>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member9" ]
+  ], [
+     fhir:index 11;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member10>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member10" ]
+  ], [
+     fhir:index 12;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member11>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member11" ]
+  ], [
+     fhir:index 13;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member12>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member12" ]
+  ], [
+     fhir:index 14;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member13>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member13" ]
+  ], [
+     fhir:index 15;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member14>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member14" ]
+  ], [
+     fhir:index 16;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/GenV2-TC-CNP-Member15>;
+     fhir:Reference.reference [ fhir:value "Observation/GenV2-TC-CNP-Member15" ]
+  ] .
+
+<Observation/GenV2-TC-MMWR> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-MMWR"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-MMWR\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-mmwr.html\">Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: MMWR Week/Year <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system.</a>#MMWR)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: MMWR Week [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77991-8)</span></p><p><b>value</b>: 9</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MMWR Year [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77992-6)</span></p><p><b>value</b>: 2014</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+       fhir:Coding.code [ fhir:value "MMWR" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77991-8;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77991-8" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "9"^^xsd:integer ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77992-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77992-6" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "2014"^^xsd:integer ]
+  ] .
+
+<Observation/GenV2-TC-Exposure> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-Exposure"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Exposure\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-exposure-observation.html\">Case Based Surveillance Exposure Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Location of Exposure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system.</a>#Location-of-Exposure)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>focus</b>: <a href=\"#Condition_GenV2-TC-Condition\">See above (Condition/GenV2-TC-Condition: GenV2-TC Example Condition of Interest)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Country of exposure to illness [Location] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77984-3)</span></p><p><b>value</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#USA)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: State or province of exposure to illness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77985-0)</span></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: City of exposure to illness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77986-8)</span></p><p><b>value</b>: Houston</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: County of exposure to illness [Location] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77987-6)</span></p><p><b>value</b>: Harris</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+       fhir:Coding.code [ fhir:value "Location-of-Exposure" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Condition/GenV2-TC-Condition>;
+     fhir:Reference.reference [ fhir:value "Condition/GenV2-TC-Condition" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Condition of Interest" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77984-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77984-3" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+         fhir:Coding.code [ fhir:value "USA" ];
+         fhir:Coding.display [ fhir:value "United States of America" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77985-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77985-0" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.92" ];
+         fhir:Coding.code [ fhir:value "48" ];
+         fhir:Coding.display [ fhir:value "Texas" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77986-8;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77986-8" ]
+       ]
+     ];
+     fhir:Observation.component.valueString [ fhir:value "Houston" ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77987-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77987-6" ]
+       ]
+     ];
+     fhir:Observation.component.valueString [ fhir:value "Harris" ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member1> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Immediate national notifiable condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77965-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html\">PH_RaceAndEthnicity_CDC</a>#N)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77965-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77965-2" ];
+       fhir:Coding.display [ fhir:value "Immediate national notifiable condition" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0005" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "No" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member2> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77966-0;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77966-0" ];
+       fhir:Coding.display [ fhir:value "Reporting state" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.92" ];
+       fhir:Coding.code [ fhir:value "48" ];
+       fhir:Coding.display [ fhir:value "Texas" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member3> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member3"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member3\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting county <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77967-8)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Harris <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48201)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77967-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77967-8" ];
+       fhir:Coding.display [ fhir:value "Reporting county" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.93" ];
+       fhir:Coding.code [ fhir:value "48201" ];
+       fhir:Coding.display [ fhir:value "Harris" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member4> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member4"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: National reporting jurisdiction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77968-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77968-6" ];
+       fhir:Coding.display [ fhir:value "National reporting jurisdiction" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.92" ];
+       fhir:Coding.code [ fhir:value "48" ];
+       fhir:Coding.display [ fhir:value "Texas" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member5> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member5"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member5\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Jurisdiction code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77969-4)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: S01</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77969-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77969-4" ];
+       fhir:Coding.display [ fhir:value "Jurisdiction code" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueString [ fhir:value "S01"] .
+
+<Observation/GenV2-TC-CNP-Member6> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member6"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member6\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Date of initial report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77970-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77970-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77970-2" ];
+       fhir:Coding.display [ fhir:value "Date of initial report" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
+
+<Observation/GenV2-TC-CNP-Member7> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member7"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest date reported to county <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77972-8)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77972-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77972-8" ];
+       fhir:Coding.display [ fhir:value "Earliest date reported to county" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
+
+<Observation/GenV2-TC-CNP-Member8> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member8"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest date reported to state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77973-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77973-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77973-6" ];
+       fhir:Coding.display [ fhir:value "Earliest date reported to state" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
+
+<Observation/GenV2-TC-CNP-Member9> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member9"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member9\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case investigation start date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77979-3)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77979-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77979-3" ];
+       fhir:Coding.display [ fhir:value "Case investigation start date" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
+
+<Observation/GenV2-TC-CNP-Member10> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member10"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member10\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case Outbreak Name and Indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system.</a>#case-outbreak)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Case is associated with a known outbreak <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77980-1)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html\">PH_RaceAndEthnicity_CDC</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Case outbreak name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77981-9)</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+       fhir:Coding.code [ fhir:value "case-outbreak" ];
+       fhir:Coding.display [ fhir:value "Case Outbreak Name and Indicator" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77980-1;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77980-1" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0005" ];
+         fhir:Coding.code [ fhir:value "Y" ];
+         fhir:Coding.display [ fhir:value "Yes" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:77981-9;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "77981-9" ]
+       ]
+     ];
+     fhir:Observation.component.valueString [ fhir:value "HANSENOUTB1" ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member11> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member11"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Binational reporting criteria [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77988-4)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Exposure to suspected product from Canada or Mexico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1140)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77988-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77988-4" ];
+       fhir:Coding.display [ fhir:value "Binational reporting criteria [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.274" ];
+       fhir:Coding.code [ fhir:value "PHC1140" ];
+       fhir:Coding.display [ fhir:value "Exposure to suspected product from Canada or Mexico" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member12> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member12"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member12\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Disease transmission mode <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77989-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Food-borne transmission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#416086007)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77989-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77989-2" ];
+       fhir:Coding.display [ fhir:value "Disease transmission mode" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:416086007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "416086007" ];
+       fhir:Coding.display [ fhir:value "Food-borne transmission" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member13> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member13"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member13\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Date of first report to public health department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77995-9)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77995-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77995-9" ];
+       fhir:Coding.display [ fhir:value "Date of first report to public health department" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueDateTime [ fhir:value "2014-02-25"^^xsd:date] .
+
+<Observation/GenV2-TC-CNP-Member14> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member14"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member14\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Pregnancy status at time of illness or condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77996-7)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77996-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77996-7" ];
+       fhir:Coding.display [ fhir:value "Pregnancy status at time of illness or condition" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0532" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "No" ]
+     ]
+  ] .
+
+<Observation/GenV2-TC-CNP-Member15> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "GenV2-TC-CNP-Member15"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member15\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Age at time of case investigation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77998-3)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 49</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78000-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78000-7" ];
+       fhir:Coding.display [ fhir:value "Case notification panel [CDC.PHIN]" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77998-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77998-3" ];
+       fhir:Coding.display [ fhir:value "Age at time of case investigation" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/GenV2-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/GenV2-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "GenV2-TC Example Patient" ]
+  ];
+  fhir:Observation.valueInteger [ fhir:value "49"^^xsd:integer] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Bundle/GenV2-TC-Document.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

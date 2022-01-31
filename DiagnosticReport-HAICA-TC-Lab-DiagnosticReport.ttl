@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/DiagnosticReport/HAICA-TC-Lab-DiagnosticReport> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HAICA-TC-Lab-DiagnosticReport"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 85069-3}\">Lab test method [Type]</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Yyyyy, Bbbbb</b> ?? 1940-01-01 ( Local Record ID: C_auris_02)</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-HAICA-TC-Lab-Observation.html\"><span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 LAB723}\">DNA Sequencing</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></td></tr></table></div>"
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "LAB" ]
+     ]
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:85069-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "85069-3" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/HAICA-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/HAICA-TC-Patient" ]
+  ];
+  fhir:DiagnosticReport.specimen [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Specimen/HAICA-TC-Specimen>;
+     fhir:Reference.reference [ fhir:value "Specimen/HAICA-TC-Specimen" ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Observation/HAICA-TC-Lab-Observation>;
+     fhir:Reference.reference [ fhir:value "Observation/HAICA-TC-Lab-Observation" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/DiagnosticReport/HAICA-TC-Lab-DiagnosticReport.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

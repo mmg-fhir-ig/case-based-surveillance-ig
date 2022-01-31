@@ -1,0 +1,581 @@
+{
+  "package": "gtri.fhir.cbs",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+      "title": "Case Based Surveillance Sex Assigned at Birth Extension",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+      "title": "Case Based Surveillance Case Class Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+      "title": "Case Based Surveillance CDC Address Use Extension",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
+      "title": "Case Based Surveillance Diagnosis Date Extension",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
+      "title": "Case Based Surveillance Ethnicity Extension",
+      "types": [
+        "Coding",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
+      "title": "Case Based Surveillance Illness Duration",
+      "types": [
+        "Quantity",
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
+      "title": "Case Based Surveillance Program Specific Time Window",
+      "types": [
+        "Quantity",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
+      "title": "Case Based Surveillance Race Extension",
+      "types": [
+        "Coding",
+        "Coding",
+        "Coding",
+        "Coding",
+        "string",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations",
+      "title": "Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case",
+      "title": "Case Based Surveillance Related Case Extension",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role",
+      "title": "Case Based Surveillance Specimen Role Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel",
+      "title": "US Case Based Surveillance Period and Mode of Travel Extension",
+      "types": [
+        "dateTime",
+        "Period",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Address",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history",
+        "title": "US Case Based Surveillance Travel History Profile"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
+        "title": "Case Based Surveillance Composition Profile"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition",
+        "title": "US Case Based Surveillance Condition of Interest Profile"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle",
+        "title": "Case Based Surveillance Document Profile"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization",
+        "title": "US Case Based Surveillance Hospitalization Encounter Profile"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport",
+        "title": "Case Based Surveillance Lab Test Report"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient",
+        "title": "US Case Based Surveillance Patient Profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization",
+        "title": "Case Based Surveillance Reporting Source Organization Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc",
+        "title": "Case Based Surveillance Person Reporting To CDC Profile"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire",
+        "title": "Case Based Surveillance Questionnaire Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
+        "title": "Case Based Surveillance Specimen Profile"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record",
+        "title": "Case Based Surveillance Vaccination Record Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use": [
+      "Bundle.entry.resource.address",
+      "Patient.address"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window": [
+      "Observation"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations": [
+      "Observation"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case": [
+      "Composition"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role": [
+      "Specimen"
+    ],
+    "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Encounter.participant",
+      "Observation.effectivePeriod",
+      "Patient.address",
+      "Patient.birthDate",
+      "Patient.communication.language",
+      "Patient.contact.address",
+      "Patient.contact.name",
+      "Patient.contact.telecom",
+      "Patient.gender",
+      "Patient.identifier",
+      "Patient.name",
+      "Patient.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-address-extension": [
+      "Observation.component"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-tribal-affiliation-extension": [
+      "Patient"
+    ]
+  }
+}
