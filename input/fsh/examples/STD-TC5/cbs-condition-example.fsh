@@ -17,4 +17,4 @@ Description: "Condition of interest resource for the STD Test Case 5 Patient"
 * evidence[0].code = $sct#69588003 "Erythema Migrans"
 * evidence[+].code = $sct#233917008 "Atrioventricular block"
 
-* category = #problem-list-item
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item

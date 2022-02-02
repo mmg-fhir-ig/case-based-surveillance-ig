@@ -10,6 +10,7 @@
   "version": "0.1",
   "status": "draft",
   "publisher": "GTRI",
+  "name": "STDQuestionnaire",
   "description": "Demo questionnaire with a subset of STD questionnaire items.",
   "item": [
     {

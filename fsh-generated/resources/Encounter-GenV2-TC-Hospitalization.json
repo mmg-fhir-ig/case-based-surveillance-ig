@@ -22,6 +22,19 @@
       ]
     }
   ],
+  "location": [
+    {
+      "location": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ],
+        "display": "Masked Location"
+      }
+    }
+  ],
   "subject": {
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
@@ -41,12 +54,5 @@
       "reference": "Condition/GenV2-TC-Condition"
     }
   ],
-  "status": "unknown",
-  "location": [
-    {
-      "location": {
-        "reference": "FIX LATER"
-      }
-    }
-  ]
+  "status": "unknown"
 }

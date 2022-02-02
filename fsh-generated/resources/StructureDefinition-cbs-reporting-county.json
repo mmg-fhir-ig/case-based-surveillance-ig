@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-cnp-member",
+  "id": "cbs-reporting-county",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,15 +11,15 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceCaseNotificationPanelMember",
-  "title": "Case Based Surveillance Case Notification Panel Member",
+  "name": "CaseBasedSurveillanceReportingCounty",
+  "title": "Case Based Surveillance Reporting County",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
   "publisher": "Georgia Tech Research Institute",
-  "description": "Defines constraints on the CBS Case Notification Panel Profile for defining the member resources of the case notification panel in public health surveillance programs.",
+  "description": "Defines constraints on CBS Case Notification Panel to represent the reporting county of the case notification panel in public health surveillance programs.",
   "jurisdiction": [
     {
       "coding": [
@@ -72,8 +72,26 @@
   "differential": {
     "element": [
       {
-        "id": "Observation",
-        "path": "Observation"
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77967-8",
+              "system": "http://loinc.org",
+              "display": "Reporting County"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       }
     ]
   }

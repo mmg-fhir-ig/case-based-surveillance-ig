@@ -2,17 +2,32 @@ Instance: GenV2-TC-Patient
 InstanceOf: us-cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
-// * extension[race].extension[ombCategory].valueCoding = $v2-0005-cs#2106-3 "White"
-// * extension[race].extension[detailed].valueCoding = $PH_RaceAndEthnicity_CDC#1010-8 "Apache"
-// * extension[race].extension[otherRace].valueString = "Apache"
-// * extension[race].extension[text].valueString = "Mixed"
 
-// * extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2186-5 "Not Hispanic or Latino"
-// * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
-
-// * extension[birthsex].valueCode = #F "Female"
-
-// * extension[birthPlace].valueAddress.country = "USA"
+* extension[0]
+  * url = $us-core-race
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+  * extension[+]
+    * url = "detailed"
+    * valueCoding = $PH_RaceAndEthnicity_CDC#1010-8 "Apache"
+  * extension[+]
+    * url = "text"
+    * valueString = "Mixed"
+* extension[1]
+  * url = $us-core-ethnicity
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+  * extension[+]
+    * url = "text"
+    * valueString = "Not Hispanic or Latino"
+* extension[2]
+  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+  * valueCode = #F "Female"
+* extension[3]
+  * url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+  * valueAddress.country = "USA"
 
 * identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"
 * identifier[0].type.text = "Local Record ID"
@@ -54,4 +69,4 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 
 * telecom
   * system = #phone
-  * value = "111-111-1111" // TODO: REPLACE WITH DATA ABSENT REASON EXTENSION
+  * value = "111-111-1111" //TODO: REPLACE WITH DATA ABSENT REASON EXTENSION

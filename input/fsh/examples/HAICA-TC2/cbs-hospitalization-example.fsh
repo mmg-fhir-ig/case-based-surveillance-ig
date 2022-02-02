@@ -8,4 +8,4 @@ Description: "CBS Hospitalization resource for the HAI-CA Test Case 2 Patient"
 
 * reasonReference.reference = "Condition/HAICA-TC-Condition"
 * status = #unknown
-* location[0].location.reference = "FIX LATER" // TODO: Fix example location error.
+* location.location.display = "Masked Location"

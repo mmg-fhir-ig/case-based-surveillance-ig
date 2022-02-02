@@ -8,7 +8,7 @@ Description: "Defines constraints on the Observation resource to capture subject
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* extension contains cbs-program-specific-time-window named programSpecificTimeWindow 0..1
+* extension contains us-cbs-program-specific-time-window named programSpecificTimeWindow 0..1
 * status MS
 * category 1..* MS
 * category from CBSSocialDeterminantsOfHealthCategoryVS (extensible)

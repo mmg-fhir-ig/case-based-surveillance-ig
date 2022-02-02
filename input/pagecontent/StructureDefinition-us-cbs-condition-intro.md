@@ -18,7 +18,7 @@ The following are example usage scenarios for the US CBS Patient profile:
 
 ### Mandatory and Must Support Data Elements
 
-The following data-elements must always be present ([Mandatory] definition]) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the formal summary, definitions, and  terminology requirements.  
+The following data-elements must always be present ([Mandatory] definition]) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the formal summary, definitions, and  terminology requirements.
 
 **Each Condition must have:**
 
@@ -54,7 +54,9 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - Verification Status may be used to document status in sending systems (e.g. jurisdictions) or in regards to workflow considerations such as through the entered-in-error code, but should not be used to capture Case Class Status as per the context of public health case reporting to case based surveillance programs.
 
 ### Examples
-**EXAMPLES PENDING UPDATE**
-- [Patient-example](Patient-example.html)
+- [GenV2 US CBS Condition](Condition-GenV2-TC-Condition.html)
+- [HAI-CA US CBS Condition](Condition-HAICA-TC-Condition.html)
+- [Lyme US CBS Condition](Condition-Lyme-TC-Condition.html)
+- [STD US CBS Condition](Condition-STD-TC-Condition.html)
 
 {% include link-list.md %}

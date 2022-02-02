@@ -3,7 +3,7 @@
   "id": "Lyme-TC-CNP-Member9",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"
     ]
   },
   "status": "final",
@@ -23,7 +23,7 @@
       {
         "code": "77979-3",
         "system": "http://loinc.org",
-        "display": "Case investigation start date"
+        "display": "Case Investigation Start Date"
       }
     ]
   },

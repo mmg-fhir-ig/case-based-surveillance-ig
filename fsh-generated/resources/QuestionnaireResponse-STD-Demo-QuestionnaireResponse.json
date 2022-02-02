@@ -167,7 +167,7 @@
         {
           "valueCoding": {
             "code": "N",
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
             "display": "No"
           }
         }

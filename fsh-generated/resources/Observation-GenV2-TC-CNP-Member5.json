@@ -3,7 +3,7 @@
   "id": "GenV2-TC-CNP-Member5",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"
     ]
   },
   "status": "final",
@@ -23,7 +23,7 @@
       {
         "code": "77969-4",
         "system": "http://loinc.org",
-        "display": "Jurisdiction code"
+        "display": "Jurisdiction Code"
       }
     ]
   },

@@ -7,6 +7,7 @@ Description: "Demo Questionnaire"
 * status = #draft
 * publisher = "GTRI"
 * description = "Demo questionnaire with a subset of foodnet questionnaire items."
+* name = "FoodNetDemoQuestionnaire"
 * item[0]
   * linkId = "FDD_Q_969"
   * text = "Eat Beef, Within 7 Days Before Illness"

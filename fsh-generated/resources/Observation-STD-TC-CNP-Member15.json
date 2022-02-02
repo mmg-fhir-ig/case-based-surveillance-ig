@@ -3,7 +3,7 @@
   "id": "STD-TC-CNP-Member15",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
     ]
   },
   "status": "final",
@@ -31,5 +31,10 @@
     "reference": "Patient/STD-TC-Patient",
     "display": "STD-TC Example Patient"
   },
-  "valueInteger": 19
+  "valueQuantity": {
+    "value": 19,
+    "unit": "year",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  }
 }

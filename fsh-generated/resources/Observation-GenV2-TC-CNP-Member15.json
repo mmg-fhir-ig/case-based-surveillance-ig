@@ -3,7 +3,7 @@
   "id": "GenV2-TC-CNP-Member15",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
     ]
   },
   "status": "final",
@@ -31,5 +31,10 @@
     "reference": "Patient/GenV2-TC-Patient",
     "display": "GenV2-TC Example Patient"
   },
-  "valueInteger": 49
+  "valueQuantity": {
+    "value": 49,
+    "unit": "year",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  }
 }

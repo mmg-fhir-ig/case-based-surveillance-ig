@@ -3,17 +3,31 @@ InstanceOf: us-cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the STD Test Case 5 Patient"
 
-// * extension[race].extension[ombCategory].valueCoding = $v2-0005-cs#2054-5 "Black or African American"
-
-// * extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2186-5 "Not Hispanic or Latino"
-// * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
-
-// * extension[birthsex].valueCode = #F "Female"
-
-// * extension[birthPlace].valueAddress.country = "GRC"
-
-// * extension[4].url = Canonical(http://hl7.org/fhir/StructureDefinition/patient-genderIdentity)
-// * extension[4].valueCodeableConcept = $PH-PHINVS-CDC#PHC1490 "Cisgender/Not transgender (finding)"
+* extension[0]
+  * url = $us-core-race
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5 "Black or African American"
+  * extension[+]
+    * url = "text"
+    * valueString = "Black or African American"
+* extension[+]
+  * url = $us-core-ethnicity
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+  * extension[+]
+    * url = "text"
+    * valueString = "Not Hispanic or Latino"
+* extension[+]
+  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+  * valueCode = #F "Female"
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+  * valueAddress.country = "GRC"
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity"
+  * valueCodeableConcept = $PH-PHINVS-CDC#PHC1490 "Cisgender/Not transgender (finding)"
 
 * identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"
 * identifier[0].type.text = "Local Record ID"

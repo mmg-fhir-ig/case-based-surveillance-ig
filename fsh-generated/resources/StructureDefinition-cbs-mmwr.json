@@ -16,21 +16,7 @@
   "name": "CaseBasedSurveillanceMMWR",
   "title": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
   "status": "active",
-  "experimental": true,
-  "date": "2021-01-01",
-  "publisher": "Georgia Tech Research Institute",
   "description": "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "code": "US",
-          "system": "urn:iso:std:iso:3166",
-          "display": "United States of America"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

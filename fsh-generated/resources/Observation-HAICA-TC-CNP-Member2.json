@@ -3,7 +3,7 @@
   "id": "HAICA-TC-CNP-Member2",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
     ]
   },
   "status": "final",
@@ -23,7 +23,7 @@
       {
         "code": "77967-8",
         "system": "http://loinc.org",
-        "display": "Reporting county"
+        "display": "Reporting County"
       }
     ]
   },

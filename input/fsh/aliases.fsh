@@ -26,6 +26,7 @@ Alias: $FHIR-Observation-Category = http://terminology.hl7.org/CodeSystem/observ
 Alias: $FHIR-Composition-Status = http://hl7.org/fhir/composition-status
 Alias: $FHIR-administrativeSex = http://terminology.hl7.org/CodeSystem/v2-0001
 Alias: $v2-0005-cs = http://terminology.hl7.org/CodeSystem/v2-0005
+Alias: $v2-0136-cs = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $v2-0203-cs = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0406-cs = http://terminology.hl7.org/CodeSystem/v2-0406
 Alias: $v2-0532-cs = http://terminology.hl7.org/CodeSystem/v2-0532

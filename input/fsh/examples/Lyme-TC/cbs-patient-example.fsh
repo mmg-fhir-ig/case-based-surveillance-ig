@@ -3,10 +3,17 @@ InstanceOf: us-cbs-patient
 Usage: #example
 Description: "CBS Patient resource for the Lyme Test Case Patient"
 
-* extension[ethnicity].extension[ombCategory].valueCoding = $v2-0005-cs#2135-2 "Hispanic or Latino"
-* extension[ethnicity].extension[text].valueString = "Hispanic or Latino"
-
-* extension[birthPlace].valueAddress.country = "USA"
+* extension[0]
+  * url = $us-core-ethnicity
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
+  * extension[+]
+    * url = "text"
+    * valueString = "Hispanic or Latino"
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+  * valueAddress.country = "USA"
 
 * identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"
 * identifier[0].type.text = "Local Record ID"

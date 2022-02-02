@@ -3,7 +3,7 @@
   "id": "Lyme-TC-CNP-Member1",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"
     ]
   },
   "status": "final",
@@ -23,7 +23,7 @@
       {
         "code": "77965-2",
         "system": "http://loinc.org",
-        "display": "Immediate national notifiable condition"
+        "display": "Immediate National Notifiable Condition"
       }
     ]
   },
