@@ -10,7 +10,7 @@ The US CBS Immunization profile represents immunization/vaccination records repo
 
 The following are example usage scenarios for the US CBS Patient profile:
 
--   Capture a vaccination record recommended per the ACIP regarding the condition of interest.
+-   Capture a clinical vaccination record relevant to the condition of interest.
 
 ### Mandatory and Must Support Data Elements
 
@@ -18,25 +18,28 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 
 **Each Immunization must have:**
 
-1. a condition code from the NNDSS & Other Conditions of Public Health Importance valueset unless such a code does not exist
-1. a cbs case class status extension indicating the current status as appropriate to that point in the reporting process
-1. a category specified according to the [US Core Condition] Condition.category guidelines
-1. a subject reference
+1. a status
+1. a vaccine code
+1. a subject (patient) reference
+1. an occurence date (see profile specific guidance)
+1. a primary source (see profile specific guidance)
 
 **Each Immunization must support:**
 
-1. an asserted date extension (diagnosis date)
-1. an illness duration
-1. a clinical status
-1. a verification status
-1. affected body site(s)
-1. an onset datetime
-1. an abatement datetime
-1. evidence capturing signs and symptoms related to the condition of interest
+1. an identifier
+1. a status reason
+1. a report origin (see profile specific guidance)
+1. a manufacturer
+1. a lot number
+1. an expiration date
+1. a note
+1. the protocol applied
 
 **Profile specific implementation guidance:**
 
-- This 
+- While not mandatory, the report origin should be included whenever possible.
+- If the occurence (administration) date is not known, occurenceString may be populated with an appropriate string documenting this or the [Data Absent Reason] extension may be used.
+- If primary source is not known, the [Data Absent Reason] extension should be used.
 
 ### Examples
 **EXAMPLES PENDING UPDATE**

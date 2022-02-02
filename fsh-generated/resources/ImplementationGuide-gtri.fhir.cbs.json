@@ -181,14 +181,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-vaccination-indication"
-        },
-        "name": "Case Based Surveillance Vaccination Indication Profile",
-        "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/us-cbs-condition"
         },
         "name": "US Case Based Surveillance Condition of Interest Profile",
@@ -265,14 +257,6 @@
         },
         "name": "Case Based Surveillance Program Specific Time Window",
         "description": "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations"
-        },
-        "name": "Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations",
-        "description": "Reason the subject was not vaccinated per ACIP recommendations.",
         "exampleBoolean": false
       },
       {
