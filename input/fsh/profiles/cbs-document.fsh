@@ -13,3 +13,8 @@ Description: "Defines a document type bundle that contains all related profiles.
 * type = $FHIR-Bundle-Type#document
 * identifier 0..1 MS
 * entry 1..* MS
+
+Invariant: cbs-bdl-1
+Description: "If Bundle is of type document, the first resource in Bundle.entry SHALL be of type Composition conforming to the CBS Composition Profile"
+Expression: "entry.first().resource.meta.profile.contains('http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition')"
+Severity: #error

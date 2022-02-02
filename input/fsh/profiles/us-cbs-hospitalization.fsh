@@ -18,7 +18,5 @@ Description: "Defines constraints on the ECR US Public Health Encounter to repre
 * reasonReference 1..1 MS
 * reasonReference only Reference(us-cbs-condition)
 
-* location.location.extension contains $data-absent-reason named dataAbsentReason 0..1
-* location.location.extension[dataAbsentReason].value[x] 1.. MS
-* location.location.extension[dataAbsentReason].value[x] only code
-* location.location.extension[dataAbsentReason].value[x] = #masked (exactly)
+* location.location.extension contains $data-absent-reason named dataAbsentReason 1..1
+* location.location.extension[dataAbsentReason].valueCode = #masked

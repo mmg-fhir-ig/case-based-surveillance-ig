@@ -16,3 +16,16 @@ Description: "Defines constraints to the Organization resource in order to meet 
 * name 1..1 MS
 * name  = "Reporting Source"
 * address.postalCode 0..1 MS
+* contact
+  * name 0..1 MS
+  * telecom ^slicing.discriminator.type = #value
+  * telecom ^slicing.discriminator.path = "system"
+  * telecom ^slicing.ordered = false
+  * telecom ^slicing.rules = #open
+  * telecom contains
+    phone 0..1 MS and
+    email 0..1 MS
+  * telecom[phone].system = #phone
+  * telecom[phone].value MS
+  * telecom[email].system = #email
+  * telecom[email].value MS

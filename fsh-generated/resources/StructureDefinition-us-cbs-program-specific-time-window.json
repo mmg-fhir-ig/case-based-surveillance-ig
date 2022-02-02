@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-program-specific-time-window",
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
+  "id": "us-cbs-program-specific-time-window",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-program-specific-time-window",
   "version": "0.1.0",
   "name": "CaseBasedSurveillanceProgramSpecificTimeWindow",
-  "title": "Case Based Surveillance Program Specific Time Window",
+  "title": "US Case Based Surveillance Program Specific Time Window",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
@@ -45,7 +45,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Case Based Surveillance Program Specific Time Window",
+        "short": "US Case Based Surveillance Program Specific Time Window",
         "definition": "Program specific time window."
       },
       {
@@ -168,7 +168,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
+        "fixedUri": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-program-specific-time-window",
         "mustSupport": true
       },
       {

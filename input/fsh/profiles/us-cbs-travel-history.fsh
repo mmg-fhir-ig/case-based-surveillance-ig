@@ -11,6 +11,6 @@ Description: "Defines constraints on the ECR US PH Travel History profile to cap
 * effective[x] ^short = "Date or period of time spent in the location, from date of arrival to date of departure from location"
 * extension contains
     us-cbs-period-and-mode-of-travel named periodAndModeOfTravel 0..* and
-    cbs-program-specific-time-window named programSpecificTimeWindow 0..1
+    us-cbs-program-specific-time-window named programSpecificTimeWindow 0..1
 * subject 1..1 MS
 * subject only Reference(us-cbs-patient)

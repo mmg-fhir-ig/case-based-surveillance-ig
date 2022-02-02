@@ -1,6 +1,6 @@
 Extension: CaseBasedSurveillanceProgramSpecificTimeWindow
-Id: cbs-program-specific-time-window
-Title: "Case Based Surveillance Program Specific Time Window"
+Id: us-cbs-program-specific-time-window
+Title: "US Case Based Surveillance Program Specific Time Window"
 Description: "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
@@ -15,7 +15,7 @@ Description: "Time window of interest in relationship to a specified event as de
 * extension contains
     timeWindow 1..1 MS and
     relativeTo 1..1 MS and
-     relativeReference 0..1 MS
+    relativeReference 0..1 MS
 
 * url 1..1 MS
 

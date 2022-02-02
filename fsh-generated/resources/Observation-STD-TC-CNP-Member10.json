@@ -3,7 +3,7 @@
   "id": "STD-TC-CNP-Member10",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"
     ]
   },
   "status": "final",
@@ -27,17 +27,14 @@
       }
     ]
   },
-  "subject": {
-    "reference": "Patient/STD-TC-Patient",
-    "display": "STD-TC Example Patient"
-  },
   "component": [
     {
       "code": {
         "coding": [
           {
             "code": "77980-1",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Case is associated with a known outbreak"
           }
         ]
       },
@@ -51,5 +48,9 @@
         ]
       }
     }
-  ]
+  ],
+  "subject": {
+    "reference": "Patient/STD-TC-Patient",
+    "display": "STD-TC Example Patient"
+  }
 }

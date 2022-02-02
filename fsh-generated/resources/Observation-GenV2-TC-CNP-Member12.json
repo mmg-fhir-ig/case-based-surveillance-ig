@@ -3,7 +3,7 @@
   "id": "GenV2-TC-CNP-Member12",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
     ]
   },
   "status": "final",

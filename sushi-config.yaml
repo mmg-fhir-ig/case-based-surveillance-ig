@@ -25,6 +25,68 @@ dependencies:
     version: 2.0.0
   hl7.fhir.us.odh:
     version: 1.1.0
+groups:
+  CBSProfiles:
+    name: CBS Profiles
+    description: Case Based Surveillance Profiles
+    resources:
+    - StructureDefinition/cbs-cause-of-death
+    - StructureDefinition/cbs-composition
+    - StructureDefinition/cbs-document-bundle
+    - StructureDefinition/cbs-lab-diagnosticreport
+    - StructureDefinition/cbs-lab-observation
+    - StructureDefinition/cbs-performing-lab
+    - StructureDefinition/cbs-questionnaire
+    - StructureDefinition/cbs-reporting-source-organization
+    - StructureDefinition/cbs-social-determinants-of-health
+    - StructureDefinition/cbs-specimen
+    - StructureDefinition/cbs-vaccination-ACIP-Recommendation
+    - StructureDefinition/cbs-vaccination-record
+  CBSCNPProfiles:
+    name: CBS CNP Profiles
+    description: Case Based Surveillance Case Notification Panel Profiles
+    resources:
+    - StructureDefinition/cbs-case-notification-panel
+    - StructureDefinition/cbs-exposure-observation
+    - StructureDefinition/cbs-mmwr
+    - StructureDefinition/cbs-age-at-investigation
+    - StructureDefinition/cbs-binational-reporting-criteria
+    - StructureDefinition/cbs-investigation-start-date
+    - StructureDefinition/cbs-case-outbreak
+    - StructureDefinition/cbs-date-initial-report
+    - StructureDefinition/cbs-date-reported-to-phd
+    - StructureDefinition/cbs-earliest-date-reported-to-county
+    - StructureDefinition/cbs-earliest-date-reported-to-state
+    - StructureDefinition/cbs-immediate-nnc
+    - StructureDefinition/cbs-jurisdiction-code
+    - StructureDefinition/cbs-national-reporting-jurisdiction
+    - StructureDefinition/cbs-pregnancy-status
+    - StructureDefinition/cbs-reporting-county
+    - StructureDefinition/cbs-reporting-state
+    - StructureDefinition/cbs-transmission-mode
+  USCBSProfiles:
+    name: US CBS Profiles
+    description: United States Case Based Surveillance Profiles
+    resources:
+    - StructureDefinition/us-cbs-condition
+    - StructureDefinition/us-cbs-hospitalization
+    - StructureDefinition/us-cbs-patient
+    - StructureDefinition/us-cbs-travel-history
+  CBSExtensions:
+    name: CBS Extensions
+    description: Case Based Surveillance Extensions
+    resources:
+    - StructureDefinition/cbs-case-class-status
+    - StructureDefinition/cbs-cdc-address-use
+    - StructureDefinition/cbs-illness-duration
+    - StructureDefinition/cbs-related-case
+    - StructureDefinition/cbs-specimen-role
+  USCBSExtensions:
+    name: US CBS Extensions
+    description: United States Case Based Surveillance Extensions
+    resources:
+    - StructureDefinition/us-cbs-period-and-mode-of-travel
+    - StructureDefinition/us-cbs-program-specific-time-window
 pages:
   index.md:
     title: Home

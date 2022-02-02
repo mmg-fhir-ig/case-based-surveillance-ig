@@ -161,5 +161,6 @@
       "display": "Vital Records Reporting (Death, Birth, or Fetal Death)"
     }
   ],
+  "caseSensitive": true,
   "count": 35
 }

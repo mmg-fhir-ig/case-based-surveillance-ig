@@ -1,0 +1,163 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cbs-case-outbreak",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak",
+  "version": "0.1.0",
+  "name": "CaseBasedSurveillanceCaseOutbreak",
+  "title": "Case Based Surveillance Case Outbreak",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-01-01",
+  "publisher": "Georgia Tech Research Institute",
+  "description": "Defines constraints on CBS Case Notification Panel to represent the Case Outbreak section of the case notification panel in public health surveillance programs.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "case-outbreak",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+              "display": "Case Outbreak Name and Indicator"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the component.code pattern"
+        }
+      },
+      {
+        "id": "Observation.component:name",
+        "path": "Observation.component",
+        "sliceName": "name",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:name.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77981-9",
+              "system": "http://loinc.org",
+              "display": "Case Outbreak Name"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:name.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:indicator",
+        "path": "Observation.component",
+        "sliceName": "indicator",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:indicator.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "77980-1",
+              "system": "http://loinc.org",
+              "display": "Case is associated with a known outbreak"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:indicator.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

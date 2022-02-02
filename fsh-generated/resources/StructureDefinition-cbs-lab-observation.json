@@ -144,43 +144,15 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Quantity"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.valueQuantity.unit",
-        "path": "Observation.valueQuantity.unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
+          },
           {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
           }
         ],
         "mustSupport": true,
@@ -188,18 +160,6 @@
           "strength": "extensible",
           "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS"
         }
-      },
-      {
-        "id": "Observation.valueString",
-        "path": "Observation.valueString",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mustSupport": true
       },
       {
         "id": "Observation.interpretation",

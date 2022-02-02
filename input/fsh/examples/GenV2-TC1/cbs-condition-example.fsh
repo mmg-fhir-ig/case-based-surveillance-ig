@@ -13,4 +13,4 @@ Description: "Condition of interest resource for the GenV2 Test Case 1 Patient"
 * onsetDateTime = 2014-02-24
 * abatementDateTime = 2014-03-02
 * clinicalStatus = $FHIR-Condition-Clinical-Status#inactive
-* category = #problem-list-item
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item

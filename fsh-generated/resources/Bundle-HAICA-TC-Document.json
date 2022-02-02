@@ -98,9 +98,6 @@
             "title": "Reporting Entities",
             "entry": [
               {
-                "reference": "Practitioner/HAICA-TC-Person-Reporting"
-              },
-              {
                 "reference": "Organization/HAICA-TC-Reporting-Source"
               }
             ]
@@ -148,7 +145,7 @@
                 "url": "ombCategory",
                 "valueCoding": {
                   "code": "2106-3",
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
                   "display": "White"
                 }
               },
@@ -165,7 +162,8 @@
                 "url": "ombCategory",
                 "valueCoding": {
                   "code": "2135-2",
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Hispanic or Latino"
                 }
               },
               {
@@ -308,7 +306,8 @@
           {
             "coding": [
               {
-                "code": "problem-list-item"
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
               }
             ]
           }
@@ -341,6 +340,19 @@
             ]
           }
         ],
+        "location": [
+          {
+            "location": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "masked"
+                }
+              ],
+              "display": "Masked Location"
+            }
+          }
+        ],
         "subject": {
           "reference": "Patient/HAICA-TC-Patient",
           "display": "HAI-CA TC Example Patient"
@@ -353,43 +365,9 @@
             "reference": "Condition/HAICA-TC-Condition"
           }
         ],
-        "status": "unknown",
-        "location": [
-          {
-            "location": {
-              "reference": "FIX LATER"
-            }
-          }
-        ]
+        "status": "unknown"
       },
       "fullUrl": "Encounter/HAICA-TC-Hospitalization"
-    },
-    {
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "HAICA-TC-Person-Reporting",
-        "meta": {
-          "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-          ]
-        },
-        "telecom": [
-          {
-            "system": "email",
-            "value": "count_voncount@gadph.gov"
-          }
-        ],
-        "name": [
-          {
-            "text": "von Count, Count",
-            "family": "von Count",
-            "given": [
-              "Count"
-            ]
-          }
-        ]
-      },
-      "fullUrl": "Practitioner/HAICA-TC-Person-Reporting"
     },
     {
       "resource": {
@@ -401,6 +379,23 @@
           ]
         },
         "name": "Reporting Source",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "email",
+                "value": "count_voncount@gadph.gov"
+              }
+            ],
+            "name": {
+              "text": "von Count, Count",
+              "family": "von Count",
+              "given": [
+                "Count"
+              ]
+            }
+          }
+        ],
         "type": [
           {
             "coding": [
@@ -541,7 +536,7 @@
         "id": "HAICA-TC-CNP-Member1",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
           ]
         },
         "status": "final",
@@ -561,7 +556,7 @@
             {
               "code": "77966-0",
               "system": "http://loinc.org",
-              "display": "Reporting state"
+              "display": "Reporting State"
             }
           ]
         },
@@ -587,7 +582,7 @@
         "id": "HAICA-TC-CNP-Member2",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
           ]
         },
         "status": "final",
@@ -607,7 +602,7 @@
             {
               "code": "77967-8",
               "system": "http://loinc.org",
-              "display": "Reporting county"
+              "display": "Reporting County"
             }
           ]
         },
@@ -633,7 +628,7 @@
         "id": "HAICA-TC-CNP-Member3",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
           ]
         },
         "status": "final",
@@ -653,7 +648,7 @@
             {
               "code": "77968-6",
               "system": "http://loinc.org",
-              "display": "National reporting jurisdiction"
+              "display": "National Reporting Jurisdiction"
             }
           ]
         },
@@ -679,7 +674,7 @@
         "id": "HAICA-TC-CNP-Member4",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
           ]
         },
         "status": "final",
@@ -725,7 +720,7 @@
         "id": "HAICA-TC-CNP-Member5",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"
           ]
         },
         "status": "final",
@@ -770,7 +765,7 @@
         "id": "HAICA-TC-CNP-Member6",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
           ]
         },
         "status": "final",

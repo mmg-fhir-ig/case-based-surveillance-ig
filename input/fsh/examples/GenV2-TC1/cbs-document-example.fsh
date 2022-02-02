@@ -18,8 +18,6 @@ Description: "Document bundle for the GenV2 Test Case 1 Patient"
 * entry[=].fullUrl = "Encounter/GenV2-TC-Hospitalization"
 * entry[+].resource = GenV2-TC-CauseOfDeath
 * entry[=].fullUrl = "Observation/GenV2-TC-CauseOfDeath"
-* entry[+].resource = GenV2-TC-Person-Reporting
-* entry[=].fullUrl = "Practitioner/GenV2-TC-Person-Reporting"
 * entry[+].resource = GenV2-TC-Reporting-Source
 * entry[=].fullUrl = "Organization/GenV2-TC-Reporting-Source"
 * entry[+].resource = GenV2-TC-CNP

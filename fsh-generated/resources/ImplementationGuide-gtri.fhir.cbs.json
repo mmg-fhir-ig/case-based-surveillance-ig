@@ -50,22 +50,69 @@
     }
   ],
   "definition": {
+    "grouping": [
+      {
+        "id": "CBSProfiles",
+        "name": "CBS Profiles",
+        "description": "Case Based Surveillance Profiles"
+      },
+      {
+        "id": "CBSCNPProfiles",
+        "name": "CBS CNP Profiles",
+        "description": "Case Based Surveillance Case Notification Panel Profiles"
+      },
+      {
+        "id": "USCBSProfiles",
+        "name": "US CBS Profiles",
+        "description": "United States Case Based Surveillance Profiles"
+      },
+      {
+        "id": "CBSExtensions",
+        "name": "CBS Extensions",
+        "description": "Case Based Surveillance Extensions"
+      },
+      {
+        "id": "USCBSExtensions",
+        "name": "US CBS Extensions",
+        "description": "United States Case Based Surveillance Extensions"
+      }
+    ],
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-age-at-investigation"
+        },
+        "name": "Case Based Surveillance Age at Case Investigation",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the age at case investigation of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-binational-reporting-criteria"
+        },
+        "name": "Case Based Surveillance Binational Reporting Criteria",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the Binational Reporting Criteria of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
       {
         "reference": {
           "reference": "StructureDefinition/cbs-case-notification-panel"
         },
         "name": "Case Based Surveillance Case Notification Panel Profile",
         "description": "Defines constraints on Observation to represent the case notification panel in public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-cnp-member"
+          "reference": "StructureDefinition/cbs-case-outbreak"
         },
-        "name": "Case Based Surveillance Case Notification Panel Member",
-        "description": "Defines constraints on the CBS Case Notification Panel Profile for defining the member resources of the case notification panel in public health surveillance programs.",
-        "exampleBoolean": false
+        "name": "Case Based Surveillance Case Outbreak",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the Case Outbreak section of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -73,7 +120,8 @@
         },
         "name": "Case Based Surveillance Cause of Death Profile",
         "description": "Defines constraints on on the Observation resource for supporting public health reporting workflows involving the cause of death of the subject.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
@@ -81,7 +129,26 @@
         },
         "name": "Case Based Surveillance Composition Profile",
         "description": "Defines constraints to the Composition resource in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-date-initial-report"
+        },
+        "name": "Case Based Surveillance Date of Initial Report",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the date of initial report on the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-date-reported-to-phd"
+        },
+        "name": "Case Based Surveillance Date of First Report to Public Health Department",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the date reported of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -89,7 +156,26 @@
         },
         "name": "Case Based Surveillance Document Profile",
         "description": "Defines a document type bundle that contains all related profiles.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-earliest-date-reported-to-county"
+        },
+        "name": "Case Based Surveillance Earliest Date Reported",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the earliest date reported of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-earliest-date-reported-to-state"
+        },
+        "name": "Case Based Surveillance Earliest Date Reported to State",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the earliest date reported to the state of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -97,7 +183,35 @@
         },
         "name": "Case Based Surveillance Exposure Observation Profile",
         "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-immediate-nnc"
+        },
+        "name": "Case Based Surveillance Immediate National Notifiable Condition",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the imemdiate national notifiable condition of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-investigation-start-date"
+        },
+        "name": "Case Based Surveillance Case Investigation Start Date",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the case investigation start date of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-jurisdiction-code"
+        },
+        "name": "Case Based Surveillance Jurisdiction Code",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the jurisdiction code of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -105,7 +219,8 @@
         },
         "name": "Case Based Surveillance Lab Test Report",
         "description": "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
@@ -113,7 +228,8 @@
         },
         "name": "Case Based Surveillance Lab Observation",
         "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
@@ -121,7 +237,17 @@
         },
         "name": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
         "description": "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-national-reporting-jurisdiction"
+        },
+        "name": "Case Based Surveillance National Reporting Jurisdiction",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the national reporting jurisdiction of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -129,15 +255,17 @@
         },
         "name": "Case Based Surveillance Performing Laboratory Profile",
         "description": "NOT FINAL GOING TO CHANGE",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-person-reporting-to-cdc"
+          "reference": "StructureDefinition/cbs-pregnancy-status"
         },
-        "name": "Case Based Surveillance Person Reporting To CDC Profile",
-        "description": "Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC.",
-        "exampleBoolean": false
+        "name": "Case Based Surveillance Pregnancy Status",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the pregnancy status of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -145,7 +273,17 @@
         },
         "name": "Case Based Surveillance Questionnaire Profile",
         "description": "Defines constraints on the Questionnaire resource to set the minimum expected details to be provided as part of case based surveillance program's questionnaire/survey data.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-reporting-county"
+        },
+        "name": "Case Based Surveillance Reporting County",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the reporting county of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -153,7 +291,17 @@
         },
         "name": "Case Based Surveillance Reporting Source Organization Profile",
         "description": "Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-reporting-state"
+        },
+        "name": "Case Based Surveillance Reporting State",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the reporting state of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -161,7 +309,8 @@
         },
         "name": "Case Based Surveillance Social Determinants of Health Profile",
         "description": "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
@@ -169,7 +318,17 @@
         },
         "name": "Case Based Surveillance Specimen Profile",
         "description": "Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-transmission-mode"
+        },
+        "name": "Case Based Surveillance Transmission Mode",
+        "description": "Defines constraints on CBS Case Notification Panel to represent the transmission mode of the case notification panel in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSCNPProfiles"
       },
       {
         "reference": {
@@ -177,7 +336,25 @@
         },
         "name": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile",
         "description": "Defines constraints on the Observation resource to capture whether subject was vaccinated per ACIP Recommendations in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-indication"
+        },
+        "name": "Case Based Surveillance Vaccination Indication Profile",
+        "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cbs-vaccination-record"
+        },
+        "name": "Case Based Surveillance Vaccination Record Profile",
+        "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
@@ -185,7 +362,8 @@
         },
         "name": "US Case Based Surveillance Condition of Interest Profile",
         "description": "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
       },
       {
         "reference": {
@@ -193,7 +371,8 @@
         },
         "name": "US Case Based Surveillance Hospitalization Encounter Profile",
         "description": "Defines constraints on the ECR US Public Health Encounter to represent hospitalization due to a condition of interest for public health case based surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
       },
       {
         "reference": {
@@ -209,7 +388,8 @@
         },
         "name": "US Case Based Surveillance Patient Profile",
         "description": "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
       },
       {
         "reference": {
@@ -217,7 +397,8 @@
         },
         "name": "US Case Based Surveillance Travel History Profile",
         "description": "Defines constraints on the ECR US PH Travel History profile to capture additional data in order to meet the needs of public health case based surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
       },
       {
         "reference": {
@@ -225,7 +406,8 @@
         },
         "name": "Case Based Surveillance CDC Address Use Extension",
         "description": "Indicates the use of the address as per information surveillance program.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSExtensions"
       },
       {
         "reference": {
@@ -233,7 +415,8 @@
         },
         "name": "Case Based Surveillance Case Class Status",
         "description": "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSExtensions"
       },
       {
         "reference": {
@@ -241,7 +424,8 @@
         },
         "name": "Case Based Surveillance Specimen Role Extension",
         "description": "Indicates the role of the sample.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSExtensions"
       },
       {
         "reference": {
@@ -249,15 +433,17 @@
         },
         "name": "Case Based Surveillance Illness Duration",
         "description": "Illness duration to obscure PHII in place of absokute dates.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSExtensions"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-program-specific-time-window"
+          "reference": "StructureDefinition/us-cbs-program-specific-time-window"
         },
-        "name": "Case Based Surveillance Program Specific Time Window",
+        "name": "US Case Based Surveillance Program Specific Time Window",
         "description": "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSExtensions"
       },
       {
         "reference": {
@@ -265,7 +451,8 @@
         },
         "name": "Case Based Surveillance Related Case Extension",
         "description": "A list of strings with relevant case numbers and a type element that specifies the nature of the relation.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "CBSExtensions"
       },
       {
         "reference": {
@@ -273,7 +460,8 @@
         },
         "name": "US Case Based Surveillance Period and Mode of Travel Extension",
         "description": "An extension capturing the circumstances of travel to a destination.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSExtensions"
       },
       {
         "reference": {
@@ -385,7 +573,7 @@
         },
         "name": "GenV2-TC-CNP-Member1",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"
       },
       {
         "reference": {
@@ -393,7 +581,7 @@
         },
         "name": "GenV2-TC-CNP-Member10",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"
       },
       {
         "reference": {
@@ -401,7 +589,7 @@
         },
         "name": "GenV2-TC-CNP-Member11",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria"
       },
       {
         "reference": {
@@ -409,7 +597,7 @@
         },
         "name": "GenV2-TC-CNP-Member12",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
       },
       {
         "reference": {
@@ -417,7 +605,7 @@
         },
         "name": "GenV2-TC-CNP-Member13",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"
       },
       {
         "reference": {
@@ -425,7 +613,7 @@
         },
         "name": "GenV2-TC-CNP-Member14",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"
       },
       {
         "reference": {
@@ -433,7 +621,7 @@
         },
         "name": "GenV2-TC-CNP-Member15",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
       },
       {
         "reference": {
@@ -441,7 +629,7 @@
         },
         "name": "GenV2-TC-CNP-Member2",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
       },
       {
         "reference": {
@@ -449,7 +637,7 @@
         },
         "name": "GenV2-TC-CNP-Member3",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
       },
       {
         "reference": {
@@ -457,7 +645,7 @@
         },
         "name": "GenV2-TC-CNP-Member4",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
       },
       {
         "reference": {
@@ -465,7 +653,7 @@
         },
         "name": "GenV2-TC-CNP-Member5",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"
       },
       {
         "reference": {
@@ -473,7 +661,7 @@
         },
         "name": "GenV2-TC-CNP-Member6",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"
       },
       {
         "reference": {
@@ -481,7 +669,7 @@
         },
         "name": "GenV2-TC-CNP-Member7",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"
       },
       {
         "reference": {
@@ -489,7 +677,7 @@
         },
         "name": "GenV2-TC-CNP-Member8",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"
       },
       {
         "reference": {
@@ -497,7 +685,7 @@
         },
         "name": "GenV2-TC-CNP-Member9",
         "description": "Case notification panel member resource for the GenV2 Test Case 1 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"
       },
       {
         "reference": {
@@ -565,14 +753,6 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/GenV2-TC-Person-Reporting"
-        },
-        "name": "GenV2-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the GenV2 Test Case 1",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-      },
-      {
-        "reference": {
           "reference": "Organization/GenV2-TC-Reporting-Source"
         },
         "name": "GenV2-TC-Reporting-Source",
@@ -593,7 +773,7 @@
         },
         "name": "HAICA-TC-CNP-Member1",
         "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
       },
       {
         "reference": {
@@ -601,7 +781,7 @@
         },
         "name": "HAICA-TC-CNP-Member2",
         "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
       },
       {
         "reference": {
@@ -609,7 +789,7 @@
         },
         "name": "HAICA-TC-CNP-Member3",
         "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
       },
       {
         "reference": {
@@ -617,7 +797,7 @@
         },
         "name": "HAICA-TC-CNP-Member4",
         "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
       },
       {
         "reference": {
@@ -625,7 +805,7 @@
         },
         "name": "HAICA-TC-CNP-Member5",
         "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"
       },
       {
         "reference": {
@@ -633,7 +813,7 @@
         },
         "name": "HAICA-TC-CNP-Member6",
         "description": "Case notification panel member resource for the HAI-CA Test Case 2 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
       },
       {
         "reference": {
@@ -701,14 +881,6 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/HAICA-TC-Person-Reporting"
-        },
-        "name": "HAICA-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the HAI-CA Test Case 2",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-      },
-      {
-        "reference": {
           "reference": "Organization/HAICA-TC-Reporting-Source"
         },
         "name": "HAICA-TC-Reporting-Source",
@@ -737,7 +909,7 @@
         },
         "name": "Lyme-TC-CNP-Member1",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"
       },
       {
         "reference": {
@@ -745,7 +917,7 @@
         },
         "name": "Lyme-TC-CNP-Member10",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"
       },
       {
         "reference": {
@@ -753,7 +925,7 @@
         },
         "name": "Lyme-TC-CNP-Member11",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
       },
       {
         "reference": {
@@ -761,7 +933,7 @@
         },
         "name": "Lyme-TC-CNP-Member12",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"
       },
       {
         "reference": {
@@ -769,7 +941,7 @@
         },
         "name": "Lyme-TC-CNP-Member13",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
       },
       {
         "reference": {
@@ -777,7 +949,7 @@
         },
         "name": "Lyme-TC-CNP-Member2",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
       },
       {
         "reference": {
@@ -785,7 +957,7 @@
         },
         "name": "Lyme-TC-CNP-Member3",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
       },
       {
         "reference": {
@@ -793,7 +965,7 @@
         },
         "name": "Lyme-TC-CNP-Member4",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
       },
       {
         "reference": {
@@ -801,7 +973,7 @@
         },
         "name": "Lyme-TC-CNP-Member5",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"
       },
       {
         "reference": {
@@ -809,7 +981,7 @@
         },
         "name": "Lyme-TC-CNP-Member6",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"
       },
       {
         "reference": {
@@ -817,7 +989,7 @@
         },
         "name": "Lyme-TC-CNP-Member7",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"
       },
       {
         "reference": {
@@ -825,7 +997,7 @@
         },
         "name": "Lyme-TC-CNP-Member8",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"
       },
       {
         "reference": {
@@ -833,7 +1005,7 @@
         },
         "name": "Lyme-TC-CNP-Member9",
         "description": "Case notification panel member resource for the Lyme Test Case Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"
       },
       {
         "reference": {
@@ -925,14 +1097,6 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/Lyme-TC-Person-Reporting"
-        },
-        "name": "Lyme-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the Lyme Test Case",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-      },
-      {
-        "reference": {
           "reference": "Organization/Lyme-TC-Reporting-Source"
         },
         "name": "Lyme-TC-Reporting-Source",
@@ -977,7 +1141,7 @@
         },
         "name": "STD-TC-CNP-Member1",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"
       },
       {
         "reference": {
@@ -985,7 +1149,7 @@
         },
         "name": "STD-TC-CNP-Member10",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"
       },
       {
         "reference": {
@@ -993,7 +1157,7 @@
         },
         "name": "STD-TC-CNP-Member11",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria"
       },
       {
         "reference": {
@@ -1001,7 +1165,7 @@
         },
         "name": "STD-TC-CNP-Member12",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
       },
       {
         "reference": {
@@ -1009,7 +1173,7 @@
         },
         "name": "STD-TC-CNP-Member13",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"
       },
       {
         "reference": {
@@ -1017,7 +1181,7 @@
         },
         "name": "STD-TC-CNP-Member14",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"
       },
       {
         "reference": {
@@ -1025,7 +1189,7 @@
         },
         "name": "STD-TC-CNP-Member15",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
       },
       {
         "reference": {
@@ -1033,7 +1197,7 @@
         },
         "name": "STD-TC-CNP-Member2",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
       },
       {
         "reference": {
@@ -1041,7 +1205,7 @@
         },
         "name": "STD-TC-CNP-Member3",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
       },
       {
         "reference": {
@@ -1049,7 +1213,7 @@
         },
         "name": "STD-TC-CNP-Member4",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
       },
       {
         "reference": {
@@ -1057,7 +1221,7 @@
         },
         "name": "STD-TC-CNP-Member5",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"
       },
       {
         "reference": {
@@ -1065,7 +1229,7 @@
         },
         "name": "STD-TC-CNP-Member6",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"
       },
       {
         "reference": {
@@ -1073,7 +1237,7 @@
         },
         "name": "STD-TC-CNP-Member7",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"
       },
       {
         "reference": {
@@ -1081,7 +1245,7 @@
         },
         "name": "STD-TC-CNP-Member8",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"
       },
       {
         "reference": {
@@ -1089,7 +1253,7 @@
         },
         "name": "STD-TC-CNP-Member9",
         "description": "Case notification panel member resource for the STD Test Case 5 Patient",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"
       },
       {
         "reference": {
@@ -1226,14 +1390,6 @@
         "name": "STD-TC-Patient",
         "description": "CBS Patient resource for the STD Test Case 5 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/STD-TC-Person-Reporting"
-        },
-        "name": "STD-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the STD Test Case 5",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
       },
       {
         "reference": {

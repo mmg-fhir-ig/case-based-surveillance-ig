@@ -7,6 +7,27 @@
     ]
   },
   "name": "Reporting Source",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "456-987-8888"
+        },
+        {
+          "system": "email",
+          "value": "john.doe@email.com"
+        }
+      ],
+      "name": {
+        "text": "Doe, John",
+        "family": "Doe",
+        "given": [
+          "John"
+        ]
+      }
+    }
+  ],
   "type": [
     {
       "coding": [

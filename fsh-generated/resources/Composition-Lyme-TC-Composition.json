@@ -96,9 +96,6 @@
       "title": "Reporting Entities",
       "entry": [
         {
-          "reference": "Practitioner/Lyme-TC-Person-Reporting"
-        },
-        {
           "reference": "Organization/Lyme-TC-Reporting-Source"
         }
       ]

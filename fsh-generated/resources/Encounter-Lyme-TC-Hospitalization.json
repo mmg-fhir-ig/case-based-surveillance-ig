@@ -22,6 +22,19 @@
       ]
     }
   ],
+  "location": [
+    {
+      "location": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ],
+        "display": "Masked Location"
+      }
+    }
+  ],
   "subject": {
     "reference": "Patient/Lyme-TC-Patient",
     "display": "Lyme-TC Example Patient"
@@ -41,12 +54,5 @@
       "reference": "Condition/Lyme-TC-Condition"
     }
   ],
-  "status": "unknown",
-  "location": [
-    {
-      "location": {
-        "reference": "FIX LATER"
-      }
-    }
-  ]
+  "status": "unknown"
 }
