@@ -1,5 +1,12 @@
 This profile sets minimum expectations for the [Patient] resource to represent data requested as part of the U.S. Public Health Case Based Surveillance messaging guides. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. This profile is built on top of the ECR [US PH Patient] profile and [US Core Patient] profile.
 
+**Example Usage Scenarios:**
+
+The following are example usage scenarios for the US CBS Patient profile:
+
+-   Generate a patient resource that structures all core demographic data requested by case based surveillance programs to be included in a case report.
+-   Query for patient demographic information using first name, last name, birthdate, and gender within a case based surveillance system.
+
 ### Relationship to ECR Public Health and US Core Patients
 
 The US CBS Patient profile is based on the ECR (Electronic Case Reporting) IG [US PH Patient] profile. The US PH Patient is a general use profile for public health needs based on the US Core Patient profile, adding additional demographic extensions common to the public health domain and providing guidance for the usage of the HL7 [Data Absent Reason] extension to mask patient identifying information. The US CBS Patient profile covers a narrower sub domain of public health, adding additional constraints and extensions to support Case Based Surveillance programs.
@@ -7,13 +14,6 @@ The US CBS Patient profile is based on the ECR (Electronic Case Reporting) IG [U
 ### Relationship to CDC Message Mapping Guides
 
 The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. Patient demographics are predominantly captured in the generic guide (Gen v2) which is included as part of every notifiable condition case report, though some individual programs request additional general demographic data. (For example, the TBLTBI guide requests sex assigned at birth and the STD guide requests gender identity.)
-
-**Example Usage Scenarios:**
-
-The following are example usage scenarios for the US CBS Patient profile:
-
--   Generate a patient resource that structures all core demographic data requested by case based surveillance programs to be included in a case report.
--   Query for patient demographic information using first name, last name, birthdate, and gender within a case based surveillance system.
 
 ### Mandatory and Must Support Data Elements
 
