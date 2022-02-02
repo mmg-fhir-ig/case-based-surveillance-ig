@@ -1,5 +1,11 @@
 This profile sets minimum expectations for the [Encounter] resource to represent data requested as part of the U.S. Public Health Case Based Surveillance messaging guides. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. This profile is built on top of the ECR [US PH Encounter] profile and [US Core Encounter] profile.
 
+**Example Usage Scenarios:**
+
+The following are example usage scenarios for the US CBS Patient profile:
+
+-   Capture an event of hospitalization related to a reportable condition of interest.
+
 ### Relationship to ECR Public Health and US Core Encounter
 
 The US CBS Hospitalization profile is based on the ECR (Electronic Case Reporting) IG [US PH Encounter] profile, which is derived from the [US Core Encounter] profile. The [US PH Encounter] profile captures general data related to any encounters relevant to public health. The US CBS Hospitalization profile captures explicitly a hospitalization event related to a condition of interest reported to case based surveillance programs.
@@ -9,12 +15,6 @@ The US CBS Hospitalization profile is based on the ECR (Electronic Case Reportin
 The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. In addition to generic information captured by the Gen V2 guide, there are program specific guides tied to specific conditions or groups of condition.
 
 The US CBS Hospitalization profile represents a hospitalization encounter related to the reported condition of interest, representing data elements requested as part of the Gen V2 message mapping guide.
-
-**Example Usage Scenarios:**
-
-The following are example usage scenarios for the US CBS Patient profile:
-
--   Capture an event of hospitalization related to a reportable condition of interest.
 
 ### Mandatory and Must Support Data Elements
 

@@ -1,15 +1,15 @@
 This profile sets minimum expectations for the [Observation] resource to represent data requested as part of the U.S. Public Health Case Based Surveillance messaging guides. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. This profile is built on top of the ECR [US PH Travel History] profile.
 
-### Relationship to CBS Exposure Observation and CDC Message Mapping Guides
-
-The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. The US CBS Travel History profile and [US CBS Exposure Observation] profile capture similar data for distinct purposes. The [CBS Exposure Observation Profile] captures general data related to a location of exposure, when known, as part of the Gen V2 message mapping guide. Travel History is captured in multiple condition specific mapping guides, and provides extra data which may or may not be directly tied to the concept of exposure. The US CBS Travel History profile also includes the option to capture potentially relevant information such as modes of travel or time relative to the condition onset and other important case dates. These profiles should be considered complimentary.
-
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for the US CBS Travel History profile:
 
 -   Capture a narrative of single instance of travel to and from a distinct location.
 -   Capture a complex narrative of travel, such as a cruise ship moving between ports of call, including relevant mode of travel, either as part of a chain of travel history observations or utilizing the provided extensions.
+
+### Relationship to CBS Exposure Observation and CDC Message Mapping Guides
+
+The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. The US CBS Travel History profile and [US CBS Exposure Observation] profile capture similar data for distinct purposes. The [CBS Exposure Observation Profile] captures general data related to a location of exposure, when known, as part of the Gen V2 message mapping guide. Travel History is captured in multiple condition specific mapping guides, and provides extra data which may or may not be directly tied to the concept of exposure. The US CBS Travel History profile also includes the option to capture potentially relevant information such as modes of travel or time relative to the condition onset and other important case dates. These profiles should be considered complimentary.
 
 ### Mandatory and Must Support Data Elements
 

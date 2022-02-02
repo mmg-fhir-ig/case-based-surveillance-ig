@@ -1,16 +1,16 @@
 This profile sets minimum expectations for the [Immunization] resource to represent data requested as part of the U.S. Public Health Case Based Surveillance messaging guides. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. This profile is built on top of the [US Core Immunization] profile.
 
-### Relationship to CDC Message Mapping Guides
-
-The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. In addition to generic information captured by the Gen V2 guide, there are program specific guides tied to specific conditions or groups of condition.
-
-The US CBS Immunization profile represents immunization/vaccination records reported in multiple condition specific message mapping guides.
-
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for the US CBS Patient profile:
 
 -   Capture a clinical vaccination record relevant to the condition of interest.
+
+### Relationship to CDC Message Mapping Guides
+
+The Center for Disease Control's (CDC) Message Mapping Guides (MMGs) provide guidance on the transmission of records from jurisdictions to case based surveillance programs. MMG documents are publicly available through the CDC's website. In addition to generic information captured by the Gen V2 guide, there are program specific guides tied to specific conditions or groups of condition.
+
+The US CBS Immunization profile represents immunization/vaccination records reported in multiple condition specific message mapping guides.
 
 ### Mandatory and Must Support Data Elements
 
