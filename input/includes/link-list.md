@@ -140,8 +140,8 @@
 [CBS Social Determinants of Health Profile]: StructureDefinition-cbs-social-determinants-of-health.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
 [CBS Transmission Mode Profile]: StructureDefinition-cbs-transmission-mode.html
-[CBS Vaccination Indication Profile]: StructureDefinition-cbs-vaccination-indication.html
-[CBS Vaccination Record Profile]: StructureDefinition-cbs-vaccination-record.html
+[CBS Vaccination per ACIP Recommendations Profile]: StructureDefinition-cbs-vaccination-ACIP-Recommendation.html
+[US CBS Immunization Profile]: StructureDefinition-us-cbs-immunization.html
 [US CBS Condition of Interest Profile]: StructureDefinition-us-cbs-condition.html
 [US CBS Hospitalization Profile]: StructureDefinition-us-cbs-hospitalization.html
 [US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html

@@ -72,35 +72,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.extension",
-        "path": "Observation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.extension:reasonNotVaccinated",
-        "path": "Observation.extension",
-        "sliceName": "reasonNotVaccinated",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "patternCodeableConcept": {
@@ -135,7 +106,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
             ]
           }
         ],
@@ -161,6 +133,40 @@
         "id": "Observation.note",
         "path": "Observation.note",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "vac149",
+              "system": "urn:oid:2.16.840.1.114222.4.5.232",
+              "display": "Reason Not Vaccinated per ACIP Recommendations"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.931"
+        }
       }
     ]
   }

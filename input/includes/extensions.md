@@ -2,7 +2,6 @@
 - [CBS CDC Address Use Extension]
 - [CBS Illness Duration Extension]
 - [CBS Program Specific Time Window Extension]
-- [CBS Reason Not Vaccinated Per ACIP Recommendations Extension]
 - [CBS Related Case Extension]
 - [CBS Specimen Role Extension]
 - [US CBS Period and Mode of Travel]

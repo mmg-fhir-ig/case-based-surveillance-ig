@@ -41,7 +41,6 @@ groups:
     - StructureDefinition/cbs-social-determinants-of-health
     - StructureDefinition/cbs-specimen
     - StructureDefinition/cbs-vaccination-ACIP-Recommendation
-    - StructureDefinition/cbs-vaccination-record
   CBSCNPProfiles:
     name: CBS CNP Profiles
     description: Case Based Surveillance Case Notification Panel Profiles
@@ -70,6 +69,7 @@ groups:
     resources:
     - StructureDefinition/us-cbs-condition
     - StructureDefinition/us-cbs-hospitalization
+    - StructureDefinition/us-cbs-immunization
     - StructureDefinition/us-cbs-patient
     - StructureDefinition/us-cbs-travel-history
   CBSExtensions:

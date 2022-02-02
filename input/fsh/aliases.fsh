@@ -48,6 +48,10 @@ Alias: $FHIR-Address-Use = http://hl7.org/fhir/address-use
 Alias: $odh-PastOrPresentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
 Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/travel-history-observation
 
+
+// US Core Profiles
+Alias: $us-core-immunization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization
+
 // ECR US PH Profiles
 Alias: $ecr-us-ph-condition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition
 Alias: $ecr-us-ph-encounter = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter

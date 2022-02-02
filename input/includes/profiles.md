@@ -1,5 +1,12 @@
 
-#### Base CBS Profiles
+#### US CBS Profiles (US Core and US Public Health Based)
+- [US CBS Condition of Interest Profile]
+- [US CBS Hospitalization Profile]
+- [US CBS Immunization Profile]
+- [US CBS Patient Profile]
+- [US CBS Travel History Profile]
+
+#### CBS Profiles (Base FHIR)
 - [CBS Case Notification Panel Profile]
   - [CBS Exposure Observation Profile]
   - [CBS MMWR Profile]
@@ -28,11 +35,4 @@
 - [CBS Questionnaire Profile]
 - [CBS Social Determinants of Health Profile]
 - [CBS Specimen Profile]
-- [CBS Vaccination Indication Profile]
-- [CBS Vaccination Record Profile]
-
-#### US CBS Profiles
-- [US CBS Condition of Interest Profile]
-- [US CBS Hospitalization Profile]
-- [US CBS Patient Profile]
-- [US CBS Travel History Profile]
+- [CBS Vaccination per ACIP Recommendations Profile]
