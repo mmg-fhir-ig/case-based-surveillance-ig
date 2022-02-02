@@ -341,23 +341,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-vaccination-indication"
-        },
-        "name": "Case Based Surveillance Vaccination Indication Profile",
-        "description": "Defines constraints on the Observation resource to capture subject's indication/assertion of vaccination in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-vaccination-record"
-        },
-        "name": "Case Based Surveillance Vaccination Record Profile",
-        "description": "Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false,
-        "groupingId": "CBSProfiles"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/us-cbs-condition"
         },
         "name": "US Case Based Surveillance Condition of Interest Profile",
@@ -380,7 +363,8 @@
         },
         "name": "US Case Based Surveillance Immunization Profile",
         "description": "Defines further constraints on the US Core Immunization profile to capture subject vaccination records in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
       },
       {
         "reference": {
