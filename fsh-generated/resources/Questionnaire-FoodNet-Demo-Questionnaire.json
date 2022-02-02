@@ -11,6 +11,7 @@
   "status": "draft",
   "publisher": "GTRI",
   "description": "Demo questionnaire with a subset of foodnet questionnaire items.",
+  "name": "FoodNetDemoQuestionnaire",
   "item": [
     {
       "linkId": "FDD_Q_969",

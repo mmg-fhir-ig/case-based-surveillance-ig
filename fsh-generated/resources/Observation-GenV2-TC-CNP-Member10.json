@@ -3,7 +3,7 @@
   "id": "GenV2-TC-CNP-Member10",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"
     ]
   },
   "status": "final",
@@ -27,17 +27,14 @@
       }
     ]
   },
-  "subject": {
-    "reference": "Patient/GenV2-TC-Patient",
-    "display": "GenV2-TC Example Patient"
-  },
   "component": [
     {
       "code": {
         "coding": [
           {
             "code": "77980-1",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Case is associated with a known outbreak"
           }
         ]
       },
@@ -56,11 +53,16 @@
         "coding": [
           {
             "code": "77981-9",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Case Outbreak Name"
           }
         ]
       },
       "valueString": "HANSENOUTB1"
     }
-  ]
+  ],
+  "subject": {
+    "reference": "Patient/GenV2-TC-Patient",
+    "display": "GenV2-TC Example Patient"
+  }
 }

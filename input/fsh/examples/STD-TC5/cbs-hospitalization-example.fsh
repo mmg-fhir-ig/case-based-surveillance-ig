@@ -13,4 +13,4 @@ Description: "CBS Hospitalization resource for the STD Test Case 5 Patient"
 * reasonReference.reference = "Condition/STD-TC-Condition"
 
 * status = #unknown
-* location[0].location.reference = "FIX LATER" // TODO: Fix example location error.
+* location.location.display = "Masked Location"

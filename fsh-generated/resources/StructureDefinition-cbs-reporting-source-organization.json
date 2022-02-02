@@ -87,6 +87,63 @@
         "id": "Organization.address.postalCode",
         "path": "Organization.address.postalCode",
         "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.name",
+        "path": "Organization.contact.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom",
+        "path": "Organization.contact.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.contact.telecom:phone",
+        "path": "Organization.contact.telecom",
+        "sliceName": "phone",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom:phone.system",
+        "path": "Organization.contact.telecom.system",
+        "min": 1,
+        "patternCode": "phone"
+      },
+      {
+        "id": "Organization.contact.telecom:phone.value",
+        "path": "Organization.contact.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom:email",
+        "path": "Organization.contact.telecom",
+        "sliceName": "email",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact.telecom:email.system",
+        "path": "Organization.contact.telecom.system",
+        "min": 1,
+        "patternCode": "email"
+      },
+      {
+        "id": "Organization.contact.telecom:email.value",
+        "path": "Organization.contact.telecom.value",
+        "mustSupport": true
       }
     ]
   }

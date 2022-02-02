@@ -6,6 +6,7 @@ Description: "Demo Questionnaire for STD Case Related Questions"
 * version = "0.1"
 * status = #draft
 * publisher = "GTRI"
+* name = "STDQuestionnaire"
 * description = "Demo questionnaire with a subset of STD questionnaire items."
 * item[0]
   * linkId = "STD107"

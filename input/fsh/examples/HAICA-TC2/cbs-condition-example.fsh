@@ -8,4 +8,4 @@ Description: "Condition of interest resource for the HAI-CA Test Case 2 Patient"
 * subject.reference = "Patient/HAICA-TC-Patient"
 * subject.display = "HAI-CA TC Example Patient"
 * onsetDateTime = 2018-11-22
-* category = #problem-list-item
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item

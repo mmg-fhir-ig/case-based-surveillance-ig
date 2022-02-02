@@ -3,7 +3,7 @@
   "id": "GenV2-TC-CNP-Member2",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
     ]
   },
   "status": "final",
@@ -23,7 +23,7 @@
       {
         "code": "77966-0",
         "system": "http://loinc.org",
-        "display": "Reporting state"
+        "display": "Reporting State"
       }
     ]
   },

@@ -130,10 +130,15 @@
         ]
       },
       {
+        "id": "Encounter.location.location.extension",
+        "path": "Encounter.location.location.extension",
+        "min": 1
+      },
+      {
         "id": "Encounter.location.location.extension:dataAbsentReason",
         "path": "Encounter.location.location.extension",
         "sliceName": "dataAbsentReason",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -145,10 +150,11 @@
         ]
       },
       {
-        "id": "Encounter.location.location.extension:dataAbsentReason.value[x]",
-        "path": "Encounter.location.location.extension.value[x]",
-        "fixedCode": "masked",
-        "mustSupport": true
+        "id": "Encounter.location.location.extension:dataAbsentReason.valueCode",
+        "path": "Encounter.location.location.extension.valueCode",
+        "min": 1,
+        "max": "1",
+        "patternCode": "masked"
       }
     ]
   }

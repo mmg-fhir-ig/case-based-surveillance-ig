@@ -15,4 +15,4 @@ Description: "CBS Hospitalization resource for the Lyme Test Case Patient"
 
 * status = #unknown
 
-* location[0].location.reference = "FIX LATER" // TODO: Fix example location error.
+* location.location.display = "Masked Location"

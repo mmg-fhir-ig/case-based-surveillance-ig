@@ -18,7 +18,7 @@ The following are example usage scenarios for the US CBS Patient profile:
 
 ### Mandatory and Must Support Data Elements
 
-The following data-elements must always be present ([Mandatory] definition]) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the formal summary, definitions, and  terminology requirements.  
+The following data-elements must always be present ([Mandatory] definition]) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the formal summary, definitions, and  terminology requirements.
 
 **Each Encounter must have:**
 
@@ -47,6 +47,10 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 
 ### Examples
 **EXAMPLES PENDING UPDATE**
-- [Patient-example](Patient-example.html)
+- [GenV2 US CBS Hospitalization Encounter](Encounter-GenV2-TC-Hospitalization.html)
+- [HAICA US CBS Hospitalization Encounter](Encounter-HAICA-TC-Hospitalization.html)
+- [Lyme US CBS Hospitalization Encounter](Encounter-Lyme-TC-Hospitalization.html)
+- [STD US CBS Hospitalization Encounter](Encounter-STD-TC-Hospitalization.html)
+
 
 {% include link-list.md %}

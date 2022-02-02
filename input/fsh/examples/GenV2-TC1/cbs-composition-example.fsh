@@ -26,5 +26,4 @@ Description: "Composition resource for the GenV2 Test Case 1 Patient"
 * section[caseNotification].section.entry[+] = Reference(GenV2-TC-CNP-Member13)
 * section[caseNotification].section.entry[+] = Reference(GenV2-TC-CNP-Member14)
 * section[caseNotification].section.entry[+] = Reference(GenV2-TC-CNP-Member15)
-* section[reportingEntities].entry[0] = Reference(GenV2-TC-Person-Reporting)
-* section[reportingEntities].entry[1] = Reference(GenV2-TC-Reporting-Source)
+* section[reportingEntities].entry[0] = Reference(GenV2-TC-Reporting-Source)

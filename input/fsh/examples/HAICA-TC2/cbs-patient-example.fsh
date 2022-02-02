@@ -15,6 +15,32 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 
 * extension[genderIdentity].valueCodeableConcept = $FHIR-GenderIdentity#female
 
+* extension[0]
+  * url = $us-core-race
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+  * extension[+]
+    * url = "text"
+    * valueString = "Mixed"
+* extension[1]
+  * url = $us-core-ethnicity
+  * extension[0]
+    * url = "ombCategory"
+    * valueCoding = urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
+  * extension[+]
+    * url = "text"
+    * valueString = "Hispanic or Latino"
+* extension[2]
+  * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+  * valueCode = #F "Female"
+* extension[3]
+  * url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+  * valueAddress.country = "USA"
+* extension[4]
+  * url = "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity"
+  * valueCodeableConcept = $FHIR-GenderIdentity#female
+
 * identifier[0].type = cbs-temp-code-system#Local-Record-ID "Local Record ID"
 * identifier[=].type.text = "Local Record ID"
 * identifier[=].system = "urn:temp:national-reporting-jurisdiction:48"

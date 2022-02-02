@@ -16,21 +16,7 @@
   "name": "CaseBasedSurveillanceExposureObservation",
   "title": "Case Based Surveillance Exposure Observation Profile",
   "status": "active",
-  "experimental": true,
-  "date": "2021-01-01",
-  "publisher": "Georgia Tech Research Institute",
   "description": "Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "code": "US",
-          "system": "urn:iso:std:iso:3166",
-          "display": "United States of America"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -67,7 +53,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
+  "baseDefinition": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -84,11 +70,6 @@
         }
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "The reference to the subject (the patient)"
-      },
-      {
         "id": "Observation.focus",
         "path": "Observation.focus",
         "short": "The reference to the condition of interest",
@@ -100,18 +81,6 @@
             "targetProfile": [
               "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
             ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
           }
         ],
         "mustSupport": true

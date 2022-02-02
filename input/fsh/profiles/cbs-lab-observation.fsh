@@ -20,12 +20,10 @@ Description: "Defines constraints on the Observation resource in order to meet t
 * effectiveDateTime 0..1 MS
 * performer 0..1 MS
 * performer only Reference(cbs-performing-lab)
+
 * value[x] 0..1 MS
-* valueQuantity 0..1 MS
-* valueQuantity.unit 0..1 MS
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept from CBSLabObservationResultVS (extensible)
-* valueString 0..1 MS
+* value[x] only Quantity or CodeableConcept or string
+* value[x] from CBSLabObservationResultVS (extensible)
 * interpretation 0..1 MS
 * method 0..1 MS
 * specimen 0..1 MS

@@ -58,4 +58,4 @@ Description: "Demo QuestionnaireResponse for STD Case Related Questionnaire"
 * item[+]
   * linkId = "STD999"
   * text = "Unknown Number of Sex Partners in Last 12 Months"
-  * answer[0].valueCoding = $v2-0532-cs#N "No"
+  * answer[0].valueCoding = $v2-0136-cs#N "No"

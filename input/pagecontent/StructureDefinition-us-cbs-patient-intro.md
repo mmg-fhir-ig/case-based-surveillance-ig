@@ -17,7 +17,7 @@ The following are example usage scenarios for the US CBS Patient profile:
 
 ### Mandatory and Must Support Data Elements
 
-The following data-elements must always be present ([Mandatory] definition]) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the formal summary, definitions, and  terminology requirements.  
+The following data-elements must always be present ([Mandatory] definition]) or must be supported if the data is present in the sending system ([Must Support] definition). They are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition] below provides the formal summary, definitions, and  terminology requirements.
 
 **Each Patient must have:**
 
@@ -47,12 +47,14 @@ The following data-elements must always be present ([Mandatory] definition]) or 
   - Gen V2 "Subject's Sex"/"Current Sex" is equivalent to the Patient.gender element, which represents Administrative Gender.
   - TBLTBI "Birth Sex"/"Sex at Birth" is equivalent to the [US Core Birthsex/Sex Assigned At Birth] extension.
   - STD "Gender Identity" is equivalent to the HL7 [Gender Identity] extension.
-- Patient's sex/gender information should be included in accordance with established public health value sets present in case based surveillance messaging guides where possible. 
+- Patient's sex/gender information should be included in accordance with established public health value sets present in case based surveillance messaging guides where possible.
   - For example, the US PH Gender Identity extension valueset utilizes only an Example strength binding. For STD case reports, the STD message mapping guide indicated valueset found at https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7610 may be used.
   - If there is no specific valueset associated with a condition, US Core and US Public Health specified valuesets should be used.
 
 ### Examples
-**EXAMPLES PENDING UPDATE**
-- [Patient-example](Patient-example.html)
+- [GenV2 US CBS Patient](Patient-GenV2-TC-Patient.html)
+- [HAI-CA US CBS Patient](Patient-HAICA-TC-Patient.html)
+- [Lyme US CBS Patient](Patient-Lyme-TC-Patient.html)
+- [STD US CBS Patient](Patient-STD-TC-Patient.html)
 
 {% include link-list.md %}

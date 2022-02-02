@@ -3,7 +3,7 @@
   "id": "Lyme-TC-CNP-Member6",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"
     ]
   },
   "status": "final",
@@ -23,7 +23,7 @@
       {
         "code": "77970-2",
         "system": "http://loinc.org",
-        "display": "Date of initial report"
+        "display": "Date of Initial Report"
       }
     ]
   },
