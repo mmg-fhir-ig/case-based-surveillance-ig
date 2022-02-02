@@ -16,8 +16,6 @@ Description: "Document bundle for the HAI-CA Test Case 2 Patient"
 * entry[=].fullUrl = "Condition/HAICA-TC-Condition"
 * entry[+].resource = HAICA-TC-Hospitalization
 * entry[=].fullUrl = "Encounter/HAICA-TC-Hospitalization"
-* entry[+].resource = HAICA-TC-Person-Reporting
-* entry[=].fullUrl = "Practitioner/HAICA-TC-Person-Reporting"
 * entry[+].resource = HAICA-TC-Reporting-Source
 * entry[=].fullUrl = "Organization/HAICA-TC-Reporting-Source"
 * entry[+].resource = HAICA-TC-CNP

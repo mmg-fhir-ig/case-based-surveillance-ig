@@ -136,9 +136,6 @@
             "title": "Reporting Entities",
             "entry": [
               {
-                "reference": "Practitioner/GenV2-TC-Person-Reporting"
-              },
-              {
                 "reference": "Organization/GenV2-TC-Reporting-Source"
               }
             ]
@@ -479,37 +476,6 @@
     },
     {
       "resource": {
-        "resourceType": "Practitioner",
-        "id": "GenV2-TC-Person-Reporting",
-        "meta": {
-          "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-          ]
-        },
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "444-321-1234"
-          },
-          {
-            "system": "email",
-            "value": "jsmith@txdoh.org"
-          }
-        ],
-        "name": [
-          {
-            "text": "Smith, John",
-            "family": "Smith",
-            "given": [
-              "John"
-            ]
-          }
-        ]
-      },
-      "fullUrl": "Practitioner/GenV2-TC-Person-Reporting"
-    },
-    {
-      "resource": {
         "resourceType": "Organization",
         "id": "GenV2-TC-Reporting-Source",
         "meta": {
@@ -518,6 +484,27 @@
           ]
         },
         "name": "Reporting Source",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "444-321-1234"
+              },
+              {
+                "system": "email",
+                "value": "jsmith@txdoh.org"
+              }
+            ],
+            "name": {
+              "text": "Smith, John",
+              "family": "Smith",
+              "given": [
+                "John"
+              ]
+            }
+          }
+        ],
         "type": [
           {
             "coding": [

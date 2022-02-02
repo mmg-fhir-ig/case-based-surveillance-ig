@@ -7,6 +7,27 @@
     ]
   },
   "name": "Reporting Source",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "877-721-7725"
+        },
+        {
+          "system": "email",
+          "value": "Green@you.org"
+        }
+      ],
+      "name": {
+        "text": "Green, Marta",
+        "family": "Green",
+        "given": [
+          "Marta"
+        ]
+      }
+    }
+  ],
   "type": [
     {
       "coding": [

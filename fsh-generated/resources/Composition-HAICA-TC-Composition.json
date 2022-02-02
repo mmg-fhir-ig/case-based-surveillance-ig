@@ -72,9 +72,6 @@
       "title": "Reporting Entities",
       "entry": [
         {
-          "reference": "Practitioner/HAICA-TC-Person-Reporting"
-        },
-        {
           "reference": "Organization/HAICA-TC-Reporting-Source"
         }
       ]

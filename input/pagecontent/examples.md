@@ -13,8 +13,6 @@ View the diagram of this example case here:
 
 **[Cause of Death](Observation-GenV2-TC-CauseOfDeath.html)**
 
-**[Person Reporting to the CDC](Practitioner-GenV2-TC-Person-Reporting.html)**
-
 **[Reporting Source](Organization-GenV2-TC-Reporting-Source.html)**
 
 **[Case Notification Panel (CNP)](Observation-GenV2-TC-CNP.html)**
@@ -52,8 +50,6 @@ View the diagram of this example case here:
 
 **[Hospitalization Encounter](Encounter-HAICA-TC-Hospitalization.html)**
 
-**[Person Reporting to the CDC](Practitioner-HAICA-TC-Person-Reporting.html)**
-
 **[Reporting Source](Organization-HAICA-TC-Reporting-Source.html)**
 
 **[Case Notification Panel (CNP)](Observation-HAICA-TC-CNP.html)**
@@ -84,8 +80,6 @@ View the diagram of this example case here:
 **[Condition of Interest](Condition-Lyme-TC-Condition.html)**
 
 **[Hospitalization Encounter](Encounter-Lyme-TC-Hospitalization.html)**
-
-**[Person Reporting to the CDC](Practitioner-Lyme-TC-Person-Reporting.html)**
 
 **[Reporting Source](Organization-Lyme-TC-Reporting-Source.html)**
 
@@ -128,8 +122,6 @@ View the diagram of this example case here:
 **[Condition of Interest](Condition-STD-TC-Condition.html)**
 
 **[Hospitalization Encounter](Encounter-STD-TC-Hospitalization.html)**
-
-**[Person Reporting to the CDC](Practitioner-STD-TC-Person-Reporting.html)**
 
 **[Reporting Source](Organization-STD-TC-Reporting-Source.html)**
 

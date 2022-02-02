@@ -98,9 +98,6 @@
             "title": "Reporting Entities",
             "entry": [
               {
-                "reference": "Practitioner/HAICA-TC-Person-Reporting"
-              },
-              {
                 "reference": "Organization/HAICA-TC-Reporting-Source"
               }
             ]
@@ -374,33 +371,6 @@
     },
     {
       "resource": {
-        "resourceType": "Practitioner",
-        "id": "HAICA-TC-Person-Reporting",
-        "meta": {
-          "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-          ]
-        },
-        "telecom": [
-          {
-            "system": "email",
-            "value": "count_voncount@gadph.gov"
-          }
-        ],
-        "name": [
-          {
-            "text": "von Count, Count",
-            "family": "von Count",
-            "given": [
-              "Count"
-            ]
-          }
-        ]
-      },
-      "fullUrl": "Practitioner/HAICA-TC-Person-Reporting"
-    },
-    {
-      "resource": {
         "resourceType": "Organization",
         "id": "HAICA-TC-Reporting-Source",
         "meta": {
@@ -409,6 +379,23 @@
           ]
         },
         "name": "Reporting Source",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "email",
+                "value": "count_voncount@gadph.gov"
+              }
+            ],
+            "name": {
+              "text": "von Count, Count",
+              "family": "von Count",
+              "given": [
+                "Count"
+              ]
+            }
+          }
+        ],
         "type": [
           {
             "coding": [

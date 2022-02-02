@@ -7,6 +7,27 @@
     ]
   },
   "name": "Reporting Source",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "444-321-1234"
+        },
+        {
+          "system": "email",
+          "value": "jsmith@txdoh.org"
+        }
+      ],
+      "name": {
+        "text": "Smith, John",
+        "family": "Smith",
+        "given": [
+          "John"
+        ]
+      }
+    }
+  ],
   "type": [
     {
       "coding": [

@@ -260,14 +260,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-person-reporting-to-cdc"
-        },
-        "name": "Case Based Surveillance Person Reporting To CDC Profile",
-        "description": "Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-pregnancy-status"
         },
         "name": "Case Based Surveillance Pregnancy Status",
@@ -761,14 +753,6 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/GenV2-TC-Person-Reporting"
-        },
-        "name": "GenV2-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the GenV2 Test Case 1",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-      },
-      {
-        "reference": {
           "reference": "Organization/GenV2-TC-Reporting-Source"
         },
         "name": "GenV2-TC-Reporting-Source",
@@ -894,14 +878,6 @@
         "name": "HAICA-TC-Patient",
         "description": "CBS Patient resource for the HAI-CA Test Case 2 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/HAICA-TC-Person-Reporting"
-        },
-        "name": "HAICA-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the HAI-CA Test Case 2",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
       },
       {
         "reference": {
@@ -1118,14 +1094,6 @@
         "name": "Lyme-TC-Patient",
         "description": "CBS Patient resource for the Lyme Test Case Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/Lyme-TC-Person-Reporting"
-        },
-        "name": "Lyme-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the Lyme Test Case",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
       },
       {
         "reference": {
@@ -1422,14 +1390,6 @@
         "name": "STD-TC-Patient",
         "description": "CBS Patient resource for the STD Test Case 5 Patient",
         "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/STD-TC-Person-Reporting"
-        },
-        "name": "STD-TC-Person-Reporting",
-        "description": "Person reporting to CDC example resource for the STD Test Case 5",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
       },
       {
         "reference": {
