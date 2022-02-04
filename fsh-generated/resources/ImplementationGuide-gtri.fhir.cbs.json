@@ -368,6 +368,15 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/us-cbs-reporting-source-organization"
+        },
+        "name": "US Case Based Surveillance Reporting Source Organization Profile",
+        "description": "Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source.",
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-cbs-travel-history"
         },
         "name": "US Case Based Surveillance Travel History Profile",
