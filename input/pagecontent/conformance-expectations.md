@@ -124,7 +124,7 @@ Complex element are composed of primitive and/or other complex elements.  In add
 
 For any complex element marked as must support, the server **SHALL** be capable of providing at least one of the sub-element values. If any sub-element is marked as must support it must meet the must support requirements as well and satisfy the must support requirement for the parent element.
 
-For example, the [CBS Reporting Source Organization Profile] type element is labeled must support and has no must support sub-elements. When claiming conformance to this profile:
+For example, the [US CBS Reporting Source Organization Profile] type element is labeled must support and has no must support sub-elements. When claiming conformance to this profile:
 
 - CBS Responders **SHALL** be capable of providing a value in `Organization.type` sub-element.
 - CBS Requestors **SHALL** be capable of processing the value in `Organization.type`.

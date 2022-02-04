@@ -56,7 +56,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[reportingEntities]
   * title = "Reporting Entities"
   * code = cbs-temp-code-system#reporting-entities "Reporting Entities"
-  * entry only Reference(cbs-reporting-source-organization)
+  * entry only Reference(us-cbs-reporting-source-organization)
 * section[encounters]
   * title = "History of Encounters (Hospitalizations)"
   * code = cbs-temp-code-system#history-of-encounters "History of Encounters (Hospitalizations)"

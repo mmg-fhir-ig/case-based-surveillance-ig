@@ -324,7 +324,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"
             ]
           }
         ]

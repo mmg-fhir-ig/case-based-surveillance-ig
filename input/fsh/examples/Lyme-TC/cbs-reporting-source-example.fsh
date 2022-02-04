@@ -1,5 +1,5 @@
 Instance: Lyme-TC-Reporting-Source
-InstanceOf: cbs-reporting-source-organization
+InstanceOf: us-cbs-reporting-source-organization
 Usage: #example
 Description: "Reporting source example resource for the Lyme Test Case"
 

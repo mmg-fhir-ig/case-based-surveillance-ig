@@ -1,10 +1,14 @@
 Instance: HAICA-TC-Reporting-Source
-InstanceOf: cbs-reporting-source-organization
+InstanceOf: us-cbs-reporting-source-organization
 Usage: #example
 Description: "Reporting source example resource for the HAICA Test Case 2"
 
 * name = "Reporting Source"
 * type = $v3-NullFlavor#UNK "Unknown"
+* address.extension[0]
+  * url = $data-absent-reason
+  * valueCode = #unknown
+
 * contact
   * name.text = "von Count, Count"
   * name.family = "von Count"
