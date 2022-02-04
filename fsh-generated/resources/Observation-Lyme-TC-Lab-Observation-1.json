@@ -3,7 +3,7 @@
   "id": "Lyme-TC-Lab-Observation-1",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
     ]
   },
   "status": "final",
@@ -11,8 +11,8 @@
     {
       "coding": [
         {
-          "code": "laboratory",
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
         }
       ]
     }

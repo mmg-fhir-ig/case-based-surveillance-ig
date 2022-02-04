@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Immunization] resource to repres
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US CBS Patient profile:
+The following are example usage scenarios for the US CBS Immunization profile:
 
 -   Capture a clinical vaccination record relevant to the condition of interest.
 

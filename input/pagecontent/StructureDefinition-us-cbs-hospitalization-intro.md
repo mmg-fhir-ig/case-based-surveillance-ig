@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Encounter] resource to represent
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US CBS Patient profile:
+The following are example usage scenarios for the US CBS Hospitalization profile:
 
 -   Capture an event of hospitalization related to a reportable condition of interest.
 

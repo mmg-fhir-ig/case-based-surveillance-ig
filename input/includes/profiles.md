@@ -3,7 +3,10 @@
 - [US CBS Condition of Interest Profile]
 - [US CBS Hospitalization Profile]
 - [US CBS Immunization Profile]
+- [US CBS Lab Diagnostic Report Profile]
+- [US CBS Lab Observation Profile]
 - [US CBS Patient Profile]
+- [US CBS Performing Laboratory Profile]
 - [US CBS Travel History Profile]
 
 #### CBS Profiles (Base FHIR)
@@ -28,10 +31,7 @@
 - [CBS Cause of Death Profile]
 - [CBS Composition Profile]
 - [CBS Document Bundle Profile]
-- [CBS Lab Test Report Profile]
-- [CBS Lab Observation Profile]
 - [CBS Reporting Source Organization Profile]
-- [CBS Performing Laboratory Profile]
 - [CBS Questionnaire Profile]
 - [CBS Social Determinants of Health Profile]
 - [CBS Specimen Profile]

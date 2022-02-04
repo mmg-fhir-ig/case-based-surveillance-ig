@@ -1,20 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-lab-diagnosticreport",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport",
+  "id": "us-cbs-lab-diagnosticreport",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceLabDiagnosticReport",
-  "title": "Case Based Surveillance Lab Test Report",
+  "name": "USCaseBasedSurveillanceLabDiagnosticReport",
+  "title": "US Case Based Surveillance Lab Diagnostic Report",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
@@ -57,29 +47,13 @@
   "kind": "resource",
   "abstract": false,
   "type": "DiagnosticReport",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "DiagnosticReport.category",
-        "path": "DiagnosticReport.category",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "LAB",
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
         "id": "DiagnosticReport.code",
         "path": "DiagnosticReport.code",
-        "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS"
@@ -88,7 +62,6 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -96,17 +69,20 @@
               "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
-        "id": "DiagnosticReport.effectiveDateTime",
-        "path": "DiagnosticReport.effectiveDateTime",
+        "id": "DiagnosticReport.effective[x].extension:dataAbsentReason",
+        "path": "DiagnosticReport.effective[x].extension",
+        "sliceName": "dataAbsentReason",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
           }
         ],
         "mustSupport": true
@@ -119,11 +95,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-performing-lab"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "DiagnosticReport.specimen",
@@ -145,11 +120,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       }
     ]
   }

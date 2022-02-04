@@ -215,24 +215,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cbs-lab-diagnosticreport"
-        },
-        "name": "Case Based Surveillance Lab Test Report",
-        "description": "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs.",
-        "exampleBoolean": false,
-        "groupingId": "CBSProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-lab-observation"
-        },
-        "name": "Case Based Surveillance Lab Observation",
-        "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
-        "exampleBoolean": false,
-        "groupingId": "CBSProfiles"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/cbs-mmwr"
         },
         "name": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
@@ -248,15 +230,6 @@
         "description": "Defines constraints on CBS Case Notification Panel to represent the national reporting jurisdiction of the case notification panel in public health surveillance programs.",
         "exampleBoolean": false,
         "groupingId": "CBSCNPProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cbs-performing-lab"
-        },
-        "name": "Case Based Surveillance Performing Laboratory Profile",
-        "description": "NOT FINAL GOING TO CHANGE",
-        "exampleBoolean": false,
-        "groupingId": "CBSProfiles"
       },
       {
         "reference": {
@@ -368,10 +341,37 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/us-cbs-lab-diagnosticreport"
+        },
+        "name": "US Case Based Surveillance Lab Diagnostic Report",
+        "description": "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-lab-observation"
+        },
+        "name": "US Case Based Surveillance Lab Observation",
+        "description": "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs.",
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-cbs-patient"
         },
         "name": "US Case Based Surveillance Patient Profile",
         "description": "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
+        "exampleBoolean": false,
+        "groupingId": "USCBSProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-cbs-performing-lab"
+        },
+        "name": "US Case Based Surveillance Performing Laboratory Profile",
+        "description": "NOT FINAL GOING TO CHANGE",
         "exampleBoolean": false,
         "groupingId": "USCBSProfiles"
       },
@@ -837,7 +837,7 @@
         },
         "name": "HAICA-TC-Lab-DiagnosticReport",
         "description": "A lab diagnostic report example resource for the HAI-CA Test Case 2.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"
       },
       {
         "reference": {
@@ -845,7 +845,7 @@
         },
         "name": "HAICA-TC-Lab-Observation",
         "description": "A lab observation example resource for the HAI-CA Test Case 2.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
       },
       {
         "reference": {
@@ -1029,7 +1029,7 @@
         },
         "name": "Lyme-TC-Lab-DiagnosticReport",
         "description": "A lab diagnostic report example resource for the Lyme Test Case.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"
       },
       {
         "reference": {
@@ -1037,7 +1037,7 @@
         },
         "name": "Lyme-TC-Lab-Observation-1",
         "description": "A first lab observation example resource for the Lyme Test Case.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
       },
       {
         "reference": {
@@ -1045,7 +1045,7 @@
         },
         "name": "Lyme-TC-Lab-Observation-2",
         "description": "A second lab observation example resource for the Lyme Test Case.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
       },
       {
         "reference": {
@@ -1325,7 +1325,7 @@
         },
         "name": "STD-TC-Lab-DiagnosticReport",
         "description": "A lab diagnostic report example resource for the STD Test Case 5.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"
       },
       {
         "reference": {
@@ -1333,7 +1333,7 @@
         },
         "name": "STD-TC-Lab-Observation",
         "description": "A lab observation example resource for the STD Test Case 5.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
       },
       {
         "reference": {
@@ -1341,7 +1341,7 @@
         },
         "name": "STD-TC-Lab-Observation-AST",
         "description": "An antimicrobial susceptibility test lab observation example resource for the STD Test Case 5.",
-        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
       },
       {
         "reference": {

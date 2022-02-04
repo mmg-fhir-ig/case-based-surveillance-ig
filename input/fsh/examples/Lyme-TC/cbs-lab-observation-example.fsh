@@ -1,5 +1,5 @@
 Instance: Lyme-TC-Lab-Observation-1
-InstanceOf: cbs-lab-observation
+InstanceOf: us-cbs-lab-observation
 Usage: #example
 Description: "A first lab observation example resource for the Lyme Test Case."
 * status = #final
@@ -9,7 +9,7 @@ Description: "A first lab observation example resource for the Lyme Test Case."
 * valueCodeableConcept = $sct#10828004 "Positive"
 
 Instance: Lyme-TC-Lab-Observation-2
-InstanceOf: cbs-lab-observation
+InstanceOf: us-cbs-lab-observation
 Usage: #example
 Description: "A second lab observation example resource for the Lyme Test Case."
 * status = #final

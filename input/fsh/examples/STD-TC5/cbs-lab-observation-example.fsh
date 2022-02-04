@@ -1,5 +1,5 @@
 Instance: STD-TC-Lab-Observation
-InstanceOf: cbs-lab-observation
+InstanceOf: us-cbs-lab-observation
 Usage: #example
 Description: "A lab observation example resource for the STD Test Case 5."
 * status = #final
@@ -10,7 +10,7 @@ Description: "A lab observation example resource for the STD Test Case 5."
 * effectiveDateTime = 2014-02-26
 
 Instance: STD-TC-Lab-Observation-AST
-InstanceOf: cbs-lab-observation
+InstanceOf: us-cbs-lab-observation
 Usage: #example
 Description: "An antimicrobial susceptibility test lab observation example resource for the STD Test Case 5."
 * status = #final

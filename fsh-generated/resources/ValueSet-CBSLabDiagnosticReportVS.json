@@ -18,6 +18,15 @@
         "valueSet": [
           "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002"
         ]
+      },
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "lab-interpretative-report",
+            "display": "Lab Interpretive Report"
+          }
+        ]
       }
     ]
   }

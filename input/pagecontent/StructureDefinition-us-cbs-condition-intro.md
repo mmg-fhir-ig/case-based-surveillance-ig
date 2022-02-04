@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Condition] resource to represent
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US CBS Patient profile:
+The following are example usage scenarios for the US CBS Condition of Interest profile:
 
 -   Capture a condition related to an Reportable Condition Trigger Code event to provide information tied directly to the condition in a surveillance report.
 

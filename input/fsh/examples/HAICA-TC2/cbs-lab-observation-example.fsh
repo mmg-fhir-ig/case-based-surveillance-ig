@@ -1,5 +1,5 @@
 Instance: HAICA-TC-Lab-Observation
-InstanceOf: cbs-lab-observation
+InstanceOf: us-cbs-lab-observation
 Usage: #example
 Description: "A lab observation example resource for the HAI-CA Test Case 2."
 * status = #final
