@@ -1,7 +1,7 @@
-Profile: CaseBasedSurveillanceReportingSourceOrganization
-Parent: Organization
-Id: cbs-reporting-source-organization
-Title: "Case Based Surveillance Reporting Source Organization Profile"
+Profile: USCaseBasedSurveillanceReportingSourceOrganization
+Parent: $ecr-us-ph-organization
+Id: us-cbs-reporting-source-organization
+Title: "US Case Based Surveillance Reporting Source Organization Profile"
 Description: "Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source."
 * ^version = "0.1.0"
 * ^experimental = true
@@ -15,7 +15,9 @@ Description: "Defines constraints to the Organization resource in order to meet 
 * type from $PHVS-ReportingSourceType-NND
 * name 1..1 MS
 * name  = "Reporting Source"
-* address.postalCode 0..1 MS
+* active = true
+* telecom.extension contains $data-absent-reason named dataAbsentReason 1..1
+* telecom.extension[dataAbsentReason].valueCode = #unknown
 * contact
   * name 0..1 MS
   * telecom ^slicing.discriminator.type = #value

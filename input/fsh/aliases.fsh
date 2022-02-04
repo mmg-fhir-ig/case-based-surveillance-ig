@@ -55,6 +55,7 @@ Alias: $us-core-immunization = http://hl7.org/fhir/us/core/StructureDefinition/u
 // ECR US PH Profiles
 Alias: $ecr-us-ph-condition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition
 Alias: $ecr-us-ph-encounter = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter
+Alias: $ecr-us-ph-organization = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization
 Alias: $ecr-us-ph-patient = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient
 Alias: $ecr-us-ph-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history
 

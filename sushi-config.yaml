@@ -37,7 +37,6 @@ groups:
     - StructureDefinition/cbs-lab-observation
     - StructureDefinition/cbs-performing-lab
     - StructureDefinition/cbs-questionnaire
-    - StructureDefinition/cbs-reporting-source-organization
     - StructureDefinition/cbs-social-determinants-of-health
     - StructureDefinition/cbs-specimen
     - StructureDefinition/cbs-vaccination-ACIP-Recommendation
@@ -71,6 +70,7 @@ groups:
     - StructureDefinition/us-cbs-hospitalization
     - StructureDefinition/us-cbs-immunization
     - StructureDefinition/us-cbs-patient
+    - StructureDefinition/us-cbs-reporting-source-organization
     - StructureDefinition/us-cbs-travel-history
   CBSExtensions:
     name: CBS Extensions

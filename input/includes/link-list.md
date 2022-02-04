@@ -131,11 +131,9 @@
 [CBS National Reporting Jurisdiction Profile]: StructureDefinition-cbs-national-reporting-jurisdiction.html
 [CBS Past or Present Job Profile]: StructureDefinition-cbs-past-or-present-job.html
 [CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
-[CBS Person Reporting to CDC Profile]: StructureDefinition-cbs-person-reporting-to-cdc.html
 [CBS Pregnancy Status Profile]: StructureDefinition-cbs-pregnancy-status.html
 [CBS Questionnaire Profile]: StructureDefinition-cbs-questionnaire.html
 [CBS Reporting County Profile]: StructureDefinition-cbs-reporting-county.html
-[CBS Reporting Source Organization Profile]: StructureDefinition-cbs-reporting-source-organization.html
 [CBS Reporting State Profile]: StructureDefinition-cbs-reporting-state.html
 [CBS Social Determinants of Health Profile]: StructureDefinition-cbs-social-determinants-of-health.html
 [CBS Specimen Profile]: StructureDefinition-cbs-specimen.html
@@ -145,6 +143,7 @@
 [US CBS Condition of Interest Profile]: StructureDefinition-us-cbs-condition.html
 [US CBS Hospitalization Profile]: StructureDefinition-us-cbs-hospitalization.html
 [US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
+[US CBS Reporting Source Organization Profile]: StructureDefinition-us-cbs-reporting-source-organization.html
 [US CBS Travel History Profile]: StructureDefinition-us-cbs-travel-history.html
 
 [CBS CDC Address Use Extension]: StructureDefinition-cbs-cdc-address-use.html

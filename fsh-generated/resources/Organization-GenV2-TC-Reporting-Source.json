@@ -3,10 +3,21 @@
   "id": "GenV2-TC-Reporting-Source",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"
     ]
   },
+  "active": true,
   "name": "Reporting Source",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "unknown"
+        }
+      ]
+    }
+  ],
   "contact": [
     {
       "telecom": [
