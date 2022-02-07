@@ -41,8 +41,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - If the occurence (administration) date is not known, occurenceString may be populated with an appropriate string documenting this or the [Data Absent Reason] extension may be used.
 - If primary source is not known, the [Data Absent Reason] extension should be used.
 
-### Examples
-**EXAMPLES PENDING UPDATE**
-- [Patient-example](Patient-example.html)
-
 {% include link-list.md %}

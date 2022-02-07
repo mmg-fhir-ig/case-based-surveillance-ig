@@ -53,10 +53,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - The illness duration extension may be used to obscure dates if desired, in alignment with Gen V2 data elements.
 - Verification Status may be used to document status in sending systems (e.g. jurisdictions) or in regards to workflow considerations such as through the entered-in-error code, but should not be used to capture Case Class Status as per the context of public health case reporting to case based surveillance programs.
 
-### Examples
-- [GenV2 US CBS Condition](Condition-GenV2-TC-Condition.html)
-- [HAI-CA US CBS Condition](Condition-HAICA-TC-Condition.html)
-- [Lyme US CBS Condition](Condition-Lyme-TC-Condition.html)
-- [STD US CBS Condition](Condition-STD-TC-Condition.html)
-
 {% include link-list.md %}

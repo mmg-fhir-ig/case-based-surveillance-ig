@@ -36,7 +36,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 1. a collection body site
 1. a note
 
-### Examples
-- NEED EXAMPLES
-
 {% include link-list.md %}

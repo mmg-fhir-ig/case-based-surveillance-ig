@@ -51,10 +51,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
   - For example, the US PH Gender Identity extension valueset utilizes only an Example strength binding. For STD case reports, the STD message mapping guide indicated valueset found at https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7610 may be used.
   - If there is no specific valueset associated with a condition, US Core and US Public Health specified valuesets should be used.
 
-### Examples
-- [GenV2 US CBS Patient](Patient-GenV2-TC-Patient.html)
-- [HAI-CA US CBS Patient](Patient-HAICA-TC-Patient.html)
-- [Lyme US CBS Patient](Patient-Lyme-TC-Patient.html)
-- [STD US CBS Patient](Patient-STD-TC-Patient.html)
-
 {% include link-list.md %}

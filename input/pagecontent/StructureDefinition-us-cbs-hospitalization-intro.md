@@ -43,14 +43,6 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - This profile is intended to capture data relating the instance of hospitalization reported as part of Gen V2 messaging guidance. Condition specific information that is related to the same instance of hospitalization may included as part of this resource. Additional encounters, including additional hospitalizations, should use the [US PH Encounter] or [US Core Encounter] profiles as needed.
 - Encounter.status may be set by the sending system capturing the state of the encounter in jurisdiction or local systems, or set to unknown for reporting to surveillance programs to mask information.
 - Encounter.reasonReference should provide a reference to the [US CBS Condition of Interest] profile instance which is included as part of the case report.
-- Many elements specified as *must support* are derived from the [US Core Encounter] profile. Some of these, such as Encounter.hospitalization, may include patient identifying information and should be omitted in all cases when sending a case report to case surveillance agencies.
-
-### Examples
-**EXAMPLES PENDING UPDATE**
-- [GenV2 US CBS Hospitalization Encounter](Encounter-GenV2-TC-Hospitalization.html)
-- [HAICA US CBS Hospitalization Encounter](Encounter-HAICA-TC-Hospitalization.html)
-- [Lyme US CBS Hospitalization Encounter](Encounter-Lyme-TC-Hospitalization.html)
-- [STD US CBS Hospitalization Encounter](Encounter-STD-TC-Hospitalization.html)
-
+- Many elements specified as *must support* are derived from the [US Core Encounter] profile. Some of these, such as Encounter.hospitalization, may include patient identifying information and should be omitted in all cases when sending a case report to case surveillance agencies.xs
 
 {% include link-list.md %}
