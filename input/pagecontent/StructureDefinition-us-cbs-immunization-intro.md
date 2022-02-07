@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Immunization] resource to repres
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US CBS Patient profile:
+The following are example usage scenarios for the US CBS Immunization profile:
 
 -   Capture a clinical vaccination record relevant to the condition of interest.
 
@@ -40,9 +40,5 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - While not mandatory, the report origin should be included whenever possible.
 - If the occurence (administration) date is not known, occurenceString may be populated with an appropriate string documenting this or the [Data Absent Reason] extension may be used.
 - If primary source is not known, the [Data Absent Reason] extension should be used.
-
-### Examples
-**EXAMPLES PENDING UPDATE**
-- [Patient-example](Patient-example.html)
 
 {% include link-list.md %}

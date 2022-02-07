@@ -125,12 +125,9 @@
 [CBS Exposure Observation Profile]: StructureDefinition-cbs-exposure-observation.html
 [CBS Immediate National Notifiable Condition Profile]: StructureDefinition-cbs-immediate-nnc.html
 [CBS Jurisdiction Code Profile]: StructureDefinition-cbs-jurisdiction-code.html
-[CBS Lab Observation Profile]: StructureDefinition-cbs-lab-observation.html
-[CBS Lab Test Report Profile]: StructureDefinition-cbs-lab-diagnosticreport.html
 [CBS MMWR Profile]: StructureDefinition-cbs-mmwr.html
 [CBS National Reporting Jurisdiction Profile]: StructureDefinition-cbs-national-reporting-jurisdiction.html
 [CBS Past or Present Job Profile]: StructureDefinition-cbs-past-or-present-job.html
-[CBS Performing Laboratory Profile]: StructureDefinition-cbs-performing-lab.html
 [CBS Pregnancy Status Profile]: StructureDefinition-cbs-pregnancy-status.html
 [CBS Questionnaire Profile]: StructureDefinition-cbs-questionnaire.html
 [CBS Reporting County Profile]: StructureDefinition-cbs-reporting-county.html
@@ -141,8 +138,11 @@
 [CBS Vaccination per ACIP Recommendations Profile]: StructureDefinition-cbs-vaccination-ACIP-Recommendation.html
 [US CBS Immunization Profile]: StructureDefinition-us-cbs-immunization.html
 [US CBS Condition of Interest Profile]: StructureDefinition-us-cbs-condition.html
+[US CBS Lab Diagnostic Report Profile]: StructureDefinition-us-cbs-lab-diagnosticreport.html
+[US CBS Lab Observation Profile]: StructureDefinition-us-cbs-lab-observation.html
 [US CBS Hospitalization Profile]: StructureDefinition-us-cbs-hospitalization.html
 [US CBS Patient Profile]: StructureDefinition-us-cbs-patient.html
+[US CBS Performing Laboratory Profile]: StructureDefinition-us-cbs-performing-lab.html
 [US CBS Reporting Source Organization Profile]: StructureDefinition-us-cbs-reporting-source-organization.html
 [US CBS Travel History Profile]: StructureDefinition-us-cbs-travel-history.html
 

@@ -1,20 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cbs-lab-observation",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
+  "id": "us-cbs-lab-observation",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation",
   "version": "0.1.0",
-  "name": "CaseBasedSurveillanceLabObservation",
-  "title": "Case Based Surveillance Lab Observation",
+  "name": "USCaseBasedSurveillanceLabObservation",
+  "title": "US Case Based Surveillance Lab Observation",
   "status": "active",
   "experimental": true,
   "date": "2021-01-01",
@@ -67,44 +57,26 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "patternCode": "final",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "laboratory",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-            }
-          ]
-        },
-        "mustSupport": true
+        "patternCode": "final"
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS"
+          "valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002"
         }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -112,20 +84,7 @@
               "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effectiveDateTime",
-        "path": "Observation.effectiveDateTime",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.performer",
@@ -135,7 +94,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-performing-lab"
             ]
           }
         ],
@@ -146,20 +105,36 @@
         "path": "Observation.value[x]",
         "type": [
           {
-            "code": "Quantity"
+            "code": "Quantity",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
           },
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
           },
           {
-            "code": "string"
+            "code": "string",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
+          },
+          {
+            "code": "Ratio"
           }
-        ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS"
-        }
+        ]
       },
       {
         "id": "Observation.interpretation",

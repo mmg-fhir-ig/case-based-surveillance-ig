@@ -159,8 +159,12 @@
     {
       "code": "vital-records",
       "display": "Vital Records Reporting (Death, Birth, or Fetal Death)"
+    },
+    {
+      "code": "lab-interpretative-report",
+      "display": "Lab Interpretive Report"
     }
   ],
   "caseSensitive": true,
-  "count": 35
+  "count": 36
 }

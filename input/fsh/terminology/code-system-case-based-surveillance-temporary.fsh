@@ -56,3 +56,6 @@ Description:  "Code system defined as placeholders for items that are not define
 * #vaccinations "Vaccinations"
 * #related-persons "Related Persons"
 * #vital-records "Vital Records Reporting (Death, Birth, or Fetal Death)"
+
+// Diagnostic Report Codes
+* #lab-interpretative-report "Lab Interpretive Report"

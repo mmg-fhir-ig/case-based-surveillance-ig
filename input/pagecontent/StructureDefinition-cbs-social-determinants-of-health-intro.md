@@ -45,7 +45,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - This profile supports using the Observation.effective[x] element to capture relevant dates or periods for a subject's social history. If dates are not known or wish to be avoided due to being Patient Identifying Information, the "Program Specific Time Window" extension may be used to indicate the window the observation falls within in relationship to a given event.
 - Occupational Data should utilize the more standardized [ODH FHIR Implementation Guide](https://hl7.org/fhir/us/odh/) profiles, preferrably the [Past or Present Job](https://hl7.org/fhir/us/odh/StructureDefinition-odh-PastOrPresentJob.html) profile.
 
-### Examples
-- EXAMPLES PENDING
-
 {% include link-list.md %}

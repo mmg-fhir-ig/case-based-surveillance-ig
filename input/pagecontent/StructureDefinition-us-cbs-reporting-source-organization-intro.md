@@ -11,5 +11,4 @@ The following data-elements must always be present ([Mandatory] definition) or m
 1. a type code from the [Reporting Source Type](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3036) value set
 1. a postal code for the reporting organization
 
-
 {% include link-list.md %}

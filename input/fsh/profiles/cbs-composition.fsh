@@ -79,7 +79,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[labRelated]
   * title = "Laboratory Related Resources"
   * code = cbs-temp-code-system#lab-related "Laboratory Related"
-  * entry only Reference(cbs-lab-diagnosticreport or cbs-lab-observation or cbs-performing-lab or cbs-specimen)
+  * entry only Reference(us-cbs-lab-diagnosticreport or us-cbs-lab-observation or us-cbs-performing-lab or cbs-specimen)
 * section[medicationAdministered]
   * title = "Medication Administered"
   * code = cbs-temp-code-system#medication-administered "Medication Administered"

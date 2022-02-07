@@ -33,9 +33,6 @@ groups:
     - StructureDefinition/cbs-cause-of-death
     - StructureDefinition/cbs-composition
     - StructureDefinition/cbs-document-bundle
-    - StructureDefinition/cbs-lab-diagnosticreport
-    - StructureDefinition/cbs-lab-observation
-    - StructureDefinition/cbs-performing-lab
     - StructureDefinition/cbs-questionnaire
     - StructureDefinition/cbs-social-determinants-of-health
     - StructureDefinition/cbs-specimen
@@ -69,7 +66,10 @@ groups:
     - StructureDefinition/us-cbs-condition
     - StructureDefinition/us-cbs-hospitalization
     - StructureDefinition/us-cbs-immunization
+    - StructureDefinition/us-cbs-lab-diagnosticreport
+    - StructureDefinition/us-cbs-lab-observation
     - StructureDefinition/us-cbs-patient
+    - StructureDefinition/us-cbs-performing-lab
     - StructureDefinition/us-cbs-reporting-source-organization
     - StructureDefinition/us-cbs-travel-history
   CBSExtensions:

@@ -29,8 +29,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - While not required, it is suggested that the focus element should provide a reference to the [US CBS Condition of Interest] resource related to the recommendation being captured along with any relevant [US CBS Immunization] resources.
 - The Observation note element may be used to add additional comments around the case that are relevant to vaccination recommendations which are not covered by the value and component.
 
-### Examples
-**EXAMPLES PENDING UPDATE**
-- [Patient-example](Patient-example.html)
-
 {% include link-list.md %}

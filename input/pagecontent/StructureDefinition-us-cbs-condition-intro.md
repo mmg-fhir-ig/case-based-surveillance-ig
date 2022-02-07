@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Condition] resource to represent
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the US CBS Patient profile:
+The following are example usage scenarios for the US CBS Condition of Interest profile:
 
 -   Capture a condition related to an Reportable Condition Trigger Code event to provide information tied directly to the condition in a surveillance report.
 
@@ -52,11 +52,5 @@ The following data-elements must always be present ([Mandatory] definition]) or 
 - The HL7 Asserted Date extension should be considered equivalent to the concept of Diagnosis Date in message mapping guides, capturing the time that the condition was officially asserted/diagnosed by a clinician. Condition.onset[x] is used to capture onset of the condition, such as a patient reporting of the start of symptom occurence. Condition.recordedDate is typically a machine generated value and may not align with the assertion/diagnosis date, though likely will in modern systems.
 - The illness duration extension may be used to obscure dates if desired, in alignment with Gen V2 data elements.
 - Verification Status may be used to document status in sending systems (e.g. jurisdictions) or in regards to workflow considerations such as through the entered-in-error code, but should not be used to capture Case Class Status as per the context of public health case reporting to case based surveillance programs.
-
-### Examples
-- [GenV2 US CBS Condition](Condition-GenV2-TC-Condition.html)
-- [HAI-CA US CBS Condition](Condition-HAICA-TC-Condition.html)
-- [Lyme US CBS Condition](Condition-Lyme-TC-Condition.html)
-- [STD US CBS Condition](Condition-STD-TC-Condition.html)
 
 {% include link-list.md %}

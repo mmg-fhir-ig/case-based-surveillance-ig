@@ -50,6 +50,8 @@ Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/trav
 
 
 // US Core Profiles
+Alias: $us-core-diagnosticreport-lab = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab
+Alias: $us-core-observation-lab = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
 Alias: $us-core-immunization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization
 
 // ECR US PH Profiles
@@ -98,6 +100,7 @@ Alias: $PHVS-GenderIdentity-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840
 Alias: $PHVS-RaceCategory-CDC-NullFlavor = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7205
 Alias: $PHVS-Sex-MFU = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1038
 Alias: $PHVS-Specimen-CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.946
+Alias: $PHVS-LabTestName_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002
 Alias: $PHVS-LabTestType-STD = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550
 Alias: $PHVS-LabTestType-CP-CRE = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7898
 Alias: $PHVS_LabTestName_CDC = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002

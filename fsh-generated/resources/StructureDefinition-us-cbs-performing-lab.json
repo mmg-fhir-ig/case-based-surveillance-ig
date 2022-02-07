@@ -1,0 +1,119 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "us-cbs-performing-lab",
+  "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-performing-lab",
+  "version": "0.1.0",
+  "name": "USCaseBasedSurveillancePerformingLaboratory",
+  "title": "US Case Based Surveillance Performing Laboratory Profile",
+  "status": "active",
+  "description": "NOT FINAL GOING TO CHANGE",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "LAB",
+              "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.name.extension",
+        "path": "Organization.name.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.name.extension:extensionDataAbsentReason",
+        "path": "Organization.name.extension",
+        "sliceName": "extensionDataAbsentReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.telecom.extension:extensionDataAbsentReason",
+        "path": "Organization.telecom.extension",
+        "sliceName": "extensionDataAbsentReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.address.extension:extensionDataAbsentReason",
+        "path": "Organization.address.extension",
+        "sliceName": "extensionDataAbsentReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

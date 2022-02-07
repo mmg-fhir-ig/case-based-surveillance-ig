@@ -31,8 +31,4 @@ The following data-elements must always be present ([Mandatory] definition]) or 
   - In the case of cruise ships, Observation.effective[x] may be used to capture the time spent on the cruise ship regardless of that the ship itself could be considered a mode of travel. Here the cruise would be considered the destination location. Handling of more complex scenarios in which a ship may be taken to a secondary destination with an extended stay (e.g. not a brief port of call) is left up to implementers.
 - Relative date values may be captured to obscure information that may be potentially identifiable. The [US CBS Program Specific Time Window Extension] should be used to indicate this. For example, some programs may request all instances of travel history within a month prior to reported condition onset. The extension's *timeWindow* slice would be set to a quantity of "1 month", the *relativeTo* slice coded as "conditionOnsetDateTime" or "conditionOnsetDatePeriodStart", and *relativeReference* pointing to the Condition of Interest profile with the onset against which the window is set.
 
-### Examples
-**EXAMPLES PENDING UPDATE**
-- [Travel History Example]
-
 {% include link-list.md %}

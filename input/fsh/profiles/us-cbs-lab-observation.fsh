@@ -1,7 +1,7 @@
-Profile: CaseBasedSurveillanceLabObservation
-Parent: Observation
-Id: cbs-lab-observation
-Title: "Case Based Surveillance Lab Observation"
+Profile: USCaseBasedSurveillanceLabObservation
+Parent: $us-core-observation-lab
+Id: us-cbs-lab-observation
+Title: "US Case Based Surveillance Lab Observation"
 Description: "Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs."
 * ^version = "0.1.0"
 * ^experimental = true
@@ -10,20 +10,14 @@ Description: "Defines constraints on the Observation resource in order to meet t
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * status 1..1 MS
 * status = #final
-* category 1..1 MS
-* category = $FHIR-Observation-Category#laboratory
-* code 1..1 MS
 * code only CodeableConcept
-* code from CBSLabObservationVS (extensible)
+* code from $PHVS-LabTestName_CDC (extensible)
 * subject 1..1 MS
 * subject only Reference(us-cbs-patient) // TODO: Needs to add related person when we make that profile (Congenital Syphilis)
-* effectiveDateTime 0..1 MS
 * performer 0..1 MS
-* performer only Reference(cbs-performing-lab)
+* performer only Reference(us-cbs-performing-lab)
 
-* value[x] 0..1 MS
-* value[x] only Quantity or CodeableConcept or string
-* value[x] from CBSLabObservationResultVS (extensible)
+* value[x] only Quantity or CodeableConcept or Ratio or string
 * interpretation 0..1 MS
 * method 0..1 MS
 * specimen 0..1 MS
