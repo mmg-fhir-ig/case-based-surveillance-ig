@@ -146,7 +146,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
             ]
           }
         ],
@@ -234,7 +234,7 @@
             {
               "code": "history-of-encounters",
               "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
-              "display": "History of Encounters (Hospitalizations)"
+              "display": "History of Encounters (Hospitalizations or Other)"
             }
           ]
         }
@@ -246,7 +246,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
             ]
           }
         ]
@@ -568,6 +569,20 @@
             }
           ]
         }
+      },
+      {
+        "id": "Composition.section:vaccination.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization",
+              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.section:relatedPerson",

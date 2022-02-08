@@ -3,7 +3,6 @@ Parent: $us-core-immunization
 Id: us-cbs-immunization
 Title: "US Case Based Surveillance Immunization Profile"
 Description: "Defines further constraints on the US Core Immunization profile to capture subject vaccination records in order to meet the needs of public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

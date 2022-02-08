@@ -3,7 +3,6 @@ Parent: $us-core-diagnosticreport-lab
 Id: us-cbs-lab-diagnosticreport
 Title: "US Case Based Surveillance Lab Diagnostic Report"
 Description: "Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

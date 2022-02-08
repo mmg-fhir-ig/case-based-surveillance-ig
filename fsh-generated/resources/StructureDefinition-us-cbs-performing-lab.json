@@ -6,7 +6,7 @@
   "name": "USCaseBasedSurveillancePerformingLaboratory",
   "title": "US Case Based Surveillance Performing Laboratory Profile",
   "status": "active",
-  "description": "NOT FINAL GOING TO CHANGE",
+  "description": "Defines further constraints and extensions to the ECR US Public Health Organization profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

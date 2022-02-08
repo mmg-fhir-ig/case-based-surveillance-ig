@@ -362,7 +362,7 @@
           "reference": "StructureDefinition/us-cbs-performing-lab"
         },
         "name": "US Case Based Surveillance Performing Laboratory Profile",
-        "description": "NOT FINAL GOING TO CHANGE",
+        "description": "Defines further constraints and extensions to the ECR US Public Health Organization profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards.",
         "exampleBoolean": false,
         "groupingId": "USCBSProfiles"
       },
@@ -469,22 +469,6 @@
         },
         "name": "Combined ValueSet for Lab DiagnosticReport Code.",
         "description": "Codes for Lab Test Type. The codes are from two PHINVADS valuesets to support labs test repeating group",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/CBSLabObservationResultVS"
-        },
-        "name": "Combined ValueSet for Lab Observation Result.",
-        "description": "Codes for Lab Observations Result Value. The codes are from two PHINVADS valuesets to support lab results in MMG and Lab Repeating Group",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/CBSLabObservationVS"
-        },
-        "name": "Combined ValueSet for Lab Observation Code.",
-        "description": "Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group",
         "exampleBoolean": false
       },
       {

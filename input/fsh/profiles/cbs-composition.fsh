@@ -3,7 +3,6 @@ Parent: Composition
 Id: cbs-composition
 Title: "Case Based Surveillance Composition Profile"
 Description: "Defines constraints to the Composition resource in order to meet the needs of public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -21,7 +20,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * subject only Reference(us-cbs-patient)
 * date 1..1 MS
 * author 1..* MS
-* author only Reference(Organization) // Need to change, only here for buidling purposes
+* author only Reference($us-core-organization)
 * title 1..1 MS
 * title = "Case Based Surveillance Composition"
 
@@ -59,8 +58,8 @@ Description: "Defines constraints to the Composition resource in order to meet t
   * entry only Reference(us-cbs-reporting-source-organization)
 * section[encounters]
   * title = "History of Encounters (Hospitalizations)"
-  * code = cbs-temp-code-system#history-of-encounters "History of Encounters (Hospitalizations)"
-  * entry only Reference(us-cbs-hospitalization)
+  * code = cbs-temp-code-system#history-of-encounters "History of Encounters (Hospitalizations or Other)"
+  * entry only Reference(us-cbs-hospitalization or $us-core-encounter)
 * section[epiObservations]
   * title = "Epi Observations"
   * code = cbs-temp-code-system#epi-observations "Epi Observations"
@@ -86,6 +85,7 @@ Description: "Defines constraints to the Composition resource in order to meet t
 * section[vaccination]
   * title = "Vaccinations"
   * code = cbs-temp-code-system#vaccinations "Vaccinations"
+  * entry only Reference(us-cbs-immunization or cbs-vaccination-ACIP-Recommendation or $us-core-immunization)
 * section[relatedPerson]
   * title = "Related Persons"
   * code = cbs-temp-code-system#related-persons "Related Persons"

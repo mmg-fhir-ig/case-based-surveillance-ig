@@ -3,7 +3,6 @@ Parent: $ecr-us-ph-condition
 Id: us-cbs-condition
 Title: "US Case Based Surveillance Condition of Interest Profile"
 Description: "Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

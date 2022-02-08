@@ -50,7 +50,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-age-at-investigation
 Title: "Case Based Surveillance Age at Case Investigation"
 Description: "Defines constraints on CBS Case Notification Panel to represent the age at case investigation of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -63,7 +62,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-binational-reporting-criteria
 Title: "Case Based Surveillance Binational Reporting Criteria"
 Description: "Defines constraints on CBS Case Notification Panel to represent the Binational Reporting Criteria of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -76,7 +74,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-investigation-start-date
 Title: "Case Based Surveillance Case Investigation Start Date"
 Description: "Defines constraints on CBS Case Notification Panel to represent the case investigation start date of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -89,7 +86,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-case-outbreak
 Title: "Case Based Surveillance Case Outbreak"
 Description: "Defines constraints on CBS Case Notification Panel to represent the Case Outbreak section of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -114,7 +110,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-date-initial-report
 Title: "Case Based Surveillance Date of Initial Report"
 Description: "Defines constraints on CBS Case Notification Panel to represent the date of initial report on the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -127,7 +122,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-date-reported-to-phd
 Title: "Case Based Surveillance Date of First Report to Public Health Department"
 Description: "Defines constraints on CBS Case Notification Panel to represent the date reported of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -140,7 +134,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-earliest-date-reported-to-county
 Title: "Case Based Surveillance Earliest Date Reported"
 Description: "Defines constraints on CBS Case Notification Panel to represent the earliest date reported of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -153,7 +146,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-earliest-date-reported-to-state
 Title: "Case Based Surveillance Earliest Date Reported to State"
 Description: "Defines constraints on CBS Case Notification Panel to represent the earliest date reported to the state of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -166,7 +158,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-immediate-nnc
 Title: "Case Based Surveillance Immediate National Notifiable Condition"
 Description: "Defines constraints on CBS Case Notification Panel to represent the imemdiate national notifiable condition of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -179,7 +170,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-jurisdiction-code
 Title: "Case Based Surveillance Jurisdiction Code"
 Description: "Defines constraints on CBS Case Notification Panel to represent the jurisdiction code of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -192,7 +182,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-national-reporting-jurisdiction
 Title: "Case Based Surveillance National Reporting Jurisdiction"
 Description: "Defines constraints on CBS Case Notification Panel to represent the national reporting jurisdiction of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -205,7 +194,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-pregnancy-status
 Title: "Case Based Surveillance Pregnancy Status"
 Description: "Defines constraints on CBS Case Notification Panel to represent the pregnancy status of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -218,7 +206,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-reporting-county
 Title: "Case Based Surveillance Reporting County"
 Description: "Defines constraints on CBS Case Notification Panel to represent the reporting county of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -231,7 +218,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-reporting-state
 Title: "Case Based Surveillance Reporting State"
 Description: "Defines constraints on CBS Case Notification Panel to represent the reporting state of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -244,7 +230,6 @@ Parent: cbs-case-notification-panel
 Id: cbs-transmission-mode
 Title: "Case Based Surveillance Transmission Mode"
 Description: "Defines constraints on CBS Case Notification Panel to represent the transmission mode of the case notification panel in public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

@@ -3,7 +3,6 @@ Parent: $ecr-us-ph-patient
 Id: us-cbs-patient
 Title: "US Case Based Surveillance Patient Profile"
 Description: "Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
