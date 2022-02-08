@@ -7,7 +7,7 @@ Description: "A lab diagnostic report example resource for the HAI-CA Test Case 
 * subject = Reference(HAICA-TC-Patient)
 * specimen = Reference(HAICA-TC-Specimen)
 * result = Reference(HAICA-TC-Lab-Observation)
-* effective[x].extension[0]
+* effective[x].extension
   * url = $data-absent-reason
   * valueCode = #unknown
 * issued = "2021-01-01T00:00:00Z"

@@ -1,0 +1,56 @@
+{
+  "resourceType": "Immunization",
+  "id": "Varicella-TC-Immunization",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization"
+    ]
+  },
+  "status": "completed",
+  "identifier": [
+    {
+      "value": "ID102"
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "21",
+        "system": "urn:oid:2.16.840.1.113883.12.292",
+        "display": "Varicella Vaccine"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/Varicella-TC-Patient",
+    "display": "Varicella-TC Example Patient"
+  },
+  "occurrenceDateTime": "2013-08-10",
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1
+    }
+  ],
+  "manufacturer": {
+    "display": "Merck and Co., Inc."
+  },
+  "lotNumber": "PDE453956",
+  "expirationDate": "2016-10-31",
+  "reportOrigin": {
+    "coding": [
+      {
+        "code": "05",
+        "system": "urn:oid:2.16.840.1.114222.4.5.293",
+        "display": "Historical information - from other registry"
+      }
+    ]
+  },
+  "_primarySource": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

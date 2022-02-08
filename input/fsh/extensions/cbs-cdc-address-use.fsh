@@ -13,6 +13,5 @@ Description: "Indicates the use of the address as per information surveillance p
 * . ^definition = "Indicates the use of the address."
 * . ^isModifier = false
 * valueCoding 1..1
-* valueCoding only Coding
 * valueCoding from CBSCDCAddressUseVS (required)
 * valueCoding ^binding.description = "Code for Address Use"

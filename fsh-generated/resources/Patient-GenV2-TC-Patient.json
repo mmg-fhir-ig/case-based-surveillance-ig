@@ -26,6 +26,30 @@
       "country": "USA"
     }
   ],
+  "telecom": [
+    {
+      "system": "phone",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    },
+    {
+      "system": "email",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
   "extension": [
     {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
@@ -143,17 +167,12 @@
   "deceasedDateTime": "2014-03-02",
   "name": [
     {
-      "text": "Zzzzz, Aaaaa",
-      "family": "Zzzzz",
-      "given": [
-        "Aaaaa"
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "masked"
+        }
       ]
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "111-111-1111"
     }
   ]
 }

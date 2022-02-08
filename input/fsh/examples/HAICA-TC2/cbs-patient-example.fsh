@@ -63,10 +63,15 @@ Description: "CBS Patient resource for the HAI-CA Test Case 2 Patient"
 * address[1].extension[cbs-cdc-address-use].valueCoding = cbs-temp-code-system#Usual-Residence
 
 * name
-  * text = "Yyyyy, Bbbbb"
-  * family = "Yyyyy"
-  * given = "Bbbbb"
+  * extension[0]
+    * url = $data-absent-reason
+    * valueCode = #masked
 
-* telecom
-  * system = #phone
-  * value = "111-111-1111" // TODO: REPLACE WITH DATA ABSENT REASON EXTENSION
+* telecom[phone]
+  * value
+    * extension.url = $data-absent-reason
+    * extension.valueCode = #masked
+* telecom[email]
+  * value
+    * extension.url = $data-absent-reason
+    * extension.valueCode = #masked

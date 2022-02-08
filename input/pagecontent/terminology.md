@@ -12,6 +12,7 @@ These value sets have been defined for this implementation guide.
 - [CBS Social Determinants of Health Categories]
 - [CBS Social Determinants of Health Codes]
 - [CBS Time Window Relative To Value Set]
+- [CBS Lab Diagnostic Report Value Set]
 
 
 ### Code Systems

@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "Varicella-TC-ACIP-Recommendation",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "vac148",
+        "system": "urn:oid:2.16.840.1.114222.4.5.232",
+        "display": "Vaccinated per ACIP Recommendations"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "vac149",
+            "system": "urn:oid:2.16.840.1.114222.4.5.232",
+            "display": "Reason Not Vaccinated per ACIP Recommendations"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "PHC1314",
+            "system": "urn:oid:2.16.840.1.114222.4.5.274",
+            "display": "Parent/Patient unaware of recommendation"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/Varicella-TC-Patient",
+    "display": "Varicella-TC-Patient"
+  },
+  "focus": [
+    {
+      "reference": "Immunization/Varicella-TC-Immunization",
+      "display": "Varicella-TC-Immunization"
+    },
+    {
+      "reference": "Condition/Varicella-TC-Condition",
+      "display": "Varicella-TC-Condition"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "N",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+        "display": "No"
+      }
+    ]
+  }
+}

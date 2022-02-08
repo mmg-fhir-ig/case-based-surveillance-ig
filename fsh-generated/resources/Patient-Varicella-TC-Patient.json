@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Lyme-TC-Patient",
+  "id": "Varicella-TC-Patient",
   "meta": {
     "profile": [
       "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
@@ -8,9 +8,9 @@
   },
   "address": [
     {
-      "district": "Davidson",
-      "state": "Tennessee",
-      "postalCode": "37209",
+      "district": "Blount",
+      "state": "Alabama",
+      "postalCode": "35031",
       "use": "home"
     },
     {
@@ -52,6 +52,23 @@
   ],
   "extension": [
     {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
       "extension": [
         {
@@ -88,7 +105,7 @@
         "text": "Local Record ID"
       },
       "system": "urn:temp:national-reporting-jurisdiction:48",
-      "value": "TickborneLyme_TC01"
+      "value": "Var_TC05_Record"
     },
     {
       "type": {
@@ -102,7 +119,7 @@
         "text": "Local Subject ID"
       },
       "system": "urn:temp:national-reporting-jurisdiction:48",
-      "value": "TickborneLyme_TC01"
+      "value": "Var_TC05_Subject"
     },
     {
       "type": {
@@ -116,7 +133,7 @@
         "text": "Legacy Case Identifier"
       },
       "system": "urn:temp:national-reporting-jurisdiction:48",
-      "value": "34022747S012018"
+      "value": "12345601S012016"
     },
     {
       "type": {
@@ -130,11 +147,11 @@
         "text": "State Case Identifier"
       },
       "system": "urn:temp:national-reporting-jurisdiction:48",
-      "value": "340227"
+      "value": "AL4321"
     }
   ],
-  "gender": "male",
-  "birthDate": "1993-06-01",
+  "gender": "female",
+  "birthDate": "2010-05-31",
   "name": [
     {
       "extension": [
