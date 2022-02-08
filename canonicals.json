@@ -3,363 +3,371 @@
     "id": "cbs-temp-code-system",
     "type": "CodeSystem",
     "url": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSTemporary"
   },
   {
     "id": "gtri.fhir.cbs",
     "type": "ImplementationGuide",
     "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSIG"
   },
   {
     "id": "FoodNet-Demo-Questionnaire",
     "type": "Questionnaire",
     "url": "http://cbsig.chai.gatech.edu/Questionnaire/FoodNet-Demo-Questionnaire",
-    "version": "0.1.0"
+    "version": "0.2.0",
+    "name": "FoodNetDemoQuestionnaire"
   },
   {
-    "id": "cbs-birthsex",
+    "id": "STD-Demo-Questionnaire",
+    "type": "Questionnaire",
+    "url": "http://cbsig.chai.gatech.edu/Questionnaire/STD-Demo-Questionnaire",
+    "version": "0.2.0",
+    "name": "STDQuestionnaire"
+  },
+  {
+    "id": "cbs-age-at-investigation",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
-    "version": "0.1.0",
-    "name": "CBSBirthSexExtension"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceAgeAtInvestigation"
+  },
+  {
+    "id": "cbs-binational-reporting-criteria",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceBinationalReportingCriteria"
   },
   {
     "id": "cbs-case-class-status",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSCaseClassStatusExtension"
   },
   {
     "id": "cbs-case-notification-panel",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceCaseNotificationPanel"
+  },
+  {
+    "id": "cbs-case-outbreak",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceCaseOutbreak"
   },
   {
     "id": "cbs-cause-of-death",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceCauseOfDeath"
   },
   {
     "id": "cbs-cdc-address-use",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSCDCAddressUse"
-  },
-  {
-    "id": "cbs-cnp-member",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceCaseNotificationPanelMember"
   },
   {
     "id": "cbs-composition",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceComposition"
   },
   {
-    "id": "cbs-condition",
+    "id": "cbs-date-initial-report",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceCondition"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceDateInitialReport"
   },
   {
-    "id": "cbs-diagnosis-date",
+    "id": "cbs-date-reported-to-phd",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
-    "version": "0.1.0",
-    "name": "CBSDiagnosisDateExtension"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceDateReportedToPHD"
   },
   {
     "id": "cbs-document-bundle",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceDocumentBundle"
   },
   {
-    "id": "cbs-epi-questionnaire-panel",
+    "id": "cbs-earliest-date-reported-to-county",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel",
-    "version": "0.1.0",
-    "name": "CBSEpiQuestionnairePanel"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceEarliestDateReported"
   },
   {
-    "id": "cbs-ethnicity",
+    "id": "cbs-earliest-date-reported-to-state",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity",
-    "version": "0.1.0",
-    "name": "CBSEthnicityExtension"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceEarliestDateToState"
   },
   {
     "id": "cbs-exposure-observation",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceExposureObservation"
-  },
-  {
-    "id": "cbs-hospitalization",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceHospitalization"
   },
   {
     "id": "cbs-illness-duration",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceIllnessDuration"
   },
   {
-    "id": "cbs-lab-diagnosticreport",
+    "id": "cbs-immediate-nnc",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceLabDiagnosticReport"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceImmediateNNC"
   },
   {
-    "id": "cbs-lab-observation",
+    "id": "cbs-investigation-start-date",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceLabObservation"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceInvestigationStartDate"
+  },
+  {
+    "id": "cbs-jurisdiction-code",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceJurisdictionCode"
   },
   {
     "id": "cbs-mmwr",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceMMWR"
   },
   {
-    "id": "cbs-patient",
+    "id": "cbs-national-reporting-jurisdiction",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillancePatient"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceNationalReportingJurisdiction"
   },
   {
-    "id": "cbs-performing-lab",
+    "id": "cbs-pregnancy-status",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-performing-lab",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillancePerformingLaboratory"
-  },
-  {
-    "id": "cbs-person-reporting-to-cdc",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillancePersonReportingToCDC"
-  },
-  {
-    "id": "cbs-program-specific-time-window",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-program-specific-time-window",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceProgramSpecificTimeWindow"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillancePregnancyStatus"
   },
   {
     "id": "cbs-questionnaire",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceQuestionnaire"
-  },
-  {
-    "id": "cbs-race",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race",
-    "version": "0.1.0",
-    "name": "CBSRaceExtension"
-  },
-  {
-    "id": "cbs-reason-not-vaccinated-per-ACIP-recommendations",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceReasonNotVaccinatedPerACIPRecommendations"
   },
   {
     "id": "cbs-related-case",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceRelatedCase"
   },
   {
-    "id": "cbs-reporting-source-organization",
+    "id": "cbs-reporting-county",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceReportingSourceOrganization"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceReportingCounty"
+  },
+  {
+    "id": "cbs-reporting-state",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceReportingState"
   },
   {
     "id": "cbs-social-determinants-of-health",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceSocialDeterminantsOfHealth"
   },
   {
     "id": "cbs-specimen",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceSpecimen"
   },
   {
     "id": "cbs-specimen-role",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSSpecimenRoleExtension"
   },
   {
-    "id": "cbs-travel-history",
+    "id": "cbs-transmission-mode",
     "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-travel-history",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceTravelHistory"
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceTransmissionMode"
   },
   {
     "id": "cbs-vaccination-ACIP-Recommendation",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CaseBasedSurveillanceVaccinationACIPRecommendation"
-  },
-  {
-    "id": "cbs-vaccination-indication",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-indication",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceVaccinationIndication"
-  },
-  {
-    "id": "cbs-vaccination-record",
-    "type": "StructureDefinition",
-    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-record",
-    "version": "0.1.0",
-    "name": "CaseBasedSurveillanceVaccinationRecord"
   },
   {
     "id": "us-cbs-condition",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "USCaseBasedSurveillanceCondition"
   },
   {
     "id": "us-cbs-hospitalization",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "USCaseBasedSurveillanceHospitalization"
+  },
+  {
+    "id": "us-cbs-immunization",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization",
+    "version": "0.2.0",
+    "name": "USCaseBasedSurveillanceImmunization"
+  },
+  {
+    "id": "us-cbs-lab-diagnosticreport",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport",
+    "version": "0.2.0",
+    "name": "USCaseBasedSurveillanceLabDiagnosticReport"
+  },
+  {
+    "id": "us-cbs-lab-observation",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation",
+    "version": "0.2.0",
+    "name": "USCaseBasedSurveillanceLabObservation"
   },
   {
     "id": "us-cbs-patient",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "USCaseBasedSurveillancePatient"
+  },
+  {
+    "id": "us-cbs-performing-lab",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-performing-lab",
+    "version": "0.2.0",
+    "name": "USCaseBasedSurveillancePerformingLaboratory"
   },
   {
     "id": "us-cbs-period-and-mode-of-travel",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "USCBSPeriodAndodeOfTravelExtension"
+  },
+  {
+    "id": "us-cbs-program-specific-time-window",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-program-specific-time-window",
+    "version": "0.2.0",
+    "name": "CaseBasedSurveillanceProgramSpecificTimeWindow"
+  },
+  {
+    "id": "us-cbs-reporting-source-organization",
+    "type": "StructureDefinition",
+    "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization",
+    "version": "0.2.0",
+    "name": "USCaseBasedSurveillanceReportingSourceOrganization"
   },
   {
     "id": "us-cbs-travel-history",
     "type": "StructureDefinition",
     "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "USCaseBasedSurveillanceTravelHistory"
   },
   {
     "id": "CBSCDCAddressUseVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSCDCAddressUseVS"
   },
   {
     "id": "CBSCaseNotificationPanelVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCaseNotificationPanelVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSCaseNotificationPanelVS"
   },
   {
     "id": "CBSLabDiagnosticReportVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSLabDiagnosticReportVS"
-  },
-  {
-    "id": "CBSLabObservationResultVS",
-    "type": "ValueSet",
-    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationResultVS",
-    "version": "0.1.0",
-    "name": "CBSLabObservationResultVS"
-  },
-  {
-    "id": "CBSLabObservationVS",
-    "type": "ValueSet",
-    "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabObservationVS",
-    "version": "0.1.0",
-    "name": "CBSLabObservationVS"
   },
   {
     "id": "CBSRelatedCaseTypeVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSRelatedCaseTypeVS"
   },
   {
     "id": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSSTDSexualHistoryDrugUseQuestionnaireVS"
   },
   {
     "id": "CBSSocialDeterminantsOfHealthCategoryVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSSocialDeterminantsOfHealthCategoryVS"
   },
   {
     "id": "CBSSocialDeterminantsOfHealthVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSSocialDeterminantsOfHealthVS"
   },
   {
     "id": "CBSTimeWindowRelativeToVS",
     "type": "ValueSet",
     "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "CBSTimeWindowRelativeToVS"
   }
 ]

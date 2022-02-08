@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Varicella-TC-Condition"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Varicella-TC-Condition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-condition.html">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Suspected <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#415684004)</span></p><p><b>clinicalStatus</b>: Inactive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Varicella <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#10030)</span></p><p><b>subject</b>: <a href="Patient-Varicella-TC-Patient.html">Patient/Varicella-TC-Patient: Varicella-TC Example Patient</a> ""</p><p><b>onset</b>: 2015-12-31</p><p><b>abatement</b>: 2016-01-08</p></div>
+  </text>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="415684004"/>
+        <display value="Suspected"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="inactive"/>
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.5.277"/>
+      <code value="10030"/>
+      <display value="Varicella"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Varicella-TC-Patient"/>
+    <display value="Varicella-TC Example Patient"/>
+  </subject>
+  <onsetDateTime value="2015-12-31"/>
+  <abatementDateTime value="2016-01-08"/>
+</Condition>

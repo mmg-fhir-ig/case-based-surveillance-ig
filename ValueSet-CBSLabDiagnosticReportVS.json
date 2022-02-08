@@ -3,14 +3,14 @@
   "id": "CBSLabDiagnosticReportVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7550\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550</a></li><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1002\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002</a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7550\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550</a></li><li>Import all the codes that are contained in <a href=\"https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1002\">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002</a></li><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-lab-interpretative-report\">lab-interpretative-report</a></td><td>Lab Interpretive Report</td></tr></table></li></ul></div>"
   },
   "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CBSLabDiagnosticReportVS",
   "title": "Combined ValueSet for Lab DiagnosticReport Code.",
   "status": "active",
-  "date": "2022-01-25T10:18:17-05:00",
+  "date": "2022-02-08T17:12:45-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -34,6 +34,15 @@
       {
         "valueSet": [
           "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002"
+        ]
+      },
+      {
+        "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+        "concept": [
+          {
+            "code": "lab-interpretative-report",
+            "display": "Lab Interpretive Report"
+          }
         ]
       }
     ]

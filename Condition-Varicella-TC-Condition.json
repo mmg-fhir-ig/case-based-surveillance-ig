@@ -1,0 +1,60 @@
+{
+  "resourceType": "Condition",
+  "id": "Varicella-TC-Condition",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Varicella-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-condition.html\">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Suspected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#415684004)</span></p><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Varicella <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#10030)</span></p><p><b>subject</b>: <a href=\"Patient-Varicella-TC-Patient.html\">Patient/Varicella-TC-Patient: Varicella-TC Example Patient</a> \"\"</p><p><b>onset</b>: 2015-12-31</p><p><b>abatement</b>: 2016-01-08</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "415684004",
+            "display": "Suspected"
+          }
+        ]
+      }
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "inactive"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.5.277",
+        "code": "10030",
+        "display": "Varicella"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Varicella-TC-Patient",
+    "display": "Varicella-TC Example Patient"
+  },
+  "onsetDateTime": "2015-12-31",
+  "abatementDateTime": "2016-01-08"
+}

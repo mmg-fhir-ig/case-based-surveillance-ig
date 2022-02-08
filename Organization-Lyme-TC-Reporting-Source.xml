@@ -3,11 +3,12 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="Lyme-TC-Reporting-Source"/>
   <meta>
-    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-reporting-source-organization.html">Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>type</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#PHC247)</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 37243 </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-reporting-source-organization.html">US Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#PHC247)</span></p><p><b>name</b>: Reporting Source</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 37243 </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Doe, John</td><td>ph: 456-987-8888, <a href="mailto:john.doe@email.com">john.doe@email.com</a></td></tr></table></div>
   </text>
+  <active value="true"/>
   <type>
     <coding>
       <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
@@ -16,7 +17,27 @@
     </coding>
   </type>
   <name value="Reporting Source"/>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown"/>
+    </extension>
+  </telecom>
   <address>
     <postalCode value="37243"/>
   </address>
+  <contact>
+    <name>
+      <text value="Doe, John"/>
+      <family value="Doe"/>
+      <given value="John"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="456-987-8888"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="john.doe@email.com"/>
+    </telecom>
+  </contact>
 </Organization>

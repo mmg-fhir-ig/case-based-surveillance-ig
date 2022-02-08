@@ -67,9 +67,6 @@
   <section>
     <title value="Reporting Entities"/>
     <entry>
-      <reference value="Practitioner/HAICA-TC-Person-Reporting"/>
-    </entry>
-    <entry>
       <reference value="Organization/HAICA-TC-Reporting-Source"/>
     </entry>
   </section>

@@ -3,10 +3,10 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="GenV2-TC-CNP-Member10"/>
   <meta>
-    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-CNP-Member10" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case Outbreak Name and Indicator <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system.</a>#case-outbreak)</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> " ZZZZZ"</p><blockquote><p><b>component</b></p><p><b>code</b>: Case is associated with a known outbreak <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77980-1)</span></p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html">PH_RaceAndEthnicity_CDC</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Case outbreak name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77981-9)</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-CNP-Member10" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-case-outbreak.html">Case Based Surveillance Case Outbreak</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case Outbreak Name and Indicator <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system.</a>#case-outbreak)</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> ""</p><blockquote><p><b>component</b></p><p><b>code</b>: Case is associated with a known outbreak <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77980-1)</span></p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html">PH_RaceAndEthnicity_CDC</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Case Outbreak Name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77981-9)</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>
   </text>
   <status value="final"/>
   <category>
@@ -32,6 +32,7 @@
       <coding>
         <system value="http://loinc.org"/>
         <code value="77980-1"/>
+        <display value="Case is associated with a known outbreak"/>
       </coding>
     </code>
     <valueCodeableConcept>
@@ -47,6 +48,7 @@
       <coding>
         <system value="http://loinc.org"/>
         <code value="77981-9"/>
+        <display value="Case Outbreak Name"/>
       </coding>
     </code>
     <valueString value="HANSENOUTB1"/>

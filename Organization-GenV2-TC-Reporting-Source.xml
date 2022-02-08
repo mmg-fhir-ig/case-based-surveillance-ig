@@ -3,11 +3,12 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="GenV2-TC-Reporting-Source"/>
   <meta>
-    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-reporting-source-organization.html">Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0406.html">organizationUnitType</a>#1)</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 77018 </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-reporting-source-organization.html">US Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0406.html">organizationUnitType</a>#1)</span></p><p><b>name</b>: Reporting Source</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 77018 </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Smith, John</td><td>ph: 444-321-1234, <a href="mailto:jsmith@txdoh.org">jsmith@txdoh.org</a></td></tr></table></div>
   </text>
+  <active value="true"/>
   <type>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v2-0406"/>
@@ -16,7 +17,27 @@
     </coding>
   </type>
   <name value="Reporting Source"/>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown"/>
+    </extension>
+  </telecom>
   <address>
     <postalCode value="77018"/>
   </address>
+  <contact>
+    <name>
+      <text value="Smith, John"/>
+      <family value="Smith"/>
+      <given value="John"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="444-321-1234"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jsmith@txdoh.org"/>
+    </telecom>
+  </contact>
 </Organization>

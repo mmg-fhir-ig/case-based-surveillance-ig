@@ -3,12 +3,12 @@
   "id": "GenV2-TC-CNP-Member4",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: National reporting jurisdiction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> \" ZZZZZ\"</p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-national-reporting-jurisdiction.html\">Case Based Surveillance National Reporting Jurisdiction</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: National Reporting Jurisdiction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> \"\"</p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
   },
   "status": "final",
   "category": [
@@ -27,7 +27,7 @@
       {
         "system": "http://loinc.org",
         "code": "77968-6",
-        "display": "National reporting jurisdiction"
+        "display": "National Reporting Jurisdiction"
       }
     ]
   },

@@ -3,12 +3,12 @@
   "id": "HAICA-TC-CNP-Member1",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-CNP-Member1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAICA-TC Example Patient</a> \" YYYYY\"</p><p><b>value</b>: Georgia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#13)</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-CNP-Member1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-reporting-state.html\">Case Based Surveillance Reporting State</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting State <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAICA-TC Example Patient</a> \"\"</p><p><b>value</b>: Georgia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#13)</span></p></div>"
   },
   "status": "final",
   "category": [
@@ -27,7 +27,7 @@
       {
         "system": "http://loinc.org",
         "code": "77966-0",
-        "display": "Reporting state"
+        "display": "Reporting State"
       }
     ]
   },

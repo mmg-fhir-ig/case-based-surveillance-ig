@@ -3,15 +3,15 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="Lyme-TC-Patient"/>
   <meta>
-    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: Hispanic or Latino (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2135-2 = '2135-2', stated as 'Hispanic or Latino')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227</p><p><b>name</b>: Xxxxx, Ccccc</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1993-06-01</p><p><b>address</b>: </p><ul><li>Tennessee 37209 (HOME)</li><li>USA </li></ul></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Lyme-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-patient.html">US Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: TickborneLyme_TC01, Local Subject ID: TickborneLyme_TC01, Legacy Case Identifier: 34022747S012018, State Case Identifier: 340227</p><p><b>name</b>: </p><p><b>telecom</b>: </p><p><b style="color: maroon">Exception generating Narrative: Cannot invoke "String.startsWith(String)" because the return value of "org.hl7.fhir.r5.model.ContactPoint.getValue()" is null</b></p></div>
   </text>
-  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity">
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
     <extension url="ombCategory">
       <valueCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
         <code value="2135-2"/>
         <display value="Hispanic or Latino"/>
       </valueCoding>
@@ -74,10 +74,26 @@
     <value value="340227"/>
   </identifier>
   <name>
-    <text value="Xxxxx, Ccccc"/>
-    <family value="Xxxxx"/>
-    <given value="Ccccc"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
   </name>
+  <telecom>
+    <system value="phone"/>
+    <value>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
+  </telecom>
   <gender value="male"/>
   <birthDate value="1993-06-01"/>
   <address>

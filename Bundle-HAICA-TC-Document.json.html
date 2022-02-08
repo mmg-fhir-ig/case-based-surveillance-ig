@@ -50,7 +50,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Case Based Surveillance Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Case Based Surveillance Implementation Guide</span><br/>0.2.0 - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -165,7 +165,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Case Based Surveillance Implementation Guide - Local Development build (v0.1.0). See the <a href="http://cbsig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Case Based Surveillance Implementation Guide - Local Development build (v0.2.0). See the <a href="http://cbsig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -332,9 +332,6 @@
             "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Reporting Entities",
             "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/HAICA-TC-Person-Reporting"
-              },
-              {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HAICA-TC-Reporting-Source"
               }
             ]
@@ -363,12 +360,12 @@
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "HAICA-TC-Patient",
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Patient\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-patient.html\&quot;&gt;Case Based Surveillance Patient Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Race Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: White (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2106-3 = '2106-3', stated as 'White')&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Mixed&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Ethnicity Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2135-2 (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2135-2 = '2135-2', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Hispanic or Latino&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Sex Assigned at Birth Extension&lt;/b&gt;: F&lt;/p&gt;&lt;p&gt;&lt;b&gt;Birth Place&lt;/b&gt;: USA &lt;/p&gt;&lt;p&gt;&lt;b&gt;genderIdentity&lt;/b&gt;: female &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-gender-identity.html\&quot;&gt;Gender identity&lt;/a&gt;#female)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Yyyyy, Bbbbb&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1940-01-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Georgia 30126 (HOME)&lt;/li&gt;&lt;li&gt;USA &lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Patient\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-cbs-patient.html\&quot;&gt;US Case Based Surveillance Patient Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;US Core Race Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Mixed&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;US Core Ethnicity Extension&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Hispanic or Latino&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;US Core Birth Sex Extension&lt;/b&gt;: F&lt;/p&gt;&lt;p&gt;&lt;b&gt;Birth Place&lt;/b&gt;: USA &lt;/p&gt;&lt;p&gt;&lt;b&gt;genderIdentity&lt;/b&gt;: female &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-gender-identity.html\&quot;&gt;Gender identity&lt;/a&gt;#female)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b style=\&quot;color: maroon\&quot;&gt;Exception generating Narrative: Cannot invoke \&quot;String.startsWith(String)\&quot; because the return value of \&quot;org.hl7.fhir.r5.model.ContactPoint.getValue()\&quot; is null&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
           {
@@ -376,7 +373,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "ombCategory",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0005",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.6.238",
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2106-3",
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "White"
                 }
@@ -386,15 +383,16 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Mixed"
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "ombCategory",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0005",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2135-2"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.6.238",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2135-2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Hispanic or Latino"
                 }
               },
               {
@@ -402,10 +400,10 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Hispanic or Latino"
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
           },
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "F"
           },
           {
@@ -458,11 +456,36 @@
         ],
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "Yyyyy, Bbbbb",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Yyyyy",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-              "Bbbbb"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+              }
             ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">_value</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">_value</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+                }
+              ]
+            }
           }
         ],
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female",
@@ -496,12 +519,12 @@
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.id">id</a>" : "HAICA-TC-Condition",
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Condition\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-condition.html\&quot;&gt;Case Based Surveillance Condition of Interest Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Case Class Status&lt;/b&gt;: Confirmed present &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#410605003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Candida auris, clinical &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#50263)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 2018-11-22&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Condition\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-cbs-condition.html\&quot;&gt;US Case Based Surveillance Condition of Interest Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Case Based Surveillance Case Class Status&lt;/b&gt;: Confirmed present &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#410605003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Problem List Item &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#problem-list-item)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Candida auris, clinical &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#50263)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 2018-11-22&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.extension">extension</a>" : [
           {
@@ -515,6 +538,16 @@
                 }
               ]
             }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/condition.html#Condition.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "problem-list-item"
+              }
+            ]
           }
         ],
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.code">code</a>" : {
@@ -540,18 +573,30 @@
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "HAICA-TC-Hospitalization",
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Hospitalization\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-hospitalization.html\&quot;&gt;Case Based Surveillance Hospitalization Encounter Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2018-11-24 --&amp;gt; (ongoing)&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Condition_HAICA-TC-Condition\&quot;&gt;See above (Condition/HAICA-TC-Condition: HAI-CA TC Condition of Interest)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Hospitalization\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-cbs-hospitalization.html\&quot;&gt;US Case Based Surveillance Hospitalization Encounter Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Inpatient Hospital &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-CPT.html\&quot;&gt;Current Procedural Terminology (CPT&amp;reg;)&lt;/a&gt;#42628595)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2018-11-24 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;#Condition_HAICA-TC-Condition\&quot;&gt;See above (Condition/HAICA-TC-Condition)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;span&gt;: Masked Location&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "unknown",
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IMP"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IMP",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "inpatient encounter"
         },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://www.ama-assn.org/go/cpt",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "42628595",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Inpatient Hospital"
+              }
+            ]
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HAICA-TC-Patient",
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "HAI-CA TC Example Patient"
@@ -559,43 +604,22 @@
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2018-11-24"
         },
-        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">diagnosis</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonReference">reasonReference</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">condition</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/HAICA-TC-Condition",
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "HAI-CA TC Condition of Interest"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Practitioner/HAICA-TC-Person-Reporting",
-      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a>" : "HAICA-TC-Person-Reporting",
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Person-Reporting\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-person-reporting-to-cdc.html\&quot;&gt;Case Based Surveillance Person Reporting To CDC Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: von Count, Count&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;mailto:count_voncount@gadph.gov\&quot;&gt;count_voncount@gadph.gov&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "von Count, Count",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "von Count",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-              "Count"
-            ]
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/HAICA-TC-Condition"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.telecom">telecom</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "count_voncount@gadph.gov"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Masked Location"
+            }
           }
         ]
       }
@@ -607,13 +631,14 @@
         "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "HAICA-TC-Reporting-Source",
         "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Reporting-Source\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-reporting-source-organization.html\&quot;&gt;Case Based Surveillance Reporting Source Organization Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Unknown &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html\&quot;&gt;NullFlavor&lt;/a&gt;#UNK)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Reporting Source&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Reporting-Source\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-cbs-reporting-source-organization.html\&quot;&gt;US Case Based Surveillance Reporting Source Organization Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Unknown &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html\&quot;&gt;NullFlavor&lt;/a&gt;#UNK)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Reporting Source&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: -unknown-&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: &lt;/p&gt;&lt;h3&gt;Contacts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Telecom&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;von Count, Count&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;mailto:count_voncount@gadph.gov\&quot;&gt;count_voncount@gadph.gov&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.active">active</a>" : true,
         "<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -625,7 +650,44 @@
             ]
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Reporting Source"
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Reporting Source",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">telecom</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "unknown"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "unknown"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact">contact</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.name">name</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "von Count, Count",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "von Count",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+                "Count"
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.telecom">telecom</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "count_voncount@gadph.gov"
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -763,12 +825,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-CNP-Member1",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member1\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-cnp-member.html\&quot;&gt;Case Based Surveillance Case Notification Panel Member&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Reporting state &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77966-0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Georgia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#13)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member1\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-reporting-state.html\&quot;&gt;Case Based Surveillance Reporting State&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Reporting State &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77966-0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Georgia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#13)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -787,7 +849,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "77966-0",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Reporting state"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Reporting State"
             }
           ]
         },
@@ -813,12 +875,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-CNP-Member2",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member2\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-cnp-member.html\&quot;&gt;Case Based Surveillance Case Notification Panel Member&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Reporting county &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77967-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Cobb &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#13067)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member2\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-reporting-county.html\&quot;&gt;Case Based Surveillance Reporting County&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Reporting County &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77967-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Cobb &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#13067)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -837,7 +899,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "77967-8",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Reporting county"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Reporting County"
             }
           ]
         },
@@ -863,12 +925,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-CNP-Member3",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member3\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-cnp-member.html\&quot;&gt;Case Based Surveillance Case Notification Panel Member&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: National reporting jurisdiction &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77968-6)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Georgia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#13)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member3\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-national-reporting-jurisdiction.html\&quot;&gt;Case Based Surveillance National Reporting Jurisdiction&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: National Reporting Jurisdiction &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77968-6)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Georgia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#13)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -887,7 +949,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "77968-6",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "National reporting jurisdiction"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "National Reporting Jurisdiction"
             }
           ]
         },
@@ -913,12 +975,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-CNP-Member4",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member4\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-cnp-member.html\&quot;&gt;Case Based Surveillance Case Notification Panel Member&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Disease transmission mode &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77989-2)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Indeterminate disease transmission mode &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#418375005)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member4\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-transmission-mode.html\&quot;&gt;Case Based Surveillance Transmission Mode&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Disease transmission mode &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77989-2)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Indeterminate disease transmission mode &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#418375005)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -963,12 +1025,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-CNP-Member5",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member5\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-cnp-member.html\&quot;&gt;Case Based Surveillance Case Notification Panel Member&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Pregnancy status at time of illness or condition &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77996-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: No &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html\&quot;&gt;expandedYes-NoIndicator&lt;/a&gt;#N)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member5\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-pregnancy-status.html\&quot;&gt;Case Based Surveillance Pregnancy Status&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Pregnancy status at time of illness or condition &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77996-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: No &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html\&quot;&gt;expandedYes-NoIndicator&lt;/a&gt;#N)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -1012,12 +1074,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-CNP-Member6",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member6\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-cnp-member.html\&quot;&gt;Case Based Surveillance Case Notification Panel Member&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Age at time of case investigation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77998-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 78 year&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code a = 'a')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-CNP-Member6\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-age-at-investigation.html\&quot;&gt;Case Based Surveillance Age at Case Investigation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Case notification panel [CDC.PHIN] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#78000-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Age at time of case investigation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77998-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 78 year&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code a = 'a')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -1117,12 +1179,12 @@
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">id</a>" : "HAICA-TC-Lab-DiagnosticReport",
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Lab-DiagnosticReport\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-lab-diagnosticreport.html\&quot;&gt;Case Based Surveillance Lab Test Report&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Laboratory &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v2-0074.html\&quot;&gt;diagnosticServiceSectionId&lt;/a&gt;#LAB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lab test method [Type] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#85069-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;#Specimen_HAICA-TC-Specimen\&quot;&gt;See above (Specimen/HAICA-TC-Specimen)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;a href=\&quot;#Observation_HAICA-TC-Lab-Observation\&quot;&gt;See above (Observation/HAICA-TC-Lab-Observation)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Lab-DiagnosticReport\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-cbs-lab-diagnosticreport.html\&quot;&gt;US Case Based Surveillance Lab Diagnostic Report&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Laboratory &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v2-0074.html\&quot;&gt;diagnosticServiceSectionId&lt;/a&gt;#LAB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lab test method [Type] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#85069-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Dec 31, 2020, 7:00:00 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;#Specimen_HAICA-TC-Specimen\&quot;&gt;See above (Specimen/HAICA-TC-Specimen)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;a href=\&quot;#Observation_HAICA-TC-Lab-Observation\&quot;&gt;See above (Observation/HAICA-TC-Lab-Observation)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.category">category</a>" : [
@@ -1146,6 +1208,7 @@
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HAICA-TC-Patient"
         },
+        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.issued">issued</a>" : "2021-01-01T00:00:00Z",
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.specimen">specimen</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Specimen/HAICA-TC-Specimen"
@@ -1165,12 +1228,12 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "HAICA-TC-Lab-Observation",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Lab-Observation\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cbs-lab-observation.html\&quot;&gt;Case Based Surveillance Lab Observation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Laboratory &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\&quot;&gt;Observation Category Codes&lt;/a&gt;#laboratory)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: DNA Sequencing &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#LAB723)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Positive &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#10828004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: D1/D2 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#D1D2)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;HAICA-TC-Lab-Observation\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-cbs-lab-observation.html\&quot;&gt;US Case Based Surveillance Lab Observation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Laboratory &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\&quot;&gt;Observation Category Codes&lt;/a&gt;#laboratory)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: DNA Sequencing &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#LAB723)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HAICA-TC-Patient\&quot;&gt;See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Positive &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#10828004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: D1/D2 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#D1D2)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -1246,7 +1309,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 25, 2022 10:18-0500">2022-01-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 8, 2022 17:12-0500">2022-02-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

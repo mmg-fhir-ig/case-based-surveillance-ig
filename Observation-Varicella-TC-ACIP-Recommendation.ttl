@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/Varicella-TC-ACIP-Recommendation> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Varicella-TC-ACIP-Recommendation"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Varicella-TC-ACIP-Recommendation\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-vaccination-ACIP-Recommendation.html\">Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Vaccinated per ACIP Recommendations <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#vac148)</span></p><p><b>subject</b>: <a href=\"Patient-Varicella-TC-Patient.html\">Patient/Varicella-TC-Patient: Varicella-TC-Patient</a> \"\"</p><p><b>focus</b>: </p><ul><li><a href=\"Immunization-Varicella-TC-Immunization.html\">Immunization/Varicella-TC-Immunization: Varicella-TC-Immunization</a></li><li><a href=\"Condition-Varicella-TC-Condition.html\">Condition/Varicella-TC-Condition: Varicella-TC-Condition</a></li></ul><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Reason Not Vaccinated per ACIP Recommendations <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#vac149)</span></td><td>Parent/Patient unaware of recommendation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1314)</span></td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.232" ];
+       fhir:Coding.code [ fhir:value "vac148" ];
+       fhir:Coding.display [ fhir:value "Vaccinated per ACIP Recommendations" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/Varicella-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/Varicella-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "Varicella-TC-Patient" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <http://cbsig.chai.gatech.edu/Immunization/Varicella-TC-Immunization>;
+     fhir:Reference.reference [ fhir:value "Immunization/Varicella-TC-Immunization" ];
+     fhir:Reference.display [ fhir:value "Varicella-TC-Immunization" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://cbsig.chai.gatech.edu/Condition/Varicella-TC-Condition>;
+     fhir:Reference.reference [ fhir:value "Condition/Varicella-TC-Condition" ];
+     fhir:Reference.display [ fhir:value "Varicella-TC-Condition" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0532" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "No" ]
+     ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.232" ];
+         fhir:Coding.code [ fhir:value "vac149" ];
+         fhir:Coding.display [ fhir:value "Reason Not Vaccinated per ACIP Recommendations" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.274" ];
+         fhir:Coding.code [ fhir:value "PHC1314" ];
+         fhir:Coding.display [ fhir:value "Parent/Patient unaware of recommendation" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/Varicella-TC-ACIP-Recommendation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

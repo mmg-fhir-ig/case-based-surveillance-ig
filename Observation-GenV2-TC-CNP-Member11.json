@@ -3,12 +3,12 @@
   "id": "GenV2-TC-CNP-Member11",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Binational reporting criteria [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77988-4)</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> \" ZZZZZ\"</p><p><b>value</b>: Exposure to suspected product from Canada or Mexico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1140)</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-binational-reporting-criteria.html\">Case Based Surveillance Binational Reporting Criteria</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Binational reporting criteria [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77988-4)</span></p><p><b>subject</b>: <a href=\"Patient-GenV2-TC-Patient.html\">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> \"\"</p><p><b>value</b>: Exposure to suspected product from Canada or Mexico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1140)</span></p></div>"
   },
   "status": "final",
   "category": [

@@ -91,9 +91,6 @@
   <section>
     <title value="Reporting Entities"/>
     <entry>
-      <reference value="Practitioner/Lyme-TC-Person-Reporting"/>
-    </entry>
-    <entry>
       <reference value="Organization/Lyme-TC-Reporting-Source"/>
     </entry>
   </section>

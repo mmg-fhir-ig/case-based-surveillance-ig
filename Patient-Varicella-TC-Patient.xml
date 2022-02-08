@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Varicella-TC-Patient"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Varicella-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-patient.html">US Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: Var_TC05_Record, Local Subject ID: Var_TC05_Subject, Legacy Case Identifier: 12345601S012016, State Case Identifier: AL4321</p><p><b>name</b>: </p><p><b>telecom</b>: </p><p><b style="color: maroon">Exception generating Narrative: Cannot invoke "String.startsWith(String)" because the return value of "org.hl7.fhir.r5.model.ContactPoint.getValue()" is null</b></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2106-3"/>
+        <display value="White"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2135-2"/>
+        <display value="Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <country value="USA"/>
+    </valueAddress>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+        <code value="Local-Record-ID"/>
+        <display value="Local Record ID"/>
+      </coding>
+      <text value="Local Record ID"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="Var_TC05_Record"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+        <code value="Local-Subject-ID"/>
+        <display value="Local Subject ID"/>
+      </coding>
+      <text value="Local Subject ID"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="Var_TC05_Subject"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77997-5"/>
+        <display value="Legacy case identifier [CDC.PHIN]"/>
+      </coding>
+      <text value="Legacy Case Identifier"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="12345601S012016"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77993-4"/>
+        <display value="State notifiable condition case identifier"/>
+      </coding>
+      <text value="State Case Identifier"/>
+    </type>
+    <system value="urn:temp:national-reporting-jurisdiction:48"/>
+    <value value="AL4321"/>
+  </identifier>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2010-05-31"/>
+  <address>
+    <use value="home"/>
+    <district value="Blount"/>
+    <state value="Alabama"/>
+    <postalCode value="35031"/>
+  </address>
+  <address>
+    <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use">
+      <valueCoding>
+        <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+        <code value="Usual-Residence"/>
+      </valueCoding>
+    </extension>
+    <country value="USA"/>
+  </address>
+</Patient>

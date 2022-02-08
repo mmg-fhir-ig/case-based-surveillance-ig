@@ -12,8 +12,7 @@
   <sch:pattern>
     <sch:title>f:Encounter</sch:title>
     <sch:rule context="f:Encounter">
-      <sch:assert test="count(f:diagnosis) &gt;= 1">diagnosis: minimum cardinality of 'diagnosis' is 1</sch:assert>
-      <sch:assert test="count(f:diagnosis) &lt;= 1">diagnosis: maximum cardinality of 'diagnosis' is 1</sch:assert>
+      <sch:assert test="count(f:reasonReference) &gt;= 1">reasonReference: minimum cardinality of 'reasonReference' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -472,8 +471,75 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Encounter/f:location/f:location</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Encounter.location.location</sch:title>
     <sch:rule context="f:Encounter/f:location/f:location">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.extension</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Encounter/f:location/f:location/f:extension</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:extension">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.extension.extension</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:extension/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.extension.value[x] 1</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:extension/f:value[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.reference</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:reference">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.type</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.identifier</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:identifier">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.location.location.display</sch:title>
+    <sch:rule context="f:Encounter/f:location/f:location/f:display">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

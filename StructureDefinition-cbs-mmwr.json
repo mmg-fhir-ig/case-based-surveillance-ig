@@ -16,12 +16,11 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceMMWR",
   "title": "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements",
   "status": "active",
-  "experimental": true,
-  "date": "2021-01-01",
+  "date": "2022-02-08T17:12:45-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -35,17 +34,6 @@
     }
   ],
   "description": "Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US",
-          "display": "United States of America"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -904,7 +892,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+              "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
             ]
           }
         ],

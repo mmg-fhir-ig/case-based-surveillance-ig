@@ -150,9 +150,6 @@
             "title": "Reporting Entities",
             "entry": [
               {
-                "reference": "Practitioner/GenV2-TC-Person-Reporting"
-              },
-              {
                 "reference": "Organization/GenV2-TC-Reporting-Source"
               }
             ]
@@ -167,12 +164,12 @@
         "id": "GenV2-TC-Patient",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
           ]
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-patient.html\">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: White (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2106-3 = '2106-3', stated as 'White')</p><p><b>value</b>: Apache (Details: urn:oid:2.16.840.1.113883.6.238 code 1010-8 = 'Apache', stated as 'Apache')</p><p><b>value</b>: Apache</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2186-5 = '2186-5', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: Zzzzz, Aaaaa</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1964-05-02</p><p><b>deceased</b>: 2014-03-02</p><p><b>address</b>: </p><ul><li>Texas 77018 (HOME)</li><li>USA </li></ul></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-patient.html\">US Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: Apache (Details: urn:oid:2.16.840.1.113883.6.238 code 1010-8 = 'Apache', stated as 'Apache')</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: GenV2_TC01_Record, Local Subject ID: GenV2_TC01_Subject, Legacy Case Identifier: 48432148S012014, State Case Identifier: TX4321</p><p><b>name</b>: </p><p><b>telecom</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: Cannot invoke \"String.startsWith(String)\" because the return value of \"org.hl7.fhir.r5.model.ContactPoint.getValue()\" is null</b></p></div>"
         },
         "extension": [
           {
@@ -180,7 +177,7 @@
               {
                 "url": "ombCategory",
                 "valueCoding": {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
                   "code": "2106-3",
                   "display": "White"
                 }
@@ -194,22 +191,18 @@
                 }
               },
               {
-                "url": "otherRace",
-                "valueString": "Apache"
-              },
-              {
                 "url": "text",
                 "valueString": "Mixed"
               }
             ],
-            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race"
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
           },
           {
             "extension": [
               {
                 "url": "ombCategory",
                 "valueCoding": {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0005",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
                   "code": "2186-5",
                   "display": "Not Hispanic or Latino"
                 }
@@ -219,10 +212,10 @@
                 "valueString": "Not Hispanic or Latino"
               }
             ],
-            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity"
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
           },
           {
-            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex",
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
             "valueCode": "F"
           },
           {
@@ -292,11 +285,36 @@
         ],
         "name": [
           {
-            "text": "Zzzzz, Aaaaa",
-            "family": "Zzzzz",
-            "given": [
-              "Aaaaa"
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "masked"
+              }
             ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "_value": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "masked"
+                }
+              ]
+            }
+          },
+          {
+            "system": "email",
+            "_value": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "masked"
+                }
+              ]
+            }
           }
         ],
         "gender": "female",
@@ -331,12 +349,12 @@
         "id": "GenV2-TC-Condition",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
           ]
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-condition.html\">Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-02-02</p><p><b>Case Based Surveillance Illness Duration</b>: 6 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></p><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>code</b>: Hemolytic Uremic Syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#11550)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-condition.html\">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>Case Based Surveillance Illness Duration</b>: 6 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></p><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Hemolytic Uremic Syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#11550)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>"
         },
         "extension": [
           {
@@ -350,10 +368,6 @@
                 }
               ]
             }
-          },
-          {
-            "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date",
-            "valueDateTime": "2014-02-02"
           },
           {
             "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration",
@@ -372,6 +386,16 @@
             }
           ]
         },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -396,18 +420,30 @@
         "id": "GenV2-TC-Hospitalization",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Hospitalization\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-hospitalization.html\">Case Based Surveillance Hospitalization Encounter Profile</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>period</b>: 2014-02-26 --&gt; 2014-03-02</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href=\"#Condition_GenV2-TC-Condition\">See above (Condition/GenV2-TC-Condition: GenV2-TC Condition of Interest)</a></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Hospitalization\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-hospitalization.html\">US Case Based Surveillance Hospitalization Encounter Profile</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Inpatient Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#42628595)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>period</b>: 2014-02-26 --&gt; 2014-03-02</p><p><b>reasonReference</b>: <a href=\"#Condition_GenV2-TC-Condition\">See above (Condition/GenV2-TC-Condition)</a></p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><span>: Masked Location</span></td></tr></table></div>"
         },
         "status": "unknown",
         "class": {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "code": "IMP"
+          "code": "IMP",
+          "display": "inpatient encounter"
         },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "42628595",
+                "display": "Inpatient Hospital"
+              }
+            ]
+          }
+        ],
         "subject": {
           "reference": "Patient/GenV2-TC-Patient",
           "display": "GenV2-TC Example Patient"
@@ -422,11 +458,21 @@
           "system": "http://unitsofmeasure.org",
           "code": "d"
         },
-        "diagnosis": [
+        "reasonReference": [
           {
-            "condition": {
-              "reference": "Condition/GenV2-TC-Condition",
-              "display": "GenV2-TC Condition of Interest"
+            "reference": "Condition/GenV2-TC-Condition"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "masked"
+                }
+              ],
+              "display": "Masked Location"
             }
           }
         ]
@@ -468,54 +514,20 @@
       }
     },
     {
-      "fullUrl": "Practitioner/GenV2-TC-Person-Reporting",
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "GenV2-TC-Person-Reporting",
-        "meta": {
-          "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Person-Reporting\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-person-reporting-to-cdc.html\">Case Based Surveillance Person Reporting To CDC Profile</a></p></div><p><b>name</b>: Smith, John</p><p><b>telecom</b>: ph: 444-321-1234, <a href=\"mailto:jsmith@txdoh.org\">jsmith@txdoh.org</a></p></div>"
-        },
-        "name": [
-          {
-            "text": "Smith, John",
-            "family": "Smith",
-            "given": [
-              "John"
-            ]
-          }
-        ],
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "444-321-1234"
-          },
-          {
-            "system": "email",
-            "value": "jsmith@txdoh.org"
-          }
-        ]
-      }
-    },
-    {
       "fullUrl": "Organization/GenV2-TC-Reporting-Source",
       "resource": {
         "resourceType": "Organization",
         "id": "GenV2-TC-Reporting-Source",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Reporting-Source\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-reporting-source-organization.html\">Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0406.html\">organizationUnitType</a>#1)</span></p><p><b>name</b>: Reporting Source</p><p><b>address</b>: 77018 </p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-Reporting-Source\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-reporting-source-organization.html\">US Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0406.html\">organizationUnitType</a>#1)</span></p><p><b>name</b>: Reporting Source</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 77018 </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Smith, John</td><td>ph: 444-321-1234, <a href=\"mailto:jsmith@txdoh.org\">jsmith@txdoh.org</a></td></tr></table></div>"
         },
+        "active": true,
         "type": [
           {
             "coding": [
@@ -528,9 +540,40 @@
           }
         ],
         "name": "Reporting Source",
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unknown"
+              }
+            ]
+          }
+        ],
         "address": [
           {
             "postalCode": "77018"
+          }
+        ],
+        "contact": [
+          {
+            "name": {
+              "text": "Smith, John",
+              "family": "Smith",
+              "given": [
+                "John"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "444-321-1234"
+              },
+              {
+                "system": "email",
+                "value": "jsmith@txdoh.org"
+              }
+            ]
           }
         ]
       }
@@ -808,12 +851,12 @@
         "id": "GenV2-TC-CNP-Member1",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Immediate national notifiable condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77965-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html\">PH_RaceAndEthnicity_CDC</a>#N)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-immediate-nnc.html\">Case Based Surveillance Immediate National Notifiable Condition</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Immediate National Notifiable Condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77965-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html\">PH_RaceAndEthnicity_CDC</a>#N)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -832,7 +875,7 @@
             {
               "system": "http://loinc.org",
               "code": "77965-2",
-              "display": "Immediate national notifiable condition"
+              "display": "Immediate National Notifiable Condition"
             }
           ]
         },
@@ -858,12 +901,12 @@
         "id": "GenV2-TC-CNP-Member2",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-reporting-state.html\">Case Based Surveillance Reporting State</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting State <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -882,7 +925,7 @@
             {
               "system": "http://loinc.org",
               "code": "77966-0",
-              "display": "Reporting state"
+              "display": "Reporting State"
             }
           ]
         },
@@ -908,12 +951,12 @@
         "id": "GenV2-TC-CNP-Member3",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member3\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting county <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77967-8)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Harris <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48201)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member3\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-reporting-county.html\">Case Based Surveillance Reporting County</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting County <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77967-8)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Harris <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48201)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -932,7 +975,7 @@
             {
               "system": "http://loinc.org",
               "code": "77967-8",
-              "display": "Reporting county"
+              "display": "Reporting County"
             }
           ]
         },
@@ -958,12 +1001,12 @@
         "id": "GenV2-TC-CNP-Member4",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: National reporting jurisdiction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-national-reporting-jurisdiction.html\">Case Based Surveillance National Reporting Jurisdiction</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: National Reporting Jurisdiction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Texas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#48)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -982,7 +1025,7 @@
             {
               "system": "http://loinc.org",
               "code": "77968-6",
-              "display": "National reporting jurisdiction"
+              "display": "National Reporting Jurisdiction"
             }
           ]
         },
@@ -1008,12 +1051,12 @@
         "id": "GenV2-TC-CNP-Member5",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member5\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Jurisdiction code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77969-4)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: S01</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member5\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-jurisdiction-code.html\">Case Based Surveillance Jurisdiction Code</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Jurisdiction Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77969-4)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: S01</p></div>"
         },
         "status": "final",
         "category": [
@@ -1032,7 +1075,7 @@
             {
               "system": "http://loinc.org",
               "code": "77969-4",
-              "display": "Jurisdiction code"
+              "display": "Jurisdiction Code"
             }
           ]
         },
@@ -1050,12 +1093,12 @@
         "id": "GenV2-TC-CNP-Member6",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member6\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Date of initial report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77970-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member6\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-date-initial-report.html\">Case Based Surveillance Date of Initial Report</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Date of Initial Report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77970-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
         },
         "status": "final",
         "category": [
@@ -1074,7 +1117,7 @@
             {
               "system": "http://loinc.org",
               "code": "77970-2",
-              "display": "Date of initial report"
+              "display": "Date of Initial Report"
             }
           ]
         },
@@ -1092,12 +1135,12 @@
         "id": "GenV2-TC-CNP-Member7",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest date reported to county <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77972-8)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-earliest-date-reported-to-county.html\">Case Based Surveillance Earliest Date Reported</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest Date Reported to County <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77972-8)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
         },
         "status": "final",
         "category": [
@@ -1116,7 +1159,7 @@
             {
               "system": "http://loinc.org",
               "code": "77972-8",
-              "display": "Earliest date reported to county"
+              "display": "Earliest Date Reported to County"
             }
           ]
         },
@@ -1134,12 +1177,12 @@
         "id": "GenV2-TC-CNP-Member8",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest date reported to state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77973-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-earliest-date-reported-to-state.html\">Case Based Surveillance Earliest Date Reported to State</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest Date Reported to State <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77973-6)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
         },
         "status": "final",
         "category": [
@@ -1158,7 +1201,7 @@
             {
               "system": "http://loinc.org",
               "code": "77973-6",
-              "display": "Earliest date reported to state"
+              "display": "Earliest Date Reported to State"
             }
           ]
         },
@@ -1176,12 +1219,12 @@
         "id": "GenV2-TC-CNP-Member9",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member9\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case investigation start date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77979-3)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member9\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-investigation-start-date.html\">Case Based Surveillance Case Investigation Start Date</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case Investigation Start Date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77979-3)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
         },
         "status": "final",
         "category": [
@@ -1200,7 +1243,7 @@
             {
               "system": "http://loinc.org",
               "code": "77979-3",
-              "display": "Case investigation start date"
+              "display": "Case Investigation Start Date"
             }
           ]
         },
@@ -1218,12 +1261,12 @@
         "id": "GenV2-TC-CNP-Member10",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member10\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case Outbreak Name and Indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system.</a>#case-outbreak)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Case is associated with a known outbreak <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77980-1)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html\">PH_RaceAndEthnicity_CDC</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Case outbreak name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77981-9)</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member10\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-case-outbreak.html\">Case Based Surveillance Case Outbreak</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Case Outbreak Name and Indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system.</a>#case-outbreak)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Case is associated with a known outbreak <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77980-1)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0005.html\">PH_RaceAndEthnicity_CDC</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Case Outbreak Name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77981-9)</span></p><p><b>value</b>: HANSENOUTB1</p></blockquote></div>"
         },
         "status": "final",
         "category": [
@@ -1256,7 +1299,8 @@
               "coding": [
                 {
                   "system": "http://loinc.org",
-                  "code": "77980-1"
+                  "code": "77980-1",
+                  "display": "Case is associated with a known outbreak"
                 }
               ]
             },
@@ -1275,7 +1319,8 @@
               "coding": [
                 {
                   "system": "http://loinc.org",
-                  "code": "77981-9"
+                  "code": "77981-9",
+                  "display": "Case Outbreak Name"
                 }
               ]
             },
@@ -1291,12 +1336,12 @@
         "id": "GenV2-TC-CNP-Member11",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Binational reporting criteria [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77988-4)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Exposure to suspected product from Canada or Mexico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1140)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-binational-reporting-criteria.html\">Case Based Surveillance Binational Reporting Criteria</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Binational reporting criteria [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77988-4)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Exposure to suspected product from Canada or Mexico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PHC1140)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -1341,12 +1386,12 @@
         "id": "GenV2-TC-CNP-Member12",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member12\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Disease transmission mode <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77989-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Food-borne transmission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#416086007)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member12\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-transmission-mode.html\">Case Based Surveillance Transmission Mode</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Disease transmission mode <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77989-2)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: Food-borne transmission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#416086007)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -1391,12 +1436,12 @@
         "id": "GenV2-TC-CNP-Member13",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member13\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Date of first report to public health department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77995-9)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member13\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-date-reported-to-phd.html\">Case Based Surveillance Date of First Report to Public Health Department</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Date of first report to public health department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77995-9)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 2014-02-25</p></div>"
         },
         "status": "final",
         "category": [
@@ -1433,12 +1478,12 @@
         "id": "GenV2-TC-CNP-Member14",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member14\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Pregnancy status at time of illness or condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77996-7)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member14\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-pregnancy-status.html\">Case Based Surveillance Pregnancy Status</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Pregnancy status at time of illness or condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77996-7)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a>#N)</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -1483,12 +1528,12 @@
         "id": "GenV2-TC-CNP-Member15",
         "meta": {
           "profile": [
-            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+            "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member15\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Age at time of case investigation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77998-3)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 49</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GenV2-TC-CNP-Member15\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-age-at-investigation.html\">Case Based Surveillance Age at Case Investigation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Age at time of case investigation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77998-3)</span></p><p><b>subject</b>: <a href=\"#Patient_GenV2-TC-Patient\">See above (Patient/GenV2-TC-Patient: GenV2-TC Example Patient)</a></p><p><b>value</b>: 49 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p></div>"
         },
         "status": "final",
         "category": [
@@ -1515,7 +1560,12 @@
           "reference": "Patient/GenV2-TC-Patient",
           "display": "GenV2-TC Example Patient"
         },
-        "valueInteger": 49
+        "valueQuantity": {
+          "value": 49,
+          "unit": "year",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        }
       }
     }
   ]

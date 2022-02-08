@@ -103,9 +103,6 @@
   <section>
     <title value="Reporting Entities"/>
     <entry>
-      <reference value="Practitioner/GenV2-TC-Person-Reporting"/>
-    </entry>
-    <entry>
       <reference value="Organization/GenV2-TC-Reporting-Source"/>
     </entry>
   </section>

@@ -89,9 +89,6 @@
         <section>
           <title value="Reporting Entities"/>
           <entry>
-            <reference value="Practitioner/HAICA-TC-Person-Reporting"/>
-          </entry>
-          <entry>
             <reference value="Organization/HAICA-TC-Reporting-Source"/>
           </entry>
         </section>
@@ -116,15 +113,15 @@
       <Patient>
         <id value="HAICA-TC-Patient"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-patient.html">Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>Case Based Surveillance Race Extension</b></p><p><b>value</b>: White (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2106-3 = '2106-3', stated as 'White')</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>Case Based Surveillance Ethnicity Extension</b></p><p><b>value</b>: 2135-2 (Details: http://terminology.hl7.org/CodeSystem/v2-0005 code 2135-2 = '2135-2', stated as 'null')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Case Based Surveillance Sex Assigned at Birth Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: female <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-gender-identity.html">Gender identity</a>#female)</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: Yyyyy, Bbbbb</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-01-01</p><p><b>address</b>: </p><ul><li>Georgia 30126 (HOME)</li><li>USA </li></ul></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-patient.html">US Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: USA </p><p><b>genderIdentity</b>: female <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-gender-identity.html">Gender identity</a>#female)</span></p><p><b>identifier</b>: Local Record ID: C_auris_02, Local Subject ID: C_auris_PAT_02</p><p><b>name</b>: </p><p><b>telecom</b>: </p><p><b style="color: maroon">Exception generating Narrative: Cannot invoke "String.startsWith(String)" because the return value of "org.hl7.fhir.r5.model.ContactPoint.getValue()" is null</b></p></div>
         </text>
-        <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-race">
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
           <extension url="ombCategory">
             <valueCoding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
               <code value="2106-3"/>
               <display value="White"/>
             </valueCoding>
@@ -133,18 +130,19 @@
             <valueString value="Mixed"/>
           </extension>
         </extension>
-        <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-ethnicity">
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
           <extension url="ombCategory">
             <valueCoding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
               <code value="2135-2"/>
+              <display value="Hispanic or Latino"/>
             </valueCoding>
           </extension>
           <extension url="text">
             <valueString value="Hispanic or Latino"/>
           </extension>
         </extension>
-        <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-birthsex">
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
           <valueCode value="F"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
@@ -185,10 +183,26 @@
           <value value="C_auris_PAT_02"/>
         </identifier>
         <name>
-          <text value="Yyyyy, Bbbbb"/>
-          <family value="Yyyyy"/>
-          <given value="Bbbbb"/>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
         </name>
+        <telecom>
+          <system value="phone"/>
+          <value>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </value>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </value>
+        </telecom>
         <gender value="female"/>
         <birthDate value="1940-01-01"/>
         <address>
@@ -215,10 +229,10 @@
       <Condition>
         <id value="HAICA-TC-Condition"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Condition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-condition.html">Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#410605003)</span></p><p><b>code</b>: Candida auris, clinical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#50263)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)</a></p><p><b>onset</b>: 2018-11-22</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Condition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-condition.html">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#410605003)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Candida auris, clinical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#50263)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)</a></p><p><b>onset</b>: 2018-11-22</p></div>
         </text>
         <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status">
           <valueCodeableConcept>
@@ -229,6 +243,12 @@
             </coding>
           </valueCodeableConcept>
         </extension>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
         <code>
           <coding>
             <system value="urn:oid:2.16.840.1.114222.4.5.277"/>
@@ -250,16 +270,24 @@
       <Encounter>
         <id value="HAICA-TC-Hospitalization"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Hospitalization" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-hospitalization.html">Case Based Surveillance Hospitalization Encounter Profile</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'null')</p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)</a></p><p><b>period</b>: 2018-11-24 --&gt; (ongoing)</p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href="#Condition_HAICA-TC-Condition">See above (Condition/HAICA-TC-Condition: HAI-CA TC Condition of Interest)</a></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Hospitalization" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-hospitalization.html">US Case Based Surveillance Hospitalization Encounter Profile</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Inpatient Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-CPT.html">Current Procedural Terminology (CPT&reg;)</a>#42628595)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAI-CA TC Example Patient)</a></p><p><b>period</b>: 2018-11-24 --&gt; (ongoing)</p><p><b>reasonReference</b>: <a href="#Condition_HAICA-TC-Condition">See above (Condition/HAICA-TC-Condition)</a></p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><span>: Masked Location</span></td></tr></table></div>
         </text>
         <status value="unknown"/>
         <class>
           <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
           <code value="IMP"/>
+          <display value="inpatient encounter"/>
         </class>
+        <type>
+          <coding>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="42628595"/>
+            <display value="Inpatient Hospital"/>
+          </coding>
+        </type>
         <subject>
           <reference value="Patient/HAICA-TC-Patient"/>
           <display value="HAI-CA TC Example Patient"/>
@@ -267,36 +295,18 @@
         <period>
           <start value="2018-11-24"/>
         </period>
-        <diagnosis>
-          <condition>
-            <reference value="Condition/HAICA-TC-Condition"/>
-            <display value="HAI-CA TC Condition of Interest"/>
-          </condition>
-        </diagnosis>
+        <reasonReference>
+          <reference value="Condition/HAICA-TC-Condition"/>
+        </reasonReference>
+        <location>
+          <location>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+            <display value="Masked Location"/>
+          </location>
+        </location>
       </Encounter>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Practitioner/HAICA-TC-Person-Reporting"/>
-    <resource>
-      <Practitioner>
-        <id value="HAICA-TC-Person-Reporting"/>
-        <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
-        </meta>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Person-Reporting" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-person-reporting-to-cdc.html">Case Based Surveillance Person Reporting To CDC Profile</a></p></div><p><b>name</b>: von Count, Count</p><p><b>telecom</b>: <a href="mailto:count_voncount@gadph.gov">count_voncount@gadph.gov</a></p></div>
-        </text>
-        <name>
-          <text value="von Count, Count"/>
-          <family value="von Count"/>
-          <given value="Count"/>
-        </name>
-        <telecom>
-          <system value="email"/>
-          <value value="count_voncount@gadph.gov"/>
-        </telecom>
-      </Practitioner>
     </resource>
   </entry>
   <entry>
@@ -305,11 +315,12 @@
       <Organization>
         <id value="HAICA-TC-Reporting-Source"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-reporting-source-organization.html">Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>type</b>: Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#UNK)</span></p><p><b>name</b>: Reporting Source</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Reporting-Source" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-reporting-source-organization.html">US Case Based Surveillance Reporting Source Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#UNK)</span></p><p><b>name</b>: Reporting Source</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>von Count, Count</td><td><a href="mailto:count_voncount@gadph.gov">count_voncount@gadph.gov</a></td></tr></table></div>
         </text>
+        <active value="true"/>
         <type>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
@@ -318,6 +329,27 @@
           </coding>
         </type>
         <name value="Reporting Source"/>
+        <telecom>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="unknown"/>
+          </extension>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="unknown"/>
+          </extension>
+        </address>
+        <contact>
+          <name>
+            <text value="von Count, Count"/>
+            <family value="von Count"/>
+            <given value="Count"/>
+          </name>
+          <telecom>
+            <system value="email"/>
+            <value value="count_voncount@gadph.gov"/>
+          </telecom>
+        </contact>
       </Organization>
     </resource>
   </entry>
@@ -431,10 +463,10 @@
       <Observation>
         <id value="HAICA-TC-CNP-Member1"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting state <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Georgia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#13)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-reporting-state.html">Case Based Surveillance Reporting State</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting State <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77966-0)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Georgia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#13)</span></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -448,7 +480,7 @@
           <coding>
             <system value="http://loinc.org"/>
             <code value="77966-0"/>
-            <display value="Reporting state"/>
+            <display value="Reporting State"/>
           </coding>
         </code>
         <subject>
@@ -471,10 +503,10 @@
       <Observation>
         <id value="HAICA-TC-CNP-Member2"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member2" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting county <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77967-8)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Cobb <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#13067)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member2" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-reporting-county.html">Case Based Surveillance Reporting County</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Reporting County <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77967-8)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Cobb <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#13067)</span></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -488,7 +520,7 @@
           <coding>
             <system value="http://loinc.org"/>
             <code value="77967-8"/>
-            <display value="Reporting county"/>
+            <display value="Reporting County"/>
           </coding>
         </code>
         <subject>
@@ -511,10 +543,10 @@
       <Observation>
         <id value="HAICA-TC-CNP-Member3"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member3" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: National reporting jurisdiction <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Georgia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#13)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member3" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-national-reporting-jurisdiction.html">Case Based Surveillance National Reporting Jurisdiction</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: National Reporting Jurisdiction <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77968-6)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Georgia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#13)</span></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -528,7 +560,7 @@
           <coding>
             <system value="http://loinc.org"/>
             <code value="77968-6"/>
-            <display value="National reporting jurisdiction"/>
+            <display value="National Reporting Jurisdiction"/>
           </coding>
         </code>
         <subject>
@@ -551,10 +583,10 @@
       <Observation>
         <id value="HAICA-TC-CNP-Member4"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member4" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Disease transmission mode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77989-2)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Indeterminate disease transmission mode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#418375005)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member4" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-transmission-mode.html">Case Based Surveillance Transmission Mode</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Disease transmission mode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77989-2)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Indeterminate disease transmission mode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#418375005)</span></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -591,10 +623,10 @@
       <Observation>
         <id value="HAICA-TC-CNP-Member5"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member5" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Pregnancy status at time of illness or condition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77996-7)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: No <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>#N)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member5" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-pregnancy-status.html">Case Based Surveillance Pregnancy Status</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Pregnancy status at time of illness or condition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77996-7)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: No <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>#N)</span></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -630,10 +662,10 @@
       <Observation>
         <id value="HAICA-TC-CNP-Member6"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member6" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-cnp-member.html">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Age at time of case investigation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77998-3)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: 78 year<span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-CNP-Member6" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-age-at-investigation.html">Case Based Surveillance Age at Case Investigation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#78000-7)</span></p><p><b>code</b>: Age at time of case investigation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#77998-3)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: 78 year<span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -717,10 +749,10 @@
       <DiagnosticReport>
         <id value="HAICA-TC-Lab-DiagnosticReport"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Lab-DiagnosticReport" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-lab-diagnosticreport.html">Case Based Surveillance Lab Test Report</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>#LAB)</span></p><p><b>code</b>: Lab test method [Type] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85069-3)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient)</a></p><p><b>specimen</b>: <a href="#Specimen_HAICA-TC-Specimen">See above (Specimen/HAICA-TC-Specimen)</a></p><p><b>result</b>: <a href="#Observation_HAICA-TC-Lab-Observation">See above (Observation/HAICA-TC-Lab-Observation)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Lab-DiagnosticReport" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-lab-diagnosticreport.html">US Case Based Surveillance Lab Diagnostic Report</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>#LAB)</span></p><p><b>code</b>: Lab test method [Type] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85069-3)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient)</a></p><p><b>issued</b>: Dec 31, 2020, 7:00:00 PM</p><p><b>specimen</b>: <a href="#Specimen_HAICA-TC-Specimen">See above (Specimen/HAICA-TC-Specimen)</a></p><p><b>result</b>: <a href="#Observation_HAICA-TC-Lab-Observation">See above (Observation/HAICA-TC-Lab-Observation)</a></p></div>
         </text>
         <status value="final"/>
         <category>
@@ -738,6 +770,7 @@
         <subject>
           <reference value="Patient/HAICA-TC-Patient"/>
         </subject>
+        <issued value="2021-01-01T00:00:00Z"/>
         <specimen>
           <reference value="Specimen/HAICA-TC-Specimen"/>
         </specimen>
@@ -753,10 +786,10 @@
       <Observation>
         <id value="HAICA-TC-Lab-Observation"/>
         <meta>
-          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+          <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Lab-Observation" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-lab-observation.html">Case Based Surveillance Lab Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: DNA Sequencing <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#LAB723)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Positive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#10828004)</span></p><p><b>method</b>: D1/D2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#D1D2)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-Lab-Observation" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-lab-observation.html">US Case Based Surveillance Lab Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: DNA Sequencing <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#LAB723)</span></p><p><b>subject</b>: <a href="#Patient_HAICA-TC-Patient">See above (Patient/HAICA-TC-Patient: HAICA-TC Example Patient)</a></p><p><b>value</b>: Positive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#10828004)</span></p><p><b>method</b>: D1/D2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#D1D2)</span></p></div>
         </text>
         <status value="final"/>
         <category>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HAICA-TC-TravelHistory"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "HAICA-TC-TravelHistory" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-travel-history.html">US Case Based Surveillance Travel History Profile</a></p></div><blockquote><p><b>US Case Based Surveillance Period and Mode of Travel Extension</b></p><p><b>value</b>: 2018-11-02 --&gt; 2018-11-12</p><p><b>value</b>: Aircraft <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#21753002)</span></p><p><b>value</b>: <span>: Mumbai</span></p></blockquote><blockquote><p><b>US Case Based Surveillance Program Specific Time Window</b></p><p><b>value</b>: 10 day<span style="background: LightGoldenRodYellow"> (Details: UCUM code d = 'd')</span></p><p><b>value</b>: Condition.onsetDateTime <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system.</a>#conditionOnsetDateTime)</span></p><p><b>value</b>: <a href="Condition-HAICA-TC-Condition.html">Condition/HAICA-TC-Condition: HAICA-TC Example Condition of Interest</a></p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Travel (event) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#420008001)</span></p><p><b>subject</b>: <a href="Patient-HAICA-TC-Patient.html">Patient/HAICA-TC-Patient: HAICA-TC Example Patient</a> ""</p><p><b>effective</b>: 2018-11-02 --&gt; 2018-11-12</p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Location <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#LOC)</span></td><td>India <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#IND)</span></td></tr></table></div>
+  </text>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel">
+    <extension url="dateOrPeriodOfTravel">
+      <valuePeriod>
+        <start value="2018-11-02"/>
+        <end value="2018-11-12"/>
+      </valuePeriod>
+    </extension>
+    <extension url="modeOfTravel">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="21753002"/>
+          <display value="Aircraft"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="relevantLocation">
+      <valueReference>
+        <display value="Mumbai"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-program-specific-time-window">
+    <extension url="timeWindow">
+      <valueQuantity>
+        <value value="10"/>
+        <unit value="day"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+      </valueQuantity>
+    </extension>
+    <extension url="relativeTo">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
+          <code value="conditionOnsetDateTime"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="relativeReference">
+      <valueReference>
+        <reference value="Condition/HAICA-TC-Condition"/>
+        <display value="HAICA-TC Example Condition of Interest"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="420008001"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HAICA-TC-Patient"/>
+    <display value="HAICA-TC Example Patient"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2018-11-02"/>
+    <end value="2018-11-12"/>
+  </effectivePeriod>
+  <component>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="LOC"/>
+        <display value="Location"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="IND"/>
+        <display value="India"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

@@ -48,7 +48,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Case Based Surveillance Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Case Based Surveillance Implementation Guide</span><br/>0.2.0 - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -170,7 +170,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Case Based Surveillance Implementation Guide - Local Development build (v0.1.0). See the <a href="http://cbsig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Case Based Surveillance Implementation Guide - Local Development build (v0.2.0). See the <a href="http://cbsig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Message Mapping Guide to Case Based Surveillance IG Profile Mapping</h2>
   
 
@@ -238,156 +238,156 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
     <tr>
       <td>Local Subject ID</td>
       <td>N/A: PID-3</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.identifier</td>
+      <td>identifier</td>
     </tr>
     <tr>
       <td>Birth Date</td>
       <td>N/A: PID-7</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.birthdate</td>
+      <td>birthdate</td>
     </tr>
     <tr>
       <td>Subject’s Sex</td>
       <td>N/A: PID-8</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.gender</td>
+      <td>gender</td>
     </tr>
     <tr>
       <td>Race Category</td>
       <td>N/A: PID-10</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.extension[cbs-race]</td>
+      <td>extension[us-core-race]</td>
     </tr>
     <tr>
       <td>Other Race Text</td>
       <td>32624-9</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.extension[cbs-race]</td>
+      <td>extension[us-core-race]</td>
     </tr>
     <tr>
       <td>Ethnic Group</td>
       <td>N/A: PID-22</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.extension[cbs-ethnicity]</td>
+      <td>extension[us-core-ethnicity]</td>
     </tr>
     <tr>
       <td>Country of Birth</td>
       <td>78746-5</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.extension[birthPlace]</td>
+      <td>extension[birthPlace]</td>
     </tr>
     <tr>
       <td>Other Birth Place</td>
       <td>21842-0</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.extension[birthPlace]</td>
+      <td>extension[birthPlace]</td>
     </tr>
     <tr>
       <td>Country of Usual Residence</td>
       <td>77983-5</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.address:Usual-Residence</td>
+      <td>address:Usual-Residence</td>
     </tr>
     <tr>
       <td>Subject Address County</td>
       <td>N/A: PID-11.9</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.address</td>
+      <td>address</td>
     </tr>
     <tr>
       <td>Subject Address State</td>
       <td>N/A: PID-11.4</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.address</td>
+      <td>address</td>
     </tr>
     <tr>
       <td>Subject Address ZIP Code</td>
       <td>N/A: PID-11.5</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.address</td>
+      <td>address</td>
     </tr>
     <tr>
       <td>Date of Illness Onset</td>
       <td>11368-8</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.onsetDateTime</td>
+      <td>onsetDateTime</td>
     </tr>
     <tr>
       <td>Illness End Date</td>
       <td>77976-9</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.abatementDateTime</td>
+      <td>abatementDateTime</td>
     </tr>
     <tr>
       <td>Illness Duration</td>
       <td>77977-7</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.onsetDateTime &amp; cbs-condition.abatementDateTime</td>
+      <td>onsetDateTime &amp; abatementDateTime</td>
     </tr>
     <tr>
       <td>Illness Duration Units</td>
       <td>N/A: OBX-6</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.onsetDateTime &amp; cbs-condition.abatementDateTime</td>
+      <td>onsetDateTime &amp; abatementDateTime</td>
     </tr>
     <tr>
       <td>Pregnancy Status</td>
       <td>77996-7</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Pregnancy Status</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Diagnosis Date</td>
       <td>77975-1</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.extension:cbs-diagnosis-date.valueDateTime</td>
+      <td>extension[assertedDate]</td>
     </tr>
     <tr>
       <td>Hospitalized</td>
       <td>77974-4</td>
-      <td>CBS Hospitalization Encounter</td>
+      <td>US CBS Hospitalization</td>
       <td>Encounter</td>
       <td> </td>
     </tr>
     <tr>
       <td>Admission Date</td>
       <td>8656-1</td>
-      <td>CBS Hospitalization Encounter</td>
+      <td>US CBS Hospitalization</td>
       <td>Encounter</td>
-      <td>cbs-hospitalization-encounter.period.start</td>
+      <td>period.start</td>
     </tr>
     <tr>
       <td>Discharge Date</td>
       <td>8649-6</td>
-      <td>CBS Hospitalization Encounter</td>
+      <td>US CBS Hospitalization</td>
       <td>Encounter</td>
-      <td>cbs-hospitalization-encounter.period.end</td>
+      <td>period.end</td>
     </tr>
     <tr>
       <td>Duration of Hospital Stay in Days</td>
       <td>78033-8</td>
-      <td>CBS Hospitalization Encounter</td>
+      <td>US CBS Hospitalization</td>
       <td>Encounter</td>
-      <td>cbs-hospitalization-encounter.length</td>
+      <td>length</td>
     </tr>
     <tr>
       <td>Subject Died</td>
@@ -399,49 +399,49 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
     <tr>
       <td>Deceased Date</td>
       <td>N/A: PID-29</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.deceased[x]</td>
+      <td>deceased[x]</td>
     </tr>
     <tr>
       <td>Condition Code</td>
       <td>N/A: OBR-31</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.code</td>
+      <td>code</td>
     </tr>
     <tr>
       <td>Local Record ID</td>
       <td>N/A: OBR-3</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.identifier</td>
+      <td>identifier</td>
     </tr>
     <tr>
       <td>State Case Identifier</td>
       <td>77993-4</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.identifier</td>
+      <td>identifier</td>
     </tr>
     <tr>
       <td>Legacy Case Identifier</td>
       <td>77997-5</td>
-      <td>CBS Patient</td>
+      <td>US CBS Patient</td>
       <td>Patient</td>
-      <td>cbs-patient.identifier</td>
+      <td>identifier</td>
     </tr>
     <tr>
       <td>Age at Case Investigation</td>
       <td>77998-3</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Age at Case Investigation</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Age Unit at Case Investigation</td>
       <td>N/A: OBX-6</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Age at Case Investigation</td>
       <td>Observation</td>
       <td> </td>
     </tr>
@@ -450,98 +450,98 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
       <td>77982-7</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.valueCodeableConcept</td>
+      <td>valueCodeableConcept</td>
     </tr>
     <tr>
       <td>Imported Country</td>
       <td>INV153</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Imported State</td>
       <td>INV154</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Imported City</td>
       <td>INV155</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Imported County</td>
       <td>INV156</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Country of Exposure</td>
       <td>77984-3</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>State or Province of Exposure</td>
       <td>77985-0</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>City of Exposure</td>
       <td>77986-8</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>County of Exposure</td>
       <td>77987-6</td>
       <td>CBS Exposure Observation</td>
       <td>Observation</td>
-      <td>cbs-exposure-observation.component</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Transmission Mode</td>
       <td>77989-2</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Transmission Mode</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Case Class Status Code</td>
       <td>77990-0</td>
-      <td>CBS Condition of Interest</td>
+      <td>US CBS Condition of Interest</td>
       <td>Condition</td>
-      <td>cbs-condition.extension:cbs-case-class-status.valueCodeableConcept</td>
+      <td>extension[cbs-case-class-status]</td>
     </tr>
     <tr>
       <td>Immediate National Notifiable Condition</td>
       <td>77965-2</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Immediate National Notificable Condition</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Case Outbreak Indicator</td>
       <td>77980-1</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Case Outbreak</td>
       <td>Observation</td>
-      <td> </td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Case Outbreak Name</td>
       <td>77981-9</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Case Outbreak</td>
       <td>Observation</td>
-      <td> </td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Notification Result Status</td>
@@ -553,152 +553,154 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
     <tr>
       <td>Jurisdiction Code</td>
       <td>77969-4</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Jurisdiction Code</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Reporting Source Type Code</td>
       <td>48766-0</td>
-      <td>CBS Reporting Source Organization</td>
+      <td>US CBS Reporting Source Organization</td>
       <td>Organization</td>
       <td> </td>
     </tr>
     <tr>
       <td>Reporting Source ZIP Code</td>
       <td>52831-5</td>
-      <td>CBS Reporting Source Organization</td>
+      <td>US CBS Reporting Source Organization</td>
       <td>Organization</td>
       <td> </td>
     </tr>
     <tr>
       <td>Binational Reporting Criteria</td>
       <td>77988-4</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Binational Reporting Criteria</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Person Reporting to CDC - Name</td>
       <td>74549-7</td>
-      <td>CBS Person Reporting to CDC</td>
-      <td>Practitioner</td>
-      <td> </td>
+      <td>US CBS Reporting Source Organization</td>
+      <td>Organization</td>
+      <td>contact.name</td>
     </tr>
     <tr>
       <td>Person Reporting to CDC - Phone Number</td>
       <td>74548-9</td>
-      <td>CBS Person Reporting to CDC</td>
-      <td>Practitioner</td>
-      <td> </td>
+      <td>US CBS Reporting Source Organization</td>
+      <td>Organization</td>
+      <td>contact.telecom:phone</td>
     </tr>
     <tr>
       <td>Person Reporting to CDC - Email</td>
       <td>74547-1</td>
-      <td>CBS Person Reporting to CDC</td>
-      <td>Practitioner</td>
-      <td> </td>
+      <td>US CBS Reporting Source Organization</td>
+      <td>Organization</td>
+      <td>contact.telecom:email</td>
     </tr>
     <tr>
       <td>Case Investigation Start Date</td>
       <td>77979-3</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Case Investigation Start Date</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Date First Electronically Submitted</td>
       <td>N/A: OBR-7</td>
-      <td>CBS Case Notification Panel</td>
-      <td>Observation</td>
+      <td><sup id="fnref:gen1" role="doc-noteref"><a href="#fn:gen1" class="footnote" rel="footnote">1</a></sup></td>
+      <td> </td>
       <td> </td>
     </tr>
     <tr>
       <td>Date of Electronic Case Notification to CDC</td>
       <td>N/A: OBR-22</td>
-      <td>CBS Case Notification Panel</td>
-      <td>Observation</td>
+      <td><sup id="fnref:gen1:1" role="doc-noteref"><a href="#fn:gen1" class="footnote" rel="footnote">1</a></sup></td>
+      <td> </td>
       <td> </td>
     </tr>
     <tr>
       <td>Date Reported</td>
-      <td>77995-9</td>
-      <td>CBS Case Notification Panel</td>
+      <td>77995-9 <sup id="fnref:gen2" role="doc-noteref"><a href="#fn:gen2" class="footnote" rel="footnote">2</a></sup></td>
+      <td>CBS Date of Initial Report</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Earliest Date Reported to County</td>
       <td>77972-8</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Earliest Date Reported to County</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Earliest Date Reported to State</td>
       <td>77973-6</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Earliest Date Reported to State</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>MMWR Week</td>
       <td>77991-8</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS MMWR</td>
       <td>Observation</td>
-      <td> </td>
+      <td>component</td>
     </tr>
     <tr>
       <td>MMWR Year</td>
       <td>77992-6</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS MMWR</td>
       <td>Observation</td>
-      <td> </td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Date CDC Was First Verbally Notified of This Case</td>
       <td>77994-2</td>
-      <td>CBS Case Notification Panel</td>
-      <td>Observation</td>
+      <td><sup id="fnref:gen3" role="doc-noteref"><a href="#fn:gen3" class="footnote" rel="footnote">3</a></sup></td>
+      <td> </td>
       <td> </td>
     </tr>
     <tr>
       <td>Date First Reported to PHD</td>
-      <td>77970-2</td>
-      <td>CBS Case Notification Panel</td>
+      <td>77970-2 <sup id="fnref:gen2:1" role="doc-noteref"><a href="#fn:gen2" class="footnote" rel="footnote">2</a></sup></td>
+      <td>CBS Date Reported to Public Health Department</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Reporting State</td>
       <td>77966-0</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Reporting State</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Reporting County</td>
       <td>77967-8</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS Reporting County</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>National Reporting Jurisdiction</td>
       <td>77968-6</td>
-      <td>CBS Case Notification Panel</td>
+      <td>CBS National Reporting Jurisdiction</td>
       <td>Observation</td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
+<h4 id="footnotes">Footnotes</h4>
+
 <h3 id="mumps-vaccination-history">Mumps Vaccination History</h3>
 <p>This table is provided as an example of mapping vaccination related fields using the Mumps Message Mapping Guide as a base case. Only the “Epidemiology Questions about Vaccine History” group, including the “Preferred Vaccination History” repeating sub-group, are included.</p>
 
 <h3 id="individual-data-element-notes-1">Individual Data Element Notes</h3>
 <h4 id="vaccine-history-comments">Vaccine History Comments</h4>
-<p>Data conveyed through the vaccine history comments element should be included as annotations provided in the note element of the relevant profile, typically the CBS Vaccine Record profile itself.</p>
+<p>Data conveyed through the vaccine history comments element should be included as annotations provided in the note element of the relevant profile, typically the US CBS Immunization profile itself.</p>
 
 <h3 id="full-table-1">Full Table</h3>
 
@@ -716,30 +718,30 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
     <tr>
       <td>Did the Subject Ever Receive a Vaccine Against This Disease</td>
       <td>VAC126</td>
-      <td>CBS Vaccination Indication</td>
+      <td>US CBS Immunization</td>
       <td>Observation</td>
       <td> </td>
     </tr>
     <tr>
       <td>Number of Doses Received On or After 1st Birthday</td>
       <td>VAC129</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td><sup id="fnref:vacc1" role="doc-noteref"><a href="#fn:vacc1" class="footnote" rel="footnote">1</a></sup> <sup id="fnref:vacc2" role="doc-noteref"><a href="#fn:vacc2" class="footnote" rel="footnote">2</a></sup></td>
+      <td><sup id="fnref:vacc1" role="doc-noteref"><a href="#fn:vacc1" class="footnote" rel="footnote">4</a></sup> <sup id="fnref:vacc2" role="doc-noteref"><a href="#fn:vacc2" class="footnote" rel="footnote">5</a></sup></td>
     </tr>
     <tr>
       <td>Date of Last Dose Prior to Illness Onset</td>
       <td>VAC142</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td><sup id="fnref:vacc1:1" role="doc-noteref"><a href="#fn:vacc1" class="footnote" rel="footnote">1</a></sup></td>
+      <td><sup id="fnref:vacc1:1" role="doc-noteref"><a href="#fn:vacc1" class="footnote" rel="footnote">4</a></sup></td>
     </tr>
     <tr>
       <td>Vaccination Doses Prior to Onset</td>
       <td>82745-1</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td><sup id="fnref:vacc1:2" role="doc-noteref"><a href="#fn:vacc1" class="footnote" rel="footnote">1</a></sup> <sup id="fnref:vacc2:1" role="doc-noteref"><a href="#fn:vacc2" class="footnote" rel="footnote">2</a></sup></td>
+      <td><sup id="fnref:vacc1:2" role="doc-noteref"><a href="#fn:vacc1" class="footnote" rel="footnote">4</a></sup> <sup id="fnref:vacc2:1" role="doc-noteref"><a href="#fn:vacc2" class="footnote" rel="footnote">5</a></sup></td>
     </tr>
     <tr>
       <td>Vaccinated per ACIP Recommendations</td>
@@ -753,7 +755,7 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
       <td>VAC149</td>
       <td>CBS Subject Vaccinated per ACIP Recommendations</td>
       <td>Observation</td>
-      <td>extension[reason-not-vaccinated-per-ACIP-recommendations]</td>
+      <td>component</td>
     </tr>
     <tr>
       <td>Vaccine History Comments</td>
@@ -765,81 +767,90 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
     <tr>
       <td>Vaccine Type</td>
       <td>30956-7</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td>vaccineCode <sup id="fnref:vacc3" role="doc-noteref"><a href="#fn:vacc3" class="footnote" rel="footnote">3</a></sup></td>
+      <td>vaccineCode <sup id="fnref:vacc3" role="doc-noteref"><a href="#fn:vacc3" class="footnote" rel="footnote">6</a></sup></td>
     </tr>
     <tr>
       <td>Vaccine Administered Date</td>
       <td>30952-6</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td>occurrence <sup id="fnref:vacc4" role="doc-noteref"><a href="#fn:vacc4" class="footnote" rel="footnote">4</a></sup></td>
+      <td>occurrence <sup id="fnref:vacc4" role="doc-noteref"><a href="#fn:vacc4" class="footnote" rel="footnote">7</a></sup></td>
     </tr>
     <tr>
       <td>Vaccine Dose Number</td>
       <td>30973-2</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
       <td>protocolApplied.doseNumber</td>
     </tr>
     <tr>
       <td>Vaccine Manufacturer</td>
       <td>30957-5</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td>manufacturer <sup id="fnref:vacc5" role="doc-noteref"><a href="#fn:vacc5" class="footnote" rel="footnote">5</a></sup></td>
+      <td>manufacturer <sup id="fnref:vacc5" role="doc-noteref"><a href="#fn:vacc5" class="footnote" rel="footnote">8</a></sup></td>
     </tr>
     <tr>
       <td>Vaccine Lot Number</td>
       <td>30959-1</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
       <td>lotNumber</td>
     </tr>
     <tr>
       <td>Vaccine Expiration Date</td>
       <td>VAC109</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
       <td>expirationDate</td>
     </tr>
     <tr>
       <td>National Drug Code (NDC)</td>
       <td>VAC153</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
-      <td>vaccineCode <sup id="fnref:vacc3:1" role="doc-noteref"><a href="#fn:vacc3" class="footnote" rel="footnote">3</a></sup></td>
+      <td>vaccineCode <sup id="fnref:vacc3:1" role="doc-noteref"><a href="#fn:vacc3" class="footnote" rel="footnote">6</a></sup></td>
     </tr>
     <tr>
       <td>Vaccination Record Identifier</td>
       <td>VAC102</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
       <td>identifier</td>
     </tr>
     <tr>
       <td>Vaccine Event Information Source</td>
       <td>VAC147</td>
-      <td>CBS Vaccination Record</td>
+      <td>US CBS Immunization</td>
       <td>Immunization</td>
       <td>reportOrigin</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="footnotes">Footnotes</h4>
+<h4 id="footnotes-1">Footnotes</h4>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
+    <li id="fn:gen1" role="doc-endnote">
+      <p>Electronic submission dates should be handled by resource generation and is not mapped directly. For conversion of existing records, Observations may be used. <a href="#fnref:gen1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:gen1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:gen2" role="doc-endnote">
+      <p>The LOINC codes for these two elements are switched in MMG spreadsheets. The profiles will use the correct LOINC code that aligns with the display name. <a href="#fnref:gen2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:gen2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:gen3" role="doc-endnote">
+      <p>This is marked as deprecated and does not have an equivalent profile. <a href="#fnref:gen3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
     <li id="fn:vacc1" role="doc-endnote">
-      <p>Captured by comparing relative dates between resources. If this is not enough to convey the desired information such as in cases where dates are not provided, the information should be included in an annotation within the CBS Vaccination Record’s immunization.note element. <a href="#fnref:vacc1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:vacc1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:vacc1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+      <p>Captured by comparing relative dates between resources. If this is not enough to convey the desired information such as in cases where dates are not provided, the information should be included in an annotation within the US CBS Immunization’s Immunization.note element. <a href="#fnref:vacc1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:vacc1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:vacc1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
     </li>
     <li id="fn:vacc2" role="doc-endnote">
-      <p>Multiple doses are represented by separate Immunization resources and thus Vaccination Record profiles. The immunization.protocolApplied.doseNumber and immunization.protocolApplied.seriesDoses elements must be tracked during implementation along with the relative dates. If this is not enough to convey the desired information such as in cases where dates or distinct doses are not provided, the information should be included in an annotation within the CBS Vaccination Record’s immunization.note element. <a href="#fnref:vacc2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:vacc2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+      <p>Multiple doses are represented by separate Immunization resources and thus US CBS Immunization profiles. The Immunization.protocolApplied.doseNumber and Immunization.protocolApplied.seriesDoses elements must be tracked during implementation along with the relative dates. If this is not enough to convey the desired information, such as in cases where dates or distinct doses are not provided, the information should be included in an annotation within the US CBS Immunization’s Immunization.note element. <a href="#fnref:vacc2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:vacc2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
     <li id="fn:vacc3" role="doc-endnote">
-      <p>The immunization.vaccineCode element is a CodeableConcept which can capture both general CDC vaccine coding as well as the related concept from NDC. Both codes may be included as a list in immunization.vaccineCode.coding. <a href="#fnref:vacc3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:vacc3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+      <p>The Immunization.vaccineCode element is a CodeableConcept which can capture both general CDC vaccine coding as well as the related concept from NDC. Both codes may be included as a list in Immunization.vaccineCode.coding. <a href="#fnref:vacc3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:vacc3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
     <li id="fn:vacc4" role="doc-endnote">
       <p>Use occurrenceString to provide a text representation for any values that are not specific DateTimes. <a href="#fnref:vacc4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
@@ -874,7 +885,7 @@ For larger comments or inclusion of unstructured documentation, a DocumentRefere
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 25, 2022 10:18-0500">2022-01-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 8, 2022 17:12-0500">2022-02-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

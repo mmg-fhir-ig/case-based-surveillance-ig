@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="CBSIG"/>
   <title value="Case Based Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-01-25T10:18:17-05:00"/>
+  <date value="2022-02-08T17:12:45-05:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -32,12 +32,12 @@
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="current"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_ecr">
     <uri value="http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr"/>
     <packageId value="hl7.fhir.us.ecr"/>
-    <version value="current"/>
+    <version value="2.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_odh">
     <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
@@ -197,16 +197,49 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="CBSProfiles">
+      <name value="CBS Profiles"/>
+      <description value="Case Based Surveillance Profiles"/>
+    </grouping>
+    <grouping id="CBSCNPProfiles">
+      <name value="CBS CNP Profiles"/>
+      <description value="Case Based Surveillance Case Notification Panel Profiles"/>
+    </grouping>
+    <grouping id="USCBSProfiles">
+      <name value="US CBS Profiles"/>
+      <description value="United States Case Based Surveillance Profiles"/>
+    </grouping>
+    <grouping id="CBSExtensions">
+      <name value="CBS Extensions"/>
+      <description value="Case Based Surveillance Extensions"/>
+    </grouping>
+    <grouping id="USCBSExtensions">
+      <name value="US CBS Extensions"/>
+      <description value="United States Case Based Surveillance Extensions"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-epi-questionnaire-panel"/>
+        <reference value="StructureDefinition/cbs-age-at-investigation"/>
       </reference>
-      <name value="Case Based Surveillance Epi Questionnaire Panel"/>
-      <description value="Defines constraints on Observation to represent structured resources for the collection and organization of epidemiological questions."/>
+      <name value="Case Based Surveillance Age at Case Investigation"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the age at case investigation of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-binational-reporting-criteria"/>
+      </reference>
+      <name value="Case Based Surveillance Binational Reporting Criteria"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the Binational Reporting Criteria of the case notification panel in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -218,17 +251,19 @@
       <name value="Case Based Surveillance Case Notification Panel Profile"/>
       <description value="Defines constraints on Observation to represent the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-cnp-member"/>
+        <reference value="StructureDefinition/cbs-case-outbreak"/>
       </reference>
-      <name value="Case Based Surveillance Case Notification Panel Member"/>
-      <description value="Defines constraints on the CBS Case Notification Panel Profile for defining the member resources of the case notification panel in public health surveillance programs."/>
+      <name value="Case Based Surveillance Case Outbreak"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the Case Outbreak section of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -240,6 +275,7 @@
       <name value="Case Based Surveillance Cause of Death Profile"/>
       <description value="Defines constraints on on the Observation resource for supporting public health reporting workflows involving the cause of death of the subject."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -251,17 +287,31 @@
       <name value="Case Based Surveillance Composition Profile"/>
       <description value="Defines constraints to the Composition resource in order to meet the needs of public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-condition"/>
+        <reference value="StructureDefinition/cbs-date-initial-report"/>
       </reference>
-      <name value="Case Based Surveillance Condition of Interest Profile"/>
-      <description value="Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible."/>
+      <name value="Case Based Surveillance Date of Initial Report"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the date of initial report on the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-date-reported-to-phd"/>
+      </reference>
+      <name value="Case Based Surveillance Date of First Report to Public Health Department"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the date reported of the case notification panel in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -273,6 +323,31 @@
       <name value="Case Based Surveillance Document Profile"/>
       <description value="Defines a document type bundle that contains all related profiles."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-earliest-date-reported-to-county"/>
+      </reference>
+      <name value="Case Based Surveillance Earliest Date Reported"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the earliest date reported of the case notification panel in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-earliest-date-reported-to-state"/>
+      </reference>
+      <name value="Case Based Surveillance Earliest Date Reported to State"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the earliest date reported to the state of the case notification panel in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -284,39 +359,43 @@
       <name value="Case Based Surveillance Exposure Observation Profile"/>
       <description value="Defines constraints to the CBS Case Notification Panel Member profile to represent the exposure observations of the case notification panel."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-hospitalization"/>
+        <reference value="StructureDefinition/cbs-immediate-nnc"/>
       </reference>
-      <name value="Case Based Surveillance Hospitalization Encounter Profile"/>
-      <description value="Defines constraints on Encounter to represent hospitalization due to a condition of interest in public health surveillance programs."/>
+      <name value="Case Based Surveillance Immediate National Notifiable Condition"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the imemdiate national notifiable condition of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-lab-diagnosticreport"/>
+        <reference value="StructureDefinition/cbs-investigation-start-date"/>
       </reference>
-      <name value="Case Based Surveillance Lab Test Report"/>
-      <description value="Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs."/>
+      <name value="Case Based Surveillance Case Investigation Start Date"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the case investigation start date of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-lab-observation"/>
+        <reference value="StructureDefinition/cbs-jurisdiction-code"/>
       </reference>
-      <name value="Case Based Surveillance Lab Observation"/>
-      <description value="Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs."/>
+      <name value="Case Based Surveillance Jurisdiction Code"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the jurisdiction code of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -328,39 +407,31 @@
       <name value="Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"/>
       <description value="Defines constraints on CBS Case Notification Panel to represent the MMWR elements of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-patient"/>
+        <reference value="StructureDefinition/cbs-national-reporting-jurisdiction"/>
       </reference>
-      <name value="Case Based Surveillance Patient Profile"/>
-      <description value="Defines constraints and extensions to the patient resource in order to meet the needs of public health surveillance programs while providing as much alignment with US Core requirements as possible. Mapping between similar concepts implemented with different value sets (ie: race, ethnicity, or sex assigned at birth) may be required."/>
+      <name value="Case Based Surveillance National Reporting Jurisdiction"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the national reporting jurisdiction of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-performing-lab"/>
+        <reference value="StructureDefinition/cbs-pregnancy-status"/>
       </reference>
-      <name value="Case Based Surveillance Performing Laboratory Profile"/>
-      <description value="NOT FINAL GOING TO CHANGE"/>
+      <name value="Case Based Surveillance Pregnancy Status"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the pregnancy status of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-person-reporting-to-cdc"/>
-      </reference>
-      <name value="Case Based Surveillance Person Reporting To CDC Profile"/>
-      <description value="Defines constraints on on the Practitioner resource for supporting public health reporting workflows involving the person reporting to the CDC."/>
-      <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -372,17 +443,31 @@
       <name value="Case Based Surveillance Questionnaire Profile"/>
       <description value="Defines constraints on the Questionnaire resource to set the minimum expected details to be provided as part of case based surveillance program&#39;s questionnaire/survey data."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-reporting-source-organization"/>
+        <reference value="StructureDefinition/cbs-reporting-county"/>
       </reference>
-      <name value="Case Based Surveillance Reporting Source Organization Profile"/>
-      <description value="Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source."/>
+      <name value="Case Based Surveillance Reporting County"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the reporting county of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cbs-reporting-state"/>
+      </reference>
+      <name value="Case Based Surveillance Reporting State"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the reporting state of the case notification panel in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -394,6 +479,7 @@
       <name value="Case Based Surveillance Social Determinants of Health Profile"/>
       <description value="Defines constraints on the Observation resource to capture subject&#39;s Social Determinants of Health in order to meet the needs of public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -405,17 +491,19 @@
       <name value="Case Based Surveillance Specimen Profile"/>
       <description value="Defines constraints on the Specimen resource in order to meet the needs of public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-travel-history"/>
+        <reference value="StructureDefinition/cbs-transmission-mode"/>
       </reference>
-      <name value="Case Based Surveillance Travel History Profile"/>
-      <description value="Defines constraints on the Observation resource to capture subject Travel History in order to meet the needs of public health surveillance programs."/>
+      <name value="Case Based Surveillance Transmission Mode"/>
+      <description value="Defines constraints on CBS Case Notification Panel to represent the transmission mode of the case notification panel in public health surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSCNPProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -427,28 +515,7 @@
       <name value="Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile"/>
       <description value="Defines constraints on the Observation resource to capture whether subject was vaccinated per ACIP Recommendations in order to meet the needs of public health surveillance programs."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-vaccination-indication"/>
-      </reference>
-      <name value="Case Based Surveillance Vaccination Indication Profile"/>
-      <description value="Defines constraints on the Observation resource to capture subject&#39;s indication/assertion of vaccination in order to meet the needs of public health surveillance programs."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-vaccination-record"/>
-      </reference>
-      <name value="Case Based Surveillance Vaccination Record Profile"/>
-      <description value="Defines constraints on the Immunization resource to capture subject vaccination records in order to meet the needs of public health surveillance programs."/>
-      <exampleBoolean value="false"/>
+      <groupingId value="CBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -460,6 +527,7 @@
       <name value="US Case Based Surveillance Condition of Interest Profile"/>
       <description value="Defines constraints and extensions to the Condition resource in order to meet the needs of public health surveillance programs, further constrainting the US Core based ECR US Public Health profiles."/>
       <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -471,6 +539,43 @@
       <name value="US Case Based Surveillance Hospitalization Encounter Profile"/>
       <description value="Defines constraints on the ECR US Public Health Encounter to represent hospitalization due to a condition of interest for public health case based surveillance programs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-cbs-immunization"/>
+      </reference>
+      <name value="US Case Based Surveillance Immunization Profile"/>
+      <description value="Defines further constraints on the US Core Immunization profile to capture subject vaccination records in order to meet the needs of public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-cbs-lab-diagnosticreport"/>
+      </reference>
+      <name value="US Case Based Surveillance Lab Diagnostic Report"/>
+      <description value="Defines a DiagnosticReport resource profile in order to meet the needs of public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-cbs-lab-observation"/>
+      </reference>
+      <name value="US Case Based Surveillance Lab Observation"/>
+      <description value="Defines constraints on the Observation resource in order to meet the needs of lab reporting in public health surveillance programs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -482,6 +587,31 @@
       <name value="US Case Based Surveillance Patient Profile"/>
       <description value="Defines further constraints and extensions to the ECR US Public Health profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards."/>
       <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-cbs-performing-lab"/>
+      </reference>
+      <name value="US Case Based Surveillance Performing Laboratory Profile"/>
+      <description value="Defines further constraints and extensions to the ECR US Public Health Organization profile in order to meet the needs of case based surveillance programs while maintaining adherence to US Core standards."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-cbs-reporting-source-organization"/>
+      </reference>
+      <name value="US Case Based Surveillance Reporting Source Organization Profile"/>
+      <description value="Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -493,17 +623,7 @@
       <name value="US Case Based Surveillance Travel History Profile"/>
       <description value="Defines constraints on the ECR US PH Travel History profile to capture additional data in order to meet the needs of public health case based surveillance programs."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-birthsex"/>
-      </reference>
-      <name value="Case Based Surveillance Sex Assigned at Birth Extension"/>
-      <description value="A code classifying the person&#39;s sex assigned at birth."/>
-      <exampleBoolean value="false"/>
+      <groupingId value="USCBSProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -515,6 +635,7 @@
       <name value="Case Based Surveillance CDC Address Use Extension"/>
       <description value="Indicates the use of the address as per information surveillance program."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -526,39 +647,7 @@
       <name value="Case Based Surveillance Case Class Status"/>
       <description value="A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-diagnosis-date"/>
-      </reference>
-      <name value="Case Based Surveillance Diagnosis Date Extension"/>
-      <description value="A dateTime indicating when the condition of interest was diagnosed."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-ethnicity"/>
-      </reference>
-      <name value="Case Based Surveillance Ethnicity Extension"/>
-      <description value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino. This extension is based on the equivalent US Core extension though utilizes the public health focused PHIN Value Set and limiting data based on established standards in public health case based surveillance messaging."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-race"/>
-      </reference>
-      <name value="Case Based Surveillance Race Extension"/>
-      <description value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality."/>
-      <exampleBoolean value="false"/>
+      <groupingId value="CBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -570,6 +659,7 @@
       <name value="Case Based Surveillance Specimen Role Extension"/>
       <description value="Indicates the role of the sample."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -581,28 +671,19 @@
       <name value="Case Based Surveillance Illness Duration"/>
       <description value="Illness duration to obscure PHII in place of absokute dates."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cbs-program-specific-time-window"/>
+        <reference value="StructureDefinition/us-cbs-program-specific-time-window"/>
       </reference>
-      <name value="Case Based Surveillance Program Specific Time Window"/>
+      <name value="US Case Based Surveillance Program Specific Time Window"/>
       <description value="Time window of interest in relationship to a specified event as determined by individual case based surveillance programs."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cbs-reason-not-vaccinated-per-ACIP-recommendations"/>
-      </reference>
-      <name value="Case Based Surveillance Reason Not Vaccinated Per ACIP Recommendations"/>
-      <description value="Reason the subject was not vaccinated per ACIP recommendations."/>
-      <exampleBoolean value="false"/>
+      <groupingId value="USCBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -614,6 +695,7 @@
       <name value="Case Based Surveillance Related Case Extension"/>
       <description value="A list of strings with relevant case numbers and a type element that specifies the nature of the relation."/>
       <exampleBoolean value="false"/>
+      <groupingId value="CBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -625,6 +707,7 @@
       <name value="US Case Based Surveillance Period and Mode of Travel Extension"/>
       <description value="An extension capturing the circumstances of travel to a destination."/>
       <exampleBoolean value="false"/>
+      <groupingId value="USCBSExtensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,28 +740,6 @@
       </reference>
       <name value="Combined ValueSet for Lab DiagnosticReport Code."/>
       <description value="Codes for Lab Test Type. The codes are from two PHINVADS valuesets to support labs test repeating group"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CBSLabObservationResultVS"/>
-      </reference>
-      <name value="Combined ValueSet for Lab Observation Result."/>
-      <description value="Codes for Lab Observations Result Value. The codes are from two PHINVADS valuesets to support lab results in MMG and Lab Repeating Group"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CBSLabObservationVS"/>
-      </reference>
-      <name value="Combined ValueSet for Lab Observation Code."/>
-      <description value="Codes for Lab related Observations. The codes are to support labs in MMG and Lab Repeating Group"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -778,7 +839,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member1"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -789,7 +850,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member10"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -800,7 +861,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member11"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -811,7 +872,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member12"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -822,7 +883,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member13"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -833,7 +894,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member14"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -844,7 +905,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member15"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -855,7 +916,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member2"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -866,7 +927,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member3"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -877,7 +938,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member4"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -888,7 +949,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member5"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -899,7 +960,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member6"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -910,7 +971,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member7"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -921,7 +982,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member8"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -932,7 +993,7 @@
       </reference>
       <name value="GenV2-TC-CNP-Member9"/>
       <description value="Case notification panel member resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -965,7 +1026,7 @@
       </reference>
       <name value="GenV2-TC-Condition"/>
       <description value="Condition of interest resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -998,7 +1059,7 @@
       </reference>
       <name value="GenV2-TC-Hospitalization"/>
       <description value="CBS Hospitalization resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1020,18 +1081,7 @@
       </reference>
       <name value="GenV2-TC-Patient"/>
       <description value="CBS Patient resource for the GenV2 Test Case 1 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/GenV2-TC-Person-Reporting"/>
-      </reference>
-      <name value="GenV2-TC-Person-Reporting"/>
-      <description value="Person reporting to CDC example resource for the GenV2 Test Case 1"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1042,7 +1092,7 @@
       </reference>
       <name value="GenV2-TC-Reporting-Source"/>
       <description value="Reporting source example resource for the GenV2 Test Case 1"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1064,7 +1114,7 @@
       </reference>
       <name value="HAICA-TC-CNP-Member1"/>
       <description value="Case notification panel member resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1075,7 +1125,7 @@
       </reference>
       <name value="HAICA-TC-CNP-Member2"/>
       <description value="Case notification panel member resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1086,7 +1136,7 @@
       </reference>
       <name value="HAICA-TC-CNP-Member3"/>
       <description value="Case notification panel member resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1097,7 +1147,7 @@
       </reference>
       <name value="HAICA-TC-CNP-Member4"/>
       <description value="Case notification panel member resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1108,7 +1158,7 @@
       </reference>
       <name value="HAICA-TC-CNP-Member5"/>
       <description value="Case notification panel member resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1119,7 +1169,7 @@
       </reference>
       <name value="HAICA-TC-CNP-Member6"/>
       <description value="Case notification panel member resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1141,7 +1191,7 @@
       </reference>
       <name value="HAICA-TC-Condition"/>
       <description value="Condition of interest resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1163,7 +1213,7 @@
       </reference>
       <name value="HAICA-TC-Hospitalization"/>
       <description value="CBS Hospitalization resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1174,7 +1224,7 @@
       </reference>
       <name value="HAICA-TC-Lab-DiagnosticReport"/>
       <description value="A lab diagnostic report example resource for the HAI-CA Test Case 2."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1185,7 +1235,7 @@
       </reference>
       <name value="HAICA-TC-Lab-Observation"/>
       <description value="A lab observation example resource for the HAI-CA Test Case 2."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1207,18 +1257,7 @@
       </reference>
       <name value="HAICA-TC-Patient"/>
       <description value="CBS Patient resource for the HAI-CA Test Case 2 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/HAICA-TC-Person-Reporting"/>
-      </reference>
-      <name value="HAICA-TC-Person-Reporting"/>
-      <description value="Person reporting to CDC example resource for the HAI-CA Test Case 2"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1229,7 +1268,7 @@
       </reference>
       <name value="HAICA-TC-Reporting-Source"/>
       <description value="Reporting source example resource for the HAICA Test Case 2"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1241,6 +1280,17 @@
       <name value="HAICA-TC-Specimen"/>
       <description value="A specimen example resource for the HAI-CA Test Case 2."/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HAICA-TC-TravelHistory"/>
+      </reference>
+      <name value="HAICA-TC-TravelHistory"/>
+      <description value="US CBS Travel History resource for the HAI-CA Test Case 2 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1262,7 +1312,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member1"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1273,7 +1323,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member10"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1284,7 +1334,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member11"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1295,7 +1345,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member12"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1306,7 +1356,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member13"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1317,7 +1367,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member2"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1328,7 +1378,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member3"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1339,7 +1389,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member4"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1350,7 +1400,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member5"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1361,7 +1411,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member6"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1372,7 +1422,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member7"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1383,7 +1433,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member8"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1394,7 +1444,7 @@
       </reference>
       <name value="Lyme-TC-CNP-Member9"/>
       <description value="Case notification panel member resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1416,7 +1466,7 @@
       </reference>
       <name value="Lyme-TC-Condition"/>
       <description value="Condition of interest resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1438,7 +1488,7 @@
       </reference>
       <name value="Lyme-TC-Hospitalization"/>
       <description value="CBS Hospitalization resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1449,7 +1499,7 @@
       </reference>
       <name value="Lyme-TC-Lab-DiagnosticReport"/>
       <description value="A lab diagnostic report example resource for the Lyme Test Case."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1460,7 +1510,7 @@
       </reference>
       <name value="Lyme-TC-Lab-Observation-1"/>
       <description value="A first lab observation example resource for the Lyme Test Case."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1471,7 +1521,7 @@
       </reference>
       <name value="Lyme-TC-Lab-Observation-2"/>
       <description value="A second lab observation example resource for the Lyme Test Case."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1515,18 +1565,7 @@
       </reference>
       <name value="Lyme-TC-Patient"/>
       <description value="CBS Patient resource for the Lyme Test Case Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Lyme-TC-Person-Reporting"/>
-      </reference>
-      <name value="Lyme-TC-Person-Reporting"/>
-      <description value="Person reporting to CDC example resource for the Lyme Test Case"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1537,7 +1576,7 @@
       </reference>
       <name value="Lyme-TC-Reporting-Source"/>
       <description value="Reporting source example resource for the Lyme Test Case"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1549,6 +1588,28 @@
       <name value="Lyme-TC-Specimen"/>
       <description value="A specimen example resource for the Lyme Test Case."/>
       <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/STD-Demo-Questionnaire"/>
+      </reference>
+      <name value="STD-Demo-Questionnaire"/>
+      <description value="Demo Questionnaire for STD Case Related Questions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/STD-Demo-QuestionnaireResponse"/>
+      </reference>
+      <name value="STD-Demo-QuestionnaireResponse"/>
+      <description value="Demo QuestionnaireResponse for STD Case Related Questionnaire"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1570,7 +1631,7 @@
       </reference>
       <name value="STD-TC-CNP-Member1"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-immediate-nnc"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1581,7 +1642,7 @@
       </reference>
       <name value="STD-TC-CNP-Member10"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-outbreak"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1592,7 +1653,7 @@
       </reference>
       <name value="STD-TC-CNP-Member11"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-binational-reporting-criteria"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1603,7 +1664,7 @@
       </reference>
       <name value="STD-TC-CNP-Member12"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1614,7 +1675,7 @@
       </reference>
       <name value="STD-TC-CNP-Member13"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1625,7 +1686,7 @@
       </reference>
       <name value="STD-TC-CNP-Member14"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-pregnancy-status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1636,7 +1697,7 @@
       </reference>
       <name value="STD-TC-CNP-Member15"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-age-at-investigation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1647,7 +1708,7 @@
       </reference>
       <name value="STD-TC-CNP-Member2"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1658,7 +1719,7 @@
       </reference>
       <name value="STD-TC-CNP-Member3"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1669,7 +1730,7 @@
       </reference>
       <name value="STD-TC-CNP-Member4"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1680,7 +1741,7 @@
       </reference>
       <name value="STD-TC-CNP-Member5"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-jurisdiction-code"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1691,7 +1752,7 @@
       </reference>
       <name value="STD-TC-CNP-Member6"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1702,7 +1763,7 @@
       </reference>
       <name value="STD-TC-CNP-Member7"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1713,7 +1774,7 @@
       </reference>
       <name value="STD-TC-CNP-Member8"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1724,7 +1785,7 @@
       </reference>
       <name value="STD-TC-CNP-Member9"/>
       <description value="Case notification panel member resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1768,7 +1829,7 @@
       </reference>
       <name value="STD-TC-Condition"/>
       <description value="Condition of interest resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1780,160 +1841,6 @@
       <name value="STD-TC-DetectionMethod"/>
       <description value="An example Observation describing how the case patient first came to the attention of the health department for this condition."/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ1"/>
-      </reference>
-      <name value="STD-TC-EQ1"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ10"/>
-      </reference>
-      <name value="STD-TC-EQ10"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ11"/>
-      </reference>
-      <name value="STD-TC-EQ11"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ12"/>
-      </reference>
-      <name value="STD-TC-EQ12"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ13"/>
-      </reference>
-      <name value="STD-TC-EQ13"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ2"/>
-      </reference>
-      <name value="STD-TC-EQ2"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ3"/>
-      </reference>
-      <name value="STD-TC-EQ3"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ4"/>
-      </reference>
-      <name value="STD-TC-EQ4"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ5"/>
-      </reference>
-      <name value="STD-TC-EQ5"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ6"/>
-      </reference>
-      <name value="STD-TC-EQ6"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ7"/>
-      </reference>
-      <name value="STD-TC-EQ7"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ8"/>
-      </reference>
-      <name value="STD-TC-EQ8"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EQ9"/>
-      </reference>
-      <name value="STD-TC-EQ9"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as a &quot;question&quot; resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/STD-TC-EpiQuestionnaire"/>
-      </reference>
-      <name value="STD-TC-EpiQuestionnaire"/>
-      <description value="A example resource that conforms to the CBS Epi-Questionnaire Profile for the STD Test Case 5 Patient as the parent resource."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-epi-questionnaire-panel"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1977,7 +1884,7 @@
       </reference>
       <name value="STD-TC-Hospitalization"/>
       <description value="CBS Hospitalization resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-hospitalization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-hospitalization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1999,7 +1906,7 @@
       </reference>
       <name value="STD-TC-Lab-DiagnosticReport"/>
       <description value="A lab diagnostic report example resource for the STD Test Case 5."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2010,7 +1917,7 @@
       </reference>
       <name value="STD-TC-Lab-Observation"/>
       <description value="A lab observation example resource for the STD Test Case 5."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2021,7 +1928,7 @@
       </reference>
       <name value="STD-TC-Lab-Observation-AST"/>
       <description value="An antimicrobial susceptibility test lab observation example resource for the STD Test Case 5."/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2065,18 +1972,7 @@
       </reference>
       <name value="STD-TC-Patient"/>
       <description value="CBS Patient resource for the STD Test Case 5 Patient"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/STD-TC-Person-Reporting"/>
-      </reference>
-      <name value="STD-TC-Person-Reporting"/>
-      <description value="Person reporting to CDC example resource for the STD Test Case 5"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-person-reporting-to-cdc"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2087,7 +1983,7 @@
       </reference>
       <name value="STD-TC-Reporting-Source"/>
       <description value="Reporting source example resource for the STD Test Case 5"/>
-      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-source-organization"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2132,6 +2028,50 @@
       <name value="STD-TC-TreatmentDate"/>
       <description value="An example Observation describing the day the patient&#39;s treatment was initiated for the condition"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Varicella-TC-ACIP-Recommendation"/>
+      </reference>
+      <name value="Varicella-TC-ACIP-Recommendation"/>
+      <description value="Vaccination per ACIP Recommendations resource for the Varicella Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Varicella-TC-Condition"/>
+      </reference>
+      <name value="Varicella-TC-Condition"/>
+      <description value="Condition of interest resource for the Varicella Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/Varicella-TC-Immunization"/>
+      </reference>
+      <name value="Varicella-TC-Immunization"/>
+      <description value="Immunization resource for the Varicella Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Varicella-TC-Patient"/>
+      </reference>
+      <name value="Varicella-TC-Patient"/>
+      <description value="US CBS Patient resource for the Varicella Test Case 5 Patient"/>
+      <exampleCanonical value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

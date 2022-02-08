@@ -3,7 +3,7 @@
   <sch:ns prefix="f" uri="http://hl7.org/fhir"/>
   <sch:ns prefix="h" uri="http://www.w3.org/1999/xhtml"/>
   <!-- 
-    This file contains just the constraints for the profile CaseBasedSurveillanceCaseNotificationPanelMember
+    This file contains just the constraints for the profile CaseBasedSurveillanceCaseNotificationPanel
     It includes the base constraints for the resource as well.
     Because of the way that schematrons and containment work, 
     you may need to use this schematron fragment to build a, 
@@ -141,7 +141,6 @@
   <sch:pattern>
     <sch:title>Observation.value[x] 1</sch:title>
     <sch:rule context="f:Observation/f:value[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

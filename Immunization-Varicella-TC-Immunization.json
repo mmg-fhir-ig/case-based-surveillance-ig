@@ -1,0 +1,60 @@
+{
+  "resourceType": "Immunization",
+  "id": "Varicella-TC-Immunization",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Varicella-TC-Immunization\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-immunization.html\">US Case Based Surveillance Immunization Profile</a></p></div><p><b>identifier</b>: id: ID102</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: Varicella Vaccine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#21)</span></p><p><b>patient</b>: <a href=\"Patient-Varicella-TC-Patient.html\">Patient/Varicella-TC-Patient: Varicella-TC Example Patient</a> \"\"</p><p><b>occurrence</b>: 2013-08-10</p><p><b>primarySource</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: Cannot invoke \"java.lang.Boolean.toString()\" because the return value of \"org.hl7.fhir.r5.model.BooleanType.getValue()\" is null</b></p></div>"
+  },
+  "identifier": [
+    {
+      "value": "ID102"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.12.292",
+        "code": "21",
+        "display": "Varicella Vaccine"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/Varicella-TC-Patient",
+    "display": "Varicella-TC Example Patient"
+  },
+  "occurrenceDateTime": "2013-08-10",
+  "_primarySource": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  },
+  "reportOrigin": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.5.293",
+        "code": "05",
+        "display": "Historical information - from other registry"
+      }
+    ]
+  },
+  "manufacturer": {
+    "display": "Merck and Co., Inc."
+  },
+  "lotNumber": "PDE453956",
+  "expirationDate": "2016-10-31",
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1
+    }
+  ]
+}

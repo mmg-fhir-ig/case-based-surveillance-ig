@@ -97,9 +97,6 @@
   <section>
     <title value="Reporting Entities"/>
     <entry>
-      <reference value="Practitioner/STD-TC-Person-Reporting"/>
-    </entry>
-    <entry>
       <reference value="Organization/STD-TC-Reporting-Source"/>
     </entry>
   </section>
@@ -122,51 +119,6 @@
     </entry>
     <entry>
       <reference value="MedicationStatement/STD-TC-Medication-Statement-2"/>
-    </entry>
-  </section>
-  <section>
-    <title value="Epi Observations"/>
-    <entry>
-      <reference value="Observation/STD-TC-EpiQuestionnaire"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ1"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ2"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ3"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ4"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ5"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ6"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ7"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ8"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ9"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ10"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ11"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ12"/>
-    </entry>
-    <entry>
-      <reference value="Observation/STD-TC-EQ13"/>
     </entry>
   </section>
 </Composition>

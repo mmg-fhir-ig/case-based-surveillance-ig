@@ -3,12 +3,12 @@
   "id": "HAICA-TC-Lab-DiagnosticReport",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 85069-3}\">Lab test method [Type]</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Yyyyy, Bbbbb</b> ?? 1940-01-01 ( Local Record ID: C_auris_02)</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-HAICA-TC-Lab-Observation.html\"><span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 LAB723}\">DNA Sequencing</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 85069-3}\">Lab test method [Type]</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b></b> ?? 1940-01-01 ( Local Record ID: C_auris_02)</td></tr><tr><td>Reported</td><td>2020-12-31T19:00:00-05:00</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-HAICA-TC-Lab-Observation.html\"><span title=\"Codes: {urn:oid:2.16.840.1.114222.4.5.232 LAB723}\">DNA Sequencing</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></td></tr></table></div>"
   },
   "status": "final",
   "category": [
@@ -32,6 +32,7 @@
   "subject": {
     "reference": "Patient/HAICA-TC-Patient"
   },
+  "issued": "2021-01-01T00:00:00Z",
   "specimen": [
     {
       "reference": "Specimen/HAICA-TC-Specimen"

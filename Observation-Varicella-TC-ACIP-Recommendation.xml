@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Varicella-TC-ACIP-Recommendation"/>
+  <meta>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Varicella-TC-ACIP-Recommendation" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-vaccination-ACIP-Recommendation.html">Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Vaccinated per ACIP Recommendations <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#vac148)</span></p><p><b>subject</b>: <a href="Patient-Varicella-TC-Patient.html">Patient/Varicella-TC-Patient: Varicella-TC-Patient</a> ""</p><p><b>focus</b>: </p><ul><li><a href="Immunization-Varicella-TC-Immunization.html">Immunization/Varicella-TC-Immunization: Varicella-TC-Immunization</a></li><li><a href="Condition-Varicella-TC-Condition.html">Condition/Varicella-TC-Condition: Varicella-TC-Condition</a></li></ul><p><b>value</b>: No <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>#N)</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Reason Not Vaccinated per ACIP Recommendations <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#vac149)</span></td><td>Parent/Patient unaware of recommendation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#PHC1314)</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.5.232"/>
+      <code value="vac148"/>
+      <display value="Vaccinated per ACIP Recommendations"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Varicella-TC-Patient"/>
+    <display value="Varicella-TC-Patient"/>
+  </subject>
+  <focus>
+    <reference value="Immunization/Varicella-TC-Immunization"/>
+    <display value="Varicella-TC-Immunization"/>
+  </focus>
+  <focus>
+    <reference value="Condition/Varicella-TC-Condition"/>
+    <display value="Varicella-TC-Condition"/>
+  </focus>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <code value="N"/>
+      <display value="No"/>
+    </coding>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.114222.4.5.232"/>
+        <code value="vac149"/>
+        <display value="Reason Not Vaccinated per ACIP Recommendations"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+        <code value="PHC1314"/>
+        <display value="Parent/Patient unaware of recommendation"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

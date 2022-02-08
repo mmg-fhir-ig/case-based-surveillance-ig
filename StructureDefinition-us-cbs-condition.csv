@@ -27,9 +27,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension","diagnosis-date","","",0,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date]]} {[]}
-","Case Based Surveillance Diagnosis Date Extension","A dateTime indicating when the condition of interest was diagnosed.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.extension","case-class-status","","",1,1,"Y","","","Extension {[CanonicalType[http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status]]} {[]}
 ","Case Based Surveillance Case Class Status","A code indicating the case class status.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

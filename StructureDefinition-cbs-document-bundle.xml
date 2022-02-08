@@ -16,7 +16,7 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="CaseBasedSurveillanceDocumentBundle"/>
   <title value="Case Based Surveillance Document Profile"/>
   <status value="active"/>

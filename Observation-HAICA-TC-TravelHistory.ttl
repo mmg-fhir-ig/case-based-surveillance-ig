@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/HAICA-TC-TravelHistory> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HAICA-TC-TravelHistory"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-TravelHistory\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-travel-history.html\">US Case Based Surveillance Travel History Profile</a></p></div><blockquote><p><b>US Case Based Surveillance Period and Mode of Travel Extension</b></p><p><b>value</b>: 2018-11-02 --&gt; 2018-11-12</p><p><b>value</b>: Aircraft <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21753002)</span></p><p><b>value</b>: <span>: Mumbai</span></p></blockquote><blockquote><p><b>US Case Based Surveillance Program Specific Time Window</b></p><p><b>value</b>: 10 day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></p><p><b>value</b>: Condition.onsetDateTime <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cbs-temp-code-system.html\">Case Based Surveillance temporary/placeholder code system.</a>#conditionOnsetDateTime)</span></p><p><b>value</b>: <a href=\"Condition-HAICA-TC-Condition.html\">Condition/HAICA-TC-Condition: HAICA-TC Example Condition of Interest</a></p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Travel (event) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#420008001)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAICA-TC Example Patient</a> \"\"</p><p><b>effective</b>: 2018-11-02 --&gt; 2018-11-12</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#LOC)</span></td><td>India <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#IND)</span></td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "dateOrPeriodOfTravel" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2018-11-02"^^xsd:date ];
+         fhir:Period.end [ fhir:value "2018-11-12"^^xsd:date ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "modeOfTravel" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a sct:21753002;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "21753002" ];
+           fhir:Coding.display [ fhir:value "Aircraft" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "relevantLocation" ];
+       fhir:Extension.valueReference [
+         fhir:Reference.display [ fhir:value "Mumbai" ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "timeWindow" ];
+       fhir:Extension.valueQuantity [
+         fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "day" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "d" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "relativeTo" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system" ];
+           fhir:Coding.code [ fhir:value "conditionOnsetDateTime" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "relativeReference" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://cbsig.chai.gatech.edu/Condition/HAICA-TC-Condition>;
+         fhir:Reference.reference [ fhir:value "Condition/HAICA-TC-Condition" ];
+         fhir:Reference.display [ fhir:value "HAICA-TC Example Condition of Interest" ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-program-specific-time-window" ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:420008001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "420008001" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/HAICA-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/HAICA-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "HAICA-TC Example Patient" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2018-11-02"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2018-11-12"^^xsd:date ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ];
+         fhir:Coding.code [ fhir:value "LOC" ];
+         fhir:Coding.display [ fhir:value "Location" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+         fhir:Coding.code [ fhir:value "IND" ];
+         fhir:Coding.display [ fhir:value "India" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Observation/HAICA-TC-TravelHistory.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -11,14 +11,14 @@
   fhir:Resource.id [ fhir:value "HAICA-TC-Condition"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition";
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition";
        fhir:index 0;
-       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition>
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-condition.html\">Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>code</b>: Candida auris, clinical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#50263)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAI-CA TC Example Patient</a> \" YYYYY\"</p><p><b>onset</b>: 2018-11-22</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-condition.html\">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Candida auris, clinical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#50263)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAI-CA TC Example Patient</a> \"\"</p><p><b>onset</b>: 2018-11-22</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -31,6 +31,14 @@
          fhir:Coding.code [ fhir:value "410605003" ];
          fhir:Coding.display [ fhir:value "Confirmed present" ]
        ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+       fhir:Coding.code [ fhir:value "problem-list-item" ]
      ]
   ];
   fhir:Condition.code [

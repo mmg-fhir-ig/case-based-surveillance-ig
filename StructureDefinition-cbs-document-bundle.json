@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceDocumentBundle",
   "title": "Case Based Surveillance Document Profile",
   "status": "active",

@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Immunization/Varicella-TC-Immunization> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Varicella-TC-Immunization"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization";
+       fhir:index 0;
+       fhir:link <http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Varicella-TC-Immunization\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-immunization.html\">US Case Based Surveillance Immunization Profile</a></p></div><p><b>identifier</b>: id: ID102</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: Varicella Vaccine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#21)</span></p><p><b>patient</b>: <a href=\"Patient-Varicella-TC-Patient.html\">Patient/Varicella-TC-Patient: Varicella-TC Example Patient</a> \"\"</p><p><b>occurrence</b>: 2013-08-10</p><p><b>primarySource</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: Cannot invoke \"java.lang.Boolean.toString()\" because the return value of \"org.hl7.fhir.r5.model.BooleanType.getValue()\" is null</b></p></div>"
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "ID102" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.12.292" ];
+       fhir:Coding.code [ fhir:value "21" ];
+       fhir:Coding.display [ fhir:value "Varicella Vaccine" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:link <http://cbsig.chai.gatech.edu/Patient/Varicella-TC-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/Varicella-TC-Patient" ];
+     fhir:Reference.display [ fhir:value "Varicella-TC Example Patient" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2013-08-10"^^xsd:date];
+  fhir:Immunization.primarySource [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
+       fhir:Extension.valueCode [ fhir:value "unknown" ]
+     ]
+  ];
+  fhir:Immunization.reportOrigin [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.114222.4.5.293" ];
+       fhir:Coding.code [ fhir:value "05" ];
+       fhir:Coding.display [ fhir:value "Historical information - from other registry" ]
+     ]
+  ];
+  fhir:Immunization.manufacturer [
+     fhir:Reference.display [ fhir:value "Merck and Co., Inc." ]
+  ];
+  fhir:Immunization.lotNumber [ fhir:value "PDE453956"];
+  fhir:Immunization.expirationDate [ fhir:value "2016-10-31"^^xsd:date];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://cbsig.chai.gatech.edu/Immunization/Varicella-TC-Immunization.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

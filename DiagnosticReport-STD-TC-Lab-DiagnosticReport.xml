@@ -3,10 +3,10 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="STD-TC-Lab-DiagnosticReport"/>
   <meta>
-    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-diagnosticreport"/>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-diagnosticreport"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 85069-3}">Lab test method [Type]</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>Wwwww, Ddddd</b> ?? 1994-03-02 ( Local Record ID: STD_TC05)</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-STD-TC-Lab-Observation.html"><span title="Codes: {http://loinc.org 698-1}">Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture</span></a></td><td><span title="Codes: {http://snomed.info/sct 10828004}">Positive</span></td><td>2014-02-26</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 85069-3}">Lab test method [Type]</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b></b> ?? 1994-03-02 ( Local Record ID: STD_TC05)</td></tr><tr><td>Reported</td><td>2020-12-31T19:00:00-05:00</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-STD-TC-Lab-Observation.html"><span title="Codes: {http://loinc.org 698-1}">Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture</span></a></td><td><span title="Codes: {http://snomed.info/sct 10828004}">Positive</span></td><td>2014-02-26</td></tr></table></div>
   </text>
   <status value="final"/>
   <category>
@@ -24,6 +24,7 @@
   <subject>
     <reference value="Patient/STD-TC-Patient"/>
   </subject>
+  <issued value="2021-01-01T00:00:00Z"/>
   <specimen>
     <reference value="Specimen/STD-TC-Specimen"/>
   </specimen>

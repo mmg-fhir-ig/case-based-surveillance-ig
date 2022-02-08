@@ -3,12 +3,12 @@
   "id": "HAICA-TC-Condition",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
     ]
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-condition.html\">Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>code</b>: Candida auris, clinical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#50263)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAI-CA TC Example Patient</a> \" YYYYY\"</p><p><b>onset</b>: 2018-11-22</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HAICA-TC-Condition\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-condition.html\">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410605003)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Candida auris, clinical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#50263)</span></p><p><b>subject</b>: <a href=\"Patient-HAICA-TC-Patient.html\">Patient/HAICA-TC-Patient: HAI-CA TC Example Patient</a> \"\"</p><p><b>onset</b>: 2018-11-22</p></div>"
   },
   "extension": [
     {
@@ -22,6 +22,16 @@
           }
         ]
       }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item"
+        }
+      ]
     }
   ],
   "code": {

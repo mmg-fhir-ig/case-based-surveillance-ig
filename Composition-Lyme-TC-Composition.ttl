@@ -133,10 +133,6 @@
      fhir:Composition.section.title [ fhir:value "Reporting Entities" ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <http://cbsig.chai.gatech.edu/Practitioner/Lyme-TC-Person-Reporting>;
-       fhir:Reference.reference [ fhir:value "Practitioner/Lyme-TC-Person-Reporting" ]
-     ], [
-       fhir:index 1;
        fhir:link <http://cbsig.chai.gatech.edu/Organization/Lyme-TC-Reporting-Source>;
        fhir:Reference.reference [ fhir:value "Organization/Lyme-TC-Reporting-Source" ]
      ]

@@ -123,9 +123,6 @@
       "title": "Reporting Entities",
       "entry": [
         {
-          "reference": "Practitioner/GenV2-TC-Person-Reporting"
-        },
-        {
           "reference": "Organization/GenV2-TC-Reporting-Source"
         }
       ]

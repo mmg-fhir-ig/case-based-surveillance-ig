@@ -1,0 +1,169 @@
+{
+  "resourceType": "Patient",
+  "id": "Varicella-TC-Patient",
+  "meta": {
+    "profile": [
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Varicella-TC-Patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-patient.html\">US Case Based Surveillance Patient Profile</a></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>Birth Place</b>: USA </p><p><b>identifier</b>: Local Record ID: Var_TC05_Record, Local Subject ID: Var_TC05_Subject, Legacy Case Identifier: 12345601S012016, State Case Identifier: AL4321</p><p><b>name</b>: </p><p><b>telecom</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: Cannot invoke \"String.startsWith(String)\" because the return value of \"org.hl7.fhir.r5.model.ContactPoint.getValue()\" is null</b></p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "USA"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Record-ID",
+            "display": "Local Record ID"
+          }
+        ],
+        "text": "Local Record ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "Var_TC05_Record"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Local-Subject-ID",
+            "display": "Local Subject ID"
+          }
+        ],
+        "text": "Local Subject ID"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "Var_TC05_Subject"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77997-5",
+            "display": "Legacy case identifier [CDC.PHIN]"
+          }
+        ],
+        "text": "Legacy Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "12345601S012016"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77993-4",
+            "display": "State notifiable condition case identifier"
+          }
+        ],
+        "text": "State Case Identifier"
+      },
+      "system": "urn:temp:national-reporting-jurisdiction:48",
+      "value": "AL4321"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "masked"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    },
+    {
+      "system": "email",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2010-05-31",
+  "address": [
+    {
+      "use": "home",
+      "district": "Blount",
+      "state": "Alabama",
+      "postalCode": "35031"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
+          "valueCoding": {
+            "system": "http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system",
+            "code": "Usual-Residence"
+          }
+        }
+      ],
+      "country": "USA"
+    }
+  ]
+}

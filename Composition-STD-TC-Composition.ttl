@@ -141,10 +141,6 @@
      fhir:Composition.section.title [ fhir:value "Reporting Entities" ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <http://cbsig.chai.gatech.edu/Practitioner/STD-TC-Person-Reporting>;
-       fhir:Reference.reference [ fhir:value "Practitioner/STD-TC-Person-Reporting" ]
-     ], [
-       fhir:index 1;
        fhir:link <http://cbsig.chai.gatech.edu/Organization/STD-TC-Reporting-Source>;
        fhir:Reference.reference [ fhir:value "Organization/STD-TC-Reporting-Source" ]
      ]
@@ -175,66 +171,6 @@
        fhir:index 1;
        fhir:link <http://cbsig.chai.gatech.edu/MedicationStatement/STD-TC-Medication-Statement-2>;
        fhir:Reference.reference [ fhir:value "MedicationStatement/STD-TC-Medication-Statement-2" ]
-     ]
-  ], [
-     fhir:index 6;
-     fhir:Composition.section.title [ fhir:value "Epi Observations" ];
-     fhir:Composition.section.entry [
-       fhir:index 0;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EpiQuestionnaire>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EpiQuestionnaire" ]
-     ], [
-       fhir:index 1;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ1>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ1" ]
-     ], [
-       fhir:index 2;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ2>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ2" ]
-     ], [
-       fhir:index 3;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ3>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ3" ]
-     ], [
-       fhir:index 4;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ4>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ4" ]
-     ], [
-       fhir:index 5;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ5>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ5" ]
-     ], [
-       fhir:index 6;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ6>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ6" ]
-     ], [
-       fhir:index 7;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ7>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ7" ]
-     ], [
-       fhir:index 8;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ8>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ8" ]
-     ], [
-       fhir:index 9;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ9>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ9" ]
-     ], [
-       fhir:index 10;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ10>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ10" ]
-     ], [
-       fhir:index 11;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ11>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ11" ]
-     ], [
-       fhir:index 12;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ12>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ12" ]
-     ], [
-       fhir:index 13;
-       fhir:link <http://cbsig.chai.gatech.edu/Observation/STD-TC-EQ13>;
-       fhir:Reference.reference [ fhir:value "Observation/STD-TC-EQ13" ]
      ]
   ] .
 

@@ -3,10 +3,10 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="GenV2-TC-Condition"/>
   <meta>
-    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-condition"/>
+    <profile value="http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-Condition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cbs-condition.html">Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#410605003)</span></p><p><b>Case Based Surveillance Diagnosis Date Extension</b>: 2014-02-02</p><p><b>Case Based Surveillance Illness Duration</b>: 6 d<span style="background: LightGoldenRodYellow"> (Details: UCUM code d = 'd')</span></p><p><b>clinicalStatus</b>: Inactive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>code</b>: Hemolytic Uremic Syndrome <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#11550)</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> " ZZZZZ"</p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GenV2-TC-Condition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-cbs-condition.html">US Case Based Surveillance Condition of Interest Profile</a></p></div><p><b>Case Based Surveillance Case Class Status</b>: Confirmed present <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#410605003)</span></p><p><b>Case Based Surveillance Illness Duration</b>: 6 d<span style="background: LightGoldenRodYellow"> (Details: UCUM code d = 'd')</span></p><p><b>clinicalStatus</b>: Inactive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Hemolytic Uremic Syndrome <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#11550)</span></p><p><b>subject</b>: <a href="Patient-GenV2-TC-Patient.html">Patient/GenV2-TC-Patient: GenV2-TC Example Patient</a> ""</p><p><b>onset</b>: 2014-02-24</p><p><b>abatement</b>: 2014-03-02</p></div>
   </text>
   <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-class-status">
     <valueCodeableConcept>
@@ -16,9 +16,6 @@
         <display value="Confirmed present"/>
       </coding>
     </valueCodeableConcept>
-  </extension>
-  <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-diagnosis-date">
-    <valueDateTime value="2014-02-02"/>
   </extension>
   <extension url="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-illness-duration">
     <valueQuantity>
@@ -33,6 +30,12 @@
       <code value="inactive"/>
     </coding>
   </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
   <code>
     <coding>
       <system value="urn:oid:2.16.840.1.114222.4.5.277"/>

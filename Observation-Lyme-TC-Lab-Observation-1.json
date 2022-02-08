@@ -3,12 +3,12 @@
   "id": "Lyme-TC-Lab-Observation-1",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-lab-observation"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Lyme-TC-Lab-Observation-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-lab-observation.html\">Case Based Surveillance Lab Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Borrelia burgdorferi Ab [Presence] in Serum by Immunoassay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#20449-5)</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Patient/Lyme-TC-Patient: Lyme-TC Example Patient</a> \" XXXXX\"</p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#10828004)</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Lyme-TC-Lab-Observation-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-cbs-lab-observation.html\">US Case Based Surveillance Lab Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Borrelia burgdorferi Ab [Presence] in Serum by Immunoassay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#20449-5)</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Patient/Lyme-TC-Patient: Lyme-TC Example Patient</a> \"\"</p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#10828004)</span></p></div>"
   },
   "status": "final",
   "category": [

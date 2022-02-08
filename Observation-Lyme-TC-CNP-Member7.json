@@ -3,12 +3,12 @@
   "id": "Lyme-TC-CNP-Member7",
   "meta": {
     "profile": [
-      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cnp-member"
+      "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Lyme-TC-CNP-Member7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-cnp-member.html\">Case Based Surveillance Case Notification Panel Member</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest date reported to county <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77972-8)</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Patient/Lyme-TC-Patient: Lyme-TC Example Patient</a> \" XXXXX\"</p><p><b>value</b>: 2018-09-12</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Lyme-TC-CNP-Member7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cbs-earliest-date-reported-to-county.html\">Case Based Surveillance Earliest Date Reported</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Case notification panel [CDC.PHIN] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#78000-7)</span></p><p><b>code</b>: Earliest Date Reported to County <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77972-8)</span></p><p><b>subject</b>: <a href=\"Patient-Lyme-TC-Patient.html\">Patient/Lyme-TC-Patient: Lyme-TC Example Patient</a> \"\"</p><p><b>value</b>: 2018-09-12</p></div>"
   },
   "status": "final",
   "category": [
@@ -27,7 +27,7 @@
       {
         "system": "http://loinc.org",
         "code": "77972-8",
-        "display": "Earliest date reported to county"
+        "display": "Earliest Date Reported to County"
       }
     ]
   },

@@ -48,7 +48,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Case Based Surveillance Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Case Based Surveillance Implementation Guide</span><br/>0.2.0 - ci-build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -170,7 +170,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Case Based Surveillance Implementation Guide - Local Development build (v0.1.0). See the <a href="http://cbsig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Case Based Surveillance Implementation Guide - Local Development build (v0.2.0). See the <a href="http://cbsig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Conformance Expectations</h2>
   
 
@@ -272,7 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><a href="http://hl7.org/fhir/R4/terminologies.html#required">Required binding</a> to a value set definition means that one of the codes from the specified value set <strong>SHALL</strong> be used. For <code class="language-plaintext highlighter-rouge">CodeableConcept</code> using only text is <em>not</em> valid, but multiple codings (translations) are permitted as is discussed below.</p>
 
-<p>For example, the <a href="StructureDefinition-cbs-condition.html">CBS Condition of Interest Profile</a> code has a required binding to the National Notifiable Disease Surveillance System (NNDSS) &amp; Other Conditions of Public Health Importance ValueSet. When claiming conformance to this profile,</p>
+<p>For example, the [CBS Condition of Interest Profile] code has a required binding to the National Notifiable Disease Surveillance System (NNDSS) &amp; Other Conditions of Public Health Importance ValueSet. When claiming conformance to this profile,</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> provide a code <em>exclusively</em> from this valueset in <code class="language-plaintext highlighter-rouge">Condition.code.code</code>.</li>
@@ -283,7 +283,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><a href="http://hl7.org/fhir/R4/terminologies.html#extensible">Extensible Binding</a> to a value set definition means that one of the codes from the specified value set <strong>SHALL</strong> be used if an applicable concept is present, but if no suitable code exists in the value set, alternate code(s) may be provided in its place.  For <code class="language-plaintext highlighter-rouge">CodeableConcept</code> multiple codings are permitted and this rule applies to one of the codings.  Also for <code class="language-plaintext highlighter-rouge">CodeableConcept</code> if only text is available, then just text may be used.</p>
 
-<p>To illustrate extensible binding for CodeableConcept datatype, the <a href="StructureDefinition-cbs-condition.html">CBS Condition of Interest Profile</a> bodySite element has an extensible binding to the PHIN VADS ValueSet “PHVS_BodySite_CDC”. When claiming conformance to this profile:</p>
+<p>To illustrate extensible binding for CodeableConcept datatype, the [CBS Condition of Interest Profile] bodySite element has an extensible binding to the PHIN VADS ValueSet “PHVS_BodySite_CDC”. When claiming conformance to this profile:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> provide:
@@ -302,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The StructureDefinitions define the CBS Profiles and the <a href="http://hl7.org/fhir/R4/elementdefinition-definitions.html#ElementDefinition.pattern_x_">ElementDefinition.pattern</a> which is used almost exclusively for the CodeableConcept and Coding datatypes. If the element is marked as must support and defined by a pattern then the pattern defines the elements <em>and</em> element values that the server <strong>SHALL</strong> be capable of providing.</p>
 
-<p>For example the <a href="StructureDefinition-cbs-lab-diagnosticreport.html">CBS Lab Test Report Profile</a> category element is defined with a pattern requiring fixed values in <code class="language-plaintext highlighter-rouge">DiagnosticReport.category.coding.system</code>  and <code class="language-plaintext highlighter-rouge">DiagnosticReport.category.coding.code</code> for a Coding element. When claiming conformance to this profile:</p>
+<p>For example the [CBS Lab Test Report Profile] category element is defined with a pattern requiring fixed values in <code class="language-plaintext highlighter-rouge">DiagnosticReport.category.coding.system</code>  and <code class="language-plaintext highlighter-rouge">DiagnosticReport.category.coding.code</code> for a Coding element. When claiming conformance to this profile:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> provide these values in a <code class="language-plaintext highlighter-rouge">DiagnosticReport.category</code></li>
@@ -313,7 +313,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Primitive elements are single elements with a primitive value. If they are marked as must support, then the server <strong>SHALL</strong> be capable of providing the element value to meet the must support requirement.</p>
 
-<p>For example, the <a href="StructureDefinition-cbs-lab-diagnosticreport.html">CBS Lab Test Report Profile</a> effectiveDateTime element is a primitive <code class="language-plaintext highlighter-rouge">dateTime</code> datatype. When claiming conformance to this profile:</p>
+<p>For example, the [CBS Lab Test Report Profile] effectiveDateTime element is a primitive <code class="language-plaintext highlighter-rouge">dateTime</code> datatype. When claiming conformance to this profile:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> be capable of providing a value in a <code class="language-plaintext highlighter-rouge">DiagnosticReport.effectiveDateTime</code></li>
@@ -332,7 +332,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>For any complex element marked as must support, the server <strong>SHALL</strong> be capable of providing at least one of the sub-element values. If any sub-element is marked as must support it must meet the must support requirements as well and satisfy the must support requirement for the parent element.</p>
 
-<p>For example, the <a href="StructureDefinition-cbs-reporting-source-organization.html">CBS Reporting Source Organization Profile</a> type element is labeled must support and has no must support sub-elements. When claiming conformance to this profile:</p>
+<p>For example, the <a href="StructureDefinition-us-cbs-reporting-source-organization.html">US CBS Reporting Source Organization Profile</a> type element is labeled must support and has no must support sub-elements. When claiming conformance to this profile:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> be capable of providing a value in <code class="language-plaintext highlighter-rouge">Organization.type</code> sub-element.</li>
@@ -347,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>In certain profiles only a single resource reference is present on an element labeled <em>Must Support</em>.</p>
 
-<p>For example, the <a href="StructureDefinition-cbs-lab-diagnosticreport.html">CBS Lab Test Report Profile</a> specimen <a href="StructureDefinition-cbs-specimen.html">CBS Specimen Profile</a> is labeled <em>Must Support</em>. When claiming conformance to the <a href="StructureDefinition-cbs-lab-diagnosticreport.html">CBS Lab Test Report Profile</a>:</p>
+<p>For example, the [CBS Lab Test Report Profile] specimen <a href="StructureDefinition-cbs-specimen.html">CBS Specimen Profile</a> is labeled <em>Must Support</em>. When claiming conformance to the [CBS Lab Test Report Profile]:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> be capable of providing a <code class="language-plaintext highlighter-rouge">DiagnosticReport.specimen</code> with a valid reference to a CBS Specimen Profile.</li>
@@ -358,7 +358,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Some elements allow different data types (e.g. Observation.effective[x]) for their content. In these situations, only specific data type choice elements are labeled as <em>Must Support</em>.</p>
 
-<p>For example, the <a href="StructureDefinition-cbs-lab-observation.html">CBS Lab Observation Profile</a> effectiveDateTime is labeled <em>Must Support</em>. When claiming conformance to the <a href="StructureDefinition-cbs-lab-observation.html">CBS Lab Observation Profile</a>:</p>
+<p>For example, the [CBS Lab Observation Profile] effectiveDateTime is labeled <em>Must Support</em>. When claiming conformance to the [CBS Lab Observation Profile]:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> be capable of populating <code class="language-plaintext highlighter-rouge">Observation.effectiveDateTime</code>.</li>
@@ -367,9 +367,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Systems <strong>MAY</strong> support populating and processing other choice elements (such as, Observation.effectivePeriod) but this is not a requirement of this IG.</p>
 
-<p>For the <a href="StructureDefinition-cbs-lab-observation.html">CBS Lab Observation Profile</a> value element, multiple elements are labeled <em>Must Support</em>.</p>
+<p>For the [CBS Lab Observation Profile] value element, multiple elements are labeled <em>Must Support</em>.</p>
 
-<p>When claiming conformance to the <a href="StructureDefinition-cbs-lab-observation.html">CBS Lab Observation Profile</a>:</p>
+<p>When claiming conformance to the [CBS Lab Observation Profile]:</p>
 
 <ul>
   <li>CBS Responders <strong>SHALL</strong> be capable of populating <code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code>, <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code>, and <code class="language-plaintext highlighter-rouge">Observation.valueString</code>.</li>
@@ -403,7 +403,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 25, 2022 10:18-0500">2022-01-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://gtri.gatech.edu/">Georgia Tech Research Institute (GTRI)</a>.  Package gtri.fhir.cbs#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 8, 2022 17:12-0500">2022-02-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

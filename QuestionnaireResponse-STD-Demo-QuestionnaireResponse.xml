@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="STD-Demo-QuestionnaireResponse"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Definition</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Answer</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireResponseRoot" class="hierarchy"/> STD-Demo-QuestionnaireResponse</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">QuestionnaireResponse</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD107</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Had Sex with a Male within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#Y">http://terminology.hl7.org/CodeSystem/v2-0532</a> Y: Yes</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/> STD108</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Had Sex with a Female within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html#NASK">http://terminology.hl7.org/CodeSystem/v3-NullFlavor</a> NASK: not asked</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD109</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Had Sex with an Anonymous Partner within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#Y">http://terminology.hl7.org/CodeSystem/v2-0532</a> Y: Yes</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/> STD110</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Had Sex with a Person Known to Him/Her to be an "Intravenous Drug User (IDU)" within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html#NASK">http://terminology.hl7.org/CodeSystem/v3-NullFlavor</a> NASK: not asked</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD111</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Had Sex while Intoxicated and/or High on Drugs within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#N">http://terminology.hl7.org/CodeSystem/v2-0532</a> N: No</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/> STD112</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Exchanged Drugs/Money for Sex within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#Y">http://terminology.hl7.org/CodeSystem/v2-0532</a> Y: Yes</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD113</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#Y">http://terminology.hl7.org/CodeSystem/v2-0532</a> Y: Yes</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/> STD114</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Engaged in Injection Drug use Within Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#N">http://terminology.hl7.org/CodeSystem/v2-0532</a> N: No</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD117</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Previous STD History</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#N">http://terminology.hl7.org/CodeSystem/v2-0532</a> N: No</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/> STD118</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Been Incarcerated within the Past 12 Months</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html#NASK">http://terminology.hl7.org/CodeSystem/v3-NullFlavor</a> NASK: not asked</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD119</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Have You Met Sex Partners through the Internet in the Last 12 Months</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html#Y">http://terminology.hl7.org/CodeSystem/v2-0532</a> Y: Yes</span></span></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/> STD120</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Total Number of Sex Partners in the Last 12 months</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> STD999</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unknown Number of Sex Partners in Last 12 Months</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span><span><a href="http://hl7.org/fhir/R4/v2/0136/index.html#N">http://terminology.hl7.org/CodeSystem/v2-0136</a> N: No</span></span></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <questionnaire value="http://cbsig.chai.gatech.edu/Questionnaire/STD-Demo-Questionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/STD-TC-Patient"/>
+    <display value="STD-TC Example Patient"/>
+  </subject>
+  <item>
+    <linkId value="STD107"/>
+    <text value="Had Sex with a Male within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD108"/>
+    <text value="Had Sex with a Female within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD109"/>
+    <text value="Had Sex with an Anonymous Partner within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD110"/>
+    <text value="Had Sex with a Person Known to Him/Her to be an &quot;Intravenous Drug User (IDU)&quot; within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD111"/>
+    <text value="Had Sex while Intoxicated and/or High on Drugs within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="N"/>
+        <display value="No"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD112"/>
+    <text value="Exchanged Drugs/Money for Sex within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD113"/>
+    <text value="Had Sex with a Person Who is Known to Her to Be an MSM within Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD114"/>
+    <text value="Engaged in Injection Drug use Within Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="N"/>
+        <display value="No"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD117"/>
+    <text value="Previous STD History"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="N"/>
+        <display value="No"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD118"/>
+    <text value="Been Incarcerated within the Past 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD119"/>
+    <text value="Have You Met Sex Partners through the Internet in the Last 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD120"/>
+    <text value="Total Number of Sex Partners in the Last 12 months"/>
+    <answer>
+      <valueInteger value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="STD999"/>
+    <text value="Unknown Number of Sex Partners in Last 12 Months"/>
+    <answer>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+        <code value="N"/>
+        <display value="No"/>
+      </valueCoding>
+    </answer>
+  </item>
+</QuestionnaireResponse>
