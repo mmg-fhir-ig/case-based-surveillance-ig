@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "cbs-cdc-address-use",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cdc-address-use",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CBSCDCAddressUse",
   "title": "Case Based Surveillance CDC Address Use Extension",
   "status": "active",

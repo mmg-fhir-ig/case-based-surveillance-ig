@@ -5,7 +5,7 @@
   "id": "CBSSocialDeterminantsOfHealthCategoryVS",
   "title": "CBS Case Social Determinants of Health Category Value Set",
   "description": "Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
   "compose": {
     "include": [

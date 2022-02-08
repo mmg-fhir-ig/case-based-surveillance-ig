@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "us-cbs-period-and-mode-of-travel",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-period-and-mode-of-travel",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "USCBSPeriodAndodeOfTravelExtension",
   "title": "US Case Based Surveillance Period and Mode of Travel Extension",
   "status": "active",

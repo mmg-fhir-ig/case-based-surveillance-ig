@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceExposureObservation",
   "title": "Case Based Surveillance Exposure Observation Profile",
   "status": "active",

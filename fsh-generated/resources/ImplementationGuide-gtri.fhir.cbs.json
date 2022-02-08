@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "gtri.fhir.cbs",
   "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",

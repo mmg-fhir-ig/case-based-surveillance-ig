@@ -5,7 +5,7 @@
   "id": "CBSSTDSexualHistoryDrugUseQuestionnaireVS",
   "title": "STD Sexual History and Drug Use Questionnaire Panel",
   "description": "This is an example valueset for how to setup coding for an Epi Questionnaire Panel using a selection of codes from the STD MMG.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSTDSexualHistoryDrugUseQuestionnaireVS",
   "compose": {
     "include": [

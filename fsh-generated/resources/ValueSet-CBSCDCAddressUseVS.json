@@ -5,7 +5,7 @@
   "id": "CBSCDCAddressUseVS",
   "title": "Additional codes for Address.use.",
   "description": "Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS",
   "compose": {
     "include": [

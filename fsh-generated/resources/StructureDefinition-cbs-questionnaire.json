@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-questionnaire",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceQuestionnaire",
   "title": "Case Based Surveillance Questionnaire Profile",
   "status": "active",

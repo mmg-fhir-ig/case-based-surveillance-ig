@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-cause-of-death",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceCauseOfDeath",
   "title": "Case Based Surveillance Cause of Death Profile",
   "status": "active",

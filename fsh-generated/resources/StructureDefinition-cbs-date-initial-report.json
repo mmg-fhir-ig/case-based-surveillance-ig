@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-initial-report",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceDateInitialReport",
   "title": "Case Based Surveillance Date of Initial Report",
   "status": "active",

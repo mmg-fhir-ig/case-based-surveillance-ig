@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "us-cbs-lab-observation",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-lab-observation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "USCaseBasedSurveillanceLabObservation",
   "title": "US Case Based Surveillance Lab Observation",
   "status": "active",

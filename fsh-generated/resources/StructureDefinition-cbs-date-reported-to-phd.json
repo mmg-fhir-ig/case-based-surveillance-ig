@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-date-reported-to-phd",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceDateReportedToPHD",
   "title": "Case Based Surveillance Date of First Report to Public Health Department",
   "status": "active",

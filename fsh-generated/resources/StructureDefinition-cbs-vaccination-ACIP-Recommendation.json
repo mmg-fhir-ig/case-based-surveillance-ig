@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "CaseBasedSurveillanceVaccinationACIPRecommendation",
   "title": "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile",
   "status": "active",
