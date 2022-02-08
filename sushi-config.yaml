@@ -41,19 +41,19 @@ groups:
     name: CBS CNP Profiles
     description: Case Based Surveillance Case Notification Panel Profiles
     resources:
-    - StructureDefinition/cbs-case-notification-panel
-    - StructureDefinition/cbs-exposure-observation
-    - StructureDefinition/cbs-mmwr
     - StructureDefinition/cbs-age-at-investigation
     - StructureDefinition/cbs-binational-reporting-criteria
-    - StructureDefinition/cbs-investigation-start-date
+    - StructureDefinition/cbs-case-notification-panel
     - StructureDefinition/cbs-case-outbreak
     - StructureDefinition/cbs-date-initial-report
     - StructureDefinition/cbs-date-reported-to-phd
     - StructureDefinition/cbs-earliest-date-reported-to-county
     - StructureDefinition/cbs-earliest-date-reported-to-state
+    - StructureDefinition/cbs-exposure-observation
     - StructureDefinition/cbs-immediate-nnc
+    - StructureDefinition/cbs-investigation-start-date
     - StructureDefinition/cbs-jurisdiction-code
+    - StructureDefinition/cbs-mmwr
     - StructureDefinition/cbs-national-reporting-jurisdiction
     - StructureDefinition/cbs-pregnancy-status
     - StructureDefinition/cbs-reporting-county

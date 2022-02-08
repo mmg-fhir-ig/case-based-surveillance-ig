@@ -6,9 +6,8 @@ Description: "A lab diagnostic report example resource for the STD Test Case 5."
 * code = $loinc#85069-3
 * subject = Reference(STD-TC-Patient)
 * specimen = Reference(STD-TC-Specimen)
-* result[0] = Reference(STD-TC-Lab-Observation)
-
-* effective[x].extension[0]
+* result = Reference(STD-TC-Lab-Observation)
+* effective[x].extension
   * url = $data-absent-reason
   * valueCode = #unknown
 * issued = "2021-01-01T00:00:00Z"

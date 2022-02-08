@@ -63,10 +63,15 @@ Description: "CBS Patient resource for the GenV2 Test Case 1 Patient"
 * deceasedDateTime = "2014-03-02"
 
 * name
-  * text = "Zzzzz, Aaaaa"
-  * family = "Zzzzz"
-  * given = "Aaaaa"
+  * extension[0]
+    * url = $data-absent-reason
+    * valueCode = #masked
 
-* telecom
-  * system = #phone
-  * value = "111-111-1111" //TODO: REPLACE WITH DATA ABSENT REASON EXTENSION
+* telecom[phone]
+  * value
+    * extension.url = $data-absent-reason
+    * extension.valueCode = #masked
+* telecom[email]
+  * value
+    * extension.url = $data-absent-reason
+    * extension.valueCode = #masked

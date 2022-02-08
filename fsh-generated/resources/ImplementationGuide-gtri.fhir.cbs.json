@@ -881,6 +881,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/HAICA-TC-TravelHistory"
+        },
+        "name": "HAICA-TC-TravelHistory",
+        "description": "US CBS Travel History resource for the HAI-CA Test Case 2 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-travel-history"
+      },
+      {
+        "reference": {
           "reference": "Observation/Lyme-TC-CNP"
         },
         "name": "Lyme-TC-CNP",
@@ -1414,6 +1422,38 @@
         "name": "STD-TC-TreatmentDate",
         "description": "An example Observation describing the day the patient's treatment was initiated for the condition",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/Varicella-TC-ACIP-Recommendation"
+        },
+        "name": "Varicella-TC-ACIP-Recommendation",
+        "description": "Vaccination per ACIP Recommendations resource for the Varicella Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-vaccination-ACIP-Recommendation"
+      },
+      {
+        "reference": {
+          "reference": "Condition/Varicella-TC-Condition"
+        },
+        "name": "Varicella-TC-Condition",
+        "description": "Condition of interest resource for the Varicella Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-condition"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/Varicella-TC-Immunization"
+        },
+        "name": "Varicella-TC-Immunization",
+        "description": "Immunization resource for the Varicella Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Varicella-TC-Patient"
+        },
+        "name": "Varicella-TC-Patient",
+        "description": "US CBS Patient resource for the Varicella Test Case 5 Patient",
+        "exampleCanonical": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-patient"
       }
     ],
     "page": {

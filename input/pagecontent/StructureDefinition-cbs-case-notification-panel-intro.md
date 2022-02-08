@@ -28,4 +28,27 @@ Currently, the CBS CNP is self-referential; this means that to accurately repres
 
 <img src="CNP-Diagram.png" style="width: 90%;"/>
 
+### Panel Members
+
+Currently, CNP member profiles do not contain introduction sections. All CNP member profiles will follow the mandatory and must support elements as noted above since all member profiles are children profiles of the main case notificaition panel profile. Listed below are the different CNP member profiles and what each profile should be used for:
+
+- **Age at Case Investigation**: Subject age at time of case investigation.
+- **Binational Reporting Criteria**: For cases meeting the binational criteria, select all the criteria which are met.
+- **Case Investigation Start Date**: The date the case investigation was initiated.
+- **Case Outbreak Information**: Denotes, in components, whether the reported case was associated with an identified outbreak, and if so, a state-assigned name for the associated outbreak.
+- **Date of Initial Report**: Date the report was first sent to the public health department (local, county or state) by reporter (physician, lab, etc.).
+- **Date of Initial Report to the Public Health Department**: Date that a health department first suspected the subject might have the condition.
+- **Earliest Date Reported to the County**: Earliest date reported to county public health system.
+- **Earliest Date Reported to the State**: Earliest date reported to state public health system.
+- **Exposure Information**: Indicates, in components, the country, state, county, and city in which the disease was likely acquired.
+- **Immediate National Notifiable Condition**: Does this case meet the criteria for immediate (extremely urgent or urgent) notification to CDC? Refer to the 2015 list of NNC by type of notification category (extremely urgent, urgent, and standard) at the following link:
+http://wwwn.cdc.gov/nndss/document/NNC_2015_Notification_Requirements_By_Category.pdf
+- **Jurisdiction Code**: Identifier for the physical site from which the notification is being submitted.
+- **MMWR**: Denotes, in components, the MMWR Week and Year for which case information is to be counted for MMWR publication.
+- **National Reporting Jurisdiction**: National jurisdiction reporting the notification to CDC
+- **Pregnancy Status**: Indicates whether the subject was pregnant at the time of the event.
+- **Reporting County**: County reporting the notification
+- **Reporting State**: State reporting the notification
+- **Transmisssion Mode**: Code for the mechanism by which disease or condition was acquired by the subject of the investigation.
+
 {% include link-list.md %}

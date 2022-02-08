@@ -51,6 +51,7 @@
 [FHIR Version DSTU2]: http://hl7.org/fhir/DSTU2/index.html "FHIR Version DSTU2 Specification Home Page"
 [FHIR Version R4]: {{site.data.fhir.path}}index.html "FHIR Version R4 Specification Home Page"
 [FHIR Version STU3]: http://hl7.org/fhir/STU3/index.html "FHIR Version STU3 Specification Home Page"
+[Formal Profile Definition]: #profile
 [Guide to Resources]: {{site.data.fhir.path}}resourceguide.html
 [HTTP]: {{site.data.fhir.path}}http.html
 [Immunization]:  {{site.data.fhir.path}}immunization.html
@@ -161,6 +162,7 @@
 [Additional codes for Address.use]: ValueSet-CBSCDCAddressUseVS.html
 [CBS Case Notification Panel Codes]: ValueSet-CBSCaseNotificationPanelVS.html
 [CBS Case Notification Panel Value Set]: ValueSet-CBSCaseNotificationPanelVS.html
+[CBS Lab Diagnostic Report Value Set]: ValueSet-CBSLabDiagnosticReportVS.html
 [CBS Related Case Type Value Set]: ValueSet-CBSRelatedCaseTypeVS.html
 [CBS STD Epi Questionnaire Panel Codes]: ValueSet-CBSSTDSexualHistoryDrugUseQuestionnaireVS.html
 [CBS Social Determinants of Health Categories]: ValueSet-CBSSocialDeterminantsOfHealthCategoryVS.html
