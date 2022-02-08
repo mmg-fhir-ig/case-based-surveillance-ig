@@ -3,7 +3,6 @@ Parent: Observation
 Id: cbs-vaccination-ACIP-Recommendation
 Title: "Case Based Surveillance Subject Vaccinated per ACIP Recommendations Profile"
 Description: "Defines constraints on the Observation resource to capture whether subject was vaccinated per ACIP Recommendations in order to meet the needs of public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

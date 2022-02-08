@@ -2,7 +2,6 @@ Extension: USCBSPeriodAndodeOfTravelExtension
 Id: us-cbs-period-and-mode-of-travel
 Title: "US Case Based Surveillance Period and Mode of Travel Extension"
 Description: "An extension capturing the circumstances of travel to a destination."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

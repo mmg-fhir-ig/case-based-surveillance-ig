@@ -2,7 +2,6 @@ Extension: CaseBasedSurveillanceIllnessDuration
 Id: cbs-illness-duration
 Title: "Case Based Surveillance Illness Duration"
 Description: "Illness duration to obscure PHII in place of absokute dates."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

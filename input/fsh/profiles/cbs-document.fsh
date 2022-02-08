@@ -3,7 +3,6 @@ Parent: Bundle
 Id: cbs-document-bundle
 Title: "Case Based Surveillance Document Profile"
 Description: "Defines a document type bundle that contains all related profiles."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

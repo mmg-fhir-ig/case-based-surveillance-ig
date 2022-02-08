@@ -2,7 +2,6 @@ Extension: CaseBasedSurveillanceProgramSpecificTimeWindow
 Id: us-cbs-program-specific-time-window
 Title: "US Case Based Surveillance Program Specific Time Window"
 Description: "Time window of interest in relationship to a specified event as determined by individual case based surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

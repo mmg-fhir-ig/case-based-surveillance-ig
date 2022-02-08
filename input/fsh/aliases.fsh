@@ -53,6 +53,9 @@ Alias: $ecr-travel-history = http://hl7.org/fhir/us/ecr/StructureDefinition/trav
 Alias: $us-core-diagnosticreport-lab = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab
 Alias: $us-core-observation-lab = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
 Alias: $us-core-immunization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization
+Alias: $us-core-organization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+Alias: $us-core-encounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+
 
 // ECR US PH Profiles
 Alias: $ecr-us-ph-condition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition

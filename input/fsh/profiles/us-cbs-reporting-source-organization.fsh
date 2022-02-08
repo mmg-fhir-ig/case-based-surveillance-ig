@@ -3,7 +3,6 @@ Parent: $ecr-us-ph-organization
 Id: us-cbs-reporting-source-organization
 Title: "US Case Based Surveillance Reporting Source Organization Profile"
 Description: "Defines constraints to the Organization resource in order to meet the needs of public health surveillance programs regarding the reporting source."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

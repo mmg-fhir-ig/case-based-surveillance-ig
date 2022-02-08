@@ -2,7 +2,6 @@ Extension: CBSCaseClassStatusExtension
 Id: cbs-case-class-status
 Title: "Case Based Surveillance Case Class Status"
 Description: "A code denoting the status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/surveillance case definitions."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

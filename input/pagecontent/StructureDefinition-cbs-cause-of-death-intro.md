@@ -6,10 +6,10 @@ The following data-elements must always be present ([Mandatory] definition) or m
 
 1. a fixed status of final
 1. a fixed code for cause of death
-1. a patient that conforms to the [CBS Patient Profile]
+1. a subject reference
 
 **Each Observation must support:**
 
-1. a focus that conforms to the [CBS Condition of Interest Profile]
+1. a focus
 
 {% include link-list.md %}

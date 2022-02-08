@@ -3,7 +3,6 @@ Parent: Observation
 Id: cbs-social-determinants-of-health
 Title: "Case Based Surveillance Social Determinants of Health Profile"
 Description: "Defines constraints on the Observation resource to capture subject's Social Determinants of Health in order to meet the needs of public health surveillance programs."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"

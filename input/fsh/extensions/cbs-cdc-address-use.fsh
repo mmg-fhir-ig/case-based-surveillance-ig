@@ -2,7 +2,6 @@ Extension: CBSCDCAddressUse
 Id: cbs-cdc-address-use
 Title: "Case Based Surveillance CDC Address Use Extension"
 Description: "Indicates the use of the address as per information surveillance program."
-* ^version = "0.1.0"
 * ^experimental = true
 * ^date = "2021-01-01"
 * ^publisher = "Georgia Tech Research Institute"
@@ -12,6 +11,6 @@ Description: "Indicates the use of the address as per information surveillance p
 * . 0..1
 * . ^definition = "Indicates the use of the address."
 * . ^isModifier = false
-* valueCoding 1..1
+* valueCoding 0..1 MS
 * valueCoding from CBSCDCAddressUseVS (required)
 * valueCoding ^binding.description = "Code for Address Use"
