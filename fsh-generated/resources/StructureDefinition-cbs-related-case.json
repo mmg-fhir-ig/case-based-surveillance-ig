@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "cbs-related-case",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-related-case",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceRelatedCase",
   "title": "Case Based Surveillance Related Case Extension",
   "status": "active",

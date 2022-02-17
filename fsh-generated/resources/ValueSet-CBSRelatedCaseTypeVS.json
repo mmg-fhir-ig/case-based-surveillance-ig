@@ -5,7 +5,7 @@
   "id": "CBSRelatedCaseTypeVS",
   "title": "CBS Related Case Type Value Set",
   "description": "Codes found in the case notification panel that are otherwise not captured in other CBS profiles.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS",
   "compose": {
     "include": [

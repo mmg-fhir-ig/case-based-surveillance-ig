@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-transmission-mode",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceTransmissionMode",
   "title": "Case Based Surveillance Transmission Mode",
   "status": "active",

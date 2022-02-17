@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceComposition",
   "title": "Case Based Surveillance Composition Profile",
   "status": "active",

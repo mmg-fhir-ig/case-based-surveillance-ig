@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "us-cbs-reporting-source-organization",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-reporting-source-organization",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "USCaseBasedSurveillanceReportingSourceOrganization",
   "title": "US Case Based Surveillance Reporting Source Organization Profile",
   "status": "active",

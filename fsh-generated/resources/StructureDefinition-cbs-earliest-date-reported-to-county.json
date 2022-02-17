@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceEarliestDateReported",
   "title": "Case Based Surveillance Earliest Date Reported",
   "status": "active",

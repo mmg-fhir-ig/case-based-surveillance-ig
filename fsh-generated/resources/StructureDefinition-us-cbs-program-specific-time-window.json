@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "us-cbs-program-specific-time-window",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-program-specific-time-window",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceProgramSpecificTimeWindow",
   "title": "US Case Based Surveillance Program Specific Time Window",
   "status": "active",

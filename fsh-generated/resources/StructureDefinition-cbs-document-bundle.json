@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceDocumentBundle",
   "title": "Case Based Surveillance Document Profile",
   "status": "active",
@@ -61,6 +61,19 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Bundle",
+        "path": "Bundle",
+        "constraint": [
+          {
+            "key": "cbs-bdl-1",
+            "severity": "error",
+            "human": "If Bundle is of type document, the first resource in Bundle.entry SHALL be of type Composition conforming to the CBS Composition Profile",
+            "expression": "entry.first().resource.meta.profile.contains('http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition')",
+            "source": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-document-bundle"
+          }
+        ]
+      },
       {
         "id": "Bundle.identifier",
         "path": "Bundle.identifier",

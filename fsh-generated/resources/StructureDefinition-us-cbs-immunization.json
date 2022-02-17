@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "us-cbs-immunization",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/us-cbs-immunization",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "USCaseBasedSurveillanceImmunization",
   "title": "US Case Based Surveillance Immunization Profile",
   "status": "active",

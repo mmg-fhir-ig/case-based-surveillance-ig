@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "cbs-specimen-role",
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen-role",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CBSSpecimenRoleExtension",
   "title": "Case Based Surveillance Specimen Role Extension",
   "status": "active",

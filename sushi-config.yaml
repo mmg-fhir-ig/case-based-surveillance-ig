@@ -8,7 +8,7 @@ name: CBSIG
 title: "Case Based Surveillance Implementation Guide"
 description: An IG that is used to support case based surveillance messaging for the public health domain
 status: draft
-version: 0.2.0
+version: 0.2.1
 fhirVersion: 4.0.1
 copyrightYear: 2022+
 releaseLabel: ci-build
