@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-reporting-state"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "CaseBasedSurveillanceReportingState"];
   fhir:StructureDefinition.title [ fhir:value "Case Based Surveillance Reporting State"];
   fhir:StructureDefinition.status [ fhir:value "active"];

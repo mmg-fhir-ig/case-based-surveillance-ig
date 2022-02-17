@@ -19,7 +19,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-investigation-start-date"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="CaseBasedSurveillanceInvestigationStartDate"/>
   <title value="Case Based Surveillance Case Investigation Start Date"/>
   <status value="active"/>

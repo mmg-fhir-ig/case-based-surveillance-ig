@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs</pre><div><p>An IG that is used to support case based surveillance messaging for the public health domain</p>\n</div></div>"
   },
   "url": "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CBSIG",
   "title": "Case Based Surveillance Implementation Guide",
   "status": "draft",
-  "date": "2022-02-08T17:12:45-05:00",
+  "date": "2022-02-17T15:59:55-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {
@@ -296,6 +296,32 @@
           {
             "url": "code",
             "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
           },
           {
             "url": "value",

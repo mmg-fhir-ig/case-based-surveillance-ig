@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-cbs-temp-code-system.html\"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-sogi\">sogi</a></td><td>Sexual Orientation and Gender Identity</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-housing-or-residence\">housing-or-residence</a></td><td>Housing Insecurity or Residence Characteristics</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-education\">education</a></td><td>Education Level</td></tr><tr><td><a href=\"CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-food-insecurity\">food-insecurity</a></td><td>Food Insecurity</td></tr></table></li></ul></div>"
   },
   "url": "http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CBSSocialDeterminantsOfHealthCategoryVS",
   "title": "CBS Case Social Determinants of Health Category Value Set",
   "status": "active",
-  "date": "2022-02-08T17:12:45-05:00",
+  "date": "2022-02-17T15:59:55-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {

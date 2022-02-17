@@ -19,7 +19,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="CaseBasedSurveillanceNationalReportingJurisdiction"/>
   <title value="Case Based Surveillance National Reporting Jurisdiction"/>
   <status value="active"/>

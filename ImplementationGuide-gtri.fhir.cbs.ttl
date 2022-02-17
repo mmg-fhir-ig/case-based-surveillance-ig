@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CBSIG</h2><p>The official URL for this implementation guide is: </p><pre>http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs</pre><div><p>An IG that is used to support case based surveillance messaging for the public health domain</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://cbsig.chai.gatech.edu/ImplementationGuide/gtri.fhir.cbs"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
   fhir:ImplementationGuide.name [ fhir:value "CBSIG"];
   fhir:ImplementationGuide.title [ fhir:value "Case Based Surveillance Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-02-08T17:12:45-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-02-17T15:59:55-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -295,6 +295,30 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
          fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];

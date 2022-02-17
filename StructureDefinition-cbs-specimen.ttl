@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "CaseBasedSurveillanceSpecimen"];
   fhir:StructureDefinition.title [ fhir:value "Case Based Surveillance Specimen Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];

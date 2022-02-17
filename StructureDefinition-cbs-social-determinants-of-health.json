@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-social-determinants-of-health",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceSocialDeterminantsOfHealth",
   "title": "Case Based Surveillance Social Determinants of Health Profile",
   "status": "active",

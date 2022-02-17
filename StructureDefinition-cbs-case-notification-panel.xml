@@ -29,7 +29,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-case-notification-panel"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="CaseBasedSurveillanceCaseNotificationPanel"/>
   <title value="Case Based Surveillance Case Notification Panel Profile"/>
   <status value="active"/>

@@ -23,11 +23,11 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-mmwr"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "CaseBasedSurveillanceMMWR"];
   fhir:StructureDefinition.title [ fhir:value "Case Based Surveillance Morbidity and Mortality Weekly Report (MMWR) Elements"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-08T17:12:45-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-02-17T15:59:55-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Georgia Tech Research Institute (GTRI)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

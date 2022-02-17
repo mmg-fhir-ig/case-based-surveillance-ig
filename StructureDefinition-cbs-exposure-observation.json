@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-exposure-observation",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceExposureObservation",
   "title": "Case Based Surveillance Exposure Observation Profile",
   "status": "active",
-  "date": "2022-02-08T17:12:45-05:00",
+  "date": "2022-02-17T15:59:55-05:00",
   "publisher": "Georgia Tech Research Institute (GTRI)",
   "contact": [
     {

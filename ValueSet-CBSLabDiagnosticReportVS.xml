@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7550">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7550</a></li><li>Import all the codes that are contained in <a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1002">http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1002</a></li><li>Include these codes as defined in <a href="CodeSystem-cbs-temp-code-system.html"><code>http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cbs-temp-code-system.html#cbs-temp-code-system-lab-interpretative-report">lab-interpretative-report</a></td><td>Lab Interpretive Report</td></tr></table></li></ul></div>
   </text>
   <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSLabDiagnosticReportVS"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="CBSLabDiagnosticReportVS"/>
   <title value="Combined ValueSet for Lab DiagnosticReport Code."/>
   <status value="active"/>
-  <date value="2022-02-08T17:12:45-05:00"/>
+  <date value="2022-02-17T15:59:55-05:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>

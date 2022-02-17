@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-specimen",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceSpecimen",
   "title": "Case Based Surveillance Specimen Profile",
   "status": "active",

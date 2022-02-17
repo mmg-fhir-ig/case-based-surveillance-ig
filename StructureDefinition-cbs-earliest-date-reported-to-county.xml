@@ -19,7 +19,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://cbsig.chai.gatech.edu/StructureDefinition/cbs-earliest-date-reported-to-county"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="CaseBasedSurveillanceEarliestDateReported"/>
   <title value="Case Based Surveillance Earliest Date Reported"/>
   <status value="active"/>

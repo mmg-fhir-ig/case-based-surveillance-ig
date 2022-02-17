@@ -2,8 +2,8 @@
 =========================================
 
 err = 9, warn = 18, info = 51
-IG Publisher Version: 1.1.99
-Generated Tue Feb 08 17:17:16 EST 2022. FHIR version 4.0.1 for gtri.fhir.cbs#0.2.0 (canonical = http://cbsig.chai.gatech.edu)
+IG Publisher Version: 1.1.99 Out of date - current version is 1.1.104
+Generated Thu Feb 17 16:04:48 EST 2022. FHIR version 4.0.1 for gtri.fhir.cbs#0.2.1 (canonical = http://cbsig.chai.gatech.edu)
  Build Errors : 0 / 1 / 0
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/ImplementationGuide-gtri.fhir.cbs : 0 / 0 / 1
  /Users/Shared/case-based-surveillance-ig/fsh-generated/resources/bundle-GenV2-TC-Document : 0 / 5 / 56

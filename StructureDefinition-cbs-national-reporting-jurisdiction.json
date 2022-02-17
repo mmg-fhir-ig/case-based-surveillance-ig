@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-national-reporting-jurisdiction",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "CaseBasedSurveillanceNationalReportingJurisdiction",
   "title": "Case Based Surveillance National Reporting Jurisdiction",
   "status": "active",

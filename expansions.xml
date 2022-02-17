@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="162e61ac-401a-4054-b5d6-28749dcac2e3"/>
+  <id value="544996de-0867-4cff-8390-c2fcc55ffe37"/>
   <meta>
-    <lastUpdated value="2022-02-08T17:12:45.253-05:00"/>
+    <lastUpdated value="2022-02-17T15:59:55.922-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.1 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-cbs-temp-code-system.html">
@@ -55,11 +55,11 @@
           </div>
         </text>
         <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSCDCAddressUseVS"/>
-        <version value="0.2.0"/>
+        <version value="0.2.1"/>
         <name value="CBSCDCAddressUseVS"/>
         <title value="Additional codes for Address.use."/>
         <status value="active"/>
-        <date value="2022-02-08T17:12:45-05:00"/>
+        <date value="2022-02-17T15:59:55-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -70,8 +70,8 @@
         </contact>
         <description value="Codes for Address.use which are used as slice discriminators to capture address history at relevant points in time to case surveillance."/>
         <expansion>
-          <identifier value="urn:uuid:3d584324-5410-43f1-ae08-13abbdc214d9"/>
-          <timestamp value="2022-02-08T17:15:11-05:00"/>
+          <identifier value="urn:uuid:14f67212-9989-4e32-b15a-d584f64cf628"/>
+          <timestamp value="2022-02-17T16:02:30-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -79,7 +79,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.0"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.1"/>
           </parameter>
           <contains>
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
@@ -105,7 +105,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.1 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-cbs-temp-code-system.html">
@@ -146,11 +146,11 @@
           </div>
         </text>
         <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSRelatedCaseTypeVS"/>
-        <version value="0.2.0"/>
+        <version value="0.2.1"/>
         <name value="CBSRelatedCaseTypeVS"/>
         <title value="CBS Related Case Type Value Set"/>
         <status value="active"/>
-        <date value="2022-02-08T17:12:45-05:00"/>
+        <date value="2022-02-17T15:59:55-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -161,8 +161,8 @@
         </contact>
         <description value="Codes found in the case notification panel that are otherwise not captured in other CBS profiles."/>
         <expansion>
-          <identifier value="urn:uuid:e7e690f1-d69b-4e3e-afe6-0f19dcad4e99"/>
-          <timestamp value="2022-02-08T17:15:47-05:00"/>
+          <identifier value="urn:uuid:b65ccdff-4380-4e79-9f82-9aa8f5ee0f65"/>
+          <timestamp value="2022-02-17T16:03:04-05:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -170,7 +170,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.0"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.1"/>
           </parameter>
           <contains>
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
@@ -201,7 +201,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.1 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-cbs-temp-code-system.html">
@@ -249,11 +249,11 @@
           </div>
         </text>
         <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthCategoryVS"/>
-        <version value="0.2.0"/>
+        <version value="0.2.1"/>
         <name value="CBSSocialDeterminantsOfHealthCategoryVS"/>
         <title value="CBS Case Social Determinants of Health Category Value Set"/>
         <status value="active"/>
-        <date value="2022-02-08T17:12:45-05:00"/>
+        <date value="2022-02-17T15:59:55-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -264,8 +264,8 @@
         </contact>
         <description value="Categories for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
         <expansion>
-          <identifier value="urn:uuid:73d43f07-6155-4698-9197-3d93329f9372"/>
-          <timestamp value="2022-02-08T17:15:48-05:00"/>
+          <identifier value="urn:uuid:cd427864-d2a9-47b3-8285-eed28f936826"/>
+          <timestamp value="2022-02-17T16:03:06-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -273,7 +273,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.0"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.1"/>
           </parameter>
           <contains>
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>
@@ -363,11 +363,11 @@
           </div>
         </text>
         <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSSocialDeterminantsOfHealthVS"/>
-        <version value="0.2.0"/>
+        <version value="0.2.1"/>
         <name value="CBSSocialDeterminantsOfHealthVS"/>
         <title value="CBS Case Social Determinants of Health Codes Value Set"/>
         <status value="active"/>
-        <date value="2022-02-08T17:12:45-05:00"/>
+        <date value="2022-02-17T15:59:55-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -378,8 +378,8 @@
         </contact>
         <description value="Codes for social determinants of health and related elements of social history which may be captured in the SDOH profile."/>
         <expansion>
-          <identifier value="urn:uuid:6c73fe70-e1b9-4e46-9349-4c4b7335a431"/>
-          <timestamp value="2022-02-08T17:15:48-05:00"/>
+          <identifier value="urn:uuid:e67afa9b-9423-4f3f-9f01-896112a6d2d0"/>
+          <timestamp value="2022-02-17T16:03:06-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -435,7 +435,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-cbs-temp-code-system.html">Case Based Surveillance temporary/placeholder code system. v0.2.1 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-cbs-temp-code-system.html">
@@ -469,11 +469,11 @@
           </div>
         </text>
         <url value="http://cbsig.chai.gatech.edu/ValueSet/CBSTimeWindowRelativeToVS"/>
-        <version value="0.2.0"/>
+        <version value="0.2.1"/>
         <name value="CBSTimeWindowRelativeToVS"/>
         <title value="CBS Time Window Relative To Value Set"/>
         <status value="active"/>
-        <date value="2022-02-08T17:12:45-05:00"/>
+        <date value="2022-02-17T15:59:55-05:00"/>
         <publisher value="Georgia Tech Research Institute (GTRI)"/>
         <contact>
           <name value="Georgia Tech Research Institute (GTRI)"/>
@@ -484,8 +484,8 @@
         </contact>
         <description value="Codes for specific resource elements referenced by the CBS Program Specific Time Window extension, to convey to which element in the referenced resource a time window is relative."/>
         <expansion>
-          <identifier value="urn:uuid:8032f542-7ff7-46d7-8d59-7c90eea422ee"/>
-          <timestamp value="2022-02-08T17:15:48-05:00"/>
+          <identifier value="urn:uuid:1887b18c-88a6-4ec9-b319-4a6ad54ffd8a"/>
+          <timestamp value="2022-02-17T16:03:06-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -493,7 +493,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.0"/>
+            <valueUri value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system|0.2.1"/>
           </parameter>
           <contains>
             <system value="http://cbsig.chai.gatech.edu/CodeSystem/cbs-temp-code-system"/>

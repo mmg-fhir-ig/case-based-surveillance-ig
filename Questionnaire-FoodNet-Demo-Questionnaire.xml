@@ -20,10 +20,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://cbsig.chai.gatech.edu/Questionnaire/FoodNet-Demo-Questionnaire"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="FoodNetDemoQuestionnaire"/>
   <status value="draft"/>
-  <date value="2022-02-08T17:12:45-05:00"/>
+  <date value="2022-02-17T15:59:55-05:00"/>
   <publisher value="Georgia Tech Research Institute (GTRI)"/>
   <contact>
     <name value="Georgia Tech Research Institute (GTRI)"/>

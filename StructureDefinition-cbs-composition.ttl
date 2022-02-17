@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://cbsig.chai.gatech.edu/StructureDefinition/cbs-composition"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "CaseBasedSurveillanceComposition"];
   fhir:StructureDefinition.title [ fhir:value "Case Based Surveillance Composition Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
